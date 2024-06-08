@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../style1.css">
+    <link rel="stylesheet" href="../oneproduct/modal.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="skupka.css">
+</head>
+<body>
+    <div class="filter_page">
+        <div class="title3"><i style="cursor: pointer;"
+            onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'"
+            class='bx bx-x'></i>
+          <h3>Фильтры</h3> <a href="">Сбросить</a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Поиск по фильтрам">
+          <i class='bx bx-search'></i>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Раздел</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Ювелирные украшения</button>
+          <button>Серьги</button>
+          <button>Ювелирные украшения</button>
+          <button>Кольца</button>
+          <button>Браслеты</button>
+          <button>Подвески</button>
+          <button>Ещё +32</button>
+        </div>
+        <hr>
+        <div class="sliders_control1">
+          <div class="title2">
+            <h2>Цена</h2>
+          </div>
+          <style>
+            .range_container {
+              display: flex;
+              flex-direction: column;
+              width: 90%;
+              margin: 10px auto;
+              margin-top: 27px !important;
+            }
+    
+            .sliders_control {
+              position: relative;
+              min-height: 50px;
+            }
+    
+            .range_container .form_control {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              font-size: 24px;
+              color: #635a5a;
+              margin-bottom: 20px;
+            }
+    
+            .range_container input[type=range]::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              pointer-events: all;
+              width: 20px;
+              height: 20px;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 0 0 2px #257AE8;
+              cursor: pointer;
+            }
+    
+            .form_control_container {
+              display: flex;
+              gap: 10px;
+              width: 47%;
+              margin-top: -20px;
+              align-items: center;
+              font-size: 12px;
+              border: 1px solid grey;
+              border-radius: 8px;
+              padding-left: 10px;
+            }
+    
+            .range_container input[type=range]::-moz-range-thumb {
+              -webkit-appearance: none;
+              pointer-events: all;
+              width: 24px;
+              height: 24px;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 0 0 1px #2E8AE6;
+              cursor: pointer;
+    
+            }
+    
+            .range_container input[type=range]::-webkit-slider-thumb:hover {
+              background: #f7f7f7;
+    
+            }
+    
+            .range_container input[type=range]::-webkit-slider-thumb:active {
+              box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+              -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    
+            }
+    
+            .range_container input[type="number"] {
+              color: black;
+              width: 50px;
+              height: 30px;
+              font-size: 12px;
+              border: none;
+              outline: none;
+            } 
+             .range_container input[type="number"]::placeholder {
+              color: red !important;
+              width: 50px;
+              height: 30px;
+              font-size: 12px;
+              border: none;
+              outline: none;
+            }
+    
+            .range_container input[type=number]::-webkit-inner-spin-button,
+            .range_container input[type=number]::-webkit-outer-spin-button {
+              opacity: 1;
+              outline: none;
+              color: black;
+            }
+    
+            .range_container input[type="range"] {
+              -webkit-appearance: none;
+              appearance: none;
+              height: 2px;
+              width: 100%;
+              position: absolute;
+              background-color: #C6C6C6;
+              pointer-events: none;
+            }
+    
+            .range_container #fromSlider {
+              height: 0;
+              z-index: 1;
+            }
+          </style>
+          <div class="range_container">
+            <div class="sliders_control">
+              <input id="fromSlider" type="range" value="10" min="0" max="2747250" />
+              <input id="toSlider" type="range" value="30" min="0" max="2747250" />
+            </div>
+            <div class="form_control">
+              <div class="form_control_container">
+                <div class="form_control_container__time">от</div>
+                <input class="form_control_container__time__input" type="number" id="fromInput" value="540" min="0"
+                  max="540" />
+              </div>
+              <div class="form_control_container">
+                <div class="form_control_container__time">до</div>
+                <input class="form_control_container__time__input" type="number" id="toInput" value="2747250" min="0"
+                  max="100" />
+              </div>
+            </div>
+          </div>
+          <script>
+            function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+              const [from, to] = getParsed(fromInput, toInput);
+              fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+              if (from > to) {
+                fromSlider.value = to;
+                fromInput.value = to;
+              } else {
+                fromSlider.value = from;
+              }
+            }
+    
+            function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+              const [from, to] = getParsed(fromInput, toInput);
+              fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+              setToggleAccessible(toInput);
+              if (from <= to) {
+                toSlider.value = to;
+                toInput.value = to;
+              } else {
+                toInput.value = from;
+              }
+            }
+    
+            function controlFromSlider(fromSlider, toSlider, fromInput) {
+              const [from, to] = getParsed(fromSlider, toSlider);
+              fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+              if (from > to) {
+                fromSlider.value = to;
+                fromInput.value = to;
+              } else {
+                fromInput.value = from;
+              }
+            }
+    
+            function controlToSlider(fromSlider, toSlider, toInput) {
+              const [from, to] = getParsed(fromSlider, toSlider);
+              fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+              setToggleAccessible(toSlider);
+              if (from <= to) {
+                toSlider.value = to;
+                toInput.value = to;
+              } else {
+                toInput.value = from;
+                toSlider.value = from;
+              }
+            }
+    
+            function getParsed(currentFrom, currentTo) {
+              const from = parseInt(currentFrom.value, 10);
+              const to = parseInt(currentTo.value, 10);
+              return [from, to];
+            }
+    
+            function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+              const rangeDistance = to.max - to.min;
+              const fromPosition = from.value - to.min;
+              const toPosition = to.value - to.min;
+              controlSlider.style.background = `linear-gradient(
+      to right,
+      ${sliderColor} 0%,
+      ${sliderColor} ${(fromPosition) / (rangeDistance) * 100}%,
+      ${rangeColor} ${((fromPosition) / (rangeDistance)) * 100}%,
+      ${rangeColor} ${(toPosition) / (rangeDistance) * 100}%, 
+      ${sliderColor} ${(toPosition) / (rangeDistance) * 100}%, 
+      ${sliderColor} 100%)`;
+            }
+    
+            function setToggleAccessible(currentTarget) {
+              const toSlider = document.querySelector('.range_container #toSlider');
+              if (Number(currentTarget.value) <= 0) {
+                toSlider.style.zIndex = 2;
+              } else {
+                toSlider.style.zIndex = 0;
+              }
+            }
+    
+            const fromSlider = document.querySelector('.range_container #fromSlider');
+            const toSlider = document.querySelector('.range_container #toSlider');
+            const fromInput = document.querySelector('.range_container #fromInput');
+            const toInput = document.querySelector('.range_container #toInput');
+            fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+            setToggleAccessible(toSlider);
+    
+            fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+            toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+            fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+            toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+    
+          </script>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Сроки доставки</h2>
+    
+        </div>
+        <div class="razdel1">
+          <button>Неважно</button>
+          <button>В течение 3 часов</button>
+          <button>Забрать в магазине <i class='bx bx-error-circle'></i></button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Спецпредложения</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>ШОК-цена</button>
+          <button>WOW-БРИЛЛИАНТ</button>
+          <button>Украшения с бриллиантами GIA</button>
+          <button>Скидка –55%</button>
+          <button>Скидка –70%</button>
+          <button>Ещё +3</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Вставка</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Без вставок</button>
+          <button>Бриллиант (природный) <i class='bx bx-error-circle'></i></button>
+          <button>Бриллиант выращенный<i class='bx bx-error-circle'></i></button>
+          <button>Коньячный бриллиант<i class='bx bx-error-circle'></i></button>
+          <button>Черный бриллиант<i class='bx bx-error-circle'></i></button>
+          <button>Ещё +56</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Вес в каратах</h2>
+    
+        </div>
+        <div class="razdel1">
+          <button>Для всех</button>
+          <button>Для детей</button>
+          <button>Для женщин</button>
+          <button>Для мужчин</button>
+          <button>Унисекс</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Вес в каратах</h2>
+        </div>
+        <div class="razdel1">
+          <button>От 0 до 0.2 карат</button>
+          <button>От 0.2 до 0.5 карат</button>
+          <button>От 0.5 до 1 карат</button>
+          <button>От 1 до 2 карат</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Цвет вставки</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1 colors">
+          <button style="background: #52DF21;
+    "></button>
+          <button style="
+    background: #242424;
+    "></button>
+          <button style="
+    background: 
+    #F31A1A;
+    "></button>
+          <button style="
+    background: 
+    #0057FF;
+    "></button>
+          <button style="
+    background: 
+    #FFFFFF;
+    "></button>
+          <button class="mm"> Ещё +7</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Тип огранки</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Антик</button>
+          <button>Багет</button>
+          <button>Груша</button>
+          <button>Квадрат</button>
+          <button>Круг</button>
+          <button>Ещё +10</button>
+    
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Количество камней</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Без камней</button>
+          <button>1 камень</button>
+          <button>2 камня</button>
+          <button>3 камня</button>
+          <button>4 камня</button>
+          <button>Ещё +4</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Сертификат</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Сертификат GIA <i class='bx bx-error-circle'></i></button>
+    
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Проба</h2><a></a>
+        </div>
+        <div class="razdel1">
+          <button>375</button>
+          <button>585</button>
+          <button>750</button>
+          <button>925</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Средний вес</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>до 0,5 грамм</button>
+          <button>0.5 - 1 грамм</button>
+          <button>1 - 2 грамма</button>
+          <button>2 - 3 грамма</button>
+          <button> 3 - 4 грамма</button>
+          <button>Ещё +6</button>
+    
+    
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Коллекция</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>TrendBook SS 2024</button>
+          <button>0.5 - 1 грамм</button>
+          <button>1 - 2 грамма</button>
+          <button>2 - 3 грамма</button>
+          <button>3 - 4 грамма</button>
+          <button>Ещё +6</button>
+    
+        </div>
+        <hr>
+      </div>
+    
+      <div class="navbasrr">
+        <div class="reklama">
+          <div class="reklama1">
+            <div class="pust"></div>
+            <div class="pust"></div>
+    
+            <div style="display: flex;gap:32px;justify-content: center;align-items: center;margin-left: -30px;">
+              <h2>WEEKEND SALE* ЕЩЁ -25% К СКИДКЕ 60% | 100% КЕШБЭК</h2><button>ТОЛЬКО 3 ДНЯ</button>
+            </div>
+            <i onclick="document.querySelector('.reklama').style='display:none' "
+              style="margin: auto;margin-right: 5px;font-size: 21px;" class='bx bx-x'></i>
+          </div>
+        </div>
+    
+        <nav class="nav1">
+          <div style="margin-top: 20px;" class="navbar1">
+            <ul class="hovg">
+              <li>Магазины</li>
+              <li>Доставка и оплата</li>
+              <li>Скупка и обмен</li>
+              <li><i class='bx bx-map-pin'></i> Выбор города</li>
+            </ul>
+            <div class="logo">
+              <img src="../../image/Group 3.svg" alt="">
+            </div>
+            <ul class="ulsp">
+              <li class="num7">+7 343 2664070</li>
+              <li class="iconlink">
+                <div class="icons"><img src="../../image/Vector (1).svg" alt="">
+                  <div class="number">12</div>
+                </div><span>Избранное</span>
+              </li>
+              <li onclick="document.querySelector('.modall').style='display:flex'" class="iconlink">
+                <div class="icons"><img src="../../image/icon_basket 1.svg" alt="">
+                  <div class="number">12</div>
+                </div> <span>Корзина</span>
+              </li>
+              <li class="iconlink">
+                <div class="icons"><img src="../../image/Vector (2).svg
+                " alt=""> </div><span>Войти </span>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar_but">
+            <button><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.33325 3.99668C1.33325 3.63001 1.63059 3.33334 1.99659 3.33334H7.33659C7.51251 3.33334 7.68123 3.40323 7.80563 3.52763C7.93003 3.65203 7.99992 3.82075 7.99992 3.99668C7.99992 4.1726 7.93003 4.34133 7.80563 4.46572C7.68123 4.59012 7.51251 4.66001 7.33659 4.66001H1.99659C1.82066 4.66001 1.65194 4.59012 1.52754 4.46572C1.40314 4.34133 1.33325 4.1726 1.33325 3.99668ZM1.33325 8.00001C1.33325 7.63334 1.63059 7.33668 1.99659 7.33668H14.0033C14.1792 7.33668 14.3479 7.40656 14.4723 7.53096C14.5967 7.65536 14.6666 7.82408 14.6666 8.00001C14.6666 8.17594 14.5967 8.34466 14.4723 8.46906C14.3479 8.59346 14.1792 8.66334 14.0033 8.66334H1.99659C1.82066 8.66334 1.65194 8.59346 1.52754 8.46906C1.40314 8.34466 1.33325 8.17594 1.33325 8.00001ZM1.99659 11.34C1.82066 11.34 1.65194 11.4099 1.52754 11.5343C1.40314 11.6587 1.33325 11.8274 1.33325 12.0033C1.33325 12.1793 1.40314 12.348 1.52754 12.4724C1.65194 12.5968 1.82066 12.6667 1.99659 12.6667H10.0033C10.1792 12.6667 10.3479 12.5968 10.4723 12.4724C10.5967 12.348 10.6666 12.1793 10.6666 12.0033C10.6666 11.8274 10.5967 11.6587 10.4723 11.5343C10.3479 11.4099 10.1792 11.34 10.0033 11.34H1.99659Z" fill="white"/>
+              </svg> <span>Каталог</span></button>
+            <div class="kol">
+              <h4>КОЛЛЕКЦИИ</h4><img style="width: 40px;transform: rotate(36.24deg);" src="../../image/Screenshot_from_2024-05-30_20-21-27-removebg-preview.png"
+                alt="">
+            </div>
+            <div class="search_inp">
+              <i class='bx bx-search'></i>
+              <input placeholder="Поиск по каталогу" type="text">
+              <img src="../../image/SV2G.png" alt="">
+            </div>
+            <div class="kol">
+              <h4>PREMIUM</h4>
+              <img style="width: 40px;transform: rotate(36.24deg);" src="../../image/Screenshot_from_2024-05-30_20-23-13-removebg-preview.png" alt="">
+            </div>
+            <h4 class="aksiya">Акции</h4>
+            <h4 class="aksiya1">Рассрочки и кредит</h4>
+          </div>
+        </nav>
+        <nav class="nav2">
+          <div class="one">
+            <div class="ssss">
+              <a class="contact" href="">
+                <i class='bx bxs-phone'></i>
+                <div>
+                  <h2>8 800 333 55 70</h2>
+                  <p>Обратный звонок</p>
+                </div>
+              </a>
+              <div></div>
+              <div></div>
+              <div></div>
+    
+              <a class="map_link" href=""><i class='bx bx-map-pin'></i>
+                <p>Выбор города</p>
+              </a>
+            </div>
+          </div>
+          <div class="two">
+            <div class="logo"><img src="../../image/Group 3.svg" alt="3"></div>
+            <button
+              onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
+                src="../../image/Vector78.svg" alt=""> Фильтры</button>
+    
+          </div>
+         
+    
+          <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
+            <p>По популярности <i class='bx bx-chevron-right'></i></p>
+          </div>
+          <main class="pagerout">
+            <img src="../../image/Link → SVG.svg" alt="">
+            <i class='bx bxs-chevron-right'></i>
+            <span>Ювелирные украшения</span>
+            <i class='bx bxs-chevron-right'></i>
+            <span style="color: black;">Кольца</span>
+          </main>
+        
+        </nav>
+      </div>
+          <div class="modall">
+            <div class="white">
+              <div class="white_ic">
+                <div class="tovarr">
+                 <div class="carttov">
+                  <h2>Товар добавлен в корзину</h2>
+                  <div class="hrf">
+                   <span>Товар добавлен в корзину</span>
+                    <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+                  </div>
+                 </div>
+                 <div class="plusminus">
+                  <div class="imageu">
+    <img src="./image/5-2964-103-1Б 1.png" alt="">
+                  </div>
+                  <div class="titleimg">
+                   <div class="cen">
+                    <h3>Кольцо 5-1182-103-1Б Au 585</h3>
+                    <p>Размер: 16.5</p>
+                   </div>
+                  </div>
+    
+                  <div class="gap"></div>
+    
+    
+                  <div class="plmin">
+                    <div class="btnplu">
+                      <div class="min"><p><i class='bx bx-minus' ></i></p></div>
+                      <span>1</span>
+                      <div class="min"><p>+</p></div>
+                    </div>
+    
+                  </div>
+                  <div class="pricc">
+                    <div class="delp">
+                    <h3>33 095 ₽</h3>
+                      <del>77 862 ₽</del>
+                    </div>
+                  </div>
+                 </div>
+    
+                 <div class="rekom">
+                  <h2>Рекомендации для вас</h2>
+    
+                  <div class="uzucard">
+                    <div class="carduz">
+                     <div class="ringimg">
+                      <i class='bx bx-heart'></i>
+                      <img src="./image/5-2964-103-1Б 1 (1).png" alt="">
+                     </div>
+                      <div class="ringtex">
+                        <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                        <h2>108 590 ₽ / шт  </h2>
+                        <del>158 680 ₽</del>
+                      </div>
+                    </div>
+    
+                    <div class="carduz">
+                      <div class="ringimg">
+                        <i class='bx bx-heart'></i>
+                       <img src="./image/5-2964-103-1Б 1 (2).png" alt="">
+                      </div>
+                       <div class="ringtex">
+                         <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                         <h2>108 590 ₽ / шт  </h2>
+                         <del>158 680 ₽</del>
+                       </div>
+                     </div>
+    
+    
+                     <div class="carduz">
+                      <div class="ringimg">
+                        <i class='bx bx-heart'></i>
+                       <img src="./image/5-2964-103-1Б 1 (3).png" alt="">
+                      </div>
+                       <div class="ringtex">
+                         <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                         <h2>108 590 ₽ / шт  </h2>
+                         <del>158 680 ₽</del>
+                       </div>
+                     </div>
+                    
+                  </div>
+                 
+                 </div>
+                </div>
+              </div>
+               <div class="oformit">
+               <div class="pokupka">
+                <button onclick="document.querySelector('.modal22').style='display:block'
+                document.querySelector('.white').style='display:none'
+                " class="grey"> Продолжить покупки</button>
+                <button onclick="document.querySelector('.modal22').style='display:block'
+                document.querySelector('.white').style='display:none'
+                "  class="yellow">Оформить заказ</button>
+               </div>
+                  </div>
+            </div>
+    
+            <div class="modal22">
+            <div class="modal2_ic">
+              <div class="carttov1">
+                <h2>Заказ в один клик</h2>
+                <div class="hrf">
+                  <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+                </div>
+               </div>
+               <div class="oplata">
+                <div class="oplimg">
+                  <img src="./image/5-2964-103-1Б 1 (4).png" alt="">
+                </div>
+                <div class="opltext">
+                  <div class="ic">
+                    <h2>Кольцо 5-1182-103-1Б Au 585</h2>
+                    <span>Размер: 16.5</span>
+                  </div>
+                </div>
+                <div class="oplprice">
+                  <div class="pric">
+                    <h2>13 597  ₽</h2>
+                    <p>Итого л оплате  13 597</p>
+                  </div>
+                </div>
+               </div>
+    
+    
+    
+    
+               <div class="e-mail">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Ваш e-mail">
+                <input type="text" placeholder="+7">
+                <input type="text" placeholder="Доставка">
+               </div>
+              
+            </div>
+            <div class="kupit">
+                <button>Купит</button>
+            </div>
+            </div>
+          </div>
+    
+    
+     <div class="big_boddy">
+        <div class="pravila_dg">
+<div class="domik_dg">
+    <div class="dom_arr_skup">
+        <i class='bx bx-home-alt' ></i>
+        <i class='bx bx-chevron-right' ></i>
+        <h4>Скупка</h4>
+    </div>
+    <h2>Скупка</h2>
+    <div class="dg_btn_sku">
+        <button>Цены на металлы</button>
+        <button>Калькулятор</button>
+        <button>Правила</button>
+    </div>
+</div>
+<div></div>
+<div class="app_dg">
+    <div class="nam">
+        <img style="    position: relative;
+        top: 16px;" src="../oneproduct/image/image 40.png" alt="">
+        <p style="    position: relative;
+        top: 10px;
+        left: -3px;">Позвоните нам</p>
+        <h4 style="margin-top: 12px;
+    margin-left: -4px;">+7 343 2664070</h4>
+    </div>
+    <div class="nam">
+        <img style="    position: relative;
+        top: 16px;" src="../oneproduct/image/WhatsApp.png" alt="">
+        <p style="    position: relative;
+        top: 10px;
+        left: -3px;">Позвоните нам</p>
+        <h4 style="margin-top: 12px;
+    margin-left: -4px;">WhatsApp</h4>
+    </div>
+    <div class="nam">
+        <img src="../oneproduct/image/WhatsApp (1).png" alt="">
+        <p style="position: relative;
+        top: -10px;
+        left: -4px;">Позвоните нам</p>
+        <h4Telegram</h4>
+    </div>
+</div>
+        </div>
+
+<div class="konsul_banner">
+    <div class="kon_ban_text">
+        <h1>Скупка и обмен золото</h1>
+        <h4>Получить консультацию</h4>
+    </div>
+    <div class="kon_ban_img">
+        <img src="../oneproduct/image/blue_ring.png" alt="">
+    </div>
+</div>
+
+<div class="zol_ser">
+    <div class="gram">
+        <h2>Цены на металлы</h2>
+        <h5>Указана максимальная цена за грамм золота. ALMAZ гарантирует высокую оценку и профессиональную <br> экспертизу ювелирного украшения. В наших ювелирных <br>салонах вы можете быстро и просто продать - серьги,<br> кольца, браслеты, часы, цепочки, кулоны, монеты и запонки <br> из золота и серебра, а также лом драгоценных металлов (деформированные или одиночные ювелирные изделия) и получить деньги наличными или на карту.</h5>
+        <button>Получить консультацию</button>
+    </div>
+    <div class="gram12">
+        
+        <div class="zoloto_top">
+            <h3>Золото</h3>
+            <img src="../oneproduct/image/image 42.png" alt="">
+        </div>
+   
+    <div style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;"  class="top_nalc">
+ 
+    <div style="   border-top-left-radius:8px ;" class="nalc_table">
+<p style="font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+">Проба</p>
+           </div>
+  
+    <div style="  border-top-right-radius: 8px;" class="nalc_table1">
+<p style="font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+">Наличными за грамм</p>
+           </div>
+        </div>
+        <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div class="nalc_table">
+ <p>375</p>
+            </div>
+            <div class="nalc_table1">
+             <p>2310</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div style="background-color: #E4E4E4;" class="nalc_table">
+ <p>500</p>
+            </div>
+            <div style="background-color: #E4E4E4;" class="nalc_table1">
+             <p>3075</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div class="nalc_table">
+ <p>583</p>
+            </div>
+            <div class="nalc_table1">
+             <p>3600</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div style="background-color: #E4E4E4;" class="nalc_table">
+ <p style="color: red;">585</p>
+            </div>
+            <div style="background-color: #E4E4E4;" class="nalc_table1">
+             <p style="color: red;">3600</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div class="nalc_table">
+ <p>750</p>
+            </div>
+            <div class="nalc_table1">
+             <p>4615</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div style="background-color: #E4E4E4;" class="nalc_table">
+ <p>850</p>
+            </div>
+            <div style="background-color: #E4E4E4;" class="nalc_table1">
+             <p>5230</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+
+<div class="nalc_table">
+ <p>900</p>
+            </div>
+            <div class="nalc_table1">
+             <p>5540</p>
+            </div>
+         </div> 
+         <div class="top_nalc bor">
+            <div style="background-color: #E4E4E4;"  style="border-bottom-left-radius: 8px;"  class="nalc_table">
+ <p>958</p>
+            </div>
+            <div style="background-color: #E4E4E4;" style="border-bottom-right-radius: 8px;border-bottom: none;" class="nalc_table1">
+             <p>5895</p>
+            </div>
+         </div>
+    </div>
+    <div class="gram12">
+        
+        <div class="zoloto_top">
+            <h3>Золото</h3>
+            <img src="../oneproduct/image/image 42.png" alt="">
+        </div>
+   
+    <div style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;"  class="top_nalc">
+ 
+    <div style="   border-top-left-radius:8px ;" class="nalc_table">
+<p style="font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+">Проба</p>
+           </div>
+  
+    <div style="  border-top-right-radius: 8px;" class="nalc_table1">
+<p style="font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+">Наличными за грамм</p>
+           </div>
+        </div>
+        <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div class="nalc_table">
+ <p>375</p>
+            </div>
+            <div class="nalc_table1">
+             <p>2310</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div style="background-color: #E4E4E4;" class="nalc_table">
+ <p>500</p>
+            </div>
+            <div style="background-color: #E4E4E4;" class="nalc_table1">
+             <p>3075</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div class="nalc_table">
+ <p>583</p>
+            </div>
+            <div class="nalc_table1">
+             <p>3600</p>
+            </div>
+         </div>
+         <div  style=" border-bottom: 1px solid rgba(128, 128, 128, 0.384) ;" class="top_nalc">
+            <div style="background-color: #E4E4E4;" class="nalc_table">
+ <p style="color: red;">585</p>
+            </div>
+            <div style="background-color: #E4E4E4;" class="nalc_table1">
+             <p style="color: red;">3600</p>
+            </div>
+         </div>
+         
+    </div>
+</div>
+<center><h1 style="font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41.45px;
+    position: relative;
+    top: 6px;
+    ">Как мы работаем</h1></center>
+<div class="three_shag">
+<div class="one_shag">
+    <img src="../oneproduct/image/Rectangle 34.png" alt="">
+    <div class="shg_b">
+        <h2>Посетите ювелирный магазин ALMAZ</h2>
+        <p>более 700 магазинов по РФ</p>
+        <span>Шаг 1</span>
+    </div>
+</div>
+<div class="one_shag">
+    <img src="../oneproduct/image/Rectangle 34 (1).png" alt="">   <div class="shg_b">
+        <h2>Оцените ювелирное украшение</h2>
+        <p>бесплатная и профессиональная оценка</p>
+        <span>Шаг 2</span>
+    </div>
+</div>
+<div class="one_shag">
+    <img src="../oneproduct/image/Rectangle 34 (4).png" alt="">
+    <div class="shg_b">
+        <h2>Получите деньги на карту или наличными</h2>
+        <p>оформление сделки за 10 минут</p>
+        <span>Шаг 3</span>
+    </div>
+</div>
+</div>
+
+
+
+<center><h1 style="font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41.45px;
+    text-align: center;
+    margin-top: 53px;
+    margin-left: -10px;">Рассчитайте, сколько получите<br>
+    за продажу изделия</h1></center>
+
+    <div class="clickkbnt">
+ <button class="onbtn1" onclick="
+    document.querySelector('.onbtn1').style='background-color:white'
+    document.querySelector('.onbtn').style='background-color:#F2F2F2'
+    ">Золото</button><button  class="onbtn" onclick="document.querySelector('.onbtn').style='background-color:white'
+    document.querySelector('.onbtn1').style='background-color:#F2F2F2'
+    ">Серебро</button> 
+    </div>
+
+
+<div class="viber_prob">
+    <div class="grid_one_prob">
+<div class="gr-prob">
+    <p style="    margin-top: -5px;
+    margin-left: -3px;">Выберите пробу</p>
+    <div class="olch">
+        <div class="olch_num"><h5>375</h5></div>
+        <div class="olch_num"><h5>500</h5></div>
+        <div class="olch_num"><h5>583</h5></div>
+        <div class="olch_num"><h5>858</h5></div>
+        <div class="olch_num"><h5>750</h5></div>
+        <div class="olch_num"><h5>850</h5></div>
+        <div class="olch_num"><h5>900</h5></div>
+        <div class="olch_num"><h5>958</h5></div>
+    </div>
+    <p style="margin-left: -3px;    margin-top: -6px;">Введите вес изделия</p>
+    <input type="number" placeholder="1г">
+    <p style="font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    ">Или выберите из списка</p>
+      <div class="olch1">
+        <div class="olch_num1"><h5>1 г</h5></div>
+        <div class="olch_num1"><h5>2 г</h5></div>
+        <div class="olch_num1"><h5>3 г</h5></div>
+        <div class="olch_num1"><h5>4 г</h5></div>
+        <div class="olch_num1"><h5>5 г</h5></div>
+        <div class="olch_num1"><h5>10 г</h5></div>
+        <div class="olch_num1"><h5>15 г</h5></div>
+        <div class="olch_num1"><h5>25 г</h5></div>
+        <div class="olch_num1"><h5>50 г</h5></div>
+    </div>
+</div>
+    </div>
+    <div class="grid_two_prob">
+        <div class="two-g-pro">
+            <p>Выдадим на руки</p>
+            <h2>3 600 ₽</h2>
+            <button>Узнать больше</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="prodat_gde">
+ 
+        <img src="../oneproduct/image/Rectangle 35 (2).png" alt="">
+     <div class="prodat_text">
+        <h1>Где продать золотое украшение выгодно?</h1>
+        <p>Ювелирные салоны ALMAZ предлагают до 90% от рыночной стоимости украшений при продаже в скупку ювелирных украшений. Рассчитайте предварительную стоимость оценки онлайн с помощью калькулятора, выбрав соответствующую пробу и указав вес изделия. Итоговую сумму сообщит ювелирный эксперт по результатам проверки изделия на подлинность, соответствие пробе.</p>
+        <button>Получить консультацию</button>
+     </div>
+</div>
+
+<center><h1 style='font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41.45px;
+        margin-top: 58px;
+    '>Какие изделия можно сдать</h1></center>
+
+<div class="cas_bras">
+  
+    <div style="  margin-top: 70px;" class="kol-bras">
+  
+<div class="bg_rem_img">
+  <img src="../oneproduct/image/Rectangle_34__6_-removebg-preview.png" alt="">
+</div>
+<div class="kolicc">
+<div class="bg_rem_text">
+  <h3>Браслет</h3>
+  <p>Браслет из драгоценных металлов, который больше не нравится или порвался можно выгодно продать в ювелирных салонах ALMAZ.</p>
+</div>
+
+       </div>
+    </div>
+    <div style="  margin-top: 70px;" class="kol-bras">
+        
+<div class="bg_rem_img">
+  <img src="../oneproduct/image/Rectangle_34__6_-removebg-preview.png" alt="">
+</div>
+<div class="kolicc">
+<div class="bg_rem_text">
+  <h3>Часы</h3>
+  <p>Максимально высоко оцениваем грамм драгоценного металла любой пробы в часах. На стоимость продажи часов влияет бренд и популярность модели.</p>
+</div>
+
+       </div>
+    </div>
+    <div style="  margin-top: 70px;" class="kol-bras">
+        
+<div class="bg_rem_img">
+  <img src="../oneproduct/image/Rectangle_34__6_-removebg-preview.png" alt="">
+</div>
+<div class="kolicc">
+<div class="bg_rem_text">
+  <h3>Серьги</h3>
+  <p>Ювелирные салоны ALMAZ осуществляют скупку ювелирных украшений из золота и серебра по максимальной цене. Бесплатно оценим ваши украшения в соответствии с действующими тарифами на сегодняшний день.</p>
+</div>
+
+       </div>
+    </div>
+    <div class="kol-bras">
+  
+      <div class="bg_rem_img">
+        <img src="../oneproduct/image/Rectangle_34__6_-removebg-preview.png" alt="">
+      </div>
+      <div class="kolicc">
+      <div class="bg_rem_text">
+        <h3>Кольца</h3>
+        <p>Кольца из золота и серебра принимаем в скупку на выгодных условиях в более чем 700 ювелирных салонах ALMAZ.</p>
+      </div>
+      
+             </div>
+          </div>
+          <div class="kol-bras">
+              
+      <div class="bg_rem_img">
+        <img src="../oneproduct/image/Rectangle_34__6_-removebg-preview.png" alt="">
+      </div>
+      <div class="kolicc">
+      <div class="bg_rem_text">
+        <h3>Цепочки</h3>
+        <p>В ювелирных салонах ALMAZ вы можете продать цепочки из драгоценных металлов и получить деньги на карту или наличными.</p>
+      </div>
+      
+             </div>
+          </div>
+          <div class="kol-bras">
+              
+      <div class="bg_rem_img">
+        <img src="../oneproduct/image/Rectangle_34__6_-removebg-preview.png" alt="">
+      </div>
+      <div class="kolicc">
+      <div class="bg_rem_text">
+        <h3>Монеты</h3>
+        <p>Предлагаем скупку золотых и серебряных монет на выгодных условиях, гарантируем конфиденциальность сделки и оперативность.</p>
+      </div>
+      
+             </div>
+          </div>
+</div>
+
+
+
+
+<div class="comfortable">
+  <h1>Более 700 комфортных филиалов для Вас</h1>
+<div class="gorod_pe">
+  <p>Ваш город:</p>
+  <select name="" id="">
+<option value="">Санкт-Петербург</option>
+<option value="">Санкт-Петербург</option>
+<option value="">Санкт-Петербург</option>
+<option value="">Санкт-Петербург</option>
+<option value="">Санкт-Петербург</option>
+  </select>
+</div>
+</div>
+
+
+
+<div class="gipermarket">
+   <!-- <div class="us_map"></div> -->
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3132.7194156829946!2d69.3820065781893!3d41.30295994969172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5eeb314026b%3A0x708e1da66dcf95a5!2sFruits%20Season%20Group!5e0!3m2!1sru!2s!4v1717851689434!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <div class="us_map">
+    <div class="magazin_inp">
+        <i class='bx bx-search'></i> <input type="text" placeholder="Введите адрес или место">
+    </div>
+    <div class="giperlent">
+        <h3>Гипермаркеты</h3>
+    </div>
+    <div class="flagm_magz">
+        <h3>Флагманский магазин ALMAZ</h3>
+        <div class="circle_adm">
+            <div class="o"></div><p>Адмиралтейская</p>
+        </div>
+        <h5>Санкт-Петербург г, Малая Морская ул,<br> дом № 4/1, литера А</h5>
+        <h4>пн-вс10:00 - 22:00 </h4>
+    </div>
+    <div class="flagm_magz">
+        <h3>Флагманский магазин ALMAZ</h3>
+        <div class="circle_adm">
+            <div class="o"></div><p>Адмиралтейская</p>
+        </div>
+        <h5>Санкт-Петербург г, Малая Морская ул,<br> дом № 4/1, литера А</h5>
+        <h4>пн-вс10:00 - 22:00 </h4>
+    </div>
+    <div class="flagm_magz">
+        <h3>Флагманский магазин ALMAZ</h3>
+        <div class="circle_adm">
+            <div class="o"></div><p>Адмиралтейская</p>
+        </div>
+        <h5>Санкт-Петербург г, Малая Морская ул,<br> дом № 4/1, литера А</h5>
+        <h4>пн-вс10:00 - 22:00 </h4>
+    </div>
+    <div class="flagm_magz">
+        <h3>Флагманский магазин ALMAZ</h3>
+        <div class="circle_adm">
+            <div class="o"></div><p>Адмиралтейская</p>
+        </div>
+        <h5>Санкт-Петербург г, Малая Морская ул,<br> дом № 4/1, литера А</h5>
+        <h4>пн-вс10:00 - 22:00 </h4>
+    </div>
+    <div class="flagm_magz">
+        <h3>Флагманский магазин ALMAZ</h3>
+        <div class="circle_adm">
+            <div class="o"></div><p>Адмиралтейская</p>
+        </div>
+        <h5>Санкт-Петербург г, Малая Морская ул,<br> дом № 4/1, литера А</h5>
+        <h4>пн-вс10:00 - 22:00 </h4>
+    </div>
+    <div class="flagm_magz">
+        <h3>Флагманский магазин ALMAZ</h3>
+        <div class="circle_adm">
+            <div class="o"></div><p>Адмиралтейская</p>
+        </div>
+        <h5>Санкт-Петербург г, Малая Морская ул,<br> дом № 4/1, литера А</h5>
+        <h4>пн-вс10:00 - 22:00 </h4>
+    </div>
+   </div>
+</div>
+
+
+
+<h1>Частые вопросы</h1>
+
+     </div>
+
+
+
+     <script>
+const buttons = document.querySelectorAll(".olch_num");
+
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    if (button.classList.contains("active")) {
+      button.classList.remove("active");
+    } else {
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+    }
+  });
+});
+
+     </script>
+     
+</body>
+</html>
