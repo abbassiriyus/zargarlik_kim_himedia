@@ -1,0 +1,68 @@
+.banner_ak img{
+    width: 100%;
+    margin-top: 62px;
+    margin-bottom: 60px;
+}
+.banner_ak button{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+background: #FFF957;
+width: 291px;
+height: 58px;
+margin-left: -3px;
+border-radius: 14px;
+border: none;
+margin-bottom: 52px;
+}
+.klient_adult{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    margin-top: 20px;
+    width: 86%;
+    margin: auto;
+    margin-top: 18px;
+    gap: 90px;
+}
+.adult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.adult img{
+    width: 30%;
+    margin-bottom: 15px;
+}
+.adult p{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+text-align: center;
+
+}
+.reaktiv{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.reaktiv p{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+
+}
+.alsir li{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+margin-left: 27px;
+}

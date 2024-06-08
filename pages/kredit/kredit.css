@@ -1,0 +1,79 @@
+.title_rasr{
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 50px;
+}
+.title_rasr h1{
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+text-align: left;
+text-transform: uppercase;
+}
+
+.back_yellow{
+    background: #FFDD2D;
+    width: 100%;
+    height: 413px;
+    margin-top: 32px;
+    position: relative;
+    padding-top: 78px;
+}
+.pos{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 37%;
+}
+.yellow_text{
+    width: 75%;
+    margin: auto;
+}
+.yellow_text h1{
+    font-family: Montserrat;
+font-size: 54px;
+font-weight: 700;
+line-height: 65.83px;
+text-align: left;
+
+}
+.yellow_text h2{
+    font-family: Montserrat;
+font-size: 50px;
+font-weight: 500;
+line-height: 60.95px;
+text-align: left;
+margin-top: 22px;
+}
+.yellow_text img{
+    width: 25%;
+    margin-top: 25px;
+    /* background-color: red; */
+    /* height: 20px; */
+}
+.pos1{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 43%;
+}
+
+.back_yellow1{
+    background: 
+    linear-gradient(256.76deg, #FAED00 0.54%, #00D900 37.6%, #21A038 92.45%);
+    width: 100%;
+    height: 413px;
+    margin-top: 32px;
+    position: relative;
+    padding-top: 78px;
+    color: white;
+}
+.back_yellow1 h1{
+    margin-bottom: 34px;
+}
+.small{
+    margin-top: 33px !important;
+    width: 27% !important;
+}
