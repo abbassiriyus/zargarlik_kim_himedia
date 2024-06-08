@@ -1,0 +1,543 @@
+.big_boddy{
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 55px;
+}
+.pravila_dg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dom_arr_skup{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top:15px;
+    margin-bottom: 34px;
+}
+.dom_arr_skup .bx-home-alt{
+    font-size: 20px;
+}
+.dom_arr_skup .bx-chevron-right{
+    font-size: 20px;
+}
+.dom_arr_skup h4{
+    font-size: 14px;
+}
+ 
+.domik_dg h2{
+    font-family: Montserrat;
+font-size: 34px;
+font-weight: 600;
+line-height: 41.45px;
+text-align: left;
+
+}
+.dg_btn_sku{
+    display: flex;
+    margin-top: 4px;
+    gap: 7px;
+}
+.dg_btn_sku button{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+height: 40px;
+line-height: 20px;
+text-align: left;
+padding: 10px 14px;
+border-radius: 8px;
+border: none;
+background: #F2F2F2;
+
+}
+.nam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+    height: 121px;
+    border-right: 2px solid #CDCDCD;
+}
+.nam p{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: center;
+color: #242424;
+}
+.nam h4{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: center;
+color: #242424;
+
+    }
+    .app_dg{
+        display: flex;
+        gap: 0px;
+        justify-content: end;
+        /* height: 121px; */
+        margin-top: 11px;
+        box-shadow: 0px 6px 45px 0px #3E3E3E1A;
+        border-radius: 18px;
+        width: 100%;
+    }
+    .nam img{
+        margin-bottom: 20px;
+    }
+    .kon_ban_text h1{
+        font-family: Montserrat;
+font-size: 56px;
+font-weight: 600;
+line-height: 64.4px;
+text-align: left;
+text-transform: uppercase;
+margin-bottom: 22px;
+
+    }
+    .kon_ban_text h4{
+        font-family: Montserrat;
+font-size: 32px;
+font-weight: 400;
+line-height: 36.8px;
+text-align: left;
+text-decoration: underline;
+    }
+    .konsul_banner{
+        width: 100%;
+        height: 464px;
+        border-radius: 18px;
+        background-color: red;
+        margin-top: 65px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+overflow: hidden;
+    }
+.kon_ban_text{
+    width: 85%;
+    margin: auto;
+    margin-top: 139px;
+
+}
+.kon_ban_img img{
+width: 100%;
+height: 464px;
+}
+.zol_ser{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.zol_ser .gram h2{
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41.45px;
+    text-align: left;
+    color: #242424;    
+}
+.zol_ser .gram{
+    width: 100%;
+    background-color: blue;
+  
+    box-shadow: 0px 0px 10px 0px #3E3E3E1A;
+}
+.zol_ser .gram h5{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #242424;    
+    /* width: 90%; */
+}
+.gram12{
+    width: 95%;
+    border-radius: 10px;
+    /* background-color: aqua;/ */
+    margin-left: 18px;
+    margin-top: 4px;
+    position: relative;
+    margin-top: 69px;
+    box-shadow: 0px 0px 10px 0px #3e3e3e3b;
+    z-index: 2323 !important;
+    /* overflow: hidden; */
+    
+}   
+.gram2{
+    width: 100%;
+    background-color: aquamarine;
+
+}
+  .gram button{
+    width: 270px;
+    height: 56px;
+    border: 1px solid #242424;
+    border-radius: 8px;
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+margin-top: 17px;
+margin-left: -2px;
+}
+.zoloto_top{
+position: absolute;
+top: -64px;
+left: 0px;
+z-index:-1343;
+background-color: #FFE535;
+width: 427px;
+height: 62px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-top-left-radius: 10px;
+padding-left: 30px;
+padding-right: 30px;
+border-top-right-radius: 10px;
+}
+.zoloto_top img{
+    z-index: 123;
+    margin-top: -8px;
+}
+.zoloto_top h3{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 24.38px;
+text-align: left;
+margin-top: -8px;
+}
+.top_nalc{
+    display: grid;
+    grid-template-columns: 134px 299px;
+}
+
+.nalc_table{
+    width: 100%;
+    /* background-color: violet; */
+    height: 43px;
+    border-right: 1px solid rgba(128, 128, 128, 0.216)!important;
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+}
+
+.nalc_table1{
+    width: 99%;
+    /* background-color: turquoise; */
+    height: 43px;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+
+}
+.nalc_table p{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.63px;
+text-align: left;
+margin-top: -3px;
+}
+.nalc_table1 p{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.63px;
+text-align: left;
+margin-top: -10px;
+}
+.bor{
+    border-bottom-left-radius: 8px;
+}
+.three_shag{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 34px;
+}
+.one_shag{
+    background-color: #F2F2F2;
+    height: 503px;
+    border-radius: 16px;
+}
+.one_shag img{
+    width: 100%;
+}
+.shg_b{
+    margin-top: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.one_shag h2{
+    font-family: Montserrat;
+font-size: 22px;
+font-weight: 600;
+line-height: 26.82px;
+text-align: left;
+
+}
+.one_shag p{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: left;
+position: relative;
+top: 6px;
+}
+.one_shag span{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+position: absolute;
+top:188px;
+}
+.clickkbnt{
+    display: flex;
+    gap: 10px;
+    width: 354px;
+    margin: auto;
+    height: 49px;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    border-radius: 11px;
+    margin-top: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.clickkbnt button{
+    width: 171px;
+    height: 41px;
+    border-radius: 7px;
+    /* background-color: black; */
+    border: none;
+    margin-top: 3px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: center;
+    transition: 1s;
+}
+.onbtn1{
+    background-color: white;
+}
+.viber_prob{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    width: 67%;
+    gap: 30px !important;
+    margin: auto;
+    height: 307px;
+}
+.grid_one_prob{
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    width: 100%;
+    
+}
+.grid_two_prob{
+    width: 100%;
+    background-color: aqua;
+    border-radius: 16px;
+}
+.gr-prob{
+    padding: 30px;
+}
+.gr-prob p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+text-align: left;
+
+}
+.olch_num{
+    width: 46px;
+    height: 35px;
+    border: 1px solid #E5E5E5;
+border-radius: 27px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* background-color: #FFE535; */
+cursor: pointer;
+transition: 1s;
+}
+.olch_num h5{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+}
+.olch_num:hover{
+    background-color: black !important;
+    border: none;
+    color: white;
+}
+.olch{
+    display: flex;   
+    margin-top: 9px;
+    gap:8px;
+    margin-bottom: 35px;
+}
+.gr-prob input{
+    width: 100%;
+    height:44px;
+    border-radius: 9px;
+    padding-left: 20px;
+    margin-top:11px;
+    border: 1px solid black;
+    outline :none;
+    margin-bottom: 15px;
+}
+.olch1{
+    display: flex;   
+    margin-top: 9px;
+    gap: 10px;
+    align-items: center;
+}
+.olch_num1{
+    width: 46px;
+    height: 35px;
+    background-color: #E5E5E5;
+border-radius: 27px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* background-color: #FFE535; */
+cursor: pointer;
+}
+.olch_num1 h5{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+}
+.olch_num1:hover{
+    background-color: rgba(0, 0, 0, 0.262) !important;
+    border: none;
+  
+}
+.olch_num {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .olch_num.active {
+    background-color: black;
+    color: white;
+  }
+  .two-g-pro{
+    padding: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .two-g-pro p{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 24.38px;
+text-align: center;
+margin-left:-12px;
+  }
+  .two-g-pro h2{
+    font-family: Montserrat;
+font-size: 36px;
+font-weight: 600;
+line-height: 43.88px;
+text-align: center;
+margin-left:-10px;
+  }
+
+  .two-g-pro button{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+width: 291px;
+height:58px;
+border-radius: 14px;
+background: #FFF957;
+border: none;
+margin-top: 73px;
+margin-left: -13px;
+  }
+  .prodat_gde{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 438px;
+    margin-top: 60px;
+    gap: 20px;
+  }
+  .prodat_gde img{
+    width:97%;
+  }
+  .prodat_text button{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+width:270px;
+height: 56px;
+border-radius: 8px;
+border: 1px solid #242424;
+margin-top:30px;
+  }
+  .prodat_text h1{
+    font-family: Montserrat;
+font-size: 34px;
+font-weight: 600;
+line-height: 41.45px;
+text-align: left;
+margin-top: -3px;
+margin-bottom: 20px;
+  }
+  .prodat_text p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+  }
+  .cas_bras{
+    display:grid;
+    grid-template-columns: 458px 458px 458px;
+    gap: 30px;
+  }
+  .kol-bras{
+    height:355px;
+    width:100%;
+    border-radius: 16px;
+    /* background: #F2F2F2; */
+    background-color: red;
+    margin-top: 70px;
+  }
+  .kolicc{
+    /* padding:10px; */
+  }
+  .kolicc img{
+    position: relative;
+    top: -60px;
+  }

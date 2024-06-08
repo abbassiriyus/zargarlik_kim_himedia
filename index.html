@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./pages/oneproduct/oneproduct.css"> <link rel="stylesheet" href="./pages/oneproduct/main.css">
+  <link rel="stylesheet" href="./pages/oneproduct/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+      <style>
+      
+        
+    
+       .mySwiper7 .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .mySwiper7 .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+</head>
+<body>
+    <div class="filter_page">
+        <div class="title3"><i style="cursor: pointer;"
+            onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'"
+            class='bx bx-x'></i>
+          <h3>Фильтры</h3> <a href="">Сбросить</a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Поиск по фильтрам">
+          <i class='bx bx-search'></i>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Раздел</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Ювелирные украшения</button>
+          <button>Серьги</button>
+          <button>Ювелирные украшения</button>
+          <button>Кольца</button>
+          <button>Браслеты</button>
+          <button>Подвески</button>
+          <button>Ещё +32</button>
+        </div>
+        <hr>
+        <div class="sliders_control1">
+          <div class="title2">
+            <h2>Цена</h2>
+          </div>
+          <style>
+            .range_container {
+              display: flex;
+              flex-direction: column;
+              width: 90%;
+              margin: 10px auto;
+              margin-top: 27px !important;
+            }
+    
+            .sliders_control {
+              position: relative;
+              min-height: 50px;
+            }
+    
+            .range_container .form_control {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              font-size: 24px;
+              color: #635a5a;
+              margin-bottom: 20px;
+            }
+    
+            .range_container input[type=range]::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              pointer-events: all;
+              width: 20px;
+              height: 20px;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 0 0 2px #257AE8;
+              cursor: pointer;
+            }
+    
+            .form_control_container {
+              display: flex;
+              gap: 10px;
+              width: 47%;
+              margin-top: -20px;
+              align-items: center;
+              font-size: 12px;
+              border: 1px solid grey;
+              border-radius: 8px;
+              padding-left: 10px;
+            }
+    
+            .range_container input[type=range]::-moz-range-thumb {
+              -webkit-appearance: none;
+              pointer-events: all;
+              width: 24px;
+              height: 24px;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 0 0 1px #2E8AE6;
+              cursor: pointer;
+    
+            }
+    
+            .range_container input[type=range]::-webkit-slider-thumb:hover {
+              background: #f7f7f7;
+    
+            }
+    
+            .range_container input[type=range]::-webkit-slider-thumb:active {
+              box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+              -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    
+            }
+    
+            .range_container input[type="number"] {
+              color: black;
+              width: 50px;
+              height: 30px;
+              font-size: 12px;
+              border: none;
+              outline: none;
+            } 
+             .range_container input[type="number"]::placeholder {
+              color: red !important;
+              width: 50px;
+              height: 30px;
+              font-size: 12px;
+              border: none;
+              outline: none;
+            }
+    
+            .range_container input[type=number]::-webkit-inner-spin-button,
+            .range_container input[type=number]::-webkit-outer-spin-button {
+              opacity: 1;
+              outline: none;
+              color: black;
+            }
+    
+            .range_container input[type="range"] {
+              -webkit-appearance: none;
+              appearance: none;
+              height: 2px;
+              width: 100%;
+              position: absolute;
+              background-color: #C6C6C6;
+              pointer-events: none;
+            }
+    
+            .range_container #fromSlider {
+              height: 0;
+              z-index: 1;
+            }
+          </style>
+          <div class="range_container">
+            <div class="sliders_control">
+              <input id="fromSlider" type="range" value="10" min="0" max="2747250" />
+              <input id="toSlider" type="range" value="30" min="0" max="2747250" />
+            </div>
+            <div class="form_control">
+              <div class="form_control_container">
+                <div class="form_control_container__time">от</div>
+                <input class="form_control_container__time__input" type="number" id="fromInput" value="540" min="0"
+                  max="540" />
+              </div>
+              <div class="form_control_container">
+                <div class="form_control_container__time">до</div>
+                <input class="form_control_container__time__input" type="number" id="toInput" value="2747250" min="0"
+                  max="100" />
+              </div>
+            </div>
+          </div>
+          <script>
+            function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+              const [from, to] = getParsed(fromInput, toInput);
+              fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+              if (from > to) {
+                fromSlider.value = to;
+                fromInput.value = to;
+              } else {
+                fromSlider.value = from;
+              }
+            }
+    
+            function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+              const [from, to] = getParsed(fromInput, toInput);
+              fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+              setToggleAccessible(toInput);
+              if (from <= to) {
+                toSlider.value = to;
+                toInput.value = to;
+              } else {
+                toInput.value = from;
+              }
+            }
+    
+            function controlFromSlider(fromSlider, toSlider, fromInput) {
+              const [from, to] = getParsed(fromSlider, toSlider);
+              fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+              if (from > to) {
+                fromSlider.value = to;
+                fromInput.value = to;
+              } else {
+                fromInput.value = from;
+              }
+            }
+    
+            function controlToSlider(fromSlider, toSlider, toInput) {
+              const [from, to] = getParsed(fromSlider, toSlider);
+              fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+              setToggleAccessible(toSlider);
+              if (from <= to) {
+                toSlider.value = to;
+                toInput.value = to;
+              } else {
+                toInput.value = from;
+                toSlider.value = from;
+              }
+            }
+    
+            function getParsed(currentFrom, currentTo) {
+              const from = parseInt(currentFrom.value, 10);
+              const to = parseInt(currentTo.value, 10);
+              return [from, to];
+            }
+    
+            function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+              const rangeDistance = to.max - to.min;
+              const fromPosition = from.value - to.min;
+              const toPosition = to.value - to.min;
+              controlSlider.style.background = `linear-gradient(
+      to right,
+      ${sliderColor} 0%,
+      ${sliderColor} ${(fromPosition) / (rangeDistance) * 100}%,
+      ${rangeColor} ${((fromPosition) / (rangeDistance)) * 100}%,
+      ${rangeColor} ${(toPosition) / (rangeDistance) * 100}%, 
+      ${sliderColor} ${(toPosition) / (rangeDistance) * 100}%, 
+      ${sliderColor} 100%)`;
+            }
+    
+            function setToggleAccessible(currentTarget) {
+              const toSlider = document.querySelector('.range_container #toSlider');
+              if (Number(currentTarget.value) <= 0) {
+                toSlider.style.zIndex = 2;
+              } else {
+                toSlider.style.zIndex = 0;
+              }
+            }
+    
+            const fromSlider = document.querySelector('.range_container #fromSlider');
+            const toSlider = document.querySelector('.range_container #toSlider');
+            const fromInput = document.querySelector('.range_container #fromInput');
+            const toInput = document.querySelector('.range_container #toInput');
+            fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+            setToggleAccessible(toSlider);
+    
+            fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+            toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+            fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+            toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+    
+          </script>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Сроки доставки</h2>
+    
+        </div>
+        <div class="razdel1">
+          <button>Неважно</button>
+          <button>В течение 3 часов</button>
+          <button>Забрать в магазине <i class='bx bx-error-circle'></i></button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Спецпредложения</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>ШОК-цена</button>
+          <button>WOW-БРИЛЛИАНТ</button>
+          <button>Украшения с бриллиантами GIA</button>
+          <button>Скидка –55%</button>
+          <button>Скидка –70%</button>
+          <button>Ещё +3</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Вставка</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Без вставок</button>
+          <button>Бриллиант (природный) <i class='bx bx-error-circle'></i></button>
+          <button>Бриллиант выращенный<i class='bx bx-error-circle'></i></button>
+          <button>Коньячный бриллиант<i class='bx bx-error-circle'></i></button>
+          <button>Черный бриллиант<i class='bx bx-error-circle'></i></button>
+          <button>Ещё +56</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Вес в каратах</h2>
+    
+        </div>
+        <div class="razdel1">
+          <button>Для всех</button>
+          <button>Для детей</button>
+          <button>Для женщин</button>
+          <button>Для мужчин</button>
+          <button>Унисекс</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Вес в каратах</h2>
+        </div>
+        <div class="razdel1">
+          <button>От 0 до 0.2 карат</button>
+          <button>От 0.2 до 0.5 карат</button>
+          <button>От 0.5 до 1 карат</button>
+          <button>От 1 до 2 карат</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Цвет вставки</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1 colors">
+          <button style="background: #52DF21;
+    "></button>
+          <button style="
+    background: #242424;
+    "></button>
+          <button style="
+    background: 
+    #F31A1A;
+    "></button>
+          <button style="
+    background: 
+    #0057FF;
+    "></button>
+          <button style="
+    background: 
+    #FFFFFF;
+    "></button>
+          <button class="mm"> Ещё +7</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Тип огранки</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Антик</button>
+          <button>Багет</button>
+          <button>Груша</button>
+          <button>Квадрат</button>
+          <button>Круг</button>
+          <button>Ещё +10</button>
+    
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Количество камней</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Без камней</button>
+          <button>1 камень</button>
+          <button>2 камня</button>
+          <button>3 камня</button>
+          <button>4 камня</button>
+          <button>Ещё +4</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Сертификат</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>Сертификат GIA <i class='bx bx-error-circle'></i></button>
+    
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Проба</h2><a></a>
+        </div>
+        <div class="razdel1">
+          <button>375</button>
+          <button>585</button>
+          <button>750</button>
+          <button>925</button>
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Средний вес</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>до 0,5 грамм</button>
+          <button>0.5 - 1 грамм</button>
+          <button>1 - 2 грамма</button>
+          <button>2 - 3 грамма</button>
+          <button> 3 - 4 грамма</button>
+          <button>Ещё +6</button>
+    
+    
+        </div>
+        <hr>
+        <div class="title2">
+          <h2>Коллекция</h2>
+          <a href="">Смотреть все</a>
+        </div>
+        <div class="razdel1">
+          <button>TrendBook SS 2024</button>
+          <button>0.5 - 1 грамм</button>
+          <button>1 - 2 грамма</button>
+          <button>2 - 3 грамма</button>
+          <button>3 - 4 грамма</button>
+          <button>Ещё +6</button>
+    
+        </div>
+        <hr>
+      </div>  
+      <div class="navbasrr">
+        <div class="reklama">
+          <div class="reklama1">
+            <div class="pust"></div>
+            <div class="pust"></div>
+    
+            <div style="display: flex;gap:32px;justify-content: center;align-items: center;margin-left: -30px;">
+              <h2>WEEKEND SALE* ЕЩЁ -25% К СКИДКЕ 60% | 100% КЕШБЭК</h2><button>ТОЛЬКО 3 ДНЯ</button>
+            </div>
+            <i onclick="document.querySelector('.reklama').style='display:none' "
+              style="margin: auto;margin-right: 5px;font-size: 21px;" class='bx bx-x'></i>
+          </div>
+        </div>
+    
+        <nav class="nav1">
+          <div style="margin-top: 20px;" class="navbar1">
+            <ul class="hovg">
+          <a href="./pages/oneproduct/map.html">    <li>Магазины</li></a>
+              <li>Доставка и оплата</li>
+              <li>Скупка и обмен</li>
+              <li><i class='bx bx-map-pin'></i> Выбор города</li>
+            </ul>
+            <div class="logo">
+             <a href="./index.html"> <img  src="../../image/Group 3.svg" alt=""></a>
+            </div>
+            <ul class="ulsp">
+              <li class="num7">+7 343 2664070</li>
+              <li class="iconlink">
+                <div class="icons"><img src="../../image/Vector (1).svg" alt="">
+                  <div class="number">12</div>
+                </div><span>Избранное</span>
+              </li>
+              <li onclick="document.querySelector('.modall').style='display:flex'" class="iconlink">
+                <div class="icons"><img src="../../image/icon_basket 1.svg" alt="">
+                  <div class="number">12</div>
+                </div> <span>Корзина</span>
+              </li>
+              <li class="iconlink">
+                <div class="icons"><img src="../../image/Vector (2).svg
+                " alt=""> </div><span>Войти </span>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar_but">
+            <button onclick="window.location='./index1.html'"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.33325 3.99668C1.33325 3.63001 1.63059 3.33334 1.99659 3.33334H7.33659C7.51251 3.33334 7.68123 3.40323 7.80563 3.52763C7.93003 3.65203 7.99992 3.82075 7.99992 3.99668C7.99992 4.1726 7.93003 4.34133 7.80563 4.46572C7.68123 4.59012 7.51251 4.66001 7.33659 4.66001H1.99659C1.82066 4.66001 1.65194 4.59012 1.52754 4.46572C1.40314 4.34133 1.33325 4.1726 1.33325 3.99668ZM1.33325 8.00001C1.33325 7.63334 1.63059 7.33668 1.99659 7.33668H14.0033C14.1792 7.33668 14.3479 7.40656 14.4723 7.53096C14.5967 7.65536 14.6666 7.82408 14.6666 8.00001C14.6666 8.17594 14.5967 8.34466 14.4723 8.46906C14.3479 8.59346 14.1792 8.66334 14.0033 8.66334H1.99659C1.82066 8.66334 1.65194 8.59346 1.52754 8.46906C1.40314 8.34466 1.33325 8.17594 1.33325 8.00001ZM1.99659 11.34C1.82066 11.34 1.65194 11.4099 1.52754 11.5343C1.40314 11.6587 1.33325 11.8274 1.33325 12.0033C1.33325 12.1793 1.40314 12.348 1.52754 12.4724C1.65194 12.5968 1.82066 12.6667 1.99659 12.6667H10.0033C10.1792 12.6667 10.3479 12.5968 10.4723 12.4724C10.5967 12.348 10.6666 12.1793 10.6666 12.0033C10.6666 11.8274 10.5967 11.6587 10.4723 11.5343C10.3479 11.4099 10.1792 11.34 10.0033 11.34H1.99659Z" fill="white"/>
+              </svg> <span>Каталог</span></button>
+            <div class="kol">
+              <h4>КОЛЛЕКЦИИ</h4><img style="width: 40px;transform: rotate(36.24deg);" src="../../image/Screenshot_from_2024-05-30_20-21-27-removebg-preview.png"
+                alt="">
+            </div>
+            <div class="search_inp">
+              <i class='bx bx-search'></i>
+              <input placeholder="Поиск по каталогу" type="text">
+              <img src="../../image/SV2G.png" alt="">
+            </div>
+            <div class="kol">
+              <h4>PREMIUM</h4>
+              <img style="width: 40px;transform: rotate(36.24deg);" src="../../image/Screenshot_from_2024-05-30_20-23-13-removebg-preview.png" alt="">
+            </div>
+            <h4 class="aksiya">Акции</h4>
+            <h4 class="aksiya1">Рассрочки и кредит</h4>
+          </div>
+        </nav>
+        <nav class="nav2">
+          <div class="one">
+            <div class="ssss">
+              <a class="contact" href="">
+                <i class='bx bxs-phone'></i>
+                <div>
+                  <h2>8 800 333 55 70</h2>
+                  <p>Обратный звонок</p>
+                </div>
+              </a>
+              <div></div>
+              <div></div>
+              <div></div>
+    
+              <a class="map_link" href=""><i class='bx bx-map-pin'></i>
+                <p>Выбор города</p>
+              </a>
+            </div>
+          </div>
+          <div class="two">
+            <div class="logo"><img src="../../image/Group 3.svg" alt="3"></div>
+            <button
+              onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
+                src="../../image/Vector78.svg" alt=""> Фильтры</button>
+    
+          </div>
+         
+    
+          <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
+            <p>По популярности <i class='bx bx-chevron-right'></i></p>
+          </div>
+          <main class="pagerout">
+            <img src="../../image/Link → SVG.svg" alt="">
+            <i class='bx bxs-chevron-right'></i>
+            <span>Ювелирные украшения</span>
+            <i class='bx bxs-chevron-right'></i>
+            <span style="color: black;">Кольца</span>
+          </main>
+        
+        </nav>
+      </div>
+       <div class="swiper mySwiper7">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="header_main">
+                    <div class="text80">
+                     <img src="././pages/oneproduct/image/slider1.png
+                     " alt="">
+                    </div>
+                    <div class="img80"></div>
+                </div>
+
+
+
+
+              </div>
+              <div class="swiper-slide">
+                <div class="header_main">
+                    <div class="text80">
+                     <img src="././pages/oneproduct/image/slider1.png" alt="">
+                    </div>
+                    <div class="img80"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="header_main">
+                    <div class="text80">
+                     <img src="././pages/oneproduct/image/slider1.png " alt="">
+                    </div>
+                    <div class="img80"></div>
+                </div>
+              </div>
+             
+            
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div> 
+ <div class="minimal">
+    <div class="rosp">
+        <img src="./pages/oneproduct/image/Frame 208.svg" alt="">
+        <span  >НОВИНКИ</span>
+    </div>
+    <div class="rosp">
+        <img src="./pages/oneproduct/image/Frame 208 (1).svg" alt="">
+        <span  >МИНИМАЛИЗМ</span>
+
+    </div>
+    <div class="rosp">
+        <img src="./pages/oneproduct/image/Frame 208 (2).svg" alt="">
+        <span >УКРАШЕНИЯ С БРИЛЛИАНТАМИ</span>   
+    </div>
+    <div class="rosp">
+        <img src="./pages/oneproduct/image/Frame 208 (5).png" alt="">
+        <span>РАСПРОДАЖА</span>
+    </div>
+</div> 
+
+
+
+
+
+ <div class="jeweler">
+  <div class="jew_skid">
+
+  </div>
+</div> 
+  <div class="kulon">
+    <div class="kulonic">
+     
+
+        <div class="kulontitle">
+         <span>Кольца</span>
+        </div>
+        <div class="kulontitle1">
+            <span>Кулоны</span>
+        </div>
+        <div class="kulontitle2">
+            <span>Серьги</span>
+        </div>
+    </div>
+</div>  
+  <div class="work12">
+    <div class="work_one">
+      <div class="box_one">
+        <div class="card_one">
+          <h1>
+            Помолвочные <br />
+            Кольца
+          </h1>
+        </div>
+        <div class="card_two">
+          <h1>
+            Обручальные <br />
+            Кольца
+          </h1>
+        </div>
+      </div>
+      <div class="box_two">
+        <div class="card_none">
+          <div class="card_thee">
+            <h1>Цепи</h1>
+          </div>
+        </div>
+        <div class="card_four">
+          <h1>Колье</h1>
+        </div>
+        <div class="card_none2">
+          <div class="card_none1">
+            <div class="card_five">
+              <h1>Браслеты</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box_three">
+          <div class="card_six">
+              <h1>Украшения с драгоценными <br> камнями</h1>
+          </div>
+      </div>
+    </div>
+  </div>
+   <!-- <div class="skupk">
+    <div class="kredit">
+        <img id="img1" src="./pages/oneproduct/image/yaltiroq qol.png" alt="">
+        <img id="img6" src="./pages/oneproduct/image/uzuk_animation.png" alt="232243">
+        <h1>Скупка  и <br> обмен <br> золота</h1>
+    </div>
+    <div class="kredit kredit2">
+        <img id="img2" src="./pages/oneproduct/image/1 (2) 1 (2).png" alt="">
+        <h1>Рассрочка <br> и кредит</h1>
+    </div>
+    <div class="kredit kredit3">
+        <img id="img3" src="./pages/oneproduct/image/Group 12.png" alt="">
+        <img id="img4" src="./pages/oneproduct/image/carta_anima.jpg" alt="">
+        <img id="img5" src="./pages/oneproduct/image/carta_anima.jpg" alt="">
+        <h1>Подарочные<br> сертификаты</h1>
+    </div>
+  </div>   -->
+  <div class="posm">
+    <h1>Новинки</h1>
+    <span>ПОСМОТРЕТЬ ВСЕ</span>
+</div>
+<div class="swiper mySwiper0">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">       
+<div class="podvec">
+    <div class="novin">
+        <div class="novv">
+            <span>Новинка</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Серьги 5-5953-106-2Б-Чбр Au 585</span>
+    <div class="skidok">
+        <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="podvec">
+            <div class="novin">
+                <div class="novv">
+                    <span>Новинка</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div style="background: url('./pages/oneproduct/image/image\ 2\ \(2\).png'); height: 300px;
+            background-size: cover;
+            background-position: center;
+            width: 93%;
+            margin: auto;
+            height: 184px;
+        " class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div></div>
+      <div class="swiper-slide">
+<div class="podvec">
+    <div class="novin">
+        <div class="novv">
+            <span>Новинка</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(3\).png');
+     height: 300px;
+            background-size: cover;
+            background-position: center;
+            width: 93%;
+            margin: auto;
+            height: 184px;
+    " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Подвеска 5-2335-103-3Б Au 585</span>
+    <div class="skidok">
+        <h1>38 195 ₽ <del>76 390 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+</div>
+      <div class="swiper-slide">
+        
+<div class="podvec">
+    <div class="novin">
+        <div class="novv">
+            <span>Новинка</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(4\).png');
+    height: 300px;
+           background-size: cover;
+           background-position: center;
+           width: 93%;
+           margin: auto;
+           height: 184px;
+   " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Кольцо 5-6709-200-1К-ОнкЧ Au 585</span>
+    <div class="skidok">
+        <h1>53 545 ₽ <del>107 090 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+        
+<div class="podvec">
+    <div class="novin">
+        <div class="novv">
+            <span>Новинка</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(5\).png');
+    height: 300px;
+           background-size: cover;
+           background-position: center;
+           width: 93%;
+           margin: auto;
+           height: 184px;
+   " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Подвеска 5-6245-103-3Б-Тн Au 585</span>
+    <div class="skidok">
+        <h1>67 545 ₽ <del>135 090 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">       
+        <div class="podvec">
+            <div class="novin">
+                <div class="novv">
+                    <span>Новинка</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="podvec">
+                    <div class="novin">
+                        <div class="novv">
+                            <span>Новинка</span>
+                        </div>
+                        <div class="now">
+                            <span><p>🌷</p> SALE</span>
+                        </div>
+                    </div>
+                    <div class="podimg">
+                
+                    </div>
+                    <div class="linie"></div>
+                    <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+                    <div class="skidok">
+                        <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                        <span>50%</span>
+                    </div>
+                </div></div>
+              <div class="swiper-slide">
+        <div class="podvec">
+            <div class="novin">
+                <div class="novv">
+                    <span>Новинка</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+        </div>
+              <div class="swiper-slide">
+                
+        <div class="podvec">
+            <div class="novin">
+                <div class="novv">
+                    <span>Новинка</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+              <div class="swiper-slide">
+                
+        <div class="podvec">
+            <div class="novin">
+                <div class="novv">
+                    <span>Новинка</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+  </div>
+  <div class="posm">
+    <h1 style="font-size: 25px;">ХИТЫ  ПРОДАЖ</h1>
+    <span>ПОСМОТРЕТЬ ВСЕ</span>
+</div>
+  <div class="swiper mySwiper0">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">       
+<div class="podvec">
+    <div class="novin">
+       
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(6\).png');" class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Серьги 5-5953-106-2Б-Чбр Au 585</span>
+    <div class="skidok">
+        <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="podvec">
+            <div class="novin">
+               
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div style="background: url('./pages/oneproduct/image/image\ 2\ \(2\).png'); height: 300px;
+            background-size: cover;
+            background-position: center;
+            width: 93%;
+            margin: auto;
+            height: 184px;
+        " class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div></div>
+      <div class="swiper-slide">
+<div class="podvec">
+    <div class="novin">
+       
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(3\).png');
+     height: 300px;
+            background-size: cover;
+            background-position: center;
+            width: 93%;
+            margin: auto;
+            height: 184px;
+    " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Подвеска 5-2335-103-3Б Au 585</span>
+    <div class="skidok">
+        <h1>38 195 ₽ <del>76 390 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+</div>
+      <div class="swiper-slide">
+        
+<div class="podvec">
+    <div class="novin">
+        
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(4\).png');
+    height: 300px;
+           background-size: cover;
+           background-position: center;
+           width: 93%;
+           margin: auto;
+           height: 184px;
+   " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Кольцо 5-6709-200-1К-ОнкЧ Au 585</span>
+    <div class="skidok">
+        <h1>53 545 ₽ <del>107 090 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+        
+<div class="podvec">
+    <div class="novin">
+       
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(5\).png');
+    height: 300px;
+           background-size: cover;
+           background-position: center;
+           width: 93%;
+           margin: auto;
+           height: 184px;
+   " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Подвеска 5-6245-103-3Б-Тн Au 585</span>
+    <div class="skidok">
+        <h1>67 545 ₽ <del>135 090 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">       
+        <div class="podvec">
+            <div class="novin">
+                
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="podvec">
+                    <div class="novin">
+                      
+                        <div class="now">
+                            <span><p>🌷</p> SALE</span>
+                        </div>
+                    </div>
+                    <div class="podimg">
+                
+                    </div>
+                    <div class="linie"></div>
+                    <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+                    <div class="skidok">
+                        <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                        <span>50%</span>
+                    </div>
+                </div></div>
+              <div class="swiper-slide">
+        <div class="podvec">
+            <div class="novin">
+                
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+        </div>
+              <div class="swiper-slide">
+                
+        <div class="podvec">
+            <div class="novin">
+                
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+              <div class="swiper-slide">
+                
+        <div class="podvec">
+            <div class="novin">
+                
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+  </div>
+  <div class="posm">
+    <h1 style="font-size: 25px;">Рекомендации</h1>
+    <span>ПОСМОТРЕТЬ ВСЕ</span>
+</div>
+<div class="swiper mySwiper0">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">       
+<div class="podvec">
+    <div class="novin1">
+        <div class="novv1">
+            <span>СУПЕРСКИДКА</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Серьги 5-5953-106-2Б-Чбр Au 585</span>
+    <div class="skidok">
+        <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="podvec">
+            <div class="novin1">
+                <div class="novv1">
+                    <span>СУПЕРСКИДКА</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div style="background: url('./pages/oneproduct/image/image\ 2\ \(2\).png'); height: 300px;
+            background-size: cover;
+            background-position: center;
+            width: 93%;
+            margin: auto;
+            height: 184px;
+        " class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div></div>
+      <div class="swiper-slide">
+<div class="podvec">
+    <div class="novin1">
+        <div class="novv1">
+            <span>СУПЕРСКИДКА</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(3\).png');
+     height: 300px;
+            background-size: cover;
+            background-position: center;
+            width: 93%;
+            margin: auto;
+            height: 184px;
+    " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Подвеска 5-2335-103-3Б Au 585</span>
+    <div class="skidok">
+        <h1>38 195 ₽ <del>76 390 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+</div>
+      <div class="swiper-slide">
+        
+<div class="podvec">
+    <div class="novin1">
+        <div class="novv1">
+            <span>СУПЕРСКИДКА</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(4\).png');
+    height: 300px;
+           background-size: cover;
+           background-position: center;
+           width: 93%;
+           margin: auto;
+           height: 184px;
+   " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Кольцо 5-6709-200-1К-ОнкЧ Au 585</span>
+    <div class="skidok">
+        <h1>53 545 ₽ <del>107 090 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+        
+<div class="podvec">
+    <div class="novin1">
+        <div class="novv1">
+            <span>СУПЕРСКИДКА</span>
+        </div>
+        <div class="now">
+            <span><p>🌷</p> SALE</span>
+        </div>
+    </div>
+    <div style="background: url('./pages/oneproduct/image/image\ 2\ \(5\).png');
+    height: 300px;
+           background-size: cover;
+           background-position: center;
+           width: 93%;
+           margin: auto;
+           height: 184px;
+   " class="podimg">
+
+    </div>
+    <div class="linie"></div>
+    <span class="ser">Подвеска 5-6245-103-3Б-Тн Au 585</span>
+    <div class="skidok">
+        <h1>67 545 ₽ <del>135 090 ₽</del></h1>
+        <span>50%</span>
+    </div>
+</div>
+      </div>
+      <div class="swiper-slide">       
+        <div class="podvec">
+            <div class="novin1">
+                <div class="novv1">
+                    <span>СУПЕРСКИДКА</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="podvec">
+                    <div class="novin1">
+                        <div class="novv1">
+                            <span>СУПЕРСКИДКА</span>
+                        </div>
+                        <div class="now">
+                            <span><p>🌷</p> SALE</span>
+                        </div>
+                    </div>
+                    <div class="podimg">
+                
+                    </div>
+                    <div class="linie"></div>
+                    <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+                    <div class="skidok">
+                        <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                        <span>50%</span>
+                    </div>
+                </div></div>
+              <div class="swiper-slide">
+        <div class="podvec">
+            <div class="novin1">
+                <div class="novv1">
+                    <span>СУПЕРСКИДКА</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+        </div>
+              <div class="swiper-slide">
+                
+        <div class="podvec">
+            <div class="novin1">
+                <div class="novv1">
+                    <span>СУПЕРСКИДКА</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+              <div class="swiper-slide">
+                
+        <div class="podvec">
+            <div class="novin1">
+                <div class="novv1">
+                    <span>СУПЕРСКИДКА</span>
+                </div>
+                <div class="now">
+                    <span><p>🌷</p> SALE</span>
+                </div>
+            </div>
+            <div class="podimg">
+        
+            </div>
+            <div class="linie"></div>
+            <span class="ser">Серьги 5-6079-103-2К Au 585</span>
+            <div class="skidok">
+                <h1>25 995 ₽ <del>51 990 ₽</del></h1>
+                <span>50%</span>
+            </div>
+        </div>
+              </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+  </div>
+  <div class="sale0">
+    <div class="sale0_textt">
+        <h1>Подпишитесь на рассылку и получите <br> еще больше скидок от Almaz</h1>  
+        <div class="raw">
+        <input type="text" placeholder="Введите ваш email">
+        <img src="./pages/oneproduct/image/subscribe-button.svg fill.png" alt="">
+    </div>
+    </div>
+  <img class="raw_img" src="./pages/oneproduct/image/Frame 271.png" alt="">
+  </div>
+<div class="line_guarantee">
+<h2>ГАРАНТИИ КАЧЕСТВА</h2>
+</div>
+<div class="udobn">
+    <div class="rink">
+        <div class="rinic">
+      <center>  <img src="./pages/oneproduct/image/Layer_1.png" alt=""></center><br>
+            <span>15 лет на рынке</span>
+        </div>
+    </div>
+
+    <div class="rink">
+        <div class="rinic">
+      <center>  <img style="margin-bottom: 5px;" src="./pages/oneproduct/image/Layer_1 (1).png" alt=""></center><br>
+           <center> <span>50 проверенных поставщиков</span></center>
+        </div>
+    </div>
+    <div class="rink">
+        <div class="rinic">
+      <center>  <img style="margin-bottom: -4px;" src="./pages/oneproduct/image/Layer_1 (2).png" alt=""></center><br>
+           <center> <span style="margin-left: 7px;">Удобная примерка, возврат/обмен</span></center>
+        </div>
+    </div>
+    <div class="rink">
+        <div class="rinic">
+      <center>  <img style="    margin-bottom: 7px;" src="./pages/oneproduct/image/Layer_1 (3).png" alt=""></center><br>
+           <center> <span style="    margin-left: 6px;">Проба, бирка, УИН
+        </span></center>
+        </div>
+    </div>
+</div>  
+
+  <div class="kol_skid">
+  <div style="background: #FDD335;" class="skid_card bir">
+    <span>Кольца</span>
+    <img src="./pages/oneproduct/image/jeweler-cover-in 3.svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div>
+   <div class="skid_card1">
+    <span>Серьги</span>
+    <img  src="./pages/oneproduct/image/Group 24.svg" alt="">
+    <div class="pro1">
+      <h4>-50%</h4>
+    </div>
+  </div>
+  <div class="skid_card twskid">
+    <span>Помолвочные <br>
+      Кольца</span>
+    <img src="./pages/oneproduct/image/11-2 1.svg" alt="">
+    <div class="pro">
+      <h4>-50%</h4>
+    </div>
+  </div>
+ 
+  <div class="skid_card gr24">
+    <span>Подвески</span>
+    <img src="./pages/oneproduct/image/Group 24 (1).svg" alt="">
+    <div class="pro">
+      <h4>NEW</h4>
+    </div>
+  </div> 
+
+  <div class="skid_card cdff">
+    <span style="color: white;line-height: 24px;">Обручальные <br>
+      Кольца</span>
+    <img src="./pages/oneproduct/image/14cfa814b21c89b7e42111fcdffbb78a 1 (1).svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div> 
+  
+  <div class="skid_card defsvg">
+    <span>Цепи</span>
+    <img class="svg1" src="./pages/oneproduct/image/12200(1) 2.svg" alt="">
+    <img class="svg" src="./pages/oneproduct/image/66912bac7655cf75bae043d46e43edef 1.svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div> 
+  <div class="skid_card group_24">
+    <span  style="color: white;">Печатки</span>
+    <img class="img_28" src="./pages/oneproduct/image/image 28.svg" 
+    alt="">
+    <img class="img_29" src="./pages/oneproduct/image/image 29.svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div> 
+
+  <div class="skid_card koliye">
+    <span style="color: white;">Колье</span>
+    <img src="./pages/oneproduct/image/15796_c 1.svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div> 
+
+  <div style="background: #B46C9A;
+" class="skid_card twskid">
+    <span>Браслеты</span>
+    <img src="./pages/oneproduct/image/Group 24 (2).svg" alt="">
+    <div class="pro">
+      <h4>-50%</h4>
+    </div>
+  </div>
+    <div class="skid_card skid_brosh">
+    <span style="color: white;">Броши</span>
+    <img src="./pages/oneproduct/image/Group 24 (4).svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div>
+   <div class="skid_card skid_chas">
+    <span style="color: white;">Часы</span>
+    <img src="./pages/oneproduct/image/image 25.svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div> 
+ 
+  <div class="skid_card stolovoe">
+    <span style="color: white;line-height: 24px;">Столовое <br> серебро</span>
+    <img src="./pages/oneproduct/image/stolovoe-serebro 1.svg" alt="">
+    <div class="pro">
+      <h4>-60%</h4>
+    </div>
+  </div>    
+</div>  
+
+
+
+
+
+
+
+<div class="cards_for_swiper_media">
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+<div class="one_card_swip">
+  <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+  <div class="padicccc">
+    <span>Кольцо 5-6885-103И2-1К Au 585</span>
+    <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+    <div class="swiper mySwiper_12">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="header_main">
+                    <div class="text80">
+                     <img src="././pages/oneproduct/image/slider1.png
+                     " alt="">
+                    </div>
+                    <div class="img80"></div>
+                </div>
+
+
+
+
+              </div>
+              <div class="swiper-slide">
+                <div class="header_main">
+                    <div class="text80">
+                     <img src="././pages/oneproduct/image/slider1.png" alt="">
+                    </div>
+                    <div class="img80"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="header_main">
+                    <div class="text80">
+                     <img src="././pages/oneproduct/image/slider1.png " alt="">
+                    </div>
+                    <div class="img80"></div>
+                </div>
+              </div>
+             
+            
+            </div>
+            <div class="swiper-pagination"></div>
+          
+          </div> 
+
+
+
+          <div class="cards_for_swiper_media">
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            <div class="one_card_swip">
+              <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+              <div class="padicccc">
+                <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+              </div>
+            </div>
+            </div>
+            
+
+            <div class="swiper mySwiper_12">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="header_main">
+                      <div class="text80">
+                       <img src="././pages/oneproduct/image/slider1.png
+                       " alt="">
+                      </div>
+                      <div class="img80"></div>
+                  </div>
+  
+  
+  
+  
+                </div>
+                <div class="swiper-slide">
+                  <div class="header_main">
+                      <div class="text80">
+                       <img src="././pages/oneproduct/image/slider1.png" alt="">
+                      </div>
+                      <div class="img80"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="header_main">
+                      <div class="text80">
+                       <img src="././pages/oneproduct/image/slider1.png " alt="">
+                      </div>
+                      <div class="img80"></div>
+                  </div>
+                </div>
+               
+              
+              </div>
+              <div class="swiper-pagination"></div>
+            
+            </div> 
+
+
+            <div class="cards_for_swiper_media">
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/ringpoti-removebg-preview.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              <div class="one_card_swip">
+                <img src="./pages/oneproduct/image/Frame 518.png" alt="">
+                <div class="padicccc">
+                  <span>Кольцо 5-6885-103И2-1К Au 585</span>
+                  <h3>25 995 ₽ <del>51 990 ₽</del></h3>
+                </div>
+              </div>
+              </div>
+              <div class="swiper mySwiper_12">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="header_main">
+                      <div class="text80">
+                       <img src="././pages/oneproduct/image/slider1.png
+                       " alt="">
+                      </div>
+                      <div class="img80"></div>
+                  </div>
+  
+  
+  
+  
+                </div>
+                <div class="swiper-slide">
+                  <div class="header_main">
+                      <div class="text80">
+                       <img src="././pages/oneproduct/image/slider1.png" alt="">
+                      </div>
+                      <div class="img80"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="header_main">
+                      <div class="text80">
+                       <img src="././pages/oneproduct/image/slider1.png " alt="">
+                      </div>
+                      <div class="img80"></div>
+                  </div>
+                </div>
+               
+              
+              </div>
+              <div class="swiper-pagination"></div>
+            
+            </div>  
+ <footer class="footer_1">
+    <ul>
+      <h3>СКАЧАЙТЕ В</h3>
+      <div class="appl">
+        <img src="./pages/oneproduct/image/app-store-badge.svg.svg" alt=""><br>
+        <img src="./pages/oneproduct/image/rustore-badge.svg.svg" alt=""><br>
+        <img src="./pages/oneproduct/image/app-gallery-badge.svg fill.svg" alt="">
+      </div>
+    </ul>
+    <ul>
+      <h3>Покупателям</h3>
+      <h3 class="nomer12">+7 343 2664070</h3>
+      <span>Заказать обратный звонок</span>
+      <li>Как сделать заказ</li>
+      <li>Способы оплаты</li>
+      <li>Рассрочка</li>
+      <li>Доставка и оплата</li>
+      <li>Обмен и возврат</li>
+      <li>Подарочные сертификат</li>
+      <li>Скупка золота</li>
+    </ul>
+
+    <ul>
+      <h3>Каталог</h3>
+      <li>Кольца</li>
+      <li>Серьги</li>
+      <li>Подвески</li>
+      <li>Цепи</li>
+      <li>Браслеты</li>
+      <li>Колье</li>
+      <li>Прочее</li>
+      <li>Часы</li>
+    </ul>
+
+
+    <ul>
+      <h3>ALMAZ</h3>
+      <li>О компании </li>
+      <li>Карьера</li>
+      <li>Гарантия</li>
+      <li>Качество</li>
+      <li>Новости</li>
+      <li>Магазины</li>
+    </ul>
+
+    <ul>
+      <h3>Мы в соцсетях</h3>
+      <li><img src="./pages/oneproduct/image/VK.svg" alt=""> ВКонтакте</li>
+      <li><img src="./pages/oneproduct/image/Group 10.svg" alt="">Телеграм</li>
+      <li><img src="./pages/oneproduct/image/Youtube.svg" alt=""> YouTube</li>
+      <li><img src="./pages/oneproduct/image/OK.svg" alt=""> Одноклассники</li>
+
+    </ul>
+
+
+  </footer>
+  <center>
+    <p class="alm1">© 2024 ALMAZ</p>
+  </center>
+  <div class="footer2">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+            aria-expanded="true" aria-controls="collapseOne1">
+            Покупателям
+          </button>
+        </h2>
+        <div id="collapseOne1" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot2">
+              <h3>+7 343 2664070</h3>
+              <span>Заказать обратный звонок</span>
+              <li>Как сделать заказ</li>
+              <li>Способы оплаты</li>
+              <li>Рассрочка</li>
+              <li>Доставка и оплата</li>
+              <li>Обмен и возврат</li>
+              <li>Подарочные сертификат</li>
+              <li>Скупка золота</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+            Каталог
+          </button>
+        </h2>
+        <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot3">
+              <li>Кольца</li>
+              <li>Серьги</li>
+              <li>Подвески</li>
+              <li>Цепи</li>
+              <li>Браслеты</li>
+              <li>Колье</li>
+              <li>Прочее</li>
+              <li>Часы</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+            ALMAZ
+          </button>
+        </h2>
+        <div id="collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot4">
+              <li>О компании </li>
+              <li>Карьера</li>
+              <li>Гарантия</li>
+              <li>Качество</li>
+              <li>Новости</li>
+              <li>Магазины</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree14" aria-expanded="false" aria-controls="collapseThree14">
+            Мы в соцсетях
+          </button>
+        </h2>
+        <div id="collapseThree14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot5">
+              <h3 style="font-size: 20px;"></h3>
+              <li><img src="../pages/oneproduct/image/VK.png" alt=""> ВКонтакте</li>
+              <li><img src="../pages/oneproduct/image/Group 10.png" alt="">Телеграм</li>
+              <li><img src="../pages/oneproduct/image/Youtube.png" alt=""> YouTube</li>
+              <li><img src="../pages/oneproduct/image/OK.png" alt=""> Одноклассники</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="application">
+      <a href=""><img src="./pages/oneproduct/image/app-store-badge.svg.svg" alt=""></a>
+      <a href=""><img src="./pages/oneproduct/image/rustore-badge.svg.svg" alt=""></a>
+      <a href=""><img src="./pages/oneproduct/image/app-gallery-badge.svg fill.svg" alt=""></a>
+    </div>
+
+    <div class="footer_tool">
+      <div class="cas">
+        <img src="./pages/oneproduct/image/svgviewer-output (3) 1.svg" height="20px" alt="">
+        <p>Главная</p>
+      </div>
+      <div class="cas">
+        <img src="./pages/oneproduct/image/Vecto.svg" height="20px" alt="">
+        <p>Каталог</p>
+      </div>
+      <div class="cas">
+        <img src="./pages/oneproduct/image/Vector (3).svg" height="20px" alt="">
+        <p>Избранное</p>
+      </div>
+      <div class="cas">
+        <img src="./pages/oneproduct/image/Icon basket.svg" height="20px" alt="">
+        <p>Корзина</p>
+      </div>
+      <div class="cas">
+        <img src="./pages/oneproduct/image/svgviewer-output (7) 1.svg" height="20px" alt="">
+        <p>Профиль</p>
+      </div>
+    </div>
+    <center>
+      <p class="alm">© 2024 ALMAZ</p>
+    </center>
+
+  </div>
+
+
+  <div class="blackk">
+    <div class="routerclick">
+      <div class="routic">
+        <div class="closehead1">
+          <h3>Сортировка выдачи</h3>
+
+          <img onclick="document.querySelector('.blackk').style='display:none'" src="./image/cil_x.png" alt="">
+        </div>
+        <div class="closehead">
+          <span>По популярности</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="closehead">
+          <span>По новизне</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="closehead">
+          <span>По возрастанию цены</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="closehead">
+          <span>По убыванию цены</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="twobtn">
+          <button>Подробнее</button>
+          <button>Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="modall">
+          <div class="white">
+            <div class="white_ic">
+              <div class="tovarr">
+               <div class="carttov">
+                <h2>Товар добавлен в корзину</h2>
+                <div class="hrf">
+                 <span>Товар добавлен в корзину</span>
+                  <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+                </div>
+               </div>
+               <div class="plusminus">
+                <div class="imageu">
+    <img src="./pages/oneproduct/image/5-2964-103-1Б 1.png" alt="">
+                </div>
+                <div class="titleimg">
+                 <div class="cen">
+                  <h3>Кольцо 5-1182-103-1Б Au 585</h3>
+                  <p>Размер: 16.5</p>
+                 </div>
+                </div>
+    
+                <div class="gap"></div>
+    
+    
+                <div class="plmin">
+                  <div class="btnplu">
+                    <div class="min"><p><i class='bx bx-minus' ></i></p></div>
+                    <span>1</span>
+                    <div class="min"><p>+</p></div>
+                  </div>
+    
+                </div>
+                <div class="pricc">
+                  <div class="delp">
+                  <h3>33 095 ₽</h3>
+                    <del>77 862 ₽</del>
+                  </div>
+                </div>
+               </div>
+    
+               <div class="rekom">
+                <h2>Рекомендации для вас</h2>
+    
+                <div class="uzucard">
+                  <div class="carduz">
+                   <div class="ringimg">
+                    <i class='bx bx-heart'></i>
+                    <img src="./pages/oneproduct/image/5-2964-103-1Б 1 (1).png" alt="">
+                   </div>
+                    <div class="ringtex">
+                      <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                      <h2>108 590 ₽ / шт  </h2>
+                      <del>158 680 ₽</del>
+                    </div>
+                  </div>
+    
+                  <div class="carduz">
+                    <div class="ringimg">
+                      <i class='bx bx-heart'></i>
+                     <img src="./pages/oneproduct/image/5-2964-103-1Б 1 (2).png" alt="">
+                    </div>
+                     <div class="ringtex">
+                       <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                       <h2>108 590 ₽ / шт  </h2>
+                       <del>158 680 ₽</del>
+                     </div>
+                   </div>
+    
+    
+                   <div class="carduz">
+                    <div class="ringimg">
+                      <i class='bx bx-heart'></i>
+                     <img src="./pages/oneproduct/image/5-2964-103-1Б 1 (3).png" alt="">
+                    </div>
+                     <div class="ringtex">
+                       <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                       <h2>108 590 ₽ / шт  </h2>
+                       <del>158 680 ₽</del>
+                     </div>
+                   </div>
+                  
+                </div>
+               
+               </div>
+              </div>
+            </div>
+             <div class="oformit">
+             <div class="pokupka">
+              <button onclick="document.querySelector('.modal22').style='display:block'
+              document.querySelector('.white').style='display:none'
+              " class="grey"> Продолжить покупки</button>
+              <button onclick="document.querySelector('.modal22').style='display:block'
+              document.querySelector('.white').style='display:none'
+              "  class="yellow">Оформить заказ</button>
+             </div>
+                </div>
+          </div>
+    
+          <div class="modal22">
+          <div class="modal2_ic">
+            <div class="carttov1">
+              <h2>Заказ в один клик</h2>
+              <div class="hrf">
+                <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+              </div>
+             </div>
+             <div class="oplata">
+              <div class="oplimg">
+                <img src="./pages/oneproduct/image/5-2964-103-1Б 1 (4).png" alt="">
+              </div>
+              <div class="opltext">
+                <div class="ic">
+                  <h2>Кольцо 5-1182-103-1Б Au 585</h2>
+                  <span>Размер: 16.5</span>
+                </div>
+              </div>
+              <div class="oplprice">
+                <div class="pric">
+                  <h2>13 597  ₽</h2>
+                  <p>Итого л оплате  13 597</p>
+                </div>
+              </div>
+             </div>
+    
+    
+    
+    
+             <div class="e-mail">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Ваш e-mail">
+              <input type="text" placeholder="+7">
+              <input type="text" placeholder="Доставка">
+             </div>
+            
+          </div>
+          <div class="kupit">
+              <button>Купит</button>
+          </div>
+          </div>
+        </div>
+      
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper7", {
+       pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+ 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper0", {
+      slidesPerView: 5,
+      spaceBetween: 21,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        124: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },      
+           // Breakpoint settings
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 18,
+    },
+    1400: {
+      slidesPerView: 5,
+      spaceBetween: 21,
+    },
+    },
+
+    });
+    var swiperBreakpoints = {
+   
+    // Breakpoint settings
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 18,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 21,
+    },
+  };
+  </script>
+  <script>
+    
+    // breakpoints: {
+    //     600: {
+    //         // When the window width is 600 or more
+    //         slidesPerView: 2
+    //     },
+    // },
+
+    var swiper = new Swiper(".mySwiper_12", {
+       pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+  
+    });
+  </script>
+
+</body>
+</html>

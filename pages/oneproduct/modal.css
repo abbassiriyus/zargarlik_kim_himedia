@@ -1,0 +1,476 @@
+.modall{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 12212;
+    align-items: center;
+    display: none;
+
+}
+.white{
+    width: 90%;
+    max-width: 1174px;
+    border-radius: 10px;
+    height:734px ;
+    background-color: white;
+}
+.white_ic{
+    padding: 30px;
+}
+.carttov{
+    display: flex;
+    justify-content: space-between;
+}
+.carttov h2{
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+text-align: left;
+
+}
+.hrf{
+    display: flex;
+    gap: 14px;
+    margin-top: 3px;
+}
+.hrf span{
+    color: grey;
+    text-decoration: underline;
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+text-decoration: underline;
+
+}
+.hrf .bx-x{
+    font-size: 24px;
+    position: relative;
+    top: -4px;
+}
+
+.plusminus{
+    display: grid;
+    grid-template-columns:180px 260px 200px 180px 1fr;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 150px;
+    box-shadow: 0px 0px 22px 0px #0000001A;
+
+}
+.imageu{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titleimg{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.gap{
+    width: 100%;
+    /* background-color: rgb(93, 245, 245); */
+}
+
+.pricc{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.titleimg h3{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 24.38px;
+text-align: left;
+color: #363636;
+margin-bottom: 22px;
+
+}
+.titleimg p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #242424;
+margin-top: 10px;
+position: relative;
+top: -4px;
+}
+.plmin{
+    width: 100%;
+    /* background-color: rgb(160, 47, 47); */
+    justify-content: center;
+    display: flex;
+}
+.btnplu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.btnplu span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+text-decoration: none !important;
+
+}
+.min{
+    width:44px !important;
+height:44px !important;
+background: #F1F1F1;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 0px;
+border-radius: 8px;
+cursor: pointer;
+}
+.min p{
+font-size:35px;
+/* line-height: 0px; */
+
+padding: 0px;
+margin: 0px;
+}
+.min p .bx-minus{
+    font-size: 29px;
+}
+.min:hover{
+    background-color: #242424;
+    color: white;
+}
+.pricc{
+    margin-right: 20px;
+    padding-right: 18px;
+    margin-top: -8px;
+}
+.pricc h3{
+    color: #0BAE45;
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 34.13px;
+text-align: left;
+}
+.delp del{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.5px;
+text-align: left;
+color: #8B8B8B;
+position: relative;
+top: 10px;
+}
+.delp{
+    color: #8B8B8B;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    
+}
+.rekom h2{
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+text-align: left;
+color: #000000;
+
+}
+.rekom{
+    margin-top: 62px;
+}
+.uzucard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 32px;
+    min-height: 230px;
+    gap: 61px;
+}
+.ringimg img{
+    /* background: url('./image/5-2964-103-1Б\ 1\ \(1\).png')no-repeat; */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* height: 130px;/ */
+}
+.carduz{
+    /* background-color: #0BAE45; */
+    width: 100%;
+    height: 150px;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 150px 1fr;
+}
+.carduz:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.ringtex{
+    padding:15px;
+    position: relative;
+}
+.ringimg{
+    position: relative;
+}
+.ringimg .bx-heart{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    font-size: 23px;
+    border: 1px solid #ECECEC;
+    color: #C1C1C1;
+    padding: 3px;
+    z-index: 123;
+    font-weight: 100 !important;
+cursor: pointer;
+} 
+.ringtex span{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+text-align: left;
+color: #363636;
+text-decoration: none !important;
+}
+.ringtex h2{
+    font-family: Montserrat;
+font-size: 20px;
+margin-top: 13px;
+font-weight: 700;
+line-height: 24.38px;
+text-align: left;
+
+}
+.ringtex del{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+text-align: left;
+color: #DE6060;
+
+}
+
+.oformit{
+    width: 100%;
+    box-shadow: 0px -1px 15.3px 0px #0000001A;
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grey{
+    width:  543px;
+height:44px;
+padding: 12px 82px 12px 82px;
+border-radius: 8px  ;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+border: 1px solid #242424;
+color: #242424;
+}
+.grey:hover{
+    background-color: #36363642;
+}
+.pokupka{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.yellow{
+    width:543px;
+height:44px;
+background: #FFF957;
+border: none;
+padding: 12px 82px 12px 82px;
+gap: 30px;
+border-radius: 8px;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+color: #242424;
+
+}
+.yellow:hover{
+    background-color: #e0db4b;
+}
+.modal22{
+    max-width: 886px;
+    width: 100%;
+    height: 627px;
+    background-color: white;
+    border-radius: 12px;
+    display: none;
+}
+.modal2_ic{
+    padding: 30px;
+    
+}
+.carttov1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carttov1 h2{
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+text-align: left;
+
+}
+.oplata{
+    display: grid;
+    grid-template-columns: 155px 1fr 1fr;
+    height: 134px;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 0px 22px 0px #0000001A;
+    margin-top: 30px;
+}
+.oplprice{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.opltext{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.oplimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.oplimg img{
+    width: 96%;
+    margin: auto;
+    height: 100px;
+    border-radius: 10px;
+}
+.ic{
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.ic span{
+    position: relative;
+    top: 7px;
+text-decoration: none !important;
+
+}
+.ic h2{
+    font-family: Montserrat;
+font-size: 20px;
+
+font-weight: 500;
+line-height: 24.38px;
+/* text-align: left; */
+color: #363636;
+
+}
+.pric{
+margin-right: 15px;
+}
+.pric h2{ 
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 34.13px;
+color: #0BAE45;
+text-align: right;
+
+}
+.pric p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+color: #8B8B8B;
+position: relative;
+top: 8px;
+}
+.e-mail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+    gap: 24px;
+    height:190px;
+}
+.e-mail input{
+    background: #F5F5F5;
+    width: 390px;
+    border: none;
+    height: 66px;
+    padding-left: 20px;
+    border-radius: 8px;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+
+}
+.kupit button:hover{
+    background-color: #e0db4b;
+
+}
+.kupit{
+    height: 114px;
+    width: 100%;
+    box-shadow: 0px -1px 15.3px 0px #0000001A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kupit button{
+    width: 830px;
+height: 56px;
+padding: 12px 82px 12px 82px;
+gap: 30px;
+border-radius: 8px  ;
+background: #FFF957;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+color: #242424;
+border: none;
+opacity: 0px;
+
+}

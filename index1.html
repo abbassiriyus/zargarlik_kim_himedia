@@ -1,0 +1,2664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style1.css">
+  <link rel="stylesheet" href="./pages/oneproduct/oneproduct.css"> <link rel="stylesheet" href="./pages/oneproduct/main.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="filter_page">
+    <div class="title3"><i style="cursor: pointer;"
+        onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'"
+        class='bx bx-x'></i>
+      <h3>Фильтры</h3> <a href="">Сбросить</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Поиск по фильтрам">
+      <i class='bx bx-search'></i>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Раздел</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>Ювелирные украшения</button>
+      <button>Серьги</button>
+      <button>Ювелирные украшения</button>
+      <button>Кольца</button>
+      <button>Браслеты</button>
+      <button>Подвески</button>
+      <button>Ещё +32</button>
+    </div>
+    <hr>
+    <div class="sliders_control1">
+      <div class="title2">
+        <h2>Цена</h2>
+      </div>
+      <style>
+        .range_container {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin: 10px auto;
+          margin-top: 27px !important;
+        }
+
+        .sliders_control {
+          position: relative;
+          min-height: 50px;
+        }
+
+        .range_container .form_control {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          font-size: 24px;
+          color: #635a5a;
+          margin-bottom: 20px;
+        }
+
+        .range_container input[type=range]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          pointer-events: all;
+          width: 20px;
+          height: 20px;
+          background-color: #fff;
+          border-radius: 50%;
+          box-shadow: 0 0 0 2px #257AE8;
+          cursor: pointer;
+        }
+
+        .form_control_container {
+          display: flex;
+          gap: 10px;
+          width: 47%;
+          margin-top: -20px;
+          align-items: center;
+          font-size: 12px;
+          border: 1px solid grey;
+          border-radius: 8px;
+          padding-left: 10px;
+        }
+
+        .range_container input[type=range]::-moz-range-thumb {
+          -webkit-appearance: none;
+          pointer-events: all;
+          width: 24px;
+          height: 24px;
+          background-color: #fff;
+          border-radius: 50%;
+          box-shadow: 0 0 0 1px #2E8AE6;
+          cursor: pointer;
+
+        }
+
+        .range_container input[type=range]::-webkit-slider-thumb:hover {
+          background: #f7f7f7;
+
+        }
+
+        .range_container input[type=range]::-webkit-slider-thumb:active {
+          box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+          -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+
+        }
+
+        .range_container input[type="number"] {
+          color: black;
+          width: 50px;
+          height: 30px;
+          font-size: 12px;
+          border: none;
+          outline: none;
+        }
+
+        .range_container input[type="number"]::placeholder {
+          color: red !important;
+          width: 50px;
+          height: 30px;
+          font-size: 12px;
+          border: none;
+          outline: none;
+        }
+
+        .range_container input[type=number]::-webkit-inner-spin-button,
+        .range_container input[type=number]::-webkit-outer-spin-button {
+          opacity: 1;
+          outline: none;
+          color: black;
+        }
+
+        .range_container input[type="range"] {
+          -webkit-appearance: none;
+          appearance: none;
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          background-color: #C6C6C6;
+          pointer-events: none;
+        }
+
+        .range_container #fromSlider {
+          height: 0;
+          z-index: 1;
+        }
+      </style>
+      <div class="range_container">
+        <div class="sliders_control">
+          <input id="fromSlider" type="range" value="10" min="0" max="2747250" />
+          <input id="toSlider" type="range" value="30" min="0" max="2747250" />
+        </div>
+        <div class="form_control">
+          <div class="form_control_container">
+            <div class="form_control_container__time">от</div>
+            <input class="form_control_container__time__input" type="number" id="fromInput" value="540" min="0"
+              max="540" />
+          </div>
+          <div class="form_control_container">
+            <div class="form_control_container__time">до</div>
+            <input class="form_control_container__time__input" type="number" id="toInput" value="2747250" min="0"
+              max="100" />
+          </div>
+        </div>
+      </div>
+      <script>
+        function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+          const [from, to] = getParsed(fromInput, toInput);
+          fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+          if (from > to) {
+            fromSlider.value = to;
+            fromInput.value = to;
+          } else {
+            fromSlider.value = from;
+          }
+        }
+
+        function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+          const [from, to] = getParsed(fromInput, toInput);
+          fillSlider(fromInput, toInput, '#C6C6C6', '#2E8AE6', controlSlider);
+          setToggleAccessible(toInput);
+          if (from <= to) {
+            toSlider.value = to;
+            toInput.value = to;
+          } else {
+            toInput.value = from;
+          }
+        }
+
+        function controlFromSlider(fromSlider, toSlider, fromInput) {
+          const [from, to] = getParsed(fromSlider, toSlider);
+          fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+          if (from > to) {
+            fromSlider.value = to;
+            fromInput.value = to;
+          } else {
+            fromInput.value = from;
+          }
+        }
+
+        function controlToSlider(fromSlider, toSlider, toInput) {
+          const [from, to] = getParsed(fromSlider, toSlider);
+          fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+          setToggleAccessible(toSlider);
+          if (from <= to) {
+            toSlider.value = to;
+            toInput.value = to;
+          } else {
+            toInput.value = from;
+            toSlider.value = from;
+          }
+        }
+
+        function getParsed(currentFrom, currentTo) {
+          const from = parseInt(currentFrom.value, 10);
+          const to = parseInt(currentTo.value, 10);
+          return [from, to];
+        }
+
+        function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+          const rangeDistance = to.max - to.min;
+          const fromPosition = from.value - to.min;
+          const toPosition = to.value - to.min;
+          controlSlider.style.background = `linear-gradient(
+  to right,
+  ${sliderColor} 0%,
+  ${sliderColor} ${(fromPosition) / (rangeDistance) * 100}%,
+  ${rangeColor} ${((fromPosition) / (rangeDistance)) * 100}%,
+  ${rangeColor} ${(toPosition) / (rangeDistance) * 100}%, 
+  ${sliderColor} ${(toPosition) / (rangeDistance) * 100}%, 
+  ${sliderColor} 100%)`;
+        }
+
+        function setToggleAccessible(currentTarget) {
+          const toSlider = document.querySelector('.range_container #toSlider');
+          if (Number(currentTarget.value) <= 0) {
+            toSlider.style.zIndex = 2;
+          } else {
+            toSlider.style.zIndex = 0;
+          }
+        }
+
+        const fromSlider = document.querySelector('.range_container #fromSlider');
+        const toSlider = document.querySelector('.range_container #toSlider');
+        const fromInput = document.querySelector('.range_container #fromInput');
+        const toInput = document.querySelector('.range_container #toInput');
+        fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider);
+        setToggleAccessible(toSlider);
+
+        fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+        toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+        fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+        toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+
+      </script>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Сроки доставки</h2>
+
+    </div>
+    <div class="razdel1">
+      <button>Неважно</button>
+      <button>В течение 3 часов</button>
+      <button>Забрать в магазине <i class='bx bx-error-circle'></i></button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Спецпредложения</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>ШОК-цена</button>
+      <button>WOW-БРИЛЛИАНТ</button>
+      <button>Украшения с бриллиантами GIA</button>
+      <button>Скидка –55%</button>
+      <button>Скидка –70%</button>
+      <button>Ещё +3</button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Вставка</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>Без вставок</button>
+      <button>Бриллиант (природный) <i class='bx bx-error-circle'></i></button>
+      <button>Бриллиант выращенный<i class='bx bx-error-circle'></i></button>
+      <button>Коньячный бриллиант<i class='bx bx-error-circle'></i></button>
+      <button>Черный бриллиант<i class='bx bx-error-circle'></i></button>
+      <button>Ещё +56</button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Вес в каратах</h2>
+
+    </div>
+    <div class="razdel1">
+      <button>Для всех</button>
+      <button>Для детей</button>
+      <button>Для женщин</button>
+      <button>Для мужчин</button>
+      <button>Унисекс</button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Вес в каратах</h2>
+    </div>
+    <div class="razdel1">
+      <button>От 0 до 0.2 карат</button>
+      <button>От 0.2 до 0.5 карат</button>
+      <button>От 0.5 до 1 карат</button>
+      <button>От 1 до 2 карат</button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Цвет вставки</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1 colors">
+      <button style="background: #52DF21;
+"></button>
+      <button style="
+background: #242424;
+"></button>
+      <button style="
+background: 
+#F31A1A;
+"></button>
+      <button style="
+background: 
+#0057FF;
+"></button>
+      <button style="
+background: 
+#FFFFFF;
+"></button>
+      <button class="mm"> Ещё +7</button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Тип огранки</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>Антик</button>
+      <button>Багет</button>
+      <button>Груша</button>
+      <button>Квадрат</button>
+      <button>Круг</button>
+      <button>Ещё +10</button>
+
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Количество камней</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>Без камней</button>
+      <button>1 камень</button>
+      <button>2 камня</button>
+      <button>3 камня</button>
+      <button>4 камня</button>
+      <button>Ещё +4</button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Сертификат</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>Сертификат GIA <i class='bx bx-error-circle'></i></button>
+
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Проба</h2><a></a>
+    </div>
+    <div class="razdel1">
+      <button>375</button>
+      <button>585</button>
+      <button>750</button>
+      <button>925</button>
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Средний вес</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>до 0,5 грамм</button>
+      <button>0.5 - 1 грамм</button>
+      <button>1 - 2 грамма</button>
+      <button>2 - 3 грамма</button>
+      <button> 3 - 4 грамма</button>
+      <button>Ещё +6</button>
+
+
+    </div>
+    <hr>
+    <div class="title2">
+      <h2>Коллекция</h2>
+      <a href="">Смотреть все</a>
+    </div>
+    <div class="razdel1">
+      <button>TrendBook SS 2024</button>
+      <button>0.5 - 1 грамм</button>
+      <button>1 - 2 грамма</button>
+      <button>2 - 3 грамма</button>
+      <button>3 - 4 грамма</button>
+      <button>Ещё +6</button>
+
+    </div>
+    <hr>
+  </div>
+
+  <div class="navbasrr">
+    <div class="reklama">
+      <div class="reklama1">
+        <div class="pust"></div>
+        <div class="pust"></div>
+
+        <div style="display: flex;gap:32px;justify-content: center;align-items: center;margin-left: -30px;">
+          <h2>WEEKEND SALE* ЕЩЁ -25% К СКИДКЕ 60% | 100% КЕШБЭК</h2><button>ТОЛЬКО 3 ДНЯ</button>
+        </div>
+        <i onclick="document.querySelector('.reklama').style='display:none' "
+          style="margin: auto;margin-right: 5px;font-size: 21px;" class='bx bx-x'></i>
+      </div>
+    </div>
+
+    <nav class="nav1">
+      <div style="margin-top: 20px;" class="navbar1">
+        <ul class="hovg">
+         
+          <a href="./pages/oneproduct/map.html"> <li >Магазины</li></a>
+          <li>Доставка и оплата</li>
+          <li>Скупка и обмен</li>
+          <li><i class='bx bx-map-pin'></i> Выбор города</li>
+        </ul>
+        <div class="logo">
+          <a href="./index.html"> <img  src="../../image/Group 3.svg" alt=""></a>
+        </div>
+        <ul class="ulsp">
+          <li class="num7">+7 343 2664070</li>
+          <li class="iconlink">
+            <div class="icons"><img src="./image/Vector (1).svg" alt="">
+              <div class="number">12</div>
+            </div><span>Избранное</span>
+          </li>
+          <li class="iconlink">
+            <div class="icons"><img src="./image/icon_basket 1.svg" alt="">
+              <div class="number">12</div>
+            </div> <span>Корзина</span>
+          </li>
+          <li class="iconlink">
+            <div class="icons"><img src="./image/Vector (2).svg
+            " alt=""> </div><span>Войти </span>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar_but">
+        <button><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.33325 3.99668C1.33325 3.63001 1.63059 3.33334 1.99659 3.33334H7.33659C7.51251 3.33334 7.68123 3.40323 7.80563 3.52763C7.93003 3.65203 7.99992 3.82075 7.99992 3.99668C7.99992 4.1726 7.93003 4.34133 7.80563 4.46572C7.68123 4.59012 7.51251 4.66001 7.33659 4.66001H1.99659C1.82066 4.66001 1.65194 4.59012 1.52754 4.46572C1.40314 4.34133 1.33325 4.1726 1.33325 3.99668ZM1.33325 8.00001C1.33325 7.63334 1.63059 7.33668 1.99659 7.33668H14.0033C14.1792 7.33668 14.3479 7.40656 14.4723 7.53096C14.5967 7.65536 14.6666 7.82408 14.6666 8.00001C14.6666 8.17594 14.5967 8.34466 14.4723 8.46906C14.3479 8.59346 14.1792 8.66334 14.0033 8.66334H1.99659C1.82066 8.66334 1.65194 8.59346 1.52754 8.46906C1.40314 8.34466 1.33325 8.17594 1.33325 8.00001ZM1.99659 11.34C1.82066 11.34 1.65194 11.4099 1.52754 11.5343C1.40314 11.6587 1.33325 11.8274 1.33325 12.0033C1.33325 12.1793 1.40314 12.348 1.52754 12.4724C1.65194 12.5968 1.82066 12.6667 1.99659 12.6667H10.0033C10.1792 12.6667 10.3479 12.5968 10.4723 12.4724C10.5967 12.348 10.6666 12.1793 10.6666 12.0033C10.6666 11.8274 10.5967 11.6587 10.4723 11.5343C10.3479 11.4099 10.1792 11.34 10.0033 11.34H1.99659Z"
+              fill="white" />
+          </svg> <span>Каталог</span></button>
+        <div class="kol">
+          <h4>КОЛЛЕКЦИИ</h4><img style="width: 40px;transform: rotate(36.24deg);"
+            src="./image/Screenshot_from_2024-05-30_20-21-27-removebg-preview.png" alt="">
+        </div>
+        <div class="search_inp">
+          <i class='bx bx-search'></i>
+          <input placeholder="Поиск по каталогу" type="text">
+          <img src="./image/SV2G.png" alt="">
+        </div>
+        <div class="kol">
+          <h4>PREMIUM</h4>
+          <img style="width: 40px;transform: rotate(36.24deg);"
+            src="./image/Screenshot_from_2024-05-30_20-23-13-removebg-preview.png" alt="">
+        </div>
+        <h4 class="aksiya">Акции</h4>
+        <h4 class="aksiya1">Рассрочки и кредит</h4>
+      </div>
+    </nav>
+    <nav class="nav2">
+      <div class="one">
+        <div class="ssss">
+          <a class="contact" href="">
+            <i class='bx bxs-phone'></i>
+            <div>
+              <h2>8 800 333 55 70</h2>
+              <p>Обратный звонок</p>
+            </div>
+          </a>
+          <div></div>
+          <div></div>
+          <div></div>
+
+          <a class="map_link" href=""><i class='bx bx-map-pin'></i>
+            <p>Выбор города</p>
+          </a>
+        </div>
+      </div>
+      <div class="two">
+        <div class="logo"><img src="./image/Group 3.svg" alt="3"></div>
+        <button
+          onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
+            src="./image/Vector78.svg" alt=""> Фильтры</button>
+
+      </div>
+
+
+      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
+        <p>По популярности <i class='bx bx-chevron-right'></i></p>
+      </div>
+      <main class="pagerout">
+        <img src="./image/Link → SVG.svg" alt="">
+        <i class='bx bxs-chevron-right'></i>
+        <span>Ювелирные украшения</span>
+        <i class='bx bxs-chevron-right'></i>
+        <span style="color: black;">Кольца</span>
+      </main>
+
+    </nav>
+  </div>
+  <div class="blackk">
+    <div class="routerclick">
+      <div class="routic">
+        <div class="closehead1">
+          <h3>Сортировка выдачи</h3>
+
+          <img onclick="document.querySelector('.blackk').style='display:none'" src="./image/cil_x.png" alt="">
+        </div>
+        <div class="closehead">
+          <span>По популярности</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="closehead">
+          <span>По новизне</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="closehead">
+          <span>По возрастанию цены</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="closehead">
+          <span>По убыванию цены</span>
+          <input type="radio" name="abb" id="">
+        </div>
+        <div class="twobtn">
+          <button>Подробнее</button>
+          <button>Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="pagerout">
+    <img src="./image/Link → SVG.svg" alt="">
+    <i class='bx bxs-chevron-right'></i>
+    <span>Ювелирные украшения</span>
+    <i class='bx bxs-chevron-right'></i>
+    <span style="color: black;">Кольца</span>
+  </main>
+  <div class="page_road">
+    <img src="./image/Link → SVG.svg" alt="">
+    <i style="color:grey;" class='bx bxs-chevron-right'></i> <span style="color:grey;">Ювелирные украшения</span><i
+      style="color: grey;" class='bx bxs-chevron-right'></i><span>Кольца</span>
+  </div>
+
+  <div class="titlepage">
+    <h1>Кольца</h1><span>10 412 изделия</span>
+  </div>
+  <div class="frame">
+    <img class="img12" src="./image/Screenshot_from_2024-05-30_20-28-41-removebg-preview.png" alt="">
+    <img class="img21" src="./image/Screenshot_from_2024-05-30_20-28-22-removebg-preview.png" alt="">
+    <h2><strong>СКИДКА НА </strong><br>обручальные кольца!</h2>
+  </div>
+  <div class="body">
+    <div class="almaz">
+      <div class="accorin">
+        <div class="input_search">
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Поиск по фильтрам">
+        </div>
+      </div>
+      <div class="filter">
+
+        <div class="page">
+          <h3>Ювелирные украшения <span>10 412 изделия</span></h3>
+
+        </div>
+        <div class="location1 loc2">
+          <div class="local1">
+            <img src="../image/SVG.png" alt="">
+            <span>Наличие в магазинах</span>
+          </div>
+        </div>
+        <div class="filt1">
+          <div class="pechat">
+            <h3>Обручальные</h3>
+          </div>
+          <div class="pechat">
+            <h3>Помолвочные</h3>
+          </div>
+          <div class="pechat">
+            <h3>Печатки</h3>
+          </div>
+          <div class="pechat">
+            <h3>Золото</h3>
+          </div>
+          <div class="pechat">
+            <h3>Серебро</h3>
+          </div>
+          <div class="pechat">
+            <h3>Сталь</h3>
+          </div>
+          <div class="pechat1">
+            <i class='bx bx-dots-vertical-rounded'></i>
+          </div>
+
+        </div>
+        <div class="filt2">
+          <h4 style="color: grey;">Раздел:</h4>
+          <div class="ukr">
+            <h4>Ювелирные украшения</h4>
+            <i class='bx bx-x'></i>
+
+          </div>
+          <div class="ukr">
+            <h4>Кольца</h4><i class='bx bx-x'></i>
+          </div>
+          <h4 style="color: #257AE8;">Очистить фильтр</h4>
+        </div>
+        <div class="filt3">
+          <select class="popular" name="" id="">
+            <option value="">По популярности</option>
+            <option value="">По новизне</option>
+            <option value="">По возрастанию цены</option>
+            <option value="">По убыванию цены</option>
+          </select>
+          <div class="location1">
+            <div class="local1">
+              <img style="height: 21px;" src="./image/Group.svg" alt="">
+              <span>Наличие в магазинах</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="body_ichi">
+      <div class="accor accordion">
+        <div class="razdel accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne12" aria-expanded="true"
+            aria-controls="collapseOne12" class="raz accordion-button">
+            <h3>РАЗДЕЛ</h3>
+          </div>
+          <div class="razdel2 accordion-collapse collapse show" id="collapseOne12" data-bs-parent="#accordionExample">
+            <div data-bs-toggle="collapse" data-bs-target="#collapseOne13" aria-expanded="true"
+              aria-controls="collapseOne13" class="radl accordion-button">
+              Ювелирные украшения
+            </div>
+            <div id="collapseOne13" class="accordion-collapse collapse  clk" data-bs-parent="#accordionExample">
+              <div class="clock">
+                <h3>Серьги</h3>
+              </div>
+              <div class="clock">
+                <h3>Браслеты</h3>
+              </div>
+              <div class="clock">
+                <h3>Кольца</h3>
+              </div>
+              <div class="clock">
+                <h3>Подвески</h3>
+              </div>
+              <div class="clock">
+                <h3>Шармы</h3>
+              </div>
+              <div data-aos="zoom-in" class="clock">
+                <h3>Цепи</h3>
+              </div>
+              <div class="clock">
+                <h3>Броши</h3>
+              </div>
+              <div class="clock">
+                <h3>Колье</h3>
+              </div>
+              <div class="clock">
+                <h3>Пирсинг</h3>
+              </div>
+              <div class="clock">
+                <h3>Запонки</h3>
+              </div>
+              <div class="clock">
+                <h3>Сувенирная продукция</h3>
+              </div>
+              <div class="clock">
+                <h3>Брелоки</h3>
+              </div>
+              <div class="clock">
+                <h3>Зажимы для галстука</h3>
+              </div>
+              <div class="clock">
+                <h3>Заколки</h3>
+              </div>
+            </div>
+          </div>
+          <div class="razdel2 accordion-collapse collapse  show" id="collapseOne12" data-bs-parent="#accordionExample">
+            <div data-bs-toggle="collapse" data-bs-target="#collapseOne14" aria-expanded="true"
+              aria-controls="collapseOne14" class="radl accordion-button">
+              Часы и аксессуары
+            </div>
+            <div id="collapseOne14" class="accordion-collapse collapse clk" data-bs-parent="#accordionExample">
+              <div class="clock">
+                <h3>Серьги</h3>
+              </div>
+              <div class="clock">
+                <h3>Браслеты</h3>
+              </div>
+              <div class="clock">
+                <h3>Подвески</h3>
+              </div>
+              <div class="clock">
+                <h3>Шармы</h3>
+              </div>
+              <div data-aos="zoom-in" class="clock">
+                <h3>Цепи</h3>
+              </div>
+              <div class="clock">
+                <h3>Броши</h3>
+              </div>
+              <div class="clock">
+                <h3>Колье</h3>
+              </div>
+              <div class="clock">
+                <h3>Пирсинг</h3>
+              </div>
+              <div class="clock">
+                <h3>Запонки</h3>
+              </div>
+              <div class="clock">
+                <h3>Сувенирная продукция</h3>
+              </div>
+              <div class="clock">
+                <h3>Брелоки</h3>
+              </div>
+              <div class="clock">
+                <h3>Зажимы для галстука</h3>
+              </div>
+              <div class="clock">
+                <h3>Заколки</h3>
+              </div>
+            </div>
+          </div>
+          <div class="razdel2 accordion-collapse collapse  show" id="collapseOne12" data-bs-parent="#accordionExample">
+            <div data-bs-toggle="collapse" data-bs-target="#collapseOne15" aria-expanded="true"
+              aria-controls="collapseOne15" class="radl accordion-button">
+              Столовое серебро
+            </div>
+            <div id="collapseOne15" class="accordion-collapse collapse clk" data-bs-parent="#accordionExample">
+              <div class="clock">
+                <h3>Серьги</h3>
+              </div>
+              <div class="clock">
+                <h3>Браслеты</h3>
+              </div>
+              <div class="clock">
+                <h3>Подвески</h3>
+              </div>
+              <div class="clock">
+                <h3>Шармы</h3>
+              </div>
+              <div data-aos="zoom-in" class="clock">
+                <h3>Цепи</h3>
+              </div>
+              <div class="clock">
+                <h3>Броши</h3>
+              </div>
+              <div class="clock">
+                <h3>Колье</h3>
+              </div>
+              <div class="clock">
+                <h3>Пирсинг</h3>
+              </div>
+              <div class="clock">
+                <h3>Запонки</h3>
+              </div>
+              <div class="clock">
+                <h3>Сувенирная продукция</h3>
+              </div>
+              <div class="clock">
+                <h3>Брелоки</h3>
+              </div>
+              <div class="clock">
+                <h3>Зажимы для галстука</h3>
+              </div>
+              <div class="clock">
+                <h3>Заколки</h3>
+              </div>
+            </div>
+          </div>
+          <div class="razdel2 accordion-collapse collapse show" id="collapseOne12" data-bs-parent="#accordionExample">
+            <div data-bs-toggle="collapse" data-bs-target="#collapseOne17" aria-expanded="true"
+              aria-controls="collapseOne17" class="radl accordion-button">
+              Сумки
+            </div>
+            <div id="collapseOne17" class="accordion-collapse collapse " data-bs-parent="#accordionExample" class="clk">
+              <div class="clock">
+                <h3>Серьги</h3>
+              </div>
+              <div class="clock">
+                <h3>Браслеты</h3>
+              </div>
+              <div class="clock">
+                <h3>Подвески</h3>
+              </div>
+              <div class="clock">
+                <h3>Шармы</h3>
+              </div>
+              <div data-aos="zoom-in" class="clock">
+                <h3>Цепи</h3>
+              </div>
+              <div class="clock">
+                <h3>Броши</h3>
+              </div>
+              <div class="clock">
+                <h3>Колье</h3>
+              </div>
+              <div class="clock">
+                <h3>Пирсинг</h3>
+              </div>
+              <div class="clock">
+                <h3>Запонки</h3>
+              </div>
+              <div class="clock">
+                <h3>Сувенирная продукция</h3>
+              </div>
+              <div class="clock">
+                <h3>Брелоки</h3>
+              </div>
+              <div class="clock">
+                <h3>Зажимы для галстука</h3>
+              </div>
+              <div class="clock">
+                <h3>Заколки</h3>
+              </div>
+            </div>
+          </div>
+          <div class="razdel2 accordion-collapse collapse show" id="collapseOne12" data-bs-parent="#accordionExample">
+            <div data-bs-toggle="collapse" data-bs-target="#collapseOne16" aria-expanded="true"
+              aria-controls="collapseOne16" class="radl accordion-button">
+              Косметика
+            </div>
+            <div id="collapseOne16" class="accordion-collapse collapse " data-bs-parent="#accordionExample" class="clk">
+              <div class="clock">
+                <h3>Серьги</h3>
+              </div>
+              <div class="clock">
+                <h3>Браслеты</h3>
+              </div>
+              <div class="clock">
+                <h3>Подвески</h3>
+              </div>
+              <div class="clock">
+                <h3>Шармы</h3>
+              </div>
+              <div data-aos="zoom-in" class="clock">
+                <h3>Цепи</h3>
+              </div>
+              <div class="clock">
+                <h3>Броши</h3>
+              </div>
+              <div class="clock">
+                <h3>Колье</h3>
+              </div>
+              <div class="clock">
+                <h3>Пирсинг</h3>
+              </div>
+              <div class="clock">
+                <h3>Запонки</h3>
+              </div>
+              <div class="clock">
+                <h3>Сувенирная продукция</h3>
+              </div>
+              <div class="clock">
+                <h3>Брелоки</h3>
+              </div>
+              <div class="clock">
+                <h3>Зажимы для галстука</h3>
+              </div>
+              <div class="clock">
+                <h3>Заколки</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne121" aria-expanded="true"
+            aria-controls="collapseOne121" class="raz accordion-button">
+            <h3>ЦЕНА</h3>
+          </div>
+
+
+          <style>
+            .range_container1 {
+              display: flex;
+              flex-direction: column;
+              width: 90%;
+              margin: 10px auto;
+              margin-top: 27px !important;
+            }
+
+            .sliders_control1 {
+              position: relative;
+              min-height: 50px;
+              margin-top: 14px;
+              width: 90%;
+            }
+
+            .range_container1 .form_control1 {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              font-size: 24px;
+              color: #635a5a;
+              margin-bottom: 20px;
+            }
+
+            .range_container1 input[type=range]::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              pointer-events: all;
+              width: 18px;
+              height: 18px;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 0 0 1px #257AE8;
+              cursor: pointer;
+            }
+
+            .form_control_container1 {
+              display: flex;
+              gap: 10px;
+              width: 47%;
+              margin-top: -20px;
+              align-items: center;
+              font-size: 12px;
+              border: 1px solid grey;
+              border-radius: 8px;
+              padding-left: 10px;
+            }
+
+            .form_control1 {
+              width: 90%;
+            }
+
+            .range_container1 input[type=range]::-moz-range-thumb {
+              -webkit-appearance: none;
+              pointer-events: all;
+              width: 24px;
+              height: 24px;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 0 0 1px #2E8AE6;
+              cursor: pointer;
+            }
+
+            .range_container1 input[type=range]::-webkit-slider-thumb:hover {
+              background: #f7f7f7;
+            }
+
+            .range_container1 input[type=range]::-webkit-slider-thumb:active {
+              box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+              -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+            }
+
+            .range_container1 input[type="number"] {
+              color: #8a8383;
+              width: 50px;
+              height: 40px;
+              font-size: 14px;
+              border: none;
+            }
+
+            .range_container1 input[type=number]::-webkit-inner-spin-button,
+            .range_container1 input[type=number]::-webkit-outer-spin-button {
+              opacity: 1;
+            }
+
+            .range_container1 input[type="range"] {
+              -webkit-appearance: none;
+              appearance: none;
+              height: 1px;
+              width: 100%;
+              position: absolute;
+              background-color: #C6C6C6;
+              pointer-events: none;
+            }
+
+            .range_container1 #fromSlider1 {
+              height: 0;
+              z-index: 1;
+            }
+          </style>
+          <div id="collapseOne121" class="accordion-collapse collapse  range_container1"
+            data-bs-parent="#accordionExample">
+            <div class="sliders_control1">
+              <input id="fromSlider1" type="range" value="10" min="0" max="100" />
+              <input id="toSlider1" type="range" value="30" min="0" max="100" />
+            </div>
+            <div class="form_control1">
+              <div class="form_control_container1">
+                <div class="form_control_container__time">от</div>
+                <input class="form_control_container__time__input" type="number" id="fromInput1" value="540" min="180"
+                  max="27000" />
+              </div>
+              <div class="form_control_container1">
+                <div class="form_control_container__time">до</div>
+                <input class="form_control_container__time__input" type="number" id="toInput1" value="2 747 250"
+                  min="180" max="27000" />
+              </div>
+            </div>
+          </div>
+          <script>
+            function controlFromInput(fromSlider1, fromInput1, toInput1, controlSlider) {
+              const [from, to] = getParsed(fromInput1, toInput1);
+              fillSlider(fromInput1, toInput1, '#C6C6C6', '#2E8AE6', controlSlider);
+              if (from > to) {
+                fromSlider1.value = to;
+                fromInput1.value = to;
+              } else {
+                fromSlider1.value = from;
+              }
+            }
+
+            function controlToInput(toSlider1, fromInput1, toInput1, controlSlider) {
+              const [from, to] = getParsed(fromInput1, toInput1);
+              fillSlider(fromInput1, toInput1, '#C6C6C6', '#2E8AE6', controlSlider);
+              setToggleAccessible(toInput1);
+              if (from <= to) {
+                toSlider1.value = to;
+                toInput1.value = to;
+              } else {
+                toInput1.value = from;
+              }
+            }
+
+            function controlFromSlider1(fromSlider1, toSlider1, fromInput1) {
+              const [from, to] = getParsed(fromSlider1, toSlider1);
+              fillSlider(fromSlider, toSlider, '#C6C6C6', '#2E8AE6', toSlider1);
+              if (from > to) {
+                fromSlider1.value = to;
+                fromInput1.value = to;
+              } else {
+                fromInput1.value = from;
+              }
+            }
+
+            function controlToSlider1(fromSlider1, toSlider1, toInput1) {
+              const [from, to] = getParsed(fromSlider1, toSlider1);
+              fillSlider1(fromSlider1, toSlider1, '#C6C6C6', '#2E8AE6', toSlider1);
+              setToggleAccessible1(toSlider1);
+              if (from <= to) {
+                toSlider1.value = to;
+                toInput1.value = to;
+              } else {
+                toInput1.value = from;
+                toSlider1.value = from;
+              }
+            }
+
+            function getParsed(currentFrom, currentTo) {
+              const from = parseInt(currentFrom.value, 10);
+              const to = parseInt(currentTo.value, 10);
+              return [from, to];
+            }
+
+            function fillSlider1(from, to, sliderColor, rangeColor, controlSlider) {
+              const rangeDistance = to.max - to.min;
+              const fromPosition = from.value - to.min;
+              const toPosition = to.value - to.min;
+              controlSlider.style.background = `linear-gradient(
+        to right,
+        ${sliderColor} 0%,
+        ${sliderColor} ${(fromPosition) / (rangeDistance) * 27000}%,
+        ${rangeColor} ${((fromPosition) / (rangeDistance)) * 27000}%,
+        ${rangeColor} ${(toPosition) / (rangeDistance) * 27000}%, 
+        ${sliderColor} ${(toPosition) / (rangeDistance) * 27000}%, 
+        ${sliderColor} 100%)`;
+            }
+
+            function setToggleAccessible1(currentTarget) {
+              const toSlider1 = document.querySelector('.range_container1 #toSlider1');
+              if (Number(currentTarget.value) <= 0) {
+                toSlider1.style.zIndex = 2;
+              } else {
+                toSlider1.style.zIndex = 0;
+              }
+            }
+
+            const fromSlider1 = document.querySelector('.range_container1 #fromSlider1');
+            const toSlider1 = document.querySelector('.range_container1 #toSlider1');
+            const fromInput1 = document.querySelector('.range_container1 #fromInput1');
+            const toInput1 = document.querySelector('.range_container1  #toInput1');
+            fillSlider(fromSlider1, toSlider1, '#C6C6C6', '#2E8AE6', toSlider1);
+            setToggleAccessible(toSlider1);
+
+            fromSlider1.oninput = () => controlFromSlider(fromSlider1, toSlider1, fromInput1);
+            toSlider1.oninput = () => controlToSlider(fromSlider1, toSlider1, toInput1);
+            fromInput1.oninput = () => controlFromInput(fromSlider1, fromInput1, toInput1, toSlider1);
+            toInput1.oninput = () => controlToInput(toSlider1, fromInput1, toInput1, toSlider1);
+
+          </script>
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne122" aria-expanded="true"
+            aria-controls="collapseOne122" class="raz accordion-button">
+            <h3>МАТЕРИАЛ</h3>
+          </div>
+          <div id="collapseOne122" class="accordion-collapse collapse  clk" data-bs-parent="#accordionExample"
+            class="categoryy">
+            <div class="gold_cat">
+              <div class="gold">
+                <input style="margin-left: 10px;" type="checkbox" name="" id="">
+                <span>Золото</span>
+              </div>
+              <div class="gold1">
+                <input type="checkbox" name="" id="">
+                <span>Белое золото</span>
+              </div>
+              <div class="gold1">
+                <input type="checkbox" name="" id="">
+                <span>Красное золото</span>
+              </div>
+              <div class="gold1">
+                <input style="margin-bottom: 16px;" type="checkbox" name="" id="">
+                <span>Комбинированное
+                  золото</span>
+              </div>
+              <div class="gold1">
+                <input type="checkbox" name="" id="">
+                <span>Жёлтое золото</span>
+              </div>
+            </div>
+
+
+            <div class="gold_cat">
+              <div class="gold">
+                <input style="margin-left: 10px;" type="checkbox" name="" id="">
+                <span>Золото</span>
+              </div>
+              <div class="gold1">
+                <input type="checkbox" name="" id="">
+                <span>Белое золото</span>
+              </div>
+              <div class="gold1">
+                <input type="checkbox" name="" id="">
+                <span>Красное золото</span>
+              </div>
+              <div class="gold1">
+                <input type="checkbox" name="" id="">
+                <span>Жёлтое золото</span>
+              </div>
+            </div>
+            <div class="gold_cat">
+              <div class="gold">
+                <input style="margin-left: 10px;" type="checkbox" name="" id=""> <span>Сталь</span>
+              </div>
+              <div class="gold">
+                <input style="margin-left: 10px;" type="checkbox" name="" id=""> <span>Платина</span>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne123" aria-expanded="true"
+            aria-controls="collapseOne123" class="raz accordion-button">
+            <h3>ПОДКАТЕГОРИЯ</h3></i>
+          </div>
+          <div id="collapseOne123" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>Наборные</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>Обручальные</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>Печатки</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>Помолвочные</span>
+            </div>
+            <div style="margin-bottom: 10px;" class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>На два пальца</span>
+            </div> <span class="spn">Показать ещё 1</span>
+          </div>
+        </div>
+        <div class="razdel21 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne125" aria-expanded="true"
+            aria-controls="collapseOne125" class="raz accordion-button">
+            <h3>СРОКИ ДОСТАВКИ</h3></i>
+          </div>
+          <div id="collapseOne125" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+            <div class="rocket">
+              <input style="margin-left: 10px;" type="radio" name="as" id="">
+              <span>Неважно</span>
+            </div>
+            <div class="rocket">
+              <input style="margin-left: 10px;" type="radio" name="as" id="">
+              <i class='bx bxs-rocket'></i>
+              <span>В течение 3 часов</span>
+            </div>
+            <div class="rocket">
+              <input style="margin-left: 10px;" type="radio" name="as" id="">
+              <span>Забрать в магазине</span><i class='bx bx-help-circle'></i>
+            </div>
+          </div>
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne127" aria-expanded="true"
+            aria-controls="collapseOne127" class="raz accordion-button">
+            <h3>СПЕЦПРЕДЛОЖЕНИЯ</h3></i>
+          </div>
+          <div id="collapseOne127" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>ШОК-цена</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>WOW-БРИЛЛИАНТ</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>Скидка –55%</span>
+            </div>
+            <div style="margin-bottom: 10px;" class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>На два пальца</span>
+            </div><span class="spn">Показать ещё 3</span>
+          </div>
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne129" aria-expanded="true"
+            aria-controls="collapseOne129" class="raz accordion-button">
+            <h3>ВСТАВКА</h3>
+          </div>
+          <div id="collapseOne129" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input type="checkbox" name="" id="">
+              <span>Без вставок</span>
+            </div>
+            <div class="check_inp check_inp2">
+              <input type="checkbox" name="" id="">
+              <span>Бриллиант (природный) </span><i class='bx bx-help-circle'></i>
+            </div>
+            <div class="check_inp check_inp2">
+              <input type="checkbox" name="" id="">
+              <span>Бриллиант выращенный </span> <i class='bx bx-help-circle'></i>
+
+            </div>
+            <div class="check_inp check_inp2">
+              <input type="checkbox" name="" id="">
+              <span>Коньячный бриллиант </span><i class='bx bx-help-circle'></i>
+            </div>
+            <div style="margin-bottom: 14px;" class="check_inp check_inp2">
+              <input type="checkbox" name="" id="">
+              <span>Черный бриллиант </span><i class='bx bx-help-circle'></i>
+            </div><span class="spn">Показать ещё 56</span>
+          </div>
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne128" aria-expanded="true"
+            aria-controls="collapseOne128" class="raz accordion-button">
+            <h3>РАЗМЕР</h3>
+          </div>
+          <div id="collapseOne128" class="accordion-collapse collapse  razmer" data-bs-parent="#accordionExample">
+            <div class="ram">
+              <strong>13</strong>
+            </div>
+            <div class="ram">
+              <strong>13.5</strong>
+
+            </div>
+            <div class="ram">
+              <strong>14</strong>
+
+            </div>
+            <div class="ram">
+              <strong>14.5</strong>
+
+            </div>
+            <div class="ram">
+              <strong>15</strong>
+
+            </div>
+            <div class="ram">
+              <strong>15.5</strong>
+
+            </div>
+            <span style="margin-top: 10px;" class="spn">Показать ещё 56</span>
+          </div>
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne130" aria-expanded="true"
+            aria-controls="collapseOne130" class="raz accordion-button">
+            <h3>ЦВЕТ ВСТАВКИ</h3>
+          </div>
+          <div id="collapseOne130" style="padding-bottom: 10px;" class="accordion-collapse collapse  tick topda"
+            data-bs-parent="#accordionExample">
+            <div class="check_inp  ">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <div class="color"></div>
+              <span>Зелёный</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <div class="color1"></div>
+              <span>Чёрный</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <div class="color2"></div>
+              <span>Красный</span>
+            </div>
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <div class="color3"></div>
+              <span>Синий</span>
+            </div>
+            <div style="margin-bottom: 10px;" class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <div class="color4"></div>
+
+              <span>Белый</span>
+            </div> <span style="margin-left: 10px; " class="spn">Показать ещё 7</span>
+          </div>
+
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne141" aria-expanded="true"
+            aria-controls="collapseOne141" class="raz accordion-button">
+            <h3>ТИП ОГРАНКИ</h3>
+          </div>
+          <div id="collapseOne141" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+
+              <span>test</span>
+            </div>
+
+            <span style="margin-left: 10px;" class="spn">Показать ещё 7</span>
+          </div>
+
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne143" aria-expanded="true"
+            aria-controls="collapseOne143" class="raz accordion-button">
+            <h3>КОЛИЧЕСТВО КАМНЕЙ</h3>
+          </div>
+          <div id="collapseOne143" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>test</span>
+            </div>
+
+            <span style="margin-left: 10px;" class="spn">Показать ещё 7</span>
+          </div>
+
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne144" aria-expanded="true"
+            aria-controls="collapseOne144" class="raz accordion-button">
+            <h3>СЕРТИФИКАТ</h3>
+          </div>
+          <div id="collapseOne144" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <span>test</span>
+            </div>
+
+            <span style="margin-left: 10px;" class="spn">Показать ещё 7</span>
+          </div>
+
+        </div>
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne145" aria-expanded="true"
+            aria-controls="collapseOne145" class="raz accordion-button">
+            <h3>ПРОБА</h3>
+          </div>
+          <div id="collapseOne145" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+              <div class="color"></div>
+              <span>test</span>
+            </div>
+
+            <span style="margin-left: 10px;" class="spn">Показать ещё 7</span>
+          </div>
+
+        </div>
+
+
+        <div class="razdel20 accordion-item">
+          <div data-bs-toggle="collapse" data-bs-target="#collapseOne146" aria-expanded="true"
+            aria-controls="collapseOne146" class="raz accordion-button">
+            <h3>СРЕДНИЙ ВЕС</h3>
+          </div>
+          <div id="collapseOne146" class="accordion-collapse collapse  tick" data-bs-parent="#accordionExample">
+            <div class="check_inp">
+              <input style="margin-left: 10px;" type="checkbox" name="" id="">
+
+              <span>test</span>
+            </div>
+
+            <span style="margin-left: 10px;" class="spn">Показать ещё 7</span>
+          </div>
+
+        </div>
+
+
+        <div class="location">
+          <div class="local">
+            <img src="../image/SVG.png" alt="">
+            <span>Выбрать на карте</span>
+          </div>
+        </div>
+        <p style="color: grey;margin-top: 10px;margin-left: 10px;margin-bottom: 10px;font-weight: 500;">Или
+          забрать из магазина</p>
+        <div class="input_search1">
+
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Название магазина, ТЦ">
+        </div>
+        <div class="tick">
+          <!-- -->
+          <div class="check_inp lefy">
+            <input style="margin-left: 10px;" type="checkbox" name="" id="">
+            <span>ТЦ Перово Молл, ул.
+              Перовская, 61А</span>
+          </div>
+          <div class="check_inp lefy">
+            <input style="margin-left: 10px;" type="checkbox" name="" id="">
+            <span>ТРЦ Фестиваль, ул.
+              Мичуринский
+              проспект.Олимпийская
+              деревня, 3 </span>
+          </div>
+          <div class="check_inp lefy">
+            <input style="margin-left: 10px;" type="checkbox" name="" id="">
+            <span>Бриллиант (природный)</span>
+          </div>
+          <div class="check_inp lefy">
+            <input style="margin-left: 10px;" type="checkbox" name="" id="">
+            <span>ТК Круг, ул.
+              Старокачаловская, 5А</span>
+          </div>
+          <div style="margin-bottom: 10px;" class="check_inp lefy">
+            <input style="margin-left: 10px;" type="checkbox" name="" id="">
+            <span>ТРЦ Атриум, ул. Земляной
+              Вал, 33</span>
+          </div>
+          <div style="margin-bottom: 10px;" class="check_inp lefy">
+            <input style="margin-left: 10px;" type="checkbox" name="" id="">
+            <span>ТРЦ Форт Отрадное, ул.
+              Декабристов, 12</span>
+          </div><span class="spn">Показать ещё 168</span>
+        </div>
+
+
+        <p style="color: #257AE8; font-weight: 700;margin-top: 30px;">Очистить фильтр</p>
+      </div>
+
+
+
+      <main class="main_card">
+        <div class="cards">
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="./image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="./image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо <br> 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+        </div>
+
+
+        <div class="hand">
+          <div class="link">
+            <h1 class="noone">Скупка и обмен <br> золото</h1>
+            <h1 class="notwo">Скупка и <br> обмен золото</h1>
+            <div class="href">
+              <span>Смотреть </span><i style="font-size: 24px;position: relative;top: 1px;"
+                class='bx bxs-chevron-right'></i>
+            </div>
+          </div>
+        </div>
+        <div class="liniy"></div>
+        <div class="cards">
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+        </div>
+
+        <div class="hand2">
+          <div class="as">
+            <h2>Дарите выбор!</h2>
+            <p>Исполняйте мечты с подарочными сертификатами Алмаз! Теперь угадать с подарком ещё проще. <span>Обладатель
+                сертификата сможет самостоятельно выбрать украшения, идеально подходящие по размеру и дизайну .</span>
+            </p>
+            <a href="#">Смотреть <i class='bx bx-chevron-right'></i></a>
+
+          </div><img class="medimg" src="./image/8085342 1.svg" alt="">
+          <img class="img222" src="./image/gift card 1.svg" alt="">
+          <img class="imgcard" src="./image/gift card 1 (1).svg" alt="">
+          <div></div>
+        </div>
+
+        <div class="liniy2"></div>
+
+        <div class="cards">
+          <div class="card1 qoshimcha">
+            <img style="width: 85%;border-radius: 8px;" src="./image/maxsus3.jpeg" alt="">
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='./pages/oneproduct/oneproduct.html'">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 ">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1 qoshimcha">
+            <div class="card_img">
+              <div class="novinki">
+                <h1 class="one1">Новинка</h1>
+                <h1 class="two2">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="price">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+        </div>
+
+        <button class="widthto">Показать еще 72 товара</button>
+        <div class="page_road1">
+          <div class="son2">
+            <i class='bx bx-chevron-left'></i>
+          </div>
+          <div class="son1">
+            <span>1</span>
+          </div>
+          <div class="son1">
+            <span>2</span>
+          </div>
+          <div class="son1">
+            <span>3</span>
+          </div>
+          <div class="son1">
+            <span>4</span>
+          </div>
+          <div class="son1">
+            <span>5</span>
+          </div>
+          <div class="son2">
+            <span>...</span>
+          </div>
+          <div class="son1"><span>149</span></div>
+          <div class="son2"><i class='bx bx-chevron-right'></i></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+
+
+
+  <main class="footer-1">
+    <div class="section1">
+      <h1>С этими товарами ищут</h1>
+      <div class="buttons">
+        <button>Кольца с бриллиантом</button>
+        <button>Кольца с рубинами</button>
+        <button>Кольца с сапфиром</button>
+        <button>Кольца с изумрудом</button>
+        <button>Кольца с топазом</button>
+        <button>Кольца с фианитом</button>
+        <button>Кольца с жемчугом</button>
+        <button>Кольца с гранатом</button>
+        <button>Кольца с бабочками</button>
+        <button>Классические кольца</button>
+      </div>
+    </div>
+    <h1>НЕДАВНО ПРОСМОТРЕННЫЕ</h1>
+
+    <div class="cards2">
+      <div class="card2">
+        <img src="./image/Frame 401.svg" alt="">
+        <div class="card2_text">
+          <p>Кольцо <br> 5-1182-103-1Б <br> Au 585</p>
+          <div>
+            <h3>108 590 ₽ / шт</h3>
+            <del>158 680 ₽</del>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <h3 class="h31">Популярные вопросы</h3>
+
+    <div class="accordion mod" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            💎  Сколько моделей в каталоге?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            В каталоге флагманского интернет-магазина Almaz вы можете ознакомиться с ценой и фото 35811 изделие
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            💰  Какова их стоимость?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            В каталоге флагманского интернет-магазина Almaz вы можете ознакомиться с ценой и фото 35811 изделие
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            🚀  Возможна ли доставка?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            В каталоге флагманского интернет-магазина Almaz вы можете ознакомиться с ценой и фото 35811 изделие
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+            ⭐  Какие акции сейчас проводятся?
+          </button>
+        </h2>
+        <div id="collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            В каталоге флагманского интернет-магазина Almaz вы можете ознакомиться с ценой и фото 35811 изделие
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer_1">
+    <ul>
+      <h3>СКАЧАЙТЕ В</h3>
+      <div class="appl">
+        <img src="./pages/oneproduct/image/app-store-badge.svg.svg" alt=""><br>
+        <img src="./pages/oneproduct/image/rustore-badge.svg.svg" alt=""><br>
+        <img src="./pages/oneproduct/image/app-gallery-badge.svg fill.svg" alt="">
+      </div>
+    </ul>
+    <ul>
+      <h3>Покупателям</h3>
+      <h3 class="nomer12">+7 343 2664070</h3>
+      <span>Заказать обратный звонок</span>
+      <li>Как сделать заказ</li>
+      <li>Способы оплаты</li>
+      <li>Рассрочка</li>
+      <li>Доставка и оплата</li>
+      <li>Обмен и возврат</li>
+      <li>Подарочные сертификат</li>
+      <li>Скупка золота</li>
+    </ul>
+
+    <ul>
+      <h3>Каталог</h3>
+      <li>Кольца</li>
+      <li>Серьги</li>
+      <li>Подвески</li>
+      <li>Цепи</li>
+      <li>Браслеты</li>
+      <li>Колье</li>
+      <li>Прочее</li>
+      <li>Часы</li>
+    </ul>
+
+
+    <ul>
+      <h3>ALMAZ</h3>
+      <li>О компании </li>
+      <li>Карьера</li>
+      <li>Гарантия</li>
+      <li>Качество</li>
+      <li>Новости</li>
+      <li>Магазины</li>
+    </ul>
+
+    <ul>
+      <h3>Мы в соцсетях</h3>
+      <li><img src="./image/VK.svg" alt=""> ВКонтакте</li>
+      <li><img src="./image/Group 10.svg" alt="">Телеграм</li>
+      <li><img src="./image/Youtube.svg" alt=""> YouTube</li>
+      <li><img src="./image/OK.svg" alt=""> Одноклассники</li>
+
+    </ul>
+
+
+  </footer>
+  <center>
+    <p class="alm1">© 2024 ALMAZ</p>
+  </center>
+  <div class="footer2">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+            aria-expanded="true" aria-controls="collapseOne1">
+            Покупателям
+          </button>
+        </h2>
+        <div id="collapseOne1" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot2">
+              <h3>+7 343 2664070</h3>
+              <span>Заказать обратный звонок</span>
+              <li>Как сделать заказ</li>
+              <li>Способы оплаты</li>
+              <li>Рассрочка</li>
+              <li>Доставка и оплата</li>
+              <li>Обмен и возврат</li>
+              <li>Подарочные сертификат</li>
+              <li>Скупка золота</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+            Каталог
+          </button>
+        </h2>
+        <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot3">
+              <li>Кольца</li>
+              <li>Серьги</li>
+              <li>Подвески</li>
+              <li>Цепи</li>
+              <li>Браслеты</li>
+              <li>Колье</li>
+              <li>Прочее</li>
+              <li>Часы</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+            ALMAZ
+          </button>
+        </h2>
+        <div id="collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot4">
+              <li>О компании </li>
+              <li>Карьера</li>
+              <li>Гарантия</li>
+              <li>Качество</li>
+              <li>Новости</li>
+              <li>Магазины</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree14" aria-expanded="false" aria-controls="collapseThree14">
+            Мы в соцсетях
+          </button>
+        </h2>
+        <div id="collapseThree14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="foot5">
+              <h3 style="font-size: 20px;"></h3>
+              <li><img src="../image/VK.png" alt=""> ВКонтакте</li>
+              <li><img src="../image/Group 10.png" alt="">Телеграм</li>
+              <li><img src="../image/Youtube.png" alt=""> YouTube</li>
+              <li><img src="../image/OK.png" alt=""> Одноклассники</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="application">
+      <a href=""><img src="./pages/oneproduct/image/app-store-badge.svg.svg" alt=""></a>
+      <a href=""><img src="./pages/oneproduct/image/rustore-badge.svg.svg" alt=""></a>
+      <a href=""><img src="./pages/oneproduct/image/app-gallery-badge.svg fill.svg" alt=""></a>
+      
+    </div>
+
+    <div class="footer_tool">
+      <div class="cas">
+        <img src="./image/svgviewer-output (3) 1.svg" height="20px" alt="">
+        <p>Главная</p>
+      </div>
+      <div class="cas">
+        <img src="./image/Vecto.svg" height="20px" alt="">
+        <p>Каталог</p>
+      </div>
+      <div class="cas">
+        <img src="./image/Vector (3).svg" height="20px" alt="">
+        <p>Избранное</p>
+      </div>
+      <div class="cas">
+        <img src="./image/Icon basket.svg" height="20px" alt="">
+        <p>Корзина</p>
+      </div>
+      <div class="cas">
+        <img src="./image/svgviewer-output (7) 1.svg" height="20px" alt="">
+        <p>Профиль</p>
+      </div>
+    </div>
+    <center>
+      <p class="alm">© 2024 ALMAZ</p>
+    </center>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    function initSliders() {
+      var swiper1 = new Swiper('.mySwiper', {
+        loop: true,
+        pagination: {
+          el: '.mySwiper .swiper-pagination',
+          clickable: true
+        }
+      });
+
+      const swiperContainers = document.querySelectorAll('.mySwiper');
+      const swipers = [];
+
+      swiperContainers.forEach((container, index) => {
+
+        const swiper = new Swiper(container, {
+          navigation: {
+            nextEl: container.querySelector('.swiper-button-next'),
+            prevEl: container.querySelector('.swiper-button-prev'),
+          },
+          pagination: {
+            el: container.querySelector('.swiper-pagination'),
+            clickable: true,
+          },
+        });
+
+        swipers.push(swiper);
+        let startX = 0;
+
+
+        container.addEventListener('mousedown', function (e) {
+          startX = e.clientX;
+        });
+
+        container.addEventListener('mousemove', function (e) {
+          const endX = e.clientX;
+          const diff = endX - startX;
+          console.log(startX, endX);
+          if (diff > 50) {
+            swiper.slideNext();
+            startX = endX;
+          } else if (diff < -50) {
+            swiper.slidePrev();
+            startX = endX;
+          }
+        });
+
+
+
+      })
+
+    }
+
+    document.addEventListener('DOMContentLoaded', initSliders);
+
+  </script>
+</body>
+
+</html>
