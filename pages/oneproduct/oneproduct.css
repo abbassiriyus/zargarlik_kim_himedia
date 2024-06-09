@@ -8,6 +8,10 @@
     max-width: 1440px;
 align-items: center;
 }
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
 .routpage_one span{
     font-family: Montserrat;
     font-size: 14px;
@@ -1216,4 +1220,73 @@ line-height: 34.13px;
 .mySwiper4 .swiper-button-next:after, .mySwiper4 .swiper-button-prev:after{
   font-size: 15px !important;
   font-weight: 700;
+}
+
+.kolnon{
+  display: none;
+}
+@media (max-width:1390px) {
+  .card_body_one{
+    display: grid;
+    grid-template-columns:   1.1fr;
+    width: 95%;
+    margin: auto;
+    max-width: 1440px;
+    margin-top: 32px;
+    gap: 20px;
+}
+.cpb{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  top: 35px;
+  box-shadow: 0px 0px 20px 0px #3E3E3E26;
+  /* margin-top/:35px; */
+}
+.bank1{
+  background-color: #EFEFEF;
+  border-radius: 15px;
+  width: 98%;
+  margin: auto;
+  /* background-color: red;// */
+  
+  height: 135px;
+  margin-top: 30px;
+  }
+  .nedrat{
+    width: 98%;
+    margin: auto;
+  }
+  .carousel_one{
+        width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width:1100px) {
+  .carousel_one .mySwiper2 {
+    height: 85%;
+    width: 100%;
+}
+}
+@media (max-width:991px) {
+  .carousel_one .mySwiper{
+    display: none;
+  }
+  .carousel_one{
+    width: 100%;
+ 
+    min-height: 200px;
+    max-width: 930px;
+display: grid;
+grid-template-columns: auto;
+gap: 10px;
+
+}
+.routpage_one{
+  margin-top: 0px;
+}
+.kolnon{
+  display: block;
+}
 }
