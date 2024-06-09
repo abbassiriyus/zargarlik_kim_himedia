@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Arkhip';
+    src: url('./fonds/Arkhip_font.ttf') format('truetype'),
+         url('./fonds/Arkhip_font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.hand_sale{
+    background: linear-gradient(180deg, #141414 0%, #191814 100%);
+    position: relative;
+    height: 477px;
+border-radius: 32px;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 111px;
+}
+.hand_sale .img1{
+position: absolute;
+top: 0px;
+left: 0px;
+}
+.hand_sale .img2{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.hand_sale .img3{
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
+.hand_sale .reklama_sale{
+    word-wrap: 40%;
+}
+.hand_sale h2{
+    font-family: 'Arkhip', sans-serif;
+font-size: 96.68px;
+font-weight: 400;
+line-height: 116.02px;
+color: #FFF957;
+  width: 30%;
+    margin-left: 7.5%;
+    margin-right: 11%;
+    margin-top: 46px;
+}
+.hand_sale h2 .sppan{
+    font-family: 'Arkhip', sans-serif;
+font-size: 46.62px;
+font-weight: 400;
+line-height: 53.61px;
+text-align: right;
+background: url(/image/Subtract.svg);
+
+background-size: 100% 100%;
+color: #242424;
+width: 194px !important;
+height:74px !important  ;
+display: flex;align-items: center;
+justify-content: start;
+padding-left: 20px;
+padding-top: 10px;
+gap: 10px;
+}
+
+.hand_sale h2 .sppan sup{
+    font-family: 'Arkhip', sans-serif;
+    font-size: 13.81px;
+    font-weight: 400;
+    line-height: 15.88px;
+    text-align: right;
+    color: #242424;
+   border-bottom: 1px solid #242424;
+    
+}
+
+.hand_sale2{
+    height: 300px;
+    background: #242424;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: relative;
+border-radius: 32px;
+margin-bottom: 73px;
+}
+.hand_sale2 .text_sale2{
+width: 42%;
+margin-top: 2px;
+}
+.hand_sale2 .text_sale2 h1{
+    font-family: 'Arkhip', sans-serif;
+    font-size: 66.2px;
+    font-weight: 400;
+    line-height: 79.44px;
+    text-align: left;
+    color: white;
+    
+}
+.hand_sale2 .text_sale2 h2{
+    font-family: 'Arkhip', sans-serif;
+    font-size: 40.2px;
+    font-weight: 400;
+    line-height: 48.23px;
+    text-align: left;
+    color: #FFF957; 
+}
+.hand_sale2 .text_sale2 h3{
+        font-family: 'Arkhip', sans-serif;
+    font-size: 40.2px;
+    font-weight: 400;
+    line-height: 48.23px;
+    text-align: left;
+    color: white;
+margin-top: 11px;
+    
+}
+.hand_sale2 .img_sale2{
+position: relative;
+width: 45%;
+}
+.hand_sale2  .img2_sale2{
+position: absolute;
+top: 0px;
+right: 0px;
+}
