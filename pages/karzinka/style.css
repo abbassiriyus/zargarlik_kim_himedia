@@ -112,12 +112,32 @@ font-size: 20px;
 .body_karzinka .kalkulator_shot{
     box-shadow: 0px 0px 15px 0px #0000001A;
     border-radius: 16px;
-
+    padding-bottom: 54px;
 }
 .body_karzinka .kalkulator_shot .h3 {
 display: flex;
 justify-content: space-between;
+width: 89%;
+padding-top: 26px;
+margin: auto;
+margin-bottom: 4px;
 }
+.body_karzinka .kalkulator_shot .p {
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    padding-top: 6px;
+    margin: auto; 
+    margin-bottom: 5px;
+    align-items: center;
+    }
+    .body_karzinka .kalkulator_shot .p .bx-help-circle {
+        font-size: 23px;
+        position: relative;
+        top: -1px;
+        left: 1px;
+    }
+
 .body_karzinka .kalkulator_shot .h3 h3{
     font-family: Montserrat;
     font-size: 24px;
@@ -126,4 +146,243 @@ justify-content: space-between;
     letter-spacing: 0.5px;
     text-align: left;
     
+}
+.body_karzinka .kalkulator_shot .p p{
+ padding: 0px;
+ margin: 0px;
+   display: flex;align-items: center;
+   gap: 10px;
+   letter-spacing: 0.3px;
+}
+.body_karzinka .kalkulator_shot h5{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.5px;
+letter-spacing: 0.5px;
+text-align: left;
+width: 89%;margin: auto;
+margin-top: 38px;
+margin-bottom: -12px;
+}
+.body_karzinka .kalkulator_shot h5 a{
+    text-decoration: none;
+    border-bottom: 1px solid dashed;
+}
+
+.body_karzinka .kalkulator_shot button{
+    margin-top: 50px;
+    background: #FFF957;
+height: 52px;
+width: 90%;
+margin-left: 5%;
+border: none;
+border-radius: 14px;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+
+
+}
+.body_karzinka .kalkulator_shot .check_karzinka{
+    display: flex;justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+gap: 13px;
+margin-top: 18px;
+}
+.body_karzinka .kalkulator_shot .check_karzinka input{
+    width: 16px;
+    height: 16px;
+   
+}
+.body_karzinka .line_karzinka{
+    height: 1px;
+    background-color: #E6E6E6;
+    width: 100%;
+    margin-top: 18px;
+}
+
+
+.body_karzinka .card_karzinka {
+    display: grid;
+    grid-template-columns: 40px 205px auto 123px;
+    align-items: start;
+    margin-top: 10px;
+    margin-bottom: -9px;
+}
+.body_karzinka .card_karzinka  input{
+width: 20px;
+height: 20px;
+}
+.body_karzinka .card_karzinka .image_karzinka {
+    position: relative;
+}
+.body_karzinka .card_karzinka .text_karzinka1 h5{
+    text-align: center;
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.5px;
+letter-spacing: -1px;
+color: #242424;
+padding-left: 4px;
+padding-top: 3px;
+height: 63px;
+} 
+.body_karzinka .card_karzinka .image_karzinka .skitka_karzinka{
+position: absolute;
+top: 10px;
+left: 13px;
+background: #D7BE67;
+border-radius: 9px;
+width: 43px;
+height: 21px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.body_karzinka .card_karzinka .input_kamb_karzinka{
+    display: grid;
+    grid-template-columns: auto 157px;
+    width: 90%;
+    margin: auto;
+    margin-right: 20px;
+    max-width: 499px;
+    align-items: center;
+    gap:16px;
+}
+.body_karzinka .card_karzinka .input_kamb_karzinka .input_r{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    padding-left: 15px;
+    padding-right: 8px;
+    height: 48px;
+    border-radius: 8px;
+}
+.body_karzinka .card_karzinka .input_kamb_karzinka .input_r p{
+    padding: 0px;
+    margin: 0px;
+
+}
+.body_karzinka .card_karzinka .input_kamb_karzinka .input_r .bx-pencil{
+font-size: 30px;
+}
+.body_karzinka .card_karzinka .input_kamb_karzinka button{
+    background: #F2F2F2;
+width: 100%;
+height:48px ;
+border: none;
+border-radius: 7px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+display: flex;
+color: #257AE8;
+align-items: center;
+justify-content: center;
+}
+.body_karzinka .card_karzinka .input_kamb_karzinka button p{
+    position: relative;
+    top: 9px;
+}
+.body_karzinka .card_karzinka .input_kamb_karzinka button .bx-heart{
+    font-size: 21px;
+    margin-right: 10px;
+}
+.body_karzinka .card_karzinka .image_karzinka img{
+    width: 100%;
+}
+.body_karzinka .card_karzinka .text_karzinka1{
+
+}
+.body_karzinka .card_karzinka h5{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.5px;
+letter-spacing: 0.5px;
+color:#242424;
+}
+.body_karzinka .card_karzinka .price_karzinka h5{
+text-align: right;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+letter-spacing: 0.7px;
+
+
+}
+.body_karzinka .card_karzinka .price_karzinka .p{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 11.07px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    display: flex;
+}
+.body_karzinka .card_karzinka .price_karzinka .span{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    width:48px;
+height:21px;
+background: #CC373C;
+border-radius: 14px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+    top: -5px;
+    left: 5px;
+}
+.body_karzinka .card_karzinka .price_karzinka button{
+    background: #F2F2F2;
+width: 100%;
+height:48px ;
+border: none;
+border-radius: 7px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+display: flex;
+color: #257AE8;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+}
+.body_karzinka .card_karzinka .price_karzinka button .bx-trash{
+    font-size: 21px;
+    margin-right: 17px;
+}
+.body_karzinka .app_prod .skitka_karzinka{
+margin-top: 55px;
+}
+.body_karzinka .app_prod .skitka_karzinka .reklamapage{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.5px;
+text-align: left;
+padding: 10px;
+box-shadow: 0px 0px 10px 0px #0000001A;
+
 }
