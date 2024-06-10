@@ -63,6 +63,7 @@ text-align: center;
     display: grid;
     grid-template-columns: auto 445px;
     margin: auto;
+    align-items: start;
     margin-top: 49px;
     gap: 29px;
 }
@@ -372,10 +373,16 @@ margin-top: 20px;
     font-size: 21px;
     margin-right: 17px;
 }
-.body_karzinka .app_prod .skitka_karzinka{
+.body_karzinka .app_prod .skitka_karzinka1{
 margin-top: 55px;
+display: flex;
+align-items: center;
 }
-.body_karzinka .app_prod .skitka_karzinka .reklamapage{
+.body_karzinka .app_prod .skitka_karzinka1 .bx-help-circle{
+    position: relative;
+    margin-left: 10px;
+}
+.body_karzinka .app_prod .skitka_karzinka1 .reklamapage{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -383,6 +390,10 @@ line-height: 18px;
 letter-spacing: 0.5px;
 text-align: left;
 padding: 10px;
+width: 286px;
 box-shadow: 0px 0px 10px 0px #0000001A;
-
+position: absolute;
+top: -80px;
+display: none;
+left: -120px;
 }
