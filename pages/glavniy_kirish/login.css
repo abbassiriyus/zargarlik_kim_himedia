@@ -1,0 +1,67 @@
+.middle_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    flex-direction: column;
+}
+.middle_back h1{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-left: 12px;
+}
+.mod_midle{
+    width: 17%;
+    /* background-color: red; */
+    margin-left: 16px;
+    margin-top: 34px;
+}
+.mod_midle label{
+    margin-left: 10px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+
+}
+.mod_midle p{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+margin-left: 14px;
+margin-top: 7px;
+}
+.mod_midle button{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+width: 300px;
+height: 52px;
+border-radius: 14px;
+margin-left: 13px;
+margin-top: 18px;
+border: none;
+background: #FFF957;
+transition: 0.6s;
+}
+.mod_midle button:hover{
+    background-color: #c7c474;
+}
+.mod_midle h5{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+border-bottom: 1px solid black;
+width: 137px;
+margin-left: 14px;
+margin-top: 24px;
+}

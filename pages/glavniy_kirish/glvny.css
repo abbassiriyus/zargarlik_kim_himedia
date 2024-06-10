@@ -1,0 +1,305 @@
+.glavniy_lich_dg{
+    display: grid;
+    grid-template-columns: 230px auto;
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 50px;
+    gap: 25px;
+}
+.lich_dg_one{
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.lich_dg_one h3{
+    height: 40px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 15px;
+
+}
+.magazin_tavar{
+    display: grid;
+    grid-template-columns:355px 225px 225px;
+    gap: 28px;
+    margin-top:51px;
+}
+.bonus1{
+    width: 100%;
+    height: 211px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 22px;
+    color:white;
+}
+.bonus1 h1{
+    font-family: Montserrat;
+font-size: 29px;
+font-weight: 700;
+line-height: 15px;
+margin-bottom: 17px;
+}
+.bonus1 h3{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 15px;
+}
+.fire{
+    margin-top: 43px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.fire p{
+    margin-bottom: 0;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 15px;
+text-align: left;
+
+}
+.bonus1 button{
+    width: 305px;
+    height: 41px;
+    border-radius: 8px;
+    color: black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    background-color: white;
+    margin-top: 11px;
+}
+.prise{
+    width: 100%;
+    background: #F4F4F4;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+}
+.prise h4{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 15px;
+text-align: center;
+
+}
+.prise img{ 
+    margin-left: -6px;
+    margin-top: -12px;
+}
+
+.prise h4 {
+    position: relative;
+    left: -4px;
+    top: 12px;
+}
+.gift_banner{
+    margin-top: 60px;
+     background: linear-gradient(180deg, #D8D9DB 0%, #DEDFE1 11.62%, #E5E5E7 30.81%, #E9E9E9 58.12%, #E9E9E9 76.82%, #E6E6E6 100%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px ;
+    overflow: hidden;
+    height: 377px;  
+    position: relative;
+}
+/* .gift{
+    background: url('/image/772cad7bc7adb8b078a9f20840bf1028.jpg') no-repeat;
+    width:90%;
+    background-size: 100% 100%;
+    height: 377px;
+    background-position: center;
+    margin-right: -11px;
+} */
+.gift_text h1{
+    font-family: Montserrat;
+font-size: 48px;
+font-weight: 600;
+line-height: 55.2px;
+text-align: left;
+margin-bottom: 5px;
+    position: relative;
+    z-index: 233;
+}
+.gift_banner img{
+    width: 50%;  
+    height: 377px;  
+    position: absolute;
+    right: -23px;
+    top: 0px;
+}
+.gift_text{
+    width: 90%;
+    margin: auto;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.gift_posm{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+    top: 20px;
+}
+.gift_posm p{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    text-decoration: underline;
+}
+.gift_posm .bx-chevron-right{
+    font-size: 24px;
+    position: relative;
+    top: -6px;
+}
+.ser_rem_dg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 25px;
+    gap: 27px;
+}
+.treyd-in{
+    width: 100%;
+    height: 200px;
+    background: #FDD335;
+    border-radius: 16px;
+    padding-top: 32px;
+    padding-left: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.treyd-in h3{
+    font-family: Montserrat;
+font-size: 32px;
+font-weight: 500;
+line-height: 39.01px;
+text-align: left;
+margin-bottom: 13px;
+}
+.treyd-in p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+
+} 
+.fcdff14 {
+    position: absolute;
+    right: -55px;
+    top: -24px;
+    width: 70%;
+    transform: rotate(-57deg);
+    margin-left: -10px;
+}
+.vektor_img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 71%;
+}
+.vektor_1img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 62%;
+}
+.phone_rasr{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 46%;
+    z-index: 11;
+}
+ 
+.qirq {
+    position: absolute;
+    right: 86px;
+    bottom: 3px;
+    width: 40%;
+    z-index: 1;
+}
+.ateler{
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}
+.phone-absolute{
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    position: relative;
+}
+
+.app_dg{
+    margin-top: 23px;
+    display: flex;
+    gap: 28px;
+}
+.app_dg img{
+    width: 16%;
+    margin-left: -7px;
+}
+.qr-kod_text{
+    margin-top: 38px;
+    margin-left: -4px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.qr-kod_text p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+margin-bottom: 0;
+}
+.new_ques{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 34px;
+    margin-left: -4px;
+}
+.new_ques img{
+    margin-top: -15px;
+}
+.phn{
+    position: absolute;
+    right: -80px;
+    bottom: -63px;
+}
+.banner_ye{
+width: 450px;
+height: 87px;
+background: linear-gradient(180deg, #F1AB24 0%, #FFBC3D 100%);
+color: white;
+position: absolute;
+bottom: 0px;
+left: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-top-right-radius: 16px;
+margin-left: -4px;
+}
+.banner_ye p{
+    font-family: Montserrat;
+font-size: 32px;
+font-weight: 600;
+line-height: 36.8px;
+margin-bottom: 0;
+text-transform: uppercase;
+}
