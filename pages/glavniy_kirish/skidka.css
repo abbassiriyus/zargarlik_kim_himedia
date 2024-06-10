@@ -1,0 +1,25 @@
+.kakpoluchit_big{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.kak_pol_small{
+    display: grid;
+    grid-template-columns: 30px auto;
+    height: 164px;
+}
+.tct h2{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
+
+}
+.tct p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+margin-bottom: 0;
+}
