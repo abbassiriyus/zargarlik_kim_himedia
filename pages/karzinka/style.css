@@ -66,6 +66,7 @@ text-align: center;
     align-items: start;
     margin-top: 49px;
     gap: 29px;
+    margin-bottom: -52px;
 }
 
 .body_karzinka .app_prod h4{
@@ -453,9 +454,10 @@ padding-left: 10px;
     text-align: left;
     color: #EBBB40;
     letter-spacing: 1.4px;
-    height: 22px;
+    /* height: 22px; */
     position: relative;
-    top:-5px;
+    margin-top: 1px;
+    /* top:-5px; */
     padding-left: 10px;
     border-left: 1px solid grey;
 }
@@ -483,4 +485,279 @@ top: 5px;
 }
 .body_karzinka .app_prod .title_ke .maxsus_img_karsiznda{
 margin-right: 7px;
+}
+.body_karzinka .app_prod .poluchir_karzinka .two_input_karzinka{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.body_karzinka .app_prod .bonus_karzinka{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: #F2F2F2;
+border-radius: 8px;
+margin-bottom: 63px;
+}
+.body_karzinka .app_prod .bonus_karzinka p{
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 34.07px;
+text-align: left;
+
+}
+.body_karzinka .app_prod .bonus_karzinka p .bx-info-circle{
+    color: #242442;
+font-size: 25px;
+margin-right: 10px;
+position: relative;
+    top: 8px;
+    left: 2px;
+}
+.body_karzinka .app_prod .bonus_karzinka p a{
+text-decoration: none;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+
+}
+.body_karzinka .app_prod .dastafka_radio_kar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 29px;
+}
+.body_karzinka .app_prod .dastafka_radio_kar .dastafka_radio_kar_card input{
+width: 20px;
+height: 20px;
+}
+.body_karzinka .app_prod .dastafka_radio_kar .dastafka_radio_kar_card{
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: start;
+    border: 2px solid #B3B3B3;
+    padding:  16px;
+    padding-bottom: 0px;
+    border-radius: 9px;
+}
+.body_karzinka .app_prod .dastafka_radio_kar .dastafka_radio_kar_card h5{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    text-align: left;
+    
+}
+.body_karzinka .app_prod .dastafka_radio_kar .dastafka_radio_kar_card p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+color: #808080;
+padding-bottom: 0px;
+margin-bottom: 10px;
+}
+.body_karzinka .app_prod .dastefka_almaz{
+padding: 21px 26px;
+background: #EFEFEF;
+border-radius: 12px;
+margin-top: 16px;
+
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: start;
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k{
+    display: grid;
+    grid-template-columns: 33px auto;
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k h5{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+text-align: left;
+padding-top: 5px;
+display: flex;
+gap: 20px;
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k h5 .button{
+    background: var(--green-base, #38C793);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    width: 91px;
+    height: 21px;
+    left: -11px;
+    position: relative;
+    top: -3px;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz  p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+color: #242424;  
+margin-top: 11px;  
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz  button{
+   border: none;
+   height: 56px;
+   width: 98%;
+}
+.body_karzinka .app_prod .dastefka_almaz  a{
+    text-decoration: none;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #1D6BD1;
+margin-left: 30px;
+    border-bottom: 1px dashed;
+}
+.body_karzinka .app_prod .zabit_karzinka{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: left;
+color: #242424;    
+margin-top: 25px;
+}
+.body_karzinka .app_prod .cards_a_cards{
+    display: flex;
+    gap: 16px;
+}
+.body_karzinka .app_prod .cards_a_cards .cards_a_card .cards_a_card_img{
+width: 89px;
+height: 89px;
+border: 1px solid #E6E6E6;
+border-radius: 6px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.body_karzinka .app_prod .cards_a_cards .cards_a_card p{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: left;
+    color: #898989;
+    margin-top: 10px;
+
+}
+.body_karzinka .app_prod .cards_a_cards .cards_a_card .cards_a_card_img img{
+ width: 100%;
+ max-height: 100%;
+}
+.body_karzinka .app_prod .check_p_karzika{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    letter-spacing: 0.5px;
+    text-align: left;
+color: #242424;  
+margin-top: -3px;  
+}
+.body_karzinka .app_prod .check_p_karzika input{
+width: 20px;
+height: 20px;
+position: relative;
+top: 3px;
+margin-right: 2px;
+}
+.body_karzinka .app_prod .bonus_karzinka_dr a{
+padding-left: 34px;
+position: relative;
+top: -4px;
+}
+.body_karzinka .app_prod .profile_on_karzinka{
+    display: grid;
+    max-width: 450px;
+    grid-template-columns: 34px auto 30px;
+ padding: 20px;   
+ margin-top: 30px;
+ background: #EFEFEF;
+padding-left: 24px;
+border-radius: 12px;
+}
+.body_karzinka .app_prod .profile_on_karzinka h5{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+text-align: left;
+padding-top: 1px;
+
+}
+.body_karzinka .app_prod .profile_on_karzinka h6{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+}
+
+.body_karzinka .app_prod .profile_on_karzinka p{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+color: #848484;
+padding: 0px;
+margin: 0px;
+line-height: 20px;
+text-align: left;
+margin-top: 15px;
+
+}
+.body_karzinka .app_prod .profile_on_karzinka .bx-pencil{
+    font-size: 23px;
+    color: #257AE8;
+
+}
+.body_karzinka .app_prod .dastafka_radio_kar_dr{
+
+}
+.body_karzinka .app_prod .dastafka_radio_kar_dr .dastafka_radio_kar_card{
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.body_karzinka .app_prod .dastafka_radio_kar_dr .dastafka_radio_kar_card h5{
+    padding: 0px;
+    margin: 0px;
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+letter-spacing: 0.5px;
+text-align: left;
+position: relative;
+top: 2px;
 }
