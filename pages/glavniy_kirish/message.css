@@ -1,0 +1,74 @@
+.message_frame h2{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-top: 17px;
+}
+.message_frame h3{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-bottom: 0;
+}
+.message_frame h4{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.5px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #898989;
+margin-bottom: 0;
+}
+.almaz_logo_h{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 10px;
+}
+.message_frame {
+    /* background-color: red; */
+    box-shadow: 0px 0px 15px 0px #0000001A;
+height: 166px;
+border-radius: 12px;
+margin-top: 24px;
+padding: 18px;
+position: relative;
+}
+.message_frame p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 300;
+line-height: 19.5px;
+letter-spacing: 0.5px;
+text-align: right;
+position: absolute;
+bottom: 0px;
+right: 5px;
+
+}
+.email-sms{
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    gap: 12px;
+}
+.email-sms span{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+letter-spacing: 0.5px;
+text-align: left;
+
+}
+.email-sms input{
+    width: 24px;
+    height: 24px;
+}
