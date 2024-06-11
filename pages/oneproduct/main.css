@@ -59,7 +59,7 @@ text-decoration: underline;
     margin: auto;
 }
 .kulontitle{
-    background: url('./image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
+    background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
     width: 100%;
     height: 462px;
     border-radius: 19px;
@@ -80,7 +80,7 @@ color: #242424;
 }
 
 .kulontitle1{
-    background: url('./image/image.png') no-repeat;
+    background: url('/image/image.png') no-repeat;
     width: 100%;
     height: 462px;
     border-radius: 21px;
@@ -101,7 +101,7 @@ color: #242424;
 
 
 .kulontitle2{
-    background: url('./image/two.png') no-repeat;
+    background: url('/image/two.png') no-repeat;
     width: 100%;
     height: 462px;
     border-radius: 21px;
@@ -121,7 +121,7 @@ color: #242424;
 }
 
 .mySwiper7 .swiper-horizontal  .swiper-pagination-bullets, .mySwiper7 .swiper-pagination-bullets.swiper-pagination-horizontal, .mySwiper7  .swiper-pagination-custom, .mySwiper7  .swiper-pagination-fraction {
-    width: 15% !important;
+    width: 18% !important;
     position: absolute;
     bottom: 30px;
 }
@@ -166,7 +166,7 @@ color: #242424;
     justify-content: start;
     border-radius: 16px;
     background-color: #F1F1F1;
-    background-image: url('./image/11-2\ 1\ \(1\).png');
+    background-image: url('/image/11-2\ 1\ \(1\).png');
     background-repeat: no-repeat;
     background-position: right;
   }
@@ -188,7 +188,7 @@ color: #242424;
       justify-content: start;
       border-radius: 16px;
       background-color: #F1F1F1;
-      background-image: url('./image/14cfa814b21c89b7e42111fcdffbb78a\ 1.png');
+      background-image: url('/image/14cfa814b21c89b7e42111fcdffbb78a\ 1.png');
       background-repeat: no-repeat;
       background-position: right;
     }
@@ -220,7 +220,7 @@ color: #242424;
       justify-content: center;
       border-radius: 16px;
       background-color: #f1f1f1;
-      background-image: url('./image/66912bac7655cf75bae043d46e43edef\ 1.png');
+      background-image: url('/image/66912bac7655cf75bae043d46e43edef\ 1.png');
       background-repeat: no-repeat;
       background-position: right;
     }
@@ -233,7 +233,7 @@ color: #242424;
       justify-content: center;
       border-radius: 16px;
       background-color: #f1f1f100;
-      background-image: url('./image/12200\(1\)\ 2.png');
+      background-image: url('/image/12200\(1\)\ 2.png');
       background-repeat: no-repeat;
       background-position: right;
     }
@@ -254,7 +254,7 @@ color: #242424;
       justify-content: center;
       border-radius: 16px;
       background-color: #f1f1f1;
-      background-image: url('./image/15796_c\ 1.png');
+      background-image: url('/image/15796_c\ 1.png');
       background-repeat: no-repeat;
       background-position: right;
     }
@@ -275,7 +275,7 @@ color: #242424;
       justify-content: center;
       border-radius: 16px;
       background-color: #f1f1f1;
-      background-image: url('./image/image\ 13.png');
+      background-image: url('/image/image\ 13.png');
       background-repeat: no-repeat;
       background-position: right;
     }
@@ -288,7 +288,7 @@ color: #242424;
       justify-content: center;
       border-radius: 16px;
       background-color: #f1f1f100;
-      background-image: url('./image/lvw0zbzroji3qpd4uwr76a4c4l9onq0p\ 1.png');
+      background-image: url('/image/lvw0zbzroji3qpd4uwr76a4c4l9onq0p\ 1.png');
       background-repeat: no-repeat;
       background-position: left;
     }
@@ -301,7 +301,7 @@ color: #242424;
       justify-content: center;
       border-radius: 16px;
       background-color: #f1f1f100;
-      background-image: url('./image/image\ 13.png');
+      background-image: url('/image/image\ 13.png');
       background-repeat: no-repeat;
       background-position: right;
     }
@@ -332,7 +332,7 @@ color: #242424;
       justify-content: center;
       border-radius: 16px;
       background-color: #f1f1f1;
-      background-image: url('./image/267933_hotspot\ 1.png');
+      background-image: url('/image/267933_hotspot\ 1.png');
       background-repeat: no-repeat;
     }
     .work12 .card_six h1{
@@ -527,7 +527,7 @@ text-transform: uppercase;
     margin-top: 37px;
 }
 .podimg{
-    background:url('./image/image\ 2\ \(1\).png') no-repeat;
+    background:url('/image/image\ 2\ \(1\).png') no-repeat;
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -849,7 +849,7 @@ color: #242424;
         margin: auto;
     }
     .kulontitle{
-        background: url('./image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
+        background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
         width: 90%;
         height: 402px;
         border-radius: 19px;
@@ -858,7 +858,7 @@ color: #242424;
         position: relative;
     }
     .kulontitle1{
-        background: url('./image/image.png') no-repeat;
+        background: url('/image/image.png') no-repeat;
         width: 90%;
         height: 402px;
         border-radius: 19px;
@@ -866,7 +866,7 @@ color: #242424;
         background-position: center;
         position: relative;
     }    .kulontitle2{
-        background: url('./image/two.png') no-repeat;
+        background: url('/image/two.png') no-repeat;
         width: 90%;
         height: 402px;
         border-radius: 19px;
@@ -886,7 +886,7 @@ color: #242424;
         margin: auto;
     }
     .kulontitle{
-        background: url('./image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
+        background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
         width: 100%;
         height: 302px;
         border-radius: 19px;
@@ -904,7 +904,7 @@ color: #242424;
         left: 141px;
     }
     .kulontitle1{
-        background: url('./image/image.png') no-repeat;
+        background: url('/image/image.png') no-repeat;
         width: 100%;
         height: 302px;
         border-radius: 19px;
@@ -912,7 +912,7 @@ color: #242424;
         background-position: center;
         position: relative;
     }    .kulontitle2{
-        background: url('./image/two.png') no-repeat;
+        background: url('/image/two.png') no-repeat;
         width: 100%;
         height: 302px;
         border-radius: 19px;
@@ -932,7 +932,7 @@ color: #242424;
         margin: auto;
     }
     .kulontitle{
-        background: url('./image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
+        background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
         width: 100%;
         height: 302px;
         border-radius: 19px;
@@ -941,7 +941,7 @@ color: #242424;
         position: relative;
     }
     .kulontitle1{
-        background: url('./image/image.png') no-repeat;
+        background: url('/image/image.png') no-repeat;
         width: 100%;
         height: 302px;
         border-radius: 19px;
@@ -949,7 +949,7 @@ color: #242424;
         background-position: center;
         position: relative;
     }    .kulontitle2{
-        background: url('./image/two.png') no-repeat;
+        background: url('/image/two.png') no-repeat;
         width: 100%;
         height: 302px;
         border-radius: 19px;
@@ -1593,7 +1593,7 @@ text-align: left;
     align-items: center;
 }
 .mySwiper_12 .swiper-horizontal  .swiper-pagination-bullets, .mySwiper_12 .swiper-pagination-bullets.swiper-pagination-horizontal, .mySwiper_12  .swiper-pagination-custom, .mySwiper_12  .swiper-pagination-fraction {
-    width: 15% !important;
+    width: 18% !important;
     position: absolute;
     bottom: 12px;
 }
