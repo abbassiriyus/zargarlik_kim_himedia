@@ -1,0 +1,85 @@
+.lich_dg_two2 h3{
+    font-family: Montserrat;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+
+}
+.zakaz_pol{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 16px;
+}
+.zakaz_otmen{
+    box-shadow: 0px 0px 15px 0px #0000001A;
+    padding: 20px;
+    height: 231px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    margin-right: 15px;
+    margin-bottom: 17px;
+}
+.otmen_back span{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+color: white;
+margin-left: 10px;
+}
+.otmen_back{
+    width: 79px;
+    height:24px;
+    background: var(--red-base, #DF1C41);
+    border-radius: 999px;
+}
+.img_text_zakaz p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #898989;
+position: relative;
+top: -2px;
+left: -2px;
+}
+.img_text_zakaz h3{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-top: 7px;
+}
+.img_ring_zakaz{
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+}
+.img_ring_zakaz img{
+    height: 69px;
+    width: 62px;
+}
+.podborniy button{
+    background: #F2F2F2;
+    width: 169px;
+    height:48px;
+    border-radius: 8px;
+    color: ;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+color: #257AE8;
+border: none;
+}
+.podborniy{
+    margin-top: 33px;
+    margin-left: -24px;
+}
