@@ -474,3 +474,26 @@ border: none;
 opacity: 0px;
 
 }
+@media (max-width:1277px) {
+    .yellow{
+        width: 480px;
+    }
+    .grey{
+        width: 480px;
+    }
+    .carduz {
+        height: 172px;
+    }
+
+  
+}
+@media (max-width:1299px) {  
+    .uzucard{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 32px;
+        min-height: 230px;
+        gap: 61px;
+        width: 80%;
+    }
+}
