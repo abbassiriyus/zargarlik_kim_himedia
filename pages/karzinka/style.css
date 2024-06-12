@@ -10,11 +10,14 @@
     justify-content: center;
      align-items: center;
 }
+
+
 .karzinka .text_karzinka{
     text-align: center;
     margin-top: 187px;
   margin-bottom: 52px;
 }
+
 .karzinka .text_karzinka h4{
 font-family: Montserrat;
 font-size: 28px;
@@ -23,6 +26,21 @@ line-height: 32px;
 letter-spacing: 0.5px;
 text-align: center;
 
+}
+@media(max-width:991px){
+   .karzinka .nav_kar img{
+    width: 163px;
+    position: relative;
+    top: -8px;
+}
+.karzinka .text_karzinka{
+    text-align: center;
+    margin-top: 114px;
+  margin-bottom: 100px;
+} 
+.karzinka .text_karzinka h4{
+    font-size: 24px;
+}
 }
 .karzinka .text_karzinka p{
     font-family: Montserrat;
@@ -276,6 +294,8 @@ color: white;
     margin: 0px;
 
 }
+
+
 .body_karzinka .card_karzinka .input_kamb_karzinka .input_r .bx-pencil{
 font-size: 30px;
 }
@@ -761,3 +781,37 @@ text-align: left;
 position: relative;
 top: 2px;
 }
+
+@media (max-width: 1340px) {
+    .body_karzinka {
+      display: grid;
+      grid-template-columns: auto 400px;
+    }
+  }
+  @media (max-width: 1270px) {
+    .body_karzinka {
+      display: grid;
+      grid-template-columns: auto 350px;
+    }
+    .body_karzinka .card_karzinka {
+        display: grid;
+        grid-template-columns: 40px 0.5fr 2fr 130px;
+        align-items: start;
+        margin-top: 10px;
+        margin-bottom: -9px;
+    }
+  }
+@media (max-width: 991px) {
+    .your-div-class {
+      order: -1;
+    }
+    .body_karzinka {
+        display: grid;
+        grid-template-columns: auto;
+      }
+      .body_karzinka .app_prod .displaynone{
+        width: 99%;
+        display: none;
+    }
+  }
+  
