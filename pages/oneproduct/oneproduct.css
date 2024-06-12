@@ -39,6 +39,7 @@ body{
  
     min-height: 200px;
     max-width: 930px;
+    height: 700px;
 display: grid;
 grid-template-columns: 100px auto;
 gap: 10px;
