@@ -12,7 +12,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 11px;
+    margin-left: 13px;
+    margin-top: 14px;
     margin-bottom: 36px;
 }
 .dom_arr_skup .bx-home-alt{
@@ -31,12 +32,13 @@ font-size: 34px;
 font-weight: 600;
 line-height: 41.45px;
 text-align: left;
-
+margin-left: 10px;
 }
 .dg_btn_sku{
     display: flex;
     margin-top: 4px;
-    gap: 7px;
+    gap: 9px;
+    margin-left: 10px;
 }
 .dg_btn_sku button{
     font-family: Montserrat;
@@ -56,7 +58,7 @@ background: #F2F2F2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 166px;
+    width: 160px;
     height: 121px;
 
 }
@@ -97,7 +99,7 @@ font-weight: 600;
 line-height: 64.4px;
 text-align: left;
 text-transform: uppercase;
-margin-bottom: 22px;
+margin-bottom: 30px;
 
     }
     .kon_ban_text h4{
@@ -112,16 +114,21 @@ text-decoration: underline;
         width: 100%;
         height: 464px;
         border-radius: 18px;
-        background-color: red;
-        margin-top: 65px;
-display: grid;
+        background: url('/image/2d43c92accfc342ddb6abfd2520c32f4.jpeg');
+        /* background-color: red; */
+        margin-top: 70px;
+        /* background-position: center; */
+        background-position-x:88% ;
+        background-size: cover;
+/* display: grid;
 grid-template-columns: 1fr 1fr;
-overflow: hidden;
+overflow: hidden; */
+padding-top: 130px;
     }
 .kon_ban_text{
-    width: 85%;
+    width: 90%;
     margin: auto;
-    margin-top: 139px;
+    /* margin-top: 139px; */
 
 }
 .kon_ban_img img{
@@ -131,7 +138,7 @@ height: 464px;
 .zol_ser{
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
-    margin-top: 60px;
+    margin-top: 55px;
     margin-bottom: 40px;
 }
 .zol_ser .gram h2{
@@ -141,6 +148,8 @@ height: 464px;
     line-height: 41.45px;
     text-align: left;
     color: #242424;    
+    margin-left: 10px;
+    margin-top: -3px;
 }
 .zol_ser .gram{
     width: 100%;
@@ -153,15 +162,20 @@ height: 464px;
     text-align: left;
     color: #242424;    
     /* width: 90%; */
+    margin-left: 10px;
+    position: relative;
+    top: 6px;
 }
 .gram12{
     width: 95%;
+    
     border-radius: 10px;
     /* background-color: aqua;/ */
     margin-left: 18px;
     margin-top: 4px;
     position: relative;
     margin-top: 69px;
+    left: 20px;
     box-shadow: 0px 0px 10px 0px #3e3e3e3b;
     z-index: 2323 !important;
     /* overflow: hidden; */
@@ -181,8 +195,8 @@ height: 464px;
 font-size: 16px;
 font-weight: 500;
 line-height: 19.5px;
-margin-top: 17px;
-margin-left: -2px;
+margin-top: 19px;
+margin-left: 12px;
 }
 .zoloto_top{
 position: absolute;
@@ -210,7 +224,8 @@ font-size: 20px;
 font-weight: 600;
 line-height: 24.38px;
 text-align: left;
-margin-top: -8px;
+margin-top: -11px;
+margin-left: -10px;
 }
 .top_nalc{
     display: grid;
@@ -225,7 +240,7 @@ margin-top: -8px;
     display: flex;
     background-color: white;
     align-items: center;
-    padding-left: 11px;
+    padding-left: 8px;
 }
 
 .nalc_table1{
@@ -252,7 +267,8 @@ font-size: 12px;
 font-weight: 500;
 line-height: 14.63px;
 text-align: left;
-margin-top: -10px;
+margin-top: -4px;
+    margin-left: -7px;
 }
 .bor{
     border-bottom-left-radius: 8px;
@@ -262,6 +278,7 @@ margin-top: -10px;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 30px;
     gap: 34px;
+    margin-left: 10px;
 }
 .one_shag{
     background-color: #F2F2F2;
@@ -291,7 +308,8 @@ font-weight: 400;
 line-height: 14.63px;
 text-align: left;
 position: relative;
-top: 6px;
+top: 9px;
+left: 5px;
 }
 .one_shag span{
     font-family: Montserrat;
@@ -305,7 +323,7 @@ top:188px;
 .clickkbnt{
     display: flex;
     gap: 10px;
-    width: 354px;
+    width: 373px;
     margin: auto;
     height: 49px;
     margin-bottom: 20px;
@@ -490,8 +508,12 @@ margin-left: -13px;
     margin-top: 60px;
     gap: 20px;
   }
+  .prodat_text{
+    margin-left: 9px;
+  }
   .prodat_gde img{
-    width:97%;
+    width: 100%;
+    margin-left: 10px;
   }
   .prodat_text button{
     font-family: Montserrat;
@@ -525,6 +547,8 @@ text-align: left;
     display:grid;
     grid-template-columns: 458px 458px 458px;
     gap: 30px;
+    margin-left: 14px;
+
   }
   .kol-bras{
     height:355px;
@@ -576,8 +600,9 @@ text-align: left;
   .gorod_pe{
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 28px;
     margin-top: 7px;
+    margin-left: 10px;
   }
   .comfortable h1{
     margin-top: 60px;
@@ -586,6 +611,7 @@ font-size: 34px;
 font-weight: 600;
 line-height: 41.45px;
 text-align: left;
+margin-left: 10px;
   }
   .gorod_pe select{
     width: 173px;
@@ -620,10 +646,12 @@ text-align: left;
     margin-top: 16px;
     border-radius: 19px;
     overflow: hidden;
+    margin-left: 10px;
 }
 .us_map{
     padding-top: 24px;
     overflow: auto;
+    margin-left: 13px;
 }
 .gipermarket iframe{
     width: 100%;
@@ -735,8 +763,9 @@ color: #898989;
     align-items: center;
     border-radius: 13px;
     padding-left: 23px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     transition: 0.6s;
+    margin-left: 10px;
 }
 
 .question:hover{
@@ -754,7 +783,7 @@ text-align: left;
 
 }
 .answer_for_question{
-    background-color: #175D9D;
+    /* background-color: #175D9D; */
     width: 100%;
     margin-top: -20px;
     height: 360px;
@@ -784,7 +813,7 @@ text-align: left;
 
 }
 .answer_for_question1{
-    background-color: #0a141d;
+    /* background-color: #0a141d; */
     width: 100%;
     margin-top: -20px;
     height: 360px;
@@ -794,7 +823,7 @@ text-align: left;
     transition: 1s;
 }
 .answer_for_question{
-    background-color: #e6f6ab;
+    /* background-color: #e6f6ab; */
     width: 100%;
     margin-top: -20px;
     height: 360px;
@@ -804,7 +833,7 @@ text-align: left;
     transition: 1s;
 }
 .answer_for_question3{
-    background-color: #efabf6;
+    /* background-color: #efabf6; */
     width: 100%;
     margin-top: -20px;
     height: 360px;
@@ -814,7 +843,7 @@ text-align: left;
     transition: 1s;
 }
 .answer_for_question2{
-    background-color: #f6d3ab;
+    /* background-color: #f6d3ab; */
     width: 100%;
     margin-top: -20px;
     height: 360px;
@@ -824,7 +853,7 @@ text-align: left;
     transition: 1s;
 }
 .answer_for_question4{
-    background-color: #f6abf1;
+    /* background-color: #f6abf1; */
     width: 100%;
     margin-top: -20px;
     height: 360px;
@@ -834,7 +863,7 @@ text-align: left;
     transition: 1s;
 }
 .answer_for_question5{
-    background-color: #abf6dd;
+    /* background-color: #abf6dd; */
     width: 100%;
     margin-top: -20px;
     height: 360px;
@@ -846,7 +875,8 @@ text-align: left;
 .salon_alm{
     display: grid;
     grid-template-columns: 346px auto;
-    margin-top: 48px;
+    margin-top: 52px;
+    margin-left: 11px;
 }
 .salon_alm h3{
     font-family: Montserrat;
