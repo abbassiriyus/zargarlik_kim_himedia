@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 205px !important;
+}
+ .for_all button{
+    cursor: pointer;
+}
+.for_all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    background: url("Frame 1003.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.for_all .nvb{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;  
+    max-width: 1440px;
+    gap: 9px;
+}
+.for_all .nvb p{
+    font-size: 14px;
+    font-weight: 500 !important;
+    margin-bottom: 0;
+}
+.for_all .nvb i{
+    font-size: 23px;
+}
+.for_all h1{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.for_all h4{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.for_all p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.for_all .glav{
+  font-size: 54px;
+  max-width: 1100px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 60px;
+}
+.for_all .for_circle h4{
+    font-size: 22px;
+    line-height: 25px;
+}
+.for_all .for_circle p{
+    line-height: 24px;
+}
+.for_all .for_circle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1214px;
+    width: 100%;
+    margin-bottom: 79px;
+}
+.for_all .with_circle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 16px;
+    width: 100%;
+    text-align: center;
+}
+.for_all .with_circle span{
+    color: #0059ff;
+    font-weight: 500;
+}
+.for_all .buy{
+border-radius: 8px;
+padding: 12px 117px;
+    background: #000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 11px;
+    font-size: 14px;
+    border: none;
+}
+.for_all .know{
+    border-radius: 8px;
+    padding: 12px 90px;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+.for_all .answer_and_questions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1255px;
+    width: 100%;
+}
+.for_all .atv{
+    font-weight: 600;
+    font-size: 54px;
+    text-align: center;
+    text-transform: none !important;
+    margin-bottom: 30px !important;
+}
+.for_all .for_circle h4{
+  font-size: 22px;
+  line-height: 25px;
+}
+.for_all .for_circle p{
+  line-height: 24px;
+}
+.for_all .blok{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #242424;
+    width: 100%;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+.for_all .cusok{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #313131;
+    border-radius: 19px;
+    padding: 24px 0px;
+    width: 100%;
+    text-align: center; 
+    color: #fff;
+    cursor: pointer;
+}
+/* .for_all .pod_tx:hover, .for_all .cusok:hover{
+    
+} */
+/* .for_all .cusok p:hover{
+    color: black;
+} */
+/* .for_all .st2{
+    background-color: white;
+} */
+/* .for_all .st3{ 
+    color: #000 !important;
+} */
+.for_all .pod_tx{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.for_all .questions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1186px;
+    width: 100%;
+    /* gap: 20px; */
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.for_all .voprosi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 0px 10px 0px !important;
+    border-bottom: 1px #a35ee4a1 solid;
+}
+.for_all .voprosi p{
+    font-weight: 500 !important;
+    font-size: 20px !important ;
+    cursor: pointer;
+}
+.for_all .voprosi i{
+    font-size: 30px;
+}
+.for_all .div_p{
+    width: 100%;
+}
+.for_all .not_found{
+    font-size: 20px;
+}
+.for_all .not_found span{
+    color: #0059ff;
+}
+
+.for_all .accordion {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .for_all .accordion-item {
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .for_all .accordion-header {
+    background-color: #f1f1f1;
+    padding: 1rem;
+
+  }
+  
+  .for_all .accordion-content {
+    padding: 16px;
+    display: none;
+  }
+  
+
+  @media (max-width:900px) {
+   .for_all .for_circle{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+   }
+   .for_all .with_circle{
+    max-width: none;
+}
+  }
+  @media (max-width:630px) {
+    .for_all .for_circle{
+     display: grid;
+     grid-template-columns: auto;
+     align-items: center;
+     justify-content: center;
+     gap: 15px;
+     margin-bottom: 20px;
+    }
+    .for_all .blok{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .for_all .questions{
+        padding: 0px 20px;
+    }
+    .for_all .div_p{
+        padding: 0px 20px;
+    }
+    .for_all .glav{
+        font-size: 30px;
+        max-width: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .for_all .atv{
+        font-size: 40px;
+        max-width: none;
+    }
+   }
