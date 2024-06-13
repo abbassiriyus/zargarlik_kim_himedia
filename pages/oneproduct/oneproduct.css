@@ -176,7 +176,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 17.07px;
 text-align: left;
-
+margin-bottom: 0;
 }
 .cpoc{
   width: 100%;
@@ -251,7 +251,7 @@ color: #BABABA;
 .oneclick{
   display: flex;
   flex-wrap: wrap;
-  margin-top: -10px;
+  margin-top: -6px;
   margin-left: 5px;
   gap: 5px;
 }
@@ -259,10 +259,10 @@ color: #BABABA;
   margin-left: 5px;
   display: flex;
   gap: 10px;
-  margin-top: 22px;
+  margin-top: 21px;
 }
 .likebtn button{
-  width: 391px;
+  width: 90%;
   height: 58px;
   border-radius: 14px;
   background: #FFF957;
@@ -303,8 +303,8 @@ font-weight: 500;
 line-height: 17.07px;
 color: #242424;
 background-color: white;
-margin-left: 4px;
-margin-top: 10px;
+margin-left: 7px;
+margin-top: 9px;
 }
 .tasar:hover{
   background-color: #00000042;
@@ -346,12 +346,12 @@ margin-left:7px;
 .clip{
 display: flex;
 align-items: center;
-    gap: 14px;
+    gap: 13px;
     margin-top: 21px;
     flex-wrap: wrap;
 }
 .clip img{
-height: 24px;
+height: 18px;
 }
 .nedrat h2{
 font-family: Montserrat;
@@ -395,7 +395,7 @@ font-weight: 500;
 line-height: 17.07px;
 text-align: left;
 color: #9D9D9D;
-
+margin-top: -3px;
 }
 
 .spans{
@@ -424,7 +424,7 @@ font-weight: 500;
 line-height: 17.07px;
 text-align: left;
 color: #9D9D9D;
-margin-bottom: 2px !important;
+margin-bottom: 1px !important;
 }
 .art{
   display: flex;
@@ -463,6 +463,27 @@ margin-top: 25px;
   margin-top: 23px;
   /* gap: 30px;/ */
   justify-content: space-between;
+  max-width: 910px;
+  margin: auto;
+}
+@media(max-width:910px){
+  .pod{
+    display: none;
+  }
+  .brosh{
+    display: none;
+  }
+  .carousel_one{
+    width: 100%;
+ 
+    min-height: 200px;
+    max-width: 930px;
+    height: 400px;
+display: grid;
+grid-template-columns: 100px auto;
+gap: 10px;
+
+}
 }
 .fiant{
 
@@ -475,8 +496,8 @@ margin-top: 25px;
 position: relative;
 }
 .fiantbody{
-      margin-top: 21px;
-    margin-left: 2px;
+  margin-top: 16px;
+  margin-left: 4px;
 }
 .fiantbody span{
 font-family: Montserrat;
@@ -491,6 +512,14 @@ color: #242424;
   .artikl{
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .artikl span{
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .artikl1 span{
+    padding-left: 0px;
+    margin-left: 0px;
   }
   .artikl1{
     display: grid;
@@ -581,8 +610,8 @@ color: #6C7B8B;
   border-radius: 12px;
 }
 .bonusic{
-  padding-left: 62px;
-  padding-top: 18px;
+  padding-left: 64px;
+  padding-top: 15px;
 }
 .zaka1{
   display: flex;
@@ -616,8 +645,8 @@ color: #6C7B8B;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -35px;
-  top: 18%;
+  left: -32px;
+  top: 16%;
 }
 .ten span{
   font-size: 39px;
@@ -635,6 +664,7 @@ font-size: 28px;
 font-weight: 600;
 line-height: 34.13px;
 margin-bottom: 26px !important;
+
 }
 
 .prp{
@@ -643,17 +673,28 @@ font-size: 16px;
 font-weight: 400;
 line-height: 19.5px;
 margin-bottom: 50px;
+z-index: 1;
+position: relative;
 }
 .paraph {
   width: 95%;
   max-width: 1440px;
   margin: auto;
-  margin-top: 103px;
+  margin-top: -29px;
+}
+@media (max-width:1390px) {
+  .paraph {
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 53px;
+  }
 }
 .tab_but{
-  width: 356.75px;
+  min-width: 356.75px;
 height:66px;
 /* padding: 22px 142px 22px 142px; */
+text-wrap: nowrap;
 border-radius: 12px  ;
 background: #F5F5F5;
 display: flex;
@@ -663,11 +704,12 @@ opacity: 0px;
 
 }
 .guarantee{
-  margin-top: 76px;
+  margin-top: 95px;
 }
 .guarbtns{
   display: flex;
-  gap: 3px;
+  gap: 18px;
+  overflow-x: auto;
 }
 .tab_but:hover{
   background-color: #00000046
@@ -846,12 +888,13 @@ text-align: left;
 .slider_one2 .cards_one2{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-gap: 36px;
-  padding-top: 28px;
+gap: 32px;
+  padding-top: 18px;
   position: relative;
   left: -2px;
 overflow-x: auto;
 overflow-y: visible;
+padding-bottom: 10px;
 }
 .slider_one2 .cards_one2 .card_one2{
   box-shadow: 0px 0px 15px 0px #0000001A;
@@ -869,12 +912,15 @@ width: 227px;
 margin: auto;margin-bottom: -3px;
 }
 .slider_one2 .cards_one2 .card_one2 p{
-width: 87%;
-margin: auto;
+  width: 84%;
+  margin: auto;
+  /* margin-top: -6px; */
+  line-height: 22px;
 }
 .slider_one2  .swiper {
   width: 100%;
   height: 100%;
+  padding-top: 16px;
 }
 
 .slider_one2  .swiper-slide {
@@ -997,9 +1043,9 @@ margin-left: 18px;
   text-align: left;
   margin: auto;
   width: 85%;
-  margin-top: -1px;
+  margin-top: -21px;
   margin-bottom: 0px;
-  margin-left: 16px;  
+  margin-left: 23px;
 }
 
 
@@ -1260,6 +1306,7 @@ line-height: 34.13px;
   top: 35px;
   box-shadow: 0px 0px 20px 0px #3E3E3E26;
   /* margin-top/:35px; */
+  padding-bottom: 14px;
 }
 .bank1{
   background-color: #EFEFEF;
@@ -1288,6 +1335,7 @@ line-height: 34.13px;
     height: 85%;
     width: 100%;
 }
+
 }
 @media (max-width:991px) {
   .carousel_one .mySwiper{
@@ -1302,6 +1350,9 @@ display: grid;
 grid-template-columns: auto;
 gap: 10px;
 
+}
+.cpb{
+  top: 0px;
 }
 .routpage_one{
   margin-top: 0px;
@@ -1345,6 +1396,7 @@ text-align: left;
   align-items: center;
   gap: 14px;
   margin-top: -10px;
+  display: none;
 }
 .btns_cars button{
   width: 159px;
@@ -1356,4 +1408,7 @@ font-size: 12px;
 font-weight: 600;
 line-height: 14.63px;
 
+}
+.brosh{
+  margin-top: 153px !important;
 }

@@ -827,6 +827,8 @@ border-bottom: 1px solid white;
 }
 .slider_one3 .card_one4{
     background: #FFFFFF;
+    max-width: 254px;
+    margin: auto;
 border-radius: 12px;
 padding-bottom: 10px;
 }
