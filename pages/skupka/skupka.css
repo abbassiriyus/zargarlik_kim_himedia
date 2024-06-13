@@ -501,6 +501,9 @@ border: none;
 margin-top: 73px;
 margin-left: -13px;
   }
+  .two-g-pro button:hover{
+    background-color: #eedd6c;
+  }
   .prodat_gde{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -801,7 +804,7 @@ font-size: 18px;
 font-weight: 600;
 line-height: 21.94px;
 text-align: left;
-margin-bottom: 20px;
+margin-bottom: 18px;
 
 }
 .answer_body p{
@@ -820,6 +823,8 @@ text-align: left;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
+    padding-top: 8px;
+
     transition: 1s;
 }
 .answer_for_question{
@@ -866,7 +871,8 @@ text-align: left;
     /* background-color: #abf6dd; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
+    background-color: white;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
@@ -927,4 +933,26 @@ line-height: 14.63px !important;
 text-align: center;
 color: #ADADAD;
 margin-top: 10px;
+ }
+ .answer_body ul{
+        margin-left: 25px;
+    margin-top: 14px;
+ }
+ .answer_for_question4 li{
+    line-height: 22px;
+ }
+ .answer_for_question5 h3{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.94px;
+text-align: left;
+
+ }
+ .answer_for_question5 ul{
+        margin-top: 8px;
+ }
+ .answer_for_question5 ul li{
+    margin-bottom: 7px;
+    line-height: 19px;
  }
