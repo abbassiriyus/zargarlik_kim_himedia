@@ -1,5 +1,7 @@
 .karzinka{
     padding-top: 0px !important;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .karzinka .nav_kar img{
     padding-top: 20px;
@@ -32,6 +34,19 @@ text-align: center;
     width: 163px;
     position: relative;
     top: -8px;
+}
+.karzinka .nav2{
+    box-shadow: none !important;
+    position: relative;
+    z-index: 1;
+}
+.karzinka .nav_kar{
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+     align-items: center;
+     box-shadow: 0px 0px 15px 0px #0000001A;
+
 }
 .karzinka .text_karzinka{
     text-align: center;
@@ -439,6 +454,7 @@ color: #242424;
 gap: 10px;
     margin-bottom: 55px;
 }
+
 .body_karzinka .app_prod .poluchir_karzinka .line_karzinka2{ 
 margin-bottom: 29px;
 }
@@ -502,6 +518,19 @@ height: 52px;
 font-size: 23px;
 position: relative;
 top: 5px;
+}
+@media (max-width:801px) {
+    .body_karzinka .app_prod .poluchir_karzinka{
+        display: grid;
+        grid-template-columns: auto; 
+        align-items: stretch;
+        margin-top: 14px;
+        gap: 10px;
+        margin-bottom: 55px;
+    }  
+    .body_karzinka .app_prod .poluchir_karzinka input{
+        height: 52px;
+    }
 }
 .body_karzinka .app_prod .title_ke .maxsus_img_karsiznda{
 margin-right: 7px;
