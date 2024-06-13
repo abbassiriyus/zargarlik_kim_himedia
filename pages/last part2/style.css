@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 205px !important;
+}
+.for_bg{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+.background{
+    width: 100%;
+    height: 490px;
+    background: url(https://s3-alpha-sig.figma.com/img/16a6/a31d/e7eb5ef3744613bb91cfdd74eb13cd43?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gKxH7WFuxWG2lGD33u4uFfejFgmTlU~03JWGm~LGMDCK1MJNqRCujUDiUTsJG6saeXp7AHLFIPgNc2Qh0ZfXGJuXENLmnNxNdFzWPMAr14E2iLGJnaCHGTknda6cX1DY3w9fQ4QvXwDh5RTpZ6CQAlgWXPgpwk~ER~~5FQ2NZgvWEPC8hdC4Cmi4iPI21DU8zuKf9pQcFbR~isbFh8Pk7vAQkyos~Id80qdWnNvilCjPeL75KLR2wZeoTY9tAeo3IwHFsRJR7B6jP3nBrbS98Pp1bTXi6Md7~A8mI2hkvWfOH2-nHc3vQ5RDjeCAhBVPAdpP6eTOaESKtlEb~wry-w__);
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background h1{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 81px;
+    text-align: left;
+}
+.background p{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34.13px;
+    text-align: left;    
+}
+.word{
+max-width: 1400px;
+width: 100%;
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid grey;
+}
+span{
+    left: 5px;
+}
+.word h2{
+    margin-top: 1.7%;
+    font-size: 20.3px;
+    right: -1px;
+}
+.word h3{
+    font-size: 16px;
+    margin-top: 1.9%;
+    left: 1px;
+}
+.spun{
+    top: 10px;
+    left: -0.1px;
+}
+.s{
+    left: 11px;
+    top: -1px;
+}
+.s1{
+    top: 2px;
+    left: 8px;
+}
+.s2{
+    top: 5px;
+    left: 8px;
+}
+.s3{
+    left: -0px;
+    top: -2px;
+}
+.h31{
+    left: 3px;
+    top: -3px;
+}
+.v{
+    top: -3px;
+}
+.h32{
+    top: -13px;
+}
+.p1{
+    top: -13px;
+
+}
+.word2{
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1400px;
+width: 100%;
+    border-bottom: 1px solid grey;
+}
+.word2 h1{
+    font-size: 24px;
+    font-weight: 500;
+    top: 35px;
+    left: -1px;
+}
+.word2 h2{
+    top: 70px ;
+}
+.corect{
+    left: -4px;
+}
+.cor{
+    font-size: 24.5px;
+    left: -2px;
+    
+}
+.word2 h3{
+    top: 70px;
+    font-size: 17px;
+}
+.word2 p{
+    top: 70px;
+}
+.spoon{
+    font-size: 16.5px;
+    top: 2px;
+    left: 1px;
+}
+.w{
+    top: -10px;
+    left: -0.1px;
+}
+.number{
+    left: 7px;
+    top: 3px;
+}
+.w1{
+    top: 2px;
+    left: 11px;
+}
+.w2{
+    top: 6px;
+    left: 8px;
+}
+.w3{
+    top: 10px;
+    left: 8px;
+}
+.w4{
+    left: 1px;
+    top: -1px;
+}
+.h2{
+    font-size: 20.3px;
+    top: 51.5px !important;
+    left: 1px;
+}
+.h33{
+    margin-top: 1%;
+}
+.h34{
+    margin-top: 1%;
+}
+.sp{
+    top: 12px;
+    left: 1px;
+}
+.h21{
+    font-size: 16px;
+    top: 95px !important;
+}
+.dp{
+    max-width: 1400px;
+    width: 100%;
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid grey;
+}
+.wf{
+    top: 10px;
+    left: -0px;
+}
+.wf1{
+    top: -2px;
+    left: 11px;
+}
+.wf2{
+    left: 8px;
+}
+.wf3{
+    top: 4px;
+    left: 8px;
+}
+.contineu{
+    left: 25px;
+    top: 4px;
+}
+.wf4{
+    top: 10px;
+    left: 6px;
+}
+.continiu{
+    top: 8px;
+    left: 25px;
+}
+.wf5{
+    left: 8px;
+    top: 14px;
+}
+.not_wf{
+    top: -6px;
+    left: 7px;
+}
