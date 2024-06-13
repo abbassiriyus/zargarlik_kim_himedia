@@ -544,7 +544,7 @@ margin-right: 7px;
 .body_karzinka .app_prod .bonus_karzinka{
     display: flex;
     align-items: center;
-    height: 48px;
+    min-height: 48px;
     background: #F2F2F2;
 border-radius: 8px;
 margin-bottom: 63px;
@@ -645,6 +645,7 @@ gap: 20px;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
+    min-width: 100px;
     line-height: 16px;
     text-align: center;
     color: white;
@@ -844,3 +845,11 @@ top: 2px;
     }
   }
   
+  @media (max-width:820px){
+    .body_karzinka .app_prod .dastafka_radio_kar{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 29px;
+    }
+  }
