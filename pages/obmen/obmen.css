@@ -66,3 +66,127 @@ line-height: 30px;
 text-align: left;
 margin-left: 27px;
 }
+.fram797{
+    display: none;
+}
+@media (max-width:520px) {
+    .fram7922{
+        display: none;
+    }
+    .fram797{
+        display: block;
+    }
+    .banner_ak button{
+        width: 100%;
+    }
+    .old{
+        font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600 !important;
+line-height: 21.94px !important;
+text-align: left !important;
+
+    }
+    .shg_b h2{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+text-align: left;
+
+    }
+    .shg_b p{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: left;
+
+    }
+.shg_b span{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: right;
+
+}
+.one_shag{
+    height: 335px !important;
+}
+.one_shag img{
+    height: 195px !important;
+}
+.one_shag span{
+    position: absolute;
+    top: 100px;
+}
+.osnova_obm{
+    font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600 !important;
+line-height: 21.94px !important;
+text-align: center !important;
+
+}
+.adult p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: center;
+
+}
+.mons{
+    font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600 !important;
+line-height: 21.94px !important;
+text-align: left !important;
+
+}
+.reaktiv p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+
+}
+.alsir li{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+
+}
+.app_dg{
+    width: 88%;
+}
+}
+@media (max-width:500px) {
+    .app_dg{
+    width: 330px;
+    height: 84px;
+    box-shadow: 0px 6px 45px 0px #3E3E3E1A;
+border-radius: 12px;
+    }
+    .nam img{
+        width: 24px;
+        top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .nam{
+        height: auto;
+    }
+    .nam p{
+        top: 6px !important; 
+    }
+    .nam h4{
+        top: 12px !important;
+    }
+    .dg_btn_sku{
+        overflow: auto;
+    }
+}

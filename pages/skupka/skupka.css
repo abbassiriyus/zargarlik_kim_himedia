@@ -39,6 +39,8 @@ margin-left: 10px;
     margin-top: 4px;
     gap: 9px;
     margin-left: 10px;
+overflow-x: scroll;
+/* background: red; */
 }
 .dg_btn_sku button{
     font-family: Montserrat;
@@ -51,6 +53,7 @@ padding: 10px 14px;
 border-radius: 8px;
 border: none;
 background: #F2F2F2;
+text-wrap: nowrap;
 
 }
 .nam{
@@ -955,4 +958,108 @@ text-align: left;
  .answer_for_question5 ul li{
     margin-bottom: 7px;
     line-height: 19px;
+ }
+ @media (max-width:1480px) {
+    .klient_adult{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+ }
+ @media (max-width:1350px) {
+    .klient_adult{
+        display: grid;
+        grid-template-columns: 250px 250px 250px !important;
+        width: 71% !important;
+    }
+ }
+ @media (max-width:1250px) {
+    .three_shag{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+    @media (max-width:1350px) {
+        .klient_adult{
+            display: grid;
+            grid-template-columns:1fr  1fr  !important;
+            width: 100% !important;
+        }
+        .adult{
+            margin-bottom: 10px;
+        }
+     }
+     @media (max-width:991px) {
+        body{
+            padding-top:112px;
+        }
+        .dg_btn_sku{
+            margin-bottom: 30px;
+        }
+     }
+ @media (max-width:948px) {
+    .pravila_dg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+ @media (max-width:650px) {
+    .klient_adult{
+        display: grid;
+        grid-template-columns: 1fr  !important;
+        width: 100% !important;
+    }
+    .three_shag{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+ }
+ @media (max-width:520px) {
+    .dom_arr_skup h4{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+    }
+    .domik_dg h2{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .dg_btn_sku{
+        overflow: auto !important;
+    }
+    .dg_btn_sku button{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+
+    }
+    .nam p{
+        font-family: Montserrat;
+font-size: 10px;
+font-weight: 400;
+line-height: 12.19px;
+text-align: center;
+
+    }
+    .nam h4{
+        font-family: Montserrat;
+font-size: 10px;
+font-weight: 600;
+line-height: 12.19px;
+text-align: center;
+
+    }
+    .pravila_dg{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
  }
