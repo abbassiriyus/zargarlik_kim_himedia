@@ -659,6 +659,9 @@ margin-top: 16px;
     grid-template-columns: 1fr 0.8fr;
     align-items: start;
 }
+
+
+
 .body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k{
     display: grid;
     grid-template-columns: 33px auto;
@@ -705,6 +708,17 @@ margin-top: 11px;
    border: none;
    height: 56px;
    width: 98%;
+}
+@media(max-width:650px){
+    .body_karzinka .app_prod .dastefka_almaz .grid_almaz{
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: start;
+    }
+    .body_karzinka .app_prod .dastefka_almaz .grid_almaz  button{
+        background: #FFF957;
+border-radius: 14px;
+     }
 }
 .body_karzinka .app_prod .dastefka_almaz  a{
     text-decoration: none;
@@ -822,9 +836,7 @@ margin-top: 15px;
     color: #257AE8;
 
 }
-.body_karzinka .app_prod .dastafka_radio_kar_dr{
 
-}
 .body_karzinka .app_prod .dastafka_radio_kar_dr .dastafka_radio_kar_card{
     padding-bottom: 16px;
     display: flex;
@@ -864,6 +876,9 @@ top: 2px;
         margin-bottom: -9px;
     }
   }
+  .body_karzinka .displaynone_meidia {
+    display: none;
+  }
 @media (max-width: 991px) {
     .your-div-class {
       order: -1;
@@ -876,6 +891,15 @@ top: 2px;
         width: 99%;
         display: none;
     }
+    .body_karzinka .displaynone_meidia {
+        display: block;
+      }
+      .body_karzinka .app_prod .skitka_karzinka1 {
+        display: none;
+      }
+      .body_karzinka .app_prod .title_ke12 {
+display: none;
+      }
   }
   
   @media (max-width:820px){
@@ -885,14 +909,82 @@ top: 2px;
         gap: 10px;
         margin-top: 29px;
     }
-  }
+    .body_karzinka {
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        align-items: start;
+        margin-top: 10px;
+        gap: 29px;
+        margin-bottom: 0;
+    }
+    .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka {
+        height: 46px;
+    }
+    .body_karzinka .app_prod .poluchir_karzinka button {
+        height: 44px;
+    }
+      .body_karzinka .app_prod .karzinka_title{
+margin: auto;
+margin-top: -43px;
+width: 90%;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
 
+      } 
+      .body_karzinka .app_prod .check_delete{
+        width: 90%;
+        margin: auto;
+        margin-top: -7px;
+      }
+      .body_karzinka .app_prod .check_delete a{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: left;
+
+      }
+      .body_karzinka .line_karzinka {
+       width: 95%;
+       margin: auto;
+        margin-top: 4px;
+    }
+ 
+  }
+   .body_karzinka .displaynone_meidia .t_22{
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        width: 40px;
+        border-radius: 9px;
+        height: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #D7BE67;
+color: white;
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: left;
+
+    }
   .displaynone_meidia .card_media_karzinka{
 display: grid;
-grid-template-columns: 120px auto;
+grid-template-columns: 110px auto;
 width: 95%;
+
 margin: auto;
-margin: auto;
+margin-bottom: 14px;
+/* margin: auto; */
+gap: 10px;
   }
   .displaynone_meidia .card_media_karzinka .card_media_img_karzinka {
     position: relative;
@@ -900,16 +992,31 @@ margin: auto;
   }
   .displaynone_meidia .card_media_karzinka .card_media_img_karzinka img{
 width: 100%;
-  }
- .displaynone_meidia .card_media_karzinka .card_media_text_karzinka h5{
+ 
+}
+.displaynone_meidia .card_media_karzinka .card_media_text_karzinka {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.displaynone_meidia .card_media_karzinka .card_media_text_karzinka input{
+position: absolute;
+right: 10px;
+top: 10px;
+width: 20px;
+height: 20px;
+}
+ .displaynone_meidia .card_media_karzinka .card_media_text_karzinka h6{
     text-align: left;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 21.94px;
     letter-spacing: 0.7px;
-    
-    
+    margin-bottom: 25px;
+    margin-top: 13px;
+    max-width: 90%;
     }
    .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .p{
         font-family: Montserrat;
@@ -948,6 +1055,7 @@ width: 100%;
         padding-right: 8px;
         height: 48px;
         border-radius: 8px;
+        margin-top: 4px;
     }
     .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r p{
         padding: 0px;
@@ -961,7 +1069,16 @@ width: 100%;
     }
     .displaynone_meidia .card_media_karzinka .buttons{
         display: flex;
+        display: flex;
         gap: 3px;
+        /* display: flex; */
+        justify-content: space-around;
+        gap: 1px;
+        margin-top: 7px;
+    }
+    .displaynone_meidia .card_media_karzinka .buttons i{
+        position: relative;
+        top: -2px;
     }
     .displaynone_meidia .card_media_karzinka .buttons button{
         width: 48px;
@@ -973,4 +1090,5 @@ width: 100%;
 border: none;
 color: #408BEB;
 font-size: 24px;
+
     }
