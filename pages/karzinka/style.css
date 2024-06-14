@@ -101,7 +101,10 @@ text-align: center;
     gap: 29px;
     margin-bottom: -52px;
 }
-
+.body_karzinka .app_prod{
+    display: grid;
+    grid-template-columns: auto;
+}
 .body_karzinka .app_prod h4{
     font-family: Montserrat;
     font-size: 32px;
@@ -531,6 +534,29 @@ top: 5px;
     .body_karzinka .app_prod .poluchir_karzinka input{
         height: 52px;
     }
+    .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka h3{
+        font-size: 12px;
+        color: #1D6BD1;
+        padding-left: 10px;
+        }
+        .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka .time_quary{
+            font-size: 12px;
+            color: #1D6BD1;
+            border-color: white;
+            display: flex;align-items: center;
+        }
+        .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka .time_quary .bx-help-circle{
+            font-size: 23px;
+            position: relative;
+            top: -3px;
+            color: white;
+            left: 3px;
+        }
+        .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka{
+            background: #ABCFFF;
+display: grid;
+grid-template-columns: 1fr 1fr;
+        }
 }
 .body_karzinka .app_prod .title_ke .maxsus_img_karsiznda{
 margin-right: 7px;
@@ -539,6 +565,13 @@ margin-right: 7px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+}
+@media (max-width:600px){
+    .body_karzinka .app_prod .poluchir_karzinka .two_input_karzinka{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    } 
 }
 
 .body_karzinka .app_prod .bonus_karzinka{
@@ -853,3 +886,91 @@ top: 2px;
         margin-top: 29px;
     }
   }
+
+  .displaynone_meidia .card_media_karzinka{
+display: grid;
+grid-template-columns: 120px auto;
+width: 95%;
+margin: auto;
+margin: auto;
+  }
+  .displaynone_meidia .card_media_karzinka .card_media_img_karzinka {
+    position: relative;
+
+  }
+  .displaynone_meidia .card_media_karzinka .card_media_img_karzinka img{
+width: 100%;
+  }
+ .displaynone_meidia .card_media_karzinka .card_media_text_karzinka h5{
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    letter-spacing: 0.7px;
+    
+    
+    }
+   .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .p{
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 11.07px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        display: flex;
+    }
+   .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .span{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.63px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        width:48px;
+    height:21px;
+    background: #CC373C;
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+        top: -5px;
+        left: 5px;
+    }
+    .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid grey;
+        padding-left: 15px;
+        padding-right: 8px;
+        height: 48px;
+        border-radius: 8px;
+    }
+    .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r p{
+        padding: 0px;
+        margin: 0px;
+    
+    }
+    
+    
+    .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r .bx-pencil{
+    font-size: 30px;
+    }
+    .displaynone_meidia .card_media_karzinka .buttons{
+        display: flex;
+        gap: 3px;
+    }
+    .displaynone_meidia .card_media_karzinka .buttons button{
+        width: 48px;
+        height:48px;
+        padding: 12px 10px 12px 10px;
+    border-radius: 7px;
+        opacity: 0px;
+        background: #F2F2F2;
+border: none;
+color: #408BEB;
+font-size: 24px;
+    }
