@@ -528,7 +528,7 @@ color: #242424;
   }
 
   .for_harak{
-    line-height: 20px !important;
+    line-height: 20px;
   }
 }
 .fiantbody p{
@@ -1320,7 +1320,7 @@ line-height: 34.13px;
   border-radius: 15px;
   position: relative;
   top: 35px;
-  box-shadow: 0px 0px 20px 0px #3E3E3E26;
+  /* box-shadow: 0px 0px 20px 0px #3E3E3E26; */
   /* margin-top/:35px; */
   padding-bottom: 14px;
 }
@@ -1365,12 +1365,12 @@ line-height: 34.13px;
     grid-template-columns: auto;
     gap: 10px;
 }
-.payment_one h2{
+.eto_net{
   display: none;
 }
-.cpb{
+/* .cpb{
   top: 0px;
-}
+} */
 .routpage_one{
   margin-top: 0px;
 }
@@ -1415,11 +1415,14 @@ font-size: 14px;
 font-weight: 600;
 line-height: 14.63px;
 }
+.brosh{
+  margin-top: 153px ;
+}
 @media (max-width:500px){
   .btns_cars{
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1497,7 +1500,7 @@ line-height: 20px;
 text-align: left;
 }
 .carousel_one .mySwiper2 {
-  height: 95%;
+  height: 327px;
   width: 100%;
 }
 .cpoc p{
@@ -1510,27 +1513,208 @@ text-align: left;
 }
 @media (max-width:360px){
   .xarakb{
-    width: 127px;
+    width: 90px;
     height: 35px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .xarak{
-    gap: 10px;
+    gap: 8px;
+    margin-left: 0;
   }
   .xarakb span{
-  font-size: 17px;
+  font-size: 16px;
   line-height: 34.13px;
   }
+  .xarak img{
+    width: 45px;
+    }
   .xarak p{
   font-size: 14px;
   line-height: 17.07px;
   }
+  .carousel_one .mySwiper2 {
+    height: 327px;
+    width: 100%;
+  }
+  .prkar p{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .cpoc p{
+  font-size: 14px;
+  line-height: 17.07px;
+  }
+  .cpoc span{
+    font-size: 18px;
+    line-height: 17.07px;
+    }
+    .cpoc del{
+      font-size: 14px;
+      line-height: 17.07px;
+      }
+      .cpbic {
+        padding: 17px;
+    }
+    .clcick {
+      width: 54px;
+      height: 44px;
+      border-radius: 14px;
+  }
+  .cpoc {
+    padding: 9px 16px;
+    gap: 7px;
+    margin-top: 13px;
+    padding-left: 17px;
+}
+.likebtn{
+  width: 100%;
+  margin-left: 0;
+}
+.likebtn button{
+  border-radius: 7px;
+  width: 100%;
+  height: 44px;
+  font-size: 12px;
+}
+.heart {
+  width: auto;
+  height: auto;
+  padding: 3px 10px;
+  border-radius: 8px;
+}
+.tasar{
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  margin-left: 0;
+  font-size: 12px;
+}
+.heart i{
+font-size: 23px;
+}
+.for_it{
+  padding: 0px 10px 0px 4px;
+}
+.bankic p{
+font-size: 14px;
+line-height: 17.07px;
+margin-bottom: 14px;
+}
+.bankic {
+  padding: 20px 12px;
+}
+.bank1 span {
+  font-size: 14px;
+  line-height: 17.07px;
+  margin-left: 54px;
+}
+.bank1 {
+  margin-top: 20px;
+}
+.clip {
+  gap: 10px;
+}
+.clip img {
+  height: 25px;
+}
+.nedratic {
+  padding: 18px 7px;
+}
+.ded{
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.artikl1 {
+    margin-top: 8px;
+}
+.for_art{
+  margin-top: -10px;
+}
+.artikl1 span {
+  font-size: 14px;
+  line-height: 17.07px;
+}
+  .spans{
+   margin-top: -4px;   
+  }
+  .for_cvet{
+    margin-top: -4px !important;
+    margin-bottom: -12px !important;
+  }
+  .paraph h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    margin-bottom: 8px !important;
+  }
+  .paraph p{
+    font-size: 14px;
+    line-height: 17.07px;
+  }
+      .paraph {
+        width: 95%;
+        max-width: 1440px;
+        margin: auto;
+        margin-top: 53px;
+    }
+    .prp {
+    margin-bottom: 10px;
+  }
+  
+.quesic h3 {
+  font-size: 20px;
+  line-height: 24.38px;
+}
+.grinp input {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  background: #F5F5F5;
+  padding-left: 14px;
+  outline: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  margin-bottom: 19px;
+}
+.for_opis{
+          padding-right: 20px;
+}
+.kuryer h1{
+  font-size: 20px;
+  line-height: 24.38px;
+}
+.kuryer1 h1{
+  font-size: 20px;
+  line-height: 24.38px;
+}
+.kuryer2 h1{
+  font-size: 20px;
+  line-height: 24.38px;
+}
+.quesic textarea {
+  width: 99%;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-left: 12px;
+  height: 145.38px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.94px;
+}
+.imnr {
+  height: 95px;
+}
+.slider_one2 {  
+  margin-top: 30px;
+}
 }
 @media (max-width:330px){
   .xarakb{
-    width: 127px;
+    width: 110px;
     height: 35px;
     display: flex;
     justify-content: center;
@@ -1547,8 +1731,6 @@ text-align: left;
     margin-left: 0px;
     gap: 5px;
 } 
+
 }
 
-.brosh{
-  margin-top: 153px ;
-}
