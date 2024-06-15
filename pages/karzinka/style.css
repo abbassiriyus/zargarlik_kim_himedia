@@ -1,5 +1,7 @@
 .karzinka{
     padding-top: 0px !important;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .karzinka .nav_kar img{
     padding-top: 20px;
@@ -32,6 +34,19 @@ text-align: center;
     width: 163px;
     position: relative;
     top: -8px;
+}
+.karzinka .nav2{
+    box-shadow: none !important;
+    position: relative;
+    z-index: 1;
+}
+.karzinka .nav_kar{
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+     align-items: center;
+     box-shadow: 0px 0px 15px 0px #0000001A;
+
 }
 .karzinka .text_karzinka{
     text-align: center;
@@ -86,7 +101,10 @@ text-align: center;
     gap: 29px;
     margin-bottom: -52px;
 }
-
+.body_karzinka .app_prod{
+    display: grid;
+    grid-template-columns: auto;
+}
 .body_karzinka .app_prod h4{
     font-family: Montserrat;
     font-size: 32px;
@@ -439,6 +457,7 @@ color: #242424;
 gap: 10px;
     margin-bottom: 55px;
 }
+
 .body_karzinka .app_prod .poluchir_karzinka .line_karzinka2{ 
 margin-bottom: 29px;
 }
@@ -503,6 +522,42 @@ font-size: 23px;
 position: relative;
 top: 5px;
 }
+@media (max-width:801px) {
+    .body_karzinka .app_prod .poluchir_karzinka{
+        display: grid;
+        grid-template-columns: auto; 
+        align-items: stretch;
+        margin-top: 14px;
+        gap: 10px;
+        margin-bottom: 55px;
+    }  
+    .body_karzinka .app_prod .poluchir_karzinka input{
+        height: 52px;
+    }
+    .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka h3{
+        font-size: 12px;
+        color: #1D6BD1;
+        padding-left: 10px;
+        }
+        .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka .time_quary{
+            font-size: 12px;
+            color: #1D6BD1;
+            border-color: white;
+            display: flex;align-items: center;
+        }
+        .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka .time_quary .bx-help-circle{
+            font-size: 23px;
+            position: relative;
+            top: -3px;
+            color: white;
+            left: 3px;
+        }
+        .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka{
+            background: #ABCFFF;
+display: grid;
+grid-template-columns: 1fr 1fr;
+        }
+}
 .body_karzinka .app_prod .title_ke .maxsus_img_karsiznda{
 margin-right: 7px;
 }
@@ -511,11 +566,18 @@ margin-right: 7px;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+@media (max-width:600px){
+    .body_karzinka .app_prod .poluchir_karzinka .two_input_karzinka{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    } 
+}
 
 .body_karzinka .app_prod .bonus_karzinka{
     display: flex;
     align-items: center;
-    height: 48px;
+    min-height: 48px;
     background: #F2F2F2;
 border-radius: 8px;
 margin-bottom: 63px;
@@ -597,6 +659,9 @@ margin-top: 16px;
     grid-template-columns: 1fr 0.8fr;
     align-items: start;
 }
+
+
+
 .body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k{
     display: grid;
     grid-template-columns: 33px auto;
@@ -616,6 +681,7 @@ gap: 20px;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
+    min-width: 100px;
     line-height: 16px;
     text-align: center;
     color: white;
@@ -642,6 +708,17 @@ margin-top: 11px;
    border: none;
    height: 56px;
    width: 98%;
+}
+@media(max-width:650px){
+    .body_karzinka .app_prod .dastefka_almaz .grid_almaz{
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: start;
+    }
+    .body_karzinka .app_prod .dastefka_almaz .grid_almaz  button{
+        background: #FFF957;
+border-radius: 14px;
+     }
 }
 .body_karzinka .app_prod .dastefka_almaz  a{
     text-decoration: none;
@@ -759,9 +836,7 @@ margin-top: 15px;
     color: #257AE8;
 
 }
-.body_karzinka .app_prod .dastafka_radio_kar_dr{
 
-}
 .body_karzinka .app_prod .dastafka_radio_kar_dr .dastafka_radio_kar_card{
     padding-bottom: 16px;
     display: flex;
@@ -801,6 +876,9 @@ top: 2px;
         margin-bottom: -9px;
     }
   }
+  .body_karzinka .displaynone_meidia {
+    display: none;
+  }
 @media (max-width: 991px) {
     .your-div-class {
       order: -1;
@@ -813,5 +891,204 @@ top: 2px;
         width: 99%;
         display: none;
     }
+    .body_karzinka .displaynone_meidia {
+        display: block;
+      }
+      .body_karzinka .app_prod .skitka_karzinka1 {
+        display: none;
+      }
+      .body_karzinka .app_prod .title_ke12 {
+display: none;
+      }
   }
   
+  @media (max-width:820px){
+    .body_karzinka .app_prod .dastafka_radio_kar{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 29px;
+    }
+    .body_karzinka {
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        align-items: start;
+        margin-top: 10px;
+        gap: 29px;
+        margin-bottom: 0;
+    }
+    .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka {
+        height: 46px;
+    }
+    .body_karzinka .app_prod .poluchir_karzinka button {
+        height: 44px;
+    }
+      .body_karzinka .app_prod .karzinka_title{
+margin: auto;
+margin-top: -43px;
+width: 90%;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+
+      } 
+      .body_karzinka .app_prod .check_delete{
+        width: 90%;
+        margin: auto;
+        margin-top: -7px;
+      }
+      .body_karzinka .app_prod .check_delete a{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: left;
+
+      }
+      .body_karzinka .line_karzinka {
+       width: 95%;
+       margin: auto;
+        margin-top: 4px;
+    }
+ 
+  }
+   .body_karzinka .displaynone_meidia .t_22{
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        width: 40px;
+        border-radius: 9px;
+        height: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #D7BE67;
+color: white;
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: left;
+
+    }
+  .displaynone_meidia .card_media_karzinka{
+display: grid;
+grid-template-columns: 110px auto;
+width: 95%;
+
+margin: auto;
+margin-bottom: 14px;
+/* margin: auto; */
+gap: 10px;
+  }
+  .displaynone_meidia .card_media_karzinka .card_media_img_karzinka {
+    position: relative;
+
+  }
+  .displaynone_meidia .card_media_karzinka .card_media_img_karzinka img{
+width: 100%;
+ 
+}
+.displaynone_meidia .card_media_karzinka .card_media_text_karzinka {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.displaynone_meidia .card_media_karzinka .card_media_text_karzinka input{
+position: absolute;
+right: 10px;
+top: 10px;
+width: 20px;
+height: 20px;
+}
+ .displaynone_meidia .card_media_karzinka .card_media_text_karzinka h6{
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 21.94px;
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+    margin-top: 13px;
+    max-width: 90%;
+    }
+   .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .p{
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 11.07px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        display: flex;
+    }
+   .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .span{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.63px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        width:48px;
+    height:21px;
+    background: #CC373C;
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+        top: -5px;
+        left: 5px;
+    }
+    .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid grey;
+        padding-left: 15px;
+        padding-right: 8px;
+        height: 48px;
+        border-radius: 8px;
+        margin-top: 4px;
+    }
+    .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r p{
+        padding: 0px;
+        margin: 0px;
+    
+    }
+    
+    
+    .displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r .bx-pencil{
+    font-size: 30px;
+    }
+    .displaynone_meidia .card_media_karzinka .buttons{
+        display: flex;
+        display: flex;
+        gap: 3px;
+        /* display: flex; */
+        justify-content: space-around;
+        gap: 1px;
+        margin-top: 7px;
+    }
+    .displaynone_meidia .card_media_karzinka .buttons i{
+        position: relative;
+        top: -2px;
+    }
+    .displaynone_meidia .card_media_karzinka .buttons button{
+        width: 48px;
+        height:48px;
+        padding: 12px 10px 12px 10px;
+    border-radius: 7px;
+        opacity: 0px;
+        background: #F2F2F2;
+border: none;
+color: #408BEB;
+font-size: 24px;
+
+    }

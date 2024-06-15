@@ -240,7 +240,8 @@ text-align: left;
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
     position: relative;
-}
+}  
+
 
 .app_dg{
     margin-top: 23px;
@@ -276,11 +277,121 @@ margin-bottom: 0;
 .new_ques img{
     margin-top: -15px;
 }
+@media (max-width:991px) {
+    .new_ques{
+        width: 69.9%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 25px;
+        gap: 11px;
+        margin-top: 34px;
+        margin-left: -4px;
+    }
+}
 .phn{
     position: absolute;
     right: -80px;
     bottom: -63px;
+    width: 64%;
 }
+.phone-absolute{
+display: grid;
+grid-template-columns: auto;
+}
+.for_button .but{
+    display: none;
+}
+@media(max-width:1220px){
+    .phn{
+      
+        width: 50%;
+    }   
+    .glavniy_lich_dg{
+        display: grid;
+    grid-template-columns: auto;
+    }
+  .lich_dg_one {
+        display: none !important;
+    }
+}
+@media(max-width:1044px){
+  
+}
+@media(max-width:778px){
+    .phn{
+        position: relative;
+        /* margin: auto; */
+        order:-1 ;
+        width: 95%;
+        bottom: 0px;
+        right: 0px;
+    }
+    .qr-kod_text{
+        display: none;
+    }
+    .app_dg{
+        display: none !important;
+    }
+    .new_ques{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media (max-width:450px) {
+    .new_ques{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+        font-size: 18px;
+    }
+    .lich_dg_two h1{
+        width: 98%;
+        font-size: 25px !important;
+        margin-bottom: -20px;
+        margin-left: 10px;
+    }
+    .lich_dg_two h5{
+        width: 98%;
+        margin-left: 10px;
+        font-size: 15px !important;
+    }
+    .for_button{
+        width: 98%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+    .for_button .but{
+        width: 98%;
+        display: block;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        text-align: center;
+        font-size: 16px;
+    }
+    .phn{
+        display: none;
+    }
+    .phn_coins{
+            position: relative;
+            /* margin: auto; */
+            order:-1 ;
+            width: 105%;
+            bottom: 0px;
+            right: -0px;
+        
+    }
+}
+
 .banner_ye{
 width: 450px;
 height: 87px;
@@ -302,4 +413,26 @@ font-weight: 600;
 line-height: 36.8px;
 margin-bottom: 0;
 text-transform: uppercase;
+}
+@media (max-width:991px) {
+    .lich_dg_two{
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41.45px;
+        text-align: left;
+        margin-top: -9px;
+    }
+}
+@media (max-width:991px) {
+    .lich_dg_two{
+        width: 98%;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41.45px;
+        text-align: left;
+        margin-top: -9px;
+        margin-left: -5px;
+    }
 }

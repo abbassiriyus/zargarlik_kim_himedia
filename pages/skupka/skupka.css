@@ -39,6 +39,8 @@ margin-left: 10px;
     margin-top: 4px;
     gap: 9px;
     margin-left: 10px;
+overflow-x: auto;
+/* background: red; */
 }
 .dg_btn_sku button{
     font-family: Montserrat;
@@ -51,6 +53,7 @@ padding: 10px 14px;
 border-radius: 8px;
 border: none;
 background: #F2F2F2;
+text-wrap: nowrap;
 
 }
 .nam{
@@ -59,7 +62,7 @@ background: #F2F2F2;
     justify-content: center;
     align-items: center;
     width: 160px;
-    height: 121px;
+    /* height: 121px; */
 
 }
 .nam p{
@@ -197,6 +200,7 @@ font-weight: 500;
 line-height: 19.5px;
 margin-top: 19px;
 margin-left: 12px;
+background-color: white;
 }
 .zoloto_top{
 position: absolute;
@@ -356,7 +360,7 @@ top:188px;
     width: 67%;
     gap: 30px !important;
     margin: auto;
-    height: 307px;
+    /* height: 307px;// */
 }
 .grid_one_prob{
     border-radius: 16px;
@@ -501,10 +505,12 @@ border: none;
 margin-top: 73px;
 margin-left: -13px;
   }
+  .two-g-pro button:hover{
+    background-color: #eedd6c;
+  }
   .prodat_gde{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 438px;
     margin-top: 60px;
     gap: 20px;
   }
@@ -786,7 +792,7 @@ text-align: left;
     /* background-color: #175D9D; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
@@ -801,7 +807,7 @@ font-size: 18px;
 font-weight: 600;
 line-height: 21.94px;
 text-align: left;
-margin-bottom: 20px;
+margin-bottom: 18px;
 
 }
 .answer_body p{
@@ -816,17 +822,19 @@ text-align: left;
     /* background-color: #0a141d; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
+    padding-top: 8px;
+
     transition: 1s;
 }
 .answer_for_question{
     /* background-color: #e6f6ab; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
@@ -836,7 +844,7 @@ text-align: left;
     /* background-color: #efabf6; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
@@ -846,7 +854,7 @@ text-align: left;
     /* background-color: #f6d3ab; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
@@ -856,7 +864,7 @@ text-align: left;
     /* background-color: #f6abf1; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
@@ -866,7 +874,8 @@ text-align: left;
     /* background-color: #abf6dd; */
     width: 100%;
     margin-top: -20px;
-    height: 360px;
+    min-height: 360px;
+    background-color: white;
     box-shadow: 0px 0px 20px 0px #3E3E3E1F;
     border-radius: 14px;
     display: none;
@@ -927,4 +936,575 @@ line-height: 14.63px !important;
 text-align: center;
 color: #ADADAD;
 margin-top: 10px;
+ }
+ .answer_body ul{
+        margin-left: 25px;
+    margin-top: 14px;
+ }
+ .answer_for_question4 li{
+    line-height: 22px;
+ }
+ .answer_for_question5 h3{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.94px;
+text-align: left;
+
+ }
+ .answer_for_question5 ul{
+        margin-top: 8px;
+ }
+ .answer_for_question5 ul li{
+    margin-bottom: 7px;
+    line-height: 19px;
+ }
+.img_bolee{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_bolee img{
+    position: relative;
+    top: 31px;
+    display: none;
+}
+.niy{
+    font-size: 34px;
+font-weight: 600;
+line-height: 41.45px;
+text-align: left;
+margin-top: 53px;
+    margin-bottom: 38px;
+    margin-left: 10px;
+}
+
+ @media (max-width:1520px) {
+    .cas_bras{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        gap: 30px;
+        margin-left: 14px;
+    }
+    .bg_rem_img{
+        width: 367px;
+        margin: auto;
+        height: 233px;
+    }
+    .gram12{
+        left: 0px;
+    }
+    .gipermarket{
+        margin-left: 0px;
+    }
+ }
+ @media (max-width:1480px) {
+    .klient_adult{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+ }
+ @media (max-width:1350px) {
+    .klient_adult{
+        display: grid;
+        grid-template-columns: 250px 250px 250px !important;
+        width: 71% !important;
+    }
+ }
+ @media (max-width:1330px) {
+    .cas_bras{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        gap: 30px;
+        margin-left: 14px;
+    }
+    .prodat_text {
+        width: 90%;
+    }
+    .gipermarket {
+        width: 90%;
+        margin: auto;
+    }.bg_rem_img {
+        width: 323px;
+        margin: auto;
+        height: 219px;
+    }
+
+ }
+ @media (max-width:1250px) {
+    .three_shag{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .zol_ser {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        margin-top: 55px;
+        margin-bottom: 40px;
+    }
+    .gram12{
+        width: 82%;
+    }
+    .sergra{
+        width: 68%;
+    }
+    .vernut_ukr {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+}
+    @media (max-width:1350px) {
+        .klient_adult{
+            display: grid;
+            grid-template-columns:1fr  1fr  !important;
+            width: 100% !important;
+        }
+        .adult{
+            margin-bottom: 10px;
+        }
+     }
+     @media (max-width:1200px) {
+        .viber_prob {
+            display: grid;
+            grid-template-columns: 1.5fr 1.2fr;
+            width: 90%;
+            gap: 30px !important;
+            margin: auto;
+            /* height: 307px;/ */
+        }
+     }
+     @media (max-width:1150px) {
+        .gram12{
+            width: 87%;
+        }
+        .sergra{
+            width: 73%;
+        }
+     }
+     @media (max-width:1188px) {
+        .cas_bras {
+            display: grid;
+            grid-template-columns: 350px 350px;
+            gap: 30px;
+            width: 90%;
+            justify-content: space-around;
+            margin: auto;
+            /* margin-left: 14px; */
+        }
+     }
+@media (max-width:1110px) {
+    .vernut_ukr {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+}
+@media (max-width:1060px) {
+    .viber_prob {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 30px !important;
+        margin: auto;
+    }
+    .gipermarket {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media (max-width:1040px) {
+    .gipermarket iframe{
+        display: none;
+    }
+    .gipermarket{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .gorod_pe{
+        margin-bottom: 20px;
+        }
+        .img_bolee img{
+            display: block;
+        }
+}
+     @media (max-width:991px) {
+        body{
+            padding-top:112px;
+        }
+        .dg_btn_sku{
+            margin-bottom: 30px;
+        }
+        .sergra {
+            width: 95%;
+        }
+        .gram12 {
+        z-index: 0 !important;
+            width: 95%;
+        }
+
+     }
+ @media (max-width:948px) {
+    .pravila_dg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .salon_alm {
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 52px;
+        margin-left: 11px;
+    }
+    .salon_alm h3{
+        margin-bottom: 20px;
+    }
+    .prodat_gde {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+        gap: 20px;
+    }
+    .zol_ser {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 55px;
+        margin-bottom: 40px;
+    }
+    .gram12 {
+        z-index: 0 !important;
+        width: 48%;
+        /* margin: auto; */
+        /* margin-bottom: 85px; */
+        margin-top: 86px;
+    }
+ }
+ @media (max-width:756px) {
+    .cas_bras {
+        display: grid;
+        grid-template-columns: 350px;
+        gap: 30px;
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        /* margin-left: 14px; */
+    }
+    .gram12 {
+        z-index: 0 !important;
+        width: 64%;
+        /* margin: auto; */
+        /* margin-bottom: 85px; */
+        margin-top: 86px;
+    }
+    
+ }
+ @media (max-width:650px) {
+    .klient_adult{
+        display: grid;
+        grid-template-columns: 1fr  !important;
+        width: 100% !important;
+    }
+    .three_shag{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid_one_prob {
+        border-radius: 16px;
+        background-color: white;
+        border: 1px solid #E4E4E4;
+        width: 80%;
+        /* margin: auto; */
+    }
+    .grid_two_prob {
+        width: 80%;
+        /* margin: auto; */
+        border: 1px solid #E4E4E4;
+        border-radius: 16px;
+    }
+    .wag{
+        top: 140px !important;
+    }
+ }
+ @media (max-width:560px) {
+    .kon_ban_text h1{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 16.1px;
+text-align: left;
+
+    }
+    .kon_ban_text h4{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 13.8px;
+text-align: left;
+
+    }
+    .konsul_banner{
+        width: 100%;
+        height:151px;
+        border-radius: 18px;
+        background: url('/image/2d43c92accfc342ddb6abfd2520c32f4.jpeg');
+        /* background-color: red; */
+        margin-top: 70px;
+        /* background-position: center; */
+        background-position-x:0 ;
+        background-size: cover;
+/* display: grid;
+grid-template-columns: 1fr 1fr;
+overflow: hidden; */
+padding-top: 30px;
+    }
+    .zol_ser .gram h2{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .zol_ser .gram h5{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+
+    }
+    .gram12 {
+        z-index: 0 !important;
+        width: 82%;
+        /* margin: auto; */
+        /* margin-bottom: 85px; */
+        margin-top: 86px;
+    }
+    .zoloto_top h3{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .olch{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .olch1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid_two_prob {
+        width: 100%;
+        /* margin: auto; */
+        border: 1px solid #E4E4E4;
+        border-radius: 16px;
+    }
+.grid_one_prob {
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    width: 100%;
+    /* margin: auto; */
+}
+    .niy{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+margin-bottom: 22px;
+    }
+    .question p{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+text-align: left;
+
+    }
+    .prodat_gde img{
+        display: none;
+    }
+    .prodat_text h1 {
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .prodat_text p{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+
+    }
+    .izmoj{
+        font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600;
+line-height: 21.94px !important;
+text-align: left;
+
+    }
+    .media-skup{
+        font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600 !important;
+line-height: 21.94px !important;
+text-align: left !important;
+margin-bottom: 20px !important;
+    }
+    .media-app{
+        width: 330px !important;
+        height: 84px !important;
+    }
+    .media-app img{
+        width: 24px;
+        position: relative;
+        top: -14px !important;
+        margin-bottom: 0px !important;
+    }
+    .medi2{
+        top: -23px !important;
+    }
+    .medi3{
+        position: relative;
+        top: -27px !important;
+    }
+    .nam p{
+        position: relative;
+        top: -5px !important;
+        font-family: Montserrat;
+font-size: 10px;
+font-weight: 400;
+line-height: 12.19px;
+text-align: center;
+
+    }
+    .nam h4{
+        font-family: Montserrat;
+font-size: 10px;
+font-weight: 600;
+line-height: 12.19px;
+text-align: center;
+margin-top: -10px;
+    }
+    .poz{
+        margin-top: 0 !important;
+    }
+    .vet h4{
+        top: 0 !important; 
+        left: 0 !important;
+    }
+    .vet p{
+        top: -15px;
+    }
+    .poz1{
+        top: 0;
+    }
+.gram button{
+    width: 98%;
+}    
+.salon_alm h3{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+}
+.check_skup_dg p{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+
+}
+.rasch{
+    font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600;
+line-height: 21.94px;
+text-align: center;
+
+}
+.gram12{
+    margin-left: 0px !important;
+    width: 99%;
+}
+.question{
+    width: 410px;
+}
+.top_ques{
+    margin-bottom: 20px;
+}
+.giperlent{
+    display: none;
+}
+ }
+ @media (max-width:534px) {
+    .img_bolee h1{
+        font-family: Montserrat;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        line-height: 21.94px !important;
+        text-align: left !important;
+        
+    }
+ }
+ @media (max-width:520px) {
+    .dom_arr_skup h4{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+    }
+    .domik_dg h2{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .dg_btn_sku{
+        overflow: auto !important;
+    }
+    .dg_btn_sku button{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+
+    }
+    .nam p{
+        font-family: Montserrat;
+font-size: 10px;
+font-weight: 400;
+line-height: 12.19px;
+text-align: center;
+
+    }
+    .nam h4{
+        font-family: Montserrat;
+font-size: 10px;
+font-weight: 600;
+line-height: 12.19px;
+text-align: center;
+
+    }
+    .pravila_dg{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
  }

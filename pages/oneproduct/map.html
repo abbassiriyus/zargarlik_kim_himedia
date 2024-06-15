@@ -421,8 +421,7 @@ background:
 
     </div>
     <hr>
-  </div>
-
+  </div>  
   <div class="navbasrr">
     <div class="reklama">
       <div class="reklama1">
@@ -440,34 +439,34 @@ background:
     <nav class="nav1">
       <div style="margin-top: 20px;" class="navbar1">
         <ul class="hovg">
-          <li>Магазины</li>
-          <li>Доставка и оплата</li>
-          <li>Скупка и обмен</li>
-          <li><i class='bx bx-map-pin'></i> Выбор города</li>
+      <a href="/pages/oneproduct/map.html"><li>Магазины</li></a>
+      <li onclick="window.location='/pages/karzinka/index.html'">Доставка и оплата</li>
+          <li onclick="window.location='/pages/obmen/obmen.html'">Скупка и обмен</li>
+          <li onclick="window.location='/pages/oneproduct/map.html'"><i class='bx bx-map-pin'></i> Выбор города</li>
         </ul>
         <div class="logo">
-          <a href="../../index.html"> <img  src="/image/Group 3.svg" alt=""></a>
+         <a href="/index.html"> <img  src="/image/Group 3.svg" alt=""></a>
         </div>
         <ul class="ulsp">
           <li class="num7">+7 343 2664070</li>
-          <li class="iconlink">
+          <li onclick="window.location='/pages/glavniy_kirish/saved.html'" class="iconlink">
             <div class="icons"><img src="/image/Vector (1).svg" alt="">
               <div class="number">12</div>
             </div><span>Избранное</span>
           </li>
-          <li onclick="document.querySelector('.modall').style='display:flex';console.log('ds')" class="iconlink">
+          <li onclick="document.querySelector('.modall').style='display:flex'" class="iconlink">
             <div class="icons"><img src="/image/icon_basket 1.svg" alt="">
               <div class="number">12</div>
             </div> <span>Корзина</span>
           </li>
-          <li class="iconlink">
+          <li onclick="window.location='/pages/glavniy_kirish/login.html'" class="iconlink">
             <div class="icons"><img src="/image/Vector (2).svg
             " alt=""> </div><span>Войти </span>
           </li>
         </ul>
       </div>
       <div class="navbar_but">
-        <button onclick="window.location='../../index1.html'"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button onclick="window.location='/index1.html'"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.33325 3.99668C1.33325 3.63001 1.63059 3.33334 1.99659 3.33334H7.33659C7.51251 3.33334 7.68123 3.40323 7.80563 3.52763C7.93003 3.65203 7.99992 3.82075 7.99992 3.99668C7.99992 4.1726 7.93003 4.34133 7.80563 4.46572C7.68123 4.59012 7.51251 4.66001 7.33659 4.66001H1.99659C1.82066 4.66001 1.65194 4.59012 1.52754 4.46572C1.40314 4.34133 1.33325 4.1726 1.33325 3.99668ZM1.33325 8.00001C1.33325 7.63334 1.63059 7.33668 1.99659 7.33668H14.0033C14.1792 7.33668 14.3479 7.40656 14.4723 7.53096C14.5967 7.65536 14.6666 7.82408 14.6666 8.00001C14.6666 8.17594 14.5967 8.34466 14.4723 8.46906C14.3479 8.59346 14.1792 8.66334 14.0033 8.66334H1.99659C1.82066 8.66334 1.65194 8.59346 1.52754 8.46906C1.40314 8.34466 1.33325 8.17594 1.33325 8.00001ZM1.99659 11.34C1.82066 11.34 1.65194 11.4099 1.52754 11.5343C1.40314 11.6587 1.33325 11.8274 1.33325 12.0033C1.33325 12.1793 1.40314 12.348 1.52754 12.4724C1.65194 12.5968 1.82066 12.6667 1.99659 12.6667H10.0033C10.1792 12.6667 10.3479 12.5968 10.4723 12.4724C10.5967 12.348 10.6666 12.1793 10.6666 12.0033C10.6666 11.8274 10.5967 11.6587 10.4723 11.5343C10.3479 11.4099 10.1792 11.34 10.0033 11.34H1.99659Z" fill="white"/>
           </svg> <span>Каталог</span></button>
         <div class="kol">
@@ -483,8 +482,8 @@ background:
           <h4>PREMIUM</h4>
           <img style="width: 40px;transform: rotate(36.24deg);" src="/image/Screenshot_from_2024-05-30_20-23-13-removebg-preview.png" alt="">
         </div>
-        <h4 class="aksiya">Акции</h4>
-        <h4 class="aksiya1">Рассрочки и кредит</h4>
+        <h4 onclick="window.location='/pages/aksiya/index1.html'" class="aksiya">Акции</h4>
+        <h4 onclick="window.location='/pages/kredit/kredit.html'" class="aksiya1">Рассрочки и кредит</h4>
       </div>
     </nav>
     <nav class="nav2">
@@ -515,9 +514,9 @@ background:
       </div>
      
 
-      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
+      <!-- <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
         <p>По популярности <i class='bx bx-chevron-right'></i></p>
-      </div>
+      </div> -->
       <main class="pagerout">
         <img src="/image/Link → SVG.svg" alt="">
         <i class='bx bxs-chevron-right'></i>
@@ -532,7 +531,24 @@ background:
 
 
 <div class="map_body">
+<div class="mapnon">
   <h2>МАГАЗИНЫ</h2>
+  <img onclick="
+  document.querySelector('.ifr').style='display:block'
+  document.querySelector('.scrollic').style='display:none'
+  document.querySelector('.mapnon img').style='display:none'
+  document.querySelector('.back12').style='display:block'
+  " src="/image/mingcute_map-line.png" alt="">
+
+<div onclick="document.querySelector('.scrollic').style='display:block'
+        document.querySelector('.mapnon img').style='display:block'
+        document.querySelector('.back12').style='display:none'
+document.querySelector('.ifr').style='display:none'
+" class="back back12">
+  <i class='bx bx-arrow-back'></i>
+  <span>Назад</span>
+</div>
+</div>
   <div class="iframe_map">
     <div class="iframe_scroll">
 <div class="scrollic">
@@ -565,7 +581,7 @@ document.querySelector('.clcikker').style='display:block'
 <span>пн-вс10:00 - 22:00</span>
 
 <div class="lombard">
-  <button>Ломбард</button>
+  <button>Обмен</button>
   <button>Скупка</button>
   <button>Розничная продажа</button>
 </div>
@@ -574,6 +590,25 @@ document.querySelector('.clcikker').style='display:block'
 
 </div>
 
+<div style="margin-top: 39px;" onclick="document.querySelector('.iframe_scroll').style='display:none'
+
+document.querySelector('.clcikker').style='display:block'
+" class="flagm">
+  <div class="magal">
+    <img src="/image/image 33.svg" alt="">
+    <h3>Флагманский магазин ALMAZ</h3>
+  </div>
+  <h4>ТРЦ Гринвич,2-й этаж</h4>
+  <p>г. Екатеринбург, ул. 8 Марта, д.46 ,</p>
+<span>пн-вс10:00 - 22:00</span>
+
+<div class="lombard">
+  <button>Обмен</button>
+  <button>Скупка</button>
+  <button>Розничная продажа</button>
+</div>
+<hr>
+</div>
 <div onclick="document.querySelector('.iframe_scroll').style='display:none'
 
 document.querySelector('.clcikker').style='display:block'
@@ -587,26 +622,7 @@ document.querySelector('.clcikker').style='display:block'
 <span>пн-вс10:00 - 22:00</span>
 
 <div class="lombard">
-  <button>Ломбард</button>
-  <button>Скупка</button>
-  <button>Розничная продажа</button>
-</div>
-<hr>
-</div>
-<div onclick="document.querySelector('.iframe_scroll').style='display:none'
-
-document.querySelector('.clcikker').style='display:block'
-" class="flagm">
-  <div class="magal">
-    <img src="/image/image 33.svg" alt="">
-    <h3>Флагманский магазин ALMAZ</h3>
-  </div>
-  <h4>ТРЦ Гринвич,2-й этаж</h4>
-  <p>г. Екатеринбург, ул. 8 Марта, д.46 ,</p>
-<span>пн-вс10:00 - 22:00</span>
-
-<div class="lombard">
-  <button>Ломбард</button>
+  <button>Обмен</button>
   <button>Скупка</button>
   <button>Розничная продажа</button>
 </div>
@@ -626,7 +642,7 @@ document.querySelector('.clcikker').style='display:block'
         <i class='bx bx-arrow-back'></i>
         <span>Назад</span>
       </div>
-      <div class="flagm ">
+      <div class="flagm1 ">
         <div class="magal">
           <img src="/image/image 33.svg" alt="">
           <h3>Флагманский магазин ALMAZ</h3>
@@ -655,7 +671,7 @@ document.querySelector('.clcikker').style='display:block'
      </div>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18110.353104217535!2d69.38153946125472!3d41.29875295710639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef60c60179f83%3A0xfc15700271af7356!2z0JDRjdGA0L7Qv9C-0YDRgg!5e0!3m2!1sru!2s!4v1717334623324!5m2!1sru!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18110.353104217535!2d69.38153946125472!3d41.29875295710639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef60c60179f83%3A0xfc15700271af7356!2z0JDRjdGA0L7Qv9C-0YDRgg!5e0!3m2!1sru!2s!4v1717334623324!5m2!1sru!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
   </div>
 </div>
 <footer class="footer_1">
