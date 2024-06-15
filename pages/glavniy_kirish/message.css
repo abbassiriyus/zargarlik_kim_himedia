@@ -32,6 +32,84 @@ margin-bottom: 0;
     margin-top: 16px;
     gap: 10px;
 }
+
+@media (max-width:480px) {
+    .almaz_logo_h h3{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 17.07px;
+        letter-spacing: 0.5px;
+        text-align: left;
+
+    }
+    .message_frame h2{
+        font-family: Montserrat;
+        font-size: 14px !important;
+        font-weight: 400;
+        line-height: 14.63px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        
+    }
+    .lich_dg_two h1{
+        font-size: 22px !important;
+    }
+}
+@media (max-width:380px) {
+    .almaz_logo_h h3{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.07px;
+        letter-spacing: 0.5px;
+        text-align: left;
+
+    }
+    .message_frame h2{
+        font-family: Montserrat;
+        font-size: 12px !important;
+        font-weight: 400;
+        line-height: 14.63px;
+        letter-spacing: 0.5px;
+        text-align: left;   
+        margin-top: 13px;
+    }
+    .message_frame h4{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 6px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-top: 12.8px;
+    }
+    .lich_dg_two h1{
+        font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+    }
+    .message_frame {
+        /* background-color: red; */
+        box-shadow: 0px 0px 15px 0px #0000001A;
+    height: 166px;
+    border-radius: 12px;
+    margin-top: 14px !important;
+    padding: 18px;
+    position: relative;
+    left: 9px;
+    }
+    .message_frame p{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 300;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: right;
+    }
+}
 .message_frame {
     /* background-color: red; */
     box-shadow: 0px 0px 15px 0px #0000001A;
@@ -52,6 +130,9 @@ position: absolute;
 bottom: 0px;
 right: 5px;
 
+}
+@media (max-width:380px) {
+    
 }
 .email-sms{
     display: flex;
