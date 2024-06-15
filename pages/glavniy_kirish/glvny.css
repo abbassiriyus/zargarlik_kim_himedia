@@ -280,6 +280,47 @@ margin-bottom: 0;
     position: absolute;
     right: -80px;
     bottom: -63px;
+    width: 64%;
+}
+.phone-absolute{
+display: grid;
+grid-template-columns: auto;
+}
+@media(max-width:1220px){
+    .phn{
+      
+        width: 50%;
+    }   
+    .glavniy_lich_dg{
+        display: grid;
+    grid-template-columns: auto;
+    }
+  .lich_dg_one {
+        display: none !important;
+    }
+}
+@media(max-width:1044px){
+  
+}
+@media(max-width:778px){
+    .phn{
+        position: relative;
+        /* margin: auto; */
+        order:-1 ;
+        width: 100%;
+        bottom: 0px;
+        right: 0px;
+    }
+    .qr-kod_text{
+        display: none;
+    }
+    .app_dg{
+        display: none !important;
+    }
+    .new_ques{
+        display: block;
+        text-align: center;
+    }
 }
 .banner_ye{
 width: 450px;
