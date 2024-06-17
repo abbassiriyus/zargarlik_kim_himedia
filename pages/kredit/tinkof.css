@@ -1,11 +1,11 @@
-.vector{
+/* .vector{
     width: 100%;
     height:897px;
     background: linear-gradient(256.76deg, #FAED00 0.54%, #00D900 37.6%, #21A038 92.45%);
     margin-top: 60px;
   
     position: relative;
-}
+} */
 body{
     width: 100vw;
 }
@@ -152,6 +152,19 @@ margin-bottom: 10px;
 .farm22{
     display: none;
 }
+.jewel img{
+    width: 100%;
+}
+.farm13{
+    display: none;
+}
+.howh1 {
+    margin-top: -18px !important;
+    margin-left: 7px !important;
+}
+.farm13{
+    
+}
 @media (max-width:1340px) {
     .how {
         width: 89%;
@@ -174,6 +187,22 @@ margin-bottom: 10px;
         z-index: 2;
     }
 }
+.top_accordion_12{
+    width: 95%;
+    margin: auto;
+    max-width: 1440px;
+    
+    }
+    .top_accordion_12 h5{
+        text-align: center;
+        font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34.13px;
+    text-align: center;
+    margin-top: 50px;
+    /* letter-spacing: 2px; */
+    }
 @media (max-width:1008px) {
    
 .cart_phone_check {
@@ -244,9 +273,9 @@ text-align: center;
     display: block;
 }
 .wdthkm1 {
-    width: 97%;
+    width: 99%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 .wdthkm1 li{
     font-family: Montserrat;
@@ -254,10 +283,15 @@ font-size: 14px;
 font-weight: 400;
 line-height: 21px;
 text-align: left;
-
+margin-bottom: 0px;
+width: 90%;
 }
 .one_tel{
     height: 146px;
+    width: 95%;
+    /* margin: auto; */
+    margin-left: 5px;
+    margin-top: 7px;
 }
 .one_tel img{
     width: 53px;
@@ -265,33 +299,119 @@ text-align: left;
 }
 .one_tel p{
     position: relative;
-    top:20px !important ;
+    top:15px !important ;
 }
 body{
     padding-top: 101px;
 }
-.jewel{
+/* .jewel{
     margin-left: -6px;
-}
+} */
 .how h1{
     margin-top: -35px !important;
     margin-left: 4px;
 }
+.one_tel2{
+    height: 181px;
+    width: 95%;
+    /* margin: auto; */
+    margin-left: 5px;
+    margin-top: 7px;
 }
+.one_tel2 img{
+    width: 53px;
+    margin-bottom: 18px !important;
+}
+.one_tel2 p{
+    position: relative;
+    top:15px !important ;
+}
+.cart_phone_check {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 11px;
+}
+.one_tel3{
+    height: 165px;
+    width: 95%;
+    /* margin: auto; */
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.one_tel3 img{
+    width: 36px;
+    margin-bottom: 18px !important;
+}
+.one_tel3 p{
+    position: relative;
+    top:12px !important ;
+}
+.cntr_btn{
+    height: 44px;
+    width: 94%;
+    margin-top: 16px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
 
-.top_accordion_12{
-width: 95%;
-margin: auto;
-max-width: 1440px;
-
+}
+.doxod {
+    width: 91%;
+    /* height: 416px; */
+    background: #DEF1E1;
+    /* background-color: red; */
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    height: 246px;
+    padding-top: 15px;
+}
+.doxod h2 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.94px;
+    text-align: center;
+    margin-left: -10px;
 }
 .top_accordion_12 h5{
-    text-align: center;
     font-family: Montserrat;
-font-size: 28px;
+font-size: 20px;
 font-weight: 700;
-line-height: 34.13px;
+line-height: 24.38px;
 text-align: center;
-margin-top: 50px;
-/* letter-spacing: 2px; */
+margin-top: 17px;
+/* margin-left: -10px; */
+}
+.farm12{
+    display: none;
+}
+.farm13{
+    display: block;
+}
+}
+.ownaccor{
+    /* background-color: red !important; */
+} 
+.top_accordion_12  .ownaccor{
+    min-height: 46px !important;
+    box-shadow: 0px 1px 0px #dee2e6 !important;
+    width: 100%;
+    margin: auto;
+    font-family: Montserrat;
+font-size: 16px !important;
+font-weight: 600;
+line-height: 19.5px;
+padding: 0px !important;
+text-align: left;
+height:56px;
+    border: none !important;
+    margin-bottom: 13px;
+}
+.top_accordion_12 .accordion{
+    --bs-accordion-border-color: white !important;
+    margin-top: 32px;
+    margin-left: 3px;
+
 }
