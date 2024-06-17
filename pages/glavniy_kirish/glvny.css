@@ -187,11 +187,15 @@ font-weight: 500;
 line-height: 39.01px;
 text-align: left;
 margin-bottom: 13px;
+position: relative;
+z-index: 123;
 }
 .treyd-in p{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
+position: relative;
+z-index: 123;
 line-height: 17.07px;
 text-align: left;
 
@@ -414,7 +418,100 @@ line-height: 36.8px;
 margin-bottom: 0;
 text-transform: uppercase;
 }
+.header_media_glavniy{
+    height: 140px;
+    background-color: #242424;
+    position: relative;
+    /* margin-top: 51px; */
+    display: none;
+}
+.header_media_glavniy .flex_media{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    /* align-items: center; */
+    padding-top: 20px;
+    width: 95%;
+    margin: auto;
+
+}
+.header_media_glavniy .flex_media .text_media h3{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: left;
+color: white;    
+}
+.header_media_glavniy .flex_media .text_media p{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+color: white;    
+    
+}
+.header_media_glavniy .flex_media .bx-chevron-right{
+font-size: 43px;
+color: white;
+position: relative;
+z-index: 123;
+}
+.header_media_glavniy h4{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    opacity: 0.23;
+    color: white;
+    text-align: right;
+    position: relative;
+    z-index: 123;
+}
+.user_glavniy .nav_kar img{
+    padding-top: 20px;
+}
+.user_glavniy .nav_kar{
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+     align-items: center;
+}
+
+.header_media_glavniy .img1{
+position: absolute;
+right: 20px;
+bottom: 20px;
+z-index: 123;
+}
+.header_media_glavniy .img2{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    height: 100%;
+}
+@media(max-width:991px){
+    .user_glavniy .nav_kar img{
+     width: 163px;
+     position: relative;
+     top: -8px;
+ }
+
+ .user_glavniy .nav_kar{
+     text-align: center;
+     display: flex; 
+     justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 15px 0px #0000001A;
+ 
+ }}
 @media (max-width:991px) {
+    .header_media_glavniy{
+        display: block;
+        width: 100%;
+    }
     .lich_dg_two{
         font-family: Montserrat;
         font-size: 30px;
@@ -423,8 +520,21 @@ text-transform: uppercase;
         text-align: left;
         margin-top: -9px;
     }
-}
-@media (max-width:991px) {
+    .karzinka .nav_kar img{
+        width: 163px;
+        position: relative;
+        top: -8px;
+    }
+   
+    .karzinka .nav_kar{
+        text-align: center;
+        display: flex; 
+        justify-content: center;
+         align-items: center;
+         box-shadow: 0px 0px 15px 0px #0000001A;
+    
+    }
+
     .lich_dg_two{
         width: 98%;
         font-family: Montserrat;
@@ -434,5 +544,42 @@ text-transform: uppercase;
         text-align: left;
         margin-top: -9px;
         margin-left: -5px;
+    }
+      .magazin_tavar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        margin-top: -68px;
+        position: relative;
+        z-index: 234;
+    
+}
+    
+    .prise{
+        order: -1;
+       
+    }
+  
+    .bonus1{
+grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-end: 1;
+        grid-column-start: 3;
+    }
+}
+@media(max-width:890px){
+    .ser_rem_dg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 25px;
+        gap: 27px;
+    }
+}
+@media(max-width:590px){
+    .ser_rem_dg {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 25px;
+        gap: 27px;
     }
 }
