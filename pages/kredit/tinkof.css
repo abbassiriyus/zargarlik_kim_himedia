@@ -126,6 +126,7 @@ border: none;
     margin: auto;
     margin-top: 167px;
     padding-top: 43px;
+    padding-bottom: 34px;
 }
 .doxod h2{
     font-family: Montserrat;
@@ -147,6 +148,9 @@ margin-bottom: 10px;
     width: 86%;
     margin: auto;
     margin-top: 39px;
+}
+.farm22{
+    display: none;
 }
 @media (max-width:1340px) {
     .how {
@@ -219,6 +223,75 @@ font-size: 14px;
 font-weight: 400;
 line-height: 17.07px;
 text-align: center;
+position: relative;
+top: 13px;
 
     }
+}
+@media (max-width:500px) {
+    .doxod h2{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.94px;
+text-align: center;
+
+    }
+.farm{
+    display: none;
+}
+.farm22{
+    display: block;
+}
+.wdthkm1 {
+    width: 97%;
+    margin: auto;
+    margin-top: 10px;
+}
+.wdthkm1 li{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+
+}
+.one_tel{
+    height: 146px;
+}
+.one_tel img{
+    width: 53px;
+    margin-bottom: 18px !important;
+}
+.one_tel p{
+    position: relative;
+    top:20px !important ;
+}
+body{
+    padding-top: 101px;
+}
+.jewel{
+    margin-left: -6px;
+}
+.how h1{
+    margin-top: -35px !important;
+    margin-left: 4px;
+}
+}
+
+.top_accordion_12{
+width: 95%;
+margin: auto;
+max-width: 1440px;
+
+}
+.top_accordion_12 h5{
+    text-align: center;
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 34.13px;
+text-align: center;
+margin-top: 50px;
+/* letter-spacing: 2px; */
 }
