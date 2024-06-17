@@ -8,18 +8,26 @@
 }
 .background{
     width: 100%;
-    height: 394px;
-    background: url(https://s3-alpha-sig.figma.com/img/16a6/a31d/e7eb5ef3744613bb91cfdd74eb13cd43?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gKxH7WFuxWG2lGD33u4uFfejFgmTlU~03JWGm~LGMDCK1MJNqRCujUDiUTsJG6saeXp7AHLFIPgNc2Qh0ZfXGJuXENLmnNxNdFzWPMAr14E2iLGJnaCHGTknda6cX1DY3w9fQ4QvXwDh5RTpZ6CQAlgWXPgpwk~ER~~5FQ2NZgvWEPC8hdC4Cmi4iPI21DU8zuKf9pQcFbR~isbFh8Pk7vAQkyos~Id80qdWnNvilCjPeL75KLR2wZeoTY9tAeo3IwHFsRJR7B6jP3nBrbS98Pp1bTXi6Md7~A8mI2hkvWfOH2-nHc3vQ5RDjeCAhBVPAdpP6eTOaESKtlEb~wry-w__);
+    height: 494px;
+    background: url('/image/Screenshot\ from\ 2024-06-17\ 17-34-07.png');
     background-size: cover;
     margin-bottom: 5%;
     background-position-x: 23%;
+    margin-top: 51px;
 }
 .background h1{
-    width: 80%;
+    width: 70%;
+    margin: auto;
     font-size: 43.3px;
     position: relative;
-    top: 138px;
-    left: 180px;
+    top: 166px;
+    /* left: 180px; */
+    font-family: Montserrat;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 81px;
+    text-align: left;
+
 }
 @media (max-width:900px) {
     .background h1{
@@ -31,11 +39,18 @@
     }
 }
 .background p{
-    width: 36%;
+    width: 31%;
+    /* margin: auto; */
     font-size: 22.4px;
     position: relative;
-    top: 158px;
-    left: 180px;
+    top: 186px;
+    left: 307px;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34.13px;
+    text-align: left;
+
 }
 @media (max-width:620px) {
     .background h1{
@@ -92,13 +107,13 @@
 }
 .give_back h1{
     width: 100%;
-    font-size: 43.1px;
+    font-size: 54px;
     font-weight: 700;
     line-height: 65.83px;
-    text-align: left;
-    position: relative;
-    top: -40px;
-    left: 127px;
+    /* text-align: center; */
+    margin-top: -46px;
+    margin-left: 10px;
+    margin-bottom: 50px;
 }
 @media (max-width:1209px) {
     .give_back h1{
@@ -172,19 +187,21 @@
     }
 }
 .u1 img{
-    width: 120px;
-    height: 120px;
+    width: 152px;
+    height: 152px;
+    position: relative;
+    top: -30px;
+    left: 115px;
+}
+ 
+.u2 img {
+    width: 27%;
+    /* height: 120px; */
     position: relative;
     top: -28px;
-    left: 64px;
+    left: 7px;
 }
-.u2 img{
-    width: 120px;
-    height: 120px;
-    position: relative;
-    top: -28px;
-    left: 20px;
-}
+
 .u3 img{
     width: 120px;
     height: 120px;
