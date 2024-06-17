@@ -1,12 +1,26 @@
+.bonus_big_div{
+    padding-top: 90px;
+ 
+}
 .bonus_rubley{
     width: 100%;
     height: 136px;
     background-color: #F2F2F2;
     border-radius: 16px;
     display: grid;
-    grid-template-columns: 960px  203px;
+    grid-template-columns: 1fr  203px;
     align-items: center;
     gap: 18px;
+}
+.history_class{
+    font-family: Montserrat;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+
+margin-top: 33px;
 }
 .black_rubl{
     width: 100%;
@@ -19,9 +33,7 @@
     padding-left: 41px;
     height: 100%;
 }
-.df_bonus{
 
-}
 .protsent{
     display: flex;
     gap: 0px;
@@ -232,4 +244,283 @@ top: 7px;
     position: relative;
     left: 4px;
     top: 4px;
+}
+@media (max-width:790px){
+    .pric_bon{
+        max-width:113px ;
+        border: none;
+        padding: 0px ;
+        margin: 0px;
+        left: 0px;
+        top: 0px;
+        margin-top: 10px;
+    }
+    .lich_dg_two12312{
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        margin: 0;
+        width: 100%;
+    }
+    .pric_bon img{
+ width: 100%;
+
+    }
+    .pokup_yellow{
+        width: 100%;
+        height: auto;
+    }
+    .program_bonus {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 87px;
+    }
+.program_img{
+    padding: 0px;
+    margin: 0px;
+}
+.program_img img{
+    padding: 0px;
+    margin: 0px;
+    width: 92%;
+}
+.bonus_rubley {
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 18px;
+}
+    .histori_bonus {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .june{
+        border-bottom: 1px solid grey;
+        padding-bottom: 20px;
+    }
+}
+.new_logo_class img{
+    width: 80%;
+}
+.none_btn_1{
+    display: none;
+}
+.nav2 .new_two_class{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 64px;
+    gap: 30px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.new_rout{
+    display: none !important;
+}
+@media (max-width:365px) {
+    .black_rubl {
+        width: 98%;
+        margin: auto;
+        background-color: black;
+        color: white;
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        padding-left: 15px;
+        height: 136px;
+    }
+    .protsent h3{
+        font-family: Montserrat;
+font-size: 22px;
+font-weight: 700;
+line-height: 26.82px;
+text-align: center;
+
+    }
+    .protsent {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        border: 1px dashed white;
+        border-radius: 6px;
+        width: 132px;
+        height: 50px;
+        padding-left: 9px;
+    }
+    .protsent img {
+        height: 25px;
+    }
+    .df_bonus span{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+position: relative;
+top: -14px;
+    }
+    .info_bonus p{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+position: relative;
+left: 35px;
+    }
+    .info_bonus .bx-info-circle {
+        color: #A6A6A6;
+        font-size: 18px;
+        position: relative;
+        left: 16px;
+        top: -2px;
+    }
+    .info_bonus {
+        display: flex;
+        gap: 24px;
+    }
+    .iyun {
+        position: relative;
+        background: #E64833;
+        color: white;
+        height: 100px;
+        border-radius: 16px;
+        padding: 10px;
+        /* max-width: 203px; */
+        width: 203px;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 3px;
+    }
+    .iyun span{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: center;
+padding-left: 14px;
+position: relative;
+top: -26px; 
+    }
+    .program_text h3{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+
+    }
+    .program_bonus {
+ 
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+    .program_text p{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.5px;
+text-align: left;
+width: 100%;
+margin-bottom: 9px;
+    }
+    .program_text span{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.5px;
+text-align: left;
+
+    }
+    .program_img{
+          margin-top: -15px;
+    
+    }
+    .pokup_yellow {
+   
+        padding: 25px;
+        padding-left: 23px;
+        height: 184px;
+        width: 95%;
+    }
+    /* .pro_yel span{
+        position: relative;
+        top: 17px;
+    } */
+    .pro_yel p{
+        width: 80%;
+    }
+    .history_class{
+        font-family: Montserrat;
+font-size: 24px !important;
+font-weight: 700 !important;
+line-height: 32px !important;
+letter-spacing: 0.5px !important;
+text-align: left;
+margin-top: 19px;
+margin-left: 5px;
+}
+    .bonus_rubley {
+        padding-bottom: 10px;
+    }
+    .histori_bonus{
+        padding: 20px;
+        padding-top: 0px;
+        /* background-color: red; */
+        margin-top: 11px !important;
+    margin-bottom: 15px;
+    height: 123px;
+    }
+    .june span{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: center;
+position: relative;
+top: -4px;
+    }
+    .june p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+position: relative;
+top: -1px;
+
+}
+.june {
+    border-bottom: 1px solid grey;
+    padding-bottom: 9px;
+}
+.pric_bon{
+    margin-top: 0px;
+}
+.pric_bon {
+    max-width: 117px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: -6px;
+    top: 0px;
+}
+.new-foot{
+margin-top: 10px !important;
+margin-bottom: 54px !important;
+}
+.left_new{
+    margin-left: -9px !important;
+}
+.new-app{
+    margin-top: 0px !important;
+}
 }
