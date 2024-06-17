@@ -32,6 +32,9 @@ align-items: center;
     display: none;
 
 }
+.izbrniy_big_div .card1 .bxs-star{
+font-size: 16px;
+}
 @media(max-width:991px){
     .lich_dg_two12312 .title_izabr{
         margin-bottom: 26px;
