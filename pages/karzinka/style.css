@@ -118,7 +118,7 @@ text-align: center;
 display: flex; 
 justify-content: space-between;
 align-items: center;
-margin-top: 23px;
+margin-top: 17px;
 }
 .body_karzinka .app_prod .check_delete h5{
     font-family: Montserrat;
@@ -244,7 +244,8 @@ margin-top: 18px;
     height: 1px;
     background-color: #E6E6E6;
     width: 100%;
-    margin-top: 18px;
+    margin-top: 0px;
+    margin-bottom: 21px;
 }
 
 
@@ -413,7 +414,7 @@ margin-top: 20px;
     margin-right: 17px;
 }
 .body_karzinka .app_prod .skitka_karzinka1{
-margin-top: 55px;
+margin-top: 44px;
 display: flex;
 align-items: center;
 }
@@ -440,7 +441,8 @@ left: -120px;
 margin-bottom: 29px;
 }
 .body_karzinka .app_prod .title_ke{
-    margin-top: 18px;
+    margin-top: 6px;
+    margin-bottom: 3px;
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -461,7 +463,7 @@ gap: 10px;
 .body_karzinka .app_prod .poluchir_karzinka .line_karzinka2{ 
 margin-bottom: 29px;
 }
-.body_karzinka .app_prod .poluchir_karzinka2{
+    .body_karzinka .app_prod .poluchir_karzinka2{
     margin-bottom: 29px;
 }
 .body_karzinka .app_prod .poluchir_karzinka .xochi_yesho_skitka{
@@ -523,6 +525,10 @@ position: relative;
 top: 5px;
 }
 @media (max-width:801px) {
+    .body_karzinka .app_prod .title_ke{
+        margin-top: 18px;
+    font-size: 18px;
+    }
     .body_karzinka .app_prod .poluchir_karzinka{
         display: grid;
         grid-template-columns: auto; 
@@ -531,6 +537,43 @@ top: 5px;
         gap: 10px;
         margin-bottom: 55px;
     }  
+    .body_karzinka .app_prod .poluchir_karzinka2{
+        display: grid;
+       
+        grid-template-columns: auto 152px; 
+    }
+    .title_ke_801px{
+        display: none !important;
+    }
+    .title_ke122{
+        margin-top: 17px;
+        margin-bottom: 2px;
+    }
+    .body_karzinka .app_prod .poluchir_karzinka2 input{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: left;
+height: 43px !important;
+
+    }
+    .body_karzinka .app_prod .poluchir_karzinka2 button{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.63px;
+
+    }
+    .bonus_810px{
+        padding-top: 21px;
+        padding-bottom: 10px;
+    }
+    .body_karzinka .app_prod .poluchir_karzinka3{
+       margin-top: 5px;
+       margin-bottom: 10px;
+    }
     .body_karzinka .app_prod .poluchir_karzinka input{
         height: 52px;
     }
@@ -575,11 +618,12 @@ margin-right: 7px;
 }
 
 .body_karzinka .app_prod .bonus_karzinka{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 30px auto ;
     min-height: 48px;
     background: #F2F2F2;
 border-radius: 8px;
+padding: 10px 10px;
 margin-bottom: 63px;
 }
 .body_karzinka .app_prod .bonus_karzinka p{
@@ -589,17 +633,18 @@ margin-bottom: 63px;
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
-line-height: 34.07px;
+line-height: 18.07px;
 text-align: left;
 
 }
-.body_karzinka .app_prod .bonus_karzinka p .bx-info-circle{
+.body_karzinka .app_prod .bonus_karzinka  .bx-info-circle{
     color: #242442;
 font-size: 25px;
 margin-right: 10px;
 position: relative;
-    top: 8px;
-    left: 2px;
+margin-left: 5px;
+    height: 100%;
+
 }
 .body_karzinka .app_prod .bonus_karzinka p a{
 text-decoration: none;
@@ -787,7 +832,7 @@ top: 3px;
 margin-right: 2px;
 }
 .body_karzinka .app_prod .bonus_karzinka_dr a{
-padding-left: 34px;
+/* padding-left: 34px; */
 position: relative;
 top: -4px;
 }
@@ -1092,3 +1137,118 @@ color: #408BEB;
 font-size: 24px;
 
     }
+@media(max-width:400px){
+/* .body_karzinka .app_prod .title_ke{
+    margin-top: -7px;
+} */
+.body_karzinka .app_prod .bonus_karzinka .bx-info-circle {
+    color: #242442;
+    font-size: 25px;
+    /* margin-right: 10px; */
+    position: relative;
+    margin-left: 3px;
+    margin-top: 10px;
+    height: 100%;
+}
+.body_karzinka .app_prod  .bonus_karzinka p{
+    position: relative;
+    top: -6px;
+    left: -5px;
+}
+.body_karzinka .app_prod .bonus_karzinka{
+    display: grid;
+    grid-template-columns: 30px auto ;
+    min-height: 48px;
+    /* background: #F2F2F2; */
+border-radius: 8px;
+padding: 14px 8px;
+margin-bottom: 63px;
+}
+.check_delete h5 span{
+    font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 400;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+
+}
+.body_karzinka .app_prod .karzinka_title {
+    margin: auto;
+    margin-top: -43px;
+    width: 93%;
+}
+.body_karzinka .app_prod .check_delete h5 {
+ 
+    gap: 3px;
+}
+.displaynone_meidia .card_media_karzinka .card_media_text_karzinka h6 {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21.94px;
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+    margin-top: 13px;
+    max-width: 90%;
+    position: relative;
+    left: -4px;
+}
+.card_media_text_karzinka h5{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+letter-spacing: 0.5px;
+text-align: left;
+position: relative;
+left: -6px;
+top: 3px;
+}
+.displaynone_meidia .card_media_karzinka .card_media_text_karzinka .p {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 11.07px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.p p{
+    position: relative;
+    top: 3px;
+    left: -4px;
+}
+.displaynone_meidia .card_media_karzinka .card_media_text_karzinka .input_r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    padding-left: 7px;
+    padding-right: 8px;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+.displaynone_meidia .card_media_karzinka .buttons {
+    display: flex;
+    display: flex;
+    gap: 3px;
+    /* display: flex; */
+    justify-content: space-around;
+    gap: 1px;
+    margin-top: 10px;
+}
+
+.displaynone_meidia .card_media_karzinka {
+    display: grid;
+    grid-template-columns: 110px auto;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 8px;
+    /* margin: auto; */
+    gap: 10px;
+}
+}
