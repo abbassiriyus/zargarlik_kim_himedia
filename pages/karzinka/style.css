@@ -232,15 +232,18 @@ line-height: 19.5px;
 
 }
 .body_karzinka .kalkulator_shot .check_karzinka{
-    display: flex;justify-content: center;
-    align-items: center;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 30px auto;
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
 line-height: 17.07px;
 letter-spacing: 0.5px;
 text-align: left;
-gap: 13px;
+max-width: 330px;
+width: 94%;
+margin: auto;
 margin-top: 18px;
 }
 .body_karzinka .kalkulator_shot .check_karzinka input{
@@ -1149,7 +1152,7 @@ color: #408BEB;
 font-size: 24px;
 
     }
-@media(max-width:400px){
+@media(max-width:700px){
 /* .body_karzinka .app_prod .title_ke{
     margin-top: -7px;
 } */
@@ -1690,7 +1693,8 @@ margin-top: 8px !important;
     margin-top: -20px;
  }
  .check_karzinka33{
-
+max-width: 330px;
+margin: auto;
         width:94%;
         margin: auto;
         display: grid;
@@ -1702,3 +1706,10 @@ margin-top: 8px !important;
     height: 16px;
 }
 }
+@media (max-width: 330px) {
+    .body_karzinka .app_prod .poluchir_karzinka2 {
+        display: grid;
+        grid-template-columns: auto 107px;
+    }
+}
+
