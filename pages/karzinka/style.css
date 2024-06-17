@@ -29,6 +29,14 @@ letter-spacing: 0.5px;
 text-align: center;
 
 }
+
+.kalkulator_shot .p{
+    border-bottom: 1px dashed grey;
+}
+.kalkulator_shot .p p{
+border-bottom: 5px solid white !important;
+
+}
 @media(max-width:991px){
    .karzinka .nav_kar img{
     width: 163px;
@@ -313,8 +321,12 @@ color: white;
     margin: 0px;
 
 }
-
-
+.check_karzinka33{
+    display: none;
+}
+.nnere{
+    display: none;
+}
 .body_karzinka .card_karzinka .input_kamb_karzinka .input_r .bx-pencil{
 font-size: 30px;
 }
@@ -1146,23 +1158,30 @@ font-size: 24px;
     font-size: 25px;
     /* margin-right: 10px; */
     position: relative;
-    margin-left: 3px;
-    margin-top: 10px;
+    margin-left: 4px;
+    margin-top: 4px;
     height: 100%;
 }
-.body_karzinka .app_prod  .bonus_karzinka p{
+.body_karzinka .app_prod .bonus_karzinka_for_media p {
     position: relative;
-    top: -6px;
+    top: 1px;
     left: -5px;
+    width: 90%;
 }
-.body_karzinka .app_prod .bonus_karzinka{
+.body_karzinka .app_prod .bonus_karzinka_for_media {
     display: grid;
-    grid-template-columns: 30px auto ;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 28px auto;
     min-height: 48px;
     /* background: #F2F2F2; */
-border-radius: 8px;
-padding: 14px 8px;
-margin-bottom: 63px;
+    border-radius: 8px;
+    padding: 14px 8px;
+    margin-bottom: 17px;
+}
+.bonus_karzinka{
+margin-bottom: 25px !important;
+
 }
 .check_delete h5 span{
     font-family: Montserrat;
@@ -1250,5 +1269,436 @@ top: 3px;
     margin-bottom: 8px;
     /* margin: auto; */
     gap: 10px;
+}
+.body_karzinka .app_prod .poluchir_karzinka3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.body_karzinka .app_prod .title_ke {
+    margin-top: 22px;
+    font-size: 18px;
+}
+.body_karzinka .app_prod h4{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+width: 92%;
+margin: auto;
+}
+.body_karzinka .app_prod .dastafka_radio_kar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 92%;
+    margin: auto;
+    margin-top: 11px !important;
+}
+.body_karzinka .app_prod .dastefka_almaz {
+    padding: 22px 6px;
+    background: #EFEFEF;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k {
+  
+    margin-left: 4px;
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k h5 {
+    padding-top: 0px; 
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k .nnere2{
+    display: none;
+    
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz .address_almaz_k h5 .button {
+    background: var(--green-base, #38C793);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 90px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    width: 91px;
+    height: 21px;
+    left: -11px;
+    position: relative;
+    top: 4px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -1px;
+}
+.nnere{
+    display: block;
+    margin-top: 3px !important;
+    text-align: left;
+    margin-left: 36px;
+
+}
+.body_karzinka .app_prod .dastefka_almaz .grid_almaz button {
+    background: #FFF957;
+    border-radius: 14px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+margin-top: -12px;
+position: relative;
+left: 4px;
+}
+.karbonus1{
+    margin-top: 9px;
+    position: relative;
+    top: 1px;
+    left: -5px;
+    width: 100%;
+
+}
+/* .body_karzinka .line_karzinka{
+    margin-bottom: -2px;
+} */
+ .body_karzinka .app_prod .dastefka_almaz a{
+    position: relative;
+    left: 7px;
+    top: -22px;
+ }
+ .body_karzinka .app_prod .zabit_karzinka{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+width: 92%;
+margin: auto;
+margin-top: -12px;
+ }
+ .body_karzinka{
+    margin-top: 9px;
+
+ }
+ .bonus_karzinka_for_media{
+    margin-top: 9px !important;
+
+ }
+ 
+ .body_karzinka .app_prod .bonus_karzinka_for_media .bx-info-circle {
+    color: #242442;
+    font-size: 25px;
+    /* margin-right: 10px; */
+    position: relative;
+    margin-left: 1px !important;
+    margin-top: 6px !important;
+    height: 100%;
+}
+ .body_karzinka .app_prod  .card121{
+   
+        display: flex;
+        gap: 12px;
+        margin-top: -13px !important;
+        margin-left: 17px !important;
+ 
+}
+.body_karzinka .app_prod .zabit_karzinka {
+    margin-top: -8px !important;
+}
+.karbonus1 {
+    margin-top: 12px !important;
+    /* padding-left: 11px !important; */
+    width: 90%;
+    margin: auto;
+}
+.class_for_media_card{
+    display: flex;
+    gap: 25px !important;
+    margin-left: 15px !important;
+    margin-top: -6px !important;
+}
+.check_p_karzika{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+display: flex;
+align-items: center;
+gap: 1px;
+width: 90%;
+margin: auto;
+}
+.media-oplata_1{
+   
+        font-family: Montserrat;
+        font-size: 33px !important;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        width: 92%;
+        margin: auto;
+        margin-top: 12px !important;
+        margin-bottom: 5px !important;
+   
+}
+.radio-for-media{
+    height: 108px;
+}
+.radio-for-media1{
+    height: 125px;
+}
+.radio-for-media2{
+    height: 91px;
+}
+.najmi{
+    height: 100px !important;
+    width: 90%;
+    margin: auto;
+}
+.najmi  .bx-info-circle {
+    color: #242442;
+    font-size: 25px;
+    /* margin-right: 10px; */
+    position: relative;
+    margin-left: 0px !important;
+    margin-top: 4px !important;
+    height: 100%;
+}
+.najmi p {
+    padding: 0;
+    margin: 0;
+    padding-left: 0px !important;
+    position: relative;
+    left: 1px;
+    top: 4px;
+    /* margin-top: 10px; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.07px;
+    text-align: left;
+}
+.najmi p a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    /* margin-top: 15px; */
+    position: relative;
+    top: 6px !important;
+}
+.line_for_med{
+    margin-top: -8px !important;
+}
+.med-h4{
+    margin-top: 4px !important;
+}
+.body_karzinka .app_prod .profile_on_karzinka {
+    display: grid;
+    max-width: 450px;
+    grid-template-columns: 34px auto 30px;
+    padding: 17px;
+    margin-top: 24px;
+    background: #EFEFEF;
+    padding-left: 24px;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.body_karzinka .app_prod .profile_on_karzinka h5 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    text-align: left;
+    padding-top: 14px;
+}
+.body_karzinka .app_prod .profile_on_karzinka img{
+    margin-top: 6px !important;
+}
+.body_karzinka .app_prod .profile_on_karzinka .bx-pencil {
+    font-size: 23px;
+    color: #257AE8;
+    margin-top: 7px;
+}
+.element_style {
+    margin-top: 4px !important;
+    margin-bottom: 0px;
+}
+.body_karzinka .app_prod .dastafka_radio_kar_dr .dastafka_radio_kar_card {
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 13px;
+    /* height: 45px; */
+}
+.body_karzinka .app_prod .dastafka_radio_kar_dr .dastafka_radio_kar_card h5{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+
+
+}
+.change-for-med{
+    padding: 0px !important;
+    padding-bottom: 0px !important;
+    height: 45px !important;
+    margin-top:14px !important;
+    padding-left: 29px !important;
+}
+.change-for-med input{
+    width: 16px !important;
+    height: 16px !important;
+}
+.change-for-med1{
+    padding: 0px !important;
+    padding-bottom: 0px !important;
+    height: 45px !important;
+    margin-top:-2px !important;
+    padding-left: 29px !important;
+}
+.change-for-med1 input{
+    width: 16px !important;
+    height: 16px !important;
+}
+.kalkulator_shot .p{
+    border-bottom: 1px dashed grey;
+}
+.kalkulator_shot .p p{
+border-bottom: 5px solid white !important;
+font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 400;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+
+}
+.kalkulator_shot .h3 h3{
+    font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+
+}
+.kalkulator_shot h5{
+    font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 600;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+
+}
+.kalkulator_shot h5 a{
+    font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 500 !important;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+border-bottom: 1px dashed #1D6BD1;
+}
+.body_karzinka .kalkulator_shot .h3 {
+    display: flex;
+    justify-content: space-between;
+    width: 91%;
+    padding-top: 26px;
+    margin: auto;
+    margin-bottom: 4px;
+    margin-top: -4px;
+}
+.body_karzinka .kalkulator_shot .p {
+    display: flex;
+    justify-content: space-between;
+    width: 89%;
+    padding-top: 0px;
+    margin: auto;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.body_karzinka .kalkulator_shot h5 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    width: 91%;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: -6px;
+}
+.kalkulator_shot button{
+    font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 500;
+line-height: 17.07px;
+
+}
+.body_karzinka .kalkulator_shot button {
+    margin-top: 26px;
+    background: #FFF957;
+    height: 49px;
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 14px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+}
+.check_karzinka{
+    font-family: Montserrat;
+font-size: 12px !important;
+font-weight: 400;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-top: 8px !important;
+
+}
+.check_karzinka33{
+    font-family: Montserrat;
+font-size: 12px !important;
+font-weight: 400;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-top: 8px !important;
+gap: 11px;
+}
+ .kalkulator_shot{
+    margin-top: -20px;
+ }
+ .check_karzinka33{
+
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: start;
+ }
+ .body_karzinka .kalkulator_shot .check_karzinka33 input {
+    width: 16px;
+    height: 16px;
 }
 }
