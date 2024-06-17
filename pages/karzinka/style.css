@@ -1685,17 +1685,17 @@ line-height: 14.63px;
 letter-spacing: 0.5px;
 text-align: left;
 margin-top: 8px !important;
-gap: 11px;
 }
  .kalkulator_shot{
     margin-top: -20px;
  }
  .check_karzinka33{
 
-        width: 90%;
+        width:94%;
         margin: auto;
-        display: flex;
+        display: grid;
         align-items: start;
+        grid-template-columns: 30px auto;
  }
  .body_karzinka .kalkulator_shot .check_karzinka33 input {
     width: 16px;
