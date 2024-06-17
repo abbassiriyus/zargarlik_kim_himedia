@@ -1820,6 +1820,7 @@ margin: 0px !important;
         padding-top: 10px;
         text-align: center;
         padding-bottom: 10px;
+        z-index: 1112;
     }
     .footer2{
         display: block;
