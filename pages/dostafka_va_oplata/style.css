@@ -253,8 +253,8 @@ margin-top: 1.7%;
     .circle_one img{
         width: 29%;
         position: relative;
-        top: 5px;
-        left: 3.9px;
+        top: 3px;
+        left: 4px;
     }
     .fram p{
         line-height: 15px;
@@ -278,7 +278,7 @@ margin-top: 1.7%;
         font-size: 12px;
         font-weight: 600;
         position: relative;
-        top: 15px;
+        top: 14px;
         left: 1px;
     }
     .frame2 img{
@@ -291,7 +291,7 @@ margin-top: 1.7%;
         line-height: 15px;
         font-size: 12px;
         position: relative;
-        top: 14px;
+        top: 13.5px;
         left: 5px;
     }
 }
@@ -411,29 +411,29 @@ span{
 }
 @media (max-width:380px) {
     .y{
-        font-size: 13.5px;
-        margin-left: 3.9px;
-        margin-top: 14%;
+        font-size: 13.3px;
+        margin-left: 0px;
+        margin-top: 15%;
     }
     .y1{
         font-size: 13px;
-        margin-left: -2.9px;
-        margin-top: 14%;
+        margin-left: -1px;
+        margin-top: 15%;
     }
     .y2{
         font-size: 13px;
-        margin-left: 4px;
-        margin-top: 11.9%;
+        margin-left: -1px;
+        margin-top: 14%;
     }
     .y3{
         font-size: 13.71px;
-        margin-left: -2px;
-        margin-top: 11%;
+        margin-left: -1px;
+        margin-top: 14%;
     }
     .y4{
         font-size: 13px;
-        margin-left: 4px !important;
-        margin-top: 12%;
+        margin-left: -2px !important;
+        margin-top: 14%;
     }
     span{
         font-size: 13.2px;
@@ -441,12 +441,12 @@ span{
     }
     .y5{
         font-size: 13.5px;
-        margin-top: 11%;
+        margin-top: 14%;
         margin-left: 2px;
     }
     .y6{
         font-size: 13.7px;
-        margin-top: 6.5%;
+        margin-top: 7.5%;
         margin-left: 1.9px;
     }
 }
@@ -559,11 +559,13 @@ span{
 }
 @media (max-width:560px) {
     .dg{
-        width: 100%;
+        width: 96%;
       gap: 20px;
       max-width: 800px;
       display: flex;
       flex-wrap: wrap;
+      padding-top: 16px;
+      padding-left: 17px;
     }
     .payment h1{
         width: 40%;
@@ -600,7 +602,7 @@ span{
         border-radius: 10px;
         max-width: 180px;
         margin: auto;
-        margin-top: 15.6%;
+        margin-top: 5%;
     }
     .dl5{
         display: none;
@@ -638,7 +640,17 @@ span{
         border-radius: 10px;
         max-width: 150px;
         margin: auto;
-        margin-top: 5%;
+    }
+    .dk5{
+        display: block;
+        width: 330px !important;
+        height: 170px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        max-width: 370px;
+        margin: auto;
+        margin-left: 5.5%;
+        margin-top: 5.6%;
     }
     .dk5 img{
         width: 20%;
@@ -648,11 +660,11 @@ span{
     .imh{
         max-height: 38px !important;
         margin-top: 22% !important;
-        padding-left: 3px;
         margin-bottom: 10px !important;
     }
    .dg .d1 img{
     height: 60px !important;
+    margin: auto;
     margin-top: 14.3%;
     } 
 }
@@ -766,17 +778,21 @@ span{
     .word p{
          width: 110%; 
         position: relative;
-        left: -8px !important;
-        top: 4px;
+        left: -9px !important;
+        top: 0px;
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 500;
         line-height: 21px;
         text-align: left;
     }
+    
 }
 .p{
    margin-top: 20px;
+}
+.pc{
+    margin-top: 20px;
 }
 .pp{
     margin-top: 20px;
@@ -787,24 +803,10 @@ span{
  .pw{
     margin-top: 20px;
  }
- .pl br{
+ .one_for_all{
     display: none;
  }
-  .pl .dn{
-    display: none;
-  }
-  .lish{
-    display: none;
-  }
-  .lish1{
-    display: none;
-  }
-  .lish0{
-    display: none;
-  }
-  .lish2{
-    display: none;
-  }
+
   .slep{
     font-size: 16px;
     font-weight: 500;
@@ -813,34 +815,44 @@ span{
     font-size: 16px;
     font-weight: 500;
   }
+  .zz{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .parot{
+    display: none;
+  }
 @media (max-width:380px) {
+    .zz{
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 3px;
+    }
     .p{
         width: 119% !important;
-        margin-top: 0px !important;
+        margin-top: -15px !important;  
+     }
+     .pc{
+        width: 119% !important;
+        margin-top: -16px !important; 
+        margin-bottom: 15px; 
      }
      .pp{
         width: 115% !important;
-        margin-top: 0px !important;
+        margin-top: -17px !important;
      }
      .pl{
         width: 116% !important;
-        margin-top: 0px !important;
+        margin-top: -16px !important;
      }
-     .pl br{
-        display: block;
-     }
-     .pl .brr{
-        display: none;
-     }
-     .pl .dn{
-        display: block;
-     }
+     
      .or{
         display: none;
      }
      .wid{
+        font-size: 14px;
         position: absolute;
-        left: 63.5px;
+        left: 62px;
         top: 482px;
      }
      .vor{
@@ -849,23 +861,14 @@ span{
      .pw{
         width: 115% !important;
         position: relative;
-        top: -5px !important;
+        top: -15px !important;
      }
      .slep{
         width: 115% !important;
         font-size: 14px;
-        margin-top: 1px;
+        margin-top: -0px !important;
      }
-     .slep .lish{
-        display: block;
-     }
-     .slep .lish1{
-        display: block;
-     }
-     .slep .lish0{
-        display: block;
-     }
-    .lish2{
+     .one_for_all{
         display: block;
      }
 }
