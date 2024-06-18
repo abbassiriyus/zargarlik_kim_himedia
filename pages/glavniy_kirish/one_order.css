@@ -34,3 +34,53 @@ font-weight: 500;
 line-height: 20px;
 letter-spacing: -0.006em;
 }
+.one_order_product h3{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    
+
+}
+.one_order_product{
+    margin-top: 32px;
+}
+.white-ring-1{
+    display: grid;
+    grid-template-columns: 70px auto 90px;
+    align-items: center;
+    width: 56%;
+    margin-top: 24px;
+}
+.white-ring-1 img{
+    opacity: 0.5;
+}
+.white-text-ring h3{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #BCBCBC;
+}
+.white-text-ring p{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #BCBCBC  ;
+}
+.white-ring-1 span{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #BCBCBC;
+}
