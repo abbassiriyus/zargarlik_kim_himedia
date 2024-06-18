@@ -109,3 +109,49 @@ background-color: white;
 margin-top: 30px;
 margin-left: 11px;
 }
+.sale_banner{
+    background: url("/image/d50536717abdd72fd3b7f2c7ee547948\ \(1\).jpeg");
+    min-height:350px;
+    background-size:cover;
+    background-position: 0% 100%;
+border-radius: 16px;
+}
+
+@media (max-width:991px){
+    .lets_buy{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 36px;
+        height: auto;
+        gap: 30px;
+    }
+    .kakpoluchit_big {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 37px;
+        gap: 28px;
+        margin-bottom: 83px;
+    }
+    .kak_pol_small {
+        display: grid;
+        grid-template-columns: 30px auto;
+        height: auto;
+        min-height: 164px;
+        align-items: start;
+        gap: 5px;
+    }
+.podveski_img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+}
+@media(max-width:570px){
+    .kakpoluchit_big {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 37px;
+        gap: 28px;
+        margin-bottom: 83px;
+    }    
+}
