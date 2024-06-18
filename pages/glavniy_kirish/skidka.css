@@ -8,7 +8,7 @@
 .kak_pol_small{
     display: grid;
     grid-template-columns: 30px auto;
-    height: 164px;
+    /* height: 164px; */
     align-items: start;
     gap: 5px;
 }
@@ -112,7 +112,7 @@ margin-left: 11px;
 .sale_banner{
     overflow: hidden;
     background: url("/image/d50536717abdd72fd3b7f2c7ee547948\ \(1\).jpeg");
-    min-height:350px;
+    height:355px;
     background-size:cover;
     background-position: 0% 100%;
 border-radius: 16px;
@@ -141,14 +141,18 @@ justify-content: space-between;
     align-items:start;
     max-height: 400px;
 }
-.sale_banner .image_skitka .image_first12{
+.sale_banner .image_skitka .image_first12 {
     position: relative;
-    top: 8px;max-width: 100%;
+    top: 20px;
+    max-width: 86%;
+    left: 63px;
 }
-.sale_banner .image_skitka .image_first{
+ 
+.sale_banner .image_skitka .image_first {
     position: absolute;
-    top: 28%;z-index: 2;
-    left: -64%;
+    top: 28%;
+    z-index: 2;
+    left: -38%;
     width: 300px;
     transform: rotateX(15deg) rotateZ(37deg) rotateY(179deg);
 }
@@ -178,11 +182,23 @@ justify-content: space-between;
     top: 16px;
     
 }
-
+.nach-new{
+    font-family: Montserrat;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: center;
+margin-left: 10px;
+}
 @media (max-width:991px){
     .sale_banner{
       display: flex;
       flex-direction: column;
+    }
+    .skidka-body{
+        padding-top: 90px !important;
+        width: 100vw       !important;
     }
     .sale_banner .image_skitka .image_first{
         width: 186px;
@@ -213,7 +229,7 @@ justify-content: space-between;
     .kak_pol_small {
         display: grid;
         grid-template-columns: 30px auto;
-        height: auto;
+        /* height: auto; */
         min-height: 164px;
         align-items: start;
         gap: 5px;
@@ -252,4 +268,171 @@ color: #242424;
         gap: 28px;
         margin-bottom: 83px;
     }    
+}
+@media (max-width:400px) {
+    .title_page_first12{
+        font-family: Montserrat;
+font-size: 24px !important;
+font-weight: 600 !important;
+line-height: 32px !important;
+letter-spacing: 0.5px !important;
+text-align: left;
+width: 90%;
+    }
+    .sale_banner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        padding-top: 49px;
+    }
+    .text_skitka h3{
+        font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 27.6px;
+text-align: center;
+text-transform: uppercase;
+    }
+    .text_skitka h4{
+        font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 23px;
+text-align: center;
+top: 0px !important;
+    }
+    .sale_banner .text_skitka {
+        margin-left: 0px !important;
+    }
+    .sale_banner .image_skitka .image_first12 {
+        position: relative;
+        top:35px;
+        max-width: 96%;
+        left: 12px;
+    }
+    .sale_banner {
+      
+        height: 464px;
+    }
+    .sale_banner .image_skitka .image_first {
+        width: 207px;
+        top: 128px;
+        left: -60%;
+    }
+    .cto-for-media{
+        font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 700 !important;
+line-height: 27px !important;
+text-align: center;
+margin-top: 17px !important;
+margin-left: 3px !important;
+    }
+    .tct h2{
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+
+    }
+    .kakpoluchit_big {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 14px;
+        gap: 0px;
+        margin-bottom: 83px;
+    }
+    .tct p{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+
+    }
+    .yine{
+        margin-top: -32px;
+        margin-bottom: -10px;
+    }
+    .nach-new{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0.5px;
+text-align: center;
+margin-top: -140px;
+margin-left: -3px;
+    }
+
+.one_buy_1 {
+    width: 100%;
+    background-color: blue;
+    border-radius: 16px;
+    position: relative;
+    height: 272px;
+}
+.two_image_fifty {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: aquamarine;
+    position: relative;
+}
+.lets_buy {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    height: auto;
+    gap: 10px;
+}
+.two_image_fifty{
+    margin-top: -3px;
+}
+.one_buy_1 h3{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+bottom: 0px;
+left: 9px;
+}
+.two_image_fifty h3{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+bottom: -3px;
+left: 11px;
+}
+.fghyt{
+    margin-top: 5px !important;
+}
+.end_btn {
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    background-color: white;
+    margin-top: 19px;
+    margin-left: 0px !important;
+}
+.qwerty-footer0{
+    margin-top: 29px !important;
+    margin-bottom: 65px !important;
+}
+.qwerty-footer0 .accordion-button{
+    margin-left: -6px !important;
+    height: 34px !important;
+}
 }

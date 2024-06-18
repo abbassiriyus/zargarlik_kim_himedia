@@ -2,7 +2,8 @@
     gap: 20px !important;
 }
 .lich_dg_two1{
-    width: 439px;
+    width: 100%;
+    max-width: 439px;
 
 }
 .lich_dg_two1 input{
@@ -29,6 +30,16 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-top: -4px;
 margin-bottom: 18px;
+}
+.smen-new{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-bottom: 15px !important;
+
 }
 .check_type_radio{
     display: flex;
@@ -110,4 +121,132 @@ text-align: left;
  .smendel button:hover{
     background-color:#cfcc7c ;
     color: black;
+ }
+ @media (max-width:991px) {
+    .kabinet-body{
+        padding-top: 116px;
+        width: 100vw;
+    }
+ }
+ @media (max-width:400px) {
+    .lich_dg_two1 h1{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+margin-bottom: 11px;
+    }
+    .lich_dg_two1 label {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+    .lich_dg_two1 input {
+        margin-top: 4px !important;
+        margin-bottom: 20px !important;
+    }
+    .inp-med-new{
+        margin-bottom: 10px
+    }
+    .male_famale input{
+        width: 16px ;
+        height: 16px;
+    }
+    .male_famale span{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+position: relative;
+top: -6px;
+    }
+    .male_famale{
+        gap: 9px;
+    }
+    .check_type_radio {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        margin-top: -2px;
+        margin-bottom: -6px;
+    }
+    .lich_dg_two1 input {
+        font-size: 16px;
+    }
+    .line_inp {
+        height: 1px;
+        width: 100%;
+        background-color: #e6e4e4;
+        margin-bottom: 16px;
+        margin-top: -5px;
+    }
+    .smen-new{
+        font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+
+    }
+    .nn-new-for-med{
+        position: relative;
+        top: 3px;
+    }
+    .new-label{
+        position: relative;
+    top: 6px;
+    }
+
+.line_inp2 {
+    height: 1px;
+    width: 100%;
+    background-color: #e6e4e4;
+    margin-top: 10px;
+}
+.smen button {
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    background: #DEDEDE;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: #B0B0B0;
+    border: none;
+    transition: 0.5s;
+    margin-top: 16px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+ 
+
+}
+.smendel button {
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    background: #DEDEDE;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: #257AE8;
+    border: none;
+    transition: 0.5s;
+    margin-top: 16px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+ 
+
+}
  }

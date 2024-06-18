@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="kabinet.css">
     <link rel="stylesheet" href="glvny.css">
 </head>
-<body>
+<body class="kabinet-body">
     
   <div class="filter_page">
     <div class="title3"><i style="cursor: pointer;"
@@ -442,7 +442,7 @@ background:
           <li onclick="window.location='/pages/obmen/obmen.html'">Скупка и обмен</li>
           <li onclick="window.location='/pages/oneproduct/map.html'"><i class='bx bx-map-pin'></i> Выбор города</li>
         </ul>
-        <div class="logo">
+        <div class="logo ">
          <a href="/index.html"> <img  src="/image/Group 3.svg" alt=""></a>
         </div>
         <ul class="ulsp">
@@ -484,7 +484,7 @@ background:
         <h4 onclick="window.location='/pages/kredit/kredit.html'" class="aksiya1">Рассрочки и кредит</h4>
       </div>
     </nav>
-    <nav class="nav2">
+    <nav class="nav2 nav2_new">
       <div class="one">
         <div class="ssss">
           <a class="contact" href="">
@@ -503,16 +503,16 @@ background:
           </a>
         </div>
       </div>
-      <div class="two">
-        <div class="logo"><img src="/image/Group 3.svg" alt="3"></div>
-        <button
+      <div class="two new_two_class">
+        <div class="logo new_logo_class"><img src="/image/Group 3.svg" alt="3"></div>
+        <button class="none_btn_1"
           onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
             src="/image/Vector78.svg" alt=""> Фильтры</button>
 
       </div>
      
 
-      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
+      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router new_rout">
         <p>По популярности <i class='bx bx-chevron-right'></i></p>
       </div>
       <main class="pagerout">
@@ -690,7 +690,7 @@ background:
 
 <input style="margin-bottom: 26px;margin-top: -2px;" type="text">
 <label for="">Фамилия</label>
-<input style="    margin-bottom: 15px;" type="text">
+<input class="inp-med-new" style="    margin-bottom: 15px;" type="text">
 
 <div class="check_type_radio">
     <div class="male_famale">
@@ -709,18 +709,11 @@ background:
 <label for="">Ваш город</label>
 <input style="margin-bottom: 50px;" type="text" placeholder="Москва">
 <div class="line_inp"></div>
-<h2 style="font-family: Montserrat;
-font-size: 20px;
-font-weight: 600;
-line-height: 32px;
-letter-spacing: 0.5px;
-text-align: left;
-margin-bottom: 15px !important;
-">Смена пароля</h2>
+<h2  class="smen-new">Смена пароля</h2>
 <label for="">Старый пароль</label>
-<input placeholder="Старый пароль" style="margin-bottom: 30px;" type="text">
-<label for="">Новый пароль</label>
-<input placeholder="Новый пароль" type="text">
+<input  placeholder="Старый пароль" style="margin-bottom: 30px;" type="text">
+<label class="new-label" for="">Новый пароль</label>
+<input class="nn-new-for-med" placeholder="Новый пароль" type="text">
 <div class="line_inp2"></div>
 <div class="smen">
     <button>Сменить пароль</button>
