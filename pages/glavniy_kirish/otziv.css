@@ -1,0 +1,123 @@
+.phn-for-otziv{
+    position: absolute;
+ 
+    top: 205px !important;
+    right: 141px !important;
+    width: 41% !important;
+}
+.relativnone{ 
+        display: grid;
+        grid-template-columns: auto;
+ 
+}
+.phn_coins{
+    display: none;
+}
+/* .phn-for-otziv{
+    width: auto;
+    position: absolute;
+    top: -88px;
+    left: 77px;
+} */
+ .new-dg{
+    margin-top: 15px !important;
+ }
+ .nex-ques{
+    margin-top: 40px !important;
+    margin-left: -1px !important;
+ }
+ .otziv-div-body{
+    width: 100vw !important;
+ }
+ .phnew{
+    display: none;
+ }
+ @media (max-width:1360px) {
+    .phn-for-otziv {
+        position: absolute;
+        top: 250px !important;
+        right: 30px !important;
+        width: 41% !important;
+    }
+ }
+ @media (max-width:1040px) {
+    .phn-for-otziv {
+        position: absolute;
+        top: 234px !important;
+        right: 0px !important;
+        width: 54% !important;
+    }
+ }
+ @media (max-width:900px) {
+    .phn-for-otziv {
+      display: none;
+    }
+    /* .phn_coins{
+        display: block;
+    } */
+    .phnew{
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+     }
+     .otziv-div-body{
+        padding-top: 100px;
+     }
+ }
+ @media (max-width:400px) {
+    .phnew{
+        display: none;
+    }
+    .phn_coins{
+        display: block;
+        width: 100%;
+        transform: scale(1.1);
+        margin-top: 33px;
+    }
+    /* .nex-ques{
+        margin-top: 0px !important;
+    } */
+    .h1-for-new-media{
+        font-family: Montserrat;
+font-size: 18px !important;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+
+    }
+    .top-0-new{
+        margin-left: -2px !important;
+        margin-top: 28px !important;
+    }
+    .for_button1 {
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+    .for_button1 .but{
+        width: 100% !important;
+        margin-top: 18px;
+        font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 400;
+line-height: 17.07px;
+height: 44px;
+
+    }
+    .nex-ques {
+        margin-top: -52px !important;
+    }
+    .foot-neww{
+        margin-top: 10px !important;
+    }
+    .foot-neww{
+        margin-top: 13px !important;
+        margin-bottom: 65px !important;
+    }
+    .foot-neww .accordion-button{
+        margin-left: -12px !important;
+        height: 34px !important;
+    }
+ }
