@@ -9,14 +9,14 @@
 .background{
     width: 100%;
     height: 494px;
-    background: url('/image/Screenshot\ from\ 2024-06-17\ 17-34-07.png');
+    background: url('/image/e7eb5ef3744613bb91cfdd74eb13cd43.jpeg');
     background-size: cover;
     margin-bottom: 5%;
     background-position-x: 23%;
     margin-top: 51px;
 }
 .background h1{
-    width: 70%;
+    width: 76%;
     margin: auto;
     font-size: 43.3px;
     position: relative;
@@ -39,12 +39,12 @@
     }
 }
 .background p{
-    width: 31%;
+    width: 35%;
     /* margin: auto; */
     font-size: 22.4px;
     position: relative;
     top: 186px;
-    left: 307px;
+    left: 220px;
     font-family: Montserrat;
     font-size: 28px;
     font-weight: 400;
@@ -111,9 +111,9 @@
     font-weight: 700;
     line-height: 65.83px;
     /* text-align: center; */
-    margin-top: -46px;
+    margin-top: -40px;
     margin-left: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
 }
 @media (max-width:1209px) {
     .give_back h1{
@@ -191,11 +191,11 @@
     height: 152px;
     position: relative;
     top: -30px;
-    left: 115px;
+    left: 71px;
 }
  
 .u2 img {
-    width: 27%;
+    width: 30%;
     /* height: 120px; */
     position: relative;
     top: -28px;
@@ -203,11 +203,11 @@
 }
 
 .u3 img{
-    width: 120px;
-    height: 120px;
+    width:30%;
+    /* height: 120px; */
     position: relative;
     top: -28px;
-    left: -23px;
+    left: -50px;
 }
 @media (max-width:1360px) {
     .u1 img{
@@ -455,11 +455,17 @@
 }
 .get h1{
     width: 93%;
-    font-size: 43.1px;
+    /* font-size: 43.1px; */
     position: relative;
     left: 62px;
     top: -9px;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
+    font-family: Montserrat;
+font-size: 54px;
+font-weight: 700;
+line-height: 65.83px;
+text-align: center;
+
 }
 @media (max-width:1122px) {
     .get h1{
@@ -500,12 +506,10 @@
     }
 }
 .cordinate{
-    width: 87%;
-    height: 100px;
+    width: 85%;
+    height: 126px;
     background-color: #f2f2f2;
-    position: relative;
-    left: 100px;
-    top: -25px;
+    margin: auto;
     border-radius: 20px;
     font-size: 19.2px;
     text-align: center;
@@ -515,10 +519,18 @@
     display: none;
 }
 .cordinate p{
-    width: 90%;
-    position: relative;
-    top: 25px;
-    left: 47px;
+    width: 100%;
+    margin: auto;
+    padding: 32px;
+    margin-left: 10px;
+ 
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.26px;
+text-align: center;
+
+
 }
 @media (max-width:1070px) {
     .cordinate p{
@@ -1192,4 +1204,239 @@
     .cordinate br{
         display: block;
     }
+}
+.circle-three-number{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 86%;
+    margin: auto;
+    gap: 10px;
+}
+.one-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.one-circle h2{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.26px;
+text-align: center;
+width: 88%;
+margin-left: 10px;
+}
+.one-circle h2 span{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.26px;
+text-align: center;
+color: #257AE8;
+text-decoration: underline;
+}
+.one-circle img{
+    margin-bottom: 12px;
+    width: 35%;
+    position: relative;
+    top: -16px;
+}
+.one-circle p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: center;
+width: 63%;
+position: relative;
+    top: 4px;
+left: 4px;
+}
+
+
+
+.second-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second-circle h2{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.26px;
+text-align: center;
+width: 88%;
+margin-left: 18px;
+}
+.second-circle h2 span{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.26px;
+text-align: center;
+color: #257AE8;
+text-decoration: underline;
+}
+.second-circle img{
+    margin-bottom: 24px;
+    width: 35%;
+    margin-left: 10px;
+}
+.second-circle p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: center;
+width: 63%;
+position: relative;
+top: 8px;
+left: 9px;
+}
+
+
+
+
+
+
+.third-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.third-circle h2{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.26px;
+text-align: center;
+width: 88%;
+margin-left: 31px;
+height: 37px;
+position: relative;
+top: -20px;
+}
+.third-circle h2 span{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.26px;
+text-align: center;
+color: #257AE8;
+text-decoration: underline;
+}
+.third-circle img{
+    /* margin-bottom: 24px; */
+    width: 35%;
+    margin-left: 27px;
+    position: relative;
+    top: -47px;
+}
+.third-circle p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: center;
+width: 63%;
+position: relative;
+top: 6px;
+left: 15px;
+}
+.span-under span{
+    text-align: center;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+ text-decoration: underline;
+
+}
+.span-under{
+    margin-top: 20px;
+    margin-left: 19px;
+}
+.line-road{
+    /* width: 100%; */
+    width: 95%;
+    margin: auto;
+    margin-top: 22px;
+    margin-bottom: 26px;
+}
+.sec-circ-2 img{
+    position: relative;
+    top: 0px;
+    left: 15px;
+}
+.sec-circ-2 p{
+    width: 67%;
+    margin-left: 23px;
+    margin-top: 1px;
+}
+.sec-circ-2 h2{
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 14px;
+}
+.sec-circ-2 p span{
+    text-decoration: underline;
+}
+
+.sec-circ-3 img{
+    position: relative;
+ 
+    top: 0px;
+    left: 5px;
+ 
+}
+.sec-circ-3 p{
+    width: 67%;
+    margin-left: 2px;
+    margin-top: -3px;
+}
+.sec-circ-3 h2{
+    width: 80%;
+    margin-left: 21px;
+    margin-top: 3px;
+}
+
+
+
+.sec-circ-4 h2{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-align: center;
+    width: 70%;
+    margin-left: 8px;
+    height: 37px;
+    position: relative;
+    top: 0px;
+}
+.sec-circ-4 img{
+        /* margin-bottom: 24px; */
+        width: 35%;
+        margin-left: 10px;
+        position: relative;
+        top: -29px;
+}
+.sec-circ-4 p{
+    position: relative;
+    top: 29px;
+    left: 4px;
+}
+.alm1{
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 52px;
+    margin-left: 12px;
 }
