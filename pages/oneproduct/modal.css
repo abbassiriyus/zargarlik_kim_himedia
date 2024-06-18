@@ -10,13 +10,13 @@
     z-index: 12212;
     align-items: center;
     display: none;
-
+overflow: auto;
 }
 .white{
     width: 90%;
     max-width: 1174px;
     border-radius: 10px;
-    height:734px ;
+    min-height:734px ;
     background-color: white;
 }
 .white_ic{
@@ -281,7 +281,7 @@ color: #DE6060;
 .oformit{
     width: 100%;
     box-shadow: 0px -1px 15.3px 0px #0000001A;
-    height: 102px;
+    min-height: 102px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -495,5 +495,55 @@ opacity: 0px;
         min-height: 230px;
         gap: 61px;
         width: 80%;
+    }
+}
+@media (max-width:991px){
+    .modall{
+        display: flex;
+        align-items: start;
+    }
+    .uzucard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 32px;
+        min-height: 230px;
+        gap: 61px;
+        width: 100%;
+    }
+    .plmin{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* grid-col-start: 1;
+        grid-row-end: 3; */
+    }
+    .pokupka{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pricc{
+        grid-column-start: 1;
+        padding: 0;
+        margin: 0;
+        grid-column-end: 3;  display: flex;
+        justify-content: start; 
+    }
+    .plusminus{
+        display: grid;
+        grid-template-columns:100px 1fr;
+        /* justify-content: space-between; */
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 10px;
+        overflow:visible;
+        height: auto;
+        box-shadow: 0px 0px 0px 0px #0000001A;
+    
+    }
+    .uzucard{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .oformit{
+        padding-bottom: 10px;
     }
 }
