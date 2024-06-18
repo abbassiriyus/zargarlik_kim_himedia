@@ -21,6 +21,14 @@ body{
     color: #808080;
     
 }
+@media(max-width:600px){
+  .routpage_one span{
+   
+    font-size: 12px;
+
+    
+}
+}
 .routpage_one .bx-chevron-right{
     font-size: 24px;
     color: #808080;
@@ -1044,12 +1052,18 @@ color: #6C7B8B;
 margin-top: 7px;
 margin-left: 18px;
 }
+.paraph .swiper-slide-active{
+  z-index: 123;
+}
 .slider_one3 .card_one4 .swiper-pagination-bullet {
   border-radius: 0px !important;
   transform: rotate(0deg) !important;
   width: 50.25px;
   height: 3px;
   gap: 0px;  
+}
+.slider_one3 .card_one4 {
+  min-width: 260px
 }
 .slider_one3 .card_one4 p {
   font-family: Montserrat;
@@ -1494,7 +1508,7 @@ padding: 10px 20px;
 }
 .routpage_one span{
   font-family: Montserrat;
-font-size: 12px;
+font-size: 11px;
 font-weight: 400;
 line-height: 20px;
 text-align: left;
