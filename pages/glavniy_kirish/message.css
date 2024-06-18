@@ -73,7 +73,7 @@ margin-bottom: 0;
         line-height: 14.63px;
         letter-spacing: 0.5px;
         text-align: left;   
-        margin-top: 13px;
+        margin-top: 10px;
     }
     .message_frame h4{
         font-family: Montserrat;
@@ -131,8 +131,11 @@ bottom: 0px;
 right: 5px;
 
 }
-@media (max-width:380px) {
-    
+@media (max-width:991px) {
+    .mes-body{
+        width: 100vw !important;
+        padding-top: 100px !important;
+    }
 }
 .email-sms{
     display: flex;
@@ -152,4 +155,33 @@ text-align: left;
 .email-sms input{
     width: 24px;
     height: 24px;
+}
+@media (max-width:365px) {
+    .mess-h1{
+        margin-top: -5px !important;
+        margin-left: 3px !important;
+    }
+    .message_frame{
+        margin-top: 25px !important;
+        left: 6px;
+        padding: 12px;
+    }
+    .almaz_logo_h {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+        gap: 14px;
+    }
+    .message_frame{
+        height: 150px;
+    }
+    .message_frame p{
+        font-family: Montserrat;
+font-size: 12px !important;
+font-weight: 300;
+line-height: 14.63px;
+letter-spacing: 0.5px;
+text-align: right;
+right: 15px;
+    }
 }

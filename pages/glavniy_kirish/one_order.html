@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="message.css">
     <link rel="stylesheet" href="one_order.css">
 </head>
-<body>
+<body class="one_order-body">
   <div class="filter_page">
     <div class="title3"><i style="cursor: pointer;"
         onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'"
@@ -446,7 +446,7 @@ background:
           <li onclick="window.location='/pages/obmen/obmen.html'">Скупка и обмен</li>
           <li onclick="window.location='/pages/oneproduct/map.html'"><i class='bx bx-map-pin'></i> Выбор города</li>
         </ul>
-        <div class="logo">
+        <div class="logo ">
          <a href="/index.html"> <img  src="/image/Group 3.svg" alt=""></a>
         </div>
         <ul class="ulsp">
@@ -488,7 +488,7 @@ background:
         <h4 onclick="window.location='/pages/kredit/kredit.html'" class="aksiya1">Рассрочки и кредит</h4>
       </div>
     </nav>
-    <nav class="nav2">
+    <nav class="nav2 nav2_new">
       <div class="one">
         <div class="ssss">
           <a class="contact" href="">
@@ -507,16 +507,16 @@ background:
           </a>
         </div>
       </div>
-      <div class="two">
-        <div class="logo"><img src="/image/Group 3.svg" alt="3"></div>
-        <button
+      <div class="two new_two_class">
+        <div class="logo new_logo_class"><img src="/image/Group 3.svg" alt="3"></div>
+        <button class="none_btn_1"
           onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
             src="/image/Vector78.svg" alt=""> Фильтры</button>
 
       </div>
      
 
-      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
+      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router new_rout">
         <p>По популярности <i class='bx bx-chevron-right'></i></p>
       </div>
       <main class="pagerout">
@@ -689,26 +689,14 @@ background:
         <i class='bx bx-chevron-left'></i>
         <span> Вернуться к списку заказов</span>
      </div>
-     <div style="    margin-top: 15px;" class="otmen_back">
+     <div class="nn-h1-med">
+      <h1>Мои заказы</h1>
+     </div>
+     <div style="    margin-top: 15px;" class="  med-back-ord">
         <span>Отменён</span>
     </div>
-    <h3 style="font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 21.94px;
-    letter-spacing: 0.5px;
-    text-align: left;
-        margin-top: 8px;
-
-    ">Заказ № 9919782656-1</h3>
-    <p style="font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17.07px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: #898989;
-    ">От 1 июня</p>
+    <h3  class="zakaz-new-class">Заказ № 9919782656-1</h3>
+    <p  class="p-new-class">От 1 июня</p>
 
     <div class="info_btn_circle">
         <i class='bx bxs-info-circle'></i>
@@ -725,6 +713,65 @@ background:
           <span>68 257 ₽</span>
         </div>
     </div>
+    <div class="one_order_product1">
+      <h3>Этот товар отменён  </h3>
+      <div class="white-ring-1">
+        <img src="/image/609AE2C076FE59B33E3B36ECCFD5 (1).png" alt="">
+        <div class="white-text-ring">
+          <h3>Серьги из белого золота с бриллиантами и танзанитами</h3>
+          <p>1 шт</p>
+        </div>
+        <span>68 257 ₽</span>
+      </div>
+  </div>
+  <div class="one_order_product1">
+    <h3>Этот товар отменён  </h3>
+    <div class="white-ring-1">
+      <img src="/image/609AE2C076FE59B33E3B36ECCFD5 (1).png" alt="">
+      <div class="white-text-ring">
+        <h3>Серьги из белого золота с бриллиантами и танзанитами</h3>
+        <p>1 шт</p>
+      </div>
+      <span>68 257 ₽</span>
+    </div>
+</div>
+<!-- <div class="one_order_product1">
+  <h3>Этот товар отменён  </h3>
+  <div class="white-ring-1">
+    <img src="/image/609AE2C076FE59B33E3B36ECCFD5 (1).png" alt="">
+    <div class="white-text-ring">
+      <h3>Серьги из белого золота с бриллиантами и танзанитами</h3>
+      <p>1 шт</p>
+    </div>
+    <span>68 257 ₽</span>
+  </div>
+</div> -->
+
+
+<div class="dostavka-big-div">
+  <h1>Доставка</h1>
+  <div class="diamond-div">
+    <img src="/image/Frame 973.png" alt="">
+    <span>Доставка в магазин ALMAZ, бесплатно</span>
+  </div>
+  <div class="diamond-div">
+    <img src="/image/mingcute_location-line.png" alt="">
+    <span>ТЦ Тройка, г. Москва, ул. Красносельская Верхн., 3А</span>
+  </div>
+  <div class="diamond-div">
+    <img src="/image/mingcute_time-line.png" alt="">
+    <span>пн-вс 09:00-22:00</span>
+  </div>
+  <div class="diamond-div">
+    <img src="/image/material-symbols_call.png" alt="">
+    <span>+7 (800) 1000-750</span>
+  </div>
+  <h1 style="margin-top: 33px;">Способ оплаты:</h1>
+  <div class="diamond-div">
+    <img src="/image/clarity_wallet-line.png" alt="">
+    <span>Оплата при получении</span>
+  </div>
+</div>
          </div>
                 </div>
                 
@@ -808,7 +855,7 @@ background:
           <center>
             <p class="alm1">© 2024 ALMAZ</p>
           </center>
-          <div class="footer2">
+          <div class="footer2 qwerty-footer">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">

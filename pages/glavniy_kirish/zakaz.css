@@ -32,7 +32,6 @@ margin-left: 10px;
 }
 .otmen_back{
     width: 79px;
-    height:24px;
     background: var(--red-base, #DF1C41);
     border-radius: 999px;
 }
