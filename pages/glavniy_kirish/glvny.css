@@ -408,6 +408,7 @@ grid-template-columns: auto;
         align-items: center;
         margin:auto;
         text-align: center;
+        border: none;
         font-size: 16px;
     }
     .phn{
