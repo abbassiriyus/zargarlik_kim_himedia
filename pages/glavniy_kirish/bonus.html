@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../style1.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style1.css">
     <link rel="stylesheet" href="../oneproduct/modal.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="/pages/glavniy_kirish/saved.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
     <link rel="stylesheet" href="kabinet.css">
     <link rel="stylesheet" href="glvny.css">
     <link rel="stylesheet" href="bonus.css">
 </head>
-<body>
+<body  class="izbrniy_big_div">
     
   <div class="filter_page">
     <div class="title3"><i style="cursor: pointer;"
@@ -443,7 +448,7 @@ background:
           <li onclick="window.location='/pages/obmen/obmen.html'">Скупка и обмен</li>
           <li onclick="window.location='/pages/oneproduct/map.html'"><i class='bx bx-map-pin'></i> Выбор города</li>
         </ul>
-        <div class="logo">
+        <div class="logo ">
          <a href="/index.html"> <img  src="/image/Group 3.svg" alt=""></a>
         </div>
         <ul class="ulsp">
@@ -485,7 +490,7 @@ background:
         <h4 onclick="window.location='/pages/kredit/kredit.html'" class="aksiya1">Рассрочки и кредит</h4>
       </div>
     </nav>
-    <nav class="nav2">
+    <nav class="nav2 nav2_new">
       <div class="one">
         <div class="ssss">
           <a class="contact" href="">
@@ -504,16 +509,16 @@ background:
           </a>
         </div>
       </div>
-      <div class="two">
-        <div class="logo"><img src="/image/Group 3.svg" alt="3"></div>
-        <button
+      <div class="two new_two_class">
+        <div class="logo new_logo_class"><img src="/image/Group 3.svg" alt="3"></div>
+        <button class="none_btn_1"
           onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
             src="/image/Vector78.svg" alt=""> Фильтры</button>
 
       </div>
      
 
-      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
+      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router new_rout">
         <p>По популярности <i class='bx bx-chevron-right'></i></p>
       </div>
       <main class="pagerout">
@@ -685,90 +690,278 @@ background:
                 <h3 style="
                 margin-top: 37px;">Выйти</h3>
             </div>
-            <div class="lich_dg_two">
- <div class="bonus_rubley">
-    <div class="black_rubl">
-        <div class="df_bonus">
-            <div class="protsent">
-                <h3>5 830</h3>
-                <img src="/image/Frame 938.png" alt="">
-            </div>
-            <span>бонусный рублей</span>
-        </div>
-        <div class="info_bonus">
-            <p>Срок действия</p>
-            <i class='bx bx-info-circle'></i>
-        </div>
-    </div>
-    <div class="iyun">
-        <div class="protsent1">
-            <h3>5 830</h3>
-            <img src="/image/Frame 938.png" alt="">
-        </div>
-        <span>Сгорят в 30 июнь </span>
-        <img class="group_fire" src="/image/Group 37.png" alt="">
-    </div>
- </div>
-
-<div class="program_bonus">
-<div class="program_text">
-    <h3>Бонусная программа</h3>
-    <p>Это ваша возможность накапливать и использовать бонусные рубли, следить за бонусным счётом, получать персональные скидки и предложения</p>
-    <span>Подробнее о бонусной программе</span>
-</div>
-<div class="program_img">
-    <img src="/image/Frame 948.png" alt="">
-    <div class="pokup_yellow">
-       <div  class="pro_yel">
-        <span>30%</span><p>стоимости покупок можно оплатить бонусами</p>
-       </div> 
-         <div   class="pro_yel">
-        <span>10%</span><p>стоимости покупок возвращается бонусами</p>
-       </div> 
-    </div>
-</div>
-</div>
-
-
-<h3 style="font-family: Montserrat;
-font-size: 32px;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: 0.5px;
-text-align: left;
-
-margin-top: 33px;
-">История бонусов</h3>
-   
-    <div style=" margin-top: 33px;    margin-bottom: 18px;" class="histori_bonus">
-    <div class="june">
-        <span>Бонусные рубли в подарок до 30 июня</span>
-        <p>June 1</p>
-    </div>
-    <div class="pric_bon">
-        <img src="/image/Frame 953.png" alt="">
-    </div>
-</div>
-
-    <div  style="    margin-bottom: 18px;" class="histori_bonus">
-    <div class="june">
-        <span>Списание БР по истечении срока действия</span>
-        <p>May 31</p>
-    </div>
-    <div class="pric_bon">
-        <img src="/image/Frame 953 (2).png" alt="">
-    </div>
-</div>
-
-<div  class="histori_bonus">
-    <div class="june">
-        <span>Списание БР по истечении срока действия</span>
-        <p>May 17</p>
-    </div>
-    <div class="pric_bon">
-        <img src="/image/Frame 953 (3).png" alt="">
-    </div>
-</div>
+            <div class="lich_dg_two lich_dg_two12312 main_card">
+             <div class="title_izabr">
+              <h2>Избранное</h2>
+              <a href="">Очистить</a>
+             </div>
+              <div class="cards">
+                
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо <br> 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо <br> 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+                <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+                  <div class="card_img">
+                    <div class="novinki">
+                      <h1 class="one1">Новинка</h1>
+                      <h1 class="two2">🌷 SALE</h1>
+                    </div>
+                    <div class="dinmic"><img src="/image/Group 5.png" alt=""></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="/image/Rectangle 4 (1).png" alt=""></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="star1"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                      class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                  <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+                  <div class="dostup">
+                    <div class="circle"></div>
+                    <h3>Достаточно</h3>
+                  </div>
+                  <div class="price">108 590 ₽
+                  </div>
+                  <div class="del_price">
+                    <del>108 590 ₽
+                    </del>
+                    <span>-60%</span>
+                  </div>
+                  <button>Подробнее</button>
+                </div>
+              </div>
             </div>
         </div>
 
@@ -834,9 +1027,9 @@ margin-top: 33px;
           <center>
             <p class="alm1">© 2024 ALMAZ</p>
           </center>
-          <div class="footer2">
+          <div class="footer2 new-foot">
             <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
+              <div class="accordion-item left_new">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1"
                     aria-expanded="true" aria-controls="collapseOne1">
@@ -859,7 +1052,7 @@ margin-top: 33px;
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item left_new">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
@@ -881,7 +1074,7 @@ margin-top: 33px;
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item left_new" >
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
@@ -901,7 +1094,7 @@ margin-top: 33px;
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item left_new">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree14" aria-expanded="false" aria-controls="collapseThree14">
@@ -922,7 +1115,7 @@ margin-top: 33px;
               </div>
             </div>
         
-            <div class="application">
+            <div class="application new-app">
               <a href=""><img src="/image/app-store-badge.svg.svg" alt=""></a>
               <a href=""><img src="/image/rustore-badge.svg.svg" alt=""></a>
               <a href=""><img src="/image/app-gallery-badge.svg fill.svg" alt=""></a>
@@ -956,5 +1149,66 @@ margin-top: 33px;
             </center>
         
           </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <script>
+          function initSliders() {
+            var swiper1 = new Swiper('.mySwiper', {
+              loop: true,
+              pagination: {
+                el: '.mySwiper .swiper-pagination',
+                clickable: true
+              }
+            });
+      
+            const swiperContainers = document.querySelectorAll('.mySwiper');
+            const swipers = [];
+      
+            swiperContainers.forEach((container, index) => {
+      
+              const swiper = new Swiper(container, {
+                navigation: {
+                  nextEl: container.querySelector('.swiper-button-next'),
+                  prevEl: container.querySelector('.swiper-button-prev'),
+                },
+                pagination: {
+                  el: container.querySelector('.swiper-pagination'),
+                  clickable: true,
+                },
+              });
+      
+              swipers.push(swiper);
+              let startX = 0;
+      
+      
+              container.addEventListener('mousedown', function (e) {
+                startX = e.clientX;
+              });
+      
+              container.addEventListener('mousemove', function (e) {
+                const endX = e.clientX;
+                const diff = endX - startX;
+                console.log(startX, endX);
+                if (diff > 50) {
+                  swiper.slideNext();
+                  startX = endX;
+                } else if (diff < -50) {
+                  swiper.slidePrev();
+                  startX = endX;
+                }
+              });
+      
+      
+      
+            })
+      
+          }
+      
+          document.addEventListener('DOMContentLoaded', initSliders);
+      
+        </script>
 </body>
 </html>
