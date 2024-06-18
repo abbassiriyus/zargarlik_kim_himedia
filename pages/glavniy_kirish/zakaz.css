@@ -47,6 +47,7 @@ color: #898989;
 position: relative;
 top: -2px;
 left: -2px;
+margin-top: 10px;
 }
 .img_text_zakaz h3{
     font-family: Montserrat;
@@ -71,7 +72,7 @@ margin-top: 7px;
     width: 169px;
     height:48px;
     border-radius: 8px;
-    color: ;
+    /* color: ; */
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -82,4 +83,77 @@ border: none;
 .podborniy{
     margin-top: 33px;
     margin-left: -24px;
+}
+.zakaz_otmen123{
+    margin-left: 21px;
+    margin-right: -7px;
+}
+.zakaz_big_div2 .glavniy_lich_dg .lich_dg_two2 .zakaz_otmen h2{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.5px;
+    margin-top: 16px;
+    margin-left: -2px;
+    text-align: left;
+}
+@media (max-width:980px){
+    .zakaz_pol{
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin-top: 16px;
+    }
+    .zakaz_otmen{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width:580px){
+    .zakaz_otmen{
+        box-shadow: 0px 0px 15px 0px #0000001A;
+        padding: 20px;
+        height: 210px;}
+    .zakaz_big_div2 .glavniy_lich_dg .lich_dg_two2 .zakaz_otmen h2 {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 11.5px;
+        letter-spacing: 0.5px;
+        margin-top: 10px;
+        margin-left: 1px;
+        text-align: left;
+    }
+    .img_text_zakaz p {
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17.07px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #898989;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 5px;
+    }
+    .podborniy{
+        display: none;
+    }
+    .lich_dg_two2 h3 {
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.5px;
+text-align: left;
+
+    
+    }
+    .glavniy_lich_dg{
+        width: 91%;
+    }
+    .zakaz_big_div2{
+        padding-top: 103px;
+    }
 }
