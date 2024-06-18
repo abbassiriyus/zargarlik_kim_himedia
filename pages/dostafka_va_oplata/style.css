@@ -211,7 +211,7 @@
         flex-direction: column;
         border: 1px solid #DAE7F8;
         scale: 1;
-        margin-top: -0.8%;
+        margin-top: -2%;
     }
     .circle_color{
         flex-wrap: wrap;
@@ -253,42 +253,46 @@ margin-top: 1.7%;
     .circle_one img{
         width: 29%;
         position: relative;
-        top: -6px;
+        top: 5px;
         left: 3.9px;
     }
-    .frame p{
+    .fram p{
         line-height: 15px;
         font-size: 12px;
+        font-weight: 600;
         position: relative;
-        left: 3px;
-        top: 8px;
+        left: 1px;
+        top: 14px;
     }
     .frame1 p{
         line-height: 15px;
         font-size: 12px;
+        font-weight: 600;
         position: relative;
-        top: 8px;
-        left: 4.3px;
+        top: 15px;
+        left: 5px;
     }
     
     .frame2 p{
         line-height: 15px;
         font-size: 12px;
+        font-weight: 600;
         position: relative;
-        top: 2px;
+        top: 15px;
         left: 1px;
     }
     .frame2 img{
         position: relative;
-        top: -6px;
+        top: 6px;
         left: 1px;
     }
     .frame3 p{
+        font-weight: 600;
         line-height: 15px;
         font-size: 12px;
         position: relative;
-        top: 2px;
-        left: 2px;
+        top: 14px;
+        left: 5px;
     }
 }
 .payment{
@@ -327,10 +331,9 @@ margin-top: 1.7%;
 }
 @media (max-width:1040px) {
     .payment{
-        width: 99%;
+        width: 90%;
         margin-bottom: 1.9%;
-        /* margin-left: -15% !important; */
-        max-width: 800px;
+        max-width: 750px;
         margin: auto;
     }
     .payment h1{
@@ -352,7 +355,7 @@ margin-top: 1.7%;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   max-width: 1000px;
   justify-content: center;
   margin: auto;
@@ -366,8 +369,6 @@ margin-top: 1.7%;
     border: 1px solid grey;
     border-radius: 10px;
     max-width: 159px;
-    margin: auto;
-    
 }
 .y{
     font-size: 13.71px;
@@ -583,8 +584,10 @@ span{
 }@media (max-width:380px) {
     .payment h1{
         width: 40%;
-        font-size: 22px;
-        margin-top: 5% !important;
+        font-size: 22.3px;
+        font-weight: 600;
+        padding-top: 1.5px;
+        padding-left: 19px;
         max-width:500px;
         margin: auto;
     }
@@ -626,7 +629,8 @@ span{
         margin-bottom: 10px !important;
     }
 }
-@media (max-width:380px) {
+
+@media (max-width:383px) {
     .dg .d1{
         width: 150px !important;
         height: 160px;
@@ -634,7 +638,7 @@ span{
         border-radius: 10px;
         max-width: 150px;
         margin: auto;
-        margin-top: 15.6%;
+        margin-top: 5%;
     }
     .dk5 img{
         width: 20%;
@@ -800,6 +804,14 @@ span{
   }
   .lish2{
     display: none;
+  }
+  .slep{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .wid{
+    font-size: 16px;
+    font-weight: 500;
   }
 @media (max-width:380px) {
     .p{
