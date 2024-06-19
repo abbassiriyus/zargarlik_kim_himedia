@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tf2</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../style1.css">
     <link rel="stylesheet" href="../oneproduct/modal.css">
@@ -714,7 +714,7 @@ background:
 </div>
 
 
-<main  class="top_accordion_12">
+<!-- <main  class="top_accordion_12">
  <h5>Популярные вопросы</h5>
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -778,15 +778,64 @@ background:
     </div>
   </div>
 </div>  
-</main>
+</main> -->
+
+
+<div class="for_bg_ac">
+  <h2>Популярные вопросы</h2>
+ <div class="questions">
+  <div class="accordion-item">
+    <div class="voprosi"><p>Какой ассортимент доступен в рассрочку?</p> <i class='bx bx-chevron-down' ></i></div>
+    <div class="accordion-content">
+      <p>Шаблон 1</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="voprosi"><p>Условия кредитования</p> <i class='bx bx-chevron-down' ></i></div>
+    <div class="accordion-content">
+      <p>Шаблон 2</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="voprosi"><p>Требования к заёмщикам</p> <i class='bx bx-chevron-down' ></i></div>
+    <div class="accordion-content">
+      <p>Шаблон 3</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+      <div class="voprosi"><p>Условия возврата товара или отказа от товара, если покупка была в рассрочку</p> <i class='bx bx-chevron-down' ></i></div>
+      <div class="accordion-content">
+        <p>Шаблон 4</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="voprosi"><p>Условия использования</p> <i class='bx bx-chevron-down' ></i></div>
+      <div class="accordion-content">
+        <p>Шаблон 5</p>
+      </div>
+    </div>
+</div>
+</div>
 
 
 
 
 
+<script>
+  const accordionHeaders = document.querySelectorAll('.voprosi');
 
-
-
+accordionHeaders.forEach(header => {
+header.addEventListener('click', () => {
+  header.classList.toggle('active');
+  const content = header.nextElementSibling;
+  if (content.style.display === 'block') {
+    content.style.display = 'none';
+  } else {
+    content.style.display = 'block';
+  }
+});
+});
+</script>
  
           <footer class="footer_1">
             <ul>
