@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.kak-body{
+padding-top: 190px;
+}
+.kak-body .main{
+    max-width:1440px;
+    width: 95%;
+    margin: auto;
+}
+.dom_arr_skup {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-left: 13px;
+    margin-top: 21px;
+    margin-bottom: 36px;
+}
+.kak-body .main .title_page{
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 600;
+line-height: 34.13px;
+text-align: left;
+margin-left: 10px;
+padding-top: 2px;
+margin-bottom: 29px;
+}
+.kak-body .other .mg_shag {
+display: grid;
+grid-template-columns: 45px auto;
+align-items: start;
+gap: 17px;
+margin-left: 12px;
+
+}
+.kak-body .other .mg_shag .image_shag img{
+width: 100%;
+}
+.kak-body .other .mg_shag .text_shag h3{ 
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+color: #242424;    
+}
+.kak-body .other .mg_shag .text_shag p{ 
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+color: #242424;    
+    
+}
+.kak-body .other .g1_button_media_button{
+    margin-left:74px;
+    background: #FFF957;
+border: none;
+width: 391px;
+height: 58px;
+border-radius: 14px;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+color: #242424;
+margin-bottom: 47px;
+}
+.s3_shag_image{
+    width: 90%;
+    max-width: 799px;
+    margin-left: 74px;
+    margin-top: -1px;
+    margin-bottom: 48px;
+}
+.kak-body .other .mg_shag .text_shag .text_shag_2{
+margin-top: -16px;
+}
+.kak-body .other .inp2{
+    box-shadow: 0px 0px 15px 0px #0000001A;
+width: 90%;
+max-width: 886px;
+margin-left: 74px;
+border-radius: 8px;
+margin-bottom: 50px;
+}
+.kak-body .other .inp2 .inp-grid{
+    display: grid;
+    gap: 24px;
+    margin-top: -1px;
+    grid-template-columns: 1fr 1fr;
+    padding: 28px;}
+
+.kak-body .other .inp2 .inp-grid input{
+    background: #F5F5F5;
+border: none;
+height: 56px;
+padding-left: 20px;
+border-radius: 8px;
+outline: none;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.94px;
+text-align: left;
+color: #939393;
+margin-left: 2px;
+margin-bottom: 21px;
+}
+.kak-body .g1_button_media_button2{
+    width: 302px;
+}
+.kak-body .other .inp2 .div{
+    box-shadow: 0px -1px 15.3px 0px #0000001A;
+    display: flex;
+    align-items: center;
+    height: 114px;
+    justify-content: center;
+width: 100%;
+margin-top: 9px;
+}
+.kak-body .other .inp2 .div button{
+width: 94%;
+margin: auto;
+border: none;
+height: 56px;
+background: #FFF957;
+border-radius: 8px;
+}
+@media (max-width:891px){
+    .kak-body .other .inp2{
+        width: 100%;
+        max-width: 500px;
+        margin-left: 0px;
+    }
+    .kak-body .other .inp2 .inp-grid{
+        display: grid;
+        gap: 24px;
+        margin-top: -1px;
+        grid-template-columns: 1fr ;
+        padding: 28px;}
+        .s3_shag_image{
+            margin-left: 0px;
+        }
+        .kak-body .other .g1_button_media_button {
+            margin-left: 5px;
+            background: #FFF957;
+            border: none;
+            width: 98%;
+            height: 47px;
+            margin-top: 2px;
+            border-radius: 14px;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19.5px;
+            color: #242424;
+            margin-bottom: 47px;
+        }
+        .dom_arr_skup .bx-home-alt {
+            font-size: 14px;
+        }
+        .dom_arr_skup {
+            display: flex;
+            align-items: center;
+            gap: 1px;
+            margin-left: 7px;
+            margin-top: 21px;
+            margin-bottom: 20px;
+        }
+        .kak-body .main .title_page {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 34.13px;
+            text-align: left;
+            margin-left: 7px;
+            padding-top: 1px;
+            margin-bottom: 29px;
+            letter-spacing: 1px;
+        }
+        .kak-body .other .mg_shag {
+            display: grid;
+            grid-template-columns: 45px auto;
+            align-items: start;
+            gap: 17px;
+            margin-left: 7px;
+        }
+        .kak-body .other .mg_shag .text_shag h3 {
+            font-family: Montserrat;
+            font-size: 14px;}
+            .kak-body .other .mg_shag .text_shag p {
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: left;
+                color: #242424;
+            }
+            .s3_shag_image {
+                width: 100%;
+                max-width: 799px;
+                margin-left: 74px;
+                margin-top: 1px;
+                margin-left: 7px;
+                margin-bottom: 52px;
+            }
+            .kak-body .other .inp2 .inp-grid input {
+                background: #F5F5F5;
+                border: none;
+                height: 49px;
+                padding-left: 7px;
+                border-radius: 8px;
+                outline: none;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21.94px;
+                text-align: left;
+                color: #939393;
+                margin-left: 2px;
+                margin-bottom: 7px;
+            }
+            .kak-body .other .inp2 .div {
+                box-shadow: 0px -1px 15.3px 0px #0000001A;
+                display: flex;
+                align-items: center;
+                height: 73px;
+                justify-content: center;
+                width: 100%;
+                margin-top: -1px;
+            }
+            .kak-body .other .inp2 .div button {
+                width: 88%;
+                margin: auto;
+                border: none;
+                height: 48px;
+                background: #FFF957;
+                border-radius: 8px;
+            }
+            .kak-body .g1_button_media_button2 {
+                width: 100%;
+                margin-top: 22px !important;
+                margin-bottom: -12px !important;
+            }
+            .kak-body {
+                padding-top: 162px;
+            }
+}
