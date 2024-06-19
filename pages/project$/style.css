@@ -6,9 +6,11 @@
     margin: 0;
     font-family: "Montserrat", sans-serif;
 }
-body{
-    padding-top: 205px !important;
+.kak-body{
+    padding-top: 191px !important;
+    width: 100vw;  
 }
+
 .main{
     width: 95%;
     max-width: 1440px ;
@@ -187,9 +189,9 @@ line-height: 19.5px;
 }
 .g3{
     width: 100%;
-    margin-left: 10%;
+    margin-left: 26%;
     position: relative;
-    top: -5px;
+    top: -1px;
 }
 .g3 img{
     width: 60%;
@@ -706,17 +708,28 @@ margin-bottom: 56px;
         margin-top: 1%;
     }
 }
-.div{
+.div {
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
     margin: auto;
+    width: 100%;
     box-shadow: 0px -1px 15.3px 0px #0000001A;
+    min-height: 115px;
+    margin-top: 14px;
 }
 .div button{
     width: 94%;
-    height: 45px;
+    height: 53px;
     border: none;
+    margin-top: -10px;
+    font-family: Montserrat;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 19.5px;
+    
+    
     border-radius: 10px;
     font-size: 13px;
     background-color: #FFF957;
@@ -753,32 +766,41 @@ margin-bottom: 56px;
 }
 .f2 h3{
     font-family: Montserrat;
-    font-size: 12.8px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 20px;
     text-align: left;
+    
     position: relative;
     top: -2px;  
 }
 .f2 p{
-    font-size: 12.8px;
-    margin-bottom: 0%;
+ 
+    font-family: Montserrat;
+    font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+    
     margin-bottom: 1.2%;
     position: relative;
     top: 6px;
 }
 .f2 button{
-    width: 19%;
-    height: 45px;
+    width: 22%;
+    height: 57px;
     border: none;
     border-radius: 10px;
     font-size: 13px;
     background-color: #FFF957;
     position: relative;
     top: 2px;
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+ 
+
 }
 @media (max-width:380px) {
     .f2 h3{
@@ -890,9 +912,70 @@ border-radius: 8px;
 }
 .inp1{
     width: 65%;
-    height: 300px;
+    min-height: 300px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px #0000001A;
     margin-top: 1.2%;
+    margin-bottom: 9px;
+}
+.inp2{
+    display: none;
+}
+.inp-grid{
     padding: 30px;
+
+}
+@media (max-width:1100px) {
+    .inp-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .inp1{
+        width: 100%;
+    }
+}
+@media (max-width:930px) {
+    .o1 button {
+        width: 100%;
+    }
+    .f2 button {
+        width: 100%;
+    }
+}
+ @media (max-width:500px) {
+    .inp2{
+        display: block;
+        width: 100%;
+        min-height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 0px #0000001A;
+        margin-top: 1.2%;
+        margin-bottom: 19px;
+ 
+    }
+    .inp1{
+        display: none;
+    }
+ }
+@media (max-width:470px) {
+
+.inp-grid {
+    padding: 20px;
+    gap: 2px;
+}
+.div {
+    margin-top: 0px;
+}
+}
+@media (max-width:440px) {
+    .div {
+        margin-top: 0px;
+        min-height: auto;
+    }
+    .div button{
+        height: 44px;
+    }
+    .kak-body{
+        padding-top: 150px;
+    }
 }
