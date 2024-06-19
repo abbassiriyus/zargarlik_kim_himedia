@@ -639,11 +639,106 @@ margin-top: 12px;
 
 .seber_bank_12{
     background: linear-gradient(256.76deg, #FAED00 0.54%, #00D900 37.6%, #21A038 92.45%);
+position: relative;
+}
+.seber_bank_12 .text_sebir h1{
+    color: white;
+}
+.seber_bank_12 .text_sebir h3{
+    color: white;
 
+}
+.seber_bank_12 .verktor_absolute{
+position: absolute;
+ right: 0%;
+    top: 0px;
+    height: 100%;
+}
+.doxod3{
+    width: 78%;
+    margin-top: 79px;
+    padding-top: 49px;
+}
+.doxod3 ul{
+    max-width: 1283px;
+    margin: auto;
+
+}
+.for_bg_ac_sibir h2{
+    margin-top:7px;
+}
+.doxod3 center{
+    margin-bottom: 39px;
+}
+.doxod3 li{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 42px;
+text-align: left;
+margin-bottom: 10px;
+}
+.seber_bank_12 .verktor_absolute1{
+    position: absolute;
+   
+left: 0px;
+height: 100%;
+top: 0px;
+}
+.seber_bank_12 .text_sebir {
+    position: relative;
+    z-index: 12;
 }
 @media(max-width:991px){
     .howh1_3{
-    
+        color: #1FA534  !important;
+
     }
+    .seber_bank_12{
+height: auto;  padding-bottom: 9%;
+padding-top: 11%;
+margin-bottom: 17px;
+    }
+ .seber_bank_12 .text_sebir img{
+    height: 21px;
+ }
+ .seber_bank_12 .payment_image_big {
+    width: 39%;
+ }
+ .doxod3 {
+    width: 95%;
+ }
+ .doxod3 {
+    width:95%;
+    margin-top: 21px;
+    padding-top: 14px;
+}
+ .doxod3 li{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+ }    
+ .doxod3 center {
+    margin-bottom: 7px !important;
+}
+.doxod3 li {
+    font-family: Montserrat;
+    /* font-size: 24px; */
+    font-weight: 400;
+    /* line-height: 42px; */
+    text-align: left;
+    margin-bottom: 0px;
+}
+.for_bg_ac_sibir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    margin-top: 4px;
+}
 }
 
