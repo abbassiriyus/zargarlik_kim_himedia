@@ -1771,7 +1771,14 @@ margin-bottom: 20px;
     .salon_alm {
         margin-top: 25px;
     }
+
+}
+.olch_num h5{
+    margin-bottom: 0px;
+}
     .olch_num1 h5{
         margin-bottom: 0px;
     }
-}
+    .circle_adm p{
+        margin-bottom: 0px;
+    }
