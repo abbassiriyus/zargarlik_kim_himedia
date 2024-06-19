@@ -154,8 +154,8 @@ body{
     top: -19px;
 }
 
-span{
-    font-size: 28.1px;
+.n1 span{
+    /* font-size: 28.1px; */
     font-weight: 600;
 }
 
