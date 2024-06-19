@@ -8,7 +8,8 @@
     display: flex;
     justify-content: center;
     z-index: 12212;
-    align-items: center;
+    align-items: start;
+    padding-top: 5%;
     display: none;
 overflow: auto;
 }
@@ -18,6 +19,7 @@ overflow: auto;
     border-radius: 10px;
     min-height:734px ;
     background-color: white;
+    position: relative;
 }
 .white_ic{
     padding: 30px;
@@ -25,6 +27,9 @@ overflow: auto;
 .carttov{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    flex-wrap: wrap;
 }
 .carttov h2{
     font-family: Montserrat;
@@ -52,8 +57,9 @@ text-decoration: underline;
 }
 .hrf .bx-x{
     font-size: 24px;
-    position: relative;
-    top: -4px;
+    position: absolute;
+    top: 35px;
+    right: 29px;
 }
 
 .plusminus{
@@ -64,7 +70,7 @@ text-decoration: underline;
     margin-top: 30px;
     border-radius: 10px;
     overflow: hidden;
-    height: 150px;
+    height: auto;
     box-shadow: 0px 0px 22px 0px #0000001A;
 
 }
@@ -75,6 +81,9 @@ text-decoration: underline;
     justify-content: center;
     align-items: center;
     
+}
+.imageu img{
+    width: 100%;
 }
 .titleimg{
     /* background-color: aqua; */
@@ -209,7 +218,7 @@ color: #000000;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 32px;
-    min-height: 230px;
+    min-height: auto;
     gap: 61px;
 }
 .ringimg img{
@@ -222,7 +231,7 @@ color: #000000;
 .carduz{
     /* background-color: #0BAE45; */
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     display: grid;
     border-radius: 10px;
     grid-template-columns: 150px 1fr;
@@ -281,7 +290,9 @@ color: #DE6060;
 .oformit{
     width: 100%;
     box-shadow: 0px -1px 15.3px 0px #0000001A;
-    min-height: 102px;
+    min-height: 116px;
+ 
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +300,7 @@ color: #DE6060;
 .grey{
     width:  543px;
 height:44px;
-padding: 12px 82px 12px 82px;
+/* padding: 12px 82px 12px 82px; */
 border-radius: 8px  ;
 opacity: 0px;
 font-family: Montserrat;
@@ -312,7 +323,7 @@ color: #242424;
 height:44px;
 background: #FFF957;
 border: none;
-padding: 12px 82px 12px 82px;
+/* padding: 12px 82px 12px 82px; */
 gap: 30px;
 border-radius: 8px;
 opacity: 0px;
@@ -333,6 +344,7 @@ color: #242424;
     background-color: white;
     border-radius: 12px;
     display: none;
+    position: relative;
 }
 .modal2_ic{
     padding: 30px;
@@ -382,7 +394,7 @@ text-align: left;
 .oplimg img{
     width: 96%;
     margin: auto;
-    height: 100px;
+    /* height: 100px; */
     border-radius: 10px;
 }
 .ic{
@@ -457,11 +469,15 @@ line-height: 21.94px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 32px;
+}
+.nncartov{
+    display: none;
 }
 .kupit button{
     width: 830px;
 height: 56px;
-padding: 12px 82px 12px 82px;
+ 
 gap: 30px;
 border-radius: 8px  ;
 background: #FFF957;
@@ -474,6 +490,15 @@ border: none;
 opacity: 0px;
 
 }
+.pric del{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+color: #8B8B8B;
+display: none;
+}
 @media (max-width:1277px) {
     .yellow{
         width: 480px;
@@ -481,9 +506,9 @@ opacity: 0px;
     .grey{
         width: 480px;
     }
-    .carduz {
+    /* .carduz {
         height: 172px;
-    }
+    } */
 
   
 }
@@ -536,7 +561,7 @@ opacity: 0px;
         border-radius: 10px;
         overflow:visible;
         height: auto;
-        box-shadow: 0px 0px 0px 0px #0000001A;
+        /* box-shadow: 0px 0px 0px 0px #0000001A; */
     
     }
     .uzucard{
@@ -549,4 +574,356 @@ opacity: 0px;
     .carduz{
         width: 50%;
     }
+    .nncartov{
+        display: block;
+    }
+    .nncartov1{
+        display: none;
+    }
+}
+@media (max-width:878px) {
+    .modal22 {
+        max-width: 886px;
+        width: 97%;}
+        .e-mail{
+            gap: 8px;
+            height: auto;
+        }
+        .kupit button {
+            width:98%;
+        }
+        .modal22{
+            height: auto;
+        }
+}
+
+@media (max-width:850px) {
+    .e-mail{
+        display: grid;
+        grid-template-columns:   1fr;
+    }
+    .e-mail input{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:790px) {
+    .carduz {
+        width: 60%;
+    }
+}
+@media (max-width:690px) {
+    .carduz {
+        width: 100%;
+    }
+}
+@media (max-width:600px) {
+    .grey {
+        width: 100%;
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+ 
+
+    }
+    .yellow {
+        width: 100%;
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+ 
+
+    }
+    .pokupka{
+        width: 94%;
+    }
+}
+@media (max-width:555px) {
+    .ic h2 {
+        font-size: 17px;
+    }
+    .pric h2 {
+        font-family: Montserrat;
+        font-size: 22px;
+    }
+    .pric p {
+        font-family: Montserrat;
+        font-size: 13px;
+        margin-left: 20px;
+    }
+    .e-mail{
+        margin-top: 30px;
+    }
+    .pric del{
+        display: block;
+        margin-top: 9px;
+        margin-left: 16px;
+    }
+    .pric p{
+        display: none;
+    }
+
+.oplata {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    height: auto;
+    border-radius: 16px;
+    overflow: auto;
+    width: 100%;
+    box-shadow: 0px 0px 22px 0px #0000001A;
+    margin-top: 30px;
+    padding-bottom: 8px;
+}
+}
+@media (max-width:485px) {
+    
+}
+@media (max-width:430px) {
+    .carttov h2{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .hrf span{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+
+    }
+    .titleimg h3{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+text-align: left;
+margin-bottom: 19px;
+margin-top: 9px;
+    }
+    .white_ic {
+        padding: 12px;
+    }
+    .hrf .bx-x {
+        font-size: 24px;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+    }
+    .plusminus{
+        margin-top: 14px;
+        gap: 10px;
+    }
+    .titleimg p{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: left;
+
+    }
+    .plmin{
+        margin-top: -18px;
+    }
+    .btnplu {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+    .pricc h3{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.94px;
+text-align: left;
+margin-top: 11px;
+margin-left: 19px;
+    }
+    .delp del{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+margin-left: 20px;
+position: relative;
+top: -4px;
+    }
+    .rekom h2{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .rekom {
+        margin-top: 19px;
+    }
+    .ringtex span{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+
+    }
+    .rekom h2{
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.94px;
+        text-align: left;
+        
+    }
+    .ringtex h2{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 17.07px;
+text-align: left;
+margin-top: 0px;
+    }
+    .ringtex del{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.63px;
+text-align: left;
+
+    }
+    .uzucard{
+        margin-top: 0px;
+        gap: 0px;
+    }
+ .carduz{
+    display: grid;
+    grid-template-columns: 109px 1fr ;
+ }
+ .ringtex {
+    padding: 3px;
+    position: relative;
+}
+.pokupka{
+    gap: 11px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.oformit{
+    padding-top: 20px;
+}
+.imageu img {
+    width: 83%;
+    margin-left: 10px;
+}
+/* .uzucard{
+    height: 123px;
+    overflow: auto;
+    min-height: auto;
+} */
+.white_ic {
+    padding: 12px;
+    height: 447px;
+    overflow: auto;
+}
+.oformit {
+    padding-bottom: 0px;
+}
+.white{
+    min-height: auto;
+    padding-bottom: 15px;
+}
+.modall{
+    padding-top: 82px;
+}
+}
+@media (max-width:380px) {
+    .modal22{
+        width: 91%;
+    }
+    .modal2_ic {
+        padding: 14px;
+        padding-top: 20px;
+    }
+    .oplata {
+        display: grid;
+        grid-template-columns: 106px 1fr;
+        margin-top: 15px;
+ 
+    }
+    .oplimg img {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .ic h2{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.07px;
+text-align: left;
+
+    }
+    .ic span{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: left;
+
+    }
+    .pric h2{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.94px;
+text-align: left;
+
+    }
+    .pric h2{
+        margin-top: 8px;
+        margin-left: 21px;
+    }
+    .pric{
+        margin-right: 0px;
+    }
+    .e-mail {
+        margin-top: 13px;
+    }
+    .e-mail input {
+        height: 44px;
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+
+    }
+    .e-mail {
+        gap: 25px;
+        margin-top: 19px;
+        /* height: auto; */
+    }
+    .kupit {
+        height: auto;
+        padding-bottom: 17px;
+        padding-top: 21px;
+    }  
+
+.kupit button {
+    height: 44px;
+    width: 92%;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+}
 }
