@@ -1000,6 +1000,63 @@ margin-top: 53px;
 .second-pe{
     display: none;
 }
+.flagm{
+    margin-top: 31px;
+    /* margin-left: -3px; */
+    cursor: pointer;
+}
+.flagm h4{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color: #242424;
+margin-top: 14px;
+/* margin-left: -2px; */
+}
+.flagm p{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: #242424;
+margin-top: 6px;
+margin-bottom: 4px;
+/* margin-left: -3px; */
+}
+.flagm span{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+/* margin-left: -3px; */
+color: #898989;
+}
+.flagm hr{
+    color: rgba(128, 128, 128, 0.179) !important;
+    opacity: 0.4;
+    margin-top: 27px;
+}
+.magal{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.magal h3{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color: #242424;
+margin-top: 8px;
+}
+.flagm{
+    display: none;
+}
  @media (max-width:1520px) {
     .cas_bras{
         display: grid;
@@ -1175,6 +1232,12 @@ margin-top: 53px;
         .one_shag {
             height: 500px;
         }
+        .flagm{
+            display: block;
+        }
+        .flagm_magz{
+            display: none;
+        }
      }
  @media (max-width:948px) {
     .pravila_dg{
@@ -1212,6 +1275,16 @@ margin-top: 53px;
         /* margin: auto; */
         /* margin-bottom: 85px; */
         margin-top: 86px;
+    }
+    .plas{
+        position: relative;
+        top: 8px;
+        left: 0px;
+        gap: 0px;
+    }
+    .plas  .bx-home-alt{
+        font-size: 16px;
+    
     }
  }
  @media (max-width:756px) {
@@ -1614,6 +1687,50 @@ text-align: center;
    .one_shag {
         height: 400px;
     }
+    .magazin_inp{
+        width: 100%;
+    }
+    .gipermarket{
+        border: none;
+    }
+    .flagm{
+        margin-top: 18px;
+        margin-left: 10px;
+        margin-bottom: 31px;
+    }
+    .flagm h4{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+    margin-top: 11px;
+    }
+    .flagm p{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+    margin-bottom: -1px;
+    margin-left: 0px;
+    }
+    .flagm span{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+    }
+    .magal h3{
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+
+    }
  }
  @media (max-width:360px) {
     .media-skup{
@@ -1660,7 +1777,7 @@ margin-bottom: 20px;
         width: 100%;
         height: 42px;
         padding-left: 23px;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         margin-left: 10px;
     }
     .dg_btn_sku {
@@ -1680,7 +1797,7 @@ margin-bottom: 20px;
         display: none;
     }
     .gram button {
-        margin-left: 9px;
+        margin-left: 13px;
         width: 96%;
         /* margin: auto; */
         height: 44px;
@@ -1723,7 +1840,7 @@ margin-bottom: 20px;
         line-height: normal !important;
         text-align: center;
         margin-top: 44px !important;
-        margin-left: 0px !important;
+        margin-left: 0px !important; 
     }
     .clickkbnt {
         gap: 10px;
@@ -1794,7 +1911,7 @@ margin-bottom: 20px;
     }
     .kol-bras {
         height: 272px;
-        width: 100%;
+        width: 97%;
         border-radius: 16px;
         background: #F2F2F2;
         margin-top: 47px;
@@ -1810,8 +1927,8 @@ margin-bottom: 20px;
         margin-bottom: 10px;
     }
     .kolicc {
-        padding: 22px;
-        margin-top: -34px;
+        padding: 17px;
+        margin-top: -20px;
     }
     .cas_bras {
         display: flex;
@@ -1824,18 +1941,22 @@ margin-bottom: 20px;
     }
     .magazin_inp {
         display: grid;
-        grid-template-columns: 63px auto;
-        width: 95%;
+        grid-template-columns: 38px auto;
+        width: 100%;
         margin: 0;
         height: auto;
-        padding: 10px 0px;
-    }
+        padding: 12px 10px;
+    }   
     .us_map {
         padding: 10px 10px;
         margin-left: 0;
+        margin-top: 8px;
     }
-    .answer_body {
-        padding: 35px;
+    .answer_for_question .answer_body {
+        padding: 29px;
+    }
+    .answer_body{
+        padding: 15px;
     }
     .answer_for_question{
         min-height: auto;
@@ -1845,7 +1966,11 @@ margin-bottom: 20px;
         line-height: 21px;
     }
     .salon_alm {
-        margin-top: 25px;
+        margin-top: 12px;
+        margin-left: 6px;
+    }
+    .salon_alm h3 {
+        margin-bottom: -4px;
     }
 .app_dg {
     margin-right: auto;
@@ -1995,6 +2120,55 @@ text-align: left;
         right: 5px;
       
     }
+    .us_map {
+        padding: 0px 0px;
+        margin-left: 0;
+    }
+    .magazin_inp input{
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.07px;
+text-align: left;
+
+    }
+    .niy{
+        margin-top: 0px;
+    }
+    .question p{
+        width: 86%;
+    }
+    .w-small{
+        width: 80%;
+    }
+    .dg_circle img{
+        width: 33%;
+    }
+ 
+.dg_circle {
+    width: 73%;
+    height: 29px;
+}
+.check_skup_dg {
+    align-items: start;
+    gap: 0px;
+    grid-template-columns: 36px auto;
+    margin-bottom: -10px;
+}
+.check_skup h4{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+
+}
+.classs-footer2{
+    margin-top: 30px !important;
+}
+.answer_body ul{
+    margin-left: 0px;
+}
 }
 .olch_num h5{
     margin-bottom: 0px;
