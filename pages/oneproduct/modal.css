@@ -498,10 +498,10 @@ opacity: 0px;
     }
 }
 @media (max-width:991px){
-    .modall{
-        display: flex;
-        align-items: start;
-    }
+  .modall{
+        /* display: flex; */
+      
+    }  
     .uzucard {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -545,5 +545,8 @@ opacity: 0px;
     }
     .oformit{
         padding-bottom: 10px;
+    }
+    .carduz{
+        width: 50%;
     }
 }

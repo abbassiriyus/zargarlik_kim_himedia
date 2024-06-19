@@ -269,6 +269,7 @@ top: 7px;
     .pokup_yellow{
         width: 100%;
         height: auto;
+        left: 0px;
     }
     .program_bonus {
         display: grid;
@@ -461,7 +462,7 @@ margin-left: 5px;
         /* background-color: red; */
         margin-top: 11px !important;
     margin-bottom: 15px;
-    height: 123px;
+    min-height: 123px;
     }
     .june span{
         font-family: Montserrat;
@@ -508,3 +509,23 @@ margin-bottom: 54px !important;
     margin-top: 4px !important;
 }
 }
+
+
+
+/* .new_logo_class img{
+    width: 80%;
+}
+.none_btn_1{
+    display: none;
+}
+.nav2 .new_two_class{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 64px;
+    gap: 30px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+} */
