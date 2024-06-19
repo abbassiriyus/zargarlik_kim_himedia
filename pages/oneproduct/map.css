@@ -252,7 +252,7 @@ border: none;
     .iframe_map{
         display: grid;
         grid-template-columns:  auto;
-        border: 1px solid rgba(0, 0, 0, 0.348);
+        border: none;
         border-radius: 19px;
         height: 762px;
         margin-bottom: 20px;
@@ -442,6 +442,12 @@ line-height: 17.07px;
     }
     .mapnon img{
         display: block;
+    }
+    .clcikker{
+        overflow: visible;
+    }
+    .ifr{
+        display: none;
     }
 }
 @media (max-width:530px) {
