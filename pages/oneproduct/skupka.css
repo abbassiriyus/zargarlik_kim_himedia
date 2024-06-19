@@ -1,3 +1,7 @@
+*{
+    padding-left: 0px;
+    margin: 0px;
+}
 .big_boddy{
     width: 95%;
     max-width: 1440px;
@@ -1463,6 +1467,7 @@ text-align: center;
 }
 .question{
     width: 410px;
+    
 }
 .top_ques{
     margin-bottom: 20px;
@@ -1491,7 +1496,8 @@ font-size: 12px;
 font-weight: 400;
 line-height: 20px;
 text-align: left;
-
+padding-bottom: 0pc;
+margin-bottom: 0px;
     }
     .domik_dg h2{
         font-family: Montserrat;
