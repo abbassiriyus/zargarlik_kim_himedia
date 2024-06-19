@@ -1054,6 +1054,9 @@ margin-top: 53px;
         grid-template-columns: 1fr 2fr;
         gap: 20px;
     }
+    .one_shag {
+        height: 560px;
+    }
 }
     @media (max-width:1350px) {
         .klient_adult{
@@ -1129,6 +1132,11 @@ margin-top: 53px;
             display: block;
         }
 }
+@media (max-width:948px) {
+    .nam {
+        height: 130px;
+    }
+}
      @media (max-width:991px) {
         body{
             padding-top:112px;
@@ -1143,7 +1151,9 @@ margin-top: 53px;
         z-index: 0 !important;
             width: 95%;
         }
-
+        .one_shag {
+            height: 500px;
+        }
      }
  @media (max-width:948px) {
     .pravila_dg{
@@ -1196,7 +1206,9 @@ margin-top: 53px;
         /* margin-bottom: 85px; */
         margin-top: 86px;
     }
-    
+    .one_shag {
+        height: 430px;
+    }
  }
  @media (max-width:650px) {
     .klient_adult{
@@ -1223,6 +1235,9 @@ margin-top: 53px;
     }
     .wag{
         top: 140px !important;
+    }
+    .one_shag {
+        height: 530px;
     }
  }
  @media (max-width:560px) {
@@ -1256,6 +1271,9 @@ text-align: left;
 grid-template-columns: 1fr 1fr;
 overflow: hidden; */
 padding-top: 30px;
+    }
+    .app_dg {
+        padding: 10px 2px;
     }
     .zol_ser .gram h2{
         font-family: Montserrat;
@@ -1377,6 +1395,9 @@ margin-bottom: 20px !important;
         position: relative;
         top: -27px !important;
     }
+        .nam {
+            height: auto;
+        }
     .nam p{
         position: relative;
         top: -5px !important;
@@ -1401,6 +1422,7 @@ margin-top: -10px;
     .vet h4{
         top: 0 !important; 
         left: 0 !important;
+        margin-top: -3px !important;
     }
     .vet p{
         top: -15px;
@@ -1458,6 +1480,9 @@ text-align: center;
         text-align: left !important;
         
     }
+    .one_shag {
+        height: 490px;
+    }
  }
  @media (max-width:520px) {
     .dom_arr_skup h4{
@@ -1507,4 +1532,253 @@ text-align: center;
         display: grid;
         grid-template-columns: 1fr;
     }
+    .zol_ser {
+        display: flex;
+        flex-wrap: wrap;
+    }
  }
+ @media (max-width:400px) {
+   .one_shag {
+        height: 400px;
+    }
+ }
+ @media (max-width:360px) {
+    .media-skup{
+        margin-bottom: 15px !important;
+    }
+    .zol_ser{
+margin-top: 30px;
+margin-bottom: 20px;
+    }
+    .zoloto_top {
+        width: 100%;
+        height: 67px;
+    }
+    .top_nalc {
+    width: 340px;
+    }
+    .nalc_table1 {
+        width: 204px;
+    }
+    .app_dg {
+        margin-top: 0px;
+    }
+    .konsul_banner {
+        /* background: url(/image/2d43c92….jpeg); */
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: 35px;
+        padding-top: 40px;
+    }
+    .kon_ban_text h1 {
+    margin-bottom: 10px;
+    }
+    /* .nalc_table{
+        border-bottom-left-radius: 5px;
+    }
+    .nalc_table1{
+        border-bottom-right-radius: 5px;
+    } */
+     .bor{
+         border-bottom-left-radius: 10px !important;
+         border-bottom-right-radius: 10px !important;
+     }
+    .question {
+        width: 330px;
+        height: 42px;
+        padding-left: 23px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+    }
+    .dg_btn_sku {
+        width: 330px;
+    }
+    .bg_rem_img img {
+        width: 100%;
+        transform: scale(1);
+    }
+    .one_shag {
+        height: 275px;
+    }
+    .zol_ser .gram h5 {
+        margin-top: 5px;
+    }
+    .gram br {
+        display: none;
+    }
+    .gram button {
+        margin-left: 6px;
+       width: 330px;
+       height: 48px;
+    }
+    .gram12 {
+        margin-top: 80px;
+    }
+    .ctt{
+        font-size: 18px !important;
+        top: 0;
+        text-align: left;
+        line-height: 13px !important;
+    }
+    .three_shag {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 22px;
+        gap: 14px ;
+    }
+    .shg_b h2{
+        margin-left: 0px !important;
+    }
+    .wag {
+        display: none;
+    }
+    .one_shag h2 {
+        font-size: 14px;
+        line-height: 20.82px;
+    }
+    .shg_b {
+        padding-left: 10px;
+    }
+    .one_shag p {
+        top: 10px;
+        left: 1px;
+    }
+    .rasch{
+        line-height: normal !important;
+        text-align: center;
+        margin-top: 44px !important;
+        margin-left: 0px !important;
+    }
+    .clickkbnt {
+        gap: 10px;
+        width: 330px;
+        margin: auto;
+        height: 49px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .viber_prob {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px !important;
+        margin: auto;
+    }
+    .gr-prob {
+        padding: 20px 25px;
+    }
+    .olch {
+        margin-bottom: 12px;
+    }
+    .two-g-pro {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .two-g-pro button {
+        width: 95%;
+        height: 45px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .two-g-pro p {
+        margin-top: 6px;
+        margin-left: 0px;
+    }
+    .prodat_gde {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 38px;
+        gap: 0px;
+    }
+    .prodat_text p {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+    }
+    .prodat_text {
+        margin-left: 6px;
+        width: 100%;
+    }
+    .prodat_text h1 {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .prodat_text button {
+        font-size: 16px;
+        width: 100%;
+        height: 43px;
+        margin-top: 20px;
+    }
+    .izmoj{
+        margin-top: 30px !important;
+        margin-left: 6px !important;
+    }
+    .kol-bras {
+        height: 280px;
+        width: 100%;
+        border-radius: 16px;
+        background: #F2F2F2;
+        margin-top: 50px;
+    }
+    .bg_rem_img {
+        width: 310px;
+        margin: auto;
+        height: 170px;
+    }
+    .kolicc h3 {
+        font-size: 16px;
+        line-height: 19.5px;
+        margin-bottom: 10px;
+    }
+    .kolicc {
+        padding: 22px;
+        margin-top: -34px;
+    }
+    .cas_bras {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .comfortable h1 {
+        margin-top: 50px;
+        margin-left: 6px;
+    }
+    .magazin_inp {
+        display: grid;
+        grid-template-columns: 63px auto;
+        width: 95%;
+        margin: 0;
+        height: auto;
+        padding: 10px 0px;
+    }
+    .us_map {
+        padding: 10px 10px;
+        margin-left: 0;
+    }
+    .answer_body {
+        padding: 35px;
+    }
+    .answer_for_question{
+        min-height: auto;
+    }
+    .answer_body p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .salon_alm {
+        margin-top: 25px;
+    }
+
+}
+.olch_num h5{
+    margin-bottom: 0px;
+}
+    .olch_num1 h5{
+        margin-bottom: 0px;
+    }
+    .circle_adm p{
+        margin-bottom: 0px;
+    }
