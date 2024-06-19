@@ -998,6 +998,7 @@ span{
 
 }
 .header_dastafka .header_title_dastafka{
+    height: 495px;
     display: grid;
 grid-template-columns: auto 700px auto;
 align-items: center;
@@ -1012,10 +1013,13 @@ align-items: center;
     margin-left: 4% !important;
 }
 .header_dastafka .header_title_dastafka img{
-    width: 92%;
-    scale: 1.1;
+    width: 100%;
+    height: 361px;
+    scale: 1.3;
     position: relative;
-    top: -10px;
+    top: 4px;
+    left: -66px;
+    transform: rotate(2deg);
 }
 @media(max-width:991px){
     .header_dastafka .header_title_dastafka{
@@ -1042,7 +1046,7 @@ align-items: center;
     }
     .header_dastafka .header_title_dastafka .img_back_dastafka{
         position: absolute;
-        margin-left: 10%;
+        margin-left: 65%;
         margin-top: 65%;
         scale: 1;
       filter: blur(5px);  
