@@ -138,7 +138,7 @@ border: none;
     /* background-color: red; */
     border-radius:32px;
     margin: auto;
-    margin-top: 167px;
+    margin-top: 71px;
     padding-top: 43px;
     padding-bottom: 34px;
 }
@@ -166,9 +166,7 @@ margin-bottom: 10px;
 .farm22{
     display: none;
 }
-.jewel img{
-    width: 100%;
-}
+
 .farm13{
     display: none;
 }
@@ -176,31 +174,59 @@ margin-bottom: 10px;
     margin-top: -18px !important;
     margin-left: 7px !important;
 }
-.farm13{
-    
+.jewel{
+    height:895px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-@media (max-width:1340px) {
-    .how {
-        width: 89%;
-        /* background-color: red; */
-        /* height: 386px; */
-        margin: auto;
-        margin-top: -226px;
-        position: relative;
-        z-index: 2;
-    }
+.tinkofff_data{
+    background: linear-gradient(to right, #FFDD2D 66%, 
+    #F1F1F1 34%);
+
 }
-@media (max-width:1110px) {
-    .how {
-        width: 96%;
-        /* background-color: red; */
-        /* height: 386px; */
-        margin: auto;
-        margin-top: -226px;
-        position: relative;
-        z-index: 2;
-    }
+.tinkofff_data .text_sebir h1{
+color: black;
+/* width: 83%; */
 }
+.jewel .text_sebir h1{
+    font-family: Montserrat;
+font-size: 81px;
+font-weight: 700;
+line-height: 98.74px;
+text-align: left;
+width: 111%;
+}
+.jewel .text_sebir h3{
+    font-family: Montserrat;
+font-size: 50px;
+font-weight: 500;
+line-height: 60.95px;
+text-align: left;
+margin-top: 34px;
+
+}
+.jewel .text_sebir{
+width: 50%;
+max-width: 606px;
+height: 84%;
+position: relative;
+left: 2%;
+}
+.jewel .text_sebir img{
+    height: 82px;
+    margin-top: 29px;
+}
+.jewel .payment_image_big{
+    /* height: %; */
+    /* width: 40%; */
+    width: 50%;
+    max-width: 841px;
+    margin-bottom: 5%;
+}
+
+
 .top_accordion_12{
     width: 95%;
     margin: auto;
@@ -437,9 +463,10 @@ height:56px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+   
     width: 95%;
-    margin: auto
+    margin: auto ;
+    margin-top: 41px;
 }
 .for_bg_ac h2 {
     font-family: Montserrat;
@@ -539,3 +566,84 @@ text-align: left;
         
     }
    }
+
+   @media (max-width:991px){
+    .tinkofff_data{
+        background: linear-gradient(to right, #FFDD2D 100%, 
+        #F1F1F1 0%);
+        height: auto;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    
+    }  
+.jewel .text_sebir h1{
+width: 119%;
+}
+    .how {
+margin-top: 0px !important;
+    }
+    .jewel .payment_image_big{
+        /* height: %; */
+        /* width: 40%; */
+        width: 50%;
+        scale: 1.3;
+        position: relative;
+        left: 30px;
+        max-width: 841px;
+        margin-bottom: 5%;
+    }
+    .jewel .text_sebir h1{
+        font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 29.26px;
+text-align: left;
+    }
+    .jewel .text_sebir h3{
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.94px;
+        text-align: left;
+color: #242424;        
+margin-top: 12px;
+    
+    }
+    .jewel .text_sebir img{
+        height: 42px;
+        margin-top: 16px;
+        position: relative;
+        top: -12px;
+    }
+    .how{
+        width: 94%; 
+    }
+    .doxod {
+        padding-bottom:0px;
+    }
+    .for_bg_ac h2{
+        font-size: 20px;
+        margin-top: -21px;
+        margin-bottom: 29px !important;
+    }
+    .questions {
+        padding: 0px 6px;
+    }
+    .how h1 {
+        margin-top: 10px !important;
+        margin-left: 4px;
+    }
+}
+
+
+
+.seber_bank_12{
+    background: linear-gradient(256.76deg, #FAED00 0.54%, #00D900 37.6%, #21A038 92.45%);
+
+}
+@media(max-width:991px){
+    .howh1_3{
+    
+    }
+}
+
