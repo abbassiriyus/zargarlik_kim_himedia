@@ -26,7 +26,7 @@ body{
 .main .background{
     width: 100%;
     height: 495px;
-    background: url(https://s3-alpha-sig.figma.com/img/16a6/a31d/e7eb5ef3744613bb91cfdd74eb13cd43?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gKxH7WFuxWG2lGD33u4uFfejFgmTlU~03JWGm~LGMDCK1MJNqRCujUDiUTsJG6saeXp7AHLFIPgNc2Qh0ZfXGJuXENLmnNxNdFzWPMAr14E2iLGJnaCHGTknda6cX1DY3w9fQ4QvXwDh5RTpZ6CQAlgWXPgpwk~ER~~5FQ2NZgvWEPC8hdC4Cmi4iPI21DU8zuKf9pQcFbR~isbFh8Pk7vAQkyos~Id80qdWnNvilCjPeL75KLR2wZeoTY9tAeo3IwHFsRJR7B6jP3nBrbS98Pp1bTXi6Md7~A8mI2hkvWfOH2-nHc3vQ5RDjeCAhBVPAdpP6eTOaESKtlEb~wry-w__);
+    background: url(/image/e7eb5ef3744613bb91cfdd74eb13cd43.jpeg);
     margin-bottom: 60px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,6 +34,7 @@ body{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 .main .nvb{
     display: flex;
@@ -41,8 +42,10 @@ body{
     justify-content: flex-start;
     max-width: 1470px;
     width: 100%;
-    padding-left: 205px;
     margin-top: 10px;
+    position: absolute;
+    top: 20px;
+    left: 10%;
 }
 .main .nvb p{
     font-size: 14px;
@@ -157,7 +160,9 @@ margin-bottom: -6px;
         padding: 20px;
     }
     .main .nvb{
-        padding-left: 100px;
+        max-width: 1440px;
+        width: 95%;
+        margin: auto;
     }
     .main .word{
         padding: 20px;
