@@ -66,10 +66,13 @@ top: 11px;
 width: 44%;
 }
 .give_back{
-    width: 80%;
+    width:95%;
+    max-width: 1440px;
+    margin: auto;
     text-align: center;
+    /* 
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin: auto;
 }
 .give_back h1{
@@ -77,7 +80,7 @@ width: 44%;
     font-size: 54px;
     font-weight: 700;
     line-height: 65.83px;
-    /* text-align: center; */
+    text-align: center;
     margin-top: 49px;
     /* margin-left: 10px; */
     margin-bottom: 24px;
@@ -158,10 +161,13 @@ width: 44%;
 }
 
 .get{
-    width: 80%;
+    width:95%;
+    max-width: 1440px;
+    margin: auto;
     text-align: center;
+    /* 
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin: auto;
 }
 .get h1{
@@ -270,7 +276,7 @@ text-align: center;
     /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 86%;
+    width: 88%;
     margin: auto;
     gap: 10px;
 }
