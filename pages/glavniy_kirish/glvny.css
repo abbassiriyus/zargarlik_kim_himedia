@@ -1,14 +1,14 @@
 .glavniy_lich_dg{
     display: grid;
     grid-template-columns: 230px auto;
-    width: 95%;
+    width: 97%;
     max-width: 1440px;
     margin: auto;
     margin-top: 48px;
     gap: 25px;
 }
 .user_glavniy{
-    width: 99.5vw;
+    width: 100%;
     /* overflow: hidden; */
 }
 .lich_dg_one{
@@ -293,6 +293,9 @@ margin-bottom: 0;
     display: none;
 }
 @media (max-width:991px) {
+    body {
+        padding-top: 118px !important;
+    }
     .new_ques{
         width: 69.9%;
         display: flex;
@@ -954,7 +957,7 @@ grid-row-start: 2;
     }
     .header_media_glavniy .img1 {
         position: absolute;
-        right: -2px;
+        right: 0px;
         bottom: 30px;
         z-index: 123;
     }
@@ -1069,10 +1072,10 @@ text-align: left;
     }
 .cervis_for_media{
     margin-top: 22px !important;
-    margin-left: 9px !important;
+    margin-left: 12px !important;
 }
 .treyd-in {
-    width: 93%;
+    width: 95%;
     margin: auto;
     margin-left: 11px;
     padding-left: 18px     
@@ -1094,13 +1097,11 @@ text-align: left;
 width: 42%;
     }
     .fcdff14 {
-      
         width: 86%;
         transform: rotate(-49deg);
       z-index: 1;
     }
     .ser_rem_dg {
- 
         gap: 12px;
     }
     .remont-media{
@@ -1150,6 +1151,55 @@ font-weight: 600 !important;
 line-height: 21.94px !important;
 text-align: center !important;
 margin-top: 27px;
-margin-left: 2px !important;
+margin-left: 7px !important;
+}
+}
+
+
+
+
+@media (max-width:360px){
+    .header_media_glavniy {
+        display: block;
+        width: 99.5%;
+        justify-content: center;
+        align-items: center;
+    }
+    .treyd-in {
+        width: 100%;
+    }
+/* .magazin_tavar{
+   display: flex;
+   flex-wrap: wrap;
+} */
+.ser_rem_dg{
+   display: flex;
+   flex-wrap: wrap;
+}
+.phone-absolute{
+    display: flex;
+    flex-wrap: wrap;
+}
+.glavniy_lich_dg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+}
+.block-phn {
+    display: block;
+    margin-top: 13px;
+    width: 100%;
+}
+.btn_media-block {
+    margin: 30px 12px 0px;
+}
+.btn_media-block1 {
+    margin: 0px 12px;
+}
+.cervis_for_media{
+    font-size: 24px !important;
+}
+.new_ques p {
+    margin-left: 7px;
 }
 }

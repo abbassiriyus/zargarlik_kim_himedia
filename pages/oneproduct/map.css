@@ -337,11 +337,12 @@ cursor: pointer;
     background-color: #242424;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
     z-index: 99999;
     position: fixed;
     top: 0px;
     left: 0px;
-    display: none;
+    /* display: none; */
 }
 .mySwiper2 .swiper-button-next ,.mySwiper2 .swiper-button-prev{
     background-color: white !important;
@@ -352,11 +353,12 @@ cursor: pointer;
     --swiper-navigation-color: black;
 }
 .back_blackc .bx-x{
-    font-size: 40px;
+    font-size: 72px;
     color: white;
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 54px;
+    top: 31px;
+    z-index: 121;
 }
 .back_blwh{
     display: flex;
@@ -411,7 +413,17 @@ margin-bottom: -5px;
 }
 .blwhite img{
     margin-top: 40px;
+}@media (max-width:1200px) {
+    .sojida{
+        overflow: auto;
+    }
+    .lombard{
+        overflow: auto;
+        text-wrap: nowrap;
+        margin-top: 27px;
+    }
 }
+
 .blwhitic button{
     width: 100%;
     height: 44px;
@@ -499,7 +511,7 @@ margin-left: 10px;
         position: absolute;
         top: -8px;
         left: 18px;
-        margin-top: 0px;
+        margin-top: 11px;
         border-radius: 8px;
     }
     .inp_mes input{
@@ -644,18 +656,98 @@ text-align: left;
     position: relative;
     top: 4px;
 }
-@media (max-width:1200px) {
-    .sojida{
-        overflow: auto;
+.swiper-button-next, .swiper-button-prev {
+    top: 64% !important;
+}
+.swiper-button-prev{
+left: 22px !important;
+}
+.swiper-button-next{
+    right: 21px !important;
+}
+
+
+
+
+
+.mySwiper {
+    height: 38%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    width: 100%!important;
+    margin: auto;
+    max-width:748px !important;
+    justify-content: space-between !important;
+    margin-top: 28px;
+  }
+
+  .mySwiper2 {
+    height: 775px ;
+    width: 100%;
+  } 
+@media (max-width:991px) {
+    .mySwiper .swiper-slide {
+        width: 20px !important;
+        height: 6px !important;
+        /* opacity: 0.3 !important; */
+        background-color: black;
+        border-radius: 10px;
+        
     }
-    .lombard{
-        overflow: auto;
-        text-wrap: nowrap;
-        margin-top: 27px;
+    .mySwiper .swiper-slide img {
+        /* border: 11px solid black; */
+        opacity: 0;
+    }
+    .mySwiper .swiper-slide-thumb-active{
+        background-color: white !important; 
+         border-radius: 10px;
+    }
+    .mySwiper .swiper-slide-thumb-active img{
+        opacity: 0!important;
+        /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%); */
+      
+        border: none !important;
+        height: 20px;
+        
+      }
+      .wrapper21{
+        background: rgba(255, 255, 255, 0.322) !important;
+        height: 17px !important;
+        /* padding-top: 9px !important; */
+        border-radius: 20px !important;
+        /* padding-left: 9px !important; */
+        width: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-button-next, .swiper-button-prev {
+        top: 47% !important;
+      }
+      .mySwiper{
+        max-width: 200px  !important;
+      }
+      .secondmyswip2{
+        height: 50vh !important;
+        margin-top: 15vh;
+        margin-bottom: 20vh;
+      }
+      .back_blackc .bx-x {
+        font-size: 55px;
+        color: white;
+        position: absolute;
+        right: 12px;
+        top: 19px;
+        z-index: 121;
+    }
+    .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper-button-next{
+        display: none !important;
     }
 }
-@media (max-width:360px) {
-    .clickic {
-        padding: 14px;
-    }
-}
+
+
+   
