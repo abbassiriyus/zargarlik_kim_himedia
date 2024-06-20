@@ -1463,6 +1463,7 @@ font-weight: 200 !important;
     .qoshimcha{
         display: none;
     }
+  
 }
 .star1{
     margin-top: 13px;
@@ -1474,3 +1475,7 @@ font-weight: 200 !important;
     padding: 0;
     margin: 0;
 }
+@media (max-width:340px){
+    .application img{
+        height: 27px;
+    }}
