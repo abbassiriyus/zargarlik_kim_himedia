@@ -9,6 +9,7 @@
 }
 body{
     padding-top: 205px !important;
+    width: 100% !important;
 }
 .main h2{
     font-size: 26.5px !important;
@@ -17,9 +18,10 @@ body{
     font-size: 30px !important;
 }
 .main .for_bg{
-    max-width: 1400px;
+    max-width: 1470px;
     width: 100%;
     margin: auto;
+    /* gap: 20px; */
 }
 .main .background{
     width: 100%;
@@ -37,9 +39,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    max-width: 1400px;
+    max-width: 1470px;
     width: 100%;
-    padding-left: 243px;
+    padding-left: 205px;
+    margin-top: 10px;
 }
 .main .nvb p{
     font-size: 14px;
@@ -50,20 +53,20 @@ body{
     font-size: 23px;
 }
 .main .for_bg h1{
-    font-size: 55px;
+    font-size: 54px;
     font-weight: 700;
     line-height: 81px;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .main .for_bg p{
     font-size: 28px;
     font-weight: 400;
     text-align: left;
-    margin-bottom: 7px;
+    margin-bottom: 20px;
 }
 .main .word{
-max-width: 1440px;
+max-width: 1470px;
 width: 100%;
     line-height: 24px;
     justify-content: center;
@@ -108,8 +111,8 @@ margin-bottom: 1px;
     margin-bottom: 30px;
 }
 .main .word2{
-    max-width: 1440px;
-width: 100%;
+    max-width: 1470px;
+    width: 100%;
     line-height: 24px;
     justify-content: center;
     align-items: center;
@@ -122,8 +125,17 @@ font-weight: 500;
 line-height: 38.73px;
 margin-bottom: -6px;
 }
+.main .v2{
+    font-style: italic;
+}
+.main .vjno{
+    font-style: normal !important;
+}
+.main .ik_br{
+    display: none;
+}
 .main .dp{
-    max-width: 1440px;
+    max-width: 1465px;
     width: 100%;
     line-height: 24px;
     justify-content: center;
@@ -135,7 +147,11 @@ margin-bottom: -6px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+}
+.for_lit_p{
+    padding-left: 8px;
+    margin-top: 10px;
 }
 @media(max-width:1500px){
     .main .for_bg{
@@ -184,8 +200,11 @@ margin-bottom: -6px;
     }
     .main .for_bg h1{
         font-size: 22px;
-        line-height: 20px;
+        line-height: 25px;
         text-align: center;
+    }
+    .main .for_bg br{
+        display: none;
     }
     .main .for_bg p{
         font-size: 16px;
@@ -211,9 +230,84 @@ margin-bottom: -6px;
         line-height: 20px;
         text-align: center;
         margin: 0;
+        margin-bottom: 12px;
     }
     .main .for_bg p{
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
+        line-height: 14.63px;
+        margin-bottom: 0;
+    }
+    .main .background{
+        height: 461px;
+        margin-bottom: 0;
+    }
+    .main .word {
+        padding: 5px 15px;
+        margin-bottom: 15px;
+    }
+    .main .word p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    .main .word2 p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    .main .dp p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    .main .word br{
+        display: none;
+    }
+    .main .wrd_h2{
+        font-size: 18px !important;
+        line-height: 21.78px;
+        margin-top: 0px !important;
+    }
+    .main .h34{
+        font-size: 14px !important;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+    .main .for_p{
+        margin: 20px;      
+    }
+    .main .for_p p{
+        margin-bottom: 13px;
+        line-height: 15px;
+    }
+    .main .v{
+        margin-bottom: 20px !important;
+    }
+    .main .p1{
+        margin-top: -5px !important;
+    }
+    .main .word2 {
+        padding: 5px 15px;
+        margin-bottom: 0px;
+    }
+    .main .word2 h1{
+        margin-bottom: 17px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height:30.05px;
+    }
+    .main .ik_br{
+    display: flex;
+    }
+    .fr_p2{
+        margin-bottom: 10px !important;
+    }
+    .main .dp {
+        padding: 5px 15px;
+        margin-bottom: 0px;
+    }
+    .for_lit_p p{
+        margin-bottom: 4px !important;
     }
 }
