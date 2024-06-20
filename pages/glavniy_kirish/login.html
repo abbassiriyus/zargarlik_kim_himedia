@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="../../style.css">
-  <link rel="stylesheet" href="../../style1.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style1.css">
   <link rel="stylesheet" href="../oneproduct/modal.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./login.css">
 </head>
-<body>
+<body class="login_page">
       
   <div class="filter_page">
     <div class="title3"><i style="cursor: pointer;"
@@ -440,7 +441,7 @@ background:
           <li onclick="window.location='/pages/obmen/obmen.html'">Скупка и обмен</li>
           <li onclick="window.location='/pages/oneproduct/map.html'"><i class='bx bx-map-pin'></i> Выбор города</li>
         </ul>
-        <div class="logo ">
+        <div class="logo">
          <a href="/index.html"> <img  src="/image/Group 3.svg" alt=""></a>
         </div>
         <ul class="ulsp">
@@ -482,7 +483,7 @@ background:
         <h4 onclick="window.location='/pages/kredit/kredit.html'" class="aksiya1">Рассрочки и кредит</h4>
       </div>
     </nav>
-    <nav class="nav2 nav2_new">
+    <nav class="nav2">
       <div class="one">
         <div class="ssss">
           <a class="contact" href="">
@@ -501,16 +502,16 @@ background:
           </a>
         </div>
       </div>
-      <div class="two new_two_class">
-        <div class="logo new_logo_class"><img src="/image/Group 3.svg" alt="3"></div>
-        <button class="none_btn_1"
+      <div class="two">
+        <div class="logo"><img src="/image/Group 3.svg" alt="3"></div>
+        <button
           onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
             src="/image/Vector78.svg" alt=""> Фильтры</button>
 
       </div>
      
 
-      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router new_rout">
+      <div onclick="document.querySelector('.blackk').style='display:flex'" class="router">
         <p>По популярности <i class='bx bx-chevron-right'></i></p>
       </div>
       <main class="pagerout">
@@ -523,154 +524,210 @@ background:
     
     </nav>
   </div>
-          <div class="modall">
-            <div class="white">
-              <div class="white_ic">
-                <div class="tovarr">
-                 <div class="carttov">
-                  <h2>Товар добавлен в корзину</h2>
-                  <div class="hrf">
-                   <span>Товар добавлен в корзину</span>
-                    <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
-                  </div>
-                 </div>
-                 <div class="plusminus">
-                  <div class="imageu">
-    <img src=" /image/5-2964-103-1Б 1.png" alt="">
-                  </div>
-                  <div class="titleimg">
-                   <div class="cen">
-                    <h3>Кольцо 5-1182-103-1Б Au 585</h3>
-                    <p>Размер: 16.5</p>
-                   </div>
-                  </div>
-    
-                  <div class="gap"></div>
-    
-    
-                  <div class="plmin">
-                    <div class="btnplu">
-                      <div class="min"><p><i class='bx bx-minus' ></i></p></div>
-                      <span>1</span>
-                      <div class="min"><p>+</p></div>
-                    </div>
-    
-                  </div>
-                  <div class="pricc">
-                    <div class="delp">
-                    <h3>33 095 ₽</h3>
-                      <del>77 862 ₽</del>
-                    </div>
-                  </div>
-                 </div>
-    
-                 <div class="rekom">
-                  <h2>Рекомендации для вас</h2>
-    
-                  <div class="uzucard">
-                    <div class="carduz">
-                     <div class="ringimg">
-                      <i class='bx bx-heart'></i>
-                      <img src="/image/5-2964-103-1Б 1 (1).png" alt="">
-                     </div>
-                      <div class="ringtex">
-                        <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
-                        <h2>108 590 ₽ / шт  </h2>
-                        <del>158 680 ₽</del>
-                      </div>
-                    </div>
-    
-                    <div class="carduz">
-                      <div class="ringimg">
-                        <i class='bx bx-heart'></i>
-                       <img src="/image/5-2964-103-1Б 1 (2).png" alt="">
-                      </div>
-                       <div class="ringtex">
-                         <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
-                         <h2>108 590 ₽ / шт  </h2>
-                         <del>158 680 ₽</del>
-                       </div>
-                     </div>
-    
-    
-                     <div class="carduz">
-                      <div class="ringimg">
-                        <i class='bx bx-heart'></i>
-                       <img src="/image/5-2964-103-1Б 1 (3).png" alt="">
-                      </div>
-                       <div class="ringtex">
-                         <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
-                         <h2>108 590 ₽ / шт  </h2>
-                         <del>158 680 ₽</del>
-                       </div>
-                     </div>
-                    
-                  </div>
-                 
-                 </div>
-                </div>
-              </div>
-               <div class="oformit">
-               <div class="pokupka">
-                <button onclick="document.querySelector('.modal22').style='display:block'
-                document.querySelector('.white').style='display:none'
-                " class="grey"> Продолжить покупки</button>
-                <button onclick="document.querySelector('.modal22').style='display:block'
-                document.querySelector('.white').style='display:none'
-                "  class="yellow">Оформить заказ</button>
-               </div>
-                  </div>
-            </div>
-    
-            <div class="modal22">
-            <div class="modal2_ic">
-              <div class="carttov1">
-                <h2>Заказ в один клик</h2>
-                <div class="hrf">
-                  <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
-                </div>
-               </div>
-               <div class="oplata">
-                <div class="oplimg">
-                  <img src="./image/5-2964-103-1Б 1 (4).png" alt="">
-                </div>
-                <div class="opltext">
-                  <div class="ic">
-                    <h2>Кольцо 5-1182-103-1Б Au 585</h2>
-                    <span>Размер: 16.5</span>
-                  </div>
-                </div>
-                <div class="oplprice">
-                  <div class="pric">
-                    <h2>13 597  ₽</h2>
-                    <p>Итого л оплате  13 597</p>
-                  </div>
-                </div>
-               </div>
-    
-    
-    
-    
-               <div class="e-mail">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Ваш e-mail">
-                <input type="text" placeholder="+7">
-                <input type="text" placeholder="Доставка">
-               </div>
-              
-            </div>
-            <div class="kupit">
-                 <button>Купить</button>
-            </div>
-            </div>
+  <div class="modall">
+    <div class="white">
+      <div class="white_ic">
+        <div class="tovarr">
+         <div class="carttov">
+          <h2>Товар добавлен в корзину</h2>
+          <div class="hrf">
+           <span>Товар добавлен в корзину</span>
+            <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+          </div>
+         </div>
+         <div class="plusminus">
+          <div class="imageu">
+<img src="/image/5-2964-103-1Б 1.png" alt="">
+          </div>
+          <div class="titleimg">
+           <div class="cen">
+            <h3>Кольцо 5-1182-103-1Б Au 585</h3>
+            <p>Размер: 16.5</p>
+           </div>
           </div>
 
+          <div class="gap"></div>
+
+
+          <div class="plmin">
+            <div class="btnplu">
+              <div class="min"><p><i class='bx bx-minus' ></i></p></div>
+              <span>1</span>
+              <div class="min"><p>+</p></div>
+            </div>
+
+          </div>
+          <div class="pricc">
+            <div class="delp">
+            <h3>33 095 ₽</h3>
+              <del>77 862 ₽</del>
+            </div>
+          </div>
+         </div>
+
+         <div class="rekom">
+          <h2>Рекомендации для вас</h2>
+
+          <div class="uzucard">
+            <div class="carduz">
+             <div class="ringimg">
+              <i class='bx bx-heart'></i>
+              <img src="/image/5-2964-103-1Б 1 (1).png" alt="">
+             </div>
+              <div class="ringtex">
+                <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                <h2>108 590 ₽ / шт  </h2>
+                <del>158 680 ₽</del>
+              </div>
+            </div>
+
+          <div class="carduz">
+              <div class="ringimg">
+                <i class='bx bx-heart'></i>
+               <img src="/image/5-2964-103-1Б 1 (2).png" alt="">
+              </div>
+               <div class="ringtex">
+                 <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                 <h2>108 590 ₽ / шт  </h2>
+                 <del>158 680 ₽</del>
+               </div>
+             </div>
+
+
+             <div class="carduz">
+              <div class="ringimg">
+                <i class='bx bx-heart'></i>
+               <img src="/image/5-2964-103-1Б 1 (3).png" alt="">
+              </div>
+               <div class="ringtex">
+                 <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                 <h2>108 590 ₽ / шт  </h2>
+                 <del>158 680 ₽</del>
+               </div>
+             </div> 
+            
+          </div>
+         
+         </div>
+        </div>
+      </div>
+       <div class="oformit">
+       <div class="pokupka">
+        <button onclick="document.querySelector('.modal22').style='display:block'
+        document.querySelector('.white').style='display:none'
+        " class="grey"> Продолжить покупки</button>
+        <button onclick="document.querySelector('.modal22').style='display:block'
+        document.querySelector('.white').style='display:none'
+        "  class="yellow">Оформить заказ</button>
+       </div>
+          </div>
+    </div>
+
+    <div class="modal22">
+    <div class="modal2_ic">
+      <div class="carttov1 nncartov1">
+        <h2>Заказ в один клик</h2>
+        <div class="hrf">
+          <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+        </div>
+       </div>
+       <div class="carttov nncartov">
+        <h2>Товар добавлен в корзину</h2>
+        <div class="hrf">
+         <span>Товар добавлен в корзину</span>
+          <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+        </div>
+       </div>
+       <div class="oplata">
+        <div class="oplimg">
+          <img src="/image/5-2964-103-1Б 1 (4).png" alt="">
+        </div>
+        <div class="opltext">
+          <div class="ic">
+            <h2>Кольцо 5-1182-103-1Б Au 585</h2>
+            <span>Размер: 16.5</span>
+          </div>
+        </div>
+        <div class="oplprice">
+          <div class="pric">
+            <h2>33 095 ₽</h2>
+            <p>Итого л оплате  13 597</p>
+            <del>77 862 ₽</del>
+          </div>
+        </div>
+       </div>
 
 
 
 
+       <div class="e-mail">
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Ваш e-mail">
+        <input type="text" placeholder="+7">
+        <input type="text" placeholder="Доставка">
+       </div>
+      
+    </div>
+    <div class="kupit">
+         <button>Купить</button>
+    </div>
+    </div>
+  </div>
+
+<div class="login_main">
+  <h1>Вход или регистрация</h1>
+  <form class="input-container">
+    <label for="">Телефон</label><br>
+    <input type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+    <p>На указанный телефон будет отправлен
+      код подтверждения</p>
+      <button>Отправить код</button><br>
+      <a href="">Войти через email</a>
+  </form>
+</div>
 
 
+
+<script>
+  function data_plus() {
+    var value1=document.getElementById('phone-input').value
+    if (value1.length === 0) {
+    value1 = '+7 (' + value1;
+  } 
+  document.getElementById('phone-input').value=value1
+  }
+const phoneInput = document.getElementById('phone-input');
+let isFirstDigitAdded = false;
+
+phoneInput.addEventListener('keydown', function(e) {
+  var value=document.getElementById('phone-input').value
+if(e.key!="Backspace"){
+  if (value.length === 0 ||value.length === 1 || value.length === 2) {
+    value = '+7 ('
+  } else if (value.length === 7) {
+    value = value.slice(0, 7) + ') ' + value.slice(7);
+  } else if (value.length === 12) {
+    value = value.slice(0, 12) + '-' + value.slice(12);
+  } else if (value.length === 15) {
+    value = value.slice(0, 15) + '-' + value.slice(15);
+  } else if (value.length === 0) {
+    value = '';
+  }
+  phoneInput.addEventListener('keypress', function(e) {
+  const allowedChars = /[\+\(\)\d]/;
+  if (!allowedChars.test(e.key)) {
+    e.preventDefault();
+  }
+});
+  
+  this.value = value;
+
+}
+
+});
+
+
+</script>
 
 
 
@@ -866,5 +923,9 @@ background:
             </center>
         
           </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+     crossorigin="anonymous"></script>
 </body>
 </html>

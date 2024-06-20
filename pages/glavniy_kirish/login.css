@@ -1,1 +1,97 @@
  
+
+
+
+.login_page{
+    padding-top: 200px;
+}
+
+ 
+ .login_page .login_main{
+height: 387px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+ }
+ .login_page .login_main .input-container {
+    width: 300px;margin-top: 35px;
+ }
+ .login_page .login_main  h1{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: center;
+ }
+ .login_page .login_main .input-container label{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #0D0D0D;
+
+ }
+
+ .login_page .login_main .input-container input{
+height: 48px;
+width: 100%;
+border: 2px solid #B3B3B3;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+padding-left: 16px;
+padding-top: 2px;
+border-radius: 8px;
+outline: none;
+margin-top: 2px;
+ }
+ 
+ .login_page .login_main .input-container p{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 8px;
+
+    
+ }
+ .login_page .login_main .input-container button{
+    background: #FFF957;
+height: 56px;
+width: 100%;
+border: none;
+border-radius: 14px;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+margin-top: 15px;
+color: #242424;
+margin-bottom: 23px;
+ }
+ ::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+ .login_page .login_main .input-container a{
+text-decoration: none;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+text-align: center;
+color: black;
+border-bottom: 1px solid black;
+ }
+ 
+ @media(max-width:991px){
+    .login_page .login_main  h1{
+       display: none;
+     }
+ }
