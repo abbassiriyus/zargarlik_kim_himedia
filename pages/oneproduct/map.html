@@ -650,7 +650,13 @@ document.querySelector('.clcikker').style='display:block'
         <h4>ТРЦ Гринвич,2-й этаж</h4>
         <p>г. Екатеринбург, ул. 8 Марта, д.46 ,</p>
       <span>пн-вс10:00 - 22:00</span>
-      <div class="sojida">
+      <style>
+        .scroll_for_img{
+          overflow-x:scroll ;
+        }
+      </style>
+      <div class="scroll_for_img">
+      <div class="musr_klas">
       <img onclick="document.querySelector('.back_blackc').style='display:block'" src="/image/Frame 768 (1).png" alt="">
       <img onclick="document.querySelector('.back_blackc').style='display:block'" src="/image/Frame 769.png" alt="">
       <img onclick="document.querySelector('.back_blackc').style='display:block'" src="/image/Frame 770.png" alt="">
@@ -660,9 +666,9 @@ document.querySelector('.clcikker').style='display:block'
         <button>Ломбард</button>
         <button>Скупка</button>
         <button>Розничная продажа</button>
-      </div>
+      </div></div>
       <div class="dobr">
-        <button  onclick="document.querySelector('.back_blwh').style='display:flex'">Как добраться</button>
+        <button  onclick="document.querySelector('.back_blwh').style='display:flex' ">Как добраться</button>
         <button >Построить маршрут</button>
       </div>
       <hr>
@@ -1129,7 +1135,8 @@ document.querySelector('.clcikker').style='display:block'
     <div class="blwhitic">
       <div class="kak">
         <h2>Как добраться</h2>
-        <i onclick="document.querySelector('.back_blwh').style='display:none'" class="bx bx-x"></i>
+        <i onclick="document.querySelector('.back_blwh').style='display:none';
+   " class="bx bx-x"></i>
 
       </div>
       

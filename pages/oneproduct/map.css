@@ -278,7 +278,7 @@ border: none;
      
     }
 }
-.sojida{
+.musr_klas{
     display: flex;
     align-items: center;
     margin-top: 14px;
@@ -342,7 +342,7 @@ cursor: pointer;
     position: fixed;
     top: 0px;
     left: 0px;
-    /* display: none; */
+    display: none;
 }
 .mySwiper2 .swiper-button-next ,.mySwiper2 .swiper-button-prev{
     background-color: white !important;
@@ -376,11 +376,16 @@ cursor: pointer;
 .blwhite{
     max-width: 390px;
     width: 100%;
-    height: 623px;
+    min-height: 623px;
     border-radius: 14px;
     background-color: white;
     margin-top: 110px;
     margin-left: 20px;
+}
+@media (max-width:991px) {
+    .blwhite{
+        margin-left: 0px;
+    }
 }
 .blwhitic{
     padding: 25px;
@@ -413,8 +418,9 @@ margin-bottom: -5px;
 }
 .blwhite img{
     margin-top: 40px;
+    width: 100%;
 }@media (max-width:1200px) {
-    .sojida{
+    .musr_klas{
         overflow: auto;
     }
     .lombard{
@@ -750,4 +756,8 @@ left: 22px !important;
 }
 
 
-   
+@media (max-width:360px) {
+    .blwhite{
+        border-radius: 1px;
+    }
+}

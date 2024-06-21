@@ -449,9 +449,33 @@ margin: auto;
         width: 328px !important;
         margin: auto;
     }
+    .dastafka_header .dastafka_header_body .img2 {
+        width: 68%;
+    }
+    .circle_4_margin .circle_4_2 {
+        height: 144px;
+    }
+    .circle_4_margin{
+        margin-top: -62px;
+    }
+    .circle_4_margin .circle_4_2 img {
+        height: 36px;
+    }
+    .circle_4_2{
+        margin-bottom: 10px;
+    }
+    .circle_4_margin .circle_4_2 p {
+        width: 70%;
+        margin-bottom: 0px;
+        margin-top: 12px;
+    }
 }
 .dastafak_admin_oplata{
     max-width: 1440px;
 width: 95%;
 margin: auto;
 }
+
+
+
+
