@@ -13,7 +13,7 @@
     display: none;
 overflow: auto;
 }
-.white{
+.modal_cart__body{
     width: 90%;
     max-width: 1174px;
     border-radius: 10px;
@@ -21,7 +21,7 @@ overflow: auto;
     background-color: white;
     position: relative;
 }
-.white_ic{
+.modal-cart__white{
     padding: 30px;
 }
 .carttov{
@@ -707,7 +707,10 @@ text-align: left;
 margin-bottom: 19px;
 margin-top: 9px;
     }
-    .white_ic {
+    .modal_cart__body {
+        min-height: 627px;
+    }
+    .modal-cart__white {
         padding: 12px;
     }
     .hrf .bx-x {
@@ -829,7 +832,7 @@ text-align: left;
     overflow: auto;
     min-height: auto;
 } */
-.white_ic {
+.modal-cart__white {
     padding: 12px;
     height: 447px;
     overflow: auto;
