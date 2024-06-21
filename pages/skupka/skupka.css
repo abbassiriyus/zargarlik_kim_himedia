@@ -208,7 +208,8 @@ top: -62px;
 left: 0px;
 z-index:-1343;
 background-color: #FFE535;
-width: 427px;
+max-width: 427px;
+width: 100%;
 height: 67px;
 display: flex;
 justify-content: space-between;
@@ -236,6 +237,12 @@ margin-left: -10px;
     grid-template-columns: 134px 299px;
 }
 
+@media(max-width:560px){
+    .top_nalc{
+        display: grid;
+        grid-template-columns: 1.34fr 2.99fr;
+    }
+}
 .nalc_table{
     width: 100%;
     /* background-color: violet; */
@@ -1440,7 +1447,8 @@ text-align: center;
     width: 99%;
 }
 .question{
-    width: 410px;
+    width: 95%;
+    margin: auto;
 }
 .bonus-main-body__top-question{
     margin-bottom: 20px;

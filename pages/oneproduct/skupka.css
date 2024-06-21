@@ -983,7 +983,7 @@ text-align: left;
     top: 31px;
     display: none;
 }
-.ofooter__pk-phone_number"{
+.ofooter__pk-phone_number{
     font-size: 34px;
 font-weight: 600;
 line-height: 41.45px;
@@ -2133,7 +2133,7 @@ line-height: 17.07px;
 text-align: left;
 
     }
-    .often-given__question"{
+    .often-given__question{
         margin-top: 0px;
     }
     .question p{
