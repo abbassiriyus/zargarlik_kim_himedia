@@ -24,14 +24,14 @@ overflow: auto;
 .modal-cart__white{
     padding: 30px;
 }
-.carttov{
+.modal-cart__title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 97%;
     flex-wrap: wrap;
 }
-.carttov h2{
+.modal-cart__title h2{
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 600;
@@ -350,12 +350,12 @@ color: #242424;
     padding: 30px;
     
 }
-.carttov1{
+.modal-cart__title1{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.carttov1 h2{
+.modal-cart__title1 h2{
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 600;
@@ -682,7 +682,7 @@ line-height: 17.07px;
     
 }
 @media (max-width:430px) {
-    .carttov h2{
+    .modal-cart__title h2{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
