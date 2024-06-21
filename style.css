@@ -501,7 +501,7 @@ margin-top: 10px;
     border-top-right-radius: 16px;
    
 }
-.blackk{
+.get_product{
     display: flex;
     justify-content: end;
     align-items: end;    
@@ -1238,7 +1238,7 @@ height: 100vh;
 left: 0px;
 overflow-y:scroll;
 }
-.filter-page .title3{
+.filter-page .filter-page__title_first{
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -1246,7 +1246,7 @@ overflow-y:scroll;
     align-items: center;
     min-height: 47px;
 }
-.filter-page .title2{
+.filter-page .filter-page__title-second{
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -1262,7 +1262,7 @@ overflow-y:scroll;
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.filter-page .title3 h3{
+.filter-page .filter-page__title_first h3{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -1274,7 +1274,7 @@ margin: 0px;
 margin-left: 47px;
 margin-top:1px;
 }
-.filter-page .title2 h2{
+.filter-page .filter-page__title-second h2{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -1285,11 +1285,11 @@ margin-top:1px;
 margin: 0px;
  
 }
-.filter-page .title3  .bx-x{
+.filter-page .filter-page__title_first  .bx-x{
 font-size: 23px;
 margin-left: -3px;
 }
-.filter-page .title3 a{
+.filter-page .filter-page__title_first a{
     text-decoration: none;
     font-family: Montserrat;
 font-size: 14px;
@@ -1298,7 +1298,7 @@ font-weight: 400;
 text-align: left;
 color: #2E8AE6;
 }
-.filter-page .title2 a{
+.filter-page .filter-page__title-second a{
     text-decoration: none;
     font-family: Montserrat;
 font-size: 14px;
@@ -1307,7 +1307,7 @@ font-weight: 400;
 text-align: left;
 color: #2E8AE6;
 }
-.filter-page .search {
+.filter-page .filter-page__title_search {
 
     display: grid;
     grid-template-columns: auto 30px;
@@ -1322,7 +1322,7 @@ color: #2E8AE6;
     margin-top: 6px;
 margin-bottom: 6px;
 }
-.filter-page .search input{
+.filter-page .filter-page__title_search input{
     outline: none;
     border: none;
     font-family: Jost;
@@ -1332,7 +1332,7 @@ line-height: 23.12px;
 text-align: left;
 color: #757575;
 }
-.filter-page .razdel1 {
+.filter-page .filter-page__buttons {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
@@ -1355,7 +1355,7 @@ box-shadow: 0px 0px 4px 0px #00000040;
 .mm{
     box-shadow: none !important;
 }
-.filter-page .razdel1  button{
+.filter-page .filter-page__buttons  button{
  
     height: 34px;
 display: flex;
