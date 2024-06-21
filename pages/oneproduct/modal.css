@@ -62,7 +62,7 @@ text-decoration: underline;
     right: 29px;
 }
 
-.plusminus{
+.cart__one-product{
     display: grid;
     grid-template-columns:180px 260px 200px 180px 1fr;
     /* justify-content: space-between; */
@@ -74,7 +74,7 @@ text-decoration: underline;
     box-shadow: 0px 0px 22px 0px #0000001A;
 
 }
-.imageu{
+.one-product__image{
     /* background-color: red; */
     width: 100%;
     display: flex;
@@ -82,10 +82,10 @@ text-decoration: underline;
     align-items: center;
     
 }
-.imageu img{
+.one-product__image img{
     width: 100%;
 }
-.titleimg{
+.cart_oneproduct___title{
     /* background-color: aqua; */
     width: 100%;
     display: flex;
@@ -97,14 +97,14 @@ text-decoration: underline;
     /* background-color: rgb(93, 245, 245); */
 }
 
-.pricc{
+.one-product__price{
     width: 100%;
     /* background-color: blue; */
     display: flex;
     justify-content: end;
     align-items: center;
 }
-.titleimg h3{
+.cart_oneproduct___title h3{
     font-family: Montserrat;
 font-size: 20px;
 font-weight: 500;
@@ -114,7 +114,7 @@ color: #363636;
 margin-bottom: 22px;
 
 }
-.titleimg p{
+.cart_oneproduct___title p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -125,18 +125,18 @@ margin-top: 10px;
 position: relative;
 top: -4px;
 }
-.plmin{
+.one-product__plus-minus{
     width: 100%;
     /* background-color: rgb(160, 47, 47); */
     justify-content: center;
     display: flex;
 }
-.btnplu{
+.one-product_plus-minus__btn {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.btnplu span{
+.one-product_plus-minus__btn  span{
     width: 40px;
     height: 40px;
     display: flex;
@@ -145,7 +145,7 @@ top: -4px;
 text-decoration: none !important;
 
 }
-.min{
+.minus__btn{
     width:44px !important;
 height:44px !important;
 background: #F1F1F1;
@@ -156,26 +156,26 @@ line-height: 0px;
 border-radius: 8px;
 cursor: pointer;
 }
-.min p{
+.minus__btn p{
 font-size:35px;
 /* line-height: 0px; */
 
 padding: 0px;
 margin: 0px;
 }
-.min p .bx-minus{
+.minus__btn p .bx-minus{
     font-size: 29px;
 }
 .min:hover{
     background-color: #242424;
     color: white;
 }
-.pricc{
+.one-product__price{
     margin-right: 20px;
     padding-right: 18px;
     margin-top: -8px;
 }
-.pricc h3{
+.one-product__price h3{
     color: #0BAE45;
     font-family: Montserrat;
 font-size: 28px;
@@ -183,7 +183,7 @@ font-weight: 700;
 line-height: 34.13px;
 text-align: left;
 }
-.delp del{
+.one-product__price_del_p  del{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -193,7 +193,7 @@ color: #8B8B8B;
 position: relative;
 top: 10px;
 }
-.delp{
+.one-product__price_del_p {
     color: #8B8B8B;
     font-family: Montserrat;
     font-size: 16px;
@@ -535,7 +535,7 @@ display: none;
         gap: 61px;
         width: 100%;
     }
-    .plmin{
+    .one-product__plus-minus{
         grid-column-start: 1;
         grid-column-end: 3;
         /* grid-col-start: 1;
@@ -545,14 +545,14 @@ display: none;
         display: grid;
         grid-template-columns: 1fr;
     }
-    .pricc{
+    .one-product__price{
         grid-column-start: 1;
         padding: 0;
         margin: 0;
         grid-column-end: 3;  display: flex;
         justify-content: start; 
     }
-    .plusminus{
+    .cart__one-product{
         display: grid;
         grid-template-columns:100px 1fr;
         /* justify-content: space-between; */
@@ -698,7 +698,7 @@ line-height: 14.63px;
 text-align: left;
 
     }
-    .titleimg h3{
+    .cart_oneproduct___title h3{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
@@ -719,11 +719,11 @@ margin-top: 9px;
         top: 13px;
         right: 13px;
     }
-    .plusminus{
+    .cart__one-product{
         margin-top: 14px;
         gap: 10px;
     }
-    .titleimg p{
+    .cart_oneproduct___title p{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -731,15 +731,15 @@ line-height: 14.63px;
 text-align: left;
 
     }
-    .plmin{
+    .one-product__plus-minus{
         margin-top: -18px;
     }
-    .btnplu {
+    .one-product_plus-minus__btn  {
         display: flex;
         gap: 6px;
         align-items: center;
     }
-    .pricc h3{
+    .one-product__price h3{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 700;
@@ -748,7 +748,7 @@ text-align: left;
 margin-top: 11px;
 margin-left: 19px;
     }
-    .delp del{
+    .one-product__price_del_p  del{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 600;
@@ -823,7 +823,7 @@ text-align: left;
 .oformit{
     padding-top: 20px;
 }
-.imageu img {
+.one-product__image img {
     width: 83%;
     margin-left: 10px;
 }
