@@ -202,7 +202,7 @@ top: 10px;
     text-align: left;
     
 }
-.rekom h2{
+.recommendation_for_you h2{
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 600;
@@ -211,24 +211,24 @@ text-align: left;
 color: #000000;
 
 }
-.rekom{
+.recommendation_for_you{
     margin-top: 62px;
 }
-.uzucard{
+.ring_big__card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 32px;
     min-height: auto;
     gap: 61px;
 }
-.ringimg img{
+.one-ring_card__img img{
     /* background: url('./image/5-2964-103-1Б\ 1\ \(1\).png')no-repeat; */
     width: 100%;
     background-size: cover;
     background-position: center;
     /* height: 130px;/ */
 }
-.carduz{
+.one-ring__card{
     /* background-color: #0BAE45; */
     width: 100%;
     /* height: 150px; */
@@ -236,18 +236,18 @@ color: #000000;
     border-radius: 10px;
     grid-template-columns: 150px 1fr;
 }
-.carduz:hover{
+.one-ring__card:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.ringtex{
+.one-ring_card__text{
     padding:15px;
     position: relative;
 }
-.ringimg{
+.one-ring_card__img{
     position: relative;
 }
-.ringimg .bx-heart{
+.one-ring_card__img .bx-heart{
     position: absolute;
     top: 10px;
     left: 9px;
@@ -259,7 +259,7 @@ color: #000000;
     font-weight: 100 !important;
 cursor: pointer;
 } 
-.ringtex span{
+.one-ring_card__text span{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
@@ -268,7 +268,7 @@ text-align: left;
 color: #363636;
 text-decoration: none !important;
 }
-.ringtex h2{
+.one-ring_card__text h2{
     font-family: Montserrat;
 font-size: 20px;
 margin-top: 13px;
@@ -277,7 +277,7 @@ line-height: 24.38px;
 text-align: left;
 
 }
-.ringtex del{
+.one-ring_card__text del{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -287,7 +287,7 @@ color: #DE6060;
 
 }
 
-.oformit{
+.continue_click_btn{
     width: 100%;
     box-shadow: 0px -1px 15.3px 0px #0000001A;
     min-height: 116px;
@@ -313,7 +313,7 @@ color: #242424;
 .grey:hover{
     background-color: #36363642;
 }
-.pokupka{
+.purchase_btn{
     display: flex;
     align-items: center;
     gap: 30px;
@@ -506,14 +506,14 @@ display: none;
     .grey{
         width: 480px;
     }
-    /* .carduz {
+    /* .one-ring__card {
         height: 172px;
     } */
 
   
 }
 @media (max-width:1299px) {  
-    .uzucard{
+    .ring_big__card{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 32px;
@@ -527,7 +527,7 @@ display: none;
         /* display: flex; */
       
     }  
-    .uzucard {
+    .ring_big__card {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 32px;
@@ -541,7 +541,7 @@ display: none;
         /* grid-col-start: 1;
         grid-row-end: 3; */
     }
-    .pokupka{
+    .purchase_btn{
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -564,14 +564,14 @@ display: none;
         /* box-shadow: 0px 0px 0px 0px #0000001A; */
     
     }
-    .uzucard{
+    .ring_big__card{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .oformit{
+    .continue_click_btn{
         padding-bottom: 10px;
     }
-    .carduz{
+    .one-ring__card{
         width: 50%;
     }
     .nncartov{
@@ -609,12 +609,12 @@ display: none;
 
 
 @media (max-width:790px) {
-    .carduz {
+    .one-ring__card {
         width: 60%;
     }
 }
 @media (max-width:690px) {
-    .carduz {
+    .one-ring__card {
         width: 100%;
     }
 }
@@ -637,7 +637,7 @@ line-height: 17.07px;
  
 
     }
-    .pokupka{
+    .purchase_btn{
         width: 94%;
     }
 }
@@ -758,7 +758,7 @@ margin-left: 20px;
 position: relative;
 top: -4px;
     }
-    .rekom h2{
+    .recommendation_for_you h2{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -766,10 +766,10 @@ line-height: 21.94px;
 text-align: left;
 
     }
-    .rekom {
+    .recommendation_for_you {
         margin-top: 19px;
     }
-    .ringtex span{
+    .one-ring_card__text span{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -777,7 +777,7 @@ line-height: 17.07px;
 text-align: left;
 
     }
-    .rekom h2{
+    .recommendation_for_you h2{
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 600;
@@ -785,7 +785,7 @@ text-align: left;
         text-align: left;
         
     }
-    .ringtex h2{
+    .one-ring_card__text h2{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 700;
@@ -793,7 +793,7 @@ line-height: 17.07px;
 text-align: left;
 margin-top: 0px;
     }
-    .ringtex del{
+    .one-ring_card__text del{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 600;
@@ -801,33 +801,33 @@ line-height: 14.63px;
 text-align: left;
 
     }
-    .uzucard{
+    .ring_big__card{
         margin-top: 0px;
         gap: 0px;
     }
- .carduz{
+ .one-ring__card{
     display: grid;
     grid-template-columns: 109px 1fr ;
  }
- .ringtex {
+ .one-ring_card__text {
     padding: 3px;
     position: relative;
 }
-.pokupka{
+.purchase_btn{
     gap: 11px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column-reverse;
 }
-.oformit{
+.continue_click_btn{
     padding-top: 20px;
 }
 .one-product__image img {
     width: 83%;
     margin-left: 10px;
 }
-/* .uzucard{
+/* .ring_big__card{
     height: 123px;
     overflow: auto;
     min-height: auto;
@@ -837,7 +837,7 @@ text-align: left;
     height: 447px;
     overflow: auto;
 }
-.oformit {
+.continue_click_btn {
     padding-bottom: 0px;
 }
 .white{
