@@ -288,13 +288,12 @@ text-align: center;
         width: 80%;
         margin-left: 10%;
     }
-    .dastafka_header .dastafka_header_body .img1{
-position: absolute;
-top: 0px;
-left: 0px;
-width: 100%;
-filter: blur(10px);
-
+    .dastafka_header .dastafka_header_body .img1 {
+        position: absolute;
+        top: 92px;
+        left: 28px;
+        width: 100%;
+        filter: blur(2px);
     }
 
 }
@@ -435,7 +434,7 @@ width: 95%;
 margin: auto;
 }
 }
-@media(max-width:390px){
+@media(max-width:420px){
     .dastafka_cards {
         display: flex;
         justify-content: center;
@@ -446,8 +445,9 @@ margin: auto;
     }
     .dastafka_card2 {
         width: 100%;
-        width: 328px !important;
+        /* width: 328px !important; */
         margin: auto;
+        height: 188px;
     }
     .dastafka_header .dastafka_header_body .img2 {
         width: 68%;
@@ -468,14 +468,49 @@ margin: auto;
         width: 70%;
         margin-bottom: 0px;
         margin-top: 12px;
+    }   
+    .title_dastafla_oplata{
+        /* margin-top: 69px; */
+        margin-bottom: 23px;
+        position: relative;
+        margin-top: 74px;
     }
-}
-.dastafak_admin_oplata{
+    .dastafka_cards{
+        gap: 19px;
+    }
+    .dastafka_cards .dastafka_card {
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        width: 157px;
+        height: 156px;
+    }
+    .dastafka_cards .dastafka_card p {
+        margin-bottom: 0px;
+    }
+    .dastafka_card2{
+        height: 180px;
+    }
+    .title_dastafla_oplata2 {
+        margin-top: 37px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    .all_text_p{
+        width: 92%;
+    }
+    .all_text_p p{
+        margin-bottom: 0px;
+    }.dastafak_admin_oplata {
     max-width: 1440px;
-width: 95%;
-margin: auto;
+    width: 97%;
+    margin: auto;
+    margin-top: 73px;
 }
-
+.comfortable h1 {
+    margin-top: 62px;
+    margin-left: 8px;
+}
+}
 
 
 

@@ -1733,7 +1733,7 @@ text-align: left;
 
     }
  }
- @media (max-width:360px) {
+ @media (max-width:420px) {
     .media-skup{
         margin-bottom: 15px !important;
     }
@@ -2169,6 +2169,10 @@ text-align: left;
 }
 .answer_body ul{
     margin-left: 0px;
+}
+.answer_for_question5 h3 {
+    font-family: Montserrat;
+    font-size: 16px;
 }
 }
 .olch_num h5{

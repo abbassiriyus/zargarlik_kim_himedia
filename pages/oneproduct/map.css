@@ -760,4 +760,14 @@ left: 22px !important;
     .blwhite{
         border-radius: 1px;
     }
+    .clickic {
+        padding: 16px;
+        overflow: auto;
+        width: 100vw;
+        /* background-color: red; */
+    }
+    .dobr button {
+        padding: 13px;
+    }
+ 
 }
