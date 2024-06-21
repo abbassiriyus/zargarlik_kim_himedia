@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-.dastafka_i_oplata {
+.dastafka_i_payment-body {
     padding-top: 200px;
     width: 100vw;
     overflow-x: hidden;
@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.dom_arr_skup {
+.bonus-main__body-page__road {
     display: flex;
     align-items: center;
     gap: 11px;
@@ -27,15 +27,15 @@
     z-index: 4;
 }
 
-.dom_arr_skup .bx-home-alt {
+.bonus-main__body-page__road .bx-home-alt {
     font-size: 20px;
 }
 
-.dom_arr_skup .bx-chevron-right {
+.bonus-main__body-page__road .bx-chevron-right {
     font-size: 20px;
 }
 
-.dom_arr_skup h4 {
+.bonus-main__body-page__road h4 {
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -161,7 +161,7 @@
 }
 
 @media(max-width:991px) {
-    .dastafka_i_oplata {
+    .dastafka_i_payment-body {
         padding-top: 169px;
     }
 
@@ -301,7 +301,7 @@ text-align: center;
 
 
 
-.title_dastafla_oplata{
+.title_dastafla_payment-body{
     font-family: Inter;
 font-size: 54px;
 font-weight: 600;
@@ -414,7 +414,7 @@ color: #242424;
             
         margin-bottom: 24px;  
         }
-        .title_dastafla_oplata{
+        .title_dastafla_payment-body{
             font-family: Inter;
             font-size: 24px;
             font-weight: 600;
@@ -422,7 +422,7 @@ color: #242424;
             text-align: center;
             
         }
-.title_dastafla_oplata2{
+.title_dastafla_payment-body2{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -469,7 +469,7 @@ margin: auto;
         margin-bottom: 0px;
         margin-top: 12px;
     }   
-    .title_dastafla_oplata{
+    .title_dastafla_payment-body{
         /* margin-top: 69px; */
         margin-bottom: 23px;
         position: relative;
@@ -490,7 +490,7 @@ margin: auto;
     .dastafka_card2{
         height: 180px;
     }
-    .title_dastafla_oplata2 {
+    .title_dastafla_payment-body2 {
         margin-top: 37px;
         margin-left: 15px;
         margin-bottom: 15px;
@@ -500,7 +500,7 @@ margin: auto;
     }
     .all_text_p p{
         margin-bottom: 0px;
-    }.dastafak_admin_oplata {
+    }.dastafak_admin_payment-body {
     max-width: 1440px;
     width: 97%;
     margin: auto;

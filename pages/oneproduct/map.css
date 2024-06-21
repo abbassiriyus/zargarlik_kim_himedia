@@ -221,10 +221,10 @@ border: none;
     opacity: 0.4;
     margin-top: 27px;
 }
-.footer_1{
+.footer-version__pk{
     padding-top: 46px !important;
 }
-.footer_1 {
+.footer-version__pk {
     padding-top: 115px;
     display: grid;
     grid-template-columns: 1.4fr 1.5fr 0.93fr 1fr 0.5fr !important;
@@ -610,7 +610,7 @@ line-height: 14.63px;
     /* .iframe_map {
         margin-bottom: 0;
     }
-    .footer2{
+    .footer_mobile__version{
         margin-top: 0px ;
     }
     .iframe_map iframe{

@@ -337,7 +337,7 @@ color: #242424;
 .yellow:hover{
     background-color: #e0db4b;
 }
-.modal22{
+.second-modal__click{
     max-width: 886px;
     width: 100%;
     height: 627px;
@@ -346,7 +346,7 @@ color: #242424;
     display: none;
     position: relative;
 }
-.modal2_ic{
+.second-modal__click-body{
     padding: 30px;
     
 }
@@ -363,7 +363,7 @@ line-height: 34.13px;
 text-align: left;
 
 }
-.oplata{
+.payment-body{
     display: grid;
     grid-template-columns: 155px 1fr 1fr;
     height: 134px;
@@ -373,25 +373,25 @@ text-align: left;
     box-shadow: 0px 0px 22px 0px #0000001A;
     margin-top: 30px;
 }
-.oplprice{
+.payment-body__price{
     width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
 }
-.opltext{
+.payment-body__text{
     width: 100%;
     display: flex;
     align-items: center;
 }
-.oplimg{
+.payment-body__image{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
-.oplimg img{
+.payment-body__image img{
     width: 96%;
     margin: auto;
     /* height: 100px; */
@@ -401,13 +401,13 @@ text-align: left;
     margin-top: 10px;
     margin-left: 4px;
 }
-.ic span{
+.payment-body__text_inside span{
     position: relative;
     top: 7px;
 text-decoration: none !important;
 
 }
-.ic h2{
+.payment-body__text_inside h2{
     font-family: Montserrat;
 font-size: 20px;
 
@@ -420,7 +420,7 @@ color: #363636;
 .pric{
 margin-right: 15px;
 }
-.pric h2{ 
+.payment_price_inh2{ 
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 700;
@@ -429,7 +429,7 @@ color: #0BAE45;
 text-align: right;
 
 }
-.pric p{
+.payment_price_inp{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -438,14 +438,14 @@ color: #8B8B8B;
 position: relative;
 top: 8px;
 }
-.e-mail{
+.registration-input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 64px;
     gap: 24px;
     height:190px;
 }
-.e-mail input{
+.registration-input input{
     background: #F5F5F5;
     width: 390px;
     border: none;
@@ -458,11 +458,11 @@ font-weight: 400;
 line-height: 21.94px;
 
 }
-.kupit button:hover{
+.buy__one-click button:hover{
     background-color: #e0db4b;
 
 }
-.kupit{
+.buy__one-click{
     height: 114px;
     width: 100%;
     box-shadow: 0px -1px 15.3px 0px #0000001A;
@@ -474,7 +474,7 @@ line-height: 21.94px;
 .nncartov{
     display: none;
 }
-.kupit button{
+.buy__one-click button{
     width: 830px;
 height: 56px;
  
@@ -490,7 +490,7 @@ border: none;
 opacity: 0px;
 
 }
-.pric del{
+.payment_price_indel{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 600;
@@ -582,27 +582,27 @@ display: none;
     }
 }
 @media (max-width:878px) {
-    .modal22 {
+    .second-modal__click {
         max-width: 886px;
         width: 97%;}
-        .e-mail{
+        .registration-input{
             gap: 8px;
             height: auto;
         }
-        .kupit button {
+        .buy__one-click button {
             width:98%;
         }
-        .modal22{
+        .second-modal__click{
             height: auto;
         }
 }
 
 @media (max-width:850px) {
-    .e-mail{
+    .registration-input{
         display: grid;
         grid-template-columns:   1fr;
     }
-    .e-mail input{
+    .registration-input input{
         width: 100%;
     }
 }
@@ -642,31 +642,31 @@ line-height: 17.07px;
     }
 }
 @media (max-width:555px) {
-    .ic h2 {
+    .payment-body__text_inside h2 {
         font-size: 17px;
     }
-    .pric h2 {
+    .payment_price_inh2 {
         font-family: Montserrat;
         font-size: 22px;
     }
-    .pric p {
+    .payment_price_inp {
         font-family: Montserrat;
         font-size: 13px;
         margin-left: 20px;
     }
-    .e-mail{
+    .registration-input{
         margin-top: 30px;
     }
-    .pric del{
+    .payment_price_indel{
         display: block;
         margin-top: 9px;
         margin-left: 16px;
     }
-    .pric p{
+    .payment_price_inp{
         display: none;
     }
 
-.oplata {
+.payment-body {
     display: grid;
     grid-template-columns: 155px 1fr;
     height: auto;
@@ -849,25 +849,25 @@ text-align: left;
 }
 }
 @media (max-width:380px) {
-    .modal22{
+    .second-modal__click{
         width: 91%;
     }
-    .modal2_ic {
+    .second-modal__click-body {
         padding: 14px;
         padding-top: 20px;
     }
-    .oplata {
+    .payment-body {
         display: grid;
         grid-template-columns: 106px 1fr;
         margin-top: 15px;
  
     }
-    .oplimg img {
+    .payment-body__image img {
         width: 100%;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-    .ic h2{
+    .payment-body__text_inside h2{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
@@ -875,7 +875,7 @@ line-height: 17.07px;
 text-align: left;
 
     }
-    .ic span{
+    .payment-body__text_inside span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -883,7 +883,7 @@ line-height: 14.63px;
 text-align: left;
 
     }
-    .pric h2{
+    .payment_price_inh2{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 700;
@@ -891,17 +891,17 @@ line-height: 21.94px;
 text-align: left;
 
     }
-    .pric h2{
+    .payment_price_inh2{
         margin-top: 8px;
         margin-left: 21px;
     }
     .pric{
         margin-right: 0px;
     }
-    .e-mail {
+    .registration-input {
         margin-top: 13px;
     }
-    .e-mail input {
+    .registration-input input {
         height: 44px;
         font-family: Montserrat;
 font-size: 14px;
@@ -910,18 +910,18 @@ line-height: 17.07px;
 text-align: left;
 
     }
-    .e-mail {
+    .registration-input {
         gap: 25px;
         margin-top: 19px;
         /* height: auto; */
     }
-    .kupit {
+    .buy__one-click {
         height: auto;
         padding-bottom: 17px;
         padding-top: 21px;
     }  
 
-.kupit button {
+.buy__one-click button {
     height: 44px;
     width: 92%;
     font-family: Montserrat;

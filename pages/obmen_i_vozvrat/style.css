@@ -16,7 +16,7 @@
     max-width: 1430px;
     padding-top: 8px;
 }
-.big-header-asos .dom_arr_skup{
+.big-header-asos .bonus-main__body-page__road{
     display: flex;
     align-items: center;
     gap: 11px;
@@ -24,18 +24,18 @@
     /* margin-top: 14px; */
     margin-bottom: 36px;
 }
-.big-header-asos .dom_arr_skup .bx-home-alt{
+.big-header-asos .bonus-main__body-page__road .bx-home-alt{
     font-size: 20px;
 }
-.big-header-asos .dom_arr_skup .bx-chevron-right{
+.big-header-asos .bonus-main__body-page__road .bx-chevron-right{
     font-size: 20px;
 }
-.big-header-asos .dom_arr_skup h4{
+.big-header-asos .bonus-main__body-page__road h4{
     font-size: 14px;
     margin-bottom: 0;
 }
 @media (max-width:520px) {
-    .big-header-asos .dom_arr_skup h4{
+    .big-header-asos .bonus-main__body-page__road h4{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -117,7 +117,7 @@ width: 100%;
     .big-header-asos{
         padding-top: 17px;
     }
-    .big-header-asos .dom_arr_skup{
+    .big-header-asos .bonus-main__body-page__road{
     gap: 2px;
     }
     .header-main-text {

@@ -15,7 +15,7 @@ padding-top: 190px;
     width: 95%;
     margin: auto;
 }
-.dom_arr_skup {
+.bonus-main__body-page__road {
     display: flex;
     align-items: center;
     gap: 11px;
@@ -167,10 +167,10 @@ border-radius: 8px;
             color: #242424;
             margin-bottom: 47px;
         }
-        .dom_arr_skup .bx-home-alt {
+        .bonus-main__body-page__road .bx-home-alt {
             font-size: 14px;
         }
-        .dom_arr_skup {
+        .bonus-main__body-page__road {
             display: flex;
             align-items: center;
             gap: 1px;

@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 0fr 1fr;
 }
-.dom_arr_skup{
+.bonus-main__body-page__road{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -23,13 +23,13 @@
     margin-top: 14px;
     margin-bottom: 36px;
 }
-.dom_arr_skup .bx-home-alt{
+.bonus-main__body-page__road .bx-home-alt{
     font-size: 20px;
 }
-.dom_arr_skup .bx-chevron-right{
+.bonus-main__body-page__road .bx-chevron-right{
     font-size: 20px;
 }
-.dom_arr_skup h4{
+.bonus-main__body-page__road h4{
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -771,7 +771,7 @@ line-height: 17.07px;
 text-align: left;
 color: #898989;
 }
-.vernut_ukr{
+.bonus-main-body__return{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 122px;
@@ -983,7 +983,7 @@ text-align: left;
     top: 31px;
     display: none;
 }
-.niy{
+.ofooter__pk-phone_number"{
     font-size: 34px;
 font-weight: 600;
 line-height: 41.45px;
@@ -1128,7 +1128,7 @@ margin-top: 8px;
     .sergra{
         width: 68%;
     }
-    .vernut_ukr {
+    .bonus-main-body__return {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 20px;
@@ -1177,7 +1177,7 @@ margin-top: 8px;
         }
      }
 @media (max-width:1110px) {
-    .vernut_ukr {
+    .bonus-main-body__return {
         display: grid;
         grid-template-columns: 1fr ;
         gap: 20px;
@@ -1277,13 +1277,13 @@ margin-top: 8px;
         /* margin-bottom: 85px; */
         margin-top: 86px;
     }
-    .plas{
+    .bonus-main__body-page__extra{
         position: relative;
         top: 8px;
         left: 0px;
         gap: 0px;
     }
-    .plas  .bx-home-alt{
+    .bonus-main__body-page__extra  .bx-home-alt{
         font-size: 16px;
     
     }
@@ -1462,7 +1462,7 @@ text-align: left;
     width: 100%;
     /* margin: auto; */
 }
-    .niy{
+    .often-given__question{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -1601,7 +1601,7 @@ text-align: center;
     width: 100%;
     
 }
-.top_ques{
+.bonus-main-body__top-question{
     margin-bottom: 20px;
 }
 .giperlent{
@@ -1630,7 +1630,7 @@ text-align: center;
     }
  }
  @media (max-width:520px) {
-    .dom_arr_skup h4{
+    .bonus-main__body-page__road h4{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -2133,13 +2133,13 @@ line-height: 17.07px;
 text-align: left;
 
     }
-    .niy{
+    .often-given__question"{
         margin-top: 0px;
     }
     .question p{
         width: 86%;
     }
-    .w-small{
+    .how__sell{
         width: 80%;
     }
     .dg_circle img{

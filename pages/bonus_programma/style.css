@@ -1,14 +1,14 @@
 .bonus_big_div1{
 padding-top: 201px;
 }
-.bonus_big_div1 .bonus_main .bonus_header{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-header{
     background: url("/image/0f767552bf6aaad42568d850d9ecf52d.png");
     height: 498px;
     background-size: cover;
     background-position: 0px -127px;
 
 }
-.bonus_big_div1 .bonus_main .dom_arr_skup{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-page__road{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -22,20 +22,20 @@ padding-top: 201px;
     padding-left: 13px;
 
 }
-.bonus_big_div1 .bonus_main .dom_arr_skup .bx-home-alt{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-page__road .bx-home-alt{
     font-size: 20px;
 }
-.bonus_big_div1 .bonus_main .dom_arr_skup .bx-chevron-right{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-page__road .bx-chevron-right{
     font-size: 20px;
 }
-.bonus_big_div1 .bonus_main .dom_arr_skup h4{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-page__road h4{
     font-size: 14px;
     margin-bottom: 0;
     letter-spacing: 0.2px;
 }
 
 
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama{
     display: grid;
     grid-template-columns: 35fr 60fr;
     align-items: center;
@@ -44,7 +44,7 @@ padding-top: 201px;
     margin: auto;
     margin-top: 15.6%;
 }
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -56,12 +56,12 @@ background: #ECE4F2;
 box-shadow: 0px 12.82px 0px 0px #F3E2FF;
 
 }
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama img{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama img{
     width: 80%;
     
 
 }
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama{
+.bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama{
     width:100%;
 height: 139.92px;
 background: #F4E7FFCF;
@@ -81,13 +81,13 @@ text-shadow: 0px 0px 0px 0px #0000006E;
 padding-left: 28px;
 
 }
-.bonus_big_div1 .bonus_main .text_big_dive_bonus{
+.bonus_big_div1 .bonus-main__body .text_big_dive_bonus{
     max-width: 1418px;
     width: 95%;
     margin: auto;
     margin-top: 54px;
 }
-.bonus_big_div1 .bonus_main .text_big_dive_bonus p{
+.bonus_big_div1 .bonus-main__body .text_big_dive_bonus p{
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 400;
@@ -107,7 +107,7 @@ padding-left: 28px;
     margin: auto;
     width: 95%;
  }
- .bonus_big_div1 .bonus_main .text_big_dive_bonus strong{
+ .bonus_big_div1 .bonus-main__body .text_big_dive_bonus strong{
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
@@ -115,7 +115,7 @@ padding-left: 28px;
     text-align: left;
     
  }
- .bonus_big_div1 .bonus_main .text_big_dive_bonus h3{
+ .bonus_big_div1 .bonus-main__body .text_big_dive_bonus h3{
 text-align: center;
 font-family: Montserrat;
 font-size: 36px;
@@ -124,18 +124,27 @@ line-height: 54px;
 margin-top: -6px;
 margin-left: 10px;
  }
+ .often-given__question {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41.45px;
+    text-align: left;
+    margin-top: 53px;
+    margin-bottom: 38px;
+    margin-left: 10px;
+}
  @media(max-width:991px){
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama {
         font-size: 27px;
     }
-    .bonus_big_div1 .bonus_main .bonus_header {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header {
       
         height: 405px;
     
     }
  }
  @media(max-width:818px){
-    .bonus_big_div1 .bonus_main .bonus_header {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header {
       
         height: 405px;
     background-size: cover;
@@ -143,7 +152,7 @@ margin-left: 10px;
     } 
  }
  @media(max-width:700px){
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 700;
@@ -158,13 +167,13 @@ border-radius: 0px 13.26px 13.26px 0px;
     .bonus_big_div1 {
         padding-top: 178px;
     }
-    .bonus_big_div1 .bonus_main .bonus_header {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header {
       background-position: center;
         height: 311px;
     background-size: cover;
     background-position: 0px 0px;
     } 
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama {
         display: grid;
         grid-template-columns: 35fr 60fr;
         align-items: center;
@@ -173,20 +182,20 @@ border-radius: 0px 13.26px 13.26px 0px;
         margin: auto;
         margin-top: 48.6%;
     }
-    .bonus_big_div1 .bonus_main .text_big_dive_bonus strong {
+    .bonus_big_div1 .bonus-main__body .text_big_dive_bonus strong {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 700;
         line-height: 30px;
         text-align: left;
     }
-    .bonus_big_div1 .bonus_main .text_big_dive_bonus {
+    .bonus_big_div1 .bonus-main__body .text_big_dive_bonus {
         max-width: 1418px;
         width: 92%;
         margin: auto;
         margin-top: 37px;
     }
-    .bonus_big_div1 .bonus_main .text_big_dive_bonus p {
+    .bonus_big_div1 .bonus-main__body .text_big_dive_bonus p {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 400;
@@ -194,7 +203,7 @@ border-radius: 0px 13.26px 13.26px 0px;
         text-align: left;
         color: #242424;
     }
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama {
        
 height: 51.56px;
 gap: 0px;
@@ -208,7 +217,7 @@ align-items: center;
     .question {
         margin-left: 0px;
     }
-    .bonus_big_div1 .bonus_main .text_big_dive_bonus h3 {
+    .bonus_big_div1 .bonus-main__body .text_big_dive_bonus h3 {
         text-align: center;
         font-family: Montserrat;
         font-size: 26px;
@@ -218,12 +227,12 @@ align-items: center;
         margin-left: 10px;
         letter-spacing: 0px;
     }
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama {
         height: 51px;
         box-shadow: 0px 4.42px 0px 0px #F3E2FF;
 
     }
-    .bonus_big_div1 .bonus_main .dom_arr_skup {
+    .bonus_big_div1 .bonus-main__body .bonus-main__body-page__road {
         display: flex;
         align-items: center;
         gap: 0px;
@@ -237,8 +246,18 @@ align-items: center;
         padding-left: 13px;
     }
 }
+@media (max-width:560px) {
+    .often-given__question{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.94px;
+text-align: left;
+margin-bottom: 22px;
+    }
+}
 @media (max-width:520px) {
-    .bonus_big_div1 .bonus_main  .dom_arr_skup h4{
+    .bonus_big_div1 .bonus-main__body  .bonus-main__body-page__road h4{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
