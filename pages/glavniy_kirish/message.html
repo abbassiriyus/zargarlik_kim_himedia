@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="message.css">
 </head>
 <body class="mes-body">
-  <div class="filter_page">
+  <div class="filter-page">
     <div class="title3"><i style="cursor: pointer;"
-        onclick="document.querySelector('.filter_page').style='display:none';document.querySelector('body').style='overflow:auto'"
+        onclick="document.querySelector('.filter-page').style='display:none';document.querySelector('body').style='overflow:auto'"
         class='bx bx-x'></i>
       <h3>Фильтры</h3> <a href="">Сбросить</a>
     </div>
@@ -423,22 +423,22 @@ background:
     </div>
     <hr>
   </div>  
-  <div class="navbasrr">
-    <div class="reklama">
-      <div class="reklama1">
-        <div class="pust"></div>
-        <div class="pust"></div>
+  <div class="navbar-almaz">
+    <div class="navbar-almaz__reklama">
+      <div class="navbar-almaz__reklama__body">
+        <div class="navbar-almaz__reklama__gap"></div>
+        <div class="navbar-almaz__reklama__gap"></div>
 
         <div style="display: flex;gap:32px;justify-content: center;align-items: center;margin-left: -30px;">
           <h2>WEEKEND SALE* ЕЩЁ -25% К СКИДКЕ 60% | 100% КЕШБЭК</h2><button>ТОЛЬКО 3 ДНЯ</button>
         </div>
-        <i onclick="document.querySelector('.reklama').style='display:none' "
+        <i onclick="document.querySelector('.navbar-almaz__reklama').style='display:none' "
           style="margin: auto;margin-right: 5px;font-size: 21px;" class='bx bx-x'></i>
       </div>
     </div>
 
-    <nav class="nav1">
-      <div style="margin-top: 20px;" class="navbar1">
+    <nav class="navbar-almaz__pk">
+      <div style="margin-top: 20px;" class="navbar-almaz__pk__first">
         <ul class="hovg">
       <a href="/pages/oneproduct/map.html"><li>Магазины</li></a>
       <li onclick="window.location='/pages/karzinka/index.html'">Доставка и оплата</li>
@@ -455,7 +455,7 @@ background:
               <div class="number">12</div>
             </div><span>Избранное</span>
           </li>
-          <li onclick="document.querySelector('.modall').style='display:flex'" class="iconlink">
+          <li onclick="document.querySelector('.modal_cart').style='display:flex'" class="iconlink">
             <div class="icons"><img src="/image/icon_basket 1.svg" alt="">
               <div class="number">12</div>
             </div> <span>Корзина</span>
@@ -466,31 +466,31 @@ background:
           </li>
         </ul>
       </div>
-      <div class="navbar_but">
+      <div class="navbar-almaz__pk__second">
         <button onclick="window.location='/index1.html'"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.33325 3.99668C1.33325 3.63001 1.63059 3.33334 1.99659 3.33334H7.33659C7.51251 3.33334 7.68123 3.40323 7.80563 3.52763C7.93003 3.65203 7.99992 3.82075 7.99992 3.99668C7.99992 4.1726 7.93003 4.34133 7.80563 4.46572C7.68123 4.59012 7.51251 4.66001 7.33659 4.66001H1.99659C1.82066 4.66001 1.65194 4.59012 1.52754 4.46572C1.40314 4.34133 1.33325 4.1726 1.33325 3.99668ZM1.33325 8.00001C1.33325 7.63334 1.63059 7.33668 1.99659 7.33668H14.0033C14.1792 7.33668 14.3479 7.40656 14.4723 7.53096C14.5967 7.65536 14.6666 7.82408 14.6666 8.00001C14.6666 8.17594 14.5967 8.34466 14.4723 8.46906C14.3479 8.59346 14.1792 8.66334 14.0033 8.66334H1.99659C1.82066 8.66334 1.65194 8.59346 1.52754 8.46906C1.40314 8.34466 1.33325 8.17594 1.33325 8.00001ZM1.99659 11.34C1.82066 11.34 1.65194 11.4099 1.52754 11.5343C1.40314 11.6587 1.33325 11.8274 1.33325 12.0033C1.33325 12.1793 1.40314 12.348 1.52754 12.4724C1.65194 12.5968 1.82066 12.6667 1.99659 12.6667H10.0033C10.1792 12.6667 10.3479 12.5968 10.4723 12.4724C10.5967 12.348 10.6666 12.1793 10.6666 12.0033C10.6666 11.8274 10.5967 11.6587 10.4723 11.5343C10.3479 11.4099 10.1792 11.34 10.0033 11.34H1.99659Z" fill="white"/>
           </svg> <span>Каталог</span></button>
-        <div class="kol">
+        <div class="navbar-almaz__pk__second_item">
           <h4>КОЛЛЕКЦИИ</h4><img style="width: 40px;transform: rotate(36.24deg);" src="/image/Screenshot_from_2024-05-30_20-21-27-removebg-preview.png"
             alt="">
         </div>
-        <div class="search_inp">
+        <div class="navbar-almaz__pk__second_search">
           <i class='bx bx-search'></i>
           <input placeholder="Поиск по каталогу" type="text">
           <img src="/image/SV2G.png" alt="">
         </div>
-        <div class="kol">
+        <div class="navbar-almaz__pk__second_item">
           <h4>PREMIUM</h4>
           <img style="width: 40px;transform: rotate(36.24deg);" src="/image/Screenshot_from_2024-05-30_20-23-13-removebg-preview.png" alt="">
         </div>
-        <h4 onclick="window.location='/pages/aksiya/index1.html'" class="aksiya">Акции</h4>
-        <h4 onclick="window.location='/pages/kredit/kredit.html'" class="aksiya1">Рассрочки и кредит</h4>
+        <h4 onclick="window.location='/pages/aksiya/index1.html'" class="navbar-almaz__pk__second__item__aksiya">Акции</h4>
+        <h4 onclick="window.location='/pages/kredit/kredit.html'" class="navbar-almaz__pk__second__item__kredit">Рассрочки и кредит</h4>
       </div>
     </nav>
     <nav class="nav2 nav2_new">
-      <div class="one">
-        <div class="ssss">
-          <a class="contact" href="">
+      <div class= "navbar-almaz__mobile__first">
+        <div class="navbar-almaz__mobile__first__body">
+          <a class= "navbar-mobile__contact" href="">
             <i class='bx bxs-phone'></i>
             <div>
               <h2>8 800 333 55 70</h2>
@@ -501,7 +501,7 @@ background:
           <div></div>
           <div></div>
 
-          <a class="map_link" href=""><i class='bx bx-map-pin'></i>
+          <a class= "navbar-mobile-first__map-link" href=""><i class='bx bx-map-pin'></i>
             <p>Выбор города</p>
           </a>
         </div>
@@ -509,7 +509,7 @@ background:
       <div class="two new_two_class">
         <div class="logo new_logo_class"><img src="/image/Group 3.svg" alt="3"></div>
         <button class="none_btn_1"
-          onclick="document.querySelector('.filter_page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
+          onclick="document.querySelector('.filter-page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
             src="/image/Vector78.svg" alt=""> Фильтры</button>
 
       </div>
@@ -528,15 +528,15 @@ background:
     
     </nav>
   </div>
-          <div class="modall">
-            <div class="white">
+          <div class="modal_cart">
+            <div class="modal_cart__body">
               <div class="white_ic">
                 <div class="tovarr">
                  <div class="carttov">
                   <h2>Товар добавлен в корзину</h2>
                   <div class="hrf">
                    <span>Товар добавлен в корзину</span>
-                    <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+                    <i onclick="document.querySelector('.modal_cart').style='display:none'" class='bx bx-x'></i>
                   </div>
                  </div>
                  <div class="plusminus">
@@ -632,7 +632,7 @@ background:
               <div class="carttov1">
                 <h2>Заказ в один клик</h2>
                 <div class="hrf">
-                  <i onclick="document.querySelector('.modall').style='display:none'" class='bx bx-x'></i>
+                  <i onclick="document.querySelector('.modal_cart').style='display:none'" class='bx bx-x'></i>
                 </div>
                </div>
                <div class="oplata">

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
-.reklama11{
+.navbar-almaz__reklama__body1{
     grid-column-start: 3;
     grid-column-end: 5;
           grid-row-start: 2;
@@ -11,11 +11,11 @@
           left: 16px;
      
 }
-.reklama11 a .bx-chevron-right{
+.navbar-almaz__reklama__body1 a .bx-chevron-right{
     position: relative;
     top: 3.5px;
 }
-.reklama11 img{
+.navbar-almaz__reklama__body1 img{
     position: absolute;
     width: 96%;
     z-index: -1;
@@ -24,7 +24,7 @@
     left: 0px;
     border-radius: 30px;
 }
-.reklama11 h1{
+.navbar-almaz__reklama__body1 h1{
      font-family: "Montserrat", sans-serif;
 font-size: 48px;
 font-weight: 600;
@@ -34,7 +34,7 @@ color: #242424;
 padding-left: 6%;
 margin-bottom: 25px;
 }
-.reklama11 a{
+.navbar-almaz__reklama__body1 a{
      font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -45,18 +45,18 @@ margin-bottom: 25px;
     padding-left: 6%;
    
 }
-.reklama21 {
+.navbar-almaz__reklama21 {
 width: 96%;
 background-color: black ;
 padding-top: 13%;
 border-radius: 30px;
 overflow: hidden;
 }
-.reklama21 a .bx-chevron-right{
+.navbar-almaz__reklama21 a .bx-chevron-right{
     position: relative;
     top: 3.5px;
 }
-.reklama21 h1{
+.navbar-almaz__reklama21 h1{
     padding-left: 6%;
 text-transform: uppercase;
 color: #FFF957;
@@ -68,7 +68,7 @@ text-align: left;
 margin-bottom: 25px;
 letter-spacing: -3px;
 }
-.reklama21 a{
+.navbar-almaz__reklama21 a{
      font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -78,7 +78,7 @@ letter-spacing: -3px;
     outline: none;
     padding-left: 6%;
 }
-.reklama21 p{
+.navbar-almaz__reklama21 p{
     width: 88%;
     margin: auto;
     color: white;
@@ -90,28 +90,28 @@ text-align: left;
 margin-top: 40px;
 letter-spacing: 1px;
 }
-.reklama21 .reklama21_image{
+.navbar-almaz__reklama21 .navbar-almaz__reklama21_image{
     position: relative;
 }
-.reklama21 .reklama21_image .ssss1{
+.navbar-almaz__reklama21 .navbar-almaz__reklama21_image .ssss1{
     width: 144%;
     scale: 1.3;
     position: relative;
     left: 4%;
 }
-.reklama21 .reklama21_image .ssss2{
+.navbar-almaz__reklama21 .navbar-almaz__reklama21_image .ssss2{
     width: 80%;
     position: absolute;
     bottom: -4px;
     left: 10%;
 }
-.reklama23{
+.navbar-almaz__reklama23{
     grid-column-start: 1;grid-column-end: 3;
           grid-row-start: 6;
           grid-row-end: 8;
           margin-top: -19px;
 }
-.reklama31{
+.navbar-almaz__reklama31{
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 10;
@@ -121,11 +121,11 @@ letter-spacing: 1px;
           margin-left: 10px;
     width: 101%;
 }
-.reklama31 a .bx-chevron-right{
+.navbar-almaz__reklama31 a .bx-chevron-right{
     position: relative;
     top: 3.5px;
 }
-.reklama31 img{
+.navbar-almaz__reklama31 img{
     position: absolute;
     width: 96%;
     z-index: -1;
@@ -134,7 +134,7 @@ letter-spacing: 1px;
     left: 0px;
     border-radius: 30px;
 }
-.reklama31 h1{
+.navbar-almaz__reklama31 h1{
      font-family: "Montserrat", sans-serif;
 font-size: 48px;
 font-weight: 600;
@@ -146,7 +146,7 @@ padding-top: 109%;
 margin-bottom: 25px;
 letter-spacing: -2px;
 }
-.reklama31 a{
+.navbar-almaz__reklama31 a{
      font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -194,7 +194,7 @@ text-align: left;
         padding-top: 88px !important;
     }
    @media (max-width:1430px){
-    .reklama11{
+    .navbar-almaz__reklama__body1{
         grid-column-start: 2;
         grid-column-end: 4;
               grid-row-start: 2;
@@ -203,7 +203,7 @@ text-align: left;
               top: -15px;
               left: 16px;
          
-    }.reklama31{
+    }.navbar-almaz__reklama31{
         grid-column-start: 2;
         grid-column-end: 4;
               grid-row-start: 10;
@@ -215,7 +215,7 @@ text-align: left;
     }
    }
    @media (max-width:1170px){
-    .reklama11{
+    .navbar-almaz__reklama__body1{
         grid-column-start: 1;
         grid-column-end: 3;
               grid-row-start: 2;
@@ -224,7 +224,7 @@ text-align: left;
               top: -15px;
               left: 16px;
          
-    }.reklama31{
+    }.navbar-almaz__reklama31{
         grid-column-start: 1;
         grid-column-end: 3;
               grid-row-start: 10;
@@ -236,7 +236,7 @@ text-align: left;
     }
    }
    @media (max-width:991px){
-    .reklama11{
+    .navbar-almaz__reklama__body1{
         grid-column-start: 2;
         grid-column-end: 4;
               grid-row-start: 2;
@@ -245,7 +245,7 @@ text-align: left;
               top: -15px;
               left: 16px;
          
-    }.reklama31{
+    }.navbar-almaz__reklama31{
         grid-column-start: 2;
         grid-column-end: 4;
               grid-row-start: 10;
@@ -264,7 +264,7 @@ text-align: left;
         display: none;
     }
    @media (max-width:910px){
-    .reklama11{
+    .navbar-almaz__reklama__body1{
         grid-column-start: 1;
         grid-column-end: 3;
               grid-row-start: 2;
@@ -286,7 +286,7 @@ text-align: left;
          border-radius: 8px;
          background-color: black;
     }
-    .reklama11 img{
+    .navbar-almaz__reklama__body1 img{
         width: 100%;
         height: auto;
 /* background-color: black; */
@@ -296,7 +296,7 @@ top: -200px;
 z-index: 0;
 border-radius: 8px;
     }
-    .reklama21 h1{
+    .navbar-almaz__reklama21 h1{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -308,7 +308,7 @@ color: white;
         display: none;
     }
  
-    .reklama11 h1{
+    .navbar-almaz__reklama__body1 h1{
         font-size: 18px;
         position: relative;
         z-index: 121;
@@ -316,13 +316,13 @@ color: white;
         padding: 0%;
         margin: 0%;
     }
-    .reklama11 a{
+    .navbar-almaz__reklama__body1 a{
         font-size: 14px;
         color: white;
         position: relative;
         z-index: 122;
     }
-    .reklama31{
+    .navbar-almaz__reklama31{
       
         display: none;
     }
@@ -334,7 +334,7 @@ color: white;
           
         display: flex;
     }
-    .reklama23{
+    .navbar-almaz__reklama23{
         display: none;
     }
     .clas_done{

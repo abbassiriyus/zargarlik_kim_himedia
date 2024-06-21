@@ -35,7 +35,7 @@ padding-top: 201px;
 }
 
 
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama{
+.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama{
     display: grid;
     grid-template-columns: 35fr 60fr;
     align-items: center;
@@ -44,7 +44,7 @@ padding-top: 201px;
     margin: auto;
     margin-top: 15.6%;
 }
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama .img_bonus_reklama{
+.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -56,12 +56,12 @@ background: #ECE4F2;
 box-shadow: 0px 12.82px 0px 0px #F3E2FF;
 
 }
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama .img_bonus_reklama img{
+.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama img{
     width: 80%;
     
 
 }
-.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama .text_bonus_reklama{
+.bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama{
     width:100%;
 height: 139.92px;
 background: #F4E7FFCF;
@@ -125,7 +125,7 @@ margin-top: -6px;
 margin-left: 10px;
  }
  @media(max-width:991px){
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama .text_bonus_reklama {
+    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama {
         font-size: 27px;
     }
     .bonus_big_div1 .bonus_main .bonus_header {
@@ -143,7 +143,7 @@ margin-left: 10px;
     } 
  }
  @media(max-width:700px){
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama .text_bonus_reklama {
+    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .text_bonus_navbar-almaz__reklama {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 700;
@@ -164,7 +164,7 @@ border-radius: 0px 13.26px 13.26px 0px;
     background-size: cover;
     background-position: 0px 0px;
     } 
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama {
+    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama {
         display: grid;
         grid-template-columns: 35fr 60fr;
         align-items: center;
@@ -194,7 +194,7 @@ border-radius: 0px 13.26px 13.26px 0px;
         text-align: left;
         color: #242424;
     }
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama .img_bonus_reklama {
+    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama {
        
 height: 51.56px;
 gap: 0px;
@@ -218,7 +218,7 @@ align-items: center;
         margin-left: 10px;
         letter-spacing: 0px;
     }
-    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_reklama .img_bonus_reklama {
+    .bonus_big_div1 .bonus_main .bonus_header .almaz_bonus_navbar-almaz__reklama .img_bonus_navbar-almaz__reklama {
         height: 51px;
         box-shadow: 0px 4.42px 0px 0px #F3E2FF;
 

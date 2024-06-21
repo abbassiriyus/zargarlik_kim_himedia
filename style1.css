@@ -1969,11 +1969,11 @@ text-align: left;
 }
 
 }
-.aksiya:hover{
+.navbar-almaz__pk__second__item__aksiya:hover{
     background-color: rgba(128, 128, 128, 0.123);
 
 }
-.aksiya{
+.navbar-almaz__pk__second__item__aksiya{
    padding: 10px 4px;
     border-radius: 6px;
     transition: 1s;
@@ -1983,11 +1983,11 @@ text-align: left;
     cursor: pointer;
 
 }
-.aksiya1:hover{
+.navbar-almaz__pk__second__item__kredit:hover{
     background-color: rgba(128, 128, 128, 0.123);
 
 }
-.aksiya1{
+.navbar-almaz__pk__second__item__kredit{
    padding: 10px 4px;
     border-radius: 6px;
     transition: 1s;
@@ -2028,7 +2028,7 @@ text-align: left;
     .none_btn_1{
         display: none;
     }
-    .nav2 .new_two_class{
+    .navbar-almaz__mobile .new_two_class{
         display: flex;
         justify-content: center;
         width: 95%;

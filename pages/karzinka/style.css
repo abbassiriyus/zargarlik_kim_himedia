@@ -43,7 +43,7 @@ border-bottom: 5px solid white !important;
     position: relative;
     top: -8px;
 }
-.karzinka .nav2{
+.karzinka .navbar-almaz__mobile{
     box-shadow: none !important;
     position: relative;
     z-index: 1;
@@ -437,7 +437,7 @@ align-items: center;
     position: relative;
     margin-left: 10px;
 }
-.body_karzinka .app_prod .skitka_karzinka1 .reklamapage{
+.body_karzinka .app_prod .skitka_karzinka1 .navbar-almaz__reklamapage{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
