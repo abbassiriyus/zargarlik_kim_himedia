@@ -18,25 +18,25 @@
     height: 500px !important;
     margin-top: 55px !important;
 }
-.minimal{
+.minimal__four-card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.minimal{
+.minimal__four-card{
     width: 95%;
     max-width: 1440px;
     margin: auto;
     gap: 20px;
     margin-top: 66px;
 }
-.minimal .rosp{
+.minimal__four-card .minimal_card-one{
     text-align: center;
 }
-.minimal .rosp img{
+.minimal__four-card .minimal_card-one img{
     margin-bottom: 7px;
     width: 100%;
  }
-.minimal .rosp span{
+.minimal__four-card .minimal_card-one span{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 500;
@@ -47,10 +47,10 @@ width: 90%;
 margin: auto;
 text-decoration: underline;
 }
-.kulon{
+.product__card{
     margin-top: 20px;
 }
-.kulonic{
+.product__in{
     display: grid;
     grid-template-columns: 462px 462px 462px;
     width: 95%;
@@ -58,7 +58,7 @@ text-decoration: underline;
     max-width: 1440px;
     margin: auto;
 }
-.kulontitle{
+.product-in__title{
     background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
     width: 100%;
     height: 462px;
@@ -67,7 +67,7 @@ text-decoration: underline;
     background-position: center;
     position: relative;
 }
-.kulontitle span{
+.product-in__title span{
     position: absolute;
     bottom: 23px;
     left: 186px;
@@ -131,7 +131,7 @@ color: #242424;
     background: grey !important;
 }
 
-.work12 {
+.product_main-page {
     width: 95%;
     max-width: 1440px;
     margin: auto;
@@ -140,7 +140,7 @@ color: #242424;
     margin-top: 30px;
     justify-content: center;
   }
-  .work12  .work_one {
+  .product_main-page  .one_product_main-page {
     width: 100%;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@ color: #242424;
     gap: 27px;
   }
   
-  .work12 .box_one {
+  .product_main-page .one_box-card_body {
       width: 100%;
       height: 462px;
     display: flex;
@@ -158,7 +158,7 @@ color: #242424;
     flex-direction: column;
   }
   
-  .work12 .card_one {
+  .product_main-page .card_one-product {
     width: 100%;
     height: 218px;
     display: flex;
@@ -171,7 +171,7 @@ color: #242424;
     background-position: right;
   }
   
-  .work12 .card_one h1{
+  .product_main-page .card_one-product h1{
       font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -180,7 +180,7 @@ color: #242424;
   padding-left: 29px;
   }
   
-  .work12 .card_two {
+  .product_main-page .card_two-product {
       width: 100%;
       height: 218px;
       display: flex;
@@ -193,7 +193,7 @@ color: #242424;
       background-position: right;
     }
     
-    .work12 .card_two h1{
+    .product_main-page .card_two-product h1{
         font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -202,7 +202,7 @@ color: #242424;
     padding-left: 29px;
     }
   
-    .work12 .box_two {
+    .product_main-page .two_box-card_body {
       width: 100%px;
       height: 462px;
       display: flex;
@@ -212,7 +212,7 @@ color: #242424;
       flex-direction: column;
     }
   
-    .work12 .card_none {
+    .product_main-page .card_none {
       width: 100%;
       height: 144px;
       display: flex;
@@ -225,7 +225,7 @@ color: #242424;
       background-position: right;
     }
   
-    .work12 .card_thee {
+    .product_main-page .card_three-product {
       width: 100%;
       height: 144px;
       display: flex;
@@ -238,7 +238,7 @@ color: #242424;
       background-position: right;
     }
     
-    .work12 .card_thee h1{
+    .product_main-page .card_three-product h1{
         font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -246,7 +246,7 @@ color: #242424;
     text-align: center;
     }
   
-    .work12 .card_four {
+    .product_main-page .card_four-product {
       width: 100%;
       height: 144px;
       display: flex;
@@ -259,7 +259,7 @@ color: #242424;
       background-position: right;
     }
     
-    .work12 .card_four h1{
+    .product_main-page .card_four-product h1{
         font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -267,7 +267,7 @@ color: #242424;
     text-align: center;
     }
   
-    .work12 .card_none2 {
+    .product_main-page .card_none2 {
       width: 100%;
       height: 144px;
       display: flex;
@@ -280,7 +280,7 @@ color: #242424;
       background-position: right;
     }
   
-    .work12 .card_none1 {
+    .product_main-page .card_none1 {
       width: 100%;
       height: 144px;
       display: flex;
@@ -293,7 +293,7 @@ color: #242424;
       background-position: left;
     }
   
-    .work12  .card_five {
+    .product_main-page  .card_five-product {
       width: 462px;
       height: 144px;
       display: flex;
@@ -306,7 +306,7 @@ color: #242424;
       background-position: right;
     }
     
-    .work12 .card_five h1{
+    .product_main-page .card_five-product h1{
         font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -315,7 +315,7 @@ color: #242424;
     }
   
   
-    .work12 .box_three {
+    .product_main-page .three_box-card_body {
       width: 100%;
       height: 462px;
       display: flex;
@@ -324,7 +324,7 @@ color: #242424;
       flex-direction: column;
     }
   
-    .work12 .card_six {
+    .product_main-page .card_six-product {
       width:100%;
       height: 462px;
       display: flex;
@@ -335,7 +335,7 @@ color: #242424;
       background-image: url('/image/267933_hotspot\ 1.png');
       background-repeat: no-repeat;
     }
-    .work12 .card_six h1{
+    .product_main-page .card_six-product h1{
       font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -511,7 +511,7 @@ text-transform: uppercase;
 
 
 
-.podvec{
+.swiper-slide__body{
     width: 270px;
     height: 359px;
     /* background-color: rgb(0, 140, 255); */
@@ -520,13 +520,13 @@ text-transform: uppercase;
     position: relative;
 }
 
-.linie{
+.body-img__line{
     width: 100%;
     height: 2px ;
     background-color: #DCE1E7;
     margin-top: 37px;
 }
-.podimg{
+.new-product__body-img{
     background:url('/image/image\ 2\ \(1\).png') no-repeat;
     height: 300px;
     background-size: cover;
@@ -536,13 +536,13 @@ text-transform: uppercase;
     height: 184px;
 
 }
-.skidok{
+.new-product_slide__discount{
     display: flex;
     justify-content: space-between;
     margin-top: 39px;
 
 }
-.skidok h1{
+.new-product_slide__discount h1{
     font-family: Jost;
 font-size: 22px;
 font-weight: 600;
@@ -552,7 +552,7 @@ color: #F32B2A;
  
 gap: 10px;
 }
-.skidok h1 del{
+.new-product_slide__discount h1 del{
     font-family: Jost;
 font-size: 16px;
 font-weight: 400;
@@ -560,7 +560,7 @@ line-height: 20px;
 text-align: left;
 color: black;
 }
-.skidok span{
+.new-product_slide__discount span{
     font-family: Jost;
 font-size: 14px;
 font-weight: 600;
@@ -568,7 +568,7 @@ line-height: 20px;
 text-align: left;
 color: #F32B2A;
 }
-.ser{
+.new-product_slide__title{
     font-family: Jost;
 font-size: 14px;
 font-weight: 400;
@@ -576,7 +576,7 @@ line-height: 18px;
 text-align: start !important;
 
 }
-.novv{
+.swiper-slide__new-product__title{
     width: 72px;
     height: 20px;
     border-radius: 2px;
@@ -587,21 +587,21 @@ text-align: start !important;
     justify-content: center;
     align-items: center;
 }
-.novv span{
+.swiper-slide__new-product__title span{
     font-family: Jost;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
     
 }
-.novin{
+.swiper-slide__new-product{
     position: absolute;
     right: 0px;
     top: 0px;
    
 }
 
-.now{
+.sale_new-product{
     width: 55px;
 height: 20px;
 padding: 0px 5px 0px 5px;
@@ -612,7 +612,7 @@ justify-content: center;
 align-items: center;
 margin-left: 17px;
 }
-.now span{
+.sale_new-product span{
     font-family: Jost;
 font-size: 12px;
 font-weight: 600;
@@ -621,7 +621,7 @@ display: flex;
 align-items: center;
 color: white;
 }
-.now span p{
+.sale_new-product span p{
     margin-bottom: 0px !important;
 }
 
@@ -631,13 +631,13 @@ color: white;
     margin: auto;
     margin-top: 35px;
 }
-.posm{
+.look__title{
     width: 95%;
     max-width: 1440px;
     margin: auto;
     margin-top: 60px;
 }
-.posm h1{
+.look__title h1{
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 600;
@@ -645,7 +645,7 @@ line-height: 26px;
 text-align: left;
 text-transform: uppercase;
 }
-.posm span{
+.look__title span{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -685,7 +685,7 @@ align-items: end;
     align-items: center;
     background: #FAD244;
 }
-.novv{
+.swiper-slide__new-product__title{
     width: 72px;
     height: 20px;
     border-radius: 2px;
@@ -701,7 +701,7 @@ align-items: end;
     line-height: 20px;
     
 }
-.sale0{
+.yellow-sale__banner{
     width: 95%;
     max-width: 1440px;
     margin: auto;
@@ -714,7 +714,7 @@ align-items: end;
     justify-content: center;
     border-radius: 7px;
 }
-.sale0_textt h1{
+.yellow-sale__banner-text h1{
     font-family: Montserrat;
     font-size: 22px;
     font-weight: 600;
@@ -722,11 +722,11 @@ align-items: end;
     text-align: left;
     color: #242424;    
 }
-.sale0_textt{
+.yellow-sale__banner-text{
     padding-left: 21%;
     margin-top: -10px;
 }
-.raw{
+.banner-input{
     box-shadow: 0px 5px 20px 0px #999537;
     width: 485px;
     height: 50px;
@@ -738,14 +738,14 @@ align-items: end;
     top: 11px;
     background-color: white;
 }
-.raw input{
+.banner-input input{
     width: 90%;
     margin: auto;
     border: none;
     outline: none;
     background-color: #24242400;
 }
-.raw_img{
+.banner-input__img{
     margin-left: -62px;
 }
 .line_guarantee{
@@ -769,7 +769,7 @@ margin: auto;
 position: relative;
 top: -13px;
 }
-.udobn{
+.four-yellow__cards{
     display: grid;
     grid-template-columns: 340px 340px 340px 340px;
     width: 95%;
@@ -778,10 +778,10 @@ top: -13px;
     margin-top: 90px;
     gap: 25px;
 }
-.rinic img{
+.yellow_card-in img{
     margin-bottom: -9px;
 }
-.rinic span{
+.yellow_card-in span{
     font-family: Montserrat;
 font-size: 24px;
 font-weight: 500;
@@ -789,7 +789,7 @@ line-height: 29.26px;
 text-align: center;
 color: #242424;
 }
-.rink{
+.one-yellow__card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -840,7 +840,7 @@ color: #242424;
     font-weight: 700;
 }
 @media (max-width:1500px) {
-    .kulonic{
+    .product__in{
         display: grid;
         grid-template-columns: 462px 462px 462px;
         width: 95%;
@@ -848,7 +848,7 @@ color: #242424;
         max-width: 1440px;
         margin: auto;
     }
-    .kulontitle{
+    .product-in__title{
         background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
         width: 90%;
         height: 402px;
@@ -876,7 +876,7 @@ color: #242424;
     }
 }
 @media (max-width:1440px) {
-    .kulonic{
+    .product__in{
         display: grid;
         grid-template-columns: 362px 362px 362px;
         width: 95%;
@@ -885,7 +885,7 @@ color: #242424;
         justify-content: space-around;
         margin: auto;
     }
-    .kulontitle{
+    .product-in__title{
         background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
         width: 100%;
         height: 302px;
@@ -894,7 +894,7 @@ color: #242424;
         background-position: center;
         position: relative;
     }
-    .kulontitle span{
+    .product-in__title span{
         left: 141px;
     }
     .kulontitle1 span{
@@ -922,7 +922,7 @@ color: #242424;
     }
 }
 @media (max-width:1440px) {
-    .kulonic{
+    .product__in{
         display: grid;
         grid-template-columns: 300px 300px 300px;
         width: 95%;
@@ -931,7 +931,7 @@ color: #242424;
         justify-content: space-around;
         margin: auto;
     }
-    .kulontitle{
+    .product-in__title{
         background: url('/image/Снимок\ экрана\ 2024-06-04\ 142441.png') no-repeat;
         width: 100%;
         height: 302px;
@@ -957,11 +957,11 @@ color: #242424;
         background-position: center;
         position: relative;
     }
-    .kulontitle span,.kulontitle1 span,.kulonfilter-page__title-second span{
+    .product-in__title span,.kulontitle1 span,.kulonfilter-page__title-second span{
         left: 120px;
     }
 }
-.kol_skid{
+.kol-skid__media{
  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -975,21 +975,21 @@ color: #242424;
      /* margin-top: 50px; */
 }
 @media (max-width:1100px) {
-    .work12{
+    .product_main-page{
         display: none;
     }
 }
 @media (max-width:991px) {
-    .minimal{
+    .minimal__four-card{
         display: none;
     }
-    .kulon{
+    .product__card{
         display: none;
     }
-    .kol_skid{
+    .kol-skid__media{
         display: grid;
     }
-    .posm{
+    .look__title{
         display: none;
     }
     .mySwiper0{
@@ -1214,7 +1214,7 @@ color: #FDD335;
 
 }
 @media (max-width:600px) {
-    .kol_skid{
+    .kol-skid__media{
  
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1290,7 +1290,7 @@ color: #FDD335;
         overflow: hidden;
         margin-bottom: 5px;
     }
-    .kol_skid{
+    .kol-skid__media{
         gap: 0px;
     }
     .pro1{
@@ -1450,7 +1450,7 @@ text-align: left;
 
 }
 
-.padicccc{
+.swip_title_media{
     padding: 10px;
 }
 @media (max-width:991px) {
@@ -1552,10 +1552,10 @@ line-height: 20.23px;
 text-align: left;
 color: #242424;
     }
-    .padicccc{
+    .swip_title_media{
         padding: 0px;
     }
-    .padicccc h3{
+    .swip_title_media h3{
         font-family: Montserrat;
 font-size: 10.57px;
 font-weight: 600;
@@ -1566,7 +1566,7 @@ position: relative;
 top: 2px;
 left: 3px;
     }
-    .padicccc h3 del{
+    .swip_title_media h3 del{
         font-family: Jost;
 font-size: 9.4px;
 font-weight: 400;
@@ -1636,22 +1636,22 @@ text-align: left;
  
 }
 @media (max-width:1316px) {
-    .sale0_textt{
+    .yellow-sale__banner-text{
         padding: 40px;
     }
-    .raw_img{
+    .banner-input__img{
         width:89%;
         margin-left: 0px;
     }
 }
 @media (max-width:1040px) {
-    .sale0_textt h1{
+    .yellow-sale__banner-text h1{
         font-size: 20px;
     }
 }
 
 @media (max-width:991px) {
- .sale0{
+ .yellow-sale__banner{
     display: none !important;
  }
 }
@@ -1661,7 +1661,7 @@ text-align: left;
 
 
 @media (max-width:1500px) {
-    .udobn{
+    .four-yellow__cards{
         display: grid;
         grid-template-columns: 290px 290px 290px 290px;
         width: 95%;
@@ -1671,7 +1671,7 @@ text-align: left;
         margin-top: 60px;
         gap: 25px;
     }
-    .rink{
+    .one-yellow__card{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1682,7 +1682,7 @@ text-align: left;
     }
 }
 @media (max-width:1300px) {
-    .udobn{
+    .four-yellow__cards{
         display: grid;
         grid-template-columns: 270px 270px 270px 270px;
         width: 95%;
@@ -1692,7 +1692,7 @@ text-align: left;
         margin-top: 60px;
         gap: 25px;
     }
-    .rink{
+    .one-yellow__card{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1701,12 +1701,12 @@ text-align: left;
         height: 230px;
         border-radius: 16px;
     }
-    .rinic span{
+    .yellow_card-in span{
         font-size: 18px;
     }
 }
 @media (max-width:1200px) {
-    .udobn{
+    .four-yellow__cards{
         display: grid;
         grid-template-columns: 250px 250px 250px 250px;
         width: 95%;
@@ -1716,7 +1716,7 @@ text-align: left;
         margin-top: 60px;
         gap: 25px;
     }
-    .rink{
+    .one-yellow__card{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1725,12 +1725,12 @@ text-align: left;
         height: 200px;
         border-radius: 16px;
     }
-    .rinic span{
+    .yellow_card-in span{
         font-size: 18px;
     }
 }
 @media (max-width:1120px) {
-    .udobn{
+    .four-yellow__cards{
         display: grid;
         grid-template-columns: 220px 220px 220px 220px;
         width: 95%;
@@ -1740,7 +1740,7 @@ text-align: left;
         margin-top: 60px;
         gap: 25px;
     }
-    .rink{
+    .one-yellow__card{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1749,12 +1749,12 @@ text-align: left;
         height: 200px;
         border-radius: 16px;
     }
-    .rinic span{
+    .yellow_card-in span{
         font-size: 18px;
     }
 }
 @media (max-width:991px) {
-    .udobn{
+    .four-yellow__cards{
         display: none;
     }
     .line_guarantee{

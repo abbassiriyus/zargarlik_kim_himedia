@@ -204,7 +204,7 @@ gap: 36px;
     left: -2px;
 
 }
-.slider_one2 .cards_one2 .card_one2{
+.slider_one2 .cards_one2 .card_one-product2{
     box-shadow: 0px 0px 15px 0px #0000001A;
 min-height: 315px;
 border-radius: 12px;
@@ -218,7 +218,7 @@ width: 227px;
 
 margin: auto;margin-bottom: -3px;
 }
-.slider_one2 .cards_one2 .card_one2 p{
+.slider_one2 .cards_one2 .card_one-product2 p{
 width: 87%;
 margin: auto;
 }
@@ -249,7 +249,7 @@ margin: auto;
 border-radius: 50% !important;
 background: #242424 !important;
   }
-.slider_one3 .card_one4 .swiper-slide img{
+.slider_one3 .card_one-product4 .swiper-slide img{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -257,7 +257,7 @@ line-height: 14.63px;
 text-align: left;
 
 }
-  .slider_one3 .card_one4 .swiper-slide{
+  .slider_one3 .card_one-product4 .swiper-slide{
     min-height: 213px;
   }
   .price_one4 .swiper-slide{
@@ -265,14 +265,14 @@ text-align: left;
     height: 200px !important;
     font-size: 10px;
   }
-  .slider_one3 .card_one4 .swiper-pagination-bullet {
+  .slider_one3 .card_one-product4 .swiper-pagination-bullet {
     border-radius: 0px !important;
     transform: rotate(0deg) !important;
     width: 50.25px;
     height: 3px;
     gap: 0px;  
   }
-  .slider_one3 .card_one4 p{
+  .slider_one3 .card_one-product4 p{
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
