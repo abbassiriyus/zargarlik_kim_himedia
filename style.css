@@ -67,7 +67,7 @@ text-align: left;
     left: 0px; 
     margin-top: -10px;
 }
-.pagerout_pk{
+.catalog_route_page{
     display: flex;
     gap: 7px;
     width: 95%;
@@ -78,7 +78,7 @@ text-align: left;
     align-items: center;
 margin-top:53px !important;
 }
-.pagerout_pk img{
+.catalog_route_page img{
 width: 25px;
 height: 25px;
 
@@ -99,12 +99,12 @@ opacity: 0px;
  font-size: 12px;
  margin-top: 4px;
 }
-.pagerout_pk i{
+.catalog_route_page i{
 font-size: 24px;
 color: #808080;
 font-weight: 400x;
 }
-.pagerout_pk span{
+.catalog_route_page span{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -113,7 +113,7 @@ font-weight: 400x;
     
 }
 
-.titlepage{
+.catalog_title__page{
     display: flex;
     align-items: center ;
      max-width: 1440px;
@@ -122,7 +122,7 @@ font-weight: 400x;
     gap: 20px;
     width: 95%;
 }
-.titlepage h1{
+.catalog_title__page h1{
     font-family: Montserrat;
     font-size: 28px;
     font-weight: 600;
@@ -130,7 +130,7 @@ font-weight: 400x;
     text-align: left;
     color: black;
 }
-.titlepage p{
+.catalog_title__page p{
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
@@ -297,7 +297,7 @@ line-height: 29.26px;
 margin-top: 5px;
 margin-right: 2px;
   }
-  .main_card .cards .card1 .del_price{
+  .main_card .cards .card1 .catalog__card__del__price{
 display: flex;
 gap: 10px;
 align-items: center;
@@ -305,14 +305,14 @@ color: grey;
 justify-content: center;
 
   }
-  .main_card .cards .card1 .del_price del{
+  .main_card .cards .card1 .catalog__card__del__price del{
     font-family: "Montserrat", sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 19.5px;
 text-align: left;
   }
-  .main_card .cards .card1 .del_price span{
+  .main_card .cards .card1 .catalog__card__del__price span{
     font-family: "Montserrat", sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -366,8 +366,8 @@ transition: 1s;
         margin: auto;
         margin-top: 20px
     }
-    .pagerout_pk{display: none;}
-    .titlepage{
+    .catalog_route_page{display: none;}
+    .catalog_title__page{
         display: none;
     }
 }
@@ -438,14 +438,14 @@ transition: 1s;
         margin-top: 7px;
         margin-right: 10px;
     }
-    .main_card .cards .card1 .del_price del{
+    .main_card .cards .card1 .catalog__card__del__price del{
         font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 19.5px;
     text-align: left;
       }
-      .main_card .cards .card1 .del_price span{
+      .main_card .cards .card1 .catalog__card__del__price span{
         font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -453,7 +453,7 @@ transition: 1s;
     text-align: left;
     color: #EC5D5D;
       }
-      .main_card .cards .card1 .del_price{
+      .main_card .cards .card1 .catalog__card__del__price{
         display: flex;
         gap: 15px;
         align-items: center;
