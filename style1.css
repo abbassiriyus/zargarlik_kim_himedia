@@ -1444,7 +1444,7 @@ line-height: 17.07px;
 text-align: center;
 
     }
-    .son1{
+    .pagnation-number{
         margin-top: 9px;
     }
     .pagerout_mobile1{
@@ -1452,10 +1452,10 @@ text-align: center;
         margin-top: 38px;
         /* margin-left: 0px; */
     }
-    .son2 .bx-chevron-left{
+    .pagnation-arrow .bx-chevron-left{
         font-size: 30px;
     }
-    .son2 .bx-chevron-right{
+    .pagnation-arrow .bx-chevron-right{
         font-size: 30px;
     }
     .balloon{
@@ -1467,18 +1467,18 @@ text-align: center;
         height: 50px;
         border-radius: 8px;
     }
-    .footer-1 .cards2 .card2{
+    .top_quation .cards2 .card2{
         margin-top: -17px;
         gap: 26px;
     }
-    .footer-1 .cards2 .card2_text p{
+    .top_quation .cards2 .card2_text p{
         margin-top: -3px;
     }
-    .footer-1 .cards2 .card2 .card2_text h3 {
+    .top_quation .cards2 .card2 .card2_text h3 {
         position: relative;
         top: 10px;
     }
-    .footer-1 .cards2 .card2 img {
+    .top_quation .cards2 .card2 img {
         margin-left: 12px;
     }
     .mod{
@@ -1504,7 +1504,7 @@ margin: auto;
         border-bottom: none !important;
         /* height: 53px; */
     }
-    .footer-1 .h31 {
+    .top_quation .h31 {
         font-family: Montserrat;
         font-size: 29px;
         font-weight: 700;
@@ -1512,7 +1512,7 @@ margin: auto;
         margin-top: 22px;
         text-align: center;
     }
-    .footer-1 h1{
+    .top_quation h1{
         font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -1996,7 +1996,7 @@ text-align: left;
     justify-content: center;
     align-items: center;
 }
-.application{
+.footer__mobile-application{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
@@ -2058,18 +2058,18 @@ text-align: left;
         display: block;
     }
 }
-/* .footer-1  */
+/* .top_quation  */
 /* .footer_mobile__version */
-.footer-1 .accordion,.footer_mobile__version .accordion{
+.top_quation .accordion,.footer_mobile__version .accordion{
     --bs-accordion-btn-focus-box-shadow:none !important;
     --bs-accordion-border-width:0px !important;
     border-radius: 0px !important;
     --bs-accordion-border-radius:0px !important
 }
-.footer-1 .accordion-item, .footer_mobile__version .accordion-item{
+.top_quation .accordion-item, .footer_mobile__version .accordion-item{
     border-bottom: 1px solid #E6E6E6 !important
 }
-.footer-1 .accordion-button{
+.top_quation .accordion-button{
     height: 50px;
 }
 .footer_mobile__version{
