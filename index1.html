@@ -122,9 +122,8 @@
           font-size: 12px;
           border: none;
           outline: none;
-        }
-
-        .range_container input[type="number"]::placeholder {
+        } 
+         .range_container input[type="number"]::placeholder {
           color: red !important;
           width: 50px;
           height: 30px;
@@ -423,8 +422,7 @@ background:
 
     </div>
     <hr>
-  </div>
-
+  </div>  
   <div class="navbar-almaz">
     <div class="navbar-almaz__reklama">
       <div class="navbar-almaz__reklama__body">
@@ -442,55 +440,51 @@ background:
     <nav class="navbar-almaz__pk">
       <div style="margin-top: 20px;" class="navbar-almaz__pk__first">
         <ul class="navbar-almaz__pk__first_nav-items">
-         
-          <a href="./pages/oneproduct/map.html"> <li >Магазины</li></a>
-          <li>Доставка и оплата</li>
-          <li>Скупка и обмен</li>
-          <li><i class='bx bx-map-pin'></i> Выбор города</li>
+      <a href="/pages/oneproduct/map.html"><li>Магазины</li></a>
+      <li onclick="window.location='/pages/karzinka/index.html'">Доставка и оплата</li>
+          <li onclick="window.location='/pages/obmen/obmen.html'">Скупка и обмен</li>
+          <li onclick="window.location='/pages/oneproduct/map.html'"><i class='bx bx-map-pin'></i> Выбор города</li>
         </ul>
         <div class="almaz-logo">
-          <a href="./index.html"> <img  src="/image/Group 3.svg" alt=""></a>
+         <a href="/index.html"> <img  src="/image/Group 3.svg" alt=""></a>
         </div>
         <ul class="navbar-almaz__pk__first__nav-items__second">
           <li class="navbar-almaz__pk__first_phone">+7 343 2664070</li>
-          <li class="navbar-pk__icon_link">
-            <div class="navbar-pk__icon"><img src="./image/Vector (1).svg" alt="">
+          <li onclick="window.location='/pages/glavniy_kirish/saved.html'" class="navbar-pk__icon_link">
+            <div class="navbar-pk__icon"><img src="/image/Vector (1).svg" alt="">
               <div class="navbar-pk__icon_number">12</div>
             </div><span>Избранное</span>
           </li>
-          <li class="navbar-pk__icon_link">
-            <div class="navbar-pk__icon"><img src="./image/icon_basket 1.svg" alt="">
+          <li onclick="document.querySelector('.modal_cart').style='display:flex'" class="navbar-pk__icon_link">
+            <div class="navbar-pk__icon"><img src="/image/icon_basket 1.svg" alt="">
               <div class="navbar-pk__icon_number">12</div>
             </div> <span>Корзина</span>
           </li>
-          <li class="navbar-pk__icon_link">
-            <div class="navbar-pk__icon"><img src="./image/Vector (2).svg
+          <li onclick="window.location='/pages/glavniy_kirish/login.html'" class="navbar-pk__icon_link">
+            <div class="navbar-pk__icon"><img src="/image/Vector (2).svg
             " alt=""> </div><span>Войти </span>
           </li>
         </ul>
       </div>
       <div class="navbar-almaz__pk__second">
-        <button><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1.33325 3.99668C1.33325 3.63001 1.63059 3.33334 1.99659 3.33334H7.33659C7.51251 3.33334 7.68123 3.40323 7.80563 3.52763C7.93003 3.65203 7.99992 3.82075 7.99992 3.99668C7.99992 4.1726 7.93003 4.34133 7.80563 4.46572C7.68123 4.59012 7.51251 4.66001 7.33659 4.66001H1.99659C1.82066 4.66001 1.65194 4.59012 1.52754 4.46572C1.40314 4.34133 1.33325 4.1726 1.33325 3.99668ZM1.33325 8.00001C1.33325 7.63334 1.63059 7.33668 1.99659 7.33668H14.0033C14.1792 7.33668 14.3479 7.40656 14.4723 7.53096C14.5967 7.65536 14.6666 7.82408 14.6666 8.00001C14.6666 8.17594 14.5967 8.34466 14.4723 8.46906C14.3479 8.59346 14.1792 8.66334 14.0033 8.66334H1.99659C1.82066 8.66334 1.65194 8.59346 1.52754 8.46906C1.40314 8.34466 1.33325 8.17594 1.33325 8.00001ZM1.99659 11.34C1.82066 11.34 1.65194 11.4099 1.52754 11.5343C1.40314 11.6587 1.33325 11.8274 1.33325 12.0033C1.33325 12.1793 1.40314 12.348 1.52754 12.4724C1.65194 12.5968 1.82066 12.6667 1.99659 12.6667H10.0033C10.1792 12.6667 10.3479 12.5968 10.4723 12.4724C10.5967 12.348 10.6666 12.1793 10.6666 12.0033C10.6666 11.8274 10.5967 11.6587 10.4723 11.5343C10.3479 11.4099 10.1792 11.34 10.0033 11.34H1.99659Z"
-              fill="white" />
+        <button onclick="window.location='/index1.html'"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.33325 3.99668C1.33325 3.63001 1.63059 3.33334 1.99659 3.33334H7.33659C7.51251 3.33334 7.68123 3.40323 7.80563 3.52763C7.93003 3.65203 7.99992 3.82075 7.99992 3.99668C7.99992 4.1726 7.93003 4.34133 7.80563 4.46572C7.68123 4.59012 7.51251 4.66001 7.33659 4.66001H1.99659C1.82066 4.66001 1.65194 4.59012 1.52754 4.46572C1.40314 4.34133 1.33325 4.1726 1.33325 3.99668ZM1.33325 8.00001C1.33325 7.63334 1.63059 7.33668 1.99659 7.33668H14.0033C14.1792 7.33668 14.3479 7.40656 14.4723 7.53096C14.5967 7.65536 14.6666 7.82408 14.6666 8.00001C14.6666 8.17594 14.5967 8.34466 14.4723 8.46906C14.3479 8.59346 14.1792 8.66334 14.0033 8.66334H1.99659C1.82066 8.66334 1.65194 8.59346 1.52754 8.46906C1.40314 8.34466 1.33325 8.17594 1.33325 8.00001ZM1.99659 11.34C1.82066 11.34 1.65194 11.4099 1.52754 11.5343C1.40314 11.6587 1.33325 11.8274 1.33325 12.0033C1.33325 12.1793 1.40314 12.348 1.52754 12.4724C1.65194 12.5968 1.82066 12.6667 1.99659 12.6667H10.0033C10.1792 12.6667 10.3479 12.5968 10.4723 12.4724C10.5967 12.348 10.6666 12.1793 10.6666 12.0033C10.6666 11.8274 10.5967 11.6587 10.4723 11.5343C10.3479 11.4099 10.1792 11.34 10.0033 11.34H1.99659Z" fill="white"/>
           </svg> <span>Каталог</span></button>
         <div class="navbar-almaz__pk__second_item">
-          <h4>КОЛЛЕКЦИИ</h4><img style="width: 40px;transform: rotate(36.24deg);"
-            src="./image/Screenshot_from_2024-05-30_20-21-27-removebg-preview.png" alt="">
+          <h4>КОЛЛЕКЦИИ</h4><img style="width: 40px;transform: rotate(36.24deg);" src="/image/Screenshot_from_2024-05-30_20-21-27-removebg-preview.png"
+            alt="">
         </div>
         <div class="navbar-almaz__pk__second_search">
           <i class='bx bx-search'></i>
           <input placeholder="Поиск по каталогу" type="text">
-          <img src="./image/SV2G.png" alt="">
+          <img src="/image/SV2G.png" alt="">
         </div>
         <div class="navbar-almaz__pk__second_item">
           <h4>PREMIUM</h4>
-          <img style="width: 40px;transform: rotate(36.24deg);"
-            src="./image/Screenshot_from_2024-05-30_20-23-13-removebg-preview.png" alt="">
+          <img style="width: 40px;transform: rotate(36.24deg);" src="/image/Screenshot_from_2024-05-30_20-23-13-removebg-preview.png" alt="">
         </div>
-        <h4 class="navbar-almaz__pk__second__item__aksiya">Акции</h4>
-        <h4 class="navbar-almaz__pk__second__item__kredit">Рассрочки и кредит</h4>
+        <h4 onclick="window.location='/pages/aksiya/index1.html'" class="navbar-almaz__pk__second__item__aksiya">Акции</h4>
+        <h4 onclick="window.location='/pages/kredit/kredit.html'" class="navbar-almaz__pk__second__item__kredit">Рассрочки и кредит</h4>
       </div>
     </nav>
     <nav class="navbar-almaz__mobile">
@@ -513,27 +507,168 @@ background:
         </div>
       </div>
       <div class="navbar-almaz__mobile__second">
-        <div class="almaz-logo"><img src="./image/Group 3.svg" alt="3"></div>
+        <div class="almaz-logo"><img src="/image/Group 3.svg" alt="3"></div>
         <button
           onclick="document.querySelector('.filter-page').style='display: block;';document.querySelector('body').style='overflow:hidden'"><img
-            src="./image/Vector78.svg" alt=""> Фильтры</button>
+            src="/image/Vector78.svg" alt=""> Фильтры</button>
 
       </div>
-
+     
 
       <div onclick="document.querySelector('.get_product').style='display:flex'" class="router">
         <p>По популярности <i class='bx bx-chevron-right'></i></p>
       </div>
       <main class="pagerout_pk">
-        <img src="./image/Link → SVG.svg" alt="">
+        <img src="/image/Link → SVG.svg" alt="">
         <i class='bx bxs-chevron-right'></i>
         <span>Ювелирные украшения</span>
         <i class='bx bxs-chevron-right'></i>
         <span style="color: black;">Кольца</span>
       </main>
-
+    
     </nav>
   </div>
+          <div class="modal_cart">
+            <div class="modal_cart__body">
+              <div class="modal-cart__white">
+                <div class="modal-cart__tovar">
+                 <div class="modal-cart__title">
+                  <h2>Товар добавлен в корзину</h2>
+                  <div class="cart-title_href">
+                   <span>Товар добавлен в корзину</span>
+                    <i onclick="document.querySelector('.modal_cart').style='display:none'" class='bx bx-x'></i>
+                  </div>
+                 </div>
+                 <div class="cart__one-product">
+                  <div class=" one-product__image">
+    <img src="/image/5-2964-103-1Б 1.png" alt="">
+                  </div>
+                  <div class="cart_oneproduct___title">
+                   <div class="title__center">
+                    <h3>Кольцо 5-1182-103-1Б Au 585</h3>
+                    <p>Размер: 16.5</p>
+                   </div>
+                  </div>
+    
+                  <div class="gap"></div>
+    
+    
+                  <div class="one-product__plus-minus">
+                    <div class="one-product_plus-minus__btn ">
+                      <div class="minus__btn"><p><i class='bx bx-minus' ></i></p></div>
+                      <span>1</span>
+                      <div class="minus__btn"><p>+</p></div>
+                    </div>
+    
+                  </div>
+                  <div class="one-product__price">
+                    <div class= "one-product__price_del_p">
+                    <h3>33 095 ₽</h3>
+                      <del>77 862 ₽</del>
+                    </div>
+                  </div>
+                 </div>
+    
+                 <div class="recommendation_for_you">
+                  <h2>Рекомендации для вас</h2>
+    
+                  <div class="ring_big__card">
+                    <div class="one-ring__card">
+                     <div class="one-ring_card__img">
+                      <i class='bx bx-heart'></i>
+                      <img src="/image/5-2964-103-1Б 1 (1).png" alt="">
+                     </div>
+                      <div class="one-ring_card__text">
+                        <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                        <h2>108 590 ₽ / шт  </h2>
+                        <del>158 680 ₽</del>
+                      </div>
+                    </div>
+    
+                    <div class="one-ring__card">
+                      <div class="one-ring_card__img">
+                        <i class='bx bx-heart'></i>
+                       <img src="/image/5-2964-103-1Б 1 (2).png" alt="">
+                      </div>
+                       <div class="one-ring_card__text">
+                         <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                         <h2>108 590 ₽ / шт  </h2>
+                         <del>158 680 ₽</del>
+                       </div>
+                     </div>
+    
+    
+                     <div class="one-ring__card">
+                      <div class="one-ring_card__img">
+                        <i class='bx bx-heart'></i>
+                       <img src="/image/5-2964-103-1Б 1 (3).png" alt="">
+                      </div>
+                       <div class="one-ring_card__text">
+                         <span>Кольцо <br> 5-1182-103-1Б Au <br> 585</span>
+                         <h2>108 590 ₽ / шт  </h2>
+                         <del>158 680 ₽</del>
+                       </div>
+                     </div>
+                    
+                  </div>
+                 
+                 </div>
+                </div>
+              </div>
+               <div class="continue_click_btn">
+               <div class="purchase_btn">
+                <button onclick="document.querySelector('.second-modal__click').style='display:block'
+                document.querySelector('. modal_cart__body').style='display:none'
+                " class="continue_click_btn__grey"> Продолжить покупки</button>
+                <button onclick="document.querySelector('.second-modal__click').style='display:block'
+                document.querySelector('. modal_cart__body').style='display:none'
+                "  class="continue_click_btn__yellow">Оформить заказ</button>
+               </div>
+                  </div>
+            </div>
+    
+            <div class="second-modal__click">
+            <div class="second-modal__click-body">
+              <div class="modal-cart__title1">
+                <h2>Заказ в один клик</h2>
+                <div class="cart-title_href">
+                  <i onclick="document.querySelector('.modal_cart').style='display:none'" class='bx bx-x'></i>
+                </div>
+               </div>
+               <div class="payment-body">
+                <div class="payment-body__image">
+                  <img src="/image/5-2964-103-1Б 1 (4).png" alt="">
+                </div>
+                <div class="payment-body__text">
+                  <div class="payment-body__text_inside">
+                    <h2>Кольцо 5-1182-103-1Б Au 585</h2>
+                    <span>Размер: 16.5</span>
+                  </div>
+                </div>
+                <div class="payment-body__price">
+                  <div class="payment_price_in">
+                    <h2>13 597  ₽</h2>
+                    <p>Итого л оплате  13 597</p>
+                  </div>
+                </div>
+               </div>
+    
+    
+    
+    
+               <div class="registration-input">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Ваш e-mail">
+                <input type="text" placeholder="+7">
+                <input type="text" placeholder="Доставка">
+               </div>
+              
+            </div>
+            <div class="buy__one-click">
+                 <button>Купить</button>
+            </div>
+            </div>
+          </div>
   <div class="get_product">
     <div class="routerclick">
       <div class="routic">
@@ -1493,13 +1628,13 @@ background:
 
 
 
-      <main class="main_card">
-        <div class="cards">
+      <main class="all_product_body">
+        <div class="all_product_body_cards">
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1529,10 +1664,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1552,7 +1687,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1562,10 +1697,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1585,7 +1720,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1595,10 +1730,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1618,7 +1753,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1628,10 +1763,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1651,7 +1786,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1661,10 +1796,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1684,7 +1819,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1694,10 +1829,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1717,7 +1852,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1727,10 +1862,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1750,7 +1885,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1762,23 +1897,23 @@ background:
         </div>
 
 
-        <div class="hand">
-          <div class="link">
-            <h1 class="noone">Скупка и обмен <br> золото</h1>
-            <h1 class="notwo">Скупка и <br> обмен золото</h1>
-            <div class="href">
+        <div class="catalog_main_page_first">
+          <div class="catalog_main_page_first__link">
+            <h1 class="catalog_main_page_first__title__pk">Скупка и обмен <br> золото</h1>
+            <h1 class="catalog_main_page_first__title__mobile">Скупка и <br> обмен золото</h1>
+            <div class="catalog_main_page_first__href">
               <span>Смотреть </span><i style="font-size: 24px;position: relative;top: 1px;"
                 class='bx bxs-chevron-right'></i>
             </div>
           </div>
         </div>
-        <div class="liniy"></div>
-        <div class="cards">
+        <div class="catalog_main_page_first__line"></div>
+        <div class="all_product_body_cards">
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1798,40 +1933,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
-            </div>
-            <div class="del_price">
-              <del>108 590 ₽
-              </del>
-              <span>-60%</span>
-            </div>
-            <button>Подробнее</button>
-          </div>
-          <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
-              </div>
-              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
-                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
-                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
-                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="procuct-card__star"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
-            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
-            <div class="dostup">
-              <div class="circle"></div>
-              <h3>Достаточно</h3>
-            </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1841,10 +1943,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1864,7 +1966,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1874,10 +1976,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1897,7 +1999,40 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
+            </div>
+            <div class="del_price">
+              <del>108 590 ₽
+              </del>
+              <span>-60%</span>
+            </div>
+            <button>Подробнее</button>
+          </div>
+          <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
+              </div>
+              <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                  <div class="swiper-slide"><img src="../image/Rectangle 4 (1).png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="procuct-card__star"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            <h4>Кольцо 5-6885-103И2-1К Au 585</h4>
+            <div class="dostup">
+              <div class="circle"></div>
+              <h3>Достаточно</h3>
+            </div>
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1907,10 +2042,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1930,7 +2065,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1940,10 +2075,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1963,7 +2098,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -1973,10 +2108,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -1996,7 +2131,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2006,10 +2141,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2029,7 +2164,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2040,7 +2175,7 @@ background:
           </div>
         </div>
 
-        <div class="hand2">
+        <div class="catalog_main_page_second">
           <div class="as">
             <h2>Дарите выбор!</h2>
             <p>Исполняйте мечты с подарочными сертификатами Алмаз! Теперь угадать с подарком ещё проще. <span>Обладатель
@@ -2048,23 +2183,23 @@ background:
             </p>
             <a href="#">Смотреть <i class='bx bx-chevron-right'></i></a>
 
-          </div><img class="medimg" src="./image/8085342 1.svg" alt="">
-          <img class="img222" src="./image/gift card 1.svg" alt="">
-          <img class="imgcard" src="./image/gift card 1 (1).svg" alt="">
+          </div><img class="catalog_main_page_second_media-image_first" src="./image/8085342 1.svg" alt="">
+          <img class="catalog_main_page_second_media-image_second" src="./image/gift card 1.svg" alt="">
+          <img class="catalog_main_page_second_media-image_card-img" src="./image/gift card 1 (1).svg" alt="">
           <div></div>
         </div>
 
-        <div class="liniy2"></div>
+        <div class="catalog_main_page_second_line"></div>
 
-        <div class="cards">
+        <div class="all_product_body_cards">
           <div class="card1 procuct-card__media_none">
             <img style="width: 85%;border-radius: 8px;" src="./image/maxsus3.jpeg" alt="">
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2084,7 +2219,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2094,10 +2229,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2117,7 +2252,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2127,10 +2262,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1" onclick="window.location='/pages/oneproduct/oneproduct.html'">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2150,7 +2285,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2160,10 +2295,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 ">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2183,7 +2318,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2193,10 +2328,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2216,7 +2351,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2226,10 +2361,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2249,7 +2384,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
@@ -2259,10 +2394,10 @@ background:
             <button>Подробнее</button>
           </div>
           <div class="card1 procuct-card__media_none">
-            <div class="card_img">
-              <div class="novinki">
-                <h1 class="one1">Новинка</h1>
-                <h1 class="two2">🌷 SALE</h1>
+            <div class="all_product_body_cards__card_img">
+              <div class="all_product_body_cards__card__baner">
+                <h1 class="all_product_body_cards__card__baner__first">Новинка</h1>
+                <h1 class="all_product_body_cards__card__baner__second">🌷 SALE</h1>
               </div>
               <div class="dinmic"><img src="./image/Group 5.png" alt=""></div>
               <div class="swiper mySwiper">
@@ -2282,7 +2417,7 @@ background:
               <div class="circle"></div>
               <h3>Достаточно</h3>
             </div>
-            <div class="price">108 590 ₽
+            <div class="payment_price_ine">108 590 ₽
             </div>
             <div class="del_price">
               <del>108 590 ₽
