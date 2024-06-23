@@ -1,3 +1,9 @@
+.catalog_page{
+    margin-top: 20px;
+}
+
+
+
 .catalog_main_page_first{
     background: url("/image/957b6ac6bc0daf6f273caf436f4caae0.jpeg") no-repeat;
     width: 100%;
@@ -394,7 +400,15 @@ color: #363636;
     width: 275px;
     height: 250px;
   }
+.pagerout_mobile{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+color: #808080;
 
+}
 
   .all_product_body .all_product_body_cards .all_product_body_card .catalog__cards__card__type{
     display: flex;
@@ -525,6 +539,15 @@ transition: 1s;
     .all_product_body .all_product_body_cards .all_product_body_card .mySwiper{
         width: 250px;
         height: auto !important ;
+      }
+      .pagerout_mobile{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: #808080;
+
       }
   }
   @media(max-width:585px){
