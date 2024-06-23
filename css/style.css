@@ -671,19 +671,19 @@ text-align: left;
     font-weight: 500 !important;
     cursor: pointer;
 }
-.top_quation ul{
+.other-category ul{
     padding: 0;
     margin: 0;
 }
 
 
 
-.top_quation{
+.other-category{
     width: 95%;
      max-width: 1440px;
     margin: auto;
   }
-  .top_quation h1{
+  .other-category h1{
     font-family: "Montserrat", sans-serif;
 font-size: 18px;
 font-weight: 700;
@@ -694,7 +694,7 @@ margin-bottom: 30px;
 margin-top: 30px;
   }
 
-  .top_quation .buttons button{
+  .other-category .other-category__buttons button{
     background: #F2F2F2;
 border: none;
 font-family: "Montserrat", sans-serif;
@@ -708,32 +708,32 @@ border-radius: 8px;
 margin-right: 5px;
   }
   
-  .top_quation .cards2{
+  .other-category .other-category__cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
   }
-  .top_quation .cards2 .card2{
+  .other-category .other-category__cards .other-category__card{
     display: grid;
     grid-template-columns: 150px auto;
   }  
-  .top_quation .cards2 .card2 img{
+  .other-category .other-category__cards .other-category__card img{
     width: 100%;
     border-radius: 10px;
 
   }
-  .top_quation .cards2 .card2:hover{
+  .other-category .other-category__cards .other-category__card:hover{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     border-radius: 10px;
     cursor: pointer;
 
   }
 
-  .top_quation .cards2 .card2 .card2_text{
+  .other-category .other-category__cards .other-category__card .other-category__card__text{
     display: flex;flex-direction: column;
     justify-content: space-around;
   }
-  .top_quation .cards2 .card2 .card2_text p{
+  .other-category .other-category__cards .other-category__card .other-category__card__text p{
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
@@ -741,7 +741,7 @@ margin-right: 5px;
     text-align: left;
 color: #363636;    
   }
-.top_quation .cards2 .card2 .card2_text h3{
+.other-category .other-category__cards .other-category__card .other-category__card__text h3{
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
@@ -750,7 +750,7 @@ color: #363636;
     margin-top: -40px;
 color: #242424;    
   }
-  .top_quation .cards2 .card2 .card2_text del{
+  .other-category .other-category__cards .other-category__card .other-category__card__text del{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
@@ -758,11 +758,11 @@ color: #242424;
     text-align: left;
     color: #DE6060;
 }
-.top_quation .section1{
+.other-category .other-category__body{
     width: 100%;
     margin-top: 92px;
 }
-.top_quation .h31{
+.other-category .other-category__top-quation-accordion{
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
@@ -772,12 +772,8 @@ color: #242424;
     margin-top: 131px;
     margin-bottom: 80px;
 }
-@media (max-width:991px){
-.top_quation .h31{
-    margin-bottom: 36px;
-}
-}
-.top_quation .accordion{
+
+.other-category .accordion{
     max-width: 838px;
     margin: auto;
 
@@ -786,7 +782,7 @@ color: #242424;
     color: black !important;
     }
  
-.top_quation .accordion-button {
+.other-category .accordion-button {
     padding: 0px !important;
     padding: 0px 14px !important;
     outline: none !important;
@@ -812,7 +808,7 @@ left: -6px;
 margin-bottom: 0px !important;
 }
 @media (max-width:1200px) {
-    .top_quation .cards2{
+    .other-category .other-category__cards{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
       }
@@ -823,11 +819,15 @@ margin-bottom: 0px !important;
         grid-template-columns: 114px 200px 2.5fr 157px 78px 125px;
     }
 }
+
 @media (max-width:991px) {
-  .section1{
+  .other-category__body{
     display: none;
   }
-  .top_quation .h31{
+    .other-category .other-category__top-quation-accordion{
+        margin-bottom: 36px;
+    }
+  .other-category .other-category__top-quation-accordion{
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 700;
@@ -837,14 +837,19 @@ text-align: center;
   }
 }
 @media (max-width:900px) {
-    .top_quation .cards2{
+    .other-category .other-category__cards{
         display: grid;
         grid-template-columns: 1fr 1fr ;
       }
 }
 @media (max-width:590px) {
-    .top_quation .cards2{
+    .other-category .other-category__cards{
         display: grid;
         grid-template-columns: 1fr ;
       }
 }
+
+@media (max-width:340px){
+    .footer__mobile-application img{
+        height: 27px;
+    }}

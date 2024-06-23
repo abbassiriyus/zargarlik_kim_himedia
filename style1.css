@@ -1467,24 +1467,24 @@ text-align: center;
         height: 50px;
         border-radius: 8px;
     }
-    .top_quation .cards2 .card2{
+    .other-category .other-category__cards .other-category__card{
         margin-top: -17px;
         gap: 26px;
     }
-    .top_quation .cards2 .card2_text p{
+    .other-category .other-category__cards .other-category__card__text p{
         margin-top: -3px;
     }
-    .top_quation .cards2 .card2 .card2_text h3 {
+    .other-category .other-category__cards .other-category__card .other-category__card__text h3 {
         position: relative;
         top: 10px;
     }
-    .top_quation .cards2 .card2 img {
+    .other-category .other-category__cards .other-category__card img {
         margin-left: 12px;
     }
-    .mod{
+    .other-category__accordion{
         margin-top: -15px !important;
     }
-    .mod .accordion-body{
+    .other-category__accordion .accordion-body{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -1499,12 +1499,12 @@ margin: auto;
     .footer_mobile__version{
         margin-top: 33px !important;
     }
-    .mod .accordion-button{
+    .other-category__accordion .accordion-button{
         outline: none;
         border-bottom: none !important;
         /* height: 53px; */
     }
-    .top_quation .h31 {
+    .other-category .other-category__top-quation-accordion {
         font-family: Montserrat;
         font-size: 29px;
         font-weight: 700;
@@ -1512,7 +1512,7 @@ margin: auto;
         margin-top: 22px;
         text-align: center;
     }
-    .top_quation h1{
+    .other-category h1{
         font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -1666,21 +1666,13 @@ margin-left: 10px;
     display: none;
     margin-top: 30px;
 }
-.accorfooter{
 
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .accfoot{
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.289);
     width: 97%;
     margin: auto;
 }
-.accorfooter h3{
-    margin-left: 10px;
-}
+
 .appl1 img{
     width: 20%;
     margin-bottom: 20px !important;
@@ -1697,7 +1689,7 @@ margin-left: 10px;
 .foot1{
     display: none;
 }
-.foot2{
+.footer_mobile__version_link_first{
     margin-top: 10px;
     padding-bottom: 20px;
     margin-left: 20px;
@@ -1713,10 +1705,10 @@ text-align: left;
 height: 46px;
 
 }
-.foot2 {
+.footer_mobile__version_link_first {
     padding: 0 !important;
     margin: 0 !important;}
-.foot2 li{
+.footer_mobile__version_link_first li{
     padding: 0;
     margin: 0;
     display: flex;
@@ -1726,13 +1718,13 @@ height: 46px;
        gap: 10px;
        font-weight: 500;
 }
-.foot2 h3{
+.footer_mobile__version_link_first h3{
     font-weight: 600;
     margin-bottom: 20px;
     font-size: 20px;
 
 }
-.foot3 li{
+.footer_mobile__version_link_second li{
     display: flex;
     align-items: center;
        list-style: none;
@@ -1740,19 +1732,19 @@ height: 46px;
        gap: 10px;
        font-weight: 500;
 }
-.foot3 h3{
+.footer_mobile__version_link_second h3{
     font-weight: 600;
     margin-bottom: 20px;
     font-size: 20px;
 
 }
-.foot3{
+.footer_mobile__version_link_second{
     margin-top: 10px;
     padding-bottom: 20px;
     margin-left: 20px;
 
 }
-.foot4 li{
+.footer_mobile__version_link_three li{
     display: flex;
     align-items: center;
        list-style: none;
@@ -1760,19 +1752,19 @@ height: 46px;
        gap: 10px;
        font-weight: 500;
 }
-.foot4 h3{
+.footer_mobile__version_link_three h3{
     font-weight: 600;
     margin-bottom: 20px;
     font-size: 20px;
 
 }
-.foot4{
+.footer_mobile__version_link_three{
     margin-top: 10px;
     padding-bottom: 20px;
     margin-left: 20px;
    
 }
-.foot5 li{
+.footer_mobile__version_link_four li{
     display: flex;
     align-items: center;
        list-style: none;
@@ -1780,12 +1772,12 @@ height: 46px;
        gap: 10px;
        font-weight: 500;
 }
-.foot5 h3{
+.footer_mobile__version_link_four h3{
     /* font-weight: 600; */
     margin-bottom: 20px;
     font-size: 10px !important;
 }
-.foot5{
+.footer_mobile__version_link_four{
     margin-top: 10px;
     padding-bottom: 20px;
     margin-left: 20px;
@@ -1830,13 +1822,8 @@ margin: 0px !important;
         margin-bottom: 80px;
     }
 }
-.accordion{
-    width: 100%;
-}
-.accorfooter h3{
-    font-size:18px;
-    font-weight: 600;
-}
+
+
 
 .hand2{
     height: 477px;
@@ -2002,7 +1989,7 @@ text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.alm{
+.almaz-footer-2024_second{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -2010,7 +1997,7 @@ text-align: left;
     text-align: center;
     
 }
-.alm1{
+.almaz-footer-2024{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -2019,7 +2006,7 @@ text-align: left;
     
 }
 @media(max-width:991px){
-    .alm1{
+    .almaz-footer-2024{
         display: none;
     }
     .new_logo_class img{
@@ -2058,18 +2045,18 @@ text-align: left;
         display: block;
     }
 }
-/* .top_quation  */
+/* .other-category  */
 /* .footer_mobile__version */
-.top_quation .accordion,.footer_mobile__version .accordion{
+.other-category .accordion,.footer_mobile__version .accordion{
     --bs-accordion-btn-focus-box-shadow:none !important;
     --bs-accordion-border-width:0px !important;
     border-radius: 0px !important;
     --bs-accordion-border-radius:0px !important
 }
-.top_quation .accordion-item, .footer_mobile__version .accordion-item{
+.other-category .accordion-item, .footer_mobile__version .accordion-item{
     border-bottom: 1px solid #E6E6E6 !important
 }
-.top_quation .accordion-button{
+.other-category .accordion-button{
     height: 50px;
 }
 .footer_mobile__version{

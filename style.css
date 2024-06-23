@@ -622,7 +622,3 @@ font-weight: 200 !important;
     gap: 2px;
 }
 
-@media (max-width:340px){
-    .footer__mobile-application img{
-        height: 27px;
-    }}
