@@ -1,5 +1,5 @@
 
-.routerclick{
+.filter_page_modal_bottom_body{
     width: 100%;
     min-height:250px;
     padding-bottom: 20px;
@@ -8,7 +8,7 @@
     border-top-right-radius: 16px;
    
 }
-.get_product{
+.filter_page_modal_bottom{
     display: flex;
     justify-content: end;
     align-items: end;    
@@ -20,27 +20,27 @@
     height: 100vh; 
     display: none;
 }
-.routic{
+.filter_page_modal_bottom_bigdiv{
     width: 92%;
     margin: auto;
     margin-top: 22px;
 }
-.closehead{
+.filter_page_modal_bottom_li{
     display: flex;
     justify-content: space-between;
     margin-bottom: 17px;
     margin-top: 10px;
 }
-.closehead1{
+.filter_page_modal_bottom_close{
     display: flex;
     justify-content: space-between;
     margin-bottom:4px;
     align-items: center;
 }
-.closehead span{
+.filter_page_modal_bottom_li span{
     font-size: 14px;
 }
-.closehead1 h3{
+.filter_page_modal_bottom_close h3{
     text-transform: uppercase;
     font-family: Montserrat;
 font-size: 18px;
@@ -50,19 +50,19 @@ text-align: left;
 /* margin-top: -8px; */
 
 }
-.closehead input{
+.filter_page_modal_bottom_li input{
     width: 16px;
     height: 16px;
 }
 
-.closehead1 .bx-x{
+.filter_page_modal_bottom_close .bx-x{
     font-size: 35px;
    
     font-weight: 100 !important;
     position: relative;
     /* left: 30px; */
 }
-.closehead1 img{
+.filter_page_modal_bottom_close img{
     position: relative;
     left: 0px; 
     margin-top: -10px;
@@ -83,11 +83,11 @@ width: 25px;
 height: 25px;
 
 }
-.twobtn{
+.filter_page_modal_bottom_two_buttons{
     display: flex;
     justify-content: space-around;
 }
-.twobtn button{
+.filter_page_modal_bottom_two_buttons button{
     width:144px;
 height:35px;
 padding: 10px 14px 10px 14px;
