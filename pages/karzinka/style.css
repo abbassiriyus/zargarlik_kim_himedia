@@ -806,7 +806,7 @@ margin-top: 25px;
     display: flex;
     gap: 16px;
 }
-.body_karzinka .app_prod .cards_a_cards .cards_a_card .cards_a_all_product_body_cards__card_img{
+.body_karzinka .app_prod .cards_a_cards .cards_a_card .cards_a_allProduct__body__cards__cardImg{
 width: 89px;
 height: 89px;
 border: 1px solid #E6E6E6;
@@ -825,7 +825,7 @@ align-items: center;
     margin-top: 10px;
 
 }
-.body_karzinka .app_prod .cards_a_cards .cards_a_card .cards_a_all_product_body_cards__card_img img{
+.body_karzinka .app_prod .cards_a_cards .cards_a_card .cards_a_allProduct__body__cards__cardImg img{
  width: 100%;
  max-height: 100%;
 }

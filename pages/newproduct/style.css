@@ -157,18 +157,18 @@ letter-spacing: -2px;
     padding-left: 7%;
 
 }
-.product-more-button-second{
+.productMoreButton-second{
     margin-top: 120px;
     display: flex;
     align-items: center;
   width:   98.5%;
     justify-content: space-between;
 }
-.product-more-button-second .pagnation{
+.productMoreButton-second .pagnation{
 display: flex;
 gap: 16px;
 }
-.product-more-button-second .pagnation span{
+.productMoreButton-second .pagnation span{
    width: 44px;
    height: 44px;
 border-radius: 12px;
@@ -304,7 +304,7 @@ line-height: 20.7px;
 text-align: left;
 color: white;
     }
-    .product-more-button-second{
+    .productMoreButton-second{
         display: none;
     }
  
