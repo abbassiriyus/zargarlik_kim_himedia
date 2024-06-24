@@ -2,7 +2,7 @@
     padding-top: 90px;
  
 }
-.bonus_rubley{
+.bonus-header__black-body{
     width: 100%;
     height: 136px;
     background-color: #F2F2F2;
@@ -22,7 +22,7 @@ text-align: left;
 
 margin-top: 33px;
 }
-.black_rubl{
+.bonus-header__first-banner{
     width: 100%;
     background-color: black;
     color: white;
@@ -170,7 +170,7 @@ margin-bottom: 27px;
     left: 43px;
     z-index: -1;
 }
-.pokup_yellow{
+.purchase-yellow__banner{
     background: #FFF957;
     width: 524px;
     height: 112px;
@@ -183,13 +183,13 @@ margin-bottom: 27px;
 .program_img{
     margin-top: -147px;
 }
-.pro_yel{
+.purchase_yellow-text{
     display: flex;
     align-items: center;
     gap: 14px;
     margin-bottom: 16px;
 }
-.pro_yel p{
+.purchase_yellow-text p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -198,7 +198,7 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-bottom: 0;
 }
-.pro_yel span{
+.purchase_yellow-text span{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 700;
@@ -216,20 +216,20 @@ text-align: left;
     padding: 20px;
     padding-top: 15px;
 }
-.pric_bon{
+.bonus-price{
     display: flex;
     justify-content: end;
     align-items: end;
     border-left: 2px solid #A2A2A2;
 }
-.june span{
+.bonus-one__price span{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
 line-height: 19.5px;
 
 }
-.june p{
+.bonus-one__price p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -238,7 +238,7 @@ margin-bottom: 0;
 position: relative;
 top: 7px;
 }
-.pric_bon img{
+.bonus-price img{
     width: 60%;
     /* margin-left: 10px; */
     position: relative;
@@ -246,7 +246,7 @@ top: 7px;
     top: 4px;
 }
 @media (max-width:790px){
-    .pric_bon{
+    .bonus-price{
         max-width:113px ;
         border: none;
         padding: 0px ;
@@ -255,18 +255,18 @@ top: 7px;
         top: 0px;
         margin-top: 10px;
     }
-    .lich_dg_two12312{
+    .user-parlor__body12312{
         left: 0px;
         right: 0px;
         top: 0px;
         margin: 0;
         width: 100%;
     }
-    .pric_bon img{
+    .bonus-price img{
  width: 100%;
 
     }
-    .pokup_yellow{
+    .purchase-yellow__banner{
         width: 100%;
         height: auto;
         left: 0px;
@@ -285,7 +285,7 @@ top: 7px;
     margin: 0px;
     width: 92%;
 }
-.bonus_rubley {
+.bonus-header__black-body {
     width: 100%;
     height: auto;
     background-color: #F2F2F2;
@@ -299,7 +299,7 @@ top: 7px;
         display: grid;
         grid-template-columns: auto;
     }
-    .june{
+    .bonus-one__price{
         border-bottom: 1px solid grey;
         padding-bottom: 20px;
     }
@@ -309,7 +309,7 @@ top: 7px;
     display: none !important;
 }
 @media (max-width:365px) {
-    .black_rubl {
+    .bonus-header__first-banner {
         width: 98%;
         margin: auto;
         background-color: black;
@@ -429,18 +429,18 @@ text-align: left;
           margin-top: -15px;
     
     }
-    .pokup_yellow {
+    .purchase-yellow__banner {
    
         padding: 25px;
         padding-left: 23px;
         height: 184px;
         width: 95%;
     }
-    /* .pro_yel span{
+    /* .purchase_yellow-text span{
         position: relative;
         top: 17px;
     } */
-    .pro_yel p{
+    .purchase_yellow-text p{
         width: 80%;
     }
     .history_class{
@@ -453,7 +453,7 @@ text-align: left;
 margin-top: 19px;
 margin-left: 5px;
 }
-    .bonus_rubley {
+    .bonus-header__black-body {
         padding-bottom: 10px;
     }
     .histori_bonus{
@@ -464,7 +464,7 @@ margin-left: 5px;
     margin-bottom: 15px;
     min-height: 123px;
     }
-    .june span{
+    .bonus-one__price span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -473,7 +473,7 @@ text-align: center;
 position: relative;
 top: -4px;
     }
-    .june p{
+    .bonus-one__price p{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -482,14 +482,14 @@ position: relative;
 top: -1px;
 
 }
-.june {
+.bonus-one__price {
     border-bottom: 1px solid grey;
     padding-bottom: 9px;
 }
-.pric_bon{
+.bonus-price{
     margin-top: 0px;
 }
-.pric_bon {
+.bonus-price {
     max-width: 117px;
     border: none;
     padding: 0px;

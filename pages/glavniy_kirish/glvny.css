@@ -1,4 +1,4 @@
-.glavniy_lich_dg{
+.user-parlor__big{
     display: grid;
     grid-template-columns: 230px auto;
     width: 97%;
@@ -11,18 +11,23 @@
     width: 100%;
     /* overflow: hidden; */
 }
-.lich_dg_one{
+.user__page-road{
     width: 100%;
     padding-left: 10px;
     padding-top: 10px;
 }
-.lich_dg_one h3{
+.user__page-road h3{
     height: 40px;
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
 line-height: 15px;
-
+cursor: pointer;
+}
+.user__page-road h3:hover{
+    transform: scale(1.1);
+    margin-left: 16px;
+    font-weight: 700;
 }
 .magazin_tavar{
     display: grid;
@@ -349,11 +354,11 @@ grid-template-columns: auto;
    
         width: 50%;
     }   
-    .glavniy_lich_dg{
+    .user-parlor__big{
         display: grid;
     grid-template-columns: auto;
     }
-  .lich_dg_one {
+  .user__page-road {
         display: none !important;
     }
 }
@@ -390,13 +395,13 @@ grid-template-columns: auto;
         margin-top: 10%;
         font-size: 18px;
     }
-    .lich_dg_two h1{
+    .user-parlor__body h1{
         width: 98%;
         /* font-size: 25px !important; */
         margin-bottom: -20px;
         margin-left: 10px;
     }
-    .lich_dg_two h5{
+    .user-parlor__body h5{
         width: 98%;
         margin-left: 10px;
         font-size: 15px !important;
@@ -638,7 +643,7 @@ display: none;
         display: block;
         width: 100%;
     }
-    .lich_dg_two{
+    .user-parlor__body{
         font-family: Montserrat;
         font-size: 30px;
         font-weight: 600;
@@ -668,7 +673,7 @@ display: none;
     }
 
 
-    .lich_dg_two{
+    .user-parlor__body{
         width: 100%;
         font-family: Montserrat;
         font-size: 30px;
@@ -724,7 +729,7 @@ grid-row-start: 2;
         margin-left: 20px;
         margin-top: 45px;
     }
-    .lich_dg_two h1 {
+    .user-parlor__body h1 {
         width: 98%;
         /* font-size: 25px !important; */
         margin-bottom: -20px;
@@ -1214,7 +1219,7 @@ margin-left: 7px !important;
     display: flex;
     flex-wrap: wrap;
 }
-.glavniy_lich_dg{
+.user-parlor__big{
     display: flex;
     flex-wrap: wrap;
     width: 96%;

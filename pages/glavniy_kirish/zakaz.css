@@ -87,7 +87,7 @@ border: none;
     margin-left: 21px;
     margin-right: -7px;
 }
-.zakaz_big_div2 .glavniy_lich_dg .lich_dg_two2 .zakaz_otmen h2{
+.zakaz_big_div2 .user-parlor__big .lich_dg_two2 .zakaz_otmen h2{
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
@@ -113,7 +113,7 @@ border: none;
         box-shadow: 0px 0px 15px 0px #0000001A;
         padding: 20px;
         height: 210px;}
-    .zakaz_big_div2 .glavniy_lich_dg .lich_dg_two2 .zakaz_otmen h2 {
+    .zakaz_big_div2 .user-parlor__big .lich_dg_two2 .zakaz_otmen h2 {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 600;
@@ -149,7 +149,7 @@ text-align: left;
 
     
     }
-    .glavniy_lich_dg{
+    .user-parlor__big{
         width: 91%;
     }
     .zakaz_big_div2{

@@ -1,7 +1,7 @@
 .izbrniy_big_div{
     padding-top: 146px 
 }
-.lich_dg_two12312 h2{
+.user-parlor__body12312 h2{
     font-family: Montserrat;
     font-size: 32px;
     font-weight: 700;
@@ -20,7 +20,7 @@ margin: auto;
 align-items: center;
 }
 
-.lich_dg_two12312 a{
+.user-parlor__body12312 a{
     text-decoration: none;
     font-family: Montserrat;
     font-size: 12px;
@@ -36,13 +36,13 @@ align-items: center;
 font-size: 16px;
 }
 @media(max-width:991px){
-    .lich_dg_two12312 .title_izabr{
+    .user-parlor__body12312 .title_izabr{
         margin-bottom: 26px;
     }
     .izbrniy_big_div .card1{
         margin-bottom: 1px !important;
     }
-    .lich_dg_two12312 h2{
+    .user-parlor__body12312 h2{
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 600;
@@ -52,7 +52,7 @@ font-size: 16px;
         margin: 0px !important;
         padding: 0px;
     }
-    .lich_dg_two12312 a{
+    .user-parlor__body12312 a{
         display: block;
     }
     .izbrniy_big_div{

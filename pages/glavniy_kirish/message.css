@@ -52,7 +52,7 @@ margin-bottom: 0;
         text-align: left;
         
     }
-    .lich_dg_two h1{
+    .user-parlor__body h1{
         font-size: 22px !important;
     }
 }
@@ -84,7 +84,7 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-top: 12.8px;
     }
-    .lich_dg_two h1{
+    .user-parlor__body h1{
         font-family: Montserrat;
 font-size: 18px !important;
 font-weight: 600;
