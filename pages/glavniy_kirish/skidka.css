@@ -1,18 +1,18 @@
-.get-offer-section__content{
+.get-offer-section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 37px;
     gap: 28px;
     margin-bottom: 83px;
 }
-.get-offer-section__title{
+.get-offer-section__item{
     display: grid;
     grid-template-columns: 30px auto;
     /* height: 164px; */
     align-items: start;
     gap: 5px;
 }
-.tct h2{
+.get-offer-section__content h2{
     font-family: Montserrat;
 font-size: 24px;
 font-weight: 500;
@@ -20,10 +20,10 @@ line-height: 36px;
 text-align: left;
 
 }
-.tct{
+.get-offer-section__content{
     margin-top: -3px;
 }
-.tct p{
+.get-offer-section__content p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -39,25 +39,25 @@ margin-top: 9px;
     height: 487px;
     gap: 30px;
 }
-.podveski_img{
+.lets-buy__items{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-.one_buy_1{
+.lets-buy__item--pendants{
     width: 100%;
     background-color: blue;
     border-radius: 16px;
     position: relative;
     height: 487px;
 }
-.one_buy_1 img{
+.lets-buy__item--pendants img{
     width: 100%;
 }
-.two_podvesk{
+.lets-buy__item--rings{
     width: 100%;
 }
-.one_buy_1 h3{
+.lets-buy__item--pendants h3{
     font-family: Montserrat;
 font-size: 24px;
 font-weight: 500;
@@ -65,7 +65,7 @@ line-height: 36px;
 text-align: left;
 
 }
-.two_image_fifty{
+.lets-buy__item--brooches{
     width: 100%;
     height: 235px;
     display: flex;
@@ -75,7 +75,7 @@ text-align: left;
     background-color: aquamarine;
     position: relative;
 }
-.one_buy_1 h3{
+.lets-buy__item--pendants h3{
     position: absolute;
     bottom: 14px;
     left: 19px;
@@ -86,7 +86,7 @@ line-height: 36px;
 text-align: left;
 
 }
-.two_image_fifty h3{
+.lets-buy__item--brooches h3{
     position: absolute;
     bottom: 14px;
     left: 28px;
@@ -96,7 +96,7 @@ font-weight: 500;
 line-height: 36px;
 text-align: left;
 }
-.end_btn{
+.end-section__btn{
     width: 300px;
     height: 45px;
     border: 1px solid black;
@@ -182,7 +182,7 @@ justify-content: space-between;
     top: 16px;
     
 }
-.nach-new{
+.lets-buy__title{
     font-family: Montserrat;
 font-size: 32px;
 font-weight: 700;
@@ -219,14 +219,14 @@ margin-left: 10px;
         height: auto;
         gap: 30px;
     }
-    .get-offer-section__content {
+    .get-offer-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 37px;
         gap: 28px;
         margin-bottom: 83px;
     }
-    .get-offer-section__title {
+    .get-offer-section__item {
         display: grid;
         grid-template-columns: 30px auto;
         /* height: auto; */
@@ -254,14 +254,14 @@ text-align: center;
 color: #242424;        
 
     }
-.podveski_img img{
+.lets-buy__items img{
     max-width: 100%;
     max-height: 100%;
 }
 
 }
 @media(max-width:570px){
-    .get-offer-section__content {
+    .get-offer-section {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 37px;
@@ -328,7 +328,7 @@ text-align: center;
 margin-top: 17px !important;
 margin-left: 3px !important;
     }
-    .tct h2{
+    .get-offer-section__content h2{
         font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -336,14 +336,14 @@ line-height: 24px;
 text-align: left;
 
     }
-    .get-offer-section__content {
+    .get-offer-section {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 14px;
         gap: 0px;
         margin-bottom: 83px;
     }
-    .tct p{
+    .get-offer-section__content p{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -355,7 +355,7 @@ text-align: left;
         margin-top: -32px;
         margin-bottom: -10px;
     }
-    .nach-new{
+    .lets-buy__title{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 700;
@@ -366,14 +366,14 @@ margin-top: -140px;
 margin-left: -3px;
     }
 
-.one_buy_1 {
+.lets-buy__item--pendants {
     width: 100%;
     background-color: blue;
     border-radius: 16px;
     position: relative;
     height: 272px;
 }
-.two_image_fifty {
+.lets-buy__item--brooches {
     width: 100%;
     height: 135px;
     display: flex;
@@ -390,10 +390,10 @@ margin-left: -3px;
     height: auto;
     gap: 10px;
 }
-.two_image_fifty{
+.lets-buy__item--brooches{
     margin-top: -3px;
 }
-.one_buy_1 h3{
+.lets-buy__item--pendants h3{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
@@ -402,7 +402,7 @@ text-align: left;
 bottom: 0px;
 left: 9px;
 }
-.two_image_fifty h3{
+.lets-buy__item--brooches h3{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
@@ -414,7 +414,7 @@ left: 11px;
 .fghyt{
     margin-top: 5px !important;
 }
-.end_btn {
+.end-section__btn {
     width: 100%;
     height: 45px;
     border: 1px solid black;

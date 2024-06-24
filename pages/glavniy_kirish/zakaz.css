@@ -7,12 +7,12 @@ letter-spacing: 0.5px;
 text-align: left;
 
 }
-.zakaz_pol{
+.orders{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 16px;
 }
-.zakaz_otmen{
+.orders__item orders__item--canceled{
     box-shadow: 0px 0px 15px 0px #0000001A;
     padding: 20px;
     height: 231px;
@@ -22,7 +22,7 @@ text-align: left;
     margin-right: 15px;
     margin-bottom: 17px;
 }
-.otmen_back span{
+.orders__status span{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 500;
@@ -30,12 +30,12 @@ line-height: 16px;
 color: white;
 margin-left: 10px;
 }
-.otmen_back{
+.orders__status{
     width: 79px;
     background: var(--red-base, #DF1C41);
     border-radius: 999px;
 }
-.img_text_zakaz p{
+.orders__content p{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -48,7 +48,7 @@ top: -2px;
 left: -2px;
 margin-top: 10px;
 }
-.img_text_zakaz h3{
+.orders__content h3{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -57,16 +57,16 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-top: 7px;
 }
-.img_ring_zakaz{
+.orders__images{
     display: flex;
     align-items: center;
     margin-top: -7px;
 }
-.img_ring_zakaz img{
+.orders__images img{
     height: 69px;
     width: 62px;
 }
-.podborniy button{
+.orders__btn button{
     background: #F2F2F2;
     width: 169px;
     height:48px;
@@ -79,15 +79,15 @@ line-height: 17.07px;
 color: #257AE8;
 border: none;
 }
-.podborniy{
+.orders__btn{
     margin-top: 33px;
     margin-left: -24px;
 }
-.zakaz_otmen123{
+.orders__item orders__item--canceled123{
     margin-left: 21px;
     margin-right: -7px;
 }
-.zakaz_big_div2 .user-parlor .user-parlor__content2 .zakaz_otmen h2{
+.zakaz_big_div2 .user-parlor .user-parlor__content2 .orders__item orders__item--canceled h2{
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
@@ -98,22 +98,22 @@ border: none;
     text-align: left;
 }
 @media (max-width:980px){
-    .zakaz_pol{
+    .orders{
         display: grid;
         grid-template-columns: 1fr ;
         margin-top: 16px;
     }
-    .zakaz_otmen{
+    .orders__item orders__item--canceled{
         margin-left: 0px;
         margin-right: 0px;
     }
 }
 @media (max-width:580px){
-    .zakaz_otmen{
+    .orders__item orders__item--canceled{
         box-shadow: 0px 0px 15px 0px #0000001A;
         padding: 20px;
         height: 210px;}
-    .zakaz_big_div2 .user-parlor .user-parlor__content2 .zakaz_otmen h2 {
+    .zakaz_big_div2 .user-parlor .user-parlor__content2 .orders__item orders__item--canceled h2 {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 600;
@@ -123,7 +123,7 @@ border: none;
         margin-left: 1px;
         text-align: left;
     }
-    .img_text_zakaz p {
+    .orders__content p {
         font-family: Montserrat;
         font-size: 13px;
         font-weight: 400;
@@ -136,7 +136,7 @@ border: none;
         left: 0px;
         margin-top: 5px;
     }
-    .podborniy{
+    .orders__btn{
         display: none;
     }
     .user-parlor__content2 h3 {
