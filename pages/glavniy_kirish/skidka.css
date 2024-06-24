@@ -1,11 +1,11 @@
-.kakpoluchit_big{
+.get-offer-section__content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 37px;
     gap: 28px;
     margin-bottom: 83px;
 }
-.kak_pol_small{
+.get-offer-section__title{
     display: grid;
     grid-template-columns: 30px auto;
     /* height: 164px; */
@@ -109,7 +109,7 @@ background-color: white;
 margin-top: 30px;
 margin-left: 11px;
 }
-.sale_banner{
+.sale-banner{
     overflow: hidden;
     background: url("/image/d50536717abdd72fd3b7f2c7ee547948\ \(1\).jpeg");
     height:355px;
@@ -120,7 +120,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
-.user-parlor__content3 .title_page_first12{
+.user-parlor__content3 .sele-banner__title{
     font-family: Montserrat;
             font-size: 32px;
             font-weight: 700;
@@ -129,26 +129,26 @@ justify-content: space-between;
             text-align: left;
         text-transform: uppercase;
 }
-.sale_banner .text_skitka{
+.sale-banner .sale-banner__text{
     margin-left: 3.7%;
     position: relative;
     z-index: 23;
 }
-.sale_banner .image_skitka{
+.sale-banner .sale-banner__images{
     height: 100%;
     position: relative;
     display: flex;
     align-items:start;
     max-height: 400px;
 }
-.sale_banner .image_skitka .image_first12 {
+.sale-banner .sale-banner__images .sale-banner__image-second {
     position: relative;
     top: 20px;
     max-width: 86%;
     left: 63px;
 }
  
-.sale_banner .image_skitka .image_first {
+.sale-banner .sale-banner__images .sale-banner__image-first {
     position: absolute;
     top: 28%;
     z-index: 2;
@@ -157,10 +157,10 @@ justify-content: space-between;
     transform: rotateX(15deg) rotateZ(37deg) rotateY(179deg);
 }
 
-.sale_banner .image_skitka{
+.sale-banner .sale-banner__images{
     height: 100%;
 }
-.sale_banner .text_skitka h3{
+.sale-banner .sale-banner__text h3{
     font-family: Montserrat;
     font-size: 56px;
     margin-bottom: 2px;
@@ -171,7 +171,7 @@ justify-content: space-between;
     
 }
 
-.sale_banner .text_skitka h4{
+.sale-banner .sale-banner__text h4{
     font-family: Montserrat;
     font-size: 42px;
     font-weight: 700;
@@ -192,7 +192,7 @@ text-align: center;
 margin-left: 10px;
 }
 @media (max-width:991px){
-    .sale_banner{
+    .sale-banner{
       display: flex;
       flex-direction: column;
     }
@@ -200,11 +200,11 @@ margin-left: 10px;
         padding-top: 90px !important;
         width: 100vw       !important;
     }
-    .sale_banner .image_skitka .image_first{
+    .sale-banner .sale-banner__images .sale-banner__image-first{
         width: 186px;
         left: -60%;
     }
-    .sale_banner .image_skitka{
+    .sale-banner .sale-banner__images{
         height: 100%;
         position: relative;
         display: flex;
@@ -219,14 +219,14 @@ margin-left: 10px;
         height: auto;
         gap: 30px;
     }
-    .kakpoluchit_big {
+    .get-offer-section__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 37px;
         gap: 28px;
         margin-bottom: 83px;
     }
-    .kak_pol_small {
+    .get-offer-section__title {
         display: grid;
         grid-template-columns: 30px auto;
         /* height: auto; */
@@ -234,7 +234,7 @@ margin-left: 10px;
         align-items: start;
         gap: 5px;
     }
-    .sale_banner .text_skitka h3{
+    .sale-banner .sale-banner__text h3{
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 600;
@@ -244,7 +244,7 @@ color: #242424;
         
     }
     
-    .sale_banner .text_skitka h4{
+    .sale-banner .sale-banner__text h4{
     
         font-family: Montserrat;
 font-size: 20px;
@@ -261,7 +261,7 @@ color: #242424;
 
 }
 @media(max-width:570px){
-    .kakpoluchit_big {
+    .get-offer-section__content {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 37px;
@@ -270,7 +270,7 @@ color: #242424;
     }    
 }
 @media (max-width:400px) {
-    .title_page_first12{
+    .sele-banner__title{
         font-family: Montserrat;
 font-size: 24px !important;
 font-weight: 600 !important;
@@ -279,13 +279,13 @@ letter-spacing: 0.5px !important;
 text-align: left;
 width: 90%;
     }
-    .sale_banner {
+    .sale-banner {
         display: flex;
         flex-direction: column;
         margin-top: 16px;
         padding-top: 49px;
     }
-    .text_skitka h3{
+    .sale-banner__text h3{
         font-family: Montserrat;
 font-size: 24px;
 font-weight: 600;
@@ -293,7 +293,7 @@ line-height: 27.6px;
 text-align: center;
 text-transform: uppercase;
     }
-    .text_skitka h4{
+    .sale-banner__text h4{
         font-family: Montserrat;
 font-size: 20px;
 font-weight: 600;
@@ -301,25 +301,25 @@ line-height: 23px;
 text-align: center;
 top: 0px !important;
     }
-    .sale_banner .text_skitka {
+    .sale-banner .sale-banner__text {
         margin-left: 0px !important;
     }
-    .sale_banner .image_skitka .image_first12 {
+    .sale-banner .sale-banner__images .sale-banner__image-second {
         position: relative;
         top:35px;
         max-width: 96%;
         left: 12px;
     }
-    .sale_banner {
+    .sale-banner {
       
         height: 464px;
     }
-    .sale_banner .image_skitka .image_first {
+    .sale-banner .sale-banner__images .sale-banner__image-first {
         width: 207px;
         top: 128px;
         left: -60%;
     }
-    .cto-for-media{
+    .cto-section__title{
         font-family: Montserrat;
 font-size: 18px !important;
 font-weight: 700 !important;
@@ -336,7 +336,7 @@ line-height: 24px;
 text-align: left;
 
     }
-    .kakpoluchit_big {
+    .get-offer-section__content {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 14px;

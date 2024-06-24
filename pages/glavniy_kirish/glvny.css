@@ -338,7 +338,7 @@ margin-left: -3px;
 display: grid;
 grid-template-columns: auto;
 }
-.for_button .but{
+.for_button .app-download-btn{
     display: none;
 }
 .block-phone__media{
@@ -413,7 +413,7 @@ grid-template-columns: auto;
         margin: auto;
         text-align: center;
     }
-    .for_button .but{
+    .for_button .app-download-btn{
         width: 98%;
         display: block;
         background-color: black;

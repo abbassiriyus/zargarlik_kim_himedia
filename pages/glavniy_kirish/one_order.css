@@ -1,9 +1,9 @@
-.go_back{
+.order-list-back{
     display: flex;
     align-items: center;
     gap:5px;
 }
-.go_back span{
+.order-list-back span{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -12,10 +12,10 @@ letter-spacing: 0.5px;
 text-align: left;
 
 }
-.go_back .bx-chevron-left{
+.order-list-back .bx-chevron-left{
     font-size: 24px;
 }
-.info_btn_circle{
+.order-cancel-info{
     color: var(--red-darker, #710E21);
     width: 236px;
     height: 44px;
@@ -27,14 +27,14 @@ text-align: left;
     background: var(--red-light, #F8C9D2);
     margin-top: -4px;
 }
-.info_btn_circle span{
+.order-cancel-info span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
 line-height: 20px;
 letter-spacing: -0.006em;
 }
-.one_order_product h3{
+.order-product h3{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
@@ -44,10 +44,10 @@ letter-spacing: -0.006em;
     
 
 }
-.one_order_product{
+.order-product{
     margin-top: 32px;
 }
-.one_order_product1 h3{
+.order-product1 h3{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
@@ -57,10 +57,10 @@ letter-spacing: -0.006em;
     
 
 }
-.one_order_product1{
+.order-product1{
     margin-top: 13px;
 }
-.white-ring-1{
+.order-product__card_ white-ring{
     display: grid;
     grid-template-columns: 70px auto 90px;
     align-items: center;
@@ -68,13 +68,13 @@ letter-spacing: -0.006em;
     max-width:640px ;
     margin-top: 24px;
 }
-.white-ring-1 img{
+.order-product__card_ white-ring img{
     opacity: 0.5;
     margin-top: -17px;
     width: 90%;
 
 }
-.white-text-ring h3{
+.white-ring__content h3{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -83,7 +83,7 @@ letter-spacing: 0.5px;
 text-align: left;
 color: #BCBCBC;
 }
-.white-text-ring p{
+.white-ring__content p{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -92,7 +92,7 @@ letter-spacing: 0.5px;
 text-align: left;
 color: #BCBCBC  ;
 }
-.white-ring-1 span{
+.order-product__card_ white-ring span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -103,7 +103,7 @@ color: #BCBCBC;
 margin-top: -11px;
 margin-left: -3px;
 }
-.dostavka-big-div h1{
+.delivery-section h1{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -112,17 +112,17 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-bottom: 16px;
 }
-.dostavka-big-div{
+.delivery-section{
     margin-top: 28px;
 }
-.diamond-div{
+.delivery-info-item{
     display: grid;
     grid-template-columns: 22px auto;
     align-items: center;
     gap: 7px;
     margin-top: 7px;
 }
-.diamond-div span{
+.delivery-info-item span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -131,7 +131,7 @@ letter-spacing: 0.5px;
 text-align: left;
 
 }
-.med-back-ord span{
+.order-status--cancelled span{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 500;
@@ -139,12 +139,12 @@ line-height: 16px;
 color: white;
 margin-left: 10px;
 }
-.med-back-ord{
+.order-status--cancelled{
     width: 79px;
     background: var(--red-base, #DF1C41);
     border-radius: 999px;
 }
-.nn-h1-med h1{ 
+.order-heading__title h1{ 
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 700;
@@ -153,7 +153,7 @@ letter-spacing: 0.5px;
 text-align: left;
 display: none;
 }
-.zakaz-new-class{
+.order-number{
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
@@ -162,7 +162,7 @@ display: none;
     text-align: left;
         margin-top: 8px;
 }
-.p-new-class{
+.order-date{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
@@ -179,15 +179,15 @@ display: none;
     .footer-version__pk{
         display: none !important    ;
     }
-    .med-back-ord span{
+    .order-status--cancelled span{
         position: relative !important;
         top: -12px !important   ;
     }
-    .med-back-ord{
+    .order-status--cancelled{
         height: 30px !important;
 
     }
-    .nn-h1-med h1{
+    .order-heading__title h1{
         display: block;
         margin-top: 18px;
         margin-left: -3px;
@@ -197,7 +197,7 @@ display: none;
     .one_order-body{
         padding-top: 100px;
     }
-    .go_back span{
+    .order-list-back span{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -206,21 +206,21 @@ letter-spacing: 0.5px;
 text-align: left;
 
     }
-    .go_back {
+    .order-list-back {
         display: flex;
         align-items: center;
         gap: 0px;
         margin-left: -6px;
     }
-    .med-back-ord {
+    .order-status--cancelled {
         height: 25px !important;
         margin-top: 34px !important;
     }
-    .med-back-ord span {
+    .order-status--cancelled span {
         position: relative !important;
         top: -14px !important;
     }
-    .zakaz-new-class{
+    .order-number{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -229,7 +229,7 @@ letter-spacing: 0.5px;
 text-align: left;
 
     }
-    .p-new-class{
+    .order-date{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -238,7 +238,7 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-top: -2px;
     }
-    .info_btn_circle{
+    .order-cancel-info{
         width: 100%;
         font-family: Montserrat;
 font-size: 14px;
@@ -248,13 +248,13 @@ letter-spacing: -0.006em;
 text-align: left;
 
     }
-.one_order_product {
+.order-product {
         margin-top: 13px;
     }
-    .white-ring-1{
+    .order-product__card_ white-ring{
         margin-top: 17px;
     }
-    .white-text-ring h3{
+    .white-ring__content h3{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -263,7 +263,7 @@ letter-spacing: 0.5px;
 text-align: left;
 width: 87%;
     }
-    .white-ring-1 span{
+    .order-product__card_ white-ring span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 600;
@@ -272,17 +272,17 @@ letter-spacing: 0.5px;
 text-align: left;
 
     }
-    .white-ring-1 {
+    .order-product__card_ white-ring {
         display: grid;
         grid-template-columns: 69px auto 37px;
     }
-    .one_order_product1 {
+    .order-product1 {
         margin-top: 1px;
     }
-    .dostavka-big-div{
+    .delivery-section{
         margin-top: 0px;
     }
-    .dostavka-big-div h1{
+    .delivery-section h1{
         font-family: Montserrat;
 font-size: 14px !important;
 font-weight: 600;
@@ -291,7 +291,7 @@ letter-spacing: 0.5px;
 text-align: left;
 
     }
-    .diamond-div span{
+    .delivery-info-item span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
