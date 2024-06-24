@@ -1,4 +1,4 @@
-.user-parlor__big{
+.user-parlor{
     display: grid;
     grid-template-columns: 230px auto;
     width: 97%;
@@ -11,12 +11,12 @@
     width: 100%;
     /* overflow: hidden; */
 }
-.user__page-road{
+.user-parlor__sidebar{
     width: 100%;
     padding-left: 10px;
     padding-top: 10px;
 }
-.user__page-road h3{
+.user-parlor__sidebar h3{
     height: 40px;
     font-family: Montserrat;
 font-size: 14px;
@@ -24,7 +24,7 @@ font-weight: 500;
 line-height: 15px;
 cursor: pointer;
 }
-.user__page-road h3:hover{
+.user-parlor__sidebar h3:hover{
     transform: scale(1.1);
     margin-left: 16px;
     font-weight: 700;
@@ -93,7 +93,7 @@ text-align: left;
     background-color: white;
     margin-top: 11px;
 }
-.prise{
+.prise_card{
     width: 100%;
     background: #F4F4F4;
     height: 111px;
@@ -103,7 +103,7 @@ text-align: left;
     flex-direction: column;
     border-radius: 16px;
 }
-.prise h4{
+.prise_card h4{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -111,17 +111,17 @@ line-height: 15px;
 text-align: center;
 
 }
-.prise img{ 
+.prise_card img{ 
     margin-left: -6px;
     margin-top: -12px;
 }
 
-.prise h4 {
+.prise_card h4 {
     position: relative;
     left: -4px;
     top: 12px;
 }
-.gift_banner{
+.gift-banner__main{
     margin-top: 60px;
      background: linear-gradient(180deg, #D8D9DB 0%, #DEDFE1 11.62%, #E5E5E7 30.81%, #E9E9E9 58.12%, #E9E9E9 76.82%, #E6E6E6 100%);
     display: flex;
@@ -139,7 +139,7 @@ text-align: center;
     background-position: center;
     margin-right: -11px;
 } */
-.gift_text h1{
+.gift-banner__main-text h1{
     font-family: Montserrat;
 font-size: 48px;
 font-weight: 600;
@@ -149,20 +149,20 @@ margin-bottom: 5px;
     position: relative;
     z-index: 233;
 }
-.gift_banner img{
+.gift-banner__main img{
     width: 50%;  
     height: 377px;  
     position: absolute;
     right: -23px;
     top: 0px;
 }
-.gift_text{
+.gift-banner__main-text{
     width: 90%;
     margin: auto;
     margin-left: 50px;
     margin-top: 80px;
 }
-.gift_posm{
+.gift-banner__main-title{
     display: flex;
     align-items: center;
     position: relative;
@@ -170,7 +170,7 @@ margin-bottom: 5px;
     top: 20px;
     z-index: 999;
 }
-.gift_posm p{
+.gift-banner__main-title p{
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
@@ -179,12 +179,12 @@ margin-bottom: 5px;
     text-decoration: underline;
     z-index: 999;
 }
-.gift_posm .bx-chevron-right{
+.gift-banner__main-title .bx-chevron-right{
     font-size: 24px;
     position: relative;
     top: -6px;
 }
-.ser_rem_dg{
+.treyd-in_cards__body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 25px;
@@ -220,7 +220,7 @@ line-height: 17.07px;
 text-align: left;
 
 } 
-.fcdff14 {
+.extra__class {
     position: absolute;
     right: -55px;
     top: -24px;
@@ -267,12 +267,12 @@ text-align: left;
 }  
 
 
-.app_dg{
+.phone__big-application{
     margin-top: 23px;
     display: flex;
     gap: 28px;
 }
-.app_dg img{
+.phone__big-application img{
     width: 16%;
     margin-left: -7px;
 }
@@ -301,7 +301,7 @@ margin-bottom: 0;
 .new_ques img{
     margin-top: -15px;
 }
-.prise_img{
+.prise_card__img{
     display: none;
 }
 @media (max-width:991px) {
@@ -319,7 +319,7 @@ margin-bottom: 0;
         margin-left: -4px;
     }
 }
-.ckid-for_med{
+.ckid-title-for__media{
     font-family: Montserrat;
 font-size: 34px;
 font-weight: 600;
@@ -341,7 +341,7 @@ grid-template-columns: auto;
 .for_button .but{
     display: none;
 }
-.block-phn{
+.block-phone__media{
     display: none;
 }
 @media(max-width:1220px){
@@ -354,11 +354,11 @@ grid-template-columns: auto;
    
         width: 50%;
     }   
-    .user-parlor__big{
+    .user-parlor{
         display: grid;
     grid-template-columns: auto;
     }
-  .user__page-road {
+  .user-parlor__sidebar {
         display: none !important;
     }
 }
@@ -377,7 +377,7 @@ grid-template-columns: auto;
     .qr-kod_text{
         display: none;
     }
-    .app_dg{
+    .phone__big-application{
         display: none !important;
     }
     .new_ques{
@@ -395,13 +395,13 @@ grid-template-columns: auto;
         margin-top: 10%;
         font-size: 18px;
     }
-    .user-parlor__body h1{
+    .user-parlor__content h1{
         width: 98%;
         /* font-size: 25px !important; */
         margin-bottom: -20px;
         margin-left: 10px;
     }
-    .user-parlor__body h5{
+    .user-parlor__content h5{
         width: 98%;
         margin-left: 10px;
         font-size: 15px !important;
@@ -438,7 +438,7 @@ grid-template-columns: auto;
             right: -0px;
         
     }
-    .block-phn{
+    .block-phone__media{
         display: block;
         margin-top: 13px;
     }
@@ -460,7 +460,7 @@ text-align: center;
  }
 }
 
-.banner_ye{
+.gift-banner__btn-yellow{
 width: 450px;
 height: 87px;
 background: linear-gradient(180deg, #F1AB24 0%, #FFBC3D 100%);
@@ -474,7 +474,7 @@ align-items: center;
 border-top-right-radius: 16px;
 margin-left: -4px;
 }
-.banner_ye p{
+.gift-banner__btn-yellow p{
     font-family: Montserrat;
 font-size: 32px;
 font-weight: 600;
@@ -544,13 +544,13 @@ z-index: 123;
      align-items: center;
 }
 
-.header_media_glavniy .img1{
+.header_media_glavniy .media__vektor-image-first{
 position: absolute;
 right: 20px;
 bottom: 20px;
 z-index: 123;
 }
-.header_media_glavniy .img2{
+.header_media_glavniy .media__vektor-image-second{
     position: absolute;
     right: 20px;
     top: 0px;
@@ -627,7 +627,7 @@ display: none;
 .page_href_block{
     display: block;
 }
-.gift_banner{
+.gift-banner__main{
     overflow: hidden;
 }
  .user_glavniy .nav_kar{
@@ -643,7 +643,7 @@ display: none;
         display: block;
         width: 100%;
     }
-    .user-parlor__body{
+    .user-parlor__content{
         font-family: Montserrat;
         font-size: 30px;
         font-weight: 600;
@@ -665,7 +665,7 @@ display: none;
          box-shadow: 0px 0px 15px 0px #0000001A;
     
     }
-    .gift_text{
+    .gift-banner__main-text{
         width: 90%;
         margin: auto;
         margin-left: 20px;
@@ -673,7 +673,7 @@ display: none;
     }
 
 
-    .user-parlor__body{
+    .user-parlor__content{
         width: 100%;
         font-family: Montserrat;
         font-size: 30px;
@@ -693,7 +693,7 @@ display: none;
     
 }
     
-    .prise{
+    .prise_card{
         order: -1;
        
     }
@@ -706,7 +706,7 @@ grid-row-start: 2;
     }
 }
 @media(max-width:890px){
-    .ser_rem_dg {
+    .treyd-in_cards__body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 25px;
@@ -714,7 +714,7 @@ grid-row-start: 2;
     }
 }
 @media(max-width:590px){
-    .ser_rem_dg {
+    .treyd-in_cards__body {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 25px;
@@ -723,13 +723,13 @@ grid-row-start: 2;
 }
 
 @media(max-width:450px) {
-    .gift_text {
+    .gift-banner__main-text {
         width: 90%;
         margin: auto;
         margin-left: 20px;
         margin-top: 45px;
     }
-    .user-parlor__body h1 {
+    .user-parlor__content h1 {
         width: 98%;
         /* font-size: 25px !important; */
         margin-bottom: -20px;
@@ -783,7 +783,7 @@ grid-row-start: 2;
         line-height: 30px;
         margin-bottom: 17px;
     }
-    .prise {
+    .prise_card {
         width: 100%;
         background: #F4F4F4;
         height: auto !important;
@@ -800,14 +800,14 @@ grid-row-start: 2;
 
 @media(max-width:991px) {
   
-    .prise h4 {
+    .prise_card h4 {
         position: relative;
         left: -4px;
         top: 12px;
         display: none;
     }
     
-    .prise h4 {
+    .prise_card h4 {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 400;
@@ -815,13 +815,13 @@ grid-row-start: 2;
         text-align: center;
         display: none;
     } 
-    .prise .prise_h4 {
+    .prise_card .prise_card__title {
         position: relative;
         left: -4px;
         top: 12px;
         display: block !important ;
     }
-    .prise .prise_h4{
+    .prise_card .prise_card__title{
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 400;
@@ -829,7 +829,7 @@ grid-row-start: 2;
         text-align: center;
         display: block !important;
     }
-    .prise {
+    .prise_card {
         width: 100%;
         background: #F4F4F4;
         height: 111px;
@@ -841,12 +841,12 @@ grid-row-start: 2;
         padding-top: 16px;
         padding-left: 16px;
     }
-    .prise img {
+    .prise_card img {
         margin-left: 0px;
         margin-top: 0px;
         display: none;
     }
-    .prise .prise_img {
+    .prise_card .prise_card__img {
         margin-left: 0px;
         margin-top: 0px;
         display: block;
@@ -858,7 +858,7 @@ grid-row-start: 2;
 } 
 
 @media(max-width:900px) {
-    .gift_banner img {
+    .gift-banner__main img {
         width: 65%;
         height: 377px;
         position: absolute;
@@ -867,7 +867,7 @@ grid-row-start: 2;
     }
 }
 @media(max-width:700px) {
-    .gift_banner img {
+    .gift-banner__main img {
         width: 80%;
         height: 377px;
         position: absolute;
@@ -876,7 +876,7 @@ grid-row-start: 2;
     }
 }
 @media(max-width:600px) {
-    .gift_banner img {
+    .gift-banner__main img {
         width: 100%;
         height: 377px;
         position: absolute;
@@ -885,7 +885,7 @@ grid-row-start: 2;
     }
 }
 @media(max-width:500px) {
-    .banner_ye {
+    .gift-banner__btn-yellow {
         width: 297px;
         height: 60px;
         background: linear-gradient(180deg, #F1AB24 0%, #FFBC3D 100%);
@@ -899,7 +899,7 @@ grid-row-start: 2;
         border-top-right-radius: 16px;
         margin-left: -4px;
     }
-    .banner_ye p {
+    .gift-banner__btn-yellow p {
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 600;
@@ -907,7 +907,7 @@ grid-row-start: 2;
         margin-bottom: 0;
         text-transform: uppercase;
     }
-    .gift_text h1 {
+    .gift-banner__main-text h1 {
         font-family: Montserrat;
         font-size: 28px;
         font-weight: 600;
@@ -917,7 +917,7 @@ grid-row-start: 2;
         position: relative;
         z-index: 233;
     }
-    .gift_posm p {
+    .gift-banner__main-title p {
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 400;
@@ -926,12 +926,12 @@ grid-row-start: 2;
         text-decoration: underline;
         z-index: 999;
     }
-    .gift_posm .bx-chevron-right {
+    .gift-banner__main-title .bx-chevron-right {
         font-size: 17px;
         position: relative;
         top: -6px;
     }
-    .gift_banner {
+    .gift-banner__main {
         margin-top: 60px;
         background: linear-gradient(180deg, #D8D9DB 0%, #DEDFE1 11.62%, #E5E5E7 30.81%, #E9E9E9 58.12%, #E9E9E9 76.82%, #E6E6E6 100%);
         display: flex;
@@ -969,7 +969,7 @@ grid-row-start: 2;
         top: 30px;
         left: -16px;
     }
-    .header_media_glavniy .img1 {
+    .header_media_glavniy .media__vektor-image-first {
         position: absolute;
         right: 0px;
         bottom: 30px;
@@ -980,7 +980,7 @@ grid-row-start: 2;
         margin-top: -72px;
       
     }
-    .prise {
+    .prise_card {
         width: 95%;
         margin: auto;
         margin-left: 9px;
@@ -997,7 +997,7 @@ grid-row-start: 2;
         margin-top: 5px;
         margin-left: 12px;
     }
-    .prise_h4{
+    .prise_card__title{
         font-family: Montserrat;
 font-size: 12px !important;
 font-weight: 400;
@@ -1032,7 +1032,7 @@ margin-top: 16px;
     }
 }
 @media (max-width:365px) {
-    .gift_banner {
+    .gift-banner__main {
         width: 98%;
         margin: auto;
         margin-top: 30px;
@@ -1045,7 +1045,7 @@ margin-top: 16px;
         position: relative;
         margin-left: 8px;
     }
-    .gift_banner img {
+    .gift-banner__main img {
         width: auto;
         height: 100%;
         position: absolute;
@@ -1053,7 +1053,7 @@ margin-top: 16px;
         /* top: 0px; */
         bottom: 0px;
     }
-    .gift_text h1{
+    .gift-banner__main-text h1{
         font-family: Montserrat;
 font-size: 28px !important;
 font-weight: 600;
@@ -1061,13 +1061,13 @@ line-height: 32.2px;
 text-align: left;
 
     }
-    .gift_text {
+    .gift-banner__main-text {
         width: 90%;
         margin: auto;
         margin-left: 20px;
         margin-top: 48px;
     }
-    .gift_posm {
+    .gift-banner__main-title {
         display: flex;
         align-items: center;
         position: relative;
@@ -1076,10 +1076,10 @@ text-align: left;
         top: 12px;
         z-index: 999;
     }
-    .banner_ye{
+    .gift-banner__btn-yellow{
         width: 312px;
     }
-    .gift_posm .bx-chevron-right {
+    .gift-banner__main-title .bx-chevron-right {
         font-size: 17px;
         position: relative;
         top: -12px;
@@ -1110,12 +1110,12 @@ line-height: 17.07px;
 text-align: left;
 width: 42%;
     }
-    .fcdff14 {
+    .extra__class {
         width: 86%;
         transform: rotate(-49deg);
       z-index: 1;
     }
-    .ser_rem_dg {
+    .treyd-in_cards__body {
         gap: 12px;
     }
     .remont-media{
@@ -1158,7 +1158,7 @@ width: 42%;
     top: 8px;
     width: 54%;
 }
-.ckid-for_med{
+.ckid-title-for__media{
     font-family: Montserrat;
 font-size: 18px !important;
 font-weight: 600 !important;
@@ -1211,7 +1211,7 @@ margin-left: 7px !important;
    display: flex;
    flex-wrap: wrap;
 } */
-.ser_rem_dg{
+.treyd-in_cards__body{
    display: flex;
    flex-wrap: wrap;
 }
@@ -1219,12 +1219,12 @@ margin-left: 7px !important;
     display: flex;
     flex-wrap: wrap;
 }
-.user-parlor__big{
+.user-parlor{
     display: flex;
     flex-wrap: wrap;
     width: 96%;
 }
-.block-phn {
+.block-phone__media {
     display: block;
     margin-top: 13px;
     width: 100%;

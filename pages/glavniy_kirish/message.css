@@ -1,4 +1,4 @@
-.message_frame h2{
+.user-parlor__message-frame h2{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
@@ -7,7 +7,7 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-top: 17px;
 }
-.message_frame h3{
+.user-parlor__message-frame h3{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -16,7 +16,7 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-bottom: 0;
 }
-.message_frame h4{
+.user-parlor__message-frame h4{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -26,7 +26,7 @@ text-align: left;
 color: #898989;
 margin-bottom: 0;
 }
-.almaz_logo_h{
+.user-parlor__message-logo{
     display: flex;
     align-items: center;
     margin-top: 16px;
@@ -34,7 +34,7 @@ margin-bottom: 0;
 }
 
 @media (max-width:480px) {
-    .almaz_logo_h h3{
+    .user-parlor__message-logo h3{
         font-family: Montserrat;
         font-size: 16px;
         font-weight: 600;
@@ -43,7 +43,7 @@ margin-bottom: 0;
         text-align: left;
 
     }
-    .message_frame h2{
+    .user-parlor__message-frame h2{
         font-family: Montserrat;
         font-size: 14px !important;
         font-weight: 400;
@@ -52,12 +52,12 @@ margin-bottom: 0;
         text-align: left;
         
     }
-    .user-parlor__body h1{
+    .user-parlor__content h1{
         font-size: 22px !important;
     }
 }
 @media (max-width:380px) {
-    .almaz_logo_h h3{
+    .user-parlor__message-logo h3{
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 600;
@@ -66,7 +66,7 @@ margin-bottom: 0;
         text-align: left;
 
     }
-    .message_frame h2{
+    .user-parlor__message-frame h2{
         font-family: Montserrat;
         font-size: 12px !important;
         font-weight: 400;
@@ -75,7 +75,7 @@ margin-bottom: 0;
         text-align: left;   
         margin-top: 10px;
     }
-    .message_frame h4{
+    .user-parlor__message-frame h4{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 600;
@@ -84,14 +84,14 @@ letter-spacing: 0.5px;
 text-align: left;
 margin-top: 12.8px;
     }
-    .user-parlor__body h1{
+    .user-parlor__content h1{
         font-family: Montserrat;
 font-size: 18px !important;
 font-weight: 600;
 line-height: 27px;
 text-align: left;
     }
-    .message_frame {
+    .user-parlor__message-frame {
         /* background-color: red; */
         box-shadow: 0px 0px 15px 0px #0000001A;
     height: 166px;
@@ -101,7 +101,7 @@ text-align: left;
     position: relative;
     left: 9px;
     }
-    .message_frame p{
+    .user-parlor__message-frame p{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 300;
@@ -110,7 +110,7 @@ letter-spacing: 0.5px;
 text-align: right;
     }
 }
-.message_frame {
+.user-parlor__message-frame {
     /* background-color: red; */
     box-shadow: 0px 0px 15px 0px #0000001A;
 height: 166px;
@@ -119,7 +119,7 @@ margin-top: 24px;
 padding: 18px;
 position: relative;
 }
-.message_frame p{
+.user-parlor__message-frame p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 300;
@@ -132,7 +132,7 @@ right: 5px;
 
 }
 @media (max-width:991px) {
-    .mes-body{
+    .message-body{
         width: 100vw !important;
         padding-top: 100px !important;
     }
@@ -157,25 +157,25 @@ text-align: left;
     height: 24px;
 }
 @media (max-width:365px) {
-    .mess-h1{
+    .user-parlor__title{
         margin-top: -5px !important;
         margin-left: 3px !important;
     }
-    .message_frame{
+    .user-parlor__message-frame{
         margin-top: 25px !important;
         left: 6px;
         padding: 12px;
     }
-    .almaz_logo_h {
+    .user-parlor__message-logo {
         display: flex;
         align-items: center;
         margin-top: 12px;
         gap: 14px;
     }
-    .message_frame{
+    .user-parlor__message-frame{
         height: 150px;
     }
-    .message_frame p{
+    .user-parlor__message-frame p{
         font-family: Montserrat;
 font-size: 12px !important;
 font-weight: 300;

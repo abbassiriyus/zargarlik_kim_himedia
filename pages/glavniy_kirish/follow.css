@@ -1,4 +1,4 @@
-.ras-new-med{
+.follow-title_for-pk{
     font-family: Montserrat;
          font-size: 24px;
          font-weight: 600;
@@ -14,11 +14,11 @@
     }
 }
 @media (max-width:365px) {
-    .pod-new-med{
+    .follow-title_for-media{
         margin-top: -6px !important;
         margin-left: 4px !important;
     }
-    .ras-new-med{
+    .follow-title_for-pk{
         font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;

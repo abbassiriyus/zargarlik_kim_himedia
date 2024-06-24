@@ -91,7 +91,7 @@ color: #242424;
 color: #242424;
 position: relative;
     }
-    .app_dg{
+    .phone__big-application{
         display: grid;
         gap: 0px;
         justify-content: end;
@@ -1251,7 +1251,7 @@ margin-top: 8px;
         margin-top: 52px;
         margin-left: 11px;
     }
-    .app_dg{
+    .phone__big-application{
         margin-right: auto;
 
     }
@@ -1371,7 +1371,7 @@ grid-template-columns: 1fr 1fr;
 overflow: hidden; */
 padding-top: 30px;
     }
-    .app_dg {
+    .phone__big-application {
         padding: 10px 2px;
     }
     .zol_ser .gram h2{
@@ -1751,7 +1751,7 @@ margin-bottom: 20px;
     .nalc_table1 {
         width: 100%;
     }
-    .app_dg {
+    .phone__big-application {
         margin-top: 0px;
     }
     .konsul_banner {
@@ -1973,7 +1973,7 @@ margin-bottom: 20px;
     .salon_alm h3 {
         margin-bottom: -4px;
     }
-.app_dg {
+.phone__big-application {
     margin-right: auto;
 }
 .media-app img {
@@ -1990,7 +1990,7 @@ line-height: 12.19px !important;
 text-align: center;
 width: 60%;
 }
-.app_dg {
+.phone__big-application {
     padding: 16px 2px;
 }
 .zoloto_top img {

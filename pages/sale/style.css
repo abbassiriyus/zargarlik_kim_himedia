@@ -16,12 +16,12 @@ align-items: center;
 justify-content: space-around;
 margin-bottom: 111px;
 }
-.catalog_main_page_first_sale .img1{
+.catalog_main_page_first_sale .media__vektor-image-first{
 position: absolute;
 top: 0px;
 left: 0px;
 }
-.catalog_main_page_first_sale .img2{
+.catalog_main_page_first_sale .media__vektor-image-second{
     position: absolute;
     left: 0px;
     bottom: 0px;

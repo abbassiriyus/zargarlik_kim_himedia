@@ -63,7 +63,7 @@
     width: 94%;
 }
 
-.dastafka_header .dastafka_header_body .img1 {
+.dastafka_header .dastafka_header_body .media__vektor-image-first {
     scale: 1.2;
 }
 
@@ -282,13 +282,13 @@ text-align: center;
         align-items: center;
         margin-top: 0px;
     }
-    .dastafka_header .dastafka_header_body .img2{
+    .dastafka_header .dastafka_header_body .media__vektor-image-second{
         position: relative;
         z-index: 12;
         width: 80%;
         margin-left: 10%;
     }
-    .dastafka_header .dastafka_header_body .img1 {
+    .dastafka_header .dastafka_header_body .media__vektor-image-first {
         position: absolute;
         top: 92px;
         left: 28px;
@@ -449,7 +449,7 @@ margin: auto;
         margin: auto;
         height: 188px;
     }
-    .dastafka_header .dastafka_header_body .img2 {
+    .dastafka_header .dastafka_header_body .media__vektor-image-second {
         width: 68%;
     }
     .circle_4_margin .circle_4_2 {
