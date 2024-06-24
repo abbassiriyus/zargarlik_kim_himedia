@@ -10,7 +10,7 @@
 .kak-body{
 padding-top: 190px;
 }
-.kak-body .main{
+.kak-body .order-page{
     max-width:1440px;
     width: 95%;
     margin: auto;
@@ -23,7 +23,7 @@ padding-top: 190px;
     margin-top: 21px;
     margin-bottom: 36px;
 }
-.kak-body .main .title_page{
+.kak-body .order-page .title_page{
     font-family: Montserrat;
 font-size: 28px;
 font-weight: 600;
@@ -33,7 +33,7 @@ margin-left: 10px;
 padding-top: 2px;
 margin-bottom: 29px;
 }
-.kak-body .other .mg_shag {
+.kak-body .order-steps .mg_shag {
 display: grid;
 grid-template-columns: 45px auto;
 align-items: start;
@@ -41,10 +41,10 @@ gap: 17px;
 margin-left: 12px;
 
 }
-.kak-body .other .mg_shag .image_shag img{
+.kak-body .order-steps .mg_shag .image_shag img{
 width: 100%;
 }
-.kak-body .other .mg_shag .text_shag h3{ 
+.kak-body .order-steps .mg_shag .text_shag h3{ 
     font-family: Montserrat;
     font-size: 16px;
     margin-bottom: 15px;
@@ -53,7 +53,7 @@ width: 100%;
     text-align: left;
 color: #242424;    
 }
-.kak-body .other .mg_shag .text_shag p{ 
+.kak-body .order-steps .mg_shag .text_shag p{ 
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
@@ -62,7 +62,7 @@ color: #242424;
 color: #242424;    
     
 }
-.kak-body .other .g1_button_media_button{
+.kak-body .order-steps .g1_button_media_button{
     margin-left:74px;
     background: #FFF957;
 border: none;
@@ -83,10 +83,10 @@ margin-bottom: 47px;
     margin-top: -1px;
     margin-bottom: 48px;
 }
-.kak-body .other .mg_shag .text_shag .text_shag_2{
+.kak-body .order-steps .mg_shag .text_shag .text_shag_2{
 margin-top: -16px;
 }
-.kak-body .other .inp2{
+.kak-body .order-steps .inp2{
     box-shadow: 0px 0px 15px 0px #0000001A;
 width: 90%;
 max-width: 886px;
@@ -94,14 +94,14 @@ margin-left: 74px;
 border-radius: 8px;
 margin-bottom: 50px;
 }
-.kak-body .other .inp2 .inp-grid{
+.kak-body .order-steps .inp2 .inp-grid{
     display: grid;
     gap: 24px;
     margin-top: -1px;
     grid-template-columns: 1fr 1fr;
     padding: 28px;}
 
-.kak-body .other .inp2 .inp-grid input{
+.kak-body .order-steps .inp2 .inp-grid input{
     background: #F5F5F5;
 border: none;
 height: 56px;
@@ -120,7 +120,7 @@ margin-bottom: 21px;
 .kak-body .g1_button_media_button2{
     width: 302px;
 }
-.kak-body .other .inp2 .div{
+.kak-body .order-steps .inp2 .div{
     box-shadow: 0px -1px 15.3px 0px #0000001A;
     display: flex;
     align-items: center;
@@ -129,7 +129,7 @@ margin-bottom: 21px;
 width: 100%;
 margin-top: 9px;
 }
-.kak-body .other .inp2 .div button{
+.kak-body .order-steps .inp2 .div button{
 width: 94%;
 margin: auto;
 border: none;
@@ -138,12 +138,12 @@ background: #FFF957;
 border-radius: 8px;
 }
 @media (max-width:891px){
-    .kak-body .other .inp2{
+    .kak-body .order-steps .inp2{
         width: 100%;
         max-width: 500px;
         margin-left: 0px;
     }
-    .kak-body .other .inp2 .inp-grid{
+    .kak-body .order-steps .inp2 .inp-grid{
         display: grid;
         gap: 24px;
         margin-top: -1px;
@@ -152,7 +152,7 @@ border-radius: 8px;
         .s3_shag_image{
             margin-left: 0px;
         }
-        .kak-body .other .g1_button_media_button {
+        .kak-body .order-steps .g1_button_media_button {
             margin-left: 5px;
             background: #FFF957;
             border: none;
@@ -178,7 +178,7 @@ border-radius: 8px;
             margin-top: 21px;
             margin-bottom: 20px;
         }
-        .kak-body .main .title_page {
+        .kak-body .order-page .title_page {
             font-family: Montserrat;
             font-size: 16px;
             font-weight: 600;
@@ -189,17 +189,17 @@ border-radius: 8px;
             margin-bottom: 29px;
             letter-spacing: 1px;
         }
-        .kak-body .other .mg_shag {
+        .kak-body .order-steps .mg_shag {
             display: grid;
             grid-template-columns: 45px auto;
             align-items: start;
             gap: 17px;
             margin-left: 7px;
         }
-        .kak-body .other .mg_shag .text_shag h3 {
+        .kak-body .order-steps .mg_shag .text_shag h3 {
             font-family: Montserrat;
             font-size: 14px;}
-            .kak-body .other .mg_shag .text_shag p {
+            .kak-body .order-steps .mg_shag .text_shag p {
                 font-family: Montserrat;
                 font-size: 14px;
                 font-weight: 400;
@@ -215,7 +215,7 @@ border-radius: 8px;
                 margin-left: 7px;
                 margin-bottom: 52px;
             }
-            .kak-body .other .inp2 .inp-grid input {
+            .kak-body .order-steps .inp2 .inp-grid input {
                 background: #F5F5F5;
                 border: none;
                 height: 49px;
@@ -231,7 +231,7 @@ border-radius: 8px;
                 margin-left: 2px;
                 margin-bottom: 7px;
             }
-            .kak-body .other .inp2 .div {
+            .kak-body .order-steps .inp2 .div {
                 box-shadow: 0px -1px 15.3px 0px #0000001A;
                 display: flex;
                 align-items: center;
@@ -240,7 +240,7 @@ border-radius: 8px;
                 width: 100%;
                 margin-top: -1px;
             }
-            .kak-body .other .inp2 .div button {
+            .kak-body .order-steps .inp2 .div button {
                 width: 88%;
                 margin: auto;
                 border: none;
