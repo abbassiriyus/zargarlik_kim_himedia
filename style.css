@@ -1001,7 +1001,7 @@ color: #242424;
     }
 }
 
-.skid_card{
+.homePage__kolSkid_card{
     width: 100%;
     height: 150px;
     background-color: red;
@@ -1011,14 +1011,14 @@ color: #242424;
     overflow: hidden;
     margin-bottom: 20px;
 }
-.skid_card img{
+.homePage__kolSkid_card img{
     width: 70%;
     height: 100%;
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
-.skid_card span{
+.homePage__kolSkid_card span{
     font-family: Montserrat;
 font-size: 17px;
 font-weight: 500;
@@ -1027,7 +1027,7 @@ margin-left: 20px;
 margin-top: 20px;
 color: #242424;
 }
-.pro{
+.homePage__kolSkid_card__pro{
     width: 54px;
     height: 18px;
     background-color: #0F0F0F;
@@ -1039,7 +1039,7 @@ color: #242424;
     bottom: 0px;
     border-top-right-radius: 20px;
 }
-.pro h4{
+.homePage__kolSkid_card__pro h4{
     margin-bottom: 0px !important;
     font-family: Montserrat;
     font-size: 10px;
@@ -1051,7 +1051,7 @@ color: #242424;
 
 
 
-.homePage__skid_card1{
+.homePage__kolSkid_card1{
     width: 100%;
     height: 150px;
     background: #DADBD6;
@@ -1061,13 +1061,13 @@ color: #242424;
     overflow: hidden;
     margin-bottom: 20px;
 }
-.homePage__skid_card1 img{
+.homePage__kolSkid_card1 img{
     width: 45%;
     position: absolute;
     right: 0px;
     top: 0px;
 }
-.homePage__skid_card1 span{
+.homePage__kolSkid_card1 span{
     font-family: Montserrat;
 font-size: 17px;
 font-weight: 500;
@@ -1076,7 +1076,7 @@ margin-left: 20px;
 margin-top: 20px;
 color: #242424;
 }
-.pro1{
+.homePage__kolSkid_card__pro1{
     width: 65px;
     height: 20px;
     background-color: #0F0F0F;
@@ -1090,7 +1090,7 @@ color: #242424;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
 }
-.pro1 h4{
+.homePage__kolSkid_card__pro1 h4{
     margin-bottom: 0px !important;
     font-family: Montserrat;
     font-size: 10px;
@@ -1099,30 +1099,30 @@ color: #242424;
     text-align: left;
     
 }
-.twskid span{
+.homePage__kolSkid_card__dr span{
     color: white;
 }
-.twskid{
+.homePage__kolSkid_card__dr{
     background: linear-gradient(180deg, #64A2D4 0%, #6391B6 100%);
 
 }
-.twskid .pro{
+.homePage__kolSkid_card__dr .pro{
     background-color: #FDD335;
     color: black;
     width: 65px;
     border-top-right-radius: 25px;
 }
-.gr24{
+.homePage__kolSkid_card__gr24{
     background: #6771CE;
 
 }
-.gr24 img{
+.homePage__kolSkid_card__gr24 img{
     width: 50%;
 }
-.gr24 span{
+.homePage__kolSkid_card__gr24 span{
     color: white;
 }
-.gr24 .pro h4{
+.homePage__kolSkid_card__gr24 .homePage__kolSkid_card__pro h4{
     font-family: Montserrat;
 font-size: 10px;
 font-weight: 700;
@@ -1130,46 +1130,46 @@ line-height: 12.19px;
 /* text-align: left; */
 color: #FDD335;
 }
-.gr24 .pro{
+.homePage__kolSkid_card__gr24 .homePage__kolSkid_card__pro{
     background: #F55700;
     width: 55px;
     height: 18px;
     padding: 3px 14px;
 }
- .cdff{
+ .homePage__kolSkid_card__kolsa{
     background: #3275F2;
 
  }
-.cdff img{
+.homePage__kolSkid_card__kolsa img{
      width: 85%;
     position: absolute;
     right: 0px;
     bottom: 0px;
     
 }
-.defsvg{
+.homePage__kolSkid_card__sepi{
     background: #CAD645;
 
 }
-.defsvg .svg{
+.homePage__kolSkid_card__sepi .svg{
     position: absolute;
     bottom: 0px;
     right: 0px;
     /* left: 0px; */
     width: 35%;
 }
-.defsvg .svg1{
+.homePage__kolSkid_card__sepi .svg1{
     position: absolute;
     top: 0px;
     right: 0px;
     width: 90%;
     height: 100%;
 }
-.group_24{
+.homePage__kolSkid_card__pechatki{
     background: linear-gradient(287.51deg, #97F051 0%, #219248 100%);
 
 }
-.group_24 .img_28{
+.homePage__kolSkid_card__pechatki .img_28{
     width: 60%;
     position: absolute;
     /* top: 0px; */
@@ -1177,39 +1177,39 @@ color: #FDD335;
     z-index: 1;
     bottom: 0px;
 }
-.group_24 .img_29{
+.homePage__kolSkid_card__pechatki .img_29{
     width: 80%;
 }
-.koliye{
+.homePage__kolSkid_card__koliye{
     background: #FB7961;
 
 }
-.koliye img{
+.homePage__kolSkid_card__koliye img{
     position: absolute;
     top: 0px;
     right: 0px;
     width: 82%;
 }
-.skid_brosh img{
+.homePage__kolSkid_card__brosh img{
     width: 60%;
 }
-.skid_brosh{
+.homePage__kolSkid_card__brosh{
     background: linear-gradient(107.51deg, #398BFD 0%, #2B6AC2 100%);
 
 }
-.skid_chas{
+.homePage__kolSkid_card__chas{
     background: #5673DA;
 }
-.skid_chas img{
+.homePage__kolSkid_card__chas img{
     /* width: 50%; */
     height: 100%;
 }
-.stolovoe img{
+.homePage__kolSkid_card__stolovoe img{
     width: 40%;
     position: absolute;
     right: 0px;
 }
-.stolovoe{
+.homePage__kolSkid_card__stolovoe{
     background: linear-gradient(107.51deg, #994A63 0%, #FF5F5F 100%);
 
 }
@@ -1225,18 +1225,18 @@ color: #FDD335;
          margin: auto;
          /* margin-top: 50px; */
     }
-    .skid_card span{
+    .homePage__kolSkid_cardspan{
         margin-top: 10px;
         margin-left: 10px;
     }
-    .homePage__skid_card1 span{
+    .homePage__kolSkid_card1 span{
         margin-top: 10px;
         margin-left: 10px;
 
     }
 }
 @media (max-width:440px) {
-    .skid_card{
+    .homePage__kolSkid_card{
         width: 100%;
         height: 91px;
         /* background-color: red; */
@@ -1246,7 +1246,7 @@ color: #FDD335;
         overflow: hidden;
         margin-bottom: 20px;
     }
-    .homePage__skid_card1{
+    .homePage__kolSkid_card1{
         width: 100%;
         height: 91px;
         /* background-color: red; */
@@ -1256,23 +1256,23 @@ color: #FDD335;
         overflow: hidden;
         margin-bottom: 20px;
     }
-    .koliye img{
+    .homePage__kolSkid_card__koliye img{
         /* width: 100%; */
         height: 100%;
     }
-    .skid_card img{
+    .homePage__kolSkid_cardimg{
         height: 100%;
     }
-    .skid_card span{
+    .homePage__kolSkid_cardspan{
         font-size: 14px;
     }
-    .homePage__skid_card1 span{
+    .homePage__kolSkid_card1 span{
         font-size: 14px;
     }
     .bir img{
         width: 82% !important;
     }
-    .homePage__skid_card1{
+    .homePage__kolSkid_card1{
         width:96%;
         height: 91px;
         display: flex;
@@ -1281,7 +1281,7 @@ color: #FDD335;
         overflow: hidden;
         margin-bottom: 5px;
     }
-    .skid_card{
+    .homePage__kolSkid_card{
         width: 97%;
         height: 91px;
         display: flex;
@@ -1293,126 +1293,126 @@ color: #FDD335;
     .homePage__kolSkid__media{
         gap: 0px;
     }
-    .pro1{
+    .homePage__kolSkid_card__pro1{
         top: 42px;
         margin-left: -4px;
     }
 
-    .twskid span{
+    .homePage__kolSkid_card__dr span{
         margin-top: 13px;
     }
-    .twskid img{
+    .homePage__kolSkid_card__dr img{
         width: 67%;
         bottom: -6px;
     }
-    .gr24 span{
+    .homePage__kolSkid_card__gr24 span{
         margin-top: 13px;
         margin-left: 9px;
     }
-    .gr24 img{
+    .homePage__kolSkid_card__gr24 img{
         width: 59%;
         height: 96%;
     }
-    .gr24 .pro{
+    .homePage__kolSkid_card__gr24 .homePage__kolSkid_card__pro{
         bottom: -4px;
         left: -4px;
     }
-    .cdff span{
+    .homePage__kolSkid_card__kolsa span{
         margin-top: 10px;
         line-height: 18px;
     }
-    .cdff img{
+    .homePage__kolSkid_card__kolsa img{
         width: 95%;
     }
-    .cdff .pro{
+    .homePage__kolSkid_card__kolsa .homePage__kolSkid_card__pro{
         bottom: -2px;
     }
-    .defsvg .pro{
+    .homePage__kolSkid_card__sepi .homePage__kolSkid_card__pro{
         bottom: -2px;
         left: -3px;
     
     }
-    .defsvg span{
+    .homePage__kolSkid_card__sepi span{
         margin-top: 11px;
         margin-left: 9px;
     }
-    .defsvg .svg1{
+    .homePage__kolSkid_card__sepi .svg1{
         top: 0px;
         right: 0px;
         width: 100%;
     }
-    .defsvg .svg{
+    .homePage__kolSkid_card__sepi .svg{
       
         right: -5px;
      
     }
-    .group_24 .pro{
+    .homePage__kolSkid_card__pechatki .homePage__kolSkid_card__pro{
         bottom: -3px;
     }
-    .group_24 span{
+    .homePage__kolSkid_card__pechatki span{
         margin-top: 12px;
         margin-left: 11px;
     }
-    .koliye img{
+    .homePage__kolSkid_card__koliye img{
         width: 100%;
     }
-    .koliye span{
+    .homePage__kolSkid_card__koliye span{
         margin-top: 12px;
         margin-left: 9px;
     }
-    .koliye .pro{
+    .homePage__kolSkid_card__koliye .homePage__kolSkid_card__pro{
         bottom: -3px;
         left: -3px;
     }
-    .twskid img{
+    .homePage__kolSkid_card__dr img{
         width: 75%;
         bottom: -2px;
     }
-    .twskid .pro{
+    .homePage__kolSkid_card__dr .homePage__kolSkid_card__pro{
         bottom: -2px;
     }
-    .skid_brosh img{
+    .homePage__kolSkid_card__brosh img{
         width: 74%;
 
     }
-    .skid_brosh span{
+    .homePage__kolSkid_card__brosh span{
         margin-top: 13px;
         margin-left: 9px;
     }
-    .skid_brosh .pro{
+    .homePage__kolSkid_card__brosh .homePage__kolSkid_card__pro{
         bottom: -3px;
         left: -3px;
     }
-    .skid_chas span{
+    .homePage__kolSkid_card__chas span{
         margin-top: 14px;
     }
-    .skid_chas .pro{
+    .homePage__kolSkid_card__chas .homePage__kolSkid_card__pro{
         bottom: -4px;
     }
-    .skid_chas img{
+    .homePage__kolSkid_card__chas img{
         width: 62%;
     }
-    .stolovoe span{
+    .homePage__kolSkid_card__stolovoe span{
         line-height: 18px;
         margin-top: 13px;
         margin-left: 9px;
     }
-    .stolovoe .pro{
+    .homePage__kolSkid_card__stolovoe .homePage__kolSkid_card__pro{
         bottom: -5px;
         left: -3px;
     }
-    .stolovoe img{
+    .homePage__kolSkid_card__stolovoe img{
         height: 97%;
         right: -3px;
         top: 4px;
     }
-    .cdff span{
+    .homePage__kolSkid_card__kolsa span{
         line-height: 18px !important;
     }
     }
 
 
-.cards_for_swiper_media{
+.homePage__cards__media{
     display: grid;
     grid-template-columns: 250px 250px 250px;
     width: 95%;
@@ -1422,7 +1422,7 @@ color: #FDD335;
     gap: 10px;
     display: none;
 }
-    .one_card_swip{
+    .homePage__oneCard__swip{
         width: 100%;
         /* min-height: 300px; */
         /* display: flex; */
@@ -1430,17 +1430,17 @@ color: #FDD335;
         border-radius: 17px;
 }
  
-.one_card_swip img{
+.homePage__oneCard__swip img{
     width: 100%;
     height: 230px;
 }
-.one_card_swip h3{
+.homePage__oneCard__swip h3{
     font-size: 15px;
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.one_card_swip h3 del{
+.homePage__oneCard__swip h3 del{
     color: #959595;
     font-family: Jost;
 font-size: 15px;
@@ -1454,13 +1454,13 @@ text-align: left;
     padding: 10px;
 }
 @media (max-width:991px) {
-    .cards_for_swiper_media{
+    .homePage__cards__media{
         display: grid !important;
     }
     
 }
 @media (max-width:800px) {
-    .cards_for_swiper_media{
+    .homePage__cards__media{
         display: grid;
         grid-template-columns: 200px 200px 200px;
         width: 95%;
@@ -1469,13 +1469,13 @@ text-align: left;
         justify-content: space-around;
         gap: 10px;
     }
-    .one_card_swip img{
+    .homePage__oneCard__swip img{
         width: 100%;
         height: 200px;
     }
 }
 @media (max-width:660px) {
-    .cards_for_swiper_media{
+    .homePage__cards__media{
         display: grid;
         grid-template-columns: 160px 160px 160px;
         width: 95%;
@@ -1484,13 +1484,13 @@ text-align: left;
         justify-content: space-around;
         gap: 0px;
     }
-    .one_card_swip img{
+    .homePage__oneCard__swip img{
         width: 100%;
         height: 160px;
     }
 }
 @media (max-width:510px) {
-    .cards_for_swiper_media{
+    .homePage__cards__media{
         display: grid;
         grid-template-columns: 200px 200px ;
         width: 95%;
@@ -1499,16 +1499,16 @@ text-align: left;
         justify-content: space-around;
         gap: 0px;
     }
-    .one_card_swip{
+    .homePage__oneCard__swip{
         margin-bottom: 10px;
     }
-    .one_card_swip img{
+    .homePage__oneCard__swip img{
         width: 100%;
         height: 200px;
     }
 }
 @media (max-width:430px) {
-    .cards_for_swiper_media{
+    .homePage__cards__media{
         display: grid;
         grid-template-columns: 170px 170px ;
         width: 95%;
@@ -1517,16 +1517,16 @@ text-align: left;
         justify-content: space-around;
         gap: 0px;
     }
-    .one_card_swip{
+    .homePage__oneCard__swip{
         margin-bottom: 10px;
     }
-    .one_card_swip img{
+    .homePage__oneCard__swip img{
         width: 100%;
         height: 170px;
     }
 }
 @media (max-width:370px) {
-    .cards_for_swiper_media{
+    .homePage__cards__media{
         display: grid;
         grid-template-columns: 157px 157px ;
         width: 95%;
@@ -1535,16 +1535,16 @@ text-align: left;
         justify-content: space-around;
         gap: 0px;
     }
-    .one_card_swip{
+    .homePage__oneCard__swip{
         margin-bottom: 17px;
         height: 227px;
     }
-    .one_card_swip img{
+    .homePage__oneCard__swip img{
         width: 100%;
         height: 157px;
         margin-bottom: 10px;
     }
-    .one_card_swip span{
+    .homePage__oneCard__swip span{
         font-family: Jost;
 font-size: 14px;
 font-weight: 400;
@@ -1627,7 +1627,7 @@ text-align: left;
     
 }
 @media (max-width:991px) {
-    .cards_for_swiper_media{
+    .homePage__cards__media{
         display: block;
     }
     .mySwiper_12{
@@ -1772,7 +1772,7 @@ text-align: left;
     }
 }
 
-.one_card_swip img{
+.homePage__oneCard__swip img{
     background: #F6F6F6;
     border-radius: 8px;
 }
