@@ -31,7 +31,7 @@
     filter: grayscale(100%);
 }
 
-catalog_title__page23 h1 {
+.catalog_title__page23 h1 {
     width: 95%;
     max-width: 1440px;
     margin: auto;
@@ -44,14 +44,14 @@ catalog_title__page23 h1 {
     margin-bottom: 27px;
 }
 
-.pokazat12 {
+.aksiyaSeeMore {
     display: flex;
     align-items: center;
     justify-content: end;
 margin-bottom: 16px;
 }
 
-.pokazat12 a {
+.aksiyaSeeMore a {
     text-decoration: none;
     font-family: Montserrat;
     font-size: 22px;
@@ -66,7 +66,7 @@ margin-bottom: 16px;
     align-items: center; justify-content: center;
 border-radius: 4px;
 }
-.pokazat12 a:hover{
+.aksiyaSeeMore a:hover{
     background: #00000046;
 
 cursor: pointer;
@@ -77,6 +77,14 @@ text-decoration: underline;
 }
 
 @media (max-width:991px) {
+    .catalog_title__page23 h1{
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.94px;
+        text-align: left;
+        
+    }
     .catalog_main_page_first3 {
         position: relative;
         border-radius: 8px;
@@ -86,6 +94,12 @@ text-decoration: underline;
     }
     .href2 {
         display: block;
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.1px;
+text-align: left;
+color: white;
     }
     .catalog_main_page_first3_black {
         width: 100%;
@@ -98,11 +112,11 @@ text-decoration: underline;
         justify-content: center;
         align-items: center;
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 18.75px;
         font-weight: 600;
+        line-height: 21.56px;
+        text-align: center; 
         flex-direction: column;
-        line-height: 34.13px;
-        text-align: center;
         color: white;
     
     
@@ -113,7 +127,15 @@ text-decoration: underline;
         filter: grayscale(100%);
         height: 100%;
     } 
-    .pokazat12{
+    .aksiyaSeeMore{
         display: none;
     }  
+    .catalog_title__page23 h1{
+        margin-top: -3px;
+    }
 }
+.catalogMain__page__filterSection__first {
+    margin-top:0px;
+    /* min-height: 300px; */
+  }
+  
