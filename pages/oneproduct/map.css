@@ -43,17 +43,17 @@ body{
     width: 100%;
     height: 762px;
 }
-.iframe_scroll{
+.store__divider{
     width: 100%;
     height: 762px;
   
     overflow: auto;
     position: relative;
 }
-.scrollic{
+.store__location{
     padding: 25px;
 }
-.inp_mes{
+.search__form{
     width: 90%;
     height: 66px;
     /* padding-left: 15px; */
@@ -67,7 +67,7 @@ body{
     margin-top: 20px;
     border-radius: 8px;
 }
-.inp_mes input{
+.search__form input{
     border: none;
     background-color: #F5F5F5;
     outline: none;
@@ -79,27 +79,27 @@ text-align: left;
 color: #6A6A6A;
 width: 90%;
 }
-.inp_mes .bx-search{
+.search__form .bx-search{
     font-size: 25px;
 }
-.filt0{
+.filters{
     display: flex;
     justify-content: space-between;
     margin-top: 85px;
 }
-.pop{
+.filters__item{
     display: flex;
     
 gap: 6px;
 }
-.pop1{
+.filters__item1{
     display: flex;
     align-items: center;
 }
-.pop .bx-slider-alt{
+.filters__item .bx-slider-alt{
     font-size: 20px;
 }
-.pop span ,.pop1 span{
+.filters__item span ,.filters__item1 span{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 500;
@@ -107,21 +107,21 @@ line-height: 19.5px;
 text-align: left;
 color: #242424;
 }
-.pop1 span{
+.filters__item1 span{
     margin-left: 10px;
 }
 
-.flagm1{
+.store1{
     margin-top: 31px;
     margin-left: -3px;
     cursor: pointer;
 }
-.magal{
+.store__header{
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.magal h3{
+.store__header h3{
     font-family: Montserrat;
 font-size: 20px;
 font-weight: 600;
@@ -130,12 +130,12 @@ text-align: left;
 color: #242424;
 margin-top: 8px;
 }
-.flagm{
+.store{
     margin-top: 31px;
     margin-left: -3px;
     cursor: pointer;
 }
-.flagm h4{
+.store h4{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -145,7 +145,7 @@ color: #242424;
 margin-top: 14px;
 margin-left: -2px;
 }
-.flagm p{
+.store p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -156,7 +156,7 @@ margin-top: 6px;
 margin-bottom: 4px;
 margin-left: -3px;
 }
-.flagm span{
+.store span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -165,12 +165,12 @@ text-align: left;
 margin-left: -3px;
 color: #898989;
 }
-.flagm hr{
+.store hr{
     color: rgba(128, 128, 128, 0.179) !important;
     opacity: 0.4;
     margin-top: 27px;
 }
-.flagm1 h4{
+.store1 h4{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -180,7 +180,7 @@ color: #242424;
 margin-top: 14px;
 margin-left: -2px;
 }
-.flagm1 p{
+.store1 p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -191,7 +191,7 @@ margin-top: 6px;
 margin-bottom: 4px;
 margin-left: -3px;
 }
-.flagm1 span{
+.store1 span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -200,7 +200,7 @@ text-align: left;
 margin-left: -3px;
 color: #898989;
 }
-.lombard{
+.store__services{
     display: flex;
     gap: 8px;
     margin-top: 8px;
@@ -209,14 +209,14 @@ color: #898989;
     margin-left: -7px;
     /* width: 100%; */
 }
-.lombard button{
+.store__services button{
     border-radius: 100px;
     background: #F5F5F5;
 border: none;
     padding: 10px 16px 10px 16px;
 }
 
-.flagm1 hr{
+.store1 hr{
     color: rgba(128, 128, 128, 0.179) !important;
     opacity: 0.4;
     margin-top: 27px;
@@ -243,7 +243,7 @@ border: none;
         overflow: hidden;
         margin-top: 25px;
     }
-    /* .lombard button{
+    /* .store__services button{
         padding: 8px 6px 10px 7px;
     } */
 }
@@ -261,7 +261,7 @@ border: none;
         overflow: hidden;
         margin-top: 25px;
     }
-    /* .lombard button{
+    /* .store__services button{
         padding: 8px 6px 10px 7px;
     } */
     .ifr{
@@ -269,38 +269,38 @@ border: none;
     }
 }
 @media (max-width:445px){
-    /* .lombard button{
+    /* .store__services button{
     padding: 6px 2px 6px 4px;
 
     } */
-    .lombard{
+    .store__services{
         overflow: auto;
      
     }
 }
-.musr_klas{
+.store__images{
     display: flex;
     align-items: center;
     margin-top: 14px;
     gap: 17px;
     margin-bottom: 2px;
 }
-/* .iframe_scroll{
+/* .store__divider{
     display: none;
 } */
 .clcikker{
     overflow: auto;
     display: none;
 }
-.clickic{
+.clicker__item{
     padding: 30px;
 }
-.back{
+.clicker__back{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.back span{
+.clicker__back span{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 500;
@@ -309,18 +309,18 @@ text-align: left;
 color: #2424248A;
 cursor: pointer;
 }
-.back .bx-arrow-back{
+.clicker__back .bx-arrow-back{
     font-size: 24px;
     color: #2424248A;
 
 }
-.dobr{
+.store__actions{
     display: flex;
     align-items: center;
     gap: 16px;
     margin-top: 16px;
 }
-.dobr button{
+.store__actions button{
     padding: 16px;
     color: #2E8AE6;
     font-family: Montserrat;
@@ -360,7 +360,7 @@ cursor: pointer;
     top: 31px;
     z-index: 121;
 }
-.back_blwh{
+.how-to-get{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,7 +373,7 @@ cursor: pointer;
     z-index: 9999999;
     display: none;
 }
-.blwhite{
+.how-to-get__modal{
     max-width: 390px;
     width: 100%;
     min-height: 623px;
@@ -383,31 +383,31 @@ cursor: pointer;
     margin-left: 20px;
 }
 @media (max-width:991px) {
-    .blwhite{
+    .how-to-get__modal{
         margin-left: 0px;
     }
 }
-.blwhitic{
+.how-to-get__header{
     padding: 25px;
 }
-.kak{
+.how-to-get__title{
     display: flex;
     justify-content: space-between;
     align-items: center;
 margin-bottom: 30px;
 }
-.kak .bx-x{
+.how-to-get__title .bx-x{
     font-size: 25px;
     cursor: pointer;
 }
-.kak h2{
+.how-to-get__title h2{
     font-family: Montserrat;
 font-size: 22px;
 font-weight: 600;
 line-height: 26.82px;
 text-align: left;
 }
-.blwhite h6{
+.how-to-get__modal h6{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -416,21 +416,21 @@ text-align: left;
 margin-bottom: -5px;
 /* margin-bottom: 30px; */
 }
-.blwhite img{
+.how-to-get__modal img{
     margin-top: 40px;
     width: 100%;
 }@media (max-width:1200px) {
-    .musr_klas{
+    .store__images{
         overflow: auto;
     }
-    .lombard{
+    .store__services{
         overflow: auto;
         text-wrap: nowrap;
         margin-top: 27px;
     }
 }
 
-.blwhitic button{
+.how-to-get__header button{
     width: 100%;
     height: 44px;
     border-radius: 8px;
@@ -485,7 +485,7 @@ line-height: 17.07px;
     }
 }
 @media (max-width:410px) {
-    .lombard{
+    .store__services{
         overflow: auto;
         display: flex;
         gap: 35px;
@@ -494,7 +494,7 @@ line-height: 17.07px;
         align-items: center;
         
     }
-    .lombard button{
+    .store__services button{
         text-wrap: nowrap;
     }
 
@@ -506,7 +506,7 @@ line-height: 21.94px;
 text-align: left;
 margin-left: 10px;
     }
-    .inp_mes{
+    .search__form{
         width: 90%;
         height: 44px;
         /* padding-left: 15px; */
@@ -520,7 +520,7 @@ margin-left: 10px;
         margin-top: 11px;
         border-radius: 8px;
     }
-    .inp_mes input{
+    .search__form input{
         border: none;
         background-color: #F5F5F5;
         outline: none;
@@ -532,15 +532,15 @@ margin-left: 10px;
     color: #6A6A6A;
     width: 90%;
     }
-    .inp_mes .bx-search{
+    .search__form .bx-search{
         font-size: 25px;
     }
-    .filt0 {
+    .filters {
         display: flex;
         justify-content: space-between;
         margin-top: 26px;
     }
-    .pop span , .pop1 span{
+    .filters__item span , .filters__item1 span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 500;
@@ -551,20 +551,20 @@ text-align: left;
     .bx-slider-alt{
         font-size: 16;
     }
-    .pop1 img{
+    .filters__item1 img{
         width: 17px;
     }
-    .pop{
+    .filters__item{
         margin-left: -10px;
         align-items: center;
     }
-    .pop1{
+    .filters__item1{
         margin-right: -8px;
     }
-    .scrollic{
+    .store__location{
         padding-left: 15px;
     }
-    .magal h3{
+    .store__header h3{
         font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -572,10 +572,10 @@ line-height: 20px;
 text-align: left;
 
     }
-    .flagm{
+    .store{
         margin-top: 27px;
     }
-    .flagm h4{
+    .store h4{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -583,7 +583,7 @@ line-height: 20px;
 text-align: left;
     margin-top: 11px;
     }
-    .flagm p{
+    .store p{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -592,7 +592,7 @@ text-align: left;
     margin-bottom: -1px;
     margin-left: 0px;
     }
-    .flagm span{
+    .store span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -600,7 +600,7 @@ line-height: 20px;
 text-align: left;
 
     }
-    .lombard button{
+    .store__services button{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -625,10 +625,10 @@ line-height: 14.63px;
     .iframe_map{
         border-radius: 1px;
     }
-    .flagm1{
+    .store1{
         margin-top: 27px;
     }
-    .flagm1 h4{
+    .store1 h4{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -636,7 +636,7 @@ line-height: 20px;
 text-align: left;
     margin-top: 11px;
     }
-    .flagm1 p{
+    .store1 p{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -645,7 +645,7 @@ text-align: left;
     margin-bottom: -1px;
     margin-left: 0px;
     }
-    .flagm1 span{
+    .store1 span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -757,16 +757,16 @@ left: 22px !important;
 
 
 @media (max-width:360px) {
-    .blwhite{
+    .how-to-get__modal{
         border-radius: 1px;
     }
-    .clickic {
+    .clicker__item {
         padding: 16px;
         overflow: auto;
         width: 100vw;
         /* background-color: red; */
     }
-    .dobr button {
+    .store__actions button {
         padding: 13px;
     }
  

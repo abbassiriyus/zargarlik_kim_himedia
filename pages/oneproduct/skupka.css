@@ -1001,12 +1001,12 @@ margin-top: 53px;
 .second-pe{
     display: none;
 }
-.flagm{
+.store{
     margin-top: 31px;
     /* margin-left: -3px; */
     cursor: pointer;
 }
-.flagm h4{
+.store h4{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
@@ -1016,7 +1016,7 @@ color: #242424;
 margin-top: 14px;
 /* margin-left: -2px; */
 }
-.flagm p{
+.store p{
     font-family: Montserrat;
 font-size: 16px;
 font-weight: 400;
@@ -1027,7 +1027,7 @@ margin-top: 6px;
 margin-bottom: 4px;
 /* margin-left: -3px; */
 }
-.flagm span{
+.store span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -1036,17 +1036,17 @@ text-align: left;
 /* margin-left: -3px; */
 color: #898989;
 }
-.flagm hr{
+.store hr{
     color: rgba(128, 128, 128, 0.179) !important;
     opacity: 0.4;
     margin-top: 27px;
 }
-.magal{
+.store__header{
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.magal h3{
+.store__header h3{
     font-family: Montserrat;
 font-size: 20px;
 font-weight: 600;
@@ -1055,7 +1055,7 @@ text-align: left;
 color: #242424;
 margin-top: 8px;
 }
-.flagm{
+.store{
     display: none;
 }
  @media (max-width:1520px) {
@@ -1233,7 +1233,7 @@ margin-top: 8px;
         .one_shag {
             height: 500px;
         }
-        .flagm{
+        .store{
             display: block;
         }
         .flagm_magz{
@@ -1694,12 +1694,12 @@ text-align: center;
     .gipermarket{
         border: none;
     }
-    .flagm{
+    .store{
         margin-top: 18px;
         margin-left: 10px;
         margin-bottom: 31px;
     }
-    .flagm h4{
+    .store h4{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -1707,7 +1707,7 @@ line-height: 20px;
 text-align: left;
     margin-top: 11px;
     }
-    .flagm p{
+    .store p{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -1716,7 +1716,7 @@ text-align: left;
     margin-bottom: -1px;
     margin-left: 0px;
     }
-    .flagm span{
+    .store span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -1724,7 +1724,7 @@ line-height: 20px;
 text-align: left;
 
     }
-    .magal h3{
+    .store__header h3{
         font-family: Montserrat;
 font-size: 16px;
 font-weight: 600;
