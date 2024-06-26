@@ -155,15 +155,22 @@ margin-bottom: -6px;
     padding-left: 8px;
     margin-top: 10px;
 }
+@media(max-width:1633px){
+    .main .nvb{
+        max-width: none !important;
+        width: auto;
+        margin: auto;
+    }
+}
 @media(max-width:1500px){
     .main .for_bg{
         padding: 20px;
     }
-    .main .nvb{
+    /* .main .nvb{
         max-width: 1440px;
         width: 95%;
         margin: auto;
-    }
+    } */
     .main .word{
         padding: 20px;
     }
