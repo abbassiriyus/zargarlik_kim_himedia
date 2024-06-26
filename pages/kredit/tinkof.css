@@ -186,11 +186,11 @@ margin-bottom: 10px;
     #F1F1F1 34%);
 
 }
-.tinkofff_data .text_sebir h1{
+.tinkofff_data .credit-option__content h1{
 color: black;
 /* width: 83%; */
 }
-.jewel .text_sebir h1{
+.jewel .credit-option__content h1{
     font-family: Montserrat;
 font-size: 81px;
 font-weight: 700;
@@ -198,7 +198,7 @@ line-height: 98.74px;
 text-align: left;
 width: 111%;
 }
-.jewel .text_sebir h3{
+.jewel .credit-option__content h3{
     font-family: Montserrat;
 font-size: 50px;
 font-weight: 500;
@@ -207,18 +207,18 @@ text-align: left;
 margin-top: 34px;
 
 }
-.jewel .text_sebir{
+.jewel .credit-option__content{
 width: 50%;
 max-width: 606px;
 height: 84%;
 position: relative;
 left: 2%;
 }
-.jewel .text_sebir img{
+.jewel .credit-option__content img{
     height: 82px;
     margin-top: 29px;
 }
-.jewel .payment_image_big{
+.jewel .credit-option__image--big{
     /* height: %; */
     /* width: 40%; */
     width: 50%;
@@ -576,13 +576,13 @@ text-align: left;
         padding-top: 10%;
     
     }  
-.jewel .text_sebir h1{
+.jewel .credit-option__content h1{
 width: 119%;
 }
     .how {
 margin-top: 0px !important;
     }
-    .jewel .payment_image_big{
+    .jewel .credit-option__image--big{
         /* height: %; */
         /* width: 40%; */
         width: 50%;
@@ -592,14 +592,14 @@ margin-top: 0px !important;
         max-width: 841px;
         margin-bottom: 5%;
     }
-    .jewel .text_sebir h1{
+    .jewel .credit-option__content h1{
         font-family: Montserrat;
 font-size: 24px;
 font-weight: 700;
 line-height: 29.26px;
 text-align: left;
     }
-    .jewel .text_sebir h3{
+    .jewel .credit-option__content h3{
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 500;
@@ -609,7 +609,7 @@ color: #242424;
 margin-top: 12px;
     
     }
-    .jewel .text_sebir img{
+    .jewel .credit-option__content img{
         height: 42px;
         margin-top: 16px;
         position: relative;
@@ -637,18 +637,18 @@ margin-top: 12px;
 
 
 
-.seber_bank_12{
+.credit-option--sberbank{
     background: linear-gradient(256.76deg, #FAED00 0.54%, #00D900 37.6%, #21A038 92.45%);
 position: relative;
 }
-.seber_bank_12 .text_sebir h1{
+.credit-option--sberbank .credit-option__content h1{
     color: white;
 }
-.seber_bank_12 .text_sebir h3{
+.credit-option--sberbank .credit-option__content h3{
     color: white;
 
 }
-.seber_bank_12 .verktor_absolute{
+.credit-option--sberbank .credit-option__image--vector1{
 position: absolute;
  right: 0%;
     top: 0px;
@@ -678,14 +678,14 @@ line-height: 42px;
 text-align: left;
 margin-bottom: 10px;
 }
-.seber_bank_12 .verktor_absolute1{
+.credit-option--sberbank .credit-option__image--vector11{
     position: absolute;
    
 left: 0px;
 height: 100%;
 top: 0px;
 }
-.seber_bank_12 .text_sebir {
+.credit-option--sberbank .credit-option__content {
     position: relative;
     z-index: 12;
 }
@@ -694,15 +694,15 @@ top: 0px;
         color: #1FA534  !important;
 
     }
-    .seber_bank_12{
+    .credit-option--sberbank{
 height: auto;  padding-bottom: 9%;
 padding-top: 11%;
 margin-bottom: 17px;
     }
- .seber_bank_12 .text_sebir img{
+ .credit-option--sberbank .credit-option__content img{
     height: 21px;
  }
- .seber_bank_12 .payment_image_big {
+ .credit-option--sberbank .credit-option__image--big {
     width: 39%;
  }
  .doxod3 {
