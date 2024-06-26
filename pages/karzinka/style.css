@@ -327,7 +327,7 @@ color: white;
 .check_karzinka33{
     display: none;
 }
-.nnere{
+.karzinka__nnere{
     display: none;
 }
 .karzinka__body .karzinka__card .karzinka__input__kamb .karzinka__inputR .bx-pencil{
@@ -455,7 +455,7 @@ left: -120px;
 .karzinka__body .karzinka__line2 {
 margin-bottom: 29px;
 }
-.karzinka__body .karzinka__appProd .title_ke{
+.karzinka__body .karzinka__appProd .karzinka__title__first{
     margin-top: 6px;
     margin-bottom: 3px;
     font-family: Montserrat;
@@ -466,7 +466,7 @@ letter-spacing: 0.5px;
 text-align: left;
 color: #242424;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka{
+.karzinka__body .karzinka__appProd .karzinka__poluchit{
     display: grid;
     grid-template-columns: auto 304px; 
     align-items: stretch;
@@ -475,13 +475,13 @@ gap: 10px;
     margin-bottom: 55px;
 }
 
-.karzinka__body .karzinka__appProd .poluchir_karzinka .karzinka__line2{ 
+.karzinka__body .karzinka__appProd .karzinka__poluchit .karzinka__line2{ 
 margin-bottom: 29px;
 }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka2{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit2{
     margin-bottom: 29px;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka{
+.karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka{
     display: grid;
     align-items: center;
     height: 52px;
@@ -489,7 +489,7 @@ margin-bottom: 29px;
    background: #FFFDBB;
 border-radius: 8px;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka h3{
+.karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka h3{
 padding: 0;
 margin: 0px;
 font-family: Montserrat;
@@ -500,7 +500,7 @@ text-align: left;
 color: #EBBB40;
 padding-left: 10px;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka .time_quary{
+.karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka .time_quary{
     padding: 0;
     margin: 0px;
     font-family: Montserrat;
@@ -517,34 +517,34 @@ padding-left: 10px;
     padding-left: 10px;
     border-left: 1px solid grey;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka .time_quary .bx-help-circle{
+.karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka .time_quary .bx-help-circle{
     font-size: 23px;
     position: relative;
     top: 3px;
     left: 3px;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka button{
+.karzinka__body .karzinka__appProd .karzinka__poluchit button{
     border: none;
     background: #FFF957;
 border-radius: 14px;
 height: 52px;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka input{
+.karzinka__body .karzinka__appProd .karzinka__poluchit input{
     border-radius: 8px;
     padding-left: 10px;
     border: 1px solid grey;
 }
-.karzinka__body .karzinka__appProd .title_ke .bx-help-circle{
+.karzinka__body .karzinka__appProd .karzinka__title__first .bx-help-circle{
 font-size: 23px;
 position: relative;
 top: 5px;
 }
 @media (max-width:801px) {
-    .karzinka__body .karzinka__appProd .title_ke{
+    .karzinka__body .karzinka__appProd .karzinka__title__first{
         margin-top: 18px;
     font-size: 18px;
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit{
         display: grid;
         grid-template-columns: auto; 
         align-items: stretch;
@@ -552,19 +552,19 @@ top: 5px;
         gap: 10px;
         margin-bottom: 55px;
     }  
-    .karzinka__body .karzinka__appProd .poluchir_karzinka2{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit2{
         display: grid;
        
         grid-template-columns: auto 152px; 
     }
-    .title_ke_801px{
+    .karzinka__title__801px{
         display: none !important;
     }
-    .title_ke122{
+    .karzinka__title__threee{
         margin-top: 17px;
         margin-bottom: 2px;
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka2 input{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit2 input{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -574,65 +574,65 @@ text-align: left;
 height: 43px !important;
 
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka2 button{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit2 button{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 500;
 line-height: 14.63px;
 
     }
-    .bonus_810px{
+    .karzinka__bonus__810px{
         padding-top: 21px;
         padding-bottom: 10px;
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka3{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit3{
        margin-top: 5px;
        margin-bottom: 10px;
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka input{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit input{
         height: 52px;
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka h3{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka h3{
         font-size: 12px;
         color: #1D6BD1;
         padding-left: 10px;
         }
-        .karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka .time_quary{
+        .karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka .time_quary{
             font-size: 12px;
             color: #1D6BD1;
             border-color: white;
             display: flex;align-items: center;
         }
-        .karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka .time_quary .bx-help-circle{
+        .karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka .time_quary .bx-help-circle{
             font-size: 23px;
             position: relative;
             top: -3px;
             color: white;
             left: 3px;
         }
-        .karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka{
+        .karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka{
             background: #ABCFFF;
 display: grid;
 grid-template-columns: 1fr 1fr;
         }
 }
-.karzinka__body .karzinka__appProd .title_ke .maxsus_img_karsiznda{
+.karzinka__body .karzinka__appProd .karzinka__title__first .karzinka__image__for{
 margin-right: 7px;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka .two_input_karzinka{
+.karzinka__body .karzinka__appProd .karzinka__poluchit .karzinka__two__input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 @media (max-width:600px){
-    .karzinka__body .karzinka__appProd .poluchir_karzinka .two_input_karzinka{
+    .karzinka__body .karzinka__appProd .karzinka__poluchit .karzinka__two__input{
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
     } 
 }
 
-.karzinka__body .karzinka__appProd .bonus_karzinka{
+.karzinka__body .karzinka__appProd .karzinka__bonus{
     display: grid;
     grid-template-columns: 30px auto ;
     min-height: 48px;
@@ -641,7 +641,7 @@ border-radius: 8px;
 padding: 10px 10px;
 margin-bottom: 63px;
 }
-.karzinka__body .karzinka__appProd .bonus_karzinka p{
+.karzinka__body .karzinka__appProd .karzinka__bonus p{
     padding: 0;
     margin: 0;
     padding-left: 10px;
@@ -652,7 +652,7 @@ line-height: 18.07px;
 text-align: left;
 
 }
-.karzinka__body .karzinka__appProd .bonus_karzinka  .bx-info-circle{
+.karzinka__body .karzinka__appProd .karzinka__bonus  .bx-info-circle{
     color: #242442;
 font-size: 25px;
 margin-right: 10px;
@@ -661,7 +661,7 @@ margin-left: 5px;
     height: 100%;
 
 }
-.karzinka__body .karzinka__appProd .bonus_karzinka p a{
+.karzinka__body .karzinka__appProd .karzinka__bonus p a{
 text-decoration: none;
 font-family: Montserrat;
 font-size: 14px;
@@ -670,17 +670,17 @@ line-height: 17.07px;
 text-align: left;
 
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-top: 29px;
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar .dastafka_radio_kar_card input{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar .karzinka__dastafka_radio_kar_card input{
 width: 20px;
 height: 20px;
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar .dastafka_radio_kar_card{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar .karzinka__dastafka_radio_kar_card{
     display: grid;
     grid-template-columns: 30px auto;
     align-items: start;
@@ -689,7 +689,7 @@ height: 20px;
     padding-bottom: 0px;
     border-radius: 9px;
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar .dastafka_radio_kar_card h5{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar .karzinka__dastafka_radio_kar_card h5{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -697,7 +697,7 @@ height: 20px;
     text-align: left;
     
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar .dastafka_radio_kar_card p{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar .karzinka__dastafka_radio_kar_card p{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -707,14 +707,14 @@ color: #808080;
 padding-bottom: 0px;
 margin-bottom: 10px;
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz{
 padding: 21px 26px;
 background: #EFEFEF;
 border-radius: 12px;
 margin-top: 16px;
 
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz{
     display: grid;
     grid-template-columns: 1fr 0.8fr;
     align-items: start;
@@ -722,11 +722,11 @@ margin-top: 16px;
 
 
 
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz .address_almaz_k{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz .karzinka__address_almaz_k{
     display: grid;
     grid-template-columns: 33px auto;
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz .address_almaz_k h5{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz .karzinka__address_almaz_k h5{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
@@ -736,7 +736,7 @@ padding-top: 5px;
 display: flex;
 gap: 20px;
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz .address_almaz_k h5 .button{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz .karzinka__address_almaz_k h5 .karzinka__button{
     background: var(--green-base, #38C793);
     font-family: Montserrat;
     font-size: 12px;
@@ -755,7 +755,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz  p{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz  p{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
@@ -764,23 +764,23 @@ align-items: center;
 color: #242424;  
 margin-top: 11px;  
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz  button{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz  button{
    border: none;
    height: 56px;
    width: 98%;
 }
 @media(max-width:650px){
-    .karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz{
+    .karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz{
         display: grid;
         grid-template-columns: 1fr ;
         align-items: start;
     }
-    .karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz  button{
+    .karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz  button{
         background: #FFF957;
 border-radius: 14px;
      }
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz  a{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz  a{
     text-decoration: none;
     font-family: Montserrat;
 font-size: 14px;
@@ -846,7 +846,7 @@ position: relative;
 top: 3px;
 margin-right: 2px;
 }
-.karzinka__body .karzinka__appProd .bonus_karzinka_dr a{
+.karzinka__body .karzinka__appProd .karzinka__bonus_dr a{
 /* padding-left: 34px; */
 position: relative;
 top: -4px;
@@ -897,14 +897,14 @@ margin-top: 15px;
 
 }
 
-.karzinka__body .karzinka__appProd .dastafka_radio_kar_dr .dastafka_radio_kar_card{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar_dr .karzinka__dastafka_radio_kar_card{
     padding-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar_dr .dastafka_radio_kar_card h5{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar_dr .karzinka__dastafka_radio_kar_card h5{
     padding: 0px;
     margin: 0px;
     font-family: Montserrat;
@@ -957,13 +957,13 @@ top: 2px;
       .karzinka__body .karzinka__appProd .karzinka__skitka1 {
         display: none;
       }
-      .karzinka__body .karzinka__appProd .title_ke12 {
+      .karzinka__body .karzinka__appProd .karzinka__title__second {
 display: none;
       }
   }
   
   @media (max-width:820px){
-    .karzinka__body .karzinka__appProd .dastafka_radio_kar{
+    .karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar{
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
@@ -978,10 +978,10 @@ display: none;
         gap: 29px;
         margin-bottom: 0;
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka .xochi_yesho_skitka {
+    .karzinka__body .karzinka__appProd .karzinka__poluchit .xochi_yesho_skitka {
         height: 46px;
     }
-    .karzinka__body .karzinka__appProd .poluchir_karzinka button {
+    .karzinka__body .karzinka__appProd .karzinka__poluchit button {
         height: 44px;
     }
       .karzinka__body .karzinka__appProd .karzinka__title{
@@ -1016,7 +1016,7 @@ text-align: left;
     }
  
   }
-   .karzinka__body .karzinka__displayNone__meidia .t_22{
+   .karzinka__body .karzinka__displayNone__meidia .karzinka__t_22{
         position: absolute;
         top: 7px;
         left: 10px;
@@ -1054,20 +1054,20 @@ gap: 10px;
 width: 100%;
  
 }
-.karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text {
+.karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     position: relative;
 }
-.karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text input{
+.karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text input{
 position: absolute;
 right: 10px;
 top: 10px;
 width: 20px;
 height: 20px;
 }
- .karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text h6{
+ .karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text h6{
     text-align: left;
     font-family: Montserrat;
     font-size: 12px;
@@ -1078,7 +1078,7 @@ height: 20px;
     margin-top: 13px;
     max-width: 90%;
     }
-   .karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text .karzinka__p{
+   .karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text .karzinka__p{
         font-family: Montserrat;
         font-size: 13px;
         font-weight: 400;
@@ -1087,7 +1087,7 @@ height: 20px;
         text-align: left;
         display: flex;
     }
-   .karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text .span{
+   .karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text .span{
         font-family: Montserrat;
         font-size: 12px;
         font-weight: 400;
@@ -1106,7 +1106,7 @@ height: 20px;
         top: -5px;
         left: 5px;
     }
-    .karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text .karzinka__inputR{
+    .karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text .karzinka__inputR{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1117,17 +1117,17 @@ height: 20px;
         border-radius: 8px;
         margin-top: 4px;
     }
-    .karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text .karzinka__inputR p{
+    .karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text .karzinka__inputR p{
         padding: 0px;
         margin: 0px;
     
     }
     
     
-    .karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text .karzinka__inputR .bx-pencil{
+    .karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text .karzinka__inputR .bx-pencil{
     font-size: 30px;
     }
-    .karzinka__displayNone__meidia .card_media_karzinka .buttons{
+    .karzinka__displayNone__meidia .card_media_karzinka .card_media_img_karzinka__buttons{
         display: flex;
         display: flex;
         gap: 3px;
@@ -1136,11 +1136,11 @@ height: 20px;
         gap: 1px;
         margin-top: 7px;
     }
-    .karzinka__displayNone__meidia .card_media_karzinka .buttons i{
+    .karzinka__displayNone__meidia .card_media_karzinka .card_media_img_karzinka__buttons i{
         position: relative;
         top: -2px;
     }
-    .karzinka__displayNone__meidia .card_media_karzinka .buttons button{
+    .karzinka__displayNone__meidia .card_media_karzinka .card_media_img_karzinka__buttons button{
         width: 48px;
         height:48px;
         padding: 12px 10px 12px 10px;
@@ -1153,10 +1153,10 @@ font-size: 24px;
 
     }
 @media(max-width:700px){
-/* .karzinka__body .karzinka__appProd .title_ke{
+/* .karzinka__body .karzinka__appProd .karzinka__title__first{
     margin-top: -7px;
 } */
-.karzinka__body .karzinka__appProd .bonus_karzinka .bx-info-circle {
+.karzinka__body .karzinka__appProd .karzinka__bonus .bx-info-circle {
     color: #242442;
     font-size: 25px;
     /* margin-right: 10px; */
@@ -1165,13 +1165,13 @@ font-size: 24px;
     margin-top: 4px;
     height: 100%;
 }
-.karzinka__body .karzinka__appProd .bonus_karzinka_for_media p {
+.karzinka__body .karzinka__appProd .karzinka__bonus_for_media p {
     position: relative;
     top: 1px;
     left: -5px;
     width: 90%;
 }
-.karzinka__body .karzinka__appProd .bonus_karzinka_for_media {
+.karzinka__body .karzinka__appProd .karzinka__bonus_for_media {
     display: grid;
     width: 90%;
     margin: auto;
@@ -1182,7 +1182,7 @@ font-size: 24px;
     padding: 14px 8px;
     margin-bottom: 17px;
 }
-.bonus_karzinka{
+.karzinka__bonus{
 margin-bottom: 25px !important;
 
 }
@@ -1204,7 +1204,7 @@ text-align: left;
  
     gap: 3px;
 }
-.karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text h6 {
+.karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text h6 {
     text-align: left;
     font-family: Montserrat;
     font-size: 13px;
@@ -1217,7 +1217,7 @@ text-align: left;
     position: relative;
     left: -4px;
 }
-.card_media_karzinkaPust__text h5{
+.karzinka__card__media__text h5{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -1228,7 +1228,7 @@ position: relative;
 left: -6px;
 top: 3px;
 }
-.karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text .karzinka__p {
+.karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text .karzinka__p {
     font-family: Montserrat;
     font-size: 13px;
     font-weight: 400;
@@ -1243,7 +1243,7 @@ top: 3px;
     top: 3px;
     left: -4px;
 }
-.karzinka__displayNone__meidia .card_media_karzinka .card_media_karzinkaPust__text .karzinka__inputR {
+.karzinka__displayNone__meidia .card_media_karzinka .karzinka__card__media__text .karzinka__inputR {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1254,7 +1254,7 @@ top: 3px;
     border-radius: 8px;
     margin-top: 4px;
 }
-.karzinka__displayNone__meidia .card_media_karzinka .buttons {
+.karzinka__displayNone__meidia .card_media_karzinka .card_media_img_karzinka__buttons {
     display: flex;
     display: flex;
     gap: 3px;
@@ -1273,11 +1273,11 @@ top: 3px;
     /* margin: auto; */
     gap: 10px;
 }
-.karzinka__body .karzinka__appProd .poluchir_karzinka3 {
+.karzinka__body .karzinka__appProd .karzinka__poluchit3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.karzinka__body .karzinka__appProd .title_ke {
+.karzinka__body .karzinka__appProd .karzinka__title__first {
     margin-top: 22px;
     font-size: 18px;
 }
@@ -1291,7 +1291,7 @@ text-align: left;
 width: 92%;
 margin: auto;
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar {
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -1299,7 +1299,7 @@ margin: auto;
     margin: auto;
     margin-top: 11px !important;
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz {
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz {
     padding: 22px 6px;
     background: #EFEFEF;
     border-radius: 12px;
@@ -1307,18 +1307,18 @@ margin: auto;
     margin: auto;
     margin-top: 20px;
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz .address_almaz_k {
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz .karzinka__address_almaz_k {
   
     margin-left: 4px;
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz .address_almaz_k h5 {
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz .karzinka__address_almaz_k h5 {
     padding-top: 0px; 
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz .address_almaz_k .nnere2{
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz .karzinka__address_almaz_k .karzinka__nnere2{
     display: none;
     
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz .address_almaz_k h5 .button {
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz .karzinka__address_almaz_k h5 .karzinka__button {
     background: var(--green-base, #38C793);
     font-family: Montserrat;
     font-size: 12px;
@@ -1339,14 +1339,14 @@ margin: auto;
     position: relative;
     left: -1px;
 }
-.nnere{
+.karzinka__nnere{
     display: block;
     margin-top: 3px !important;
     text-align: left;
     margin-left: 36px;
 
 }
-.karzinka__body .karzinka__appProd .dastefka_almaz .grid_almaz button {
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz button {
     background: #FFF957;
     border-radius: 14px;
     font-family: Montserrat;
@@ -1368,7 +1368,7 @@ left: 4px;
 /* .karzinka__body .karzinka__line{
     margin-bottom: -2px;
 } */
- .karzinka__body .karzinka__appProd .dastefka_almaz a{
+ .karzinka__body .karzinka__appProd .karzinka__dastefka_almaz a{
     position: relative;
     left: 7px;
     top: -22px;
@@ -1388,12 +1388,12 @@ margin-top: -12px;
     margin-top: 9px;
 
  }
- .bonus_karzinka_for_media{
+ .karzinka__bonus_for_media{
     margin-top: 9px !important;
 
  }
  
- .karzinka__body .karzinka__appProd .bonus_karzinka_for_media .bx-info-circle {
+ .karzinka__body .karzinka__appProd .karzinka__bonus_for_media .bx-info-circle {
     color: #242442;
     font-size: 25px;
     /* margin-right: 10px; */
@@ -1539,7 +1539,7 @@ margin: auto;
     margin-top: 4px !important;
     margin-bottom: 0px;
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar_dr .dastafka_radio_kar_card {
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar_dr .karzinka__dastafka_radio_kar_card {
     padding-bottom: 16px;
     display: flex;
     align-items: center;
@@ -1548,7 +1548,7 @@ margin: auto;
     margin-top: 13px;
     /* height: 45px; */
 }
-.karzinka__body .karzinka__appProd .dastafka_radio_kar_dr .dastafka_radio_kar_card h5{
+.karzinka__body .karzinka__appProd .karzinka__dastafka_radio_kar_dr .karzinka__dastafka_radio_kar_card h5{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -1707,7 +1707,7 @@ margin: auto;
 }
 }
 @media (max-width: 330px) {
-    .karzinka__body .karzinka__appProd .poluchir_karzinka2 {
+    .karzinka__body .karzinka__appProd .karzinka__poluchit2 {
         display: grid;
         grid-template-columns: auto 107px;
     }
