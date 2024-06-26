@@ -6,12 +6,12 @@
     margin-top: 58px;
 
 }
-.wdthkm1{
+.info-block__list{
         width: 90%;
     margin: auto;
     margin-top: 47px;
 }
-.wdthkm1 li{
+.info-block__list li{
     font-family: Montserrat;
 font-size: 24px;
 font-weight: 400;

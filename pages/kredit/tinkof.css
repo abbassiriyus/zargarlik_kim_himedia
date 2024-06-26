@@ -55,12 +55,12 @@ text-align: left;
 .vektor_text img{
     margin-top: 46px;
 }
-.cart_phone_check{
+.how__cart-phone-check{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 29px;
 }
-.how{
+.how-content{
     width: 75%;
     /* background-color: red; */
     /* height: 386px; */
@@ -69,7 +69,7 @@ text-align: left;
     position: relative;
     z-index: 2;
 }
-.how h1{
+.how-content h1{
     font-family: Montserrat;
 font-size: 44px;
 font-weight: 700;
@@ -78,7 +78,7 @@ text-align: left;
 color:white;
 text-transform: uppercase;
 }
-.kor_tel_chek{
+.how__item how__item--1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,12 +90,12 @@ text-transform: uppercase;
    
   
 }
-.kor_tel_chek12{
+.how__item how__item--112{
     background: linear-gradient(256.76deg, #21A038 13.79%, #00D900 68.64%, #FAED00 105.7%); 
     border-radius: 16px; 
 padding: 3px;
 }
-.kor_tel_chek2{
+.how__item how__item--12{
     background: #F1F1F1D9;
     display: flex;
     justify-content: center;
@@ -105,7 +105,7 @@ padding: 3px;
     height: 100%;
     border-radius: 16px;
 }
-.kor_tel_chek p{
+.how__item how__item--1 p{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
@@ -114,10 +114,10 @@ text-align: center;
 position: relative;
 top: -48px;
 }
-.kor_tel_chek img{
+.how__item how__item--1 img{
     margin-bottom: 82px;
 }
-.cntr_btn{
+.how__action-button{
     width: 301px;
     height:55px;
     border-radius: 8px;
@@ -131,7 +131,7 @@ margin-top: 43px;
 margin-left: -7px;
 border: none;
 }
-.doxod{
+.info-block--loan{
     width: 75%;
     /* height: 416px; */
     background: #DEF1E1;
@@ -142,7 +142,7 @@ border: none;
     padding-top: 43px;
     padding-bottom: 34px;
 }
-.doxod h2{
+.info-block--loan h2{
     font-family: Montserrat;
     font-size: 28px;
     font-weight: 700;
@@ -170,7 +170,7 @@ margin-bottom: 10px;
 .farm13{
     display: none;
 }
-.howh1 {
+.how__heading--3 {
     margin-top: -18px !important;
     margin-left: 7px !important;
 }
@@ -245,12 +245,12 @@ left: 2%;
     }
 @media (max-width:1008px) {
    
-.cart_phone_check {
+.how__cart-phone-check {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 29px;
 }
-.doxod {
+.info-block--loan {
     width: 96%;
     /* height: 416px; */
     background: #DEF1E1;
@@ -262,7 +262,7 @@ left: 2%;
 }
 }
 @media (max-width:900px) {
-    .how{
+    .how-content{
         margin-top: 40px !important;
     }
     body {
@@ -271,14 +271,14 @@ left: 2%;
 }
 @media (max-width:730px) {
    
-    .cart_phone_check {
+    .how__cart-phone-check {
         display: grid;
         grid-template-columns:  1fr;
         gap: 29px;
     }
 }
 @media (max-width:500px) {
-    .how h1{
+    .how-content h1{
         font-family: Montserrat;
 font-size: 20px;
 font-weight: 700;
@@ -286,7 +286,7 @@ line-height: 24.38px;
 text-align: left;
 
     }
-    .kor_tel_chek p{
+    .how__item how__item--1 p{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -298,7 +298,7 @@ top: 13px;
     }
 }
 @media (max-width:500px) {
-    .doxod h2{
+    .info-block--loan h2{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 700;
@@ -312,12 +312,12 @@ text-align: center;
 .farm22{
     display: block;
 }
-.wdthkm1 {
+.info-block__list {
     width: 99%;
     margin: auto;
     margin-top: 7px;
 }
-.wdthkm1 li{
+.info-block__list li{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -347,7 +347,7 @@ body{
 /* .jewel{
     margin-left: -6px;
 } */
-.how h1{
+.how-content h1{
     margin-top: -35px !important;
     margin-left: 4px;
 }
@@ -366,7 +366,7 @@ body{
     position: relative;
     top:15px !important ;
 }
-.cart_phone_check {
+.how__cart-phone-check {
     display: grid;
     grid-template-columns: 1fr;
     gap: 11px;
@@ -387,7 +387,7 @@ body{
     position: relative;
     top:12px !important ;
 }
-.cntr_btn{
+.how__action-button{
     height: 44px;
     width: 94%;
     margin-top: 16px;
@@ -397,7 +397,7 @@ font-weight: 400;
 line-height: 17.07px;
 
 }
-.doxod {
+.info-block--loan {
     width: 91%;
     /* height: 416px; */
     background: #DEF1E1;
@@ -409,7 +409,7 @@ line-height: 17.07px;
     min-height: 246px;
     padding-top: 15px;
 }
-.doxod h2 {
+.info-block--loan h2 {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
@@ -458,7 +458,7 @@ height:56px;
 
 }
 
-.for_bg_ac{
+.faq--credit{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -468,7 +468,7 @@ height:56px;
     margin: auto ;
     margin-top: 41px;
 }
-.for_bg_ac h2 {
+.faq--credit h2 {
     font-family: Montserrat;
     font-size: 28px;
     font-weight: 700;
@@ -476,7 +476,7 @@ height:56px;
     text-align: center;
     margin-bottom: 40px !important;
 }
-.questions{
+.faq__item{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -504,7 +504,7 @@ height:56px;
 .voprosi i{
     font-size: 30px;
 }
-/* .questions .accordion-item {
+/* .faq__item .accordion-item {
     width: 80%;
     max-width: 800px;
     margin: 2rem auto;
@@ -523,7 +523,7 @@ height:56px;
     display: none;
   }
   @media (max-width:630px) {
-    .questions{
+    .faq__item{
         padding: 0px 20px;
     }
    }
@@ -579,7 +579,7 @@ text-align: left;
 .jewel .credit-option__content h1{
 width: 119%;
 }
-    .how {
+    .how-content {
 margin-top: 0px !important;
     }
     .jewel .credit-option__image--big{
@@ -615,21 +615,21 @@ margin-top: 12px;
         position: relative;
         top: -12px;
     }
-    .how{
+    .how-content{
         width: 94%; 
     }
-    .doxod {
+    .info-block--loan {
         padding-bottom:0px;
     }
-    .for_bg_ac h2{
+    .faq--credit h2{
         font-size: 20px;
         margin-top: -21px;
         margin-bottom: 29px !important;
     }
-    .questions {
+    .faq__item {
         padding: 0px 6px;
     }
-    .how h1 {
+    .how-content h1 {
         margin-top: 10px !important;
         margin-left: 4px;
     }
@@ -654,23 +654,23 @@ position: absolute;
     top: 0px;
     height: 100%;
 }
-.doxod3{
+.info-block--loan3{
     width: 78%;
     margin-top: 79px;
     padding-top: 49px;
 }
-.doxod3 ul{
+.info-block--loan3 ul{
     max-width: 1283px;
     margin: auto;
 
 }
-.for_bg_ac_sibir h2{
+.faq--credit_sibir h2{
     margin-top:7px;
 }
-.doxod3 center{
+.info-block--loan3 center{
     margin-bottom: 39px;
 }
-.doxod3 li{
+.info-block--loan3 li{
     font-family: Montserrat;
 font-size: 24px;
 font-weight: 400;
@@ -690,7 +690,7 @@ top: 0px;
     z-index: 12;
 }
 @media(max-width:991px){
-    .howh1_3{
+    .how__heading--3_3{
         color: #1FA534  !important;
 
     }
@@ -705,25 +705,25 @@ margin-bottom: 17px;
  .credit-option--sberbank .credit-option__image--big {
     width: 39%;
  }
- .doxod3 {
+ .info-block--loan3 {
     width: 95%;
  }
- .doxod3 {
+ .info-block--loan3 {
     width:95%;
     margin-top: 21px;
     padding-top: 14px;
 }
- .doxod3 li{
+ .info-block--loan3 li{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     text-align: left;
  }    
- .doxod3 center {
+ .info-block--loan3 center {
     margin-bottom: 7px !important;
 }
-.doxod3 li {
+.info-block--loan3 li {
     font-family: Montserrat;
     /* font-size: 24px; */
     font-weight: 400;
@@ -731,7 +731,7 @@ margin-bottom: 17px;
     text-align: left;
     margin-bottom: 0px;
 }
-.for_bg_ac_sibir {
+.faq--credit_sibir {
     display: flex;
     justify-content: center;
     align-items: center;

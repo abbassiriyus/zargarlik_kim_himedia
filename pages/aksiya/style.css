@@ -75,15 +75,53 @@ text-decoration: underline;
 .href2 {
     display: none;
 }
-
+.aksiyaMedia__map{
+    display: none;
+}
+.aksiyaMedia__map .aksiyaMedia__map_button {
+    background: #F2F2F2;
+width: 95%;
+margin: auto;
+height: 40px;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.aksiyaMedia__map .aksiyaMedia__map_button img{
+height: 21px;
+margin-bottom: 4px;
+}
+.aksiyaMedia__map .aksiyaMedia__scroll__buttons{
+    display: flex;
+    overflow: auto;gap: 5px;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+}
+.aksiyaMedia__map .aksiyaMedia__scroll__buttons button{
+    height: 40px;
+    border-radius: 8px;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+padding: 4px 10px 4px 10px;
+border: none;
+margin-top: 5px;
+}
 @media (max-width:991px) {
     .catalog_title__page23 h1{
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 600;
         line-height: 21.94px;
-        text-align: left;
-        
+        text-align: left;  
+    }
+    .aksiyaMedia__map{
+        display: block;
+        margin-top: -10px;
     }
     .catalog_main_page_first3 {
         position: relative;
