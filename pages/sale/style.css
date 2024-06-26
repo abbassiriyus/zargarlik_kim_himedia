@@ -32,7 +32,7 @@ right: 0px;
 bottom: 0px;
 }
 .catalog_main_page_first_sale .navbarAlmaz__reklama_sale{
-    width: 40%;
+    width: 54%;
 }
 .catalog_main_page_first_sale h2{
     font-family: 'Arkhip', sans-serif;
@@ -202,7 +202,17 @@ text-align: left;
     margin-top: 11px;
         
     }
-   
+   .sale-body{
+    width: 100vw;
+        padding-top: 154px;
+    
+   }
+}
+@media (max-width:500px) {
+    .allProduct_body {
+        max-width: 1200px;
+        margin-top: -11px;
+    }
 }
 @media(max-width:410px){
     .catalog_main_page_first_sale2{
