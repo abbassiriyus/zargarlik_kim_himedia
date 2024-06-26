@@ -87,7 +87,7 @@ line-height: 21.94px !important;
 text-align: left !important;
 
     }
-    .shg_b h2{
+    .how-we-work__step-content h2{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -95,7 +95,7 @@ line-height: 17.07px;
 text-align: left;
 
     }
-    .shg_b p{
+    .how-we-work__step-content p{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -103,7 +103,7 @@ line-height: 14.63px;
 text-align: left;
 
     }
-.shg_b span{
+.how-we-work__step-content span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -111,13 +111,13 @@ line-height: 17.07px;
 text-align: right;
 
 }
-.one_shag{
+.how-we-work__step{
     height: 335px !important;
 }
-.one_shag img{
+.how-we-work__step img{
     height: 195px !important;
 }
-.one_shag span{
+.how-we-work__step span{
     position: absolute;
     top: 100px;
 }

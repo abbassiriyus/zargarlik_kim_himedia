@@ -290,27 +290,27 @@ margin-top: -4px;
 .bor{
     border-bottom-left-radius: 8px;
 }
-.three_shag{
+.how-we-work__steps{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 30px;
     gap: 34px;
     margin-left: 10px;
 }
-.one_shag{
+.how-we-work__step{
     background-color: #F2F2F2;
     height: 503px;
     border-radius: 16px;
 }
-.one_shag img{
+.how-we-work__step img{
     width: 100%;
 }
-.shg_b{
+.how-we-work__step-content{
     margin-top: 10px;
     padding-left: 20px;
     position: relative;
 }
-.one_shag h2{
+.how-we-work__step h2{
     font-family: Montserrat;
 font-size: 22px;
 font-weight: 600;
@@ -318,7 +318,7 @@ line-height: 26.82px;
 text-align: left;
 
 }
-.one_shag p{
+.how-we-work__step p{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -328,7 +328,7 @@ position: relative;
 top: 9px;
 left: 5px;
 }
-.one_shag span{
+.how-we-work__step span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -364,7 +364,7 @@ top:188px;
     text-align: center;
     transition: 1s;
 }
-.onbtn1{
+.clickkbnt__btn--gold{
     background-color: white;
 }
 .viber_prob{
@@ -375,7 +375,7 @@ top:188px;
     margin: auto;
     /* height: 307px;// */
 }
-.grid_one_prob{
+.viber_prob__grid-one{
     border-radius: 16px;
     background-color: white;
     border: 1px solid #E4E4E4;
@@ -387,10 +387,10 @@ top:188px;
     border: 1px solid #E4E4E4;
     border-radius: 16px;
 }
-.gr-prob{
+.viber_prob__group{
     padding: 30px;
 }
-.gr-prob p{
+.viber_prob__group p{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -398,7 +398,7 @@ line-height: 17.07px;
 text-align: left;
 
 }
-.olch_num{
+.viber_prob__option{
     width: 46px;
     height: 35px;
     border: 1px solid #E5E5E5;
@@ -411,24 +411,24 @@ cursor: pointer;
 margin: 0px !important;
 transition: 1s;
 }
-.olch_num h5{
+.viber_prob__option h5{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
 }
-.olch_num:hover{
+.viber_prob__option:hover{
     background-color: black !important;
     border: none;
     color: white;
 }
-.olch{
+.viber_prob__options{
     display: flex;   
     margin-top: 9px;
     gap:10px;
     margin-bottom: 32px;
 }
-.gr-prob input{
+.viber_prob__group input{
     width: 100%;
     height:44px;
     border-radius: 9px;
@@ -438,13 +438,13 @@ transition: 1s;
     outline :none;
     margin-bottom: 15px;
 }
-.olch1{
+.viber_prob__options1{
     display: flex;   
     margin-top: 13px;
     gap: 10px;
     align-items: center;
 }
-.olch_num1{
+.viber_prob__option1{
     width: 46px;
     height: 35px;
     background-color: #E5E5E5;
@@ -455,18 +455,18 @@ align-items: center;
 /* background-color: #FFE535; */
 cursor: pointer;
 }
-.olch_num1 h5{
+.viber_prob__option1 h5{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
 }
-.olch_num1:hover{
+.viber_prob__option1:hover{
     background-color: rgba(0, 0, 0, 0.262) !important;
     border: none;
   
 }
-.olch_num {
+.viber_prob__option {
     background-color: white;
     border: 1px solid black;
     padding: 10px 20px;
@@ -477,7 +477,7 @@ cursor: pointer;
     cursor: pointer;
   }
   
-  .olch_num.active {
+  .viber_prob__option.active {
     background-color: black;
     color: white;
   }
@@ -667,6 +667,7 @@ text-align: left;
     border-radius: 19px;
     overflow: hidden;
     margin-left: 10px;
+    margin-bottom: 29px;
 }
 .us_map{
     padding-top: 24px;
@@ -1111,7 +1112,7 @@ margin-top: 8px;
 
  }
  @media (max-width:1250px) {
-    .three_shag{
+    .how-we-work__steps{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -1133,7 +1134,7 @@ margin-top: 8px;
         grid-template-columns: 1fr 2fr;
         gap: 20px;
     }
-    .one_shag {
+    .how-we-work__step {
         height: 560px;
     }
 }
@@ -1210,13 +1211,8 @@ margin-top: 8px;
         .branch-info img{
             display: block;
         }
-}
-@media (max-width:948px) {
-    .contact-item {
-        height: 130px;
-    }
-}
-     @media (max-width:991px) {
+} 
+    @media (max-width:991px) {
         body{
             padding-top:112px;
         }
@@ -1226,11 +1222,14 @@ margin-top: 8px;
         .sergra {
             width: 95%;
         }
+        .catalog_route_page{
+            display: none;
+        }
         .gram12 {
         z-index: 0 !important;
             width: 95%;
         }
-        .one_shag {
+        .how-we-work__step {
             height: 500px;
         }
         .store{
@@ -1240,6 +1239,12 @@ margin-top: 8px;
             display: none;
         }
      }
+@media (max-width:948px) {
+    .contact-item {
+        height: 130px;
+    }
+}
+
  @media (max-width:948px) {
     .main-wrapper{
         display: grid;
@@ -1305,7 +1310,7 @@ margin-top: 8px;
         /* margin-bottom: 85px; */
         margin-top: 86px;
     }
-    .one_shag {
+    .how-we-work__step {
         height: 430px;
     }
  }
@@ -1315,11 +1320,11 @@ margin-top: 8px;
         grid-template-columns: 1fr  !important;
         width: 100% !important;
     }
-    .three_shag{
+    .how-we-work__steps{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .grid_one_prob {
+    .viber_prob__grid-one {
         border-radius: 16px;
         background-color: white;
         border: 1px solid #E4E4E4;
@@ -1332,10 +1337,10 @@ margin-top: 8px;
         border: 1px solid #E4E4E4;
         border-radius: 16px;
     }
-    .wag{
+    .how-we-work__step-number{
         top: 140px !important;
     }
-    .one_shag {
+    .how-we-work__step {
         height: 530px;
     }
  }
@@ -1441,11 +1446,11 @@ line-height: 21.94px;
 text-align: left;
 
     }
-    .olch{
+    .viber_prob__options{
         display: flex;
         flex-wrap: wrap;
     }
-    .olch1{
+    .viber_prob__options1{
         display: flex;
         flex-wrap: wrap;
     }
@@ -1455,7 +1460,7 @@ text-align: left;
         border: 1px solid #E4E4E4;
         border-radius: 16px;
     }
-.grid_one_prob {
+.viber_prob__grid-one {
     border-radius: 16px;
     background-color: white;
     border: 1px solid #E4E4E4;
@@ -1585,7 +1590,7 @@ line-height: 18px;
 text-align: left;
 
 }
-.rasch{
+.rasch__title{
     font-family: Montserrat;
 font-size: 18px !important;
 font-weight: 600;
@@ -1625,7 +1630,7 @@ text-align: center;
         grid-template-columns: 1fr 2fr;
     }
 
-    .one_shag {
+    .how-we-work__step {
         height: 490px;
     }
  }
@@ -1685,7 +1690,7 @@ text-align: center;
     }
  }
  @media (max-width:400px) {
-   .one_shag {
+   .how-we-work__step {
         height: 400px;
     }
     .search-bar{
@@ -1788,8 +1793,8 @@ margin-bottom: 20px;
         width: 100%;
         transform: scale(1);
     }
-    .one_shag {
-        height: 275px;
+    .how-we-work__step {
+        height: 290px;
     }
     .zoloto-section .zoloto-section__content h5 {
         margin-top: 5px;
@@ -1807,37 +1812,37 @@ margin-bottom: 20px;
     .gram12 {
         margin-top: 96px;
     }
-    .ctt{
+    .how-we-work__title{
         font-size: 18px !important;
         top: 0;
         text-align: left;
         line-height: 13px !important;
     }
-    .three_shag {
+    .how-we-work__step {
         display: flex;
         flex-wrap: wrap;
         margin-top: 22px;
         gap: 14px ;
     }
-    .shg_b h2{
+    .how-we-work__step-content h2{
         margin-left: 0px !important;
     }
-    .wag {
+    .how-we-work__step-number {
         display: none;
     }
-    .one_shag h2 {
+    .how-we-work__step h2 {
         font-size: 14px;
         line-height: 20.82px;
         width: 91%;
     }
-    .shg_b {
+    .how-we-work__step-content {
         padding-left: 10px;
     }
-    .one_shag p {
+    .how-we-work__step p {
         top: 10px;
         left: 1px;
     }
-    .rasch{
+    .rasch__title{
         line-height: normal !important;
         text-align: center;
         margin-top: 44px !important;
@@ -1858,10 +1863,10 @@ margin-bottom: 20px;
         gap: 10px !important;
         margin: auto;
     }
-    .gr-prob {
+    .viber_prob__group {
         padding: 20px 13px;
     }
-    .olch {
+    .viber_prob__options {
         margin-bottom: 7px;
     }
     .two-g-pro {
@@ -2023,29 +2028,29 @@ display: grid;
     .sergra .gram12__zoloto-top{
         top: -55px !important;
     }
-    .grid_one_prob {
+    .viber_prob__grid-one {
          
         width: 96%;
         margin: auto;
     }
-    .olch{
+    .viber_prob__options{
         margin-top: -3px;
         gap: 17px;
     }
-    .gr-prob p{
+    .viber_prob__group p{
         margin-bottom: 14px;
         position: relative;
         top: -2px;
         left: 5px;
     }
-    .gr-prob input{
+    .viber_prob__group input{
         margin-top: 0px;
     }
-    .olch1{
+    .viber_prob__options1{
         margin-top: -5px;
         gap: 12px;
     }
-    .olch_num1 {
+    .viber_prob__option1 {
         width: 50px;
     }
     .two-g-pro h2{
@@ -2175,10 +2180,10 @@ text-align: left;
     font-size: 16px;
 }
 }
-.olch_num h5{
+.viber_prob__option h5{
     margin-bottom: 0px;
 }
-    .olch_num1 h5{
+    .viber_prob__option1 h5{
         margin-bottom: 0px;
     }
     .flagship-store__location p{
