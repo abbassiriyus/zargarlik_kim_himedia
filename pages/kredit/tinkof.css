@@ -19,6 +19,38 @@ body{
     left: 0px;
     top: 0px;
 }
+.one_tel{
+    background: #24242499;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #474747;
+    border-radius:16px;
+}
+.one_tel2{
+    background: #24242499;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #474747;
+    flex-direction: column;
+    border-radius:16px;
+
+}
+.one_tel3{
+    background: #24242499;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #474747;
+    border-radius:16px;
+
+}
 .grtwo{
     width: 100%;
     transform: scale(1.2);
@@ -78,7 +110,7 @@ text-align: left;
 color:white;
 text-transform: uppercase;
 }
-.how__item how__item--1{
+.how__item .how__item--1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,12 +122,12 @@ text-transform: uppercase;
    
   
 }
-.how__item how__item--112{
+ .how__item--112{
     background: linear-gradient(256.76deg, #21A038 13.79%, #00D900 68.64%, #FAED00 105.7%); 
     border-radius: 16px; 
 padding: 3px;
 }
-.how__item how__item--12{
+ .how__item--12{
     background: #F1F1F1D9;
     display: flex;
     justify-content: center;
@@ -105,7 +137,7 @@ padding: 3px;
     height: 100%;
     border-radius: 16px;
 }
-.how__item how__item--1 p{
+ .how__item--1 p{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
@@ -113,8 +145,8 @@ line-height: 21.94px;
 text-align: center;
 position: relative;
 top: -48px;
-}
-.how__item how__item--1 img{
+ }
+ .how__item--1 img{
     margin-bottom: 82px;
 }
 .how__action-button{
@@ -482,12 +514,13 @@ height:56px;
     justify-content: space-between;
     flex-direction: column;
     max-width: 1440px;
-    width: 100%;
+    width: 95%;
+    margin:auto;
     /* gap: 20px; */
     padding: 5px 0px 0px 0px;
     margin-bottom: 15px;
 }
-.voprosi{
+.accordion-item__header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -495,13 +528,13 @@ height:56px;
     padding: 0px 0px 10px 0px !important;
     border-bottom: 1px #b4b4b493 solid;
 }
-.voprosi p{
+.accordion-item__header p{
     font-weight: 500 !important;
     font-size: 22px !important ;
     cursor: pointer;
     margin-bottom: 10px;
 }
-.voprosi i{
+.accordion-item__header i{
     font-size: 30px;
 }
 /* .faq__item .accordion-item {
@@ -527,7 +560,7 @@ height:56px;
         padding: 0px 20px;
     }
    }
-   .voprosi p {
+   .accordion-item__header p {
     font-family: Montserrat;
 font-size: 22px;
 font-weight: 600;
@@ -549,7 +582,7 @@ text-align: left;
 
 
    @media (max-width:800px){
-    .voprosi p {
+    .accordion-item__header p {
         font-family: Montserrat;
         font-size: 16px !important;
         font-weight: 600;

@@ -188,7 +188,7 @@ padding: 12px 117px;
     margin-bottom: 15px;
 }
 
-.for_all .voprosi{
+.for_all .accordion-item__header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -196,12 +196,12 @@ padding: 12px 117px;
     padding: 0px 0px 10px 0px !important;
     border-bottom: 1px #a35ee4a1 solid;
 }
-.for_all .voprosi p{
+.for_all .accordion-item__header p{
     font-weight: 500 !important;
     font-size: 20px !important ;
     cursor: pointer;
 }
-.for_all .voprosi i{
+.for_all .accordion-item__header i{
     font-size: 30px;
 }
 .for_all .div_p{
