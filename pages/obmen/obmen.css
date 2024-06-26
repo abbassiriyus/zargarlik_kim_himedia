@@ -172,21 +172,21 @@ text-align: left;
     box-shadow: 0px 6px 45px 0px #3E3E3E1A;
 border-radius: 12px;
     }
-    .nam img{
+    .contact-item img{
         width: 24px;
         top: 0 !important;
         margin-bottom: 0 !important;
     }
-    .nam{
+    .contact-item{
         height: auto;
     }
-    .nam p{
+    .contact-item p{
         top: 6px !important; 
     }
-    .nam h4{
+    .contact-item h4{
         top: 12px !important;
     }
-    .dg_btn_sku{
+    .product-actions-buttons{
         overflow: auto;
     }
 }

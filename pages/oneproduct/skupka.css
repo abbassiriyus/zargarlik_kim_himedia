@@ -11,7 +11,7 @@
 .skupka-body{
     width: 100vw;
 }
-.pravila_dg{
+.main-wrapper{
     display: grid;
     grid-template-columns: 1fr 0fr 1fr;
 }
@@ -34,7 +34,7 @@
     margin-bottom: 0;
 }
  
-.domik_dg h2{
+.product-section h2{
     font-family: Montserrat;
 font-size: 34px;
 font-weight: 600;
@@ -42,7 +42,7 @@ line-height: 41.45px;
 text-align: left;
 margin-left: 10px;
 }
-.dg_btn_sku{
+.product-actions-buttons{
     display: flex;
     margin-top: 4px;
     gap: 9px;
@@ -50,7 +50,7 @@ margin-left: 10px;
 overflow-x: auto;
 /* background: red; */
 }
-.dg_btn_sku button{
+.product-actions-buttons button{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
@@ -64,7 +64,7 @@ background: #F2F2F2;
 text-wrap: nowrap;
 
 }
-.nam{
+.contact-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +74,7 @@ text-wrap: nowrap;
     /* height: 121px; */
 
 }
-.nam p{
+.contact-item p{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 400;
@@ -82,7 +82,7 @@ line-height: 14.63px;
 text-align: center;
 color: #242424;
 }
-.nam h4{
+.contact-item h4{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
@@ -105,7 +105,7 @@ position: relative;
         border-radius: 18px;
         width: 100%;
     }
-    .nam img{
+    .contact-item img{
         margin-bottom: 20px;
     }
     .kon_ban_text h1{
@@ -151,13 +151,13 @@ padding-top: 130px;
 width: 100%;
 height: 464px;
 }
-.zol_ser{
+.zoloto-section{
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
     margin-top: 55px;
     margin-bottom: 40px;
 }
-.zol_ser .gram h2{
+.zoloto-section .zoloto-section__content h2{
     font-family: Montserrat;
     font-size: 34px;
     font-weight: 600;
@@ -167,10 +167,10 @@ height: 464px;
     margin-left: 10px;
     margin-top: -3px;
 }
-.zol_ser .gram{
+.zoloto-section .zoloto-section__content{
     width: 100%;
 }
-.zol_ser .gram h5{
+.zoloto-section .zoloto-section__content h5{
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
@@ -202,7 +202,7 @@ height: 464px;
     background-color: aquamarine;
 
 }
-  .gram button{
+  .zoloto-section__content button{
     width: 270px;
     height: 56px;
     border: 1px solid #242424;
@@ -215,7 +215,7 @@ margin-top: 19px;
 margin-left: 12px;
 background-color: white;
 }
-.zoloto_top{
+.gram12__zoloto-top{
 position: absolute;
 top: -62px;
 left: 0px;
@@ -231,11 +231,11 @@ padding-left: 30px;
 padding-right: 30px;
 border-top-right-radius: 10px;
 }
-.zoloto_top img{
+.gram12__zoloto-top img{
     z-index: 123;
     margin-top: -8px;
 }
-.zoloto_top h3{
+.gram12__zoloto-top h3{
     font-family: Montserrat;
 font-size: 20px;
 font-weight: 600;
@@ -244,12 +244,12 @@ text-align: left;
 margin-top: -11px;
 margin-left: -10px;
 }
-.top_nalc{
+.gram12__top-nalc--bordered{
     display: grid;
     grid-template-columns: 134px 299px;
 }
 
-.nalc_table{
+.gram12__nalc-table--rounded-tl{
     width: 100%;
     /* background-color: violet; */
     height: 43px;
@@ -260,7 +260,7 @@ margin-left: -10px;
     padding-left: 8px;
 }
 
-.nalc_table1{
+.gram12__nalc-table--rounded-tl1{
     width: 99%;
     /* background-color: turquoise; */
     height: 43px;
@@ -270,7 +270,7 @@ margin-left: -10px;
     background-color: white;
 
 }
-.nalc_table p{
+.gram12__nalc-table--rounded-tl p{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 500;
@@ -278,7 +278,7 @@ line-height: 14.63px;
 text-align: left;
 margin-top: -3px;
 }
-.nalc_table1 p{
+.gram12__nalc-table--rounded-tl1 p{
     font-family: Montserrat;
 font-size: 12px;
 font-weight: 500;
@@ -992,10 +992,10 @@ margin-top: 53px;
     margin-bottom: 38px;
     margin-left: 10px;
 }
-.nalc_table p{
+.gram12__nalc-table--rounded-tl p{
     margin-bottom: 0;
 }
-.nalc_table1 p{
+.gram12__nalc-table--rounded-tl1 p{
     margin-bottom: 0;
 }
 .city-select{
@@ -1116,7 +1116,7 @@ margin-top: 8px;
         grid-template-columns: 1fr 1fr;
     }
 
-    .zol_ser {
+    .zoloto-section {
         display: grid;
         grid-template-columns: 1.2fr 1fr;
         margin-top: 55px;
@@ -1212,7 +1212,7 @@ margin-top: 8px;
         }
 }
 @media (max-width:948px) {
-    .nam {
+    .contact-item {
         height: 130px;
     }
 }
@@ -1220,7 +1220,7 @@ margin-top: 8px;
         body{
             padding-top:112px;
         }
-        .dg_btn_sku{
+        .product-actions-buttons{
             margin-bottom: 17px;
         }
         .sergra {
@@ -1241,7 +1241,7 @@ margin-top: 8px;
         }
      }
  @media (max-width:948px) {
-    .pravila_dg{
+    .main-wrapper{
         display: grid;
         grid-template-columns:  1fr;
     }
@@ -1264,7 +1264,7 @@ margin-top: 8px;
         margin-top: 60px;
         gap: 20px;
     }
-    .zol_ser {
+    .zoloto-section {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 55px;
@@ -1374,7 +1374,7 @@ padding-top: 30px;
     .phone__big-application {
         padding: 10px 2px;
     }
-    .zol_ser .gram h2{
+    .zoloto-section .zoloto-section__content h2{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -1382,7 +1382,7 @@ line-height: 21.94px;
 text-align: left;
 
     }
-    .zol_ser .gram h5{
+    .zoloto-section .zoloto-section__content h5{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -1433,7 +1433,7 @@ text-align: left;
         /* margin-bottom: 85px; */
         margin-top: 86px;
     }
-    .zoloto_top h3{
+    .gram12__zoloto-top h3{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -1505,7 +1505,7 @@ line-height: 21.94px !important;
 text-align: left;
 
     }
-    .media-skup{
+    .product-title{
         font-family: Montserrat;
 font-size: 18px !important;
 font-weight: 600 !important;
@@ -1523,17 +1523,17 @@ margin-bottom: 20px !important;
         top: -14px !important;
         margin-bottom: 0px !important;
     }
-    .medi2{
+    .contact-image2{
         top: -23px !important;
     }
-    .medi3{
+    .contact-image3{
         position: relative;
         top: -27px !important;
     }
-        .nam {
+        .contact-item {
             height: auto;
         }
-    .nam p{
+    .contact-item p{
         position: relative;
         top: -5px !important;
         font-family: Montserrat;
@@ -1543,7 +1543,7 @@ line-height: 12.19px;
 text-align: center;
 margin-bottom: 0px;
     }
-    .nam h4{
+    .contact-item h4{
         font-family: Montserrat;
 font-size: 10px;
 font-weight: 600;
@@ -1552,7 +1552,7 @@ text-align: center;
 margin-top: -10px;
 margin-bottom: 0px;
     }
-    .poz{
+    .contact-value{
         margin-top: 0 !important;
     }
     .vet h4{
@@ -1563,10 +1563,10 @@ margin-bottom: 0px;
     .vet p{
         top: -15px;
     }
-    .poz1{
+    .contact-value1{
         top: 0;
     }
-.gram button{
+.zoloto-section__content button{
     width: 98%;
 }    
 .salon_alm h3{
@@ -1617,10 +1617,10 @@ text-align: center;
         text-align: left !important;
         
     }
-    .zoloto_top{
+    .gram12__zoloto-top{
         width: 100%;
     }
-    .top_nalc {
+    .gram12__top-nalc--bordered {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
@@ -1639,7 +1639,7 @@ text-align: left;
 padding-bottom: 0pc;
 margin-bottom: 0px;
     }
-    .domik_dg h2{
+    .product-section h2{
         font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -1647,10 +1647,10 @@ line-height: 21.94px;
 text-align: left;
 
     }
-    .dg_btn_sku{
+    .product-actions-buttons{
         overflow-x: auto !important;
     }
-    .dg_btn_sku button{
+    .product-actions-buttons button{
  
 font-family: Montserrat;
 font-size: 14px;
@@ -1659,7 +1659,7 @@ line-height: 20px;
 text-align: left;
 
     }
-    .nam p{
+    .contact-item p{
         font-family: Montserrat;
 font-size: 10px;
 font-weight: 400;
@@ -1667,7 +1667,7 @@ line-height: 12.19px;
 text-align: center;
 
     }
-    .nam h4{
+    .contact-item h4{
         font-family: Montserrat;
 font-size: 10px;
 font-weight: 600;
@@ -1675,11 +1675,11 @@ line-height: 12.19px;
 text-align: center;
 
     }
-    .pravila_dg{
+    .main-wrapper{
         display: block;
         /* grid-template-columns: 1fr; */
     }
-    .zol_ser {
+    .zoloto-section {
         display: flex;
         flex-wrap: wrap;
     }
@@ -1734,21 +1734,21 @@ text-align: left;
     }
  }
  @media (max-width:420px) {
-    .media-skup{
+    .product-title{
         margin-bottom: 15px !important;
     }
-    .zol_ser{
+    .zoloto-section{
 margin-top: 30px;
 margin-bottom: 20px;
     }
-    .zoloto_top {
+    .gram12__zoloto-top {
         width: 100%;
         height: 67px;
     }
-    .top_nalc {
+    .gram12__top-nalc--bordered {
         width: 100%;
     }
-    .nalc_table1 {
+    .gram12__nalc-table--rounded-tl1 {
         width: 100%;
     }
     .phone__big-application {
@@ -1764,10 +1764,10 @@ margin-bottom: 20px;
     .kon_ban_text h1 {
     margin-bottom: 10px;
     }
-    /* .nalc_table{
+    /* .gram12__nalc-table--rounded-tl{
         border-bottom-left-radius: 5px;
     }
-    .nalc_table1{
+    .gram12__nalc-table--rounded-tl1{
         border-bottom-right-radius: 5px;
     } */
      .bor{
@@ -1781,7 +1781,7 @@ margin-bottom: 20px;
         margin-bottom: 5px;
         margin-left: 10px;
     }
-    .dg_btn_sku {
+    .product-actions-buttons {
         width: 100%;
     }
     .bg_rem_img img {
@@ -1791,13 +1791,13 @@ margin-bottom: 20px;
     .one_shag {
         height: 275px;
     }
-    .zol_ser .gram h5 {
+    .zoloto-section .zoloto-section__content h5 {
         margin-top: 5px;
     }
-    .gram br {
+    .zoloto-section__content br {
         display: none;
     }
-    .gram button {
+    .zoloto-section__content button {
         margin-left: 13px;
         width: 96%;
         /* margin: auto; */
@@ -1982,7 +1982,7 @@ margin-bottom: 20px;
     top: -12px !important;
     margin-bottom: 0px !important;
 }
-.nam p{
+.contact-item p{
     font-family: Montserrat;
 font-size: 10px !important;
 font-weight: 400 !important;
@@ -1993,34 +1993,34 @@ width: 60%;
 .phone__big-application {
     padding: 16px 2px;
 }
-.zoloto_top img {
+.gram12__zoloto-top img {
     z-index: 123;
     margin-top: -8px;
     margin-left: 27px;
     position: relative;
     left: 15px;
 }
-.zoloto_top h3{
+.gram12__zoloto-top h3{
     margin-top: 4px;
     margin-left: -7px;
 }
-.nalc_table p{
+.gram12__nalc-table--rounded-tl p{
     margin-bottom: 0;
 }
-.top_nalc{
+.gram12__top-nalc--bordered{
 display: grid;
         grid-template-columns: 1.45fr 2fr;
     }
-    .nalc_table{
+    .gram12__nalc-table--rounded-tl{
         padding-left: 24px;
     }
-    .nalc_table1{
+    .gram12__nalc-table--rounded-tl1{
         padding-left: 22px;
     }
     .sergra{
         margin-top: 65px !important;
     }
-    .sergra .zoloto_top{
+    .sergra .gram12__zoloto-top{
         top: -55px !important;
     }
     .grid_one_prob {
