@@ -1401,6 +1401,9 @@ color: black;
             gap: 61px;
             width: 100%;
         }
+        .catalog_route_page{
+            display: none;
+        }
         .one-product__plus-minus{
             grid-column-start: 1;
             grid-column-end: 3;
