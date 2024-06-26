@@ -26,7 +26,11 @@
     position: relative;
     z-index: 4;
 }
-
+.dastafak_admin_payment-body{
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+}
 .bonus-main__body-page__road .bx-home-alt {
     font-size: 20px;
 }
@@ -67,7 +71,7 @@
     scale: 1.2;
 }
 
-.circle_4_margin {
+.circles {
     width: 95%;
     margin: auto;
     max-width: 939px;
@@ -76,7 +80,7 @@
     margin-top: -130px;
 }
 
-.circle_4_margin .circle_4_2 {
+.circles .circles__item--1 {
     border-radius: 50%;
     width: 240px;
     height: 240px;
@@ -90,7 +94,7 @@
     gap: 10px;
 }
 
-.circle_4_margin .circle_4_2 p {
+.circles .circles__item--1 p {
     /* width: 70%; */
     text-align: center;
     /* margin: auto; */
@@ -102,7 +106,7 @@
 
 }
 
-.circle_4_margin .circle_4_2 img {
+.circles .circles__item--1 img {
     height: 56px;
 }
 
@@ -125,11 +129,11 @@
         /* height: 236px; */
     }
 
-    .circle_4_margin .circle_4_2 img {
+    .circles .circles__item--1 img {
         height: 38px;
     }
 
-    .circle_4_margin {
+    .circles {
         width: 95%;
         margin: auto;
         max-width: 800px;
@@ -138,7 +142,7 @@
         margin-top: -100px;
     }
 
-    .circle_4_margin .circle_4_2 {
+    .circles .circles__item--1 {
         border-radius: 50%;
         width: 200px;
         height: 200px;
@@ -152,7 +156,7 @@
         gap: 10px;
     }
 
-    .circle_4_margin .circle_4_2 p {
+    .circles .circles__item--1 p {
         width: 90%;
         text-align: center;
         font-size: 15px;
@@ -170,11 +174,11 @@
         min-height: 300px;
     }
 
-    .circle_4_margin .circle_4_2 img {
+    .circles .circles__item--1 img {
         height: 28px;
     }
 
-    .circle_4_margin {
+    .circles {
         width: 95%;
         margin: auto;
         max-width: 600px;
@@ -183,7 +187,7 @@
         margin-top: -60px;
     }
 
-    .circle_4_margin .circle_4_2 {
+    .circles .circles__item--1 {
         border-radius: 50%;
         width: 150px;
         height: 150px;
@@ -197,7 +201,7 @@
         gap: 10px;
     }
 
-    .circle_4_margin .circle_4_2 p {
+    .circles .circles__item--1 p {
         width: 90%;
         text-align: center;
         font-size: 12px;
@@ -212,17 +216,17 @@
 }
 
 @media(max-width:822px) {
-    .circle_4_margin {
-        width: 95%;
-        margin: auto;
-        max-width: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: -40px;
-        gap: 10px;
-    }
+        /* .circles {
+            width: 95%;
+            margin: auto;
+            max-width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: -40px;
+            gap: 10px;
+        } */
 
-    .circle_4_margin .circle_4_2 {
+    .circles .circles__item--1 {
         border-radius: 22px;
         width: 100%;
         height: 130px;
@@ -237,7 +241,7 @@
     }
 }
 @media(max-width:600px){
-    .circle_4_margin {
+    .circles {
         width: 95%;
         margin: auto;
         max-width: 330px;
@@ -263,7 +267,7 @@ text-align: center;
         background: linear-gradient(180deg, #69D1D0 0%, #69D0CF 31.5%, #58CDEC 59.5%, #53CDF4 100%);
 
     }
-    .circle_4_margin .circle_4_2 {
+    /* .circles .circles__item--1 {
         border-radius: 22px;
         width: 100%;
         height: 130px;
@@ -275,7 +279,8 @@ text-align: center;
         align-items: center;
         flex-direction: column;
         gap: 10px;
-    } 
+        background-color: red;
+    }  */
     .dastafka_header .dastafka_header_body {
         display: grid;
         grid-template-columns: 1fr;
@@ -452,23 +457,23 @@ margin: auto;
     .dastafka_header .dastafka_header_body .media__vektor-image-second {
         width: 68%;
     }
-    .circle_4_margin .circle_4_2 {
+    .circles .circles__item--1 {
         height: 144px;
     }
-    .circle_4_margin{
+    .circles{
         margin-top: -62px;
     }
-    .circle_4_margin .circle_4_2 img {
+    .circles .circles__item--1 img {
         height: 36px;
     }
-    .circle_4_2{
+    .circles__item--1{
         margin-bottom: 10px;
     }
-    .circle_4_margin .circle_4_2 p {
+    /* .circles .circles__item--1 p {
         width: 70%;
         margin-bottom: 0px;
         margin-top: 12px;
-    }   
+    }    */
     .title_dastafla_payment-body{
         /* margin-top: 69px; */
         margin-bottom: 23px;
