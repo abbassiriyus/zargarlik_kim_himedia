@@ -160,7 +160,7 @@ font-size: 20px;
     border-radius: 16px;
     padding-bottom: 54px;
 }
-.karzinka__body .kalkulator_shot .h3 {
+.karzinka__body .kalkulator_shot .karzinka__h3 {
 display: flex;
 justify-content: space-between;
 width: 89%;
@@ -184,7 +184,7 @@ margin-bottom: 4px;
         left: 1px;
     }
 
-.karzinka__body .kalkulator_shot .h3 h3{
+.karzinka__body .kalkulator_shot .karzinka__h3 h3{
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 600;
@@ -792,7 +792,7 @@ color: #1D6BD1;
 margin-left: 30px;
     border-bottom: 1px dashed;
 }
-.karzinka__body .karzinka__appProd .zabit_karzinka{
+.karzinka__body .karzinka__appProd .karzinka__zabit{
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 600;
@@ -802,11 +802,11 @@ margin-left: 30px;
 color: #242424;    
 margin-top: 25px;
 }
-.karzinka__body .karzinka__appProd .cards_a_cards{
+.karzinka__body .karzinka__appProd .karzinkaSelect__cards{
     display: flex;
     gap: 16px;
 }
-.karzinka__body .karzinka__appProd .cards_a_cards .cards_a_card .cards_a_allProduct__body__cards__cardImg{
+.karzinka__body .karzinka__appProd .karzinkaSelect__cards .karzinkaSelect__cards__card .cards_a_allProduct__body__cards__cardImg{
 width: 89px;
 height: 89px;
 border: 1px solid #E6E6E6;
@@ -815,7 +815,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.karzinka__body .karzinka__appProd .cards_a_cards .cards_a_card p{
+.karzinka__body .karzinka__appProd .karzinkaSelect__cards .karzinkaSelect__cards__card p{
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
@@ -825,11 +825,11 @@ align-items: center;
     margin-top: 10px;
 
 }
-.karzinka__body .karzinka__appProd .cards_a_cards .cards_a_card .cards_a_allProduct__body__cards__cardImg img{
+.karzinka__body .karzinka__appProd .karzinkaSelect__cards .karzinkaSelect__cards__card .cards_a_allProduct__body__cards__cardImg img{
  width: 100%;
  max-height: 100%;
 }
-.karzinka__body .karzinka__appProd .check_p_karzika{
+.karzinka__body .karzinka__appProd .karzinkaSelect__dastafka{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
@@ -839,7 +839,7 @@ align-items: center;
 color: #242424;  
 margin-top: -3px;  
 }
-.karzinka__body .karzinka__appProd .check_p_karzika input{
+.karzinka__body .karzinka__appProd .karzinkaSelect__dastafka input{
 width: 20px;
 height: 20px;
 position: relative;
@@ -1373,7 +1373,7 @@ left: 4px;
     left: 7px;
     top: -22px;
  }
- .karzinka__body .karzinka__appProd .zabit_karzinka{
+ .karzinka__body .karzinka__appProd .karzinka__zabit{
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -1402,7 +1402,7 @@ margin-top: -12px;
     margin-top: 6px !important;
     height: 100%;
 }
- .karzinka__body .karzinka__appProd  .card121{
+ .karzinka__body .karzinka__appProd  .karzinkaSelect__cards__dr{
    
         display: flex;
         gap: 12px;
@@ -1410,7 +1410,7 @@ margin-top: -12px;
         margin-left: 17px !important;
  
 }
-.karzinka__body .karzinka__appProd .zabit_karzinka {
+.karzinka__body .karzinka__appProd .karzinka__zabit {
     margin-top: -8px !important;
 }
 .karbonus1 {
@@ -1425,7 +1425,7 @@ margin-top: -12px;
     margin-left: 15px !important;
     margin-top: -6px !important;
 }
-.check_p_karzika{
+.karzinkaSelect__dastafka{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -1499,7 +1499,7 @@ margin: auto;
     position: relative;
     top: 6px !important;
 }
-.line_for_med{
+.karzinka_line_for_med{
     margin-top: -8px !important;
 }
 .med-h4{
@@ -1593,7 +1593,7 @@ letter-spacing: 0.5px;
 text-align: left;
 
 }
-.kalkulator_shot .h3 h3{
+.kalkulator_shot .karzinka__h3 h3{
     font-family: Montserrat;
 font-size: 18px !important;
 font-weight: 600;
@@ -1620,7 +1620,7 @@ letter-spacing: 0.5px;
 text-align: left;
 border-bottom: 1px dashed #1D6BD1;
 }
-.karzinka__body .kalkulator_shot .h3 {
+.karzinka__body .kalkulator_shot .karzinka__h3 {
     display: flex;
     justify-content: space-between;
     width: 91%;

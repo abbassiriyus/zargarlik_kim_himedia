@@ -11,19 +11,19 @@ body{
     padding-top: 205px !important;
     width: 100% !important;
 }
-.main h2{
+.exchange-return-section h2{
     font-size: 26.5px !important;
 }
-.main h3{
+.exchange-return-section h3{
     font-size: 30px !important;
 }
-.main .for_bg{
+.exchange-return-section .for_bg{
     max-width: 1470px;
     width: 100%;
     margin: auto;
     /* gap: 20px; */
 }
-.main .main__word{
+.exchange-return-section .exchange-return-navigation{
     width: 100%;
     height: 495px;
     background: url(/image/e7eb5ef3744613bb91cfdd74eb13cd43.jpeg);
@@ -36,7 +36,7 @@ body{
     flex-direction: column;
     position: relative;
 }
-.main .nvb{
+.exchange-return-section .nvb{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -47,28 +47,28 @@ body{
     top: 20px;
     left: 10%;
 }
-.main .nvb p{
+.exchange-return-section .nvb p{
     font-size: 14px;
     font-weight: 500 !important;
     margin-bottom: 0;
 }
-.main .nvb i{
+.exchange-return-section .nvb i{
     font-size: 23px;
 }
-.main .for_bg h1{
+.exchange-return-section .for_bg h1{
     font-size: 54px;
     font-weight: 700;
     line-height: 81px;
     text-align: left;
     margin-bottom: 20px;
 }
-.main .for_bg p{
+.exchange-return-section .for_bg p{
     font-size: 28px;
     font-weight: 400;
     text-align: left;
     margin-bottom: 20px;
 }
-.main .word{
+.exchange-return-section .word{
     max-width: 1470px;
     width: 100%;
     line-height: 24px;
@@ -78,23 +78,23 @@ body{
     border-bottom: 1px solid #E6E6E6;
     margin-bottom: 35px;
 }
-.main .word p{
+.exchange-return-section .word p{
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
 }
-.main .word2 p{
+.exchange-return-section .word2 p{
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
 }
-.main .wrd_h2{
+.exchange-return-section .wrd_h2{
 font-weight: 500;
 margin: 25px 0px !important;
 }
-.main .h34{
+.exchange-return-section .h34{
 font-size: 20px !important;
 font-style: italic !important;
 font-weight: 600;
@@ -102,17 +102,17 @@ line-height: 30px;
 text-align: left;
 margin-bottom: 1px;
 }
-.main .for_p{
+.exchange-return-section .for_p{
     margin-left: 10px;
     margin-bottom: 13px;
 }
-.main .for_p p{
+.exchange-return-section .for_p p{
     margin-bottom: 4px;
 }
-.main .p1{
+.exchange-return-section .p1{
     margin-bottom: 30px;
 }
-.main .word2{
+.exchange-return-section .word2{
     max-width: 1470px;
     width: 100%;
     line-height: 24px;
@@ -121,22 +121,22 @@ margin-bottom: 1px;
     margin: auto;
     margin-bottom: 15px;
 }
-.main .word2 h1{
+.exchange-return-section .word2 h1{
 font-size: 32px;
 font-weight: 500;
 line-height: 38.73px;
 margin-bottom: -6px;
 }
-.main .v2{
+.exchange-return-section .v2{
     font-style: italic;
 }
-.main .vjno{
+.exchange-return-section .vjno{
     font-style: normal !important;
 }
-.main .ik_br{
+.exchange-return-section .ik_br{
     display: none;
 }
-.main .dp{
+.exchange-return-section .dp{
     max-width: 1465px;
     width: 100%;
     line-height: 24px;
@@ -144,7 +144,7 @@ margin-bottom: -6px;
     align-items: center;
     margin: auto;
 }
-.main .dp p{
+.exchange-return-section .dp p{
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -156,28 +156,28 @@ margin-bottom: -6px;
     margin-top: 10px;
 }
 @media(max-width:1633px){
-    .main .nvb{
+    .exchange-return-section .nvb{
         max-width: none !important;
         width: auto;
         margin: auto;
     }
 }
 @media(max-width:1500px){
-    .main .for_bg{
+    .exchange-return-section .for_bg{
         padding: 20px;
     }
-    /* .main .nvb{
+    /* .exchange-return-section .nvb{
         max-width: 1440px;
         width: 95%;
         margin: auto;
     } */
-    .main .word{
+    .exchange-return-section .word{
         padding: 20px;
     }
-    .main .word2{
+    .exchange-return-section .word2{
         padding: 20px;
     }
-    .main .dp{
+    .exchange-return-section .dp{
         padding: 20px;
     }
 }
@@ -187,134 +187,146 @@ margin-bottom: -6px;
     }
 }
 @media(max-width:700px){
-    .main .main__word{
+    .exchange-return-section .exchange-return-navigation{
         width: 100%;
         height: 600px;
   background-image: url(.//Frame\ 1003.png);  
     background-repeat: no-repeat; 
     background-size: cover;
     }
-    .main .for_bg h1{
+    .exchange-return-section .for_bg h1{
         font-size: 40px;
         line-height: 60px;
     }
-    .main .nvb p{
+    .exchange-return-section .nvb p{
         font-size: 12px;
     }
-    .main .nvb i{
+    .exchange-return-section .nvb i{
         font-size: 17px;
     }
 }
 @media(max-width:500px){
-    .main .for_bg {
+    .exchange-return-section .for_bg {
         margin: 0;
     }
-    .main .for_bg h1{
+    .exchange-return-section .for_bg h1{
         font-size: 22px;
         line-height: 25px;
         text-align: center;
     }
-    .main .for_bg br{
+    .exchange-return-section .for_bg br{
         display: none;
     }
-    .main .for_bg p{
+    .exchange-return-section .for_bg p{
         font-size: 16px;
         text-align: center;
     }
-    .main .main__word{
+    .exchange-return-section .exchange-return-navigation{
         width: 100%;
         height: 500px;
         justify-content: flex-start;
     }
-    .main .word2 h1{
+    .exchange-return-section .word2 h1{
         font-size: 23px;
         }
 }
 @media(max-width:430px){
-    .main .nvb{
-        padding-left: 20px;
+    .exchange-return-section .nvb{
+        padding-left: 0px;
+        top: 16px;
+        left: 4%;
+        gap: 1px;
+    
+    }
+    .exchange-return-section .for_bg{
+        margin-top: 35px;
     }
 }
 @media(max-width:360px){
-    .main .for_bg h1{
+    .exchange-return-section .for_bg h1{
         font-size: 18px;
         line-height: 20px;
         text-align: center;
         margin: 0;
         margin-bottom: 12px;
     }
-    .main .for_bg p{
+    .exchange-return-section .for_bg p{
         font-size: 12px;
         text-align: center;
         line-height: 14.63px;
         margin-bottom: 0;
     }
-    .main .main__word{
+    .exchange-return-section .exchange-return-navigation{
         height: 461px;
         margin-bottom: 0;
     }
-    .main .word {
-        padding: 5px 15px;
+    .exchange-return-section .word {
+        padding: 11px 15px;
         margin-bottom: 15px;
     }
-    .main .word p{
+    .exchange-return-section .word p{
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 10px;
     }
-    .main .word2 p{
+    .exchange-return-section .word2 p{
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 10px;
     }
-    .main .dp p{
+    .exchange-return-section .dp p{
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 10px;
     }
-    .main .word br{
+    .exchange-return-section .word br{
         display: none;
     }
-    .main .wrd_h2{
-        font-size: 18px !important;
+    .exchange-return-section .wrd_h2{
+        font-size: 17px !important;
         line-height: 21.78px;
         margin-top: 0px !important;
     }
-    .main .h34{
+    .exchange-return-section .h34{
         font-size: 14px !important;
         line-height: 21px;
         margin-bottom: 8px;
     }
-    .main .for_p{
-        margin: 20px;      
+    .exchange-return-section .for_p{
+        margin: 20px;
+        margin-left: 5px;
+        margin-top: 18px;  
     }
-    .main .for_p p{
+    .exchange-return-section .for_p p{
         margin-bottom: 13px;
         line-height: 15px;
     }
-    .main .v{
+    .exchange-return-section .v{
         margin-bottom: 20px !important;
     }
-    .main .p1{
+    .exchange-return-section .p1{
         margin-top: -5px !important;
     }
-    .main .word2 {
+    .exchange-return-section .word2 {
         padding: 5px 15px;
         margin-bottom: 0px;
     }
-    .main .word2 h1{
+    .exchange-return-section .word2 h1{
         margin-bottom: 17px;
+        /* font-family: Inter; */
         font-size: 24px;
-        font-weight: 600;
-        line-height:30.05px;
+        font-weight: 500;
+        line-height: 29.05px;
+        text-align: left;
+        
     }
-    .main .ik_br{
+    .exchange-return-section .ik_br{
     display: flex;
     }
     .fr_p2{
         margin-bottom: 10px !important;
     }
-    .main .dp {
+    .exchange-return-section .dp {
         padding: 5px 15px;
         margin-bottom: 0px;
     }
