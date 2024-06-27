@@ -24,3 +24,9 @@ line-height: 42px;
 text-align: left;
 margin-bottom: 10px;
 }
+@media (max-width:991px) {
+    .tinkof2_body {
+        padding-top: 9px;
+        width: 100vw;
+    }
+}

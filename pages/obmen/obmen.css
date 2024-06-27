@@ -69,6 +69,12 @@ margin-left: 27px;
 .fram797{
     display: none;
 }
+@media (max-width:991px) {
+   .obmen--body{
+    padding-top: 9px;
+
+   } 
+}
 @media (max-width:520px) {
     .fram7922{
         display: none;

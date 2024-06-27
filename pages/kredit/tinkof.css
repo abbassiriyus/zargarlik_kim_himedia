@@ -727,6 +727,9 @@ top: 0px;
         color: #1FA534  !important;
 
     }
+    .tink_body{
+        padding-top: 68px;
+    }
     .credit-option--sberbank{
 height: auto;  padding-bottom: 9%;
 padding-top: 11%;

@@ -237,7 +237,11 @@ padding: 12px 117px;
     display: none;
   }
   
-
+@media (max-width:991px) {
+    .prise-body {
+        padding-top: 71px !important;
+    } 
+}
   @media (max-width:900px) {
    .for_all .for_circle{
     display: grid;

@@ -137,6 +137,11 @@ height: 56px;
 background: #FFF957;
 border-radius: 8px;
 }
+@media (max-width:991px) {
+    .kak-body {
+        padding-top: 55px;
+    }
+}
 @media (max-width:891px){
     .kak-body .order-steps .order-form{
         width: 100%;
@@ -253,7 +258,5 @@ border-radius: 8px;
                 margin-top: 22px !important;
                 margin-bottom: -12px !important;
             }
-            .kak-body {
-                padding-top: 162px;
-            }
+
 }

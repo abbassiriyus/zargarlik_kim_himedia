@@ -1379,6 +1379,9 @@ line-height: 34.13px;
     grid-template-columns: auto;
     gap: 10px;
 }
+.one_product-Body {
+  padding-top: 52px;
+}
 .eto_net{
   display: none;
 }

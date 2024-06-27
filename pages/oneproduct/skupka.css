@@ -1213,8 +1213,8 @@ margin-top: 8px;
         }
 } 
     @media (max-width:991px) {
-        body{
-            padding-top:112px;
+        .skupka-body{
+            padding-top:14px;
         }
         .product-actions-buttons{
             margin-bottom: 17px;

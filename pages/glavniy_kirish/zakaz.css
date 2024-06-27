@@ -97,6 +97,11 @@ border: none;
     margin-left: -2px;
     text-align: left;
 }
+@media (max-width:991px) {
+    .zakaz_big_div2{
+        padding-top: 57px !important;
+    }
+}
 @media (max-width:980px){
     .orders{
         display: grid;
@@ -152,7 +157,5 @@ text-align: left;
     .user-parlor{
         width: 91%;
     }
-    .zakaz_big_div2{
-        padding-top: 103px;
-    }
+
 }

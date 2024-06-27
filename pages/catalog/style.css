@@ -1848,7 +1848,9 @@
     font-size: 14px;
     margin-left: 14px;
   }
-
+.catalog_page--body{
+  padding-top: 76px;
+}
   .catalogPage__mobile__title h3 {
     font-size: 14px;
     font-weight: 600 !important;

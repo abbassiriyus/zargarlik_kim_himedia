@@ -182,8 +182,8 @@ margin-bottom: -6px;
     }
 }
 @media(max-width:991px){
-    body{
-        padding-top: 170px !important;
+    .pravila-body {
+        padding-top: 65px !important;
     }
 }
 @media(max-width:700px){

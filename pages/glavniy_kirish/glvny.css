@@ -852,6 +852,9 @@ grid-row-start: 2;
         display: block;
 
     }
+    .user_glavniy{
+        padding-top: 63px !important;
+    }
 .mask-group{
  display: block;
 }

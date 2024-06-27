@@ -195,7 +195,7 @@ display: none;
 }
 @media (max-width:500px) {
     .one_order-body{
-        padding-top: 100px;
+        padding-top: 64px !important;
     }
     .order-list-back span{
         font-family: Montserrat;

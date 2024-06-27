@@ -700,6 +700,10 @@ left: 22px !important;
         border-radius: 10px;
         
     }
+    .map__body {
+        padding-top: 136px;
+    }
+
     .mySwiper .swiper-slide img {
         /* border: 11px solid black; */
         opacity: 0;

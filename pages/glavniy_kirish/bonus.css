@@ -529,3 +529,8 @@ margin-bottom: 54px !important;
     padding-bottom: 10px;
     align-items: center;
 } */
+ @media (max-width:991px) {
+    .izbrniy_big_div{
+        padding-top: 63px !important;
+    }
+ }

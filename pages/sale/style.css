@@ -131,7 +131,13 @@ right: 0px;
 max-height: 100%;
 }
 
-
+@media (max-width:991px) {
+    .sale-body{
+        width: 100vw;
+            padding-top: 56px;
+        
+       }
+}
 
 @media(max-width:810px){
     .catalog_main_page_first_sale{
@@ -202,11 +208,7 @@ text-align: left;
     margin-top: 11px;
         
     }
-   .sale-body{
-    width: 100vw;
-        padding-top: 154px;
-    
-   }
+
 }
 @media (max-width:500px) {
     .allProduct_body {
