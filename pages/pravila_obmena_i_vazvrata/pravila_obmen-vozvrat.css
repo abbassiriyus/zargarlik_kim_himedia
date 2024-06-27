@@ -17,7 +17,7 @@ body{
 .exchange-return-section h3{
     font-size: 30px !important;
 }
-.exchange-return-section .for_bg{
+.exchange-return-section .exchange-return-content{
     max-width: 1470px;
     width: 100%;
     margin: auto;
@@ -36,7 +36,7 @@ body{
     flex-direction: column;
     position: relative;
 }
-.exchange-return-section .nvb{
+.exchange-return-section .exchange-return-navigation__icon{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -47,22 +47,22 @@ body{
     top: 20px;
     left: 10%;
 }
-.exchange-return-section .nvb p{
+.exchange-return-section .exchange-return-navigation__icon p{
     font-size: 14px;
     font-weight: 500 !important;
     margin-bottom: 0;
 }
-.exchange-return-section .nvb i{
+.exchange-return-section .exchange-return-navigation__icon i{
     font-size: 23px;
 }
-.exchange-return-section .for_bg h1{
+.exchange-return-section .exchange-return-content h1{
     font-size: 54px;
     font-weight: 700;
     line-height: 81px;
     text-align: left;
     margin-bottom: 20px;
 }
-.exchange-return-section .for_bg p{
+.exchange-return-section .exchange-return-content p{
     font-size: 28px;
     font-weight: 400;
     text-align: left;
@@ -90,11 +90,11 @@ body{
     line-height: 30px;
     text-align: left;
 }
-.exchange-return-section .wrd_h2{
+.exchange-return-section .word__heading{
 font-weight: 500;
 margin: 25px 0px !important;
 }
-.exchange-return-section .h34{
+.exchange-return-section .word__subheading{
 font-size: 20px !important;
 font-style: italic !important;
 font-weight: 600;
@@ -102,11 +102,11 @@ line-height: 30px;
 text-align: left;
 margin-bottom: 1px;
 }
-.exchange-return-section .for_p{
+.exchange-return-section .word__list{
     margin-left: 10px;
     margin-bottom: 13px;
 }
-.exchange-return-section .for_p p{
+.exchange-return-section .word__list p{
     margin-bottom: 4px;
 }
 .exchange-return-section .p1{
@@ -133,10 +133,10 @@ margin-bottom: -6px;
 .exchange-return-section .vjno{
     font-style: normal !important;
 }
-.exchange-return-section .ik_br{
+.exchange-return-section .word-title__text{
     display: none;
 }
-.exchange-return-section .dp{
+.exchange-return-section .product-details{
     max-width: 1465px;
     width: 100%;
     line-height: 24px;
@@ -144,29 +144,29 @@ margin-bottom: -6px;
     align-items: center;
     margin: auto;
 }
-.exchange-return-section .dp p{
+.exchange-return-section .product-details p{
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
     margin-bottom: 6px;
 }
-.for_lit_p{
+.product-details__list-container{
     padding-left: 8px;
     margin-top: 10px;
 }
 @media(max-width:1633px){
-    .exchange-return-section .nvb{
+    .exchange-return-section .exchange-return-navigation__icon{
         max-width: none !important;
         width: auto;
         margin: auto;
     }
 }
 @media(max-width:1500px){
-    .exchange-return-section .for_bg{
+    .exchange-return-section .exchange-return-content{
         padding: 20px;
     }
-    /* .exchange-return-section .nvb{
+    /* .exchange-return-section .exchange-return-navigation__icon{
         max-width: 1440px;
         width: 95%;
         margin: auto;
@@ -177,7 +177,7 @@ margin-bottom: -6px;
     .exchange-return-section .word2{
         padding: 20px;
     }
-    .exchange-return-section .dp{
+    .exchange-return-section .product-details{
         padding: 20px;
     }
 }
@@ -194,30 +194,30 @@ margin-bottom: -6px;
     background-repeat: no-repeat; 
     background-size: cover;
     }
-    .exchange-return-section .for_bg h1{
+    .exchange-return-section .exchange-return-content h1{
         font-size: 40px;
         line-height: 60px;
     }
-    .exchange-return-section .nvb p{
+    .exchange-return-section .exchange-return-navigation__icon p{
         font-size: 12px;
     }
-    .exchange-return-section .nvb i{
+    .exchange-return-section .exchange-return-navigation__icon i{
         font-size: 17px;
     }
 }
 @media(max-width:500px){
-    .exchange-return-section .for_bg {
+    .exchange-return-section .exchange-return-content {
         margin: 0;
     }
-    .exchange-return-section .for_bg h1{
+    .exchange-return-section .exchange-return-content h1{
         font-size: 22px;
         line-height: 25px;
         text-align: center;
     }
-    .exchange-return-section .for_bg br{
+    .exchange-return-section .exchange-return-content br{
         display: none;
     }
-    .exchange-return-section .for_bg p{
+    .exchange-return-section .exchange-return-content p{
         font-size: 16px;
         text-align: center;
     }
@@ -231,26 +231,26 @@ margin-bottom: -6px;
         }
 }
 @media(max-width:430px){
-    .exchange-return-section .nvb{
+    .exchange-return-section .exchange-return-navigation__icon{
         padding-left: 0px;
         top: 16px;
         left: 4%;
         gap: 1px;
     
     }
-    .exchange-return-section .for_bg{
+    .exchange-return-section .exchange-return-content{
         margin-top: 35px;
     }
 }
 @media(max-width:360px){
-    .exchange-return-section .for_bg h1{
+    .exchange-return-section .exchange-return-content h1{
         font-size: 18px;
         line-height: 20px;
         text-align: center;
         margin: 0;
         margin-bottom: 12px;
     }
-    .exchange-return-section .for_bg p{
+    .exchange-return-section .exchange-return-content p{
         font-size: 12px;
         text-align: center;
         line-height: 14.63px;
@@ -274,7 +274,7 @@ margin-bottom: -6px;
         line-height: 21px;
         margin-bottom: 10px;
     }
-    .exchange-return-section .dp p{
+    .exchange-return-section .product-details p{
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 10px;
@@ -282,26 +282,26 @@ margin-bottom: -6px;
     .exchange-return-section .word br{
         display: none;
     }
-    .exchange-return-section .wrd_h2{
+    .exchange-return-section .word__heading{
         font-size: 17px !important;
         line-height: 21.78px;
         margin-top: 0px !important;
     }
-    .exchange-return-section .h34{
+    .exchange-return-section .word__subheading{
         font-size: 14px !important;
         line-height: 21px;
         margin-bottom: 8px;
     }
-    .exchange-return-section .for_p{
+    .exchange-return-section .word__list{
         margin: 20px;
         margin-left: 5px;
         margin-top: 18px;  
     }
-    .exchange-return-section .for_p p{
+    .exchange-return-section .word__list p{
         margin-bottom: 13px;
         line-height: 15px;
     }
-    .exchange-return-section .v{
+    .exchange-return-section .word__step{
         margin-bottom: 20px !important;
     }
     .exchange-return-section .p1{
@@ -320,17 +320,17 @@ margin-bottom: -6px;
         text-align: left;
         
     }
-    .exchange-return-section .ik_br{
+    .exchange-return-section .word-title__text{
     display: flex;
     }
-    .fr_p2{
+    .word-list__dr{
         margin-bottom: 10px !important;
     }
-    .exchange-return-section .dp {
+    .exchange-return-section .product-details {
         padding: 5px 15px;
         margin-bottom: 0px;
     }
-    .for_lit_p p{
+    .product-details__list-container p{
         margin-bottom: 4px !important;
     }
 }

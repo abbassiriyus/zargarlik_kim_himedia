@@ -94,4 +94,10 @@ border-bottom: 1px solid black;
     .login_page .login_main  h1{
        display: none;
      }
+     .login_page {
+      padding-top: 145px;
+  }
+  .login_page .login_main {
+   height: auto;
+}
  }

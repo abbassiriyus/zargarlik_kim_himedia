@@ -397,6 +397,10 @@ overflow: hidden;
     z-index: 0;
     transition: 1s;
 }
+.index-body{
+    width: 100vw;
+    padding-top: 130px;
+}
 .skupk .kredit3:hover #img3{
     position: absolute;
     bottom: -15%;
@@ -1633,6 +1637,10 @@ text-align: left;
     .mySwiper_12{
         display: flex !important;
     }
+    .index-body{
+        width: 100vw;
+        padding-top:75px;
+    }
  
 }
 @media (max-width:1316px) {
@@ -1703,6 +1711,12 @@ text-align: left;
     }
     .homePage__yellow_cardIn span{
         font-size: 18px;
+    }
+    .skupk .kredit h1{
+        font-size: 28px;
+    }
+    .skupk .kredit{
+        height: 200px;
     }
 }
 @media (max-width:1200px) {
@@ -1775,4 +1789,122 @@ text-align: left;
 .homePage__oneCard__swip img{
     background: #F6F6F6;
     border-radius: 8px;
+}
+
+.navber__mobile__last__version{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    margin: auto;
+    z-index: 3232;
+
+
+}
+.navbarAlmaz__mobile{    
+    height: 67px;
+    align-items: center;
+    display: flex;
+    display: none;
+    box-shadow: 0px 0px 15px 0px #0000001A;
+}
+.navbarAlmaz__mobile .bx-menu{
+    font-size: 30px;
+}
+.navbarAlmaz__mobile .bx-search{
+    font-size: 20px;
+}
+.navbarAlmaz__mobile .bx-message-dots{
+    font-size: 20px;
+    position: relative;
+}
+.navbarAlmaz__mobile img{
+    width: 27%;
+}
+.mess_red {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    right: 25px;
+}
+@media (max-width:991px) {
+    .navbarAlmaz__mobile{
+        display: flex;
+    }
+    .skupk{
+        display: none;
+    }
+}
+@media (max-width:884px) {
+    .mess_red{
+        top: 17px;
+        right: 22px;
+    }
+}
+@media (max-width:742px) {
+    .mess_red{
+        top: 17px;
+        right: 18px;
+    }
+}
+@media (max-width:580px) {
+    .mess_red{
+        top: 17px;
+        right: 13px;
+    }
+    .navbarAlmaz__mobile img{
+        width: 42%;
+    }
+}
+@media (max-width:392px) {
+    .mess_red {
+        top: 17px;
+        right: 8px;
+    }
+}
+.navber__mobile__last__version .bx-x{
+
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(194, 194, 194, 0.548);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border-radius: 8px;
+    color: grey;
+}
+.modal_for_navbar-media{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    left:-1200px ;
+    padding-top: 20px;
+    transition: 1s;
+    display: none;
+}
+@media (max-width:991px) {
+    .modal_for_navbar-media{
+        display: block;
+    }
+}
+.modal-navbar__one-item{
+    display: flex;
+    gap: 15px; width: 94%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Burger_header-menu-link-icon__UVzec{
+    /* background-color: red; */
+    opacity: 0.7;
+}
+.CitySelectButton_city-icon__6_yol{
+    opacity: 0.7;
+
 }

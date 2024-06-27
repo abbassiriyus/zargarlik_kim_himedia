@@ -321,7 +321,8 @@ text-align: center;
 
 .navbarAlmaz__mobile{
     display: none;
-    box-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 15px 0px #0000001A;
+
 }
 .navbarAlmaz__mobile .navbarAlmaz__mobile__first {
     background: #F2F2F2;

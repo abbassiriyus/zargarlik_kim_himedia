@@ -23,7 +23,6 @@
 <body>
     
 
-    
 
   <div class="filterPage">
     <div class="filterPage__title_first"><i style="cursor: pointer;"
@@ -686,7 +685,7 @@ background:
 
       <body>
         <div class="for_all">
-            <div class="nvb">
+            <div class="for-all_header">
                 <i class='bx bx-home-alt' ></i>
                 <i class='bx bx-chevron-right' ></i>
                 <p>Подарочная карта</p>
@@ -723,21 +722,21 @@ background:
     </div>
     
     <div class="answer_and_questions">
-        <h1 class="atv">Вопросы и ответы</h1>
+        <h1 class="for-all_title">Вопросы и ответы</h1>
 
       
-        <div class="blok">
-            <div class="cusok st2"><p onclick="oanima(0)" class="pod_tx st3">Электронный сертификат</p></div>
-            <div class="cusok"><p onclick="oanima(1)"  class="pod_tx st3">Подарочная карта</p></div>
-            <div class="cusok"><p onclick="oanima(2)"  class="pod_tx st3">Корпоративный заказ</p></div>
+        <div class="for-all_options">
+            <div class="for-all_one-option st2"><p onclick="oanima(0)" class="option__description st3">Электронный сертификат</p></div>
+            <div class="for-all_one-option"><p onclick="oanima(1)"  class="option__description st3">Подарочная карта</p></div>
+            <div class="for-all_one-option"><p onclick="oanima(2)"  class="option__description st3">Корпоративный заказ</p></div>
         </div>
         <script>
         function oanima(key) {
-for (let y = 0; y < document.querySelectorAll(".cusok").length; y++) {
+for (let y = 0; y < document.querySelectorAll(".for-all_one-option").length; y++) {
   if(key===y){
-document.querySelectorAll('.cusok')[y].style='background-color: #ffffff;color: black !important; '
+document.querySelectorAll('.for-all_one-option')[y].style='background-color: #ffffff;color: black !important; '
   }else{
-    document.querySelectorAll('.cusok')[y].style='background-color: black;color:white !important; '
+    document.querySelectorAll('.for-all_one-option')[y].style='background-color: black;color:white !important; '
 
   }
   
@@ -789,7 +788,7 @@ document.querySelectorAll('.cusok')[y].style='background-color: #ffffff;color: b
                 </div>
               </div>
           </div>
-        <div class="div_p"><p class="not_found">Не нашли ответ на свой вопрос? Позвоните нам <span>+7 343 2664070</span></p></div>
+        <div class="contact-info"><p class="contact-info__text">Не нашли ответ на свой вопрос? Позвоните нам <span>+7 343 2664070</span></p></div>
         
     </div>
     
@@ -815,23 +814,10 @@ document.querySelectorAll('.cusok')[y].style='background-color: #ffffff;color: b
     });
     </script>
         </div>
-    </body>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>  
+ 
     <footer class="footer-version__pk">
        <ul>
          <h3>СКАЧАЙТЕ В</h3>

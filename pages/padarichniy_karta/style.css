@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.for_all .nvb{
+.for_all .for-all_header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -27,12 +27,12 @@ body{
     max-width: 1440px;
     gap: 9px;
 }
-.for_all .nvb p{
+.for_all .for-all_header p{
     font-size: 14px;
     font-weight: 500 !important;
     margin-bottom: 0;
 }
-.for_all .nvb i{
+.for_all .for-all_header i{
     font-size: 23px;
 }
 .for_all h1{
@@ -121,7 +121,7 @@ padding: 12px 117px;
     max-width: 1255px;
     width: 100%;
 }
-.for_all .atv{
+.for_all .for-all_title{
     font-weight: 600;
     font-size: 54px;
     text-align: center;
@@ -135,7 +135,7 @@ padding: 12px 117px;
 .for_all .for_circle p{
   line-height: 24px;
 }
-.for_all .blok{
+.for_all .for-all_options{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -146,7 +146,7 @@ padding: 12px 117px;
     border-radius: 24px;
     margin-bottom: 20px;
 }
-.for_all .cusok{
+.for_all .for-all_one-option{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,10 +158,10 @@ padding: 12px 117px;
     color: #fff;
     cursor: pointer;
 }
-/* .for_all .pod_tx:hover, .for_all .cusok:hover{
+/* .for_all .option__description:hover, .for_all .for-all_one-option:hover{
     
 } */
-/* .for_all .cusok p:hover{
+/* .for_all .for-all_one-option p:hover{
     color: black;
 } */
 /* .for_all .st2{
@@ -170,7 +170,7 @@ padding: 12px 117px;
 /* .for_all .st3{ 
     color: #000 !important;
 } */
-.for_all .pod_tx{
+.for_all .option__description{
     margin-bottom: 0;
     font-size: 24px;
     font-weight: 600;
@@ -204,13 +204,13 @@ padding: 12px 117px;
 .for_all .accordion-item__header i{
     font-size: 30px;
 }
-.for_all .div_p{
+.for_all .contact-info{
     width: 100%;
 }
-.for_all .not_found{
+.for_all .contact-info__text{
     font-size: 20px;
 }
-.for_all .not_found span{
+.for_all .contact-info__text span{
     color: #0059ff;
 }
 
@@ -259,7 +259,7 @@ padding: 12px 117px;
      gap: 15px;
      margin-bottom: 20px;
     }
-    .for_all .blok{
+    .for_all .for-all_options{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -267,7 +267,7 @@ padding: 12px 117px;
     .for_all .questions{
         padding: 0px 20px;
     }
-    .for_all .div_p{
+    .for_all .contact-info{
         padding: 0px 20px;
     }
     .for_all .glav{
@@ -276,7 +276,7 @@ padding: 12px 117px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .for_all .atv{
+    .for_all .for-all_title{
         font-size: 40px;
         max-width: none;
     }

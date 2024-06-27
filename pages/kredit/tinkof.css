@@ -26,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 3px solid #474747;
+    
     border-radius:16px;
 }
 .one_tel2{
@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid #474747;
+    
     flex-direction: column;
     border-radius:16px;
 
@@ -47,7 +47,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 3px solid #474747;
+    
     border-radius:16px;
 
 }
@@ -110,7 +110,7 @@ text-align: left;
 color:white;
 text-transform: uppercase;
 }
-.how__item .how__item--1{
+.how__item--1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,7 +318,7 @@ line-height: 24.38px;
 text-align: left;
 
     }
-    .how__item how__item--1 p{
+    .how__item--1 p{
         font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -468,7 +468,7 @@ margin-top: 17px;
 .ownaccor{
     /* background-color: red !important; */
 } 
-.top_accordion_12  .ownaccor{
+.faq__item  .ownaccor{
     min-height: 46px !important;
     box-shadow: 0px 1px 0px #dee2e6 !important;
     width: 100%;
@@ -542,7 +542,7 @@ height:56px;
     max-width: 800px;
     margin: 2rem auto;
   } */
-.accordion-item {
+.faq__item .accordion-item {
     border-radius: 4px;
     margin-bottom: 20px;
     width: 100%;

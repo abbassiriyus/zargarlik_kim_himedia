@@ -60,7 +60,7 @@ letter-spacing: -0.006em;
 .order-product1{
     margin-top: 13px;
 }
-.order-product__card_ white-ring{
+.order-product__card_white-ring{
     display: grid;
     grid-template-columns: 70px auto 90px;
     align-items: center;
@@ -68,7 +68,7 @@ letter-spacing: -0.006em;
     max-width:640px ;
     margin-top: 24px;
 }
-.order-product__card_ white-ring img{
+.order-product__card_white-ring img{
     opacity: 0.5;
     margin-top: -17px;
     width: 90%;
@@ -92,7 +92,7 @@ letter-spacing: 0.5px;
 text-align: left;
 color: #BCBCBC  ;
 }
-.order-product__card_ white-ring span{
+.order-product__card_white-ring span{
     font-family: Montserrat;
 font-size: 14px;
 font-weight: 600;
@@ -251,7 +251,7 @@ text-align: left;
 .order-product {
         margin-top: 13px;
     }
-    .order-product__card_ white-ring{
+    .order-product__card_white-ring{
         margin-top: 17px;
     }
     .white-ring__content h3{
@@ -263,7 +263,7 @@ letter-spacing: 0.5px;
 text-align: left;
 width: 87%;
     }
-    .order-product__card_ white-ring span{
+    .order-product__card_white-ring span{
         font-family: Montserrat;
 font-size: 12px;
 font-weight: 600;
@@ -272,7 +272,7 @@ letter-spacing: 0.5px;
 text-align: left;
 
     }
-    .order-product__card_ white-ring {
+    .order-product__card_white-ring {
         display: grid;
         grid-template-columns: 69px auto 37px;
     }
