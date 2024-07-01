@@ -78,6 +78,11 @@ font-weight: 400;
 line-height: 17.07px;
 color: #257AE8;
 border: none;
+transition: 0.9s;
+}
+.orders__btn button:hover{
+    background-color: rgb(190, 190, 49);
+    color: black;
 }
 .orders__btn{
     margin-top: 33px;

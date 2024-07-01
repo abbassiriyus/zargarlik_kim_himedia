@@ -1834,7 +1834,7 @@ color: black;
     }
     .footer-version__pk span{
         color: #257AE8;
-        border-bottom: 2px dashed #257AE8;
+        border-bottom: 1px solid #257AE8;
         font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
@@ -1897,7 +1897,16 @@ body{
 .footeMobile__version .accordion{
 margin: auto;
 }
+.footeMobile__version span{
+    color: #257AE8;
+    border-bottom: 1px solid #257AE8;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
 
+}
 
 .footeMobile__versionLink__first{
     margin-top: 10px;
