@@ -1115,11 +1115,30 @@ color: #242424;
     background: linear-gradient(180deg, #64A2D4 0%, #6391B6 100%);
 
 }
-.homePage__kolSkid_card__dr .pro{
+.homePage__kolSkid_card__dr .homePage__kolSkid_card__pro2{
     background-color: #FDD335;
     color: black;
     width: 65px;
     border-top-right-radius: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 3px;
+}
+@media (max-width:991px) {
+    .homePage__kolSkid_card__dr .homePage__kolSkid_card__pro2{
+        background-color: #FDD335;
+        color: black;
+        width: 65px;
+        border-top-right-radius: 25px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 18px;
+    }
 }
 .homePage__kolSkid_card__gr24{
     background: #6771CE;
@@ -1330,7 +1349,7 @@ color: #FDD335;
     }
 
     .homePage__kolSkid_card__dr span{
-        margin-top: 13px;
+        margin-top: 9px;
     }
     .homePage__kolSkid_card__dr img{
         width: 67%;
