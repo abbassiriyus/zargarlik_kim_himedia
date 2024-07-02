@@ -1031,7 +1031,7 @@ color: black;
     cursor: pointer;
     }
     .minus__btn p{
-    font-size:35px;
+    font-size:25px;
     /* line-height: 0px; */
     
     padding: 0px;
@@ -1272,10 +1272,10 @@ color: black;
         /* height: 100px; */
         border-radius: 10px;
     }
-    .ic{
+    /* .payment_price_in{
         margin-top: 10px;
         margin-left: 4px;
-    }
+    } */
     .payment-body__text_inside span{
         position: relative;
         top: 7px;
@@ -1293,7 +1293,7 @@ color: black;
     
     }
    
-    .payment_price_inh2{ 
+    .payment_price_in h2{ 
         font-family: Montserrat;
     font-size: 28px;
     font-weight: 700;
@@ -1302,7 +1302,7 @@ color: black;
     text-align: right;
     
     }
-    .payment_price_inp{
+    .payment_price_in p{
         font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
@@ -1363,7 +1363,7 @@ color: black;
     opacity: 0px;
     
     }
-    .payment_price_indel{
+    .payment_price_in del{
         font-family: Montserrat;
     font-size: 12px;
     font-weight: 600;
@@ -1515,11 +1515,11 @@ color: black;
         .payment-body__text_inside h2 {
             font-size: 17px;
         }
-        .payment_price_inh2 {
+        .payment_price_in h2 {
             font-family: Montserrat;
             font-size: 22px;
         }
-        .payment_price_inp {
+        .payment_price_in p {
             font-family: Montserrat;
             font-size: 13px;
             margin-left: 20px;
@@ -1527,12 +1527,12 @@ color: black;
         .registration-input{
             margin-top: 30px;
         }
-        .payment_price_indel{
+        .payment_price_in del{
             display: block;
             margin-top: 9px;
             margin-left: 16px;
         }
-        .payment_price_inp{
+        .payment_price_in p{
             display: none;
         }
     
@@ -1758,7 +1758,7 @@ color: black;
     text-align: left;
     
         }
-        .payment_price_inh2{
+        .payment_price_in h2{
             font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
@@ -1766,7 +1766,7 @@ color: black;
     text-align: left;
     
         }
-        .payment_price_inh2{
+        .payment_price_in h2{
             margin-top: 8px;
             margin-left: 21px;
         }
