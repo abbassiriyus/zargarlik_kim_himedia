@@ -33,7 +33,8 @@
 
 .catalog_title__page23 h1 {
     width: 95%;
-    max-width: 1440px;
+    text-transform: uppercase;
+    max-width: 1416px;
     margin: auto;
     margin-top: 50px;
     font-family: Montserrat;
@@ -176,7 +177,7 @@ color: white;
     }
 }
 .catalogMain__page__filterSection__first {
-    margin-top:0px;
+    margin-top:26px;
     /* min-height: 300px; */
   }
   

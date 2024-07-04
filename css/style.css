@@ -800,7 +800,7 @@ box-shadow: none !important;
 --bs-accordion-border-color:white !important;
 }
 .catalogMain__page .accordion-button{
-padding: 6px !important;
+padding: 4px !important;
 position: relative;
 left: -6px;
  
@@ -1921,7 +1921,7 @@ font-size: 14px !important;
 font-weight: 500;
 line-height: 20px;
 text-align: left;
-height: 46px;
+height: 48px;
 
 }
 .footeMobile__versionLink__first {

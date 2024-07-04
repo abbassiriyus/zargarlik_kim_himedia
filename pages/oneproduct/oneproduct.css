@@ -476,7 +476,7 @@ margin-top: 25px;
   /* gap: 30px;/ */
   justify-content: space-between;
   max-width: 910px;
-  margin: auto;
+  /* margin: auto; */
 }
 @media(max-width:910px){
     .pod{
@@ -510,7 +510,7 @@ position: relative;
 }
 .fiantbody{
   margin-top: 16px;
-  margin-left: 4px;
+  /* margin-left: 4px; */
 }
 .fiantbody span{
 font-family: Montserrat;
@@ -550,7 +550,7 @@ font-weight: 400;
 line-height: 19.5px;
 text-align: left;
 text-decoration: underline;
-margin-top: 15px;
+margin-top: 7px;
 }
 .fiantic{
   padding: 30px;
@@ -592,7 +592,7 @@ margin-top: 15px;
   align-items: center;
   /* margin-left: -4px; */
   gap: 14px;
-  margin-top: 13px;
+  margin-top: 6px;
 }
 .zaka span{
   color: #0BAE45;
@@ -627,15 +627,18 @@ color: #6C7B8B;
   border-radius: 12px;
 }
 .bonusic{
-  padding-left: 64px;
-  padding-top: 15px;
+  padding-left: 61px;
+  padding-top: 18px;
+}
+.bonusic p{
+  font-size: 18px;
 }
 .zaka1{
   display: flex;
   align-items: center;
   /* margin-left: -4px; */
-  gap: 14px;
-  margin-top: 13px;
+  gap: 13px;
+  margin-top: -4px;
 }
 .zaka1 span{
   font-family: Montserrat;
@@ -697,7 +700,8 @@ position: relative;
   width: 95%;
   max-width: 1407px;
   margin: auto;
-  margin-top: -29px;
+  margin-top: -37px;
+
 }
 @media (max-width:1390px) {
   .paraph {
@@ -721,12 +725,13 @@ opacity: 0px;
 
 }
 .guarantee{
-  margin-top: 60px;
+  margin-top: 95px;
 }
 .guarbtns{
   display: flex;
   gap: 18px;
   overflow-x: auto;
+  width: 102%;
 }
 .tab_but:hover{
   background-color: #00000046
@@ -747,11 +752,11 @@ color: #939393;
 
 }
 .question{
-  width: 100%;
+  width: 102%;
   box-shadow: 0px 0px 20px 0px #3E3E3E26;
   background-color: white;
   border-radius: 12px;
-  margin-top: 30px;
+  margin-top: 17px;
   display: none;
 }
 .quesic{
@@ -796,13 +801,13 @@ color: #939393;
   font-weight: 600;
   line-height: 34.13px;
   text-align: left;
-margin-bottom: 10px;    
+  margin-bottom: 2px;
 }
 .quesic textarea{
   width: 99%;
   background: #F5F5F5;
   border: none;
-  margin-top: 46px;
+  margin-top:53px;
   padding-top: 21px;
   padding-left: 18px;
   outline: none;
@@ -814,7 +819,7 @@ font-weight: 400;
 line-height: 21.94px;
 text-align: left;
 color: #939393;
-
+height: 140px;
 }
 .red{
   font-family: Montserrat;
@@ -823,8 +828,8 @@ font-weight: 400;
 line-height: 14.63px;
 text-align: left;
 color: #F32B2A;
-margin-bottom: 25px;
-margin-top: 3px;
+margin-bottom: 20px;
+margin-top: 33px;
 }
 .robotm span{
   font-family: Montserrat;
@@ -903,7 +908,7 @@ color: #B0B0B0;
   max-width: 1407px;
   width: 95%;
   margin: auto;
-  margin-top: 48px;
+  margin-top: 43px;
 }
 .slider_one2 h3{
   font-family: Montserrat;
@@ -972,6 +977,7 @@ margin: auto;margin-bottom: -3px;
 
 .slider_one3{
   height: 300px;
+  /* width: 104%; */
   overflow: visible;
 }
 .slider_one3 .swiper-button-next {
@@ -1437,7 +1443,7 @@ font-weight: 600;
 line-height: 14.63px;
 }
 .brosh{
-  margin-top: 153px ;
+  margin-top: 147px ;
 }
 @media (max-width:500px){
   .btns_cars{

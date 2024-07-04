@@ -934,7 +934,7 @@
 
 .catalogMain__page {
   display: grid;
-  max-width: 1440px;
+  max-width: 1417px;
   width: 95%;
   margin: auto;
   /* background-color: black; */
@@ -1209,7 +1209,7 @@
 .catalogMain__page_subcategory {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 92%;
   margin: auto;
   height: 40px;
   align-items: center;
@@ -1217,7 +1217,7 @@
   border-radius: 10px;
   transition: 1s;
   /* background-color: #257AE8; */
-  padding-left: 7px;
+  padding-left: 6px;
 }
 
 .catalogMain__page_subcategory h3 {
