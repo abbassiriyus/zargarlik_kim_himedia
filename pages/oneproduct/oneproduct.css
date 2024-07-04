@@ -117,7 +117,7 @@ gap: 10px;
     margin-bottom: 32px;
     border-radius: 12px !important;
     margin-left: -13px;
-   
+   cursor: pointer;
   }
 
 
@@ -243,6 +243,7 @@ align-items: center;
   background-color: #FFF957;
   color: black;
   border: none;
+  cursor: pointer;
 }
 .clcick:hover span{
   color: #000000;
@@ -287,6 +288,7 @@ color: #242424;
 }
 .heart:hover{
   background-color: #FFF957;
+  cursor: pointer;
 }
 .heart{
   width: 57px;
