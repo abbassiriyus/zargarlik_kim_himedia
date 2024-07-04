@@ -2,10 +2,10 @@
     display: flex;
     gap: 9px;
     margin: auto;
-    margin-top: 63px;
+    margin-top: 59px;
     padding-left: 2px;
     width: 95%;
-    max-width: 1440px;
+    max-width: 1407px;
 align-items: center;
 }
 body{
@@ -38,12 +38,12 @@ body{
     grid-template-columns:  2fr 1.1fr;
     width: 95%;
     margin: auto;
-    max-width: 1440px;
+    max-width: 1407px;
     margin-top: 32px;
     gap: 20px;
 }
 .carousel_one{
-    width: 100%;
+    width: 102%;
  
     min-height: 200px;
     max-width: 930px;
@@ -691,7 +691,7 @@ position: relative;
 }
 .paraph {
   width: 95%;
-  max-width: 1440px;
+  max-width: 1407px;
   margin: auto;
   margin-top: -29px;
 }
@@ -896,7 +896,7 @@ color: #B0B0B0;
 
 
 .slider_one2{
-  max-width: 1440px;
+  max-width: 1407px;
   width: 95%;
   margin: auto;
   margin-top: 48px;
