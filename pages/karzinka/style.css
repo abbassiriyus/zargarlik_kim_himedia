@@ -83,7 +83,7 @@ border-bottom: 5px solid white !important;
   justify-content: center;
   align-items: center;
 
-
+transition: 1s;
     background: #FFF957;
     font-family: Montserrat;
     font-size: 16px;
@@ -94,10 +94,13 @@ border-bottom: 5px solid white !important;
       border: none;
 }
 
+.karzinka .karzinkaPust__text button:hover{
+    background-color: #c0b934; 
+}
 
 .karzinka__body{
     width: 95%;
-    max-width: 1440px;
+    max-width: 1432px;
     display: grid;
     grid-template-columns: auto 445px;
     margin: auto;
@@ -225,8 +228,11 @@ font-family: Montserrat;
 font-size: 16px;
 font-weight: 500;
 line-height: 19.5px;
+transition: 1s;
 
-
+}
+.karzinka__body .kalkulator_shot button:hover{
+    background-color: #c0b934; 
 }
 .karzinka__body .kalkulator_shot .check_karzinka{
     display: grid;
@@ -343,7 +349,12 @@ line-height: 17.07px;
 display: flex;
 color: #257AE8;
 align-items: center;
+transition: 1s;
 justify-content: center;
+}
+.karzinka__body .karzinka__card .karzinka__input__kamb button:hover{
+    background: #e4e2e2;
+
 }
 .karzinka__body .karzinka__card .karzinka__input__kamb button p{
     position: relative;
@@ -420,6 +431,9 @@ color: #257AE8;
 align-items: center;
 justify-content: center;
 margin-top: 14px;
+}
+.karzinka__body .karzinka__card .karzinka__price button:hover{
+    background: #e4e2e2;
 }
 .karzinka__body .karzinka__card .karzinka__price button .bx-trash{
     font-size: 21px;
@@ -525,6 +539,10 @@ padding-left: 10px;
     background: #FFF957;
 border-radius: 14px;
 height: 52px;
+transition: 1s;
+}
+.karzinka__body .karzinka__appProd .karzinka__poluchit button:hover{
+    background-color: #c0b934; 
 }
 .karzinka__body .karzinka__appProd .karzinka__poluchit input{
     border-radius: 8px;
@@ -765,6 +783,14 @@ margin-top: 11px;
    border: none;
    height: 56px;
    width: 98%;
+   background-color: #FFF957;
+   border-radius: 14px;
+   transition: 1s;
+
+}
+.karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz  button:hover{
+    background-color: #c0b934;
+
 }
 @media(max-width:650px){
     .karzinka__body .karzinka__appProd .karzinka__dastefka_almaz .karzinka__grid_almaz{
@@ -981,6 +1007,10 @@ display: none;
     .karzinka__body .karzinka__appProd .karzinka__poluchit button {
         height: 44px;
     }
+    .karzinka__body .karzinka__appProd .karzinka__poluchit button:hover {
+        background-color: #c0b934;
+    }
+  
       .karzinka__body .karzinka__appProd .karzinka__title{
 margin: auto;
 margin-top: -43px;
@@ -1149,6 +1179,7 @@ color: #408BEB;
 font-size: 24px;
 
     }
+ 
 @media(max-width:700px){
 /* .karzinka__body .karzinka__appProd .karzinka__title__first{
     margin-top: -7px;
@@ -1710,3 +1741,93 @@ margin: auto;
     }
 }
 
+.karzinka__kuriyer__radios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.karzinka__kuriyer__radios .karzinka__kuriyer__radio{
+    display: grid;
+    grid-template-columns: 30px auto 100px;
+    align-items: start;
+    border: 2px solid #B3B3B3;
+    border-radius: 9px;
+    padding: 12px;
+}
+.karzinka__kuriyer__radios .karzinka__kuriyer__radio .karzinka__kuriyer__radio_text h5{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    text-align: left;
+    color: black;    
+}
+.karzinka__kuriyer__radios .karzinka__kuriyer__radio .karzinka__kuriyer__radio_text span{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    color: #808080;
+
+}
+.karzinka__kuriyer__radios .karzinka__kuriyer__radio button{
+    background: var(--green-base, #38C793);
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+text-align: center;
+border-radius: 30px;
+color: white;
+border: none;
+height: 23px;
+}
+.karzinka__kuriyer__radios .karzinka__kuriyer__radio input{
+width: 20px ;
+height: 20px;
+cursor: pointer;
+}
+.karzinka__dastefka_almaz__kuriyer{
+    display: none;
+}
+.karzinka__kuriyer__radios  h6{
+margin-top: 20px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 17.07px;
+margin-left: 10px;
+text-align: left;
+
+}
+.karzinka__kuriyer__radios .karzinka__kuriyer__radios__button{
+    background: #FFF957;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+border: none;
+border-radius: 14px; 
+height: 52px;  
+transition: 1s; 
+}
+.karzinka__kuriyer__radios .karzinka__kuriyer__radios__button:hover{
+    background-color: #c0b934; 
+}
+
+@media(max-width:991px){
+    .karzinka__kuriyer__radios{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .karzinka__kuriyer__radios .karzinka__kuriyer__radio{
+        display: grid;
+        grid-template-columns: 30px auto 90px;
+        align-items: start;
+        border: 2px solid #B3B3B3;
+        border-radius: 9px;
+        padding: 12px;
+    }
+}

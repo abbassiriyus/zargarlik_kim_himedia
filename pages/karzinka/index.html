@@ -981,14 +981,21 @@ background:
 
 <div class="karzinka__dastafka_radio_kar">
   <div class="karzinka__dastafka_radio_kar_card">
-    <input style="cursor: pointer;" onchange="document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[0].style='border-color:#2E8AE6';document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[1].style='border-color:#B3B3B3';" type="radio" name="s" id="">
+    <input style="cursor: pointer;" onchange="document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[0].style='border-color:#2E8AE6';document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[1].style='border-color:#B3B3B3';
+     document.querySelector('.karzinka__dastefka_almaz__magazin').style='display:block';
+     document.querySelector('.karzinka__dastefka_almaz__kuriyer').style='display:none'
+    " type="radio" name="s" id="">
     <div class="karzinka__dastafka_radio_kar_text">
       <h5>Магазины и пункты выдачи</h5>
       <p>Забрать завтра</p>
     </div>
   </div>
   <div class="karzinka__dastafka_radio_kar_card">
-    <input style="cursor: pointer;" type="radio" onchange="document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[1].style='border-color:#2E8AE6';document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[0].style='border-color:#B3B3B3';" name="s" id="">
+    <input style="cursor: pointer;" type="radio" onchange="document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[1].style='border-color:#2E8AE6';document.querySelectorAll('.karzinka__dastafka_radio_kar_card')[0].style='border-color:#B3B3B3';
+    document.querySelector('.karzinka__dastefka_almaz__kuriyer').style='display:block';
+    document.querySelector('.karzinka__dastefka_almaz__magazin').style='display:none'
+    "
+    name="s" id="">
     <div class="karzinka__dastafka_radio_kar_text">
       <h5>Курьер</h5>
       <p>Сегодня</p>
@@ -996,7 +1003,7 @@ background:
   </div>
 
 </div>
-<div class="karzinka__dastefka_almaz">
+<div class="karzinka__dastefka_almaz karzinka__dastefka_almaz__magazin">
   <div class="karzinka__grid_almaz">
 <div class="karzinka__address_almaz_k">
 <img src="/image/Vector (5).svg" alt="">
@@ -1015,7 +1022,31 @@ background:
 <a href="#">Добавить комментарий</a>
 </div>
 
+<div class="karzinka__dastefka_almaz karzinka__dastefka_almaz__kuriyer">
+<div class="karzinka__kuriyer__radios">
+  <div class="karzinka__kuriyer__radio">
+    <input onchange="document.querySelectorAll('.karzinka__kuriyer__radio')[0].style='border-color:#2E8AE6';document.querySelectorAll('.karzinka__kuriyer__radio')[1].style='border-color:#B3B3B3';" name="kuriyer" type="radio">
+    <div class="karzinka__kuriyer__radio_text">
+<h5>Обычная доставка</h5>
+<span>Доставим 6 июня</span>
+    </div>
+<button>Бесплатно</button>
+  </div>
+  <div class="karzinka__kuriyer__radio">
+    <input onchange="document.querySelectorAll('.karzinka__kuriyer__radio')[1].style='border-color:#2E8AE6';document.querySelectorAll('.karzinka__kuriyer__radio')[0].style='border-color:#B3B3B3';"  name="kuriyer" type="radio">
+    <div class="karzinka__kuriyer__radio_text">
+<h5>Обычная доставка</h5>
+<span>Доставим 6 июня</span>
+    </div>
+<button>Бесплатно</button>
+  </div>
+<h6>Доставка курьером по адресу</h6>
+<button class="karzinka__kuriyer__radios__button">Добавить адрес</button>
+</div>
+<div class="karzinka__line" style="margin-top: 20px;margin-bottom: 19px;"></div>
 
+<a href="#">Добавить комментарий</a>
+</div>
 <h3 class="karzinka__zabit">Забрать сегодня</h3>
 <div style="margin-top: 27px;margin-bottom: 10px;" class="karzinka__bonus karzinka__bonus_for_media">
   <i class='bx bx-info-circle'></i><p>Храним ваш заказ до 10 июня, включительно</p>

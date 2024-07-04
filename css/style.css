@@ -119,13 +119,13 @@ margin: 0px;
 }
 
 .navbarAlmaz__pk__first ul{
-display: flex;
-gap: 10px;
-padding-left: 12px;
-width: 97.3%;
-justify-content: space-between;
-position: relative;
-left: 5px;
+    display: flex;
+    gap: 10px;
+    padding-left: 12px;
+    width: 100.3%;
+    justify-content: space-between;
+    position: relative;
+    left: -12px;
 }
 .navbarAlmaz__pk__first ul li{
     font-family: "Montserrat", sans-serif;
@@ -168,7 +168,7 @@ padding: 10px 4px;
     align-items: center;
     gap: 18px;
     position: relative;
-    left: 6px;
+    left: 0px;
 }
 .navbarAlmaz__pk__second button img{
     position: relative;

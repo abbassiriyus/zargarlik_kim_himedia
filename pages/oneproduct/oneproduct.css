@@ -5,7 +5,7 @@
     margin-top: 59px;
     padding-left: 2px;
     width: 95%;
-    max-width: 1407px;
+    max-width: 1424px;
 align-items: center;
 }
 body{
@@ -38,7 +38,7 @@ body{
     grid-template-columns:  2fr 1fr;
     width: 95%;
     margin: auto;
-    max-width: 1407px;
+    max-width: 1424px;
     margin-top: 32px;
     /* gap: 20px; */
 }
