@@ -18,10 +18,11 @@ body{
     font-size: 30px !important;
 }
 .exchange-return-section .exchange-return-content{
-    max-width: 1470px;
-    width: 100%;
+    max-width: 1440px;
+    width: 95%;
     margin: auto;
     /* gap: 20px; */
+    margin-top: 0px;
 }
 .exchange-return-section .exchange-return-navigation{
     width: 100%;
@@ -40,12 +41,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    max-width: 1470px;
-    width: 100%;
-    margin-top: 10px;
-    position: absolute;
+    max-width: 1440px;
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+    margin-top: 4px;
+    /* position: absolute;
     top: 20px;
-    left: 10%;
+    left: 10%; */
 }
 .exchange-return-section .exchange-return-navigation__icon p{
     font-size: 14px;
@@ -69,8 +72,8 @@ body{
     margin-bottom: 20px;
 }
 .exchange-return-section .word{
-    max-width: 1470px;
-    width: 100%;
+    max-width: 1440px;
+    width: 95%;
     line-height: 24px;
     justify-content: center;
     align-items: center;
@@ -113,8 +116,8 @@ margin-bottom: 1px;
     margin-bottom: 30px;
 }
 .exchange-return-section .word2{
-    max-width: 1470px;
-    width: 100%;
+    max-width: 1440px;
+    width: 95%;
     line-height: 24px;
     justify-content: center;
     align-items: center;
@@ -122,7 +125,7 @@ margin-bottom: 1px;
     margin-bottom: 15px;
 }
 .exchange-return-section .word2 h1{
-font-size: 32px;
+font-size: 30px;
 font-weight: 500;
 line-height: 38.73px;
 margin-bottom: -6px;
@@ -137,8 +140,8 @@ margin-bottom: -6px;
     display: none;
 }
 .exchange-return-section .product-details{
-    max-width: 1465px;
-    width: 100%;
+    max-width: 1440px;
+    width: 95%;
     line-height: 24px;
     justify-content: center;
     align-items: center;

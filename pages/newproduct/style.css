@@ -180,6 +180,10 @@ text-align: left;
 display: flex;
 justify-content: center;
 align-items: center;
+transition: 1s;
+    }
+    .productMoreButton-second .pagnation span:hover{
+        background-color: #FFF957;
     }
 
     .span1{
@@ -188,8 +192,32 @@ font-size: 22px;
 font-weight: 400;
 line-height: 26.82px;
 text-align: left;
-
     }
+.span1{
+ 
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26.82px;
+        text-align: left;
+        margin-top: 9px;
+        margin-right: -3px;
+        /* width: 274px; */
+        height: 51px;
+        display: flex;
+        align-items: center; justify-content: center;
+    border-radius: 4px;
+    transition: 1s;
+    }
+    .span1:hover{
+        background: #00000046;
+    
+    cursor: pointer;
+    /* text-decoration: underline; */
+    }
+
+
     .noviiy{
         padding-top: 88px !important;
     }

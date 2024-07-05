@@ -215,6 +215,7 @@ color: #898989;
     align-items: center;
     margin-left: 0px;
     /* width: 100%; */
+    transition: 1s;
 }
 .store__services button{
     border-radius: 100px;
@@ -222,7 +223,10 @@ color: #898989;
 border: none;
     padding: 10px 16px 10px 16px;
 }
+.store__services button:hover{
+    background: #bdbaba;
 
+}
 .store1 hr{
     color: rgba(128, 128, 128, 0.179) !important;
     opacity: 0.4;
@@ -338,7 +342,11 @@ cursor: pointer;
     border-radius: 8px;
     background: #2E8AE633;
     border: none;
+    transition: 1s;
   
+}
+.store__actions button:hover{
+    background: #266cb371;
 }
 .back_blackc{
     background-color: #242424;

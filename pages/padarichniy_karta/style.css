@@ -101,7 +101,12 @@ padding: 12px 117px;
     font-style: normal;
     margin-bottom: 11px;
     font-size: 14px;
+    transition: 1s;
     border: none;
+}
+.for_all .buy:hover{
+    background: #4b4a4a;
+
 }
 .for_all .know{
     border-radius: 8px;
@@ -112,6 +117,10 @@ padding: 12px 117px;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
+}
+.for_all .know:hover{
+    background: #cfcfcf;
+
 }
 .for_all .answer_and_questions{
     display: flex;

@@ -62,7 +62,11 @@ border-radius: 8px;
 border: none;
 background: #F2F2F2;
 text-wrap: nowrap;
-
+transition: 1s;
+}
+.product-actions-buttons button:hover{
+    cursor: pointer;
+background: #e0dfdf;
 }
 .contact-item{
     display: flex;
@@ -214,6 +218,10 @@ line-height: 19.5px;
 margin-top: 19px;
 margin-left: 12px;
 background-color: white;
+transition: 1s;
+}
+.zoloto-section__content button:hover{
+    background-color: rgb(224, 219, 219);
 }
 .gram12__zoloto-top{
 position: absolute;
@@ -544,6 +552,10 @@ height: 56px;
 border-radius: 8px;
 border: 1px solid #242424;
 margin-top:30px;
+transition: 1s;
+  }
+  .prodat_text button{
+    background-color: rgb(224, 219, 219);
   }
   .prodat_text h1{
     font-family: Montserrat;

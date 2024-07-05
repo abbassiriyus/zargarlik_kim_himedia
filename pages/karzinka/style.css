@@ -655,6 +655,7 @@ margin-right: 7px;
 border-radius: 8px;
 padding: 10px 10px;
 margin-bottom: 63px;
+align-items: center;
 }
 .karzinka__body .karzinka__appProd .karzinka__bonus p{
     padding: 0;

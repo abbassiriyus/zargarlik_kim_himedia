@@ -203,7 +203,12 @@ color: #242424;
     border-radius: 10px;
     padding-left: 10px;
     padding-right:10px ;
-
+    cursor: pointer;
+    transition: 1s;
+}
+.navbarAlmaz__pk .navbarAlmaz__pk__second .navbarAlmaz__pk__second_item:hover{
+    background-color: rgba(128, 128, 128, 0.26);
+    /* transform: scale(1.1); */
 }
 .navbarAlmaz__pk .navbarAlmaz__pk__second .navbarAlmaz__pk__second_search{
     display: grid;
@@ -708,8 +713,13 @@ padding: 10px;
 margin-bottom: 10px;
 border-radius: 8px;
 margin-right: 5px;
+transition: 1s;
   }
   
+  .otherCategory .otherCategory__buttons button:hover{
+    cursor: pointer;
+    background: #d3d1d1;
+  }
   .otherCategory .otherCategory__cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -162,6 +162,12 @@ background: #242424;
 margin-top: 43px;
 margin-left: -7px;
 border: none;
+transition: 1s;
+}
+.how__action-button:hover{
+background: #6d6d6d00;
+color: black;
+border: 1px solid black;
 }
 .info-block--loan{
     width: 75%;

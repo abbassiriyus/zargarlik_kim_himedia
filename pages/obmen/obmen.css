@@ -15,6 +15,12 @@ margin-left: -3px;
 border-radius: 14px;
 border: none;   
 margin-bottom: 52px;
+transition: 1s;
+}
+.banner_ak button:hover{
+    background-color: black;
+    /* border: 1px solid  black; */
+    color: white;
 }
 .client-adult{
     display: grid;

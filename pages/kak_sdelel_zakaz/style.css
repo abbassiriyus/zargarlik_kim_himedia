@@ -74,7 +74,12 @@ font-size: 16px;
 font-weight: 500;
 line-height: 19.5px;
 color: #242424;
+transition: 1s;
 margin-bottom: 47px;
+}
+.kak-body .order-steps .order-page__button:hover{
+    background: #beba42;
+
 }
 .order-page__step-image{
     width: 90%;
@@ -136,6 +141,10 @@ border: none;
 height: 56px;
 background: #FFF957;
 border-radius: 8px;
+}
+.kak-body .order-steps .order-form .order-form__submit button:hover{
+    background: #beba42;
+
 }
 @media (max-width:991px) {
     .kak-body {
