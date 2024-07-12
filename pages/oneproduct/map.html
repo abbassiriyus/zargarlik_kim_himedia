@@ -875,10 +875,84 @@ document.querySelector('.ifr').style='display:none'
   <input type="text" name="" id="" placeholder="Введите адрес или место">
 </div>
 <div class="filters">
-  <div class="filters__item">
+  <div onclick="
+    document.querySelector('.filter_for_map').style='left:0'
+    
+    " style="cursor: pointer;" class="filters__item">
     <i class='bx bx-slider-alt' ></i>
     <span>Фильтры</span>
   </div>
+
+
+<div class="filter_for_map">
+  <h3>Флагманы</h3>
+  <i onclick="
+  document.querySelector('.filter_for_map').style='left:-100%'
+  
+  " class="bx bx-x"></i>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>Флагманские магазины</span>
+  </div>
+  <h3>Партнеры</h3>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>Партнёры</span>
+  </div>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>Брендовые секции</span>
+  </div>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>Часовая мастерская</span>
+  </div>
+
+  <h3>Товары в магазине</h3>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>
+      Украшения</span>
+  </div>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>Часы</span>
+  </div>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>Подарочные карты</span>
+  </div>
+  <h3>Сервисы</h3>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>
+      
+Трейд-ин</span>
+  </div>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>
+      Ювелирная мастерская</span>
+  </div>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>
+      Ювелирное ателье</span>
+  </div>
+  <div class="filter_for_map_check">
+    <input type="checkbox" name="" id="">
+    <span>
+      Чистка ювелирных изделий</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
   <div class="filters__item1">
     <img src="/image/iconoir_sort-down.png" alt="">
     <span>По популярности</span>

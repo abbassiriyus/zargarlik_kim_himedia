@@ -96,7 +96,7 @@ margin-top: 26px;
 }
 .filters__item{
     display: flex;
-    
+    position: relative;
 gap: 6px;
 }
 .filters__item1{
@@ -269,7 +269,7 @@ border: none;
         border-radius: 19px;
         height: 762px;
         margin-bottom: 20px;
-        overflow: hidden;
+        overflow: auto;
         margin-top: 25px;
     }
     /* .store__services button{
@@ -903,4 +903,67 @@ line-height: 14.63px;
         padding: 13px;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filter_for_map{
+    width:100%;
+    max-width: 320px;
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: -100%;/* 
+    position: absolute;
+    bottom: -10px;
+    width: 288px; */
+    padding: 16px;
+    /* border-radius: 4px; */
+    box-shadow: 0 0 8px rgba(0, 0, 0, .102);
+    transition: 1s;
+}
+
+
+.filter_for_map_check{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    align-items: center;
+}
+.filter_for_map_check span{
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+color: #242424;
+}
+.filter_for_map h3{
+    font-family: Montserrat;
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: grey;
+}
+.filter_for_map .bx-x{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
 }
