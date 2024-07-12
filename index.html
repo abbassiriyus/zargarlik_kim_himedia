@@ -467,7 +467,9 @@ background:
           </a>
           <li onclick="window.location='/pages/karzinka/index.html'">Доставка и оплата</li>
           <li onclick="window.location='/pages/obmen/obmen.html'">Скупка и обмен</li>
-          <li onclick="window.location='/pages/oneproduct/map.html'"><i class='bx bx-map-pin'></i> Выбор города</li>
+          <li onclick="
+          document.querySelector('.select__city_modal').style='display:flex'
+          "><i class='bx bx-map-pin'></i> Выбор города</li>
         </ul>
         <div class="almaz-logo">
           <a href="/index.html"> <img src="/image/Group 3.svg" alt=""></a>
@@ -654,6 +656,64 @@ background:
       </div>
     </div>
   </div>
+  <div class="select__city_modal">
+    <div class="select__modal_body">
+      <div class="select__modal_header">
+        <h2>Выберите город</h2>
+        <i onclick="
+        document.querySelector('.select__city_modal').style='display:none'
+        " class="bx bx-x"></i>
+      </div>
+    
+      <div class="input_select_city">
+        <i class='bx bx-search' ></i>
+        <input type="text" placeholder="
+        Поиск города">
+      </div>
+    
+      <div class="grid_modal_base_city">
+        <ul>
+          <li>Москва</li>
+          <li>Санкт-Петербург</li>
+          <li>Волгоград</li>
+          <li>Воронеж</li>
+          <li>Домодедово</li>
+          <li>Екатеринбург</li>
+          <li>Иркутск</li>
+          <li>Казань</li>
+        </ul>
+        <ul>
+          <li>Краснодар</li>
+          <li>Красноярск</li>
+          <li>Люберцы</li>
+          <li>Мытищи</li>
+          <li>Нижний Новгород</li>
+          <li>Новосибирск</li>
+          <li>Одинцово</li>
+          <li>Омск</li>
+        </ul>
+        <ul>
+          <li>Пермь</li>
+          <li>Пушкино</li>
+          <li>Раменское</li>
+          <li>Ростов-на-Дону</li>
+          <li>Самара</li>
+          <li>Саратов</li>
+          <li>Тверь</li>
+          <li>Тольятти</li>
+        </ul>
+        <ul>
+          <li>Тула</li>
+          <li>Тюмень</li>
+          <li>Уфа</li>
+          <li>Хабаровск</li>
+          <li>Челябинск</li>
+          <li>Ярославль</li>
+        </ul>
+      </div>
+    </div>
+    
+      </div>
   <div class="modalCart">
     <div class="modalCart__body">
       <div class="modalCart__white">
@@ -803,25 +863,7 @@ background:
 
 
 
-  <div class="select__city_modal">
-<div class="select__modal_body">
-  <div class="select__modal_header">
-    <h2>Выберите город</h2>
-    <i class="bx bx-x"></i>
-  </div>
 
-  <div class="input_select_city">
-    <i class='bx bx-search' ></i>
-    <input type="text" placeholder="
-    Поиск города">
-  </div>
-
-  <div class="grid_modal_base_city">
-    
-  </div>
-</div>
-
-  </div>
 
 
 
