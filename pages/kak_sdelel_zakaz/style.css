@@ -52,6 +52,7 @@ width: 100%;
     line-height: 20px;
     text-align: left;
 color: #242424;    
+user-select: none;
 }
 .kak-body .order-steps .order-step .order-step__text p{ 
     font-family: Montserrat;
@@ -60,7 +61,7 @@ color: #242424;
     line-height: 20px;
     text-align: left;
 color: #242424;    
-    
+    user-select: none;
 }
 .kak-body .order-steps .order-page__button{
     margin-left:74px;
@@ -90,6 +91,7 @@ margin-bottom: 47px;
 }
 .kak-body .order-steps .order-step .order-step__text .order-step__text_2{
 margin-top: -16px;
+user-select: none;
 }
 .kak-body .order-steps .order-form{
     box-shadow: 0px 0px 15px 0px #0000001A;
