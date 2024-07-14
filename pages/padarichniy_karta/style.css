@@ -330,6 +330,18 @@ border-radius: 8px;
         min-height: 430px;
         background-color: white;
         border-radius: 12px;
+        position: relative;
+      }
+      @media (max-width:376px) {
+        .balanc__modal_body{
+          border-radius: 1px;
+        }
+      }
+      .balanc__modal_body .bx-x{
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        font-size: 24px;
       }
       .modal_in_body{
         width: 85%;
@@ -424,6 +436,7 @@ border-radius: 8px;
         align-items: center;
         background-color: #333333b3;
         z-index: 90120;
+        display: none;
       }
       .modal_body_see_shop{
         width: 100%;
@@ -441,6 +454,8 @@ border-radius: 8px;
       }
       .big_see_shop_heading{
         box-shadow: 0px 0px 2px grey;
+      z-index:99990;
+      /* background-color: white; */
       }
       .see_shop_header{
         display: flex;
@@ -489,9 +504,6 @@ border-radius: 8px;
   border-bottom-left-radius:12px !important;
   border-bottom-right-radius: 12px;
 }
-.gm-style .place-card-large{
-display: none !important;
-}
 
 .arrow_block{
   width: 56px;
@@ -503,21 +515,41 @@ display: none !important;
   color: white;
   font-size: 24px;
   justify-content: center;
+  transition: 1s;
+
+}
+.arrow_block_second{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  display: none;
+  justify-content: center;
+  transition: 1s;
+}
+.arrow_block_second:hover, .arrow_block:hover{
+  background-color: #313131 ;
 }
 .inputShopAlmaz{
   display: flex;
   align-items: center;
-  background-color: red;
-  width: 100%;  height: 40px;
+  width: 100%;  height: 48px;
 
   /* max-width: 500px !important; */
 
+}
+.inputShopAlmaz{
+  width: 313px;
 }
 .shop_search_Inp{
   display: flex;
   align-items: center;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 20px;
   gap: 24px;
   z-index: 322;
@@ -532,7 +564,7 @@ display: none !important;
   outline: none;
 }
 .inputShopAlmaz{
-  background-color: wheat;
+  background-color: white;
   padding-left: 10px;
   border-radius: 8px;
   border: 2px solid grey;
@@ -544,8 +576,11 @@ display: none !important;
   height: 700px;
   background-color: white;
   position: absolute;
-  display: none;
+  /* display: none; */
+  left: -100%;
   box-shadow: 0 0 8px #0000001a;
+  transition: 1s;
+  border-bottom-left-radius: 12px;
 }
 .search_shadow{
   width: 100%;
@@ -554,4 +589,148 @@ display: none !important;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.item_locationAlmaz{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: auto;
+  margin-top: 10px;
+}
+.fa-heart-o{
+  transition: 1s;
+}
+.fa-heart-o:hover{
+  color: #0059ff;
+}
+.fa-heart{
+  display: none !important;
+  color: #0059ff;
+}
+.faFa_marker{
+  height: 32px;
+  font-size: 20px;
+  width: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item_locationAlmaz span{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.work_time{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fa-clock-o{
+  font-weight: 100;
+}
+.openBtn__outlined{
+  width: 90%;
+  margin: auto;
+}
+.openBtn__outlined button{
+  background: none;
+  border: 2px solid #257ae8;
+  width: 100%;
+    line-height: 1.4285714em;
+    cursor: pointer;
+    color: #257ae8;
+    font-size: 14px;
+    user-select: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 1s;
+}
+.openBtn__outlined button:hover{
+  background-color: #257ae8;
+  color: white;
+}
+.sideBar_AlmazShop{
+  box-shadow:   0px  1px 0px rgb(221, 219, 219);
+  padding-bottom: 10px;
+}
+.sideBar_body_big{
+  height: 600px;
+  overflow: auto;
+}
+.extra_bx{
+  font-size: 24px;
+  display: none;
+}
+.inputShopAlmaz_extra{
+  display: none;
+}
+.pageMap_sideBar_mobile{
+  display: none;
+}
+@media (max-width:768px) {
+  .see_shop_location{
+    display: none;
+  }
+  .extra_bx{
+    display: block;
+ }
+ .shop_search_Inp{
+  display: none;
+ }
+ .inputShopAlmaz_extra{
+  display: flex;
+  width: 98%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 10px;
+ }
+ .see_shop_header {
+height: 52px; 
+}
+ .inputShopAlmaz_extra .bx-search{
+  font-size: 24px;
+ }
+ .modal_body_see_shop {
+  max-width: calc(100% - 0px);
+  border-radius: 1px;
+  height: 100vh;
+}
+.see_shop_header h2{
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: .5px;
+}
+.pageMap_sideBar_mobile{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 40px; */
+}
+.pageMap_mobile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.sideBar_mobile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideBar_mobile span{
+  border-bottom: 2px solid white; 
+  height: 30px;
+}
+.pageMap_mobile span{
+  border-bottom: 2px solid white; 
+  height: 30px;
+}
 }

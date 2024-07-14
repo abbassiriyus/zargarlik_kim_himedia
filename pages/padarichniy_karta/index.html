@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body class="prise-body">
     
@@ -862,7 +863,9 @@ background:
             <p>Оформление и покупка на сайте, отправка на Email и/или в SMS.</p>
             <div class="for_bb">
             <button class="buy">Купить</button>
-            <button class="know">Узнать баланс</button>
+            <button onclick="
+            document.querySelector('.modal_for_balanc').style='display:flex'
+            " class="know">Узнать баланс</button>
             </div>
         </div>
         <div class="with_circle">
@@ -870,8 +873,12 @@ background:
             <h4>Подарочная<br>карта</h4>
             <p>Оформление и покупка в магазинах ALMAZ.</p>
             <div class="for_bb">
-            <button class="buy">Показать магазины</button>
-            <button class="know">Узнать баланс</button>
+            <button onclick="
+              document.querySelector('.modal_for_see_shop').style='display:flex'
+              " class="buy">Показать магазины</button>
+            <button onclick="
+            document.querySelector('.modal_for_balanc').style='display:flex'
+            " class="know">Узнать баланс</button>
             </div>
         </div>
         <div class="with_circle">
@@ -880,7 +887,9 @@ background:
             <p>Оформление заявки на сайте или по номеру <span>+7 343 2664070</span></p>
             <div class="for_bb">
             <button class="buy">Оформить заявку</button>
-            <button class="know">Узнать баланс</button>
+            <button onclick="
+            document.querySelector('.modal_for_balanc').style='display:flex'
+            " class="know">Узнать баланс</button>
             </div>
         </div>
     </div>
@@ -985,7 +994,10 @@ document.querySelectorAll('.for-all_one-option')[y].style='background-color: #ff
 
 
         <div class="modal_for_balanc">
-          <div class="balanc__modal_body">
+          <div  class="balanc__modal_body">
+            <i onclick="
+            document.querySelector('.modal_for_balanc').style='display:none'
+            "  class="bx bx-x"></i>
             <div class="modal_in_body">
               <h2>Узнать баланс</h2>
               <p>Номер подарочной карты, приобретённой <br> во флагманских магазинах SOKOLOV, находится на обороте. <br>
@@ -1011,14 +1023,49 @@ document.querySelectorAll('.for-all_one-option')[y].style='background-color: #ff
 <div class="big_see_shop_heading">
   <div class="see_shop_header">
     <h2>Магазины ALMAZ</h2>
-    <div class="see_shop_location">
+    <div  class="see_shop_location">
       <i class='bx bx-map'></i>
-      <span>
+      <span onclick="
+      document.querySelector('.select__city_modal').style='display:flex'
+      
+      ">
         МОСКВА</span>
-        <i class="bx bx-x"></i>
+        <i onclick="
+        document.querySelector('.modal_for_see_shop').style='display:none'
+        
+        " class="bx bx-x"></i>
+            
+    </div>
+    <i onclick="
+    document.querySelector('.modal_for_see_shop').style='display:none'
+    
+    " class="bx bx-x extra_bx"></i>
+  </div>
+  <div class="inputShopAlmaz inputShopAlmaz_extra">
+    <i class='bx bx-search'></i>
+    <input type="text" placeholder="Название ТЦ, адрес, метро">
+  </div>
+  <div class="pageMap_sideBar_mobile">
+    <div onclick="
+      document.querySelector('.pageMap_mobile span').style='  border-bottom: 2px solid #257ae8; '
+      document.querySelector('.sideBar_mobile span').style='  border-bottom: 2px solid white; '
+      document.querySelector('.Google_Map_for_shop').style='display:block'
+      " class="pageMap_mobile"> 
+      <span>Карта</span>
+    </div>
+    <div onclick="
+    document.querySelector('.sideBar_mobile span').style='  border-bottom: 2px solid #257ae8; '
+    document.querySelector('.pageMap_mobile span').style='  border-bottom: 2px solid white; '
+    document.querySelector('.Google_Map_for_shop').style='display:none'
+    document.querySelector('.sideBar_body_big').style='left:0'
+    " class="sideBar_mobile">
+      <span>Список</span>
     </div>
   </div>
+  
 </div>
+
+
             <div class="see_shop__body_for_grid">
               <iframe class="Google_Map_for_shop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577343.9826324134!2d36.72622648719319!3d55.58025719887686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoskva%2C%20Rossiya!5e0!3m2!1suz!2s!4v1720932810279!5m2!1suz!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -1027,16 +1074,186 @@ document.querySelectorAll('.for-all_one-option')[y].style='background-color: #ff
                   <i class='bx bx-search'></i>
                   <input type="text" placeholder="Название ТЦ, адрес, метро">
                 </div>
-                <div class="arrow_block">
+                <div onclick="
+                document.querySelector('.search_shop_Almaz').style='left:0'
+                document.querySelector('.arrow_block').style='display:none'
+                document.querySelector('.arrow_block_second').style='display:flex'
+                " class="arrow_block">
                   <i class='bx bx-chevron-right'></i>
                 </div>
+
+
+                <div onclick="
+        
+     
+                document.querySelector('.search_shop_Almaz').style='left:-100%'
+                document.querySelector('.arrow_block').style='display:flex'
+                document.querySelector('.arrow_block_second').style='display:none'
+                " class="arrow_block_second">
+                  <i class='bx bx-chevron-left'></i>
+                </div>
+
               </div>
 
 
               <div class="search_shop_Almaz">
                 <div class="search_shadow">
-                  
+
                 </div>
+<div class="sideBar_body_big">
+  <div class="sideBar_AlmazShop">
+    <div class="item_locationAlmaz">
+<img src="https://sokolov.ru/interface/icons/redesign/retail.svg" alt="">
+<span>Флагманский магазин SOKOLOV</span>
+<i onclick="
+document.querySelector('.fa-heart').style='display:block  !important'
+document.querySelector('.fa-heart-o').style='display:none  !important'
+" class="fa fa-heart-o" aria-hidden="true"></i>
+<i onclick="
+document.querySelector('.fa-heart').style='display:none  !important'
+document.querySelector('.fa-heart-o').style='display:block  !important'
+" class="fa fa-heart" aria-hidden="true"></i>
+    </div>
+    <div class="item_locationAlmaz">
+   <div class="faFa_marker">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+     </div>
+    <span>ТРЦ Парк Хаус <br>
+      г. Самара, ш. Московское, 81Б
+    </span>
+
+    </div>
+    
+
+    <div class="item_locationAlmaz">
+      <div class="faFa_marker">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+    <div class="work_time">
+      <span>пн-вс</span>
+      <span>10:00-22:00</span>
+    </div>
+   
+       </div>
+       <div class="openBtn__outlined">
+        <button>Подробнее</button>
+       </div> 
+  </div>
+  <div class="sideBar_AlmazShop">
+    <div class="item_locationAlmaz">
+<img src="https://sokolov.ru/interface/icons/redesign/retail.svg" alt="">
+<span>Флагманский магазин SOKOLOV</span>
+<i onclick="
+document.querySelector('.fa-heart').style='display:block  !important'
+document.querySelector('.fa-heart-o').style='display:none  !important'
+" class="fa fa-heart-o" aria-hidden="true"></i>
+<i onclick="
+document.querySelector('.fa-heart').style='display:none  !important'
+document.querySelector('.fa-heart-o').style='display:block  !important'
+" class="fa fa-heart" aria-hidden="true"></i>
+    </div>
+    <div class="item_locationAlmaz">
+   <div class="faFa_marker">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+     </div>
+    <span>ТРЦ Парк Хаус <br>
+      г. Самара, ш. Московское, 81Б
+    </span>
+
+    </div>
+    
+
+    <div class="item_locationAlmaz">
+      <div class="faFa_marker">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+    <div class="work_time">
+      <span>пн-вс</span>
+      <span>10:00-22:00</span>
+    </div>
+   
+       </div>
+       <div class="openBtn__outlined">
+        <button>Подробнее</button>
+       </div> 
+  </div>
+  <div class="sideBar_AlmazShop">
+    <div class="item_locationAlmaz">
+<img src="https://sokolov.ru/interface/icons/redesign/retail.svg" alt="">
+<span>Флагманский магазин SOKOLOV</span>
+<i onclick="
+document.querySelector('.fa-heart').style='display:block  !important'
+document.querySelector('.fa-heart-o').style='display:none  !important'
+" class="fa fa-heart-o" aria-hidden="true"></i>
+<i onclick="
+document.querySelector('.fa-heart').style='display:none  !important'
+document.querySelector('.fa-heart-o').style='display:block  !important'
+" class="fa fa-heart" aria-hidden="true"></i>
+    </div>
+    <div class="item_locationAlmaz">
+   <div class="faFa_marker">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+     </div>
+    <span>ТРЦ Парк Хаус <br>
+      г. Самара, ш. Московское, 81Б
+    </span>
+
+    </div>
+    
+
+    <div class="item_locationAlmaz">
+      <div class="faFa_marker">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+    <div class="work_time">
+      <span>пн-вс</span>
+      <span>10:00-22:00</span>
+    </div>
+   
+       </div>
+       <div class="openBtn__outlined">
+        <button>Подробнее</button>
+       </div> 
+  </div>
+  <div class="sideBar_AlmazShop">
+    <div class="item_locationAlmaz">
+<img src="https://sokolov.ru/interface/icons/redesign/retail.svg" alt="">
+<span>Флагманский магазин SOKOLOV</span>
+<i onclick="
+document.querySelector('.fa-heart').style='display:block  !important'
+document.querySelector('.fa-heart-o').style='display:none  !important'
+" class="fa fa-heart-o" aria-hidden="true"></i>
+<i onclick="
+document.querySelector('.fa-heart').style='display:none  !important'
+document.querySelector('.fa-heart-o').style='display:block  !important'
+" class="fa fa-heart" aria-hidden="true"></i>
+    </div>
+    <div class="item_locationAlmaz">
+   <div class="faFa_marker">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+     </div>
+    <span>ТРЦ Парк Хаус <br>
+      г. Самара, ш. Московское, 81Б
+    </span>
+
+    </div>
+    
+
+    <div class="item_locationAlmaz">
+      <div class="faFa_marker">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+    <div class="work_time">
+      <span>пн-вс</span>
+      <span>10:00-22:00</span>
+    </div>
+   
+       </div>
+       <div class="openBtn__outlined">
+        <button>Подробнее</button>
+       </div> 
+  </div>
+</div>
               </div>
             </div>
           </div>
@@ -1235,6 +1452,14 @@ document.querySelectorAll('.for-all_one-option')[y].style='background-color: #ff
    
      </div>
 
+<style>
+  .place-card-large{
+display: none !important;
+opacity: 0 !important;
+}
+
+</style>
+ 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
      crossorigin="anonymous"></script>
