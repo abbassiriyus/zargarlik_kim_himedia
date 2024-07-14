@@ -664,7 +664,7 @@ border-radius: 8px;
 }
 .extra_bx{
   font-size: 24px;
-  display: none;
+  display: none !important;
 }
 .inputShopAlmaz_extra{
   display: none;
@@ -676,12 +676,19 @@ border-radius: 8px;
   .see_shop_location{
     display: none;
   }
-  .extra_bx{
-    display: block;
- }
  .shop_search_Inp{
   display: none;
  }
+ .extra_bx{
+  font-size: 24px;
+  display: block !important;
+}
+.search_shadow{
+  display: none;
+}
+.search_shop_Almaz{
+max-width: 100%;
+}
  .inputShopAlmaz_extra{
   display: flex;
   width: 98%;
