@@ -435,7 +435,12 @@ border-radius: 8px;
       }
       .see_shop__body_for_grid{
         display: grid;
-        grid-template-columns: 1fr auto;
+  position: relative;
+
+        /* grid-template-columns: 1fr auto; */
+      }
+      .big_see_shop_heading{
+        box-shadow: 0px 0px 2px grey;
       }
       .see_shop_header{
         display: flex;
@@ -445,10 +450,14 @@ border-radius: 8px;
         height: 70px;
         background-color: white;
         align-items: center;
+
       }
       .see_shop_header h2{
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    
       }
       .see_shop_location{
         display: flex;
@@ -463,5 +472,86 @@ border-radius: 8px;
       }
       .see_shop_location span{
         font-family: "Montserrat", sans-serif;
-
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        transition: 1s;
       }
+      .see_shop_location span:hover{
+        text-decoration: underline;
+      }
+
+.Google_Map_for_shop{
+  width: 100% !important;
+  height: 700px !important;
+  border-bottom-left-radius:12px !important;
+  border-bottom-right-radius: 12px;
+}
+.gm-style .place-card-large{
+display: none !important;
+}
+
+.arrow_block{
+  width: 56px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  justify-content: center;
+}
+.inputShopAlmaz{
+  display: flex;
+  align-items: center;
+  background-color: red;
+  width: 100%;  height: 40px;
+
+  /* max-width: 500px !important; */
+
+}
+.shop_search_Inp{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  gap: 24px;
+  z-index: 322;
+
+}
+.inputShopAlmaz input{
+  width: 90%;
+  height: 40px;
+  background-color: rgba(245, 222, 179, 0);
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+.inputShopAlmaz{
+  background-color: wheat;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: 2px solid grey;
+  outline-color: #0059ff;
+}
+.search_shop_Almaz{
+  width: 100%;
+  max-width: 345px;
+  height: 700px;
+  background-color: white;
+  position: absolute;
+  display: none;
+  box-shadow: 0 0 8px #0000001a;
+}
+.search_shadow{
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 0 8px #0000001a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
