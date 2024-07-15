@@ -1263,8 +1263,6 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
           </div>
         </div>
  
-
-
 <div class="modal_for_buy_something">
   <div class="buy_something_modal_body">
     <div class="in_modal_buy">
@@ -1279,7 +1277,7 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
       <div class="steps_line_modal">
         <span class="SpanLine">  </span>
       </div>
-      <span class="stepColor">Шаг 1  из  5</span>
+      <span class="stepColor">Шаг 1  из  4</span>
      </div>
  <div class="style_forImage_back">
   <img class="BackAlmaz" src="https://sokolov.ru/interface/gift-card/card-bg_desk.png" alt="">
@@ -1350,8 +1348,6 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
     </div>
   </div>
 </div>
-
-
 <div class="addition_modal">
 <div class="addition_body_big">
   <div class="additionBodyIn">
@@ -1367,8 +1363,6 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
   </div>
 </div>
 </div>
-
-
 
 <div class="modal_for_buy_something seconSomething">
   <div class="buy_something_modal_body">
@@ -1386,7 +1380,7 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
       <div class="steps_line_modal">
         <span style="width: 40%;" class="SpanLine">  </span>
       </div>
-      <span class="stepColor">Шаг 1  из  5</span>
+      <span class="stepColor">Шаг 2  из  4</span>
      </div>
       <div  class="modal_body_steps extraSteps">
     
@@ -1400,10 +1394,24 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
 
  </div> 
  <div class="page_for_you_click">
-  <div class="first_click">
+  <div  onclick="
+  document.querySelector('.order_modal_form_desc_second').style='display:none'
+  document.querySelector('.order_modal_form_desc').style='display:block'
+  document.querySelector('.second_click ').style='  border-bottom: 3px solid white;'
+  document.querySelector('.first_click ').style='  border-bottom: 3px solid #257ae8;'
+  document.querySelector('#NoneBtn').style='display:flex'
+  document.querySelector('.checkImportant').style='display:flex'
+  " class="first_click">
     <span>В подарок</span>
   </div>
-  <div class="second_click">
+  <div onclick="
+  document.querySelector('.order_modal_form_desc_second').style='display:block'
+  document.querySelector('.order_modal_form_desc').style='display:none'
+  document.querySelector('#NoneBtn').style='display:none'
+  document.querySelector('.checkImportant').style='display:none'
+  document.querySelector('.second_click ').style='  border-bottom: 3px solid #257ae8;'
+  document.querySelector('.first_click ').style='  border-bottom: 3px solid white;'
+  " class="second_click">
     <span>Себе</span>
   </div>
 </div>
@@ -1428,7 +1436,10 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
   <div class="congratulationForm_div_click">
     <h3>Поздравление
     </h3>
-    <div class="delete_form">
+    <div  onclick="
+    document.querySelector('.congratulationForm').style='display:none'
+    document.querySelector('#NoneBtn').style='display:flex'
+    " class="delete_form">
       <i class='bx bx-trash'></i><span>Удалить</span>
     </div>
   </div>
@@ -1451,11 +1462,28 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
     
   </form></div>
 </div>
-
-  <button style="    background: #f2f2f2;
-    border-color: #f2f2f2;color: #257ae8;
-    font-size: 14px;    border-radius: 8px;
-    padding: 12px 20px;    font-weight: 600;" class="AddYour"><i class='bx bx-plus'></i>Добавить свой</button>
+<div class="order_modal_form_desc_second">
+  <p>Электронный сертификат будет отправлен на ваш email и/или в SMS сообщении сразу после оплаты или в указанное время. Вы можете переслать его получателю или распечатать и вручить лично.</p>
+  <form class="input-container">
+    <label for="">Телефон *</label><br>
+    <input type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+    <p>Отправим СМС с ссылкой на сертификат</p>
+    
+  </form>
+  <form class="input-container">
+    <label for="">Email</label><br>
+    <input type="text"  >
+    <p>Отправим письмо с сертификатом</p>
+    
+  </form>
+</div>
+  <button
+  onclick="
+  document.querySelector('.congratulationForm').style='display:block'
+  document.querySelector('#NoneBtn').style='display:none'
+  "
+  id="NoneBtn"
+ class="AddYour"><i class='bx bx-plus'></i>Добавить свой</button>
 
  <div class="checkImportant">
   <input type="checkbox" name="" id="">
@@ -1465,10 +1493,17 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
 
 
       <div   class="modal-btns"> 
-        <div class="buttonOutlined">
+        <div onclick="
+          document.querySelector('.modal_for_buy_something').style='display:flex'
+          document.querySelector('.seconSomething').style='display:none'
+          " class="buttonOutlined">
           <button><i class='bx bx-left-arrow-alt' ></i> Назад</button>
         </div>
-        <div class="with_iconBtn">
+        <div onclick="
+        document.querySelector('.thirdSomething').style='display:flex'
+        document.querySelector('.seconSomething').style='display:none'
+        
+        " class="with_iconBtn">
           <button>Далее <i class='bx bx-right-arrow-alt' ></i> </button>
 
         </div>
@@ -1477,9 +1512,226 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
     </div>
   </div>
 </div>
+<div class="modal_for_buy_something thirdSomething ">
+  <div class="buy_something_modal_body">
+    <div class="in_modal_buy">
+      <div class="modal-header_buy">
+      <h2 class="Header_withArrow"><i onclick="
+        document.querySelector('.seconSomething').style='display:flex'
+        document.querySelector('.thirdSomething').style='display:none'
+        " class='bx bx-left-arrow-alt' ></i>Подтвердите телефон</h2>
+        <i onclick="
+        document.querySelector('.thirdSomething').style='display:none'
+        " class="bx bx-x"></i>
+ 
+      </div> <div style="margin-bottom: 10px;" class="modal_steps">
+      <div class="steps_line_modal">
+        <span style="width: 60%;" class="SpanLine">  </span>
+      </div>
+      <span class="stepColor">Шаг 3  из  4</span>
+     </div>
+      <div  class="modal_body_steps ">
 
+        <form style="margin-top: 0;" class="input-container">
+          <label for="">Телефон *</label><br>
+          <input type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+          <p>На указанный телефон будет отправлен код подтверждения</p>
+          
+        </form>
+ 
+
+
+        <form id="ControlKod" style="margin-top: 0;" class="input-container">
+          <label for="">Kод подтверждения</label><br>
+          <input type="text"  >
+          <p style="margin-bottom: 0;">SMS c кодом отправлено на указанный телефон </p>
+          <span style="text-decoration: underline;font-size: 14PX;">Отправить код повторно</span>
+        </form>
+<div class="grafikBigBody">
+  <div class="grafikKod">
+    <img src="./Снимок экрана (551).png" alt="">
+    <i class='bx bx-reset'></i>
+  </div>
+  
+  <form  style="margin-top: 0;" class="input-container">
+    <label for="">Kод с изображения</label><br>
+    <input type="text"  >
+    
+  </form>
+</div>
+        <button onclick="
+        document.querySelector('#ControlKod').style='display:block'
+        document.querySelector('.podtverditBtn1').style='display:block'
+        document.querySelector('.podtverditBtn').style='display:none'
+        " class="podtverditBtn">Подтвердить</button>
+
+
+             <button onclick="
+             document.querySelector('.grafikBigBody').style='display:block'
+             document.querySelector('.podtverditBtn2').style='display:block'
+             document.querySelector('.podtverditBtn1').style='display:none'
+
+             " class="podtverditBtn1">Подтвердить</button>
+
+
+                   <button onclick="
+                  //  document.querySelector('.grafikBigBody').style='display:block'
+      
+                   " class="podtverditBtn2">Подтвердить</button>
+</div>
+ 
 
  
+      </div>
+
+
+      <div style="    width: 90%;
+      margin: auto;
+  "   class="modal-btns"> 
+        <div onclick="
+        document.querySelector('.thirdSomething').style='display:none'
+        document.querySelector('.seconSomething').style='display:flex'
+        
+        "  class="buttonOutlined">
+          <button><i class='bx bx-left-arrow-alt' ></i> Назад</button>
+        </div>
+        <div onclick="
+        document.querySelector('.thirdSomething').style='display:none'
+        document.querySelector('.fourthSomething').style='display:flex'
+        " class="with_iconBtn">
+          <button>Далее <i class='bx bx-right-arrow-alt' ></i> </button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal_for_buy_something  fourthSomething">
+    <div class="buy_something_modal_body">
+      <div class="in_modal_buy">
+        <div class="modal-header_buy">
+        <h2 class="Header_withArrow"><i onclick="
+          document.querySelector('.thirdSomething').style='display:flex'
+          document.querySelector('.fourthSomething').style='display:none'
+          " class='bx bx-left-arrow-alt' ></i>Кому отправить?</h2>
+          <i onclick="
+          document.querySelector('.fourthSomething').style='display:none'
+          " class="bx bx-x"></i>
+   
+        </div> <div style="margin-bottom: 10px;" class="modal_steps">
+        <div class="steps_line_modal">
+          <span style="width: 70%;" class="SpanLine">  </span>
+        </div>
+        <span class="stepColor">Шаг 3  из  4</span>
+       </div>
+        <div  class="modal_body_steps ">
+      
+   <div class="style_forImage_back">
+    <img class="BackAlmaz" src="https://sokolov.ru/interface/gift-card/card-bg_desk.png" alt="">
+    <h2 class="logoAlmaz_back_title">ALMAZ</h2>
+    <div class="priceElectro">
+      <span>Электронный сертификат</span>
+      <h3>500 ₽</h3>
+    </div>
+  
+   </div> 
+ 
+  
+  
+  <div style="margin-top: 20px;" class="order_modal_form_desc">
+    <p>Электронный сертификат будет отправлен на ваш email и/или в SMS сообщении сразу после оплаты или в указанное время. Вы можете переслать его получателю или распечатать и вручить лично.</p>
+   <div class="radioInp_for_choise">
+    <input onclick="
+    document.querySelector('.inputTypeData_big').style='display:none'
+    document.querySelector('#TimeIp').style='display:none'
+    " type="radio" name="aa" id="">
+    <span>Отправить сразу после оплаты</span>
+   </div>
+   <div class="radioInp_for_choise">
+    <input onclick="
+      document.querySelector('.inputTypeData_big').style='display:flex'
+      document.querySelector('#TimeIp').style='display:block'
+      " type="radio" name="aa" id="">
+    <span>Указать дату и время получения</span>
+   </div>
+
+
+  <div class="inputTypeData_big">
+    <div class="oneDate">
+      <label for="">Дата</label><br>
+      <input   type="date" name="" id="">
+    </div>
+    <div class="oneDate DateIn">
+      <label for="">Время</label><br>
+      <input   type="time" name="" id="">
+    </div>
+       </div>
+       <form id="TimeIp" class="input-container">
+        <label for="">Часовой пояс</label><br>
+      <select name="" id="">
+        <option value="">(UTC+3:00) Москва</option>
+        <option value="">(UTC+3:00) Москва</option>
+        <option value="">(UTC+3:00) Москва</option>
+      </select>
+        
+      </form>
+
+  </div>
+ 
+  
+ 
+        </div>
+  
+  
+        <div   class="modal-btns"> 
+          <div onclick="
+            document.querySelector('.thirdSomething').style='display:flex'
+            document.querySelector('.fourthSomething').style='display:none'
+            " class="buttonOutlined">
+            <button><i class='bx bx-left-arrow-alt' ></i> Назад</button>
+          </div>
+          <div onclick="
+          // document.querySelector('.thirdSomething').style='display:flex'
+          // document.querySelector('.seconSomething').style='display:none'
+          
+          " class="with_iconBtn">
+            <button>Оформить   </button>
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer-version__pk">
        <ul>
