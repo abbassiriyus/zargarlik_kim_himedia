@@ -296,7 +296,10 @@ text-align: center;
 }
 .navbarAlmaz__pk__first .navbar-pk__icon{
     position: relative;
+
+
 }
+
 .navbarAlmaz__pk__first .navbar-pk__icon_number{
     display: flex;
     justify-content: center;
@@ -311,8 +314,12 @@ text-align: center;
     font-size: 10px;
     height: 18px;
     border-radius: 50%;
+    display: none;
 }
-
+.navbarAlmaz__pk__first .navbar-pk__icon:hover   .navbar-pk__icon_number{
+    display: flex;
+    cursor: pointer;
+}
 @media(max-width:1378px ) and (min-width:991px){
     .navbarAlmaz__pk__first ul li{
         font-size: 12px;
