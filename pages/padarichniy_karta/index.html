@@ -862,7 +862,9 @@ background:
             <h4>Электронный <br>подарочный сертификат</h4>
             <p>Оформление и покупка на сайте, отправка на Email и/или в SMS.</p>
             <div class="for_bb">
-            <button class="buy">Купить</button>
+            <button onclick="
+              document.querySelector('.modal_for_buy_something').style='display:flex'
+              " class="buy">Купить</button>
             <button onclick="
             document.querySelector('.modal_for_balanc').style='display:flex'
             " class="know">Узнать баланс</button>
@@ -1263,12 +1265,218 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
  
 
 
+<div class="modal_for_buy_something">
+  <div class="buy_something_modal_body">
+    <div class="in_modal_buy">
+      <div class="modal-header_buy">
+        <h2>Номинал и количество</h2>
+        <i onclick="
+        document.querySelector('.modal_for_buy_something').style='display:none'
+        " class="bx bx-x"></i>
+      </div>
+      <div  class="modal_body_steps">
+     <div class="modal_steps">
+      <div class="steps_line_modal">
+        <span class="SpanLine">  </span>
+      </div>
+      <span class="stepColor">Шаг 1  из  5</span>
+     </div>
+ <div class="style_forImage_back">
+  <img class="BackAlmaz" src="https://sokolov.ru/interface/gift-card/card-bg_desk.png" alt="">
+  <h2 class="logoAlmaz_back_title">ALMAZ</h2>
+  <div class="priceElectro">
+    <span>Электронный сертификат</span>
+    <h3>500 ₽</h3>
+  </div>
+
+ </div>  <h3 class="Nominal">Номинал</h3>
+  <div class="giftPrice_cards">
+    <div class="OneGiftCard">
+      <span>500 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>1000 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>1500 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>2000 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>3000 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>5000 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>15 000 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>20 000 ₽</span>
+    </div>
+    <div class="OneGiftCard">
+      <span>30 000 ₽</span>
+    </div>
+  </div>
+  
+  <button onclick="
+  document.querySelector('.addition_modal').style='display:flex'
+  " class="AddYour"><i class='bx bx-plus'></i>Добавить свой</button>
+  <h3 class="Nominal">Количество
+
+  </h3>
+  <div class="quantity">
+    <i  class='bx bx-plus-circle' ></i>
+    <span>1</span>
+    <i class='bx bx-minus-circle' ></i>
+  </div>
+      </div>
+      <div class="modal-btns">
+        <div onclick="
+               document.querySelector('.modal_for_buy_something').style='display:none'
+          " class="buttonOutlined">
+          <button><i class='bx bx-left-arrow-alt' ></i> Назад</button>
+        </div>
+        <div onclick="
+             document.querySelector('.seconSomething').style='display:flex'
+             document.querySelector('.modal_for_buy_something').style='display:none'
+        " class="with_iconBtn">
+          <button>Далее <i class='bx bx-right-arrow-alt' ></i> </button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="addition_modal">
+<div class="addition_body_big">
+  <div class="additionBodyIn">
+    <div class="head_addition">
+      <h2>Добавьте номинал</h2>
+      <i onclick="
+      document.querySelector('.addition_modal').style='display:none'
+      " class="bx bx-x"></i>
+    </div>
+    <p>Номинал сертификата не может быть меньше 500 ₽.</p>
+    <input type="text" name="" id="">
+    <button>Добавить</button>
+  </div>
+</div>
+</div>
 
 
 
-
-
+<div class="modal_for_buy_something seconSomething">
+  <div class="buy_something_modal_body">
+    <div class="in_modal_buy">
+      <div class="modal-header_buy">
+      <h2 class="Header_withArrow"><i onclick="
+        document.querySelector('.modal_for_buy_something').style='display:flex'
+        document.querySelector('.seconSomething').style='display:none'
+        " class='bx bx-left-arrow-alt' ></i>Кому отправить?</h2>
+        <i onclick="
+        document.querySelector('.seconSomething').style='display:none'
+        " class="bx bx-x"></i>
  
+      </div> <div style="margin-bottom: 10px;" class="modal_steps">
+      <div class="steps_line_modal">
+        <span style="width: 40%;" class="SpanLine">  </span>
+      </div>
+      <span class="stepColor">Шаг 1  из  5</span>
+     </div>
+      <div  class="modal_body_steps extraSteps">
+    
+ <div class="style_forImage_back">
+  <img class="BackAlmaz" src="https://sokolov.ru/interface/gift-card/card-bg_desk.png" alt="">
+  <h2 class="logoAlmaz_back_title">ALMAZ</h2>
+  <div class="priceElectro">
+    <span>Электронный сертификат</span>
+    <h3>500 ₽</h3>
+  </div>
+
+ </div> 
+ <div class="page_for_you_click">
+  <div class="first_click">
+    <span>В подарок</span>
+  </div>
+  <div class="second_click">
+    <span>Себе</span>
+  </div>
+</div>
+
+
+<div class="order_modal_form_desc">
+  <p>Электронный сертификат будет отправлен на ваш email и/или в SMS сообщении сразу после оплаты или в указанное время. Вы можете переслать его получателю или распечатать и вручить лично.</p>
+ 
+  <form class="input-container">
+    <label for="">Телефон *</label><br>
+    <input type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+    <p>Отправим СМС с ссылкой на сертификат</p>
+    
+  </form>
+  <form class="input-container">
+    <label for="">Email</label><br>
+    <input type="text"  >
+    <p>Отправим письмо с сертификатом</p>
+    
+  </form>
+  <div class="congratulationForm">
+  <div class="congratulationForm_div_click">
+    <h3>Поздравление
+    </h3>
+    <div class="delete_form">
+      <i class='bx bx-trash'></i><span>Удалить</span>
+    </div>
+  </div>
+  <form class="input-container">
+    <label for="">Кому</label><br>
+    <input type="text"  >
+    
+  </form>
+  <form class="input-container">
+    <label for="">Текст поздравления</label><br>
+   <textarea name="" id="" placeholder="Добавьте добрых слов или пожеланий к вашему подарку "></textarea>
+    <div class="textarea-container">
+      <span>0/2000</span>
+
+    </div>
+  </form>
+  <form style="margin-top: 12px;" class="input-container">
+    <label for="">От кого</label><br>
+    <input type="text"  >
+    
+  </form></div>
+</div>
+
+  <button style="    background: #f2f2f2;
+    border-color: #f2f2f2;color: #257ae8;
+    font-size: 14px;    border-radius: 8px;
+    padding: 12px 20px;    font-weight: 600;" class="AddYour"><i class='bx bx-plus'></i>Добавить свой</button>
+
+ <div class="checkImportant">
+  <input type="checkbox" name="" id="">
+  <p>Подтверждаю, что получил согласие на обработку персональных данных от указанного выше лица (телефон, Email и ФИО)</p>
+ </div>
+      </div>
+
+
+      <div   class="modal-btns"> 
+        <div class="buttonOutlined">
+          <button><i class='bx bx-left-arrow-alt' ></i> Назад</button>
+        </div>
+        <div class="with_iconBtn">
+          <button>Далее <i class='bx bx-right-arrow-alt' ></i> </button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
  
@@ -1454,17 +1662,52 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
    
      </div>
 
-<style>
-  .place-card-large{
-display: none !important;
-opacity: 0 !important;
-}
 
-</style>
  
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
      crossorigin="anonymous"></script>
+
+<script>
+  function data_plus() {
+    var value1=document.getElementById('phone-input').value
+    if (value1.length === 0) {
+    value1 = '+7 (' + value1;
+  } 
+  document.getElementById('phone-input').value=value1
+  }
+const phoneInput = document.getElementById('phone-input');
+let isFirstDigitAdded = false;
+
+phoneInput.addEventListener('keydown', function(e) {
+  var value=document.getElementById('phone-input').value
+if(e.key!="Backspace"){
+  if (value.length === 0 ||value.length === 1 || value.length === 2) {
+    value = '+7 ('
+  } else if (value.length === 7) {
+    value = value.slice(0, 7) + ') ' + value.slice(7);
+  } else if (value.length === 12) {
+    value = value.slice(0, 12) + '-' + value.slice(12);
+  } else if (value.length === 15) {
+    value = value.slice(0, 15) + '-' + value.slice(15);
+  } else if (value.length === 0) {
+    value = '';
+  }
+  phoneInput.addEventListener('keypress', function(e) {
+  const allowedChars = /[\+\(\)\d]/;
+  if (!allowedChars.test(e.key)) {
+    e.preventDefault();
+  }
+});
+  
+  this.value = value;
+
+}
+
+});
+
+
+</script>
 </body>
 </html>
 

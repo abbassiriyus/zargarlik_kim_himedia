@@ -741,3 +741,550 @@ height: 52px;
   height: 30px;
 }
 }
+
+
+
+.modal_for_buy_something{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333b3;
+  z-index: 90120;
+  display: none;
+}
+.seconSomething{
+  display: flex;
+}
+.buy_something_modal_body{
+  width: 100%;
+  max-width: 420px;
+   height: auto;
+  background-color: white;
+  border-radius: 12px;
+  overflow: auto;
+}
+.in_modal_buy{
+  width: 90%;
+  margin: auto;
+}
+.modal-header_buy{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.modal-header_buy h2{
+  font-size: 24px;
+        line-height: 32px;
+        text-align: left;
+        font-weight: 700;
+        letter-spacing: .5px;
+  font-family: "Montserrat", sans-serif;
+
+}
+.modal-header_buy .bx-x{
+  font-size: 24px;
+  color: grey;
+}
+.steps_line_modal{
+  width: 100%;
+  height: 9px;
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+.modal_body_steps{
+  overflow: auto;
+  /* height: 620px; */
+}
+.SpanLine{
+  width: 20%;
+  border-radius: 6px;
+  height: 9px;
+  background-color: #257ae8;
+}
+.modal_steps{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.stepColor{
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  color:  #0059ff;
+  font-weight: 500;
+}
+.style_forImage_back{
+  position: relative;
+}
+.BackAlmaz{
+  margin-top: 20px;
+  width: 100%;
+} 
+.logoAlmaz_back_title{
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  font-size: 30px;
+}
+.priceElectro span{
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: black;
+  /* position: absolute;
+  bottom: 100px;
+  left: 15px; */
+
+}
+.priceElectro h3{
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  /* position: absolute;
+  bottom: 50px;
+  left: 15px; */
+}
+.priceElectro{
+  position: absolute;
+  bottom: 24px;
+  left: 14px;
+}
+.Nominal{
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.giftPrice_cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+
+}
+.OneGiftCard{
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+    border: 2px solid #b3b3b3;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.OneGiftCard:hover{
+  border: 2px solid #0059ff;
+
+}
+.AddYour{
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #b3b3b3;
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #257ae8;
+  transition: 1s;
+}
+.AddYour:hover{
+  color: #4b6594;
+  border: 2px solid #257ae8;
+}
+.AddYour .bx-plus{
+  font-size: 24px;
+}
+.modal-btns{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+  /* justify-content: center; */
+  /* position: relative;
+  top: 88px; */
+}
+.buttonOutlined button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+  cursor: pointer;
+  color: #257ae8;
+  background: none;
+  border: 2px solid #257ae8;
+  border-radius: 8px;
+  transition: 1s;
+}
+.buttonOutlined button:hover{
+  background-color:#257ae8 ;
+  color: white;
+}
+.buttonOutlined{
+  width: 50%;
+}
+.with_iconBtn{
+  width: 50%;
+}
+.with_iconBtn button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+  cursor: pointer;
+  color: #257ae8;
+  background-color: #257ae8;
+  color: white;
+  border: 2px solid #257ae8;
+  transition: 1s;
+  border-radius: 8px;
+}
+.with_iconBtn button:hover{
+background-color: #30466d;
+border: 2px solid #30466d;
+
+}
+.with_iconBtn .bx-right-arrow-alt{
+  font-size: 24px;
+}
+.buttonOutlined .bx-left-arrow-alt{
+  font-size: 24px;
+
+}
+.quantity{
+  width: 100%;
+  max-width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  gap: 15px ;
+  border: 2px solid #b3b3b3;
+  border-radius: 8px;
+}
+.bx-minus-circle,.bx-plus-circle{
+  font-size: 24px;
+}
+
+.addition_modal{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333b3;
+  z-index: 90120;
+  display: none;
+}
+.addition_body_big{
+  width: 100%;
+  max-width: 420px  ;
+  height:300px;
+  background-color: white;
+  border-radius: 12px;
+}
+.additionBodyIn{
+  width: 90%;
+  margin: auto;
+}
+.head_addition h2{
+  font-size: 24px;
+        line-height: 32px;
+        text-align: left;
+        font-weight: 700;
+        letter-spacing: .5px;
+  font-family: "Montserrat", sans-serif;
+
+}
+.head_addition .bx-x{
+  font-size: 24px;
+  color: grey;
+}
+
+.head_addition{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.additionBodyIn p{
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  font-weight: 500;
+  width: 93%;
+}
+.additionBodyIn input{
+  width: 100%;
+  width: 100%;
+  border: 2px solid  #b3b3b3;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 16px;
+  font-weight: 500;
+  outline-color: #257ae8;
+
+}
+.additionBodyIn input:hover{
+  outline-color: #257ae8;
+}
+.additionBodyIn button{
+  border: 2px solid #257ae8;
+  background-color: #257ae8;
+  color: #fff;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 30px;
+  transition: 1s;
+}
+.additionBodyIn button:hover{
+  border: 2px solid #30466d;
+
+  background-color: #30466d;
+}
+@media (max-width:768px) {
+  .buy_something_modal_body{
+    height: 100vh;
+    border-radius: 1px;
+    max-width: 100%;
+  }
+  .modal_body_steps {
+    overflow: auto;
+   }
+    .addition_modal{
+      justify-content: end;
+      align-items: end;
+    }
+    .addition_body_big{
+      max-width: 100%;
+    }
+    .addition_body_big{
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+    }
+}
+
+@media (max-width:400px) {
+  .modal-header_buy h2{
+    font-size: 18px;
+  }
+  .logoAlmaz_back_title{
+    font-size: 25px
+  }
+  .priceElectro h3{
+    font-size: 27px;
+    }
+
+}
+
+.page_for_you_click{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.first_click{
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid white;
+  transition: 1s;
+
+}
+.first_click:hover{
+  border-bottom: 3px solid #257ae8
+}
+.second_click{
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid white;
+
+}
+.first_click{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.second_click span{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.second_click:hover{
+  border-bottom: 3px solid #257ae8
+  
+}
+.Header_withArrow{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Header_withArrow .bx-left-arrow-alt{
+  font-size: 24px;
+  color: grey;
+}
+.order_modal_form_desc p{
+  margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px
+}
+.extraSteps{
+   height: calc(100vh - 309px);
+}
+.PhoneInput_withLabel{
+  width: 100%;
+}
+
+
+.input-container {
+margin-top: 35px;
+}
+ 
+.input-container label{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #0D0D0D;
+
+}
+
+.input-container input{
+height: 48px;
+width: 100%;
+border: 2px solid #B3B3B3;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+padding-left: 16px;
+padding-top: 2px;
+border-radius: 8px;
+outline-color: #257ae8;
+margin-top: 2px;
+}
+
+.input-container p{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  margin-top: 8px;
+
+  
+}
+.checkImportant{
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-top: 20px;
+}
+.checkImportant input{
+  margin-top: 5px;
+}
+.checkImportant p{
+  font-size: 15px;
+}
+.congratulationForm_div_click{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete_form{
+  color: #185eba;
+  background: #e6e6e6;
+  border-color: #e6e6e6;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 30%;
+  color: #257ae8;
+    font-size: 14px;
+    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  transition: 1s;
+}
+.delete_form:hover{
+  background: #c4c1c1;
+
+}
+.delete_form .bx-trash{
+  font-size: 20px;
+  position: relative;
+  top: -3px;
+}
+.congratulationForm_div_click h3{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+
+.input-container textarea{
+height: 200px;
+width: 100%;
+border: 2px solid #B3B3B3;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+padding-left: 10px;
+padding-top: 10px;
+border-radius: 8px;
+outline-color: #257ae8;
+margin-top: 2px;
+}
+.textarea-container{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.textarea-container span{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
