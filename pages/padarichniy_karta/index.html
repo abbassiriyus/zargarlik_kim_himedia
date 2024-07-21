@@ -1422,13 +1422,13 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
  
   <form class="input-container">
     <label for="">Телефон *</label><br>
-    <input type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+    <input class="ClassForJS" type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
     <p>Отправим СМС с ссылкой на сертификат</p>
     
   </form>
   <form class="input-container">
     <label for="">Email</label><br>
-    <input type="text"  >
+    <input   type="text"  >
     <p>Отправим письмо с сертификатом</p>
     
   </form>
@@ -1466,7 +1466,7 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
   <p>Электронный сертификат будет отправлен на ваш email и/или в SMS сообщении сразу после оплаты или в указанное время. Вы можете переслать его получателю или распечатать и вручить лично.</p>
   <form class="input-container">
     <label for="">Телефон *</label><br>
-    <input type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+    <input class="ClassForJS"  type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
     <p>Отправим СМС с ссылкой на сертификат</p>
     
   </form>
@@ -1499,12 +1499,8 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
           " class="buttonOutlined">
           <button><i class='bx bx-left-arrow-alt' ></i> Назад</button>
         </div>
-        <div onclick="
-        document.querySelector('.thirdSomething').style='display:flex'
-        document.querySelector('.seconSomething').style='display:none'
-        
-        " class="with_iconBtn">
-          <button>Далее <i class='bx bx-right-arrow-alt' ></i> </button>
+        <div  class="with_iconBtn">
+          <button onclick="validateInput()">Далее <i class='bx bx-right-arrow-alt' ></i> </button>
 
         </div>
       </div>
@@ -1559,11 +1555,7 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
     
   </form>
 </div>
-        <button onclick="
-        document.querySelector('#ControlKod').style='display:block'
-        document.querySelector('.podtverditBtn1').style='display:block'
-        document.querySelector('.podtverditBtn').style='display:none'
-        " class="podtverditBtn">Подтвердить</button>
+        <button onclick="checkBtn()" class="podtverditBtn">Подтвердить</button>
 
 
              <button onclick="
@@ -1981,7 +1973,9 @@ if(e.key!="Backspace"){
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+
 </script>
+<script src="main.js"></script>
 </body>
 </html>
 
