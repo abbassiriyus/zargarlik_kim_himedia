@@ -1004,8 +1004,14 @@ document.querySelectorAll('.for-all_one-option')[y].style='background-color: #ff
               <h2>Узнать баланс</h2>
               <p>Номер подарочной карты, приобретённой <br> во флагманских магазинах ALMAZ, находится на обороте. <br>
                 Номер электронного подарочного сертификата указан в СМС-сообщении, полученном после его оформления</p>
+                <div class="errorMessage">
+                  <div class="errorMessageIn">
+                    <i class='bx bx-error-circle'></i>
+                    <span>Для проверки баланса карты, необходимо указать номер карты. </span>
+                  </div>
+                </div>
                 <input type="text" placeholder="Введите номер карты/сертификата">
-                <button>Узнать баланс</button>
+                <button onclick="BalancBtn()">Узнать баланс</button>
              <div class="big_yandex">
               <div class="yandex_smart">
                 <span>Яндекс SmartCapcha</span>
@@ -1466,7 +1472,7 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
   <p>Электронный сертификат будет отправлен на ваш email и/или в SMS сообщении сразу после оплаты или в указанное время. Вы можете переслать его получателю или распечатать и вручить лично.</p>
   <form class="input-container">
     <label for="">Телефон *</label><br>
-    <input class="ClassForJS"  type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+    <input class="ClassForJS2"  type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
     <p>Отправим СМС с ссылкой на сертификат</p>
     
   </form>
@@ -1486,7 +1492,7 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
  class="AddYour"><i class='bx bx-plus'></i>Добавить свой</button>
 
  <div class="checkImportant">
-  <input type="checkbox" name="" id="">
+  <input   type="checkbox" name="" id="">
   <p>Подтверждаю, что получил согласие на обработку персональных данных от указанного выше лица (телефон, Email и ФИО)</p>
  </div>
       </div>
@@ -1530,19 +1536,11 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
 
         <form style="margin-top: 0;" class="input-container">
           <label for="">Телефон *</label><br>
-          <input type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
-          <p>На указанный телефон будет отправлен код подтверждения</p>
+          <input class="CheckPhoneInp" type="text" onclick="data_plus()" id="phone-input" placeholder="+7(___)___-__-__" maxlength="18" pattern="^\+7\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+          <p class="PhoneText">На указанный телефон будет отправлен код подтверждения</p>
           
         </form>
  
-
-
-        <form id="ControlKod" style="margin-top: 0;" class="input-container">
-          <label for="">Kод подтверждения</label><br>
-          <input type="text"  >
-          <p style="margin-bottom: 0;">SMS c кодом отправлено на указанный телефон </p>
-          <span style="text-decoration: underline;font-size: 14PX;">Отправить код повторно</span>
-        </form>
 <div class="grafikBigBody">
   <div class="grafikKod">
     <img src="./Снимок экрана (551).png" alt="">
@@ -1551,25 +1549,27 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
   
   <form  style="margin-top: 0;" class="input-container">
     <label for="">Kод с изображения</label><br>
-    <input type="text"  >
-    
+    <input class="KodGrafik" type="text"  >
+   <h5>неправильный пароль</h5>
   </form>
 </div>
-        <button onclick="checkBtn()" class="podtverditBtn">Подтвердить</button>
+
+        <form id="ControlKod" style="margin-top: 0;" class="input-container">
+          <label for="">Kод подтверждения</label><br>
+          <input type="text"  >
+          <p class="ControlText" style="margin-bottom: 0;">SMS c кодом отправлено на указанный телефон </p>
+          <span style="text-decoration: underline;font-size: 14px;display:flex;gap:10px">Отправить код повторно<div id="timer">01:00</div></span>
+        </form>
+
+        <button id="startBtn" onclick="checkBtn()" class="podtverditBtn">Подтвердить</button>
 
 
-             <button onclick="
-             document.querySelector('.grafikBigBody').style='display:block'
-             document.querySelector('.podtverditBtn2').style='display:block'
-             document.querySelector('.podtverditBtn1').style='display:none'
-
-             " class="podtverditBtn1">Подтвердить</button>
+             <button  onclick="podtverditBtn3()" class="podtverditBtn1">Подтвердить</button>
 
 
-                   <button onclick="
-                  //  document.querySelector('.grafikBigBody').style='display:block'
-      
-                   " class="podtverditBtn2">Подтвердить</button>
+                   <button onclick="  checkBtnSecond()" class="podtverditBtn2">Подтвердить</button>
+
+               
 </div>
  
 
@@ -1678,14 +1678,14 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
   
         <div   class="modal-btns"> 
           <div onclick="
-            document.querySelector('.thirdSomething').style='display:flex'
-            document.querySelector('.fourthSomething').style='display:none'
+            document.querySelector('.fourthSomething').style='display:flex'
+            document.querySelector('.fivethSomething').style='display:none'
             " class="buttonOutlined">
             <button><i class='bx bx-left-arrow-alt' ></i> Назад</button>
           </div>
           <div onclick="
-          // document.querySelector('.thirdSomething').style='display:flex'
-          // document.querySelector('.seconSomething').style='display:none'
+          document.querySelector('.fivethSomething').style='display:flex'
+          document.querySelector('.fourthSomething').style='display:none'
           
           " class="with_iconBtn">
             <button>Оформить   </button>
@@ -1698,13 +1698,205 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
   </div>
 
 
+  <div class="modal_for_buy_something  fivethSomething">
+    <div class="buy_something_modal_body">
+      <div class="in_modal_buy">
+        <div class="modal-header_buy">
+        <h2 class="Header_withArrow"><i onclick="
+          document.querySelector('.fourthSomething').style='display:flex'
+          document.querySelector('.fivethSomething').style='display:none'
+          " class='bx bx-left-arrow-alt' ></i>Сертификат оформлен</h2>
+          <i onclick="
+          document.querySelector('.fourthSomething').style='display:none'
+          " class="bx bx-x"></i>
+   
+        </div> <div style="margin-bottom: 10px;" class="modal_steps">
+        <div class="steps_line_modal">
+          <span style="width: 100%;" class="SpanLine">  </span>
+        </div>
+        <span class="stepColor">Шаг 4  из  4</span>
+       </div>
+        <div  class="modal_body_steps ">
+      
+   <div class="style_forImage_back">
+    <img class="BackAlmaz" src="https://sokolov.ru/interface/gift-card/card-bg_desk.png" alt="">
+    <h2 class="logoAlmaz_back_title">ALMAZ</h2>
+    <div class="priceElectro  ">
+      <span>Электронный сертификат</span>
+      <h3>500 ₽</h3>
+    </div>
+  <div onclick="
+  document.querySelector('.fivethSomething').style='display:none'
+  document.querySelector('.sixthSomething').style='display:flex'
+  " class="buttonSee">
+    <span>Предварительный просмотр</span>
+    <i class="bx bx-right-arrow-alt"></i>
+  </div>
+   </div> 
+ 
+  
+  
+  <!-- <div style="margin-top: 20px;" class="order_modal_form_desc">
+    <p>Электронный сертификат будет отправлен на ваш email и/или в SMS сообщении сразу после оплаты или в указанное время. Вы можете переслать его получателю или распечатать и вручить лично.</p>
+   <div class="radioInp_for_choise">
+    <input onclick="
+    document.querySelector('.inputTypeData_big').style='display:none'
+    document.querySelector('#TimeIp').style='display:none'
+    " type="radio" name="aa" id="">
+    <span>Отправить сразу после оплаты</span>
+   </div>
+   <div class="radioInp_for_choise">
+    <input onclick="
+      document.querySelector('.inputTypeData_big').style='display:flex'
+      document.querySelector('#TimeIp').style='display:block'
+      " type="radio" name="aa" id="">
+    <span>Указать дату и время получения</span>
+   </div>
+
+
+  <div class="inputTypeData_big">
+    <div class="oneDate">
+      <label for="">Дата</label><br>
+      <input   type="date" name="" id="">
+    </div>
+    <div class="oneDate DateIn">
+      <label for="">Время</label><br>
+      <input   type="time" name="" id="">
+    </div>
+       </div>
+       <form id="TimeIp" class="input-container">
+        <label for="">Часовой пояс</label><br>
+      <select name="" id="">
+        <option value="">(UTC+3:00) Москва</option>
+        <option value="">(UTC+3:00) Москва</option>
+        <option value="">(UTC+3:00) Москва</option>
+      </select>
+        
+      </form>
+
+  </div> -->
+ 
+  
+ 
+     
+  <div class="order-modal-summary__desc">
+    <ul class="order-modal-summary">
+      <li>Телефон</li>
+      <li>+7 1212121212</li>
+    </ul>
+    <ul class="order-modal-summary">
+      <li>Доставка</li>
+      <li>22 июля 2024 г.
+        , после оплаты</li>
+    </ul>
+  </div>
+  <div class="linePriceLi"></div>
+  <div class="order_summary_price">
+    <h3>К оплате:</h3>
+    <h3>500 ₽</h3>
+  </div>
+  <ul  class="order-modal-summary">
+    <li >Сертификат на  500 ₽</li>
+    <div class="linedashed"></div>
+    <li>1  шт.</li>
+  </ul>
+
+  <div class="checkOrder">
+    <input type="checkbox" name="" id="">
+    <p>Согласен с <span>пользовательским <br> соглашением</span></p>
+  </div>   </div>
+        <div  id="CreditCard_btn" class="modal-btns"> 
+       
+           <button>   <i class='bx bxs-credit-card' ></i>Оплатить</button>
+        </div> 
+  
+      </div>
+    </div>
+  </div>
 
 
 
 
 
+  <div class="modal_for_buy_something  sixthSomething">
+    <div class="buy_something_modal_body">
+      <div class="in_modal_buy">
+        <div class="modal-header_buy">
+        <h2 class="Header_withArrow"><i onclick="
+      document.querySelector('.fivethSomething').style='display:flex'
+      document.querySelector('.sixthSomething').style='display:none'
+          " class='bx bx-left-arrow-alt' ></i>Предварительный просмотр</h2>
+          <i onclick="
+          document.querySelector('.fourthSomething').style='display:none'
+          " class="bx bx-x"></i>
+   
+        </div> 
+        <div  class="modal_body_steps ">
+      
+   <div class="style_forImage_back">
+    <img class="BackAlmaz" src="https://sokolov.ru/interface/gift-card/card-bg_desk.png" alt="">
+    <h2 class="logoAlmaz_back_title">ALMAZ</h2>
+    <div class="priceElectro  ">
+      <span>Электронный сертификат</span>
+      <h3>500 ₽</h3>
+    </div>
+ 
+   </div> 
+ 
+  <div class="card_QR">
+  
+  <svg class="barcode null" width="380px" height="76px" x="0px" y="0px" viewBox="0 0 380 76" xmlns="http://www.w3.org/2000/svg" version="1.1" style="transform: translate(0,0)"><rect x="0" y="0" width="380" height="76" style="fill:#ffffff;"></rect><g transform="translate(0, 0)" style="fill:#000000;"><rect x="0" y="0" width="4" height="76"></rect><rect x="8" y="0" width="4" height="76"></rect></g><g transform="translate(12, 0)" style="fill:#000000;"><rect x="12" y="0" width="8" height="64"></rect><rect x="24" y="0" width="4" height="64"></rect><rect x="40" y="0" width="8" height="64"></rect><rect x="52" y="0" width="4" height="64"></rect><rect x="68" y="0" width="8" height="64"></rect><rect x="80" y="0" width="4" height="64"></rect><rect x="96" y="0" width="8" height="64"></rect><rect x="108" y="0" width="4" height="64"></rect><rect x="124" y="0" width="8" height="64"></rect><rect x="136" y="0" width="4" height="64"></rect><rect x="152" y="0" width="8" height="64"></rect><rect x="164" y="0" width="4" height="64"></rect></g><g transform="translate(180, 0)" style="fill:#000000;"><rect x="4" y="0" width="4" height="76"></rect><rect x="12" y="0" width="4" height="76"></rect></g><g transform="translate(200, 0)" style="fill:#000000;"><rect x="0" y="0" width="12" height="64"></rect><rect x="20" y="0" width="4" height="64"></rect><rect x="28" y="0" width="12" height="64"></rect><rect x="48" y="0" width="4" height="64"></rect><rect x="56" y="0" width="12" height="64"></rect><rect x="76" y="0" width="4" height="64"></rect><rect x="84" y="0" width="12" height="64"></rect><rect x="104" y="0" width="4" height="64"></rect><rect x="112" y="0" width="12" height="64"></rect><rect x="132" y="0" width="4" height="64"></rect><rect x="140" y="0" width="12" height="64"></rect><rect x="160" y="0" width="4" height="64"></rect></g><g transform="translate(368, 0)" style="fill:#000000;"><rect x="0" y="0" width="4" height="76"></rect><rect x="8" y="0" width="4" height="76"></rect></g></svg>
 
-
+ 
+    <ul class="SvgBottomNumber">
+      <li>Номер: </li>
+      <li>XXX XXX XXX XXX X</li>
+    </ul>
+   <p>Действителен до 22.07.2025</p>
+ </div>
+  
+ <div class="textCenter">
+  <h3>Здравствуйте!</h3>
+  <p>Вам пришёл подарок. Его можно потратить на <br> драгоценные покупки.</p>
+ </div>
+ 
+ 
+ 
+ 
+    
+  
+   
+      <div class="ModalSomething_bottom">
+    <div class="gift_card_content">
+      <h2>Как воспользоваться сертификатом?</h2>
+      <div class="rule_content">
+        <h3>  При покупке в розничном магазине  ALMAZ:</h3>
+      </div>
+      <ol class="ruleList">
+        <li>Покажите кассиру штрих-код вашего электронного сертификата и скажите пин-код.  </li>
+      </ol>
+      <div class="rule_content">
+        <h3> При покупке в интернет-магазине   ALMAZ:</h3>
+      </div>
+      <ol class="ruleList">
+        <li>При оформлении заказа, введите номер и пин-код вашего сертификата в блоке Подарочные карты. </li>
+        <li>Выберите удобный способ доставки. Обратите внимание, что электронный подарочный сертификат может быть использован в  <span>следующих магазинах</span></li>
+        <li>Оформите заказ.</li>
+      </ol></div>
+      
+      
+    </div>
+        </div> 
+        <!-- <div onclick="
+          document.querySelector('.fivethSomething').style='display:flex'
+          document.querySelector('.sixthSomething').style='display:none'
+          "  id="CreditCard_btn_second" class="modal-btns"> 
+       
+           <button>   <i class='bx bx-left-arrow-alt' ></i>Вернуться назад</button>
+        </div>   -->
+    </div>
+  </div>       
+  </div>
 
 
 

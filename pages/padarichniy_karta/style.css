@@ -332,6 +332,18 @@ border-radius: 8px;
         border-radius: 12px;
         position: relative;
       }
+      @media (max-width:991px) {
+        .modal_for_balanc{
+          display: flex;
+          justify-content: end;
+          align-items: end;
+          display: none;
+        }
+        .balanc__modal_body{
+          border-bottom-left-radius: 1px;
+          border-bottom-right-radius: 1px;
+        }
+      }
       @media (max-width:376px) {
         .balanc__modal_body{
           border-radius: 1px;
@@ -780,7 +792,7 @@ height: 52px;
   margin-top: 20px;
 }
 .modal-header_buy h2{
-  font-size: 24px;
+  font-size: 22px;
         line-height: 32px;
         text-align: left;
         font-weight: 700;
@@ -1212,6 +1224,16 @@ margin-top: 2px;
 
   
 }
+.input-container h5{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  margin-top: 8px;
+display: none;
+  
+}
 .checkImportant{
   display: flex;
   align-items: start;
@@ -1354,6 +1376,20 @@ margin-top: 2px;
 .podtverditBtn2:hover{
   background-color: #2579e8ad;
 }
+.podtverditBtn3{
+  width: 100%;
+  height: 40px;
+  background-color: #257ae8;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  transition: 1s;
+  margin-top: 30px;
+  display: none;
+}
+.podtverditBtn3:hover{
+  background-color: #2579e8ad;
+}
 #ControlKod{
   display: none;
 }
@@ -1452,3 +1488,282 @@ margin-top: 2px;
         height: auto;
       }
     }
+
+    .errorMessage{
+      width: 100%;
+      height: 50px;
+      background-color: #fae8e8;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      display: none;
+    }
+    .errorMessageIn{
+      width: 95%;
+      margin: auto;
+      display: flex;
+  
+      gap: 10px;
+      
+    }
+    .errorMessageIn .bx-error-circle{
+      margin-top: 3px;
+      color: #cc373c;
+      font-size: 24px;
+    }
+    .errorMessageIn span{
+      font-size: 14px;
+    line-height: 20px;
+    }
+
+    /* .fivethSomething{
+      display: flex;
+    } */
+    .buttonSee{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+    margin-top: 20px;
+    background: #f2f2f2;
+    border-color: #f2f2f2;
+      user-select: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    }
+ .fivethSomething .priceElectro{
+  bottom: 69px;
+ }
+ .buttonSee span{
+  color: #257ae8;
+  font-size: 14px;
+
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+ }
+ .buttonSee .bx-right-arrow-alt{
+  color: #257ae8;
+  font-size: 14px;
+
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+ }
+ .order-modal-summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-left: 0;
+  margin-top: 10px;
+
+ }
+ .order-modal-summary  li{
+  list-style: none;
+ }
+ .linePriceLi{
+  width: 100%;
+  margin: auto;
+  height: 2px;
+  background-color: #e0e0e0;
+ }
+ .order_summary_price{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+ }
+ .order_summary_price h3{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: .5px;
+ }
+ .linedashed{
+  width: 48%;
+  height: 2px ;
+  border-bottom: 1px dashed #bfbfbf;
+ }
+ .checkOrder{
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-top: 16px;
+ }
+ .checkOrder span{
+  color:#257ae8;
+  font-weight: 500;
+ }
+ .checkOrder input{
+  margin-top: 7px;
+ }
+ #CreditCard_btn button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  height: 44px;
+  border: 2px solid #257ae8;
+  background-color: #257ae8;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+ 
+  border-radius: 8px;
+}
+#CreditCard_btn{
+  display: flex;
+  /* justify-content: end;
+  align-items: end; */
+}
+.card_QR{
+position: relative;
+
+}
+.sixthSomething .buy_something_modal_body{
+  background: linear-gradient(180deg, #E7F1FD 0%, #F3EAFF 75%, #D6F2FE 100%)  !important;
+}
+.card_QR{
+  /* width: 90%; */
+
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+  min-height: 184px;
+  padding: 16px 24px;
+  box-shadow: 0 0 8px #0000001a;
+  border-radius: 12px;
+  background-color: white;
+  /* background-color: red; */
+  margin-top: 7px;
+}
+.card_QR svg{
+  width: 100%;
+}
+.sixthSomething .priceElectro{
+  bottom: 12px;
+}
+.SvgBottomNumber{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 15px;
+}
+.SvgBottomNumber li{
+  list-style: none;
+}
+.card_QR p{
+  color: #595959;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+.textCenter h3{
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: .5px;
+  text-align: center;
+}
+.textCenter p{
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.textCenter{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 174px;
+}
+.ModalSomething_bottom{
+  padding: 32px 16px 2px;
+  background-color: white ;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  min-height: 200px;
+  /* margin-top: -80px; */
+  position: relative;
+  top: -80px;
+}
+
+#CreditCard_btn_second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background:white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 2px solid #E6E6E6;
+}
+
+#CreditCard_btn_second button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+  gap: 10px;
+  height: 44px;
+  border: 2px solid #257ae8;
+  background-color: white;
+  color: #257ae8;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 8px;
+}
+#CreditCard_btn_second .bx-left-arrow-alt{
+  font-size: 24px;
+}
+#CreditCard_btn_second button:hover{
+  background-color: #3131312f;
+}
+.gift_card_content h2{
+  margin-bottom: 16px;
+  line-height: 28px;
+  letter-spacing: .5px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Montserrat ;
+}
+.rule_content h3{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .5px;
+  font-weight: 700;
+ margin-top: 20px;
+}
+.ruleList{
+  padding-left: 15px;
+  margin-top: 10px;
+}
+.ruleList li span{
+  color: #257ae8;
+}
+.ruleList li{
+  margin-bottom: 15px;
+}
+
+.fivethSomething .modal_body_steps {
+  height: 500px;
+  overflow: auto;
+}
+.sixthSomething .modal_body_steps {
+  height: 500px;
+  overflow: auto;
+}
