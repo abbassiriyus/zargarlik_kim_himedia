@@ -1239,33 +1239,8 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
 
  </div>  <h3 class="Nominal">Номинал</h3>
   <div class="giftPrice_cards">
-    <div class="OneGiftCard">
-      <span>500 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>1000 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>1500 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>2000 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>3000 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>5000 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>15 000 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>20 000 ₽</span>
-    </div>
-    <div class="OneGiftCard">
-      <span>30 000 ₽</span>
-    </div>
+
+  
   </div>
   
   <button onclick="
@@ -1275,10 +1250,29 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
 
   </h3>
   <div class="quantity">
-    <i  class='bx bx-plus-circle' ></i>
-    <span>1</span>
-    <i class='bx bx-minus-circle' ></i>
+    <i onclick="plus()"  class='bx bx-plus-circle' ></i>
+    <span id="count_payment">1</span>
+    <i onclick="minus()" class='bx bx-minus-circle' ></i>
   </div>
+
+  <script>
+    var a=1
+
+  var plus=()=>{
+  a++
+  document.querySelector('#count_payment').innerHTML=a
+
+}
+var minus=()=>{
+if(a>0){
+  a--
+  document.querySelector('#count_payment').innerHTML=a
+}
+
+  
+}
+
+  </script>
       </div>
       <div class="modal-btns">
         <div onclick="
@@ -1308,11 +1302,48 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
       " class="bx bx-x"></i>
     </div>
     <p>Номинал сертификата не может быть меньше 500 ₽.</p>
-    <input type="text" name="" id="">
-    <button>Добавить</button>
+    <input type="number" name="" id="">
+    <button onclick="PushNominal()">Добавить</button>
   </div>
 </div>
 </div>
+<script>
+  var massive=[500,1000,1500,2000,3000,5000,15000,20000,30000]
+  massive.map((item,key)=>{
+document.querySelector('.giftPrice_cards').innerHTML+=`
+    <div class="OneGiftCard">
+      <span>${item} ₽</span>
+    </div>
+`
+  })
+
+  function PushNominal() {
+var NominalInp=document.querySelector('.additionBodyIn input').value
+  if (NominalInp==0) {
+    document.querySelector('.additionBodyIn input').style='border:2px solid red'
+  }else{
+      document.querySelector('.addition_modal').style='display:none'
+      massive.push(NominalInp)
+  }
+
+document.querySelector('.giftPrice_cards').innerHTML=''
+massive.map((item,key)=>{
+document.querySelector('.giftPrice_cards').innerHTML+=`
+    <div class="OneGiftCard">
+      <span>${item} ₽</span>
+    </div>
+`
+  })
+  document.querySelector('.additionBodyIn input').value=''
+
+
+
+
+  }
+</script>
+
+
+
 <div class="modal_for_buy_something seconSomething">
   <div class="buy_something_modal_body">
     <div class="in_modal_buy">
@@ -1835,13 +1866,16 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
 
 
 <div class= "modal_for_buy_something modalNotFoundCity">
-  <div class="modalNotFoundCityBody">
+  <div  class="modalNotFoundCityBody">
 <div class="in_modal_buy">
   <div class="modalNotF_title">
     <h2>В вашем городе нет розничных магазинов ALMAZ</h2>
     <i onclick="document.querySelector('.modalNotFoundCity').style='display:none'" class="bx bx-x"></i>  </div>
     <p>К сожалению, в вашем городе нет магазинов, в которых можно оформить покупку подарочной карты.</p>
-    <button>Выбрать другой город</button>
+    <button onclick="
+    document.querySelector('.select__city_modal').style='display:flex'
+    document.querySelector('.modalNotFoundCity').style='display:none'
+    ">Выбрать другой город</button>
 </div>
   
   </div>
@@ -1986,10 +2020,10 @@ document.querySelector('.fa-heart-o').style='display:block  !important'
              <div class="accordion-body">
                <ul class="footeMobile__versionLink__four">
                  <h3 style="font-size: 20px;"></h3>
-                 <li><img src="./image/VK.png" alt=""> ВКонтакте</li>
-                 <li><img src="./image/Group 10.png" alt="">Телеграм</li>
-                 <li><img src="./image/Youtube.png" alt=""> YouTube</li>
-                 <li><img src="./image/OK.png" alt=""> Одноклассники</li>
+                 <li><img src="/image/VK.png" alt=""> ВКонтакте</li>
+                 <li><img src="/image/Group 10.png" alt="">Телеграм</li>
+                 <li><img src="/image/Youtube.png" alt=""> YouTube</li>
+                 <li><img src="/image/OK.png" alt=""> Одноклассники</li>
                </ul>
              </div>
            </div>
