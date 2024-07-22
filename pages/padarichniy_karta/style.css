@@ -585,7 +585,7 @@ border-radius: 8px;
 .search_shop_Almaz{
   width: 100%;
   max-width: 345px;
-  height: 700px;
+  height:700px;
   background-color: white;
   position: absolute;
   /* display: none; */
@@ -671,6 +671,7 @@ border-radius: 8px;
   padding-bottom: 10px;
 }
 .sideBar_body_big{
+  /* height: 560px; */
   height: 600px;
   overflow: auto;
 }
@@ -1692,9 +1693,8 @@ position: relative;
   border-radius: 20px 20px 0 0;
   width: 100%;
   min-height: 200px;
-  /* margin-top: -80px; */
-  position: relative;
-  top: -80px;
+
+
 }
 
 #CreditCard_btn_second {
@@ -1702,8 +1702,8 @@ position: relative;
   justify-content: center;
   align-items: center;
   height: 80px;
-  background:white;
-  position: fixed;
+  background: linear-gradient(180deg, #E7F1FD 0%, #F3EAFF 75%, #D6F2FE 100%) ;
+  /* position: fixed; */
   width: 100%;
   bottom: 0;
   border-top: 2px solid #E6E6E6;
@@ -1766,4 +1766,65 @@ position: relative;
 .sixthSomething .modal_body_steps {
   height: 500px;
   overflow: auto;
+}
+#CreditCard_btn button:hover{
+  background-color: #ffffff;
+  color: #257ae8;
+}
+
+
+.modalNotFoundCity{
+  display: none;
+}
+.modalNotFoundCityBody{
+ 
+    width: 100%;
+    max-width: 420px;
+     height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: auto;
+    padding-top: 32px;
+}
+.modalNotFoundCityBody button{
+  border-radius: 8px;
+  user-select: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  
+    width: 100%;  
+    height: 45px;
+    border: 2px solid #257ae8;
+    background-color: #257ae8;
+    color: #fff;
+}
+.modalNotFoundCityBody button:hover{
+  background-color: #0059ff;
+}
+.modalNotF_title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+ 
+}
+.modalNotF_title .bx-x{
+  width: 24px;
+  height: 24px;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.modalNotF_title h2{
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: .5px;
+}
+.modalNotFoundCityBody p{
+  margin-bottom: 20px;
+  line-height: 20px;
 }
