@@ -644,6 +644,7 @@ margin-left: 0px;
     gap: 28px;
     margin-top: 7px;
     margin-left: 0px;
+    margin-bottom: 20px;
   }
   .city-select__label select{
     width: 173px;
@@ -716,12 +717,14 @@ background: #F5F5F5;
 }
 .search-bar .bx-search{
     font-size: 30px;
+    margin-left: 13px;
 }
 .giperlent{
     display: flex;
     align-items: center;
     height: 48px;
-    width: 100%;
+    width: 95%;
+    margin: auto;
     background: #F2F2F2;
     margin-top: 13px;
     padding-left: 23px;
@@ -1114,7 +1117,7 @@ margin-top: 8px;
         width: 90%;
     }
     .gipermarket {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }.bg_rem_img {
         width: 323px;

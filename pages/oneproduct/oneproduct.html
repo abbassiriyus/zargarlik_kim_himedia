@@ -1065,9 +1065,27 @@ background:
               <div class="likebtn">
                 <button>Добавить в корзину</button>
                 <div class="heart">
-             <img src="/image/Vector (3).png" alt="">
+                  <i class='bx bx-heart heart1 '></i>
                 </div>
               </div>
+
+              <script>
+                const heartIcon = document.querySelector('.heart1');
+                let isActive = false;
+            
+                heartIcon.addEventListener('click', () => {
+                  if (!isActive) {
+                    heartIcon.classList.add('active');
+                    heartIcon.classList.remove('bx-heart');
+                    heartIcon.classList.add('bxs-heart');
+                  } else {
+                    heartIcon.classList.remove('active');
+                    heartIcon.classList.remove('bxs-heart');
+                    heartIcon.classList.add('bx-heart');
+                  }
+                  isActive = !isActive;
+                });
+              </script>
               <button class="tasar">
                 Купить в один клик
               </button></div>

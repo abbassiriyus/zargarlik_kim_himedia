@@ -266,31 +266,43 @@ color: #BABABA;
 }
 .likebtn{
   margin-left: 0px;
-  display: flex;
+  display: grid;
   gap: 10px;
+  grid-template-columns: auto 58px;
   margin-top: 21px;
+  position: relative;
+  left: -5px;
 
 }
 .likebtn button{
-  width: 85%;
-  height: 58px;
-  border-radius: 14px;
-  background: #FFF957;
-font-family: Montserrat;
-font-size: 16px;
-border: none;
-font-weight: 500;
-line-height: 19.5px;
-color: #242424;
+ 
+    width: 100%;
+    height: 58px;
+    border-radius: 14px;
+    background: #FFF957;
+    font-family: Montserrat;
+    font-size: 16px;
+    border: none;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #242424;
+
 }
 .likebtn button:hover{
   background-color: #d6d252;
 }
 .heart:hover{
-  background-color: #FFF957;
+  /* background-color: #FFF957; */
   cursor: pointer;
+ 
+}
+.heart:active{
+  /* background-color: #FFF957; */
+  cursor: pointer;
+ color: #242424;
 }
 .heart{
+  
   width: 57px;
   height: 57px;
   border-radius: 14px;
@@ -302,6 +314,12 @@ color: #242424;
 .bx-heart{
   font-size: 30px;
   font-weight: 200 !important;
+}
+.bxs-heart{
+  font-size: 30px;
+  font-weight: 200 !important;
+  color: #242424;
+
 }
 .tasar{
 
