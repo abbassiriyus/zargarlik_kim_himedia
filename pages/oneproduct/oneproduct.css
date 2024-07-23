@@ -1359,7 +1359,7 @@ line-height: 34.13px;
 @media (max-width:1390px) {
   .card_body_one{
     display: grid;
-    grid-template-columns:   1.1fr;
+    grid-template-columns: 1fr 400px;
     width: 95%;
     margin: auto;
     max-width: 1440px;

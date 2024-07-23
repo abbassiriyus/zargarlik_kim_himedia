@@ -695,6 +695,9 @@ text-align: left;
 
 
 
+
+
+
 .otherCategory{
     width: 95%;
      max-width: 1440px;
@@ -840,6 +843,40 @@ margin-bottom: 0px !important;
     .navbarAlmaz__pk .navbarAlmaz__pk__second {
         display: grid;
         grid-template-columns: 114px 200px 2.5fr 157px 78px 125px;
+    }
+}
+
+@media (max-width:1111px) and (min-width:991px){
+    .navbarAlmaz__pk__first .almaz-logo img {
+        width: 90%;
+        /* margin-left: 14%; */
+        height: 60px;
+    }
+    .navbarAlmaz__pk__first {
+        display: grid;
+        gap: 19px;
+        grid-template-columns: 1.2fr 137px 1.05fr;
+        max-width: 1440px;
+        /* margin: auto; */
+        width: 95%;
+    }
+    .navbarAlmaz__pk__first ul li {
+        font-size: 12px;
+        gap: 5px;
+        line-height: 12px;
+    }
+    .navbarAlmaz__pk__first ul {
+        display: flex;
+        gap: 7px;
+    }
+    .navbarAlmaz__pk__first ul {
+        display: flex;
+        gap: 3px;
+    }
+    .navbarAlmaz__pk .navbarAlmaz__pk__second {
+        display: grid;
+        grid-template-columns: 114px auto auto 1fr 78px 125px;
+        gap: 9px;
     }
 }
 
