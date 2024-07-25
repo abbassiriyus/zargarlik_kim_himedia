@@ -238,16 +238,16 @@ color: #6C7B8B;
   border-radius: 14px;
   display: flex;
 justify-content: center;
-align-items: center;
+align-items: center; cursor: pointer;user-select: none;
 }
-.clcick:hover{
+.clcick__active{
   background-color: #FFF957;
   color: black;
   border: none;
-  cursor: pointer;
+ 
 }
-.clcick:hover span{
-  color: #000000;
+.clcick__active span{
+  color: #000000 !important;
 }
 .clcick span{
   font-family: Montserrat;
@@ -1827,3 +1827,23 @@ margin-bottom: 14px;
 
 }
 
+.modal_kak_uznal{
+  line-height: 1.15;
+  font-family: Montserrat,serif!important;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333b3;
+  z-index: 900;
+  z-index: 123123;
+}
+.modal_kak_uznal_body{
+background-color: white;
+}
