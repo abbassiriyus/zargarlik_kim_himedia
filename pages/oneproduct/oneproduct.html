@@ -999,10 +999,11 @@ background:
               <div class="pri">
                 <div class="prkar">
                   <p>Размер изделия</p>
-                  <p>Как узнать размер?</p>
+                  <p onclick="document.querySelector('.modal_kak_uznal').style='display:block'" 
+                  style="cursor: pointer;" >Как узнать размер?</p>
                 </div>
                 <div class="oneclick">
-                  <div class="clcick">
+                  <div class="clcick clcick__active">
                     <span>14,5</span>
                   </div>
                   <div class="clcick">
@@ -1061,6 +1062,18 @@ background:
                   </div>
                 </div>
               </div>
+              <script>
+                const cards = document.querySelectorAll('.clcick');
+            
+                cards.forEach(card => {
+                  card.addEventListener('click', () => {
+                    // Remove 'active' class from all cards
+                    cards.forEach(c => c.classList.remove('clcick__active'));
+                    // Add 'active' class to the clicked card
+                    card.classList.add('clcick__active');
+                  });
+                });
+              </script>
               <div class="for_it">
               <div class="likebtn">
                 <button>Добавить в корзину</button>
@@ -2202,6 +2215,23 @@ background:
     </center>
 
   </div> 
+  <div class="modal_kak_uznal">
+    <div class="modal_kak_uznal_body">
+      <h1>Как узнать размер</h1>
+      <div class="modal_kak_uznal_error">
+        <p>К сожалению, размеров, соответствующих этому значению, не найдено</p>
+      </div>
+      <div class="modal_kak_uznal_cards">
+        <img src="" alt=""><p>Обмотайте нужный палец ниткой, шнурком или бумажной лентой</p>
+      </div>
+      <div class="modal_kak_uznal_cards">
+        <img src="" alt=""><p>Линейкой замерьте полученную длину нитки</p>
+      </div>
+      <div class="modal_kak_uznal_cards">
+        <input type="text"><p>Введите результат в миллиметрах</p>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
