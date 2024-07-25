@@ -9,7 +9,11 @@ margin: 0;
     color: #000; /* White text color */
   }
 ::-webkit-scrollbar {
-    width: 8px;
+    /* width: 8px; */
+    background-color: red;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 body{
     padding-top: 150px;

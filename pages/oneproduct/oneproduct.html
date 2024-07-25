@@ -1708,7 +1708,22 @@ background:
     document.querySelectorAll('.paydo')[params].style="display:none"
   }
 </script>
- 
+<script>
+  const container = document.querySelector('.container');
+  const buttons = document.querySelectorAll('.container > button');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const buttonRect = button.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+      const scrollToX = buttonRect.left - containerRect.left;
+      container.scrollTo({
+        left: scrollToX,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
       <div class="guarantee">
           <div class="guarbtns">
               <div onclick="tovbtn(0)" class="tab_but">
